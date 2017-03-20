@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 import javax.swing.JFrame;
 
-public class Loader implements AppletStub {
+public class ClientLoader implements AppletStub {
 
 	private static URL codebase;
 	private static HashMap<String, String> cfg = new HashMap<String, String>();
@@ -24,7 +24,7 @@ public class Loader implements AppletStub {
 		Client client = new Client();
 		client.setPreferredSize(new Dimension(Integer.parseInt(cfg.get("applet_minwidth")),
 				Integer.parseInt(cfg.get("applet_minheight"))));
-		client.setStub(new Loader());
+		client.setStub(new ClientLoader());
 		client.init();
 		String title = new File(".").getCanonicalPath();
 		title = title.substring(title.lastIndexOf('\\') + 1);
