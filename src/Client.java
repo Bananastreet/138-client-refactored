@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.net.Socket;
 
-public final class Game extends GameShell {
+public final class Client extends GameShell {
 
 	static Js5IndexImpl staticJs5IndexImpl8;
 	static Sprite[] staticSpriteArray8;
@@ -298,7 +298,7 @@ public final class Game extends GameShell {
 	static int staticInt250;
 	static MouseCapturer staticMouseCapturer1;
 	static int staticInt164;
-	static Game staticGame1;
+	static Client staticGame1;
 
 	static {
 		staticClass4_5 = Class4.staticClass4_2;

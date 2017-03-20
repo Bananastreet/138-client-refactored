@@ -14,11 +14,11 @@ final class Class1 implements Comparator {
 			return 0;
 		} else {
 			if (val$preferOwnWorld) {
-				if (var1.anInt66 == Game.staticInt309) {
+				if (var1.anInt66 == Client.staticInt309) {
 					return -1;
 				}
 
-				if (Game.staticInt309 == var2.anInt66) {
+				if (Client.staticInt309 == var2.anInt66) {
 					return 1;
 				}
 			}

@@ -9,7 +9,7 @@ public class ChatMessage extends Cacheable {
 	String aString37;
 
 	ChatMessage(int var1, String var2, String var3, String var4) {
-		anInt570 = Game.staticInt166;
+		anInt570 = Client.staticInt166;
 		anInt572 = var1;
 		aString36 = var2;
 		aString38 = var3;
@@ -18,7 +18,7 @@ public class ChatMessage extends Cacheable {
 
 	void method560(int var1, String var2, String var3, String var4) {
 		anInt571 = Static.staticMethod199();
-		anInt570 = Game.staticInt166;
+		anInt570 = Client.staticInt166;
 		anInt572 = var1;
 		aString36 = var2;
 		aString38 = var3;

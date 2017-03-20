@@ -13,7 +13,7 @@ public class GameObject extends Renderable {
 
 	protected final Model method434() {
 		if (anAnimDef3 != null) {
-			int var12 = Game.staticInt166 - anInt648;
+			int var12 = Client.staticInt166 - anInt648;
 			if (var12 > 100 && anAnimDef3.anInt562 > 0) {
 				var12 = 100;
 			}
@@ -35,7 +35,7 @@ public class GameObject extends Renderable {
 				anAnimDef3 = null;
 			}
 
-			anInt648 = Game.staticInt166 - var12;
+			anInt648 = Client.staticInt166 - var12;
 		}
 
 		ObjectDefinition var121 = Static.staticMethod394(anInt643);
@@ -78,7 +78,7 @@ public class GameObject extends Renderable {
 		if (var7 != -1) {
 			anAnimDef3 = Static.staticMethod210(var7);
 			anInt645 = 0;
-			anInt648 = Game.staticInt166 - 1;
+			anInt648 = Client.staticInt166 - 1;
 			if (anAnimDef3.anInt568 == 0 && var9 != null && var9 instanceof GameObject) {
 				GameObject var10 = (GameObject) var9;
 				if (var10.anAnimDef3 == anAnimDef3) {

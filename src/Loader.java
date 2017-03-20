@@ -21,16 +21,16 @@ public class Loader implements AppletStub {
 	public static void main(String[] args) throws Exception {
 		codebase = new URL(args.length == 0 ? "http://oldschool1.runescape.com" : args[0]);
 		parseParams(new URL(codebase, "jav_config.ws").openStream());
-		Game game = new Game();
-		game.setPreferredSize(new Dimension(Integer.parseInt(cfg.get("applet_minwidth")),
+		Client client = new Client();
+		client.setPreferredSize(new Dimension(Integer.parseInt(cfg.get("applet_minwidth")),
 				Integer.parseInt(cfg.get("applet_minheight"))));
-		game.setStub(new Loader());
-		game.init();
+		client.setStub(new Loader());
+		client.init();
 		String title = new File(".").getCanonicalPath();
 		title = title.substring(title.lastIndexOf('\\') + 1);
 		JFrame frame = new JFrame(title);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setContentPane(game);
+		frame.setContentPane(client);
 		frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);

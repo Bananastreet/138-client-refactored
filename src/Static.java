@@ -104,79 +104,79 @@ public class Static {
 	}
 
 	static final void staticMethod143(int var0, int var1, int var2, int var3) {
-		Game.staticInt187 = 0;
+		Client.staticInt187 = 0;
 		boolean var12 = false;
 		int var15 = -1;
 		int var8 = staticInt24;
 		int[] var9 = staticIntArray7;
 
 		int var10;
-		for (var10 = 0; var10 < var8 + Game.staticInt186; var10++) {
+		for (var10 = 0; var10 < var8 + Client.staticInt186; var10++) {
 			Object var18;
 			if (var10 < var8) {
-				var18 = Game.staticPlayerArray1[var9[var10]];
-				if (Game.staticInt229 == var9[var10]) {
+				var18 = Client.staticPlayerArray1[var9[var10]];
+				if (Client.staticInt229 == var9[var10]) {
 					var12 = true;
 					var15 = var10;
 					continue;
 				}
 			} else {
-				var18 = Game.staticNpcArray1[Game.staticIntArray121[var10 - var8]];
+				var18 = Client.staticNpcArray1[Client.staticIntArray121[var10 - var8]];
 			}
 
 			staticMethod209((Actor) var18, var10, var0, var1, var2, var3);
 		}
 
 		if (var12) {
-			staticMethod209(Game.staticPlayerArray1[Game.staticInt229], var15, var0, var1, var2, var3);
+			staticMethod209(Client.staticPlayerArray1[Client.staticInt229], var15, var0, var1, var2, var3);
 		}
 
-		for (var10 = 0; var10 < Game.staticInt187; var10++) {
-			int var181 = Game.staticIntArray101[var10];
-			int var11 = Game.staticIntArray102[var10];
-			int var6 = Game.staticIntArray85[var10];
-			int var16 = Game.staticIntArray87[var10];
+		for (var10 = 0; var10 < Client.staticInt187; var10++) {
+			int var181 = Client.staticIntArray101[var10];
+			int var11 = Client.staticIntArray102[var10];
+			int var6 = Client.staticIntArray85[var10];
+			int var16 = Client.staticIntArray87[var10];
 			boolean var4 = true;
 
 			while (var4) {
 				var4 = false;
 
 				for (int var19 = 0; var19 < var10; var19++) {
-					if (2 + var11 > Game.staticIntArray102[var19] - Game.staticIntArray87[var19]
-							&& var11 - var16 < Game.staticIntArray102[var19] + 2
-							&& var181 - var6 < Game.staticIntArray101[var19] + Game.staticIntArray85[var19]
-							&& var181 + var6 > Game.staticIntArray101[var19] - Game.staticIntArray85[var19]
-							&& Game.staticIntArray102[var19] - Game.staticIntArray87[var19] < var11) {
-						var11 = Game.staticIntArray102[var19] - Game.staticIntArray87[var19];
+					if (2 + var11 > Client.staticIntArray102[var19] - Client.staticIntArray87[var19]
+							&& var11 - var16 < Client.staticIntArray102[var19] + 2
+							&& var181 - var6 < Client.staticIntArray101[var19] + Client.staticIntArray85[var19]
+							&& var181 + var6 > Client.staticIntArray101[var19] - Client.staticIntArray85[var19]
+							&& Client.staticIntArray102[var19] - Client.staticIntArray87[var19] < var11) {
+						var11 = Client.staticIntArray102[var19] - Client.staticIntArray87[var19];
 						var4 = true;
 					}
 				}
 			}
 
-			Game.staticInt189 = Game.staticIntArray101[var10];
-			Game.staticInt180 = Game.staticIntArray102[var10] = var11;
-			String var191 = Game.staticStringArray10[var10];
-			if (Game.staticInt265 == 0) {
+			Client.staticInt189 = Client.staticIntArray101[var10];
+			Client.staticInt180 = Client.staticIntArray102[var10] = var11;
+			String var191 = Client.staticStringArray10[var10];
+			if (Client.staticInt265 == 0) {
 				int var14 = 16776960;
-				if (Game.staticIntArray89[var10] < 6) {
-					var14 = Game.staticIntArray100[Game.staticIntArray89[var10]];
+				if (Client.staticIntArray89[var10] < 6) {
+					var14 = Client.staticIntArray100[Client.staticIntArray89[var10]];
 				}
 
-				if (Game.staticIntArray89[var10] == 6) {
-					var14 = Game.staticInt292 % 20 < 10 ? 16711680 : 16776960;
+				if (Client.staticIntArray89[var10] == 6) {
+					var14 = Client.staticInt292 % 20 < 10 ? 16711680 : 16776960;
 				}
 
-				if (Game.staticIntArray89[var10] == 7) {
-					var14 = Game.staticInt292 % 20 < 10 ? 255 : '\uffff';
+				if (Client.staticIntArray89[var10] == 7) {
+					var14 = Client.staticInt292 % 20 < 10 ? 255 : '\uffff';
 				}
 
-				if (Game.staticIntArray89[var10] == 8) {
-					var14 = Game.staticInt292 % 20 < 10 ? '\ub000' : 8454016;
+				if (Client.staticIntArray89[var10] == 8) {
+					var14 = Client.staticInt292 % 20 < 10 ? '\ub000' : 8454016;
 				}
 
 				int var13;
-				if (Game.staticIntArray89[var10] == 9) {
-					var13 = 150 - Game.staticIntArray99[var10];
+				if (Client.staticIntArray89[var10] == 9) {
+					var13 = 150 - Client.staticIntArray99[var10];
 					if (var13 < 50) {
 						var14 = var13 * 1280 + 16711680;
 					} else if (var13 < 100) {
@@ -186,8 +186,8 @@ public class Static {
 					}
 				}
 
-				if (Game.staticIntArray89[var10] == 10) {
-					var13 = 150 - Game.staticIntArray99[var10];
+				if (Client.staticIntArray89[var10] == 10) {
+					var13 = 150 - Client.staticIntArray99[var10];
 					if (var13 < 50) {
 						var14 = var13 * 5 + 16711680;
 					} else if (var13 < 100) {
@@ -197,8 +197,8 @@ public class Static {
 					}
 				}
 
-				if (Game.staticIntArray89[var10] == 11) {
-					var13 = 150 - Game.staticIntArray99[var10];
+				if (Client.staticIntArray89[var10] == 11) {
+					var13 = 150 - Client.staticIntArray99[var10];
 					if (var13 < 50) {
 						var14 = 16777215 - var13 * 327685;
 					} else if (var13 < 100) {
@@ -208,37 +208,37 @@ public class Static {
 					}
 				}
 
-				if (Game.staticIntArray90[var10] == 0) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Game.staticInt189,
-							Game.staticInt180 + var1, var14, 0);
+				if (Client.staticIntArray90[var10] == 0) {
+					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Client.staticInt189,
+							Client.staticInt180 + var1, var14, 0);
 				}
 
-				if (Game.staticIntArray90[var10] == 1) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method626(var191, var0 + Game.staticInt189,
-							Game.staticInt180 + var1, var14, 0, Game.staticInt292);
+				if (Client.staticIntArray90[var10] == 1) {
+					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method626(var191, var0 + Client.staticInt189,
+							Client.staticInt180 + var1, var14, 0, Client.staticInt292);
 				}
 
-				if (Game.staticIntArray90[var10] == 2) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method619(var191, Game.staticInt189 + var0,
-							var1 + Game.staticInt180, var14, 0, Game.staticInt292);
+				if (Client.staticIntArray90[var10] == 2) {
+					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method619(var191, Client.staticInt189 + var0,
+							var1 + Client.staticInt180, var14, 0, Client.staticInt292);
 				}
 
-				if (Game.staticIntArray90[var10] == 3) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method620(var191, Game.staticInt189 + var0,
-							Game.staticInt180 + var1, var14, 0, Game.staticInt292, 150 - Game.staticIntArray99[var10]);
+				if (Client.staticIntArray90[var10] == 3) {
+					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method620(var191, Client.staticInt189 + var0,
+							Client.staticInt180 + var1, var14, 0, Client.staticInt292, 150 - Client.staticIntArray99[var10]);
 				}
 
-				if (Game.staticIntArray90[var10] == 4) {
-					var13 = (150 - Game.staticIntArray99[var10])
+				if (Client.staticIntArray90[var10] == 4) {
+					var13 = (150 - Client.staticIntArray99[var10])
 							* (GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613(var191) + 100) / 150;
-					staticMethod402(var0 + Game.staticInt189 - 50, var1, 50 + Game.staticInt189 + var0, var3 + var1);
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616(var191, 50 + Game.staticInt189 + var0 - var13,
-							var1 + Game.staticInt180, var14, 0);
+					staticMethod402(var0 + Client.staticInt189 - 50, var1, 50 + Client.staticInt189 + var0, var3 + var1);
+					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616(var191, 50 + Client.staticInt189 + var0 - var13,
+							var1 + Client.staticInt180, var14, 0);
 					staticMethod416(var0, var1, var2 + var0, var3 + var1);
 				}
 
-				if (Game.staticIntArray90[var10] == 5) {
-					var13 = 150 - Game.staticIntArray99[var10];
+				if (Client.staticIntArray90[var10] == 5) {
+					var13 = 150 - Client.staticIntArray99[var10];
 					int var17 = 0;
 					if (var13 < 25) {
 						var17 = var13 - 25;
@@ -247,15 +247,15 @@ public class Static {
 					}
 
 					staticMethod402(var0,
-							var1 + Game.staticInt180 - GraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669 - 1,
-							var2 + var0, 5 + var1 + Game.staticInt180);
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Game.staticInt189,
-							var17 + var1 + Game.staticInt180, var14, 0);
+							var1 + Client.staticInt180 - GraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669 - 1,
+							var2 + var0, 5 + var1 + Client.staticInt180);
+					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Client.staticInt189,
+							var17 + var1 + Client.staticInt180, var14, 0);
 					staticMethod416(var0, var1, var0 + var2, var3 + var1);
 				}
 			} else {
-				GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, Game.staticInt189 + var0,
-						var1 + Game.staticInt180, 16776960, 0);
+				GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, Client.staticInt189 + var0,
+						var1 + Client.staticInt180, 16776960, 0);
 			}
 		}
 
@@ -1082,10 +1082,10 @@ public class Static {
 	}
 
 	static final void staticMethod126(Actor var0) {
-		if (Game.staticInt166 == var0.anInt604 || var0.anInt612 == -1 || var0.anInt615 != 0
+		if (Client.staticInt166 == var0.anInt604 || var0.anInt612 == -1 || var0.anInt615 != 0
 				|| 1 + var0.anInt614 > staticMethod210(var0.anInt612).anIntArray119[var0.anInt613]) {
 			int var3 = var0.anInt604 - var0.anInt625;
-			int var1 = Game.staticInt166 - var0.anInt625;
+			int var1 = Client.staticInt166 - var0.anInt625;
 			int var4 = var0.anInt626 * 64 + var0.anInt606 * 128;
 			int var5 = var0.anInt626 * 64 + var0.anInt623 * 128;
 			int var2 = var0.anInt626 * 64 + var0.anInt617 * 128;
@@ -1111,16 +1111,16 @@ public class Static {
 		}
 
 		if (var0.equalsIgnoreCase("displayfps")) {
-			Game.staticBool23 = !Game.staticBool23;
+			Client.staticBool23 = !Client.staticBool23;
 		}
 
-		if (Game.staticInt268 >= 2) {
+		if (Client.staticInt268 >= 2) {
 			if (var0.equalsIgnoreCase("fpson")) {
-				Game.staticBool23 = true;
+				Client.staticBool23 = true;
 			}
 
 			if (var0.equalsIgnoreCase("fpsoff")) {
-				Game.staticBool23 = false;
+				Client.staticBool23 = false;
 			}
 
 			if (var0.equalsIgnoreCase("gc")) {
@@ -1131,14 +1131,14 @@ public class Static {
 				staticMethod329();
 			}
 
-			if (var0.equalsIgnoreCase("errortest") && Game.staticInt207 == 2) {
+			if (var0.equalsIgnoreCase("errortest") && Client.staticInt207 == 2) {
 				throw new RuntimeException();
 			}
 		}
 
-		Game.staticEncryptedStream1.method471(13);
-		Game.staticEncryptedStream1.writeByte(var0.length() + 1);
-		Game.staticEncryptedStream1.method323(var0);
+		Client.staticEncryptedStream1.method471(13);
+		Client.staticEncryptedStream1.writeByte(var0.length() + 1);
+		Client.staticEncryptedStream1.method323(var0);
 	}
 
 	public static String staticMethod5(long var0) {
@@ -1256,7 +1256,7 @@ public class Static {
 		int var3 = BuildType.staticInt124 - Class47.staticInt121 - var1;
 		if (var0 > 0 || var2 > 0 || var1 > 0 || var3 > 0) {
 			try {
-				Container var4 = Game.staticGame1.method207();
+				Container var4 = Client.staticGame1.method207();
 				int var5 = 0;
 				int var6 = 0;
 				if (var4 == Class40Sub1.staticFrame1) {
@@ -1366,8 +1366,8 @@ public class Static {
 	}
 
 	static void staticMethod59(Class2 var0) {
-		if (var0.method10() != Game.staticBool20) {
-			Game.staticBool20 = var0.method10();
+		if (var0.method10() != Client.staticBool20) {
+			Client.staticBool20 = var0.method10();
 			boolean var1 = var0.method10();
 			if (var1 != staticBool4) {
 				staticMethod39();
@@ -1376,10 +1376,10 @@ public class Static {
 		}
 
 		Class31.staticString21 = var0.aString1;
-		Game.staticInt309 = var0.anInt4;
-		Game.staticInt201 = var0.anInt3;
-		Class7.staticInt30 = 1568197829 * (Game.staticInt207 == 0 ? '\uaa4a' : var0.anInt4 + '\u9c40');
-		Game.staticInt250 = (Game.staticInt207 == 0 ? 443 : var0.anInt4 + '\uc350') * 922916997;
+		Client.staticInt309 = var0.anInt4;
+		Client.staticInt201 = var0.anInt3;
+		Class7.staticInt30 = 1568197829 * (Client.staticInt207 == 0 ? '\uaa4a' : var0.anInt4 + '\u9c40');
+		Client.staticInt250 = (Client.staticInt207 == 0 ? 443 : var0.anInt4 + '\uc350') * 922916997;
 		Class32.staticInt73 = Class7.staticInt30;
 	}
 
@@ -1389,17 +1389,17 @@ public class Static {
 			staticInt27 -= 2;
 			var4 = staticIntArray16[staticInt27];
 			int var3 = staticIntArray16[staticInt27 + 1];
-			if (!Game.staticBool28) {
-				Game.staticInt220 = var4;
-				Game.staticInt221 = var3;
+			if (!Client.staticBool28) {
+				Client.staticInt220 = var4;
+				Client.staticInt221 = var3;
 			}
 
 			return 1;
 		} else if (var0 == 5505) {
-			staticIntArray16[++staticInt27 - 1] = Game.staticInt220;
+			staticIntArray16[++staticInt27 - 1] = Client.staticInt220;
 			return 1;
 		} else if (var0 == 5506) {
-			staticIntArray16[++staticInt27 - 1] = Game.staticInt221;
+			staticIntArray16[++staticInt27 - 1] = Client.staticInt221;
 			return 1;
 		} else if (var0 == 5530) {
 			var4 = staticIntArray16[--staticInt27];
@@ -1407,10 +1407,10 @@ public class Static {
 				var4 = 0;
 			}
 
-			Game.staticInt225 = var4;
+			Client.staticInt225 = var4;
 			return 1;
 		} else if (var0 == 5531) {
-			staticIntArray16[++staticInt27 - 1] = Game.staticInt225;
+			staticIntArray16[++staticInt27 - 1] = Client.staticInt225;
 			return 1;
 		} else {
 			return 2;
@@ -1551,65 +1551,65 @@ public class Static {
 		}
 
 		if (var2 == 31) {
-			Game.staticEncryptedStream1.method471(233);
-			Game.staticEncryptedStream1.method359(var1);
-			Game.staticEncryptedStream1.method369(staticInt102);
-			Game.staticEncryptedStream1.method351(staticInt126);
-			Game.staticEncryptedStream1.method360(GameObject.staticInt332);
-			Game.staticEncryptedStream1.method352(var0);
-			Game.staticEncryptedStream1.method351(var3);
-			Game.staticInt241 = 0;
+			Client.staticEncryptedStream1.method471(233);
+			Client.staticEncryptedStream1.method359(var1);
+			Client.staticEncryptedStream1.method369(staticInt102);
+			Client.staticEncryptedStream1.method351(staticInt126);
+			Client.staticEncryptedStream1.method360(GameObject.staticInt332);
+			Client.staticEncryptedStream1.method352(var0);
+			Client.staticEncryptedStream1.method351(var3);
+			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
-			Game.staticInt228 = var0;
+			Client.staticInt228 = var0;
 		}
 
 		Player var8;
 		if (var2 == 14) {
-			var8 = Game.staticPlayerArray1[var3];
+			var8 = Client.staticPlayerArray1[var3];
 			if (var8 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(146);
-				Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.writeShort(staticInt126);
-				Game.staticEncryptedStream1.method352(staticInt102);
-				Game.staticEncryptedStream1.writeShort(var3);
-				Game.staticEncryptedStream1.method360(GameObject.staticInt332);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(146);
+				Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.writeShort(staticInt126);
+				Client.staticEncryptedStream1.method352(staticInt102);
+				Client.staticEncryptedStream1.writeShort(var3);
+				Client.staticEncryptedStream1.method360(GameObject.staticInt332);
 			}
 		}
 
 		Npc var16;
 		if (var2 == 12) {
-			var16 = Game.staticNpcArray1[var3];
+			var16 = Client.staticNpcArray1[var3];
 			if (var16 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(199);
-				Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.method352(var3);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(199);
+				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.method352(var3);
 			}
 		}
 
 		if (var2 == 11) {
-			var16 = Game.staticNpcArray1[var3];
+			var16 = Client.staticNpcArray1[var3];
 			if (var16 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(45);
-				Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.method352(var3);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(45);
+				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.method352(var3);
 			}
 		}
 
@@ -1622,57 +1622,57 @@ public class Static {
 			}
 
 			if (var19) {
-				Game.staticEncryptedStream1.method471(62);
-				Game.staticEncryptedStream1.writeInt(var1);
+				Client.staticEncryptedStream1.method471(62);
+				Client.staticEncryptedStream1.writeInt(var1);
 			}
 		}
 
-		if (var2 == 30 && Game.staticWidget6 == null) {
-			Game.staticEncryptedStream1.method471(171);
-			Game.staticEncryptedStream1.method351(var0);
-			Game.staticEncryptedStream1.writeInt(var1);
-			Game.staticWidget6 = staticMethod32(var1, var0);
-			staticMethod73(Game.staticWidget6);
+		if (var2 == 30 && Client.staticWidget6 == null) {
+			Client.staticEncryptedStream1.method471(171);
+			Client.staticEncryptedStream1.method351(var0);
+			Client.staticEncryptedStream1.writeInt(var1);
+			Client.staticWidget6 = staticMethod32(var1, var0);
+			staticMethod73(Client.staticWidget6);
 		}
 
 		if (var2 == 48) {
-			var8 = Game.staticPlayerArray1[var3];
+			var8 = Client.staticPlayerArray1[var3];
 			if (var8 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(99);
-				Game.staticEncryptedStream1.writeShort(var3);
-				Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(99);
+				Client.staticEncryptedStream1.writeShort(var3);
+				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 			}
 		}
 
 		if (var2 == 1002) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			Game.staticEncryptedStream1.method471(88);
-			Game.staticEncryptedStream1.method369(var3 >> 14 & 0x7fff);
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			Client.staticEncryptedStream1.method471(88);
+			Client.staticEncryptedStream1.method369(var3 >> 14 & 0x7fff);
 		}
 
 		if (var2 == 39) {
-			Game.staticEncryptedStream1.method471(29);
-			Game.staticEncryptedStream1.method369(var0);
-			Game.staticEncryptedStream1.method369(var3);
-			Game.staticEncryptedStream1.method360(var1);
-			Game.staticInt241 = 0;
+			Client.staticEncryptedStream1.method471(29);
+			Client.staticEncryptedStream1.method369(var0);
+			Client.staticEncryptedStream1.method369(var3);
+			Client.staticEncryptedStream1.method360(var1);
+			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
-			Game.staticInt228 = var0;
+			Client.staticInt228 = var0;
 		}
 
 		int var191;
 		if (var2 == 29) {
-			Game.staticEncryptedStream1.method471(62);
-			Game.staticEncryptedStream1.writeInt(var1);
+			Client.staticEncryptedStream1.method471(62);
+			Client.staticEncryptedStream1.writeInt(var1);
 			var17 = staticMethod8(var1);
 			if (var17.anIntArrayArray12 != null && var17.anIntArrayArray12[0][0] == 5) {
 				var191 = var17.anIntArrayArray12[0][1];
@@ -1684,24 +1684,24 @@ public class Static {
 		}
 
 		if (var2 == 15) {
-			var8 = Game.staticPlayerArray1[var3];
+			var8 = Client.staticPlayerArray1[var3];
 			if (var8 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(30);
-				Game.staticEncryptedStream1.writeShort(Game.staticInt260);
-				Game.staticEncryptedStream1.method369(var3);
-				Game.staticEncryptedStream1.method359(Class3.staticInt19);
-				Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(30);
+				Client.staticEncryptedStream1.writeShort(Client.staticInt260);
+				Client.staticEncryptedStream1.method369(var3);
+				Client.staticEncryptedStream1.method359(Class3.staticInt19);
+				Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 			}
 		}
 
 		if (var2 == 23) {
-			if (Game.staticBool30) {
+			if (Client.staticBool30) {
 				Friend.staticScene1.method122();
 			} else {
 				Friend.staticScene1.method121(NodeSub4.staticInt155, var0, var1, true);
@@ -1709,65 +1709,65 @@ public class Static {
 		}
 
 		if (var2 == 49) {
-			var8 = Game.staticPlayerArray1[var3];
+			var8 = Client.staticPlayerArray1[var3];
 			if (var8 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(240);
-				Game.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.method351(var3);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(240);
+				Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.method351(var3);
 			}
 		}
 
 		if (var2 == 36) {
-			Game.staticEncryptedStream1.method471(249);
-			Game.staticEncryptedStream1.method369(var0);
-			Game.staticEncryptedStream1.method369(var3);
-			Game.staticEncryptedStream1.method361(var1);
-			Game.staticInt241 = 0;
+			Client.staticEncryptedStream1.method471(249);
+			Client.staticEncryptedStream1.method369(var0);
+			Client.staticEncryptedStream1.method369(var3);
+			Client.staticEncryptedStream1.method361(var1);
+			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
-			Game.staticInt228 = var0;
+			Client.staticInt228 = var0;
 		}
 
 		if (var2 == 8) {
-			var16 = Game.staticNpcArray1[var3];
+			var16 = Client.staticNpcArray1[var3];
 			if (var16 != null) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(241);
-				Game.staticEncryptedStream1.method369(Game.staticInt260);
-				Game.staticEncryptedStream1.writeShort(var3);
-				Game.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.method359(Class3.staticInt19);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(241);
+				Client.staticEncryptedStream1.method369(Client.staticInt260);
+				Client.staticEncryptedStream1.writeShort(var3);
+				Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.method359(Class3.staticInt19);
 			}
 		}
 
 		if (var2 == 32) {
-			Game.staticEncryptedStream1.method471(19);
-			Game.staticEncryptedStream1.method359(Class3.staticInt19);
-			Game.staticEncryptedStream1.method369(var3);
-			Game.staticEncryptedStream1.method369(Game.staticInt260);
-			Game.staticEncryptedStream1.method359(var1);
-			Game.staticEncryptedStream1.method352(var0);
-			Game.staticInt241 = 0;
+			Client.staticEncryptedStream1.method471(19);
+			Client.staticEncryptedStream1.method359(Class3.staticInt19);
+			Client.staticEncryptedStream1.method369(var3);
+			Client.staticEncryptedStream1.method369(Client.staticInt260);
+			Client.staticEncryptedStream1.method359(var1);
+			Client.staticEncryptedStream1.method352(var0);
+			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
-			Game.staticInt228 = var0;
+			Client.staticInt228 = var0;
 		}
 
 		if (var2 == 1003) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			var16 = Game.staticNpcArray1[var3];
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			var16 = Client.staticNpcArray1[var3];
 			if (var16 != null) {
 				NpcDefinition var22 = var16.aNpcDef1;
 				if (var22.anIntArray116 != null) {
@@ -1775,115 +1775,115 @@ public class Static {
 				}
 
 				if (var22 != null) {
-					Game.staticEncryptedStream1.method471(229);
-					Game.staticEncryptedStream1.method352(var22.anInt537);
+					Client.staticEncryptedStream1.method471(229);
+					Client.staticEncryptedStream1.method352(var22.anInt537);
 				}
 			}
 		}
 
 		if (var2 == 16) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			Game.staticInt296 = var0;
-			Game.staticInt240 = var1;
-			Game.staticEncryptedStream1.method471(159);
-			Game.staticEncryptedStream1.method369(staticInt102);
-			Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Game.staticEncryptedStream1.method369(Class34.staticInt75 + var1);
-			Game.staticEncryptedStream1.method360(GameObject.staticInt332);
-			Game.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
-			Game.staticEncryptedStream1.writeShort(staticInt126);
-			Game.staticEncryptedStream1.method351(var3);
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			Client.staticInt296 = var0;
+			Client.staticInt240 = var1;
+			Client.staticEncryptedStream1.method471(159);
+			Client.staticEncryptedStream1.method369(staticInt102);
+			Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.staticEncryptedStream1.method369(Class34.staticInt75 + var1);
+			Client.staticEncryptedStream1.method360(GameObject.staticInt332);
+			Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
+			Client.staticEncryptedStream1.writeShort(staticInt126);
+			Client.staticEncryptedStream1.method351(var3);
 		}
 
 		if (var2 == 58) {
 			var17 = staticMethod32(var1, var0);
 			if (var17 != null) {
-				Game.staticEncryptedStream1.method471(91);
-				Game.staticEncryptedStream1.method351(Game.staticInt227);
-				Game.staticEncryptedStream1.method359(Class3.staticInt19);
-				Game.staticEncryptedStream1.method369(Game.staticInt260);
-				Game.staticEncryptedStream1.method351(var0);
-				Game.staticEncryptedStream1.method360(var1);
-				Game.staticEncryptedStream1.method352(var17.anInt352);
+				Client.staticEncryptedStream1.method471(91);
+				Client.staticEncryptedStream1.method351(Client.staticInt227);
+				Client.staticEncryptedStream1.method359(Class3.staticInt19);
+				Client.staticEncryptedStream1.method369(Client.staticInt260);
+				Client.staticEncryptedStream1.method351(var0);
+				Client.staticEncryptedStream1.method360(var1);
+				Client.staticEncryptedStream1.method352(var17.anInt352);
 			}
 		}
 
 		if (var2 == 22) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			Game.staticInt296 = var0;
-			Game.staticInt240 = var1;
-			Game.staticEncryptedStream1.method471(238);
-			Game.staticEncryptedStream1.method352(var3);
-			Game.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
-			Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Game.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			Client.staticInt296 = var0;
+			Client.staticInt240 = var1;
+			Client.staticEncryptedStream1.method471(238);
+			Client.staticEncryptedStream1.method352(var3);
+			Client.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
+			Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
 		}
 
 		if (var2 == 20) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			Game.staticInt296 = var0;
-			Game.staticInt240 = var1;
-			Game.staticEncryptedStream1.method471(27);
-			Game.staticEncryptedStream1.method351(var3);
-			Game.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
-			Game.staticEncryptedStream1.method352(var0 + NodeSub3.staticInt154);
-			Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			Client.staticInt296 = var0;
+			Client.staticInt240 = var1;
+			Client.staticEncryptedStream1.method471(27);
+			Client.staticEncryptedStream1.method351(var3);
+			Client.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
+			Client.staticEncryptedStream1.method352(var0 + NodeSub3.staticInt154);
+			Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 		}
 
 		if (var2 == 37) {
-			Game.staticEncryptedStream1.method471(251);
-			Game.staticEncryptedStream1.writeInt(var1);
-			Game.staticEncryptedStream1.method369(var0);
-			Game.staticEncryptedStream1.method351(var3);
-			Game.staticInt241 = 0;
+			Client.staticEncryptedStream1.method471(251);
+			Client.staticEncryptedStream1.writeInt(var1);
+			Client.staticEncryptedStream1.method369(var0);
+			Client.staticEncryptedStream1.method351(var3);
+			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
-			Game.staticInt228 = var0;
+			Client.staticInt228 = var0;
 		}
 
 		if (var2 == 2) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			Game.staticInt296 = var0;
-			Game.staticInt240 = var1;
-			Game.staticEncryptedStream1.method471(54);
-			Game.staticEncryptedStream1.method352(var0 + NodeSub3.staticInt154);
-			Game.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Game.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
-			Game.staticEncryptedStream1.method359(Class3.staticInt19);
-			Game.staticEncryptedStream1.method352(Game.staticInt260);
-			Game.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			Client.staticInt296 = var0;
+			Client.staticInt240 = var1;
+			Client.staticEncryptedStream1.method471(54);
+			Client.staticEncryptedStream1.method352(var0 + NodeSub3.staticInt154);
+			Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
+			Client.staticEncryptedStream1.method359(Class3.staticInt19);
+			Client.staticEncryptedStream1.method352(Client.staticInt260);
+			Client.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
 		}
 
 		if (var2 == 21) {
-			Game.staticInt238 = var6;
-			Game.staticInt237 = var7;
-			Game.staticInt239 = 2;
-			Game.staticInt297 = 0;
-			Game.staticInt296 = var0;
-			Game.staticInt240 = var1;
-			Game.staticEncryptedStream1.method471(28);
-			Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Game.staticEncryptedStream1.method352(var3);
-			Game.staticEncryptedStream1.method369(var1 + Class34.staticInt75);
-			Game.staticEncryptedStream1.method369(NodeSub3.staticInt154 + var0);
+			Client.staticInt238 = var6;
+			Client.staticInt237 = var7;
+			Client.staticInt239 = 2;
+			Client.staticInt297 = 0;
+			Client.staticInt296 = var0;
+			Client.staticInt240 = var1;
+			Client.staticEncryptedStream1.method471(28);
+			Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.staticEncryptedStream1.method352(var3);
+			Client.staticEncryptedStream1.method369(var1 + Class34.staticInt75);
+			Client.staticEncryptedStream1.method369(NodeSub3.staticInt154 + var0);
 		}
 
 		if (var2 == 25) {
 			var17 = staticMethod32(var1, var0);
 			if (var17 != null) {
-				if (Game.staticBool32) {
-					Widget var221 = staticMethod32(Class3.staticInt19, Game.staticInt260);
+				if (Client.staticBool32) {
+					Widget var221 = staticMethod32(Class3.staticInt19, Client.staticInt260);
 					if (var221 != null && var221.anObjectArray12 != null) {
 						NodeSub16 var15 = new NodeSub16();
 						var15.aWidget1 = var221;
@@ -1891,7 +1891,7 @@ public class Static {
 						staticMethod375(var15);
 					}
 
-					Game.staticBool32 = false;
+					Client.staticBool32 = false;
 					staticMethod73(var221);
 				}
 
@@ -1906,13 +1906,13 @@ public class Static {
 					staticMethod375(var14);
 				}
 
-				Game.staticInt227 = var151;
-				Game.staticBool32 = true;
+				Client.staticInt227 = var151;
+				Client.staticBool32 = true;
 				Class3.staticInt19 = var1;
-				Game.staticInt260 = var0;
+				Client.staticInt260 = var0;
 				Class57.staticInt144 = var191;
 				staticMethod73(var11);
-				Game.staticInt258 = 0;
+				Client.staticInt258 = 0;
 				int var141 = staticMethod192(var17);
 				int var24 = var141 >> 11 & 0x3f;
 				String var21;
@@ -1924,84 +1924,84 @@ public class Static {
 					var21 = null;
 				}
 
-				Game.staticString31 = var21;
-				if (Game.staticString31 == null) {
-					Game.staticString31 = "Null";
+				Client.staticString31 = var21;
+				if (Client.staticString31 == null) {
+					Client.staticString31 = "Null";
 				}
 
 				if (var17.aBool42) {
-					Game.staticString30 = var17.aString21 + staticMethod118(16777215);
+					Client.staticString30 = var17.aString21 + staticMethod118(16777215);
 				} else {
-					Game.staticString30 = staticMethod118('\uff00') + var17.aString23 + staticMethod118(16777215);
+					Client.staticString30 = staticMethod118('\uff00') + var17.aString23 + staticMethod118(16777215);
 				}
 			}
 		} else {
 			if (var2 == 35) {
-				Game.staticEncryptedStream1.method471(94);
-				Game.staticEncryptedStream1.method351(var3);
-				Game.staticEncryptedStream1.method352(var0);
-				Game.staticEncryptedStream1.writeInt(var1);
-				Game.staticInt241 = 0;
+				Client.staticEncryptedStream1.method471(94);
+				Client.staticEncryptedStream1.method351(var3);
+				Client.staticEncryptedStream1.method352(var0);
+				Client.staticEncryptedStream1.writeInt(var1);
+				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
-				Game.staticInt228 = var0;
+				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 10) {
-				var16 = Game.staticNpcArray1[var3];
+				var16 = Client.staticNpcArray1[var3];
 				if (var16 != null) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(100);
-					Game.staticEncryptedStream1.writeShort(var3);
-					Game.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(100);
+					Client.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
 			if (var2 == 51) {
-				var8 = Game.staticPlayerArray1[var3];
+				var8 = Client.staticPlayerArray1[var3];
 				if (var8 != null) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(131);
-					Game.staticEncryptedStream1.method352(var3);
-					Game.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(131);
+					Client.staticEncryptedStream1.method352(var3);
+					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
 			if (var2 == 1001) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(130);
-				Game.staticEncryptedStream1.method369(var0 + NodeSub3.staticInt154);
-				Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
-				Game.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(130);
+				Client.staticEncryptedStream1.method369(var0 + NodeSub3.staticInt154);
+				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
+				Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
 			}
 
 			if (var2 == 46) {
-				var8 = Game.staticPlayerArray1[var3];
+				var8 = Client.staticPlayerArray1[var3];
 				if (var8 != null) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(216);
-					Game.staticEncryptedStream1.method351(var3);
-					Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(216);
+					Client.staticEncryptedStream1.method351(var3);
+					Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
@@ -2013,64 +2013,64 @@ public class Static {
 			}
 
 			if (var2 == 42) {
-				Game.staticEncryptedStream1.method471(58);
-				Game.staticEncryptedStream1.method369(var3);
-				Game.staticEncryptedStream1.method361(var1);
-				Game.staticEncryptedStream1.method351(var0);
-				Game.staticInt241 = 0;
+				Client.staticEncryptedStream1.method471(58);
+				Client.staticEncryptedStream1.method369(var3);
+				Client.staticEncryptedStream1.method361(var1);
+				Client.staticEncryptedStream1.method351(var0);
+				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
-				Game.staticInt228 = var0;
+				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 33) {
-				Game.staticEncryptedStream1.method471(132);
-				Game.staticEncryptedStream1.writeShort(var3);
-				Game.staticEncryptedStream1.method352(var0);
-				Game.staticEncryptedStream1.method360(var1);
-				Game.staticInt241 = 0;
+				Client.staticEncryptedStream1.method471(132);
+				Client.staticEncryptedStream1.writeShort(var3);
+				Client.staticEncryptedStream1.method352(var0);
+				Client.staticEncryptedStream1.method360(var1);
+				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
-				Game.staticInt228 = var0;
+				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 44) {
-				var8 = Game.staticPlayerArray1[var3];
+				var8 = Client.staticPlayerArray1[var3];
 				if (var8 != null) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(197);
-					Game.staticEncryptedStream1.method351(var3);
-					Game.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(197);
+					Client.staticEncryptedStream1.method351(var3);
+					Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
 			if (var2 == 17) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(67);
-				Game.staticEncryptedStream1.method369(Game.staticInt260);
-				Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
-				Game.staticEncryptedStream1.method351(var3);
-				Game.staticEncryptedStream1.writeShort(var1 + Class34.staticInt75);
-				Game.staticEncryptedStream1.method360(Class3.staticInt19);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(67);
+				Client.staticEncryptedStream1.method369(Client.staticInt260);
+				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
+				Client.staticEncryptedStream1.method351(var3);
+				Client.staticEncryptedStream1.writeShort(var1 + Class34.staticInt75);
+				Client.staticEncryptedStream1.method360(Class3.staticInt19);
 			}
 
 			if (var2 == 41) {
-				Game.staticEncryptedStream1.method471(161);
-				Game.staticEncryptedStream1.method359(var1);
-				Game.staticEncryptedStream1.method351(var3);
-				Game.staticEncryptedStream1.method351(var0);
-				Game.staticInt241 = 0;
+				Client.staticEncryptedStream1.method471(161);
+				Client.staticEncryptedStream1.method359(var1);
+				Client.staticEncryptedStream1.method351(var3);
+				Client.staticEncryptedStream1.method351(var0);
+				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
-				Game.staticInt228 = var0;
+				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 1005) {
@@ -2078,137 +2078,137 @@ public class Static {
 				if (var17 != null && var17.anIntArray77[var0] >= 100000) {
 					staticMethod36(27, "", var17.anIntArray77[var0] + " x " + staticMethod153(var3).aString31);
 				} else {
-					Game.staticEncryptedStream1.method471(59);
-					Game.staticEncryptedStream1.method351(var3);
+					Client.staticEncryptedStream1.method471(59);
+					Client.staticEncryptedStream1.method351(var3);
 				}
 
-				Game.staticInt241 = 0;
+				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
-				Game.staticInt228 = var0;
+				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 47) {
-				var8 = Game.staticPlayerArray1[var3];
+				var8 = Client.staticPlayerArray1[var3];
 				if (var8 != null) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(98);
-					Game.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.method369(var3);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(98);
+					Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.method369(var3);
 				}
 			}
 
 			if (var2 == 40) {
-				Game.staticEncryptedStream1.method471(167);
-				Game.staticEncryptedStream1.method369(var3);
-				Game.staticEncryptedStream1.writeInt(var1);
-				Game.staticEncryptedStream1.method352(var0);
-				Game.staticInt241 = 0;
+				Client.staticEncryptedStream1.method471(167);
+				Client.staticEncryptedStream1.method369(var3);
+				Client.staticEncryptedStream1.writeInt(var1);
+				Client.staticEncryptedStream1.method352(var0);
+				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
-				Game.staticInt228 = var0;
+				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 3) {
-				Game.staticInt238 = var6;
-				Game.staticInt237 = var7;
-				Game.staticInt239 = 2;
-				Game.staticInt297 = 0;
-				Game.staticInt296 = var0;
-				Game.staticInt240 = var1;
-				Game.staticEncryptedStream1.method471(221);
-				Game.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
-				Game.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
-				Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Game.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
+				Client.staticInt238 = var6;
+				Client.staticInt237 = var7;
+				Client.staticInt239 = 2;
+				Client.staticInt297 = 0;
+				Client.staticInt296 = var0;
+				Client.staticInt240 = var1;
+				Client.staticEncryptedStream1.method471(221);
+				Client.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
+				Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
+				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
 			}
 
 			if (var2 == 9) {
-				var16 = Game.staticNpcArray1[var3];
+				var16 = Client.staticNpcArray1[var3];
 				if (var16 != null) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(39);
-					Game.staticEncryptedStream1.method351(var3);
-					Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(39);
+					Client.staticEncryptedStream1.method351(var3);
+					Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
 			if (var2 == 38) {
 				staticMethod208();
 				var17 = staticMethod8(var1);
-				Game.staticInt258 = 1;
+				Client.staticInt258 = 1;
 				staticInt102 = var0;
 				GameObject.staticInt332 = var1;
 				staticInt126 = var3;
 				staticMethod73(var17);
-				Game.staticString32 = staticMethod118(16748608) + staticMethod153(var3).aString31
+				Client.staticString32 = staticMethod118(16748608) + staticMethod153(var3).aString31
 						+ staticMethod118(16777215);
-				if (Game.staticString32 == null) {
-					Game.staticString32 = "null";
+				if (Client.staticString32 == null) {
+					Client.staticString32 = "null";
 				}
 			} else {
 				if (var2 == 1) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(82);
-					Game.staticEncryptedStream1.method351(Class34.staticInt75 + var1);
-					Game.staticEncryptedStream1.method361(GameObject.staticInt332);
-					Game.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
-					Game.staticEncryptedStream1.method369(staticInt102);
-					Game.staticEncryptedStream1.writeShort(staticInt126);
-					Game.staticEncryptedStream1.method351(var3 >> 14 & 0x7fff);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(82);
+					Client.staticEncryptedStream1.method351(Class34.staticInt75 + var1);
+					Client.staticEncryptedStream1.method361(GameObject.staticInt332);
+					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
+					Client.staticEncryptedStream1.method369(staticInt102);
+					Client.staticEncryptedStream1.writeShort(staticInt126);
+					Client.staticEncryptedStream1.method351(var3 >> 14 & 0x7fff);
 				}
 
 				if (var2 == 50) {
-					var8 = Game.staticPlayerArray1[var3];
+					var8 = Client.staticPlayerArray1[var3];
 					if (var8 != null) {
-						Game.staticInt238 = var6;
-						Game.staticInt237 = var7;
-						Game.staticInt239 = 2;
-						Game.staticInt297 = 0;
-						Game.staticInt296 = var0;
-						Game.staticInt240 = var1;
-						Game.staticEncryptedStream1.method471(101);
-						Game.staticEncryptedStream1.method351(var3);
-						Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.staticInt238 = var6;
+						Client.staticInt237 = var7;
+						Client.staticInt239 = 2;
+						Client.staticInt297 = 0;
+						Client.staticInt296 = var0;
+						Client.staticInt240 = var1;
+						Client.staticEncryptedStream1.method471(101);
+						Client.staticEncryptedStream1.method351(var3);
+						Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
 				if (var2 == 34) {
-					Game.staticEncryptedStream1.method471(207);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.method369(var3);
-					Game.staticEncryptedStream1.writeShort(var0);
-					Game.staticInt241 = 0;
+					Client.staticEncryptedStream1.method471(207);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.method369(var3);
+					Client.staticEncryptedStream1.writeShort(var0);
+					Client.staticInt241 = 0;
 					Tile.staticWidget11 = staticMethod8(var1);
-					Game.staticInt228 = var0;
+					Client.staticInt228 = var0;
 				}
 
 				if (var2 == 6) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(219);
-					Game.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
-					Game.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
-					Game.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.writeShort(var3 >> 14 & 0x7fff);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(219);
+					Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
+					Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
+					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.writeShort(var3 >> 14 & 0x7fff);
 				}
 
 				if (var2 == 26) {
@@ -2216,69 +2216,69 @@ public class Static {
 				}
 
 				if (var2 == 5) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(119);
-					Game.staticEncryptedStream1.method369(NodeSub3.staticInt154 + var0);
-					Game.staticEncryptedStream1.method369(var1 + Class34.staticInt75);
-					Game.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.writeShort(var3 >> 14 & 0x7fff);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(119);
+					Client.staticEncryptedStream1.method369(NodeSub3.staticInt154 + var0);
+					Client.staticEncryptedStream1.method369(var1 + Class34.staticInt75);
+					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.writeShort(var3 >> 14 & 0x7fff);
 				}
 
 				if (var2 == 4) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(26);
-					Game.staticEncryptedStream1.writeShort(Class34.staticInt75 + var1);
-					Game.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
-					Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(26);
+					Client.staticEncryptedStream1.writeShort(Class34.staticInt75 + var1);
+					Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
+					Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
 				}
 
 				if (var2 == 19) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(93);
-					Game.staticEncryptedStream1.writeShort(NodeSub3.staticInt154 + var0);
-					Game.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.method352(var3);
-					Game.staticEncryptedStream1.writeShort(var1 + Class34.staticInt75);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(93);
+					Client.staticEncryptedStream1.writeShort(NodeSub3.staticInt154 + var0);
+					Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.method352(var3);
+					Client.staticEncryptedStream1.writeShort(var1 + Class34.staticInt75);
 				}
 
 				if (var2 == 43) {
-					Game.staticEncryptedStream1.method471(153);
-					Game.staticEncryptedStream1.writeShort(var0);
-					Game.staticEncryptedStream1.method369(var3);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticInt241 = 0;
+					Client.staticEncryptedStream1.method471(153);
+					Client.staticEncryptedStream1.writeShort(var0);
+					Client.staticEncryptedStream1.method369(var3);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticInt241 = 0;
 					Tile.staticWidget11 = staticMethod8(var1);
-					Game.staticInt228 = var0;
+					Client.staticInt228 = var0;
 				}
 
 				if (var2 == 1004) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticEncryptedStream1.method471(59);
-					Game.staticEncryptedStream1.method351(var3);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticEncryptedStream1.method471(59);
+					Client.staticEncryptedStream1.method351(var3);
 				}
 
 				if (var2 == 28) {
-					Game.staticEncryptedStream1.method471(62);
-					Game.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.method471(62);
+					Client.staticEncryptedStream1.writeInt(var1);
 					var17 = staticMethod8(var1);
 					if (var17.anIntArrayArray12 != null && var17.anIntArrayArray12[0][0] == 5) {
 						var191 = var17.anIntArrayArray12[0][1];
@@ -2288,74 +2288,74 @@ public class Static {
 				}
 
 				if (var2 == 7) {
-					var16 = Game.staticNpcArray1[var3];
+					var16 = Client.staticNpcArray1[var3];
 					if (var16 != null) {
-						Game.staticInt238 = var6;
-						Game.staticInt237 = var7;
-						Game.staticInt239 = 2;
-						Game.staticInt297 = 0;
-						Game.staticInt296 = var0;
-						Game.staticInt240 = var1;
-						Game.staticEncryptedStream1.method471(222);
-						Game.staticEncryptedStream1.method369(staticInt126);
-						Game.staticEncryptedStream1.method361(GameObject.staticInt332);
-						Game.staticEncryptedStream1.method351(staticInt102);
-						Game.staticEncryptedStream1.writeShort(var3);
-						Game.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.staticInt238 = var6;
+						Client.staticInt237 = var7;
+						Client.staticInt239 = 2;
+						Client.staticInt297 = 0;
+						Client.staticInt296 = var0;
+						Client.staticInt240 = var1;
+						Client.staticEncryptedStream1.method471(222);
+						Client.staticEncryptedStream1.method369(staticInt126);
+						Client.staticEncryptedStream1.method361(GameObject.staticInt332);
+						Client.staticEncryptedStream1.method351(staticInt102);
+						Client.staticEncryptedStream1.writeShort(var3);
+						Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
 				if (var2 == 18) {
-					Game.staticInt238 = var6;
-					Game.staticInt237 = var7;
-					Game.staticInt239 = 2;
-					Game.staticInt297 = 0;
-					Game.staticInt296 = var0;
-					Game.staticInt240 = var1;
-					Game.staticEncryptedStream1.method471(254);
-					Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Game.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
-					Game.staticEncryptedStream1.method351(NodeSub3.staticInt154 + var0);
-					Game.staticEncryptedStream1.method351(var3);
+					Client.staticInt238 = var6;
+					Client.staticInt237 = var7;
+					Client.staticInt239 = 2;
+					Client.staticInt297 = 0;
+					Client.staticInt296 = var0;
+					Client.staticInt240 = var1;
+					Client.staticEncryptedStream1.method471(254);
+					Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
+					Client.staticEncryptedStream1.method351(NodeSub3.staticInt154 + var0);
+					Client.staticEncryptedStream1.method351(var3);
 				}
 
 				if (var2 == 45) {
-					var8 = Game.staticPlayerArray1[var3];
+					var8 = Client.staticPlayerArray1[var3];
 					if (var8 != null) {
-						Game.staticInt238 = var6;
-						Game.staticInt237 = var7;
-						Game.staticInt239 = 2;
-						Game.staticInt297 = 0;
-						Game.staticInt296 = var0;
-						Game.staticInt240 = var1;
-						Game.staticEncryptedStream1.method471(160);
-						Game.staticEncryptedStream1.method369(var3);
-						Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.staticInt238 = var6;
+						Client.staticInt237 = var7;
+						Client.staticInt239 = 2;
+						Client.staticInt297 = 0;
+						Client.staticInt296 = var0;
+						Client.staticInt240 = var1;
+						Client.staticEncryptedStream1.method471(160);
+						Client.staticEncryptedStream1.method369(var3);
+						Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
 				if (var2 == 13) {
-					var16 = Game.staticNpcArray1[var3];
+					var16 = Client.staticNpcArray1[var3];
 					if (var16 != null) {
-						Game.staticInt238 = var6;
-						Game.staticInt237 = var7;
-						Game.staticInt239 = 2;
-						Game.staticInt297 = 0;
-						Game.staticInt296 = var0;
-						Game.staticInt240 = var1;
-						Game.staticEncryptedStream1.method471(110);
-						Game.staticEncryptedStream1.writeShort(var3);
-						Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.staticInt238 = var6;
+						Client.staticInt237 = var7;
+						Client.staticInt239 = 2;
+						Client.staticInt297 = 0;
+						Client.staticInt296 = var0;
+						Client.staticInt240 = var1;
+						Client.staticEncryptedStream1.method471(110);
+						Client.staticEncryptedStream1.writeShort(var3);
+						Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
-				if (Game.staticInt258 != 0) {
-					Game.staticInt258 = 0;
+				if (Client.staticInt258 != 0) {
+					Client.staticInt258 = 0;
 					staticMethod73(staticMethod8(GameObject.staticInt332));
 				}
 
-				if (Game.staticBool32 && Game.staticBool32) {
-					var17 = staticMethod32(Class3.staticInt19, Game.staticInt260);
+				if (Client.staticBool32 && Client.staticBool32) {
+					var17 = staticMethod32(Class3.staticInt19, Client.staticInt260);
 					if (var17 != null && var17.anObjectArray12 != null) {
 						NodeSub16 var223 = new NodeSub16();
 						var223.aWidget1 = var17;
@@ -2363,11 +2363,11 @@ public class Static {
 						staticMethod375(var223);
 					}
 
-					Game.staticBool32 = false;
+					Client.staticBool32 = false;
 					staticMethod73(var17);
 				}
 
-				if (Tile.staticWidget11 != null && Game.staticInt241 == 0) {
+				if (Tile.staticWidget11 != null && Client.staticInt241 == 0) {
 					staticMethod73(Tile.staticWidget11);
 				}
 			}
@@ -2519,10 +2519,10 @@ public class Static {
 			} else if (var0 == 1121) {
 				var5 = var4.anInt294;
 				int var8 = var4.anInt319;
-				Game.staticEncryptedStream1.method471(171);
-				Game.staticEncryptedStream1.method351(var8);
-				Game.staticEncryptedStream1.writeInt(var5);
-				Game.staticWidget6 = var4;
+				Client.staticEncryptedStream1.method471(171);
+				Client.staticEncryptedStream1.method351(var8);
+				Client.staticEncryptedStream1.writeInt(var5);
+				Client.staticWidget6 = var4;
 				staticMethod73(var4);
 				return 1;
 			} else if (var0 == 1122) {
@@ -2557,11 +2557,11 @@ public class Static {
 	static final void staticMethod69(int var0, int var1, int var2, int var3, Sprite var4, CacheableSub3 var5) {
 		int var6 = var2 * var2 + var3 * var3;
 		if (var6 > 4225 && var6 < 90000) {
-			int var11 = Game.staticInt221 + Game.staticInt209 & 0x7ff;
+			int var11 = Client.staticInt221 + Client.staticInt209 & 0x7ff;
 			int var13 = Rasterizer2DSub1.staticIntArray154[var11];
 			int var12 = Rasterizer2DSub1.staticIntArray159[var11];
-			var13 = var13 * 256 / (Game.staticInt211 + 256);
-			var12 = var12 * 256 / (256 + Game.staticInt211);
+			var13 = var13 * 256 / (Client.staticInt211 + 256);
+			var12 = var12 * 256 / (256 + Client.staticInt211);
 			int var14 = var12 * var2 + var3 * var13 >> 16;
 			int var15 = var3 * var12 - var13 * var2 >> 16;
 			double var9 = Math.atan2(var14, var15);
@@ -2662,7 +2662,7 @@ public class Static {
 			var0.anInt306 = var2 - var0.anInt351 - (var2 * var0.anInt303 >> 14);
 		}
 
-		if (Game.staticBool40 && var0.anInt296 == 0) {
+		if (Client.staticBool40 && var0.anInt296 == 0) {
 			if (var0.anInt341 < 0) {
 				var0.anInt341 = 0;
 			} else if (var0.anInt307 + var0.anInt341 > var1) {
@@ -2679,14 +2679,14 @@ public class Static {
 	}
 
 	static void staticMethod73(Widget var0) {
-		if (Game.staticInt285 == -var0.anInt359) {
-			Game.staticBoolArray8[var0.anInt292] = true;
+		if (Client.staticInt285 == -var0.anInt359) {
+			Client.staticBoolArray8[var0.anInt292] = true;
 		}
 
 	}
 
 	static final void staticMethod81(Actor var0) {
-		int var1 = var0.anInt625 - Game.staticInt166;
+		int var1 = var0.anInt625 - Client.staticInt166;
 		int var3 = var0.anInt626 * 64 + var0.anInt606 * 128;
 		int var2 = var0.anInt623 * 128 + var0.anInt626 * 64;
 		var0.anInt628 += (var3 - var0.anInt628) / var1;
@@ -2788,13 +2788,13 @@ public class Static {
 		Friend.staticScene1.method138();
 
 		for (int var0 = 0; var0 < 4; var0++) {
-			Game.staticClass38Array1[var0].method182();
+			Client.staticClass38Array1[var0].method182();
 		}
 
 		System.gc();
 		staticMethod108(2);
-		Game.staticInt249 = -1;
-		Game.staticBool38 = false;
+		Client.staticInt249 = -1;
+		Client.staticBool38 = false;
 		staticMethod7();
 		staticMethod396(10);
 	}
@@ -2811,7 +2811,7 @@ public class Static {
 
 	static final void staticMethod90() {
 		Scene.staticBool6 = false;
-		Game.staticBool27 = false;
+		Client.staticBool27 = false;
 	}
 
 	public static String staticMethod91(CharSequence var0) {
@@ -2853,54 +2853,54 @@ public class Static {
 
 		for (int var9 = 0; var9 < var0.length; var9++) {
 			Widget var10 = var0[var9];
-			if (var10 != null && (var1 == var10.anInt342 || var1 == -1412584499 && var10 == Game.staticWidget7)) {
+			if (var10 != null && (var1 == var10.anInt342 || var1 == -1412584499 && var10 == Client.staticWidget7)) {
 				int var13;
 				if (var8 == -1) {
-					Game.staticIntArray82[Game.staticInt162] = var10.anInt341 + var6;
-					Game.staticIntArray88[Game.staticInt162] = var7 + var10.anInt306;
-					Game.staticIntArray107[Game.staticInt162] = var10.anInt307;
-					Game.staticIntArray106[Game.staticInt162] = var10.anInt351;
-					var13 = ++Game.staticInt162 - 1;
+					Client.staticIntArray82[Client.staticInt162] = var10.anInt341 + var6;
+					Client.staticIntArray88[Client.staticInt162] = var7 + var10.anInt306;
+					Client.staticIntArray107[Client.staticInt162] = var10.anInt307;
+					Client.staticIntArray106[Client.staticInt162] = var10.anInt351;
+					var13 = ++Client.staticInt162 - 1;
 				} else {
 					var13 = var8;
 				}
 
 				var10.anInt292 = var13;
-				var10.anInt359 = -Game.staticInt166;
+				var10.anInt359 = -Client.staticInt166;
 				if (!var10.aBool42 || !staticMethod247(var10)) {
 					int var24;
 					if (var10.anInt298 > 0) {
 						var24 = var10.anInt298;
 						if (var24 == 324) {
-							if (Game.staticInt197 == -1) {
-								Game.staticInt197 = var10.anInt320;
-								Game.staticInt312 = var10.anInt349 * -1073985099;
+							if (Client.staticInt197 == -1) {
+								Client.staticInt197 = var10.anInt320;
+								Client.staticInt312 = var10.anInt349 * -1073985099;
 							}
 
-							if (Game.staticClass49_1.aBool16) {
-								var10.anInt320 = Game.staticInt197;
+							if (Client.staticClass49_1.aBool16) {
+								var10.anInt320 = Client.staticInt197;
 							} else {
-								var10.anInt320 = Game.staticInt312 * 1740315805;
+								var10.anInt320 = Client.staticInt312 * 1740315805;
 							}
 						} else if (var24 == 325) {
-							if (Game.staticInt197 == -1) {
-								Game.staticInt197 = var10.anInt320;
-								Game.staticInt312 = var10.anInt349 * -1073985099;
+							if (Client.staticInt197 == -1) {
+								Client.staticInt197 = var10.anInt320;
+								Client.staticInt312 = var10.anInt349 * -1073985099;
 							}
 
-							if (Game.staticClass49_1.aBool16) {
-								var10.anInt320 = Game.staticInt312 * 1740315805;
+							if (Client.staticClass49_1.aBool16) {
+								var10.anInt320 = Client.staticInt312 * 1740315805;
 							} else {
-								var10.anInt320 = Game.staticInt197;
+								var10.anInt320 = Client.staticInt197;
 							}
 						} else if (var24 == 327) {
 							var10.anInt325 = 150;
-							var10.anInt332 = (int) (Math.sin(Game.staticInt166 / 40.0D) * 256.0D) & 0x7ff;
+							var10.anInt332 = (int) (Math.sin(Client.staticInt166 / 40.0D) * 256.0D) & 0x7ff;
 							var10.anInt348 = 5;
 							var10.anInt295 = 0;
 						} else if (var24 == 328) {
 							var10.anInt325 = 150;
-							var10.anInt332 = (int) (Math.sin(Game.staticInt166 / 40.0D) * 256.0D) & 0x7ff;
+							var10.anInt332 = (int) (Math.sin(Client.staticInt166 / 40.0D) * 256.0D) & 0x7ff;
 							var10.anInt348 = 5;
 							var10.anInt295 = 1;
 						}
@@ -2911,7 +2911,7 @@ public class Static {
 					int var30 = var10.anInt317;
 					int var22;
 					int var29;
-					if (Game.staticWidget7 == var10) {
+					if (Client.staticWidget7 == var10) {
 						if (var1 != -1412584499 && !var10.aBool41) {
 							Class11.staticWidgetArray1 = var0;
 							staticInt26 = var6;
@@ -2919,25 +2919,25 @@ public class Static {
 							continue;
 						}
 
-						if (Game.staticBool25 && Game.staticBool35) {
+						if (Client.staticBool25 && Client.staticBool35) {
 							var29 = MouseHandler.staticInt94;
 							var22 = MouseHandler.staticInt88;
-							var29 -= Game.staticInt287;
-							var22 -= Game.staticInt261;
-							if (var29 < Game.staticInt183) {
-								var29 = Game.staticInt183;
+							var29 -= Client.staticInt287;
+							var22 -= Client.staticInt261;
+							if (var29 < Client.staticInt183) {
+								var29 = Client.staticInt183;
 							}
 
-							if (var10.anInt307 + var29 > Game.staticInt183 + Game.staticWidget8.anInt307) {
-								var29 = Game.staticWidget8.anInt307 + Game.staticInt183 - var10.anInt307;
+							if (var10.anInt307 + var29 > Client.staticInt183 + Client.staticWidget8.anInt307) {
+								var29 = Client.staticWidget8.anInt307 + Client.staticInt183 - var10.anInt307;
 							}
 
-							if (var22 < Game.staticInt313) {
-								var22 = Game.staticInt313;
+							if (var22 < Client.staticInt313) {
+								var22 = Client.staticInt313;
 							}
 
-							if (var22 + var10.anInt351 > Game.staticInt313 + Game.staticWidget8.anInt351) {
-								var22 = Game.staticInt313 + Game.staticWidget8.anInt351 - var10.anInt351;
+							if (var22 + var10.anInt351 > Client.staticInt313 + Client.staticWidget8.anInt351) {
+								var22 = Client.staticInt313 + Client.staticWidget8.anInt351 - var10.anInt351;
 							}
 
 							var24 = var29;
@@ -3008,7 +3008,7 @@ public class Static {
 						boolean var60;
 						if (var10.anInt298 != 0) {
 							if (var10.anInt298 == 1336) {
-								if (Game.staticBool23) {
+								if (Client.staticBool23) {
 									var18 += 15;
 									Class59.staticRasterizer2DSub2Sub1_2.method618("Fps:" + GameShell.staticInt107,
 											var10.anInt307 + var24, var18, 16776960, -1);
@@ -3016,11 +3016,11 @@ public class Static {
 									Runtime var511 = Runtime.getRuntime();
 									var23 = (int) ((var511.totalMemory() - var511.freeMemory()) / 1024L);
 									var16 = 16776960;
-									if (var23 > '\u8000' && Game.staticBool27) {
+									if (var23 > '\u8000' && Client.staticBool27) {
 										var16 = 16711680;
 									}
 
-									if (var23 > 65536 && !Game.staticBool27) {
+									if (var23 > 65536 && !Client.staticBool27) {
 										var16 = 16711680;
 									}
 
@@ -3033,19 +3033,19 @@ public class Static {
 
 							int[] var55;
 							if (var10.anInt298 == 1337) {
-								Game.staticInt256 = var24;
-								Game.staticInt259 = var18;
+								Client.staticInt256 = var24;
+								Client.staticInt259 = var18;
 								var16 = var10.anInt307;
 								var25 = var10.anInt351;
-								++Game.staticInt292;
+								++Client.staticInt292;
 								staticMethod312(Class59.staticClass59_1);
 								var45 = false;
-								if (Game.staticInt229 >= 0) {
+								if (Client.staticInt229 >= 0) {
 									var42 = staticInt24;
 									var55 = staticIntArray7;
 
 									for (var41 = 0; var41 < var42; var41++) {
-										if (Game.staticInt229 == var55[var41]) {
+										if (Client.staticInt229 == var55[var41]) {
 											var45 = true;
 											break;
 										}
@@ -3062,27 +3062,27 @@ public class Static {
 								staticMethod12();
 								staticMethod22();
 								staticMethod31(var24, var18, var16, var25, true);
-								var20 = Game.staticInt304;
-								var23 = Game.staticInt254;
-								var16 = Game.staticInt305;
-								var25 = Game.staticInt306;
+								var20 = Client.staticInt304;
+								var23 = Client.staticInt254;
+								var16 = Client.staticInt305;
+								var25 = Client.staticInt306;
 								staticMethod416(var20, var23, var20 + var16, var25 + var23);
 								staticMethod449();
-								if (!Game.staticBool28) {
-									var42 = Game.staticInt220;
-									if (Game.staticInt277 / 256 > var42) {
-										var42 = Game.staticInt277 / 256;
+								if (!Client.staticBool28) {
+									var42 = Client.staticInt220;
+									if (Client.staticInt277 / 256 > var42) {
+										var42 = Client.staticInt277 / 256;
 									}
 
-									if (Game.staticBoolArray7[4] && Game.staticIntArray119[4] + 128 > var42) {
-										var42 = 128 + Game.staticIntArray119[4];
+									if (Client.staticBoolArray7[4] && Client.staticIntArray119[4] + 128 > var42) {
+										var42 = 128 + Client.staticIntArray119[4];
 									}
 
-									var51 = Game.staticInt206 + Game.staticInt221 & 0x7ff;
+									var51 = Client.staticInt206 + Client.staticInt221 & 0x7ff;
 									var41 = GraphicsBufferSub1.staticInt316;
 									var11 = staticMethod240(AbstractClass2Sub1.staticPlayer1.anInt628,
 											AbstractClass2Sub1.staticPlayer1.anInt591, NodeSub4.staticInt155)
-											- Game.staticInt225;
+											- Client.staticInt225;
 									var39 = Class4.staticInt21;
 									var33 = var42 * 3 + 600;
 									var28 = 2048 - var42 & 0x7ff;
@@ -3115,7 +3115,7 @@ public class Static {
 									staticInt87 = var51;
 								}
 
-								if (!Game.staticBool28) {
+								if (!Client.staticBool28) {
 									var42 = staticMethod234();
 								} else {
 									if (staticClass6_1.aBool3) {
@@ -3142,12 +3142,12 @@ public class Static {
 								var33 = staticInt87;
 
 								for (var28 = 0; var28 < 5; var28++) {
-									if (Game.staticBoolArray7[var28]) {
-										var26 = (int) (Math.random() * (1 + Game.staticIntArray118[var28] * 2)
-												- Game.staticIntArray118[var28]
-												+ Math.sin(Game.staticIntArray120[var28]
-														* (Game.staticIntArray83[var28] / 100.0D))
-														* Game.staticIntArray119[var28]);
+									if (Client.staticBoolArray7[var28]) {
+										var26 = (int) (Math.random() * (1 + Client.staticIntArray118[var28] * 2)
+												- Client.staticIntArray118[var28]
+												+ Math.sin(Client.staticIntArray120[var28]
+														* (Client.staticIntArray83[var28] / 100.0D))
+														* Client.staticIntArray119[var28]);
 										if (var28 == 0) {
 											Class20.staticInt36 += var26;
 										}
@@ -3199,32 +3199,32 @@ public class Static {
 								staticMethod418(var20, var23, var16, var25, 0);
 								staticMethod17();
 								var34 = Rasterizer2DSub1.staticInt342;
-								Rasterizer2DSub1.staticInt342 = Game.staticInt307;
+								Rasterizer2DSub1.staticInt342 = Client.staticInt307;
 								Friend.staticScene1.method124(Class20.staticInt36, staticInt125,
 										NodeSub3.staticInt153, NodeSub19.staticInt318, staticInt87, var42);
 								Rasterizer2DSub1.staticInt342 = var34;
 								staticMethod17();
 								Friend.staticScene1.method104();
 								staticMethod143(var20, var23, var16, var25);
-								if (Game.staticInt255 == 2) {
-									rasterize((Game.staticInt174 - NodeSub3.staticInt154 << 7) + Game.staticInt177,
-											Game.staticInt178 + (Game.staticInt175 - Class34.staticInt75 << 7),
-											Game.staticInt176 * 2);
-									if (Game.staticInt189 > -1 && Game.staticInt166 % 20 < 10) {
-										Class59.staticSpriteArray6[0].method637(Game.staticInt189 + var20 - 12,
-												Game.staticInt180 + var23 - 28);
+								if (Client.staticInt255 == 2) {
+									rasterize((Client.staticInt174 - NodeSub3.staticInt154 << 7) + Client.staticInt177,
+											Client.staticInt178 + (Client.staticInt175 - Class34.staticInt75 << 7),
+											Client.staticInt176 * 2);
+									if (Client.staticInt189 > -1 && Client.staticInt166 % 20 < 10) {
+										Class59.staticSpriteArray6[0].method637(Client.staticInt189 + var20 - 12,
+												Client.staticInt180 + var23 - 28);
 									}
 								}
 
-								((Class11) Rasterizer2DSub1.staticInterface2_1).method36(Game.staticInt171);
-								if (Game.staticInt239 == 1) {
-									Game.staticSpriteArray8[Game.staticInt297 / 100].method637(Game.staticInt238 - 8,
-											Game.staticInt237 - 8);
+								((Class11) Rasterizer2DSub1.staticInterface2_1).method36(Client.staticInt171);
+								if (Client.staticInt239 == 1) {
+									Client.staticSpriteArray8[Client.staticInt297 / 100].method637(Client.staticInt238 - 8,
+											Client.staticInt237 - 8);
 								}
 
-								if (Game.staticInt239 == 2) {
-									Game.staticSpriteArray8[4 + Game.staticInt297 / 100]
-											.method637(Game.staticInt238 - 8, Game.staticInt237 - 8);
+								if (Client.staticInt239 == 2) {
+									Client.staticSpriteArray8[4 + Client.staticInt297 / 100]
+											.method637(Client.staticInt238 - 8, Client.staticInt237 - 8);
 								}
 
 								staticMethod433();
@@ -3233,16 +3233,16 @@ public class Static {
 								NodeSub3.staticInt153 = var11;
 								NodeSub19.staticInt318 = var39;
 								staticInt87 = var33;
-								if (Game.staticBool21 && staticMethod213(true, false) == 0) {
-									Game.staticBool21 = false;
+								if (Client.staticBool21 && staticMethod213(true, false) == 0) {
+									Client.staticBool21 = false;
 								}
 
-								if (Game.staticBool21) {
+								if (Client.staticBool21) {
 									staticMethod418(var20, var23, var16, var25, 0);
 									staticMethod337("Loading - please wait.", false);
 								}
 
-								Game.staticBoolArray8[var10.anInt292] = true;
+								Client.staticBoolArray8[var10.anInt292] = true;
 								staticMethod416(var2, var3, var4, var5);
 								continue;
 							}
@@ -3252,20 +3252,20 @@ public class Static {
 								CacheableSub3 var47 = var10.method389(false);
 								if (var47 != null) {
 									staticMethod416(var24, var18, var47.anInt426 + var24, var18 + var47.anInt427);
-									if (Game.staticInt298 != 2 && Game.staticInt298 != 5) {
-										var23 = Game.staticInt209 + Game.staticInt221 & 0x7ff;
+									if (Client.staticInt298 != 2 && Client.staticInt298 != 5) {
+										var23 = Client.staticInt209 + Client.staticInt221 & 0x7ff;
 										var16 = AbstractClass2Sub1.staticPlayer1.anInt628 / 32 + 48;
 										var25 = 464 - AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
 										Actor.staticSprite5.method642(var24, var18, var47.anInt426, var47.anInt427,
-												var16, var25, var23, Game.staticInt211 + 256, var47.anIntArray101,
+												var16, var25, var23, Client.staticInt211 + 256, var47.anIntArray101,
 												var47.anIntArray102);
 
-										for (var46 = 0; var46 < Game.staticInt311; var46++) {
-											var42 = 2 + Game.staticIntArray113[var46] * 4
+										for (var46 = 0; var46 < Client.staticInt311; var46++) {
+											var42 = 2 + Client.staticIntArray113[var46] * 4
 													- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
-											var51 = 2 + Game.staticIntArray103[var46] * 4
+											var51 = 2 + Client.staticIntArray103[var46] * 4
 													- AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
-											staticMethod116(var24, var18, var42, var51, Game.staticSpriteArray9[var46],
+											staticMethod116(var24, var18, var42, var51, Client.staticSpriteArray9[var46],
 													var47);
 										}
 
@@ -3273,8 +3273,8 @@ public class Static {
 
 										while (true) {
 											if (var46 >= 104) {
-												for (var46 = 0; var46 < Game.staticInt186; var46++) {
-													Npc var54 = Game.staticNpcArray1[Game.staticIntArray121[var46]];
+												for (var46 = 0; var46 < Client.staticInt186; var46++) {
+													Npc var54 = Client.staticNpcArray1[Client.staticIntArray121[var46]];
 													if (var54 != null && var54.method565()) {
 														NpcDefinition var57 = var54.aNpcDef1;
 														if (var57 != null && var57.anIntArray116 != null) {
@@ -3297,7 +3297,7 @@ public class Static {
 
 												Player var631;
 												for (var51 = 0; var51 < var46; var51++) {
-													var631 = Game.staticPlayerArray1[var55[var51]];
+													var631 = Client.staticPlayerArray1[var55[var51]];
 													if (var631 != null && var631.method565() && !var631.aBool81
 															&& AbstractClass2Sub1.staticPlayer1 != var631) {
 														var11 = var631.anInt628 / 32
@@ -3342,10 +3342,10 @@ public class Static {
 													}
 												}
 
-												if (Game.staticInt255 != 0 && Game.staticInt166 % 20 < 10) {
-													if (Game.staticInt255 == 1 && Game.staticInt172 >= 0
-															&& Game.staticInt172 < Game.staticNpcArray1.length) {
-														Npc var64 = Game.staticNpcArray1[Game.staticInt172];
+												if (Client.staticInt255 != 0 && Client.staticInt166 % 20 < 10) {
+													if (Client.staticInt255 == 1 && Client.staticInt172 >= 0
+															&& Client.staticInt172 < Client.staticNpcArray1.length) {
+														Npc var64 = Client.staticNpcArray1[Client.staticInt172];
 														if (var64 != null) {
 															var41 = var64.anInt628 / 32
 																	- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
@@ -3356,18 +3356,18 @@ public class Static {
 														}
 													}
 
-													if (Game.staticInt255 == 2) {
-														var51 = Game.staticInt174 * 4 - NodeSub3.staticInt154 * 4 + 2
+													if (Client.staticInt255 == 2) {
+														var51 = Client.staticInt174 * 4 - NodeSub3.staticInt154 * 4 + 2
 																- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
-														var41 = Game.staticInt175 * 4 - Class34.staticInt75 * 4 + 2
+														var41 = Client.staticInt175 * 4 - Class34.staticInt75 * 4 + 2
 																- AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
 														staticMethod69(var24, var18, var51, var41,
 																staticSpriteArray2[1], var47);
 													}
 
-													if (Game.staticInt255 == 10 && Game.staticInt193 >= 0
-															&& Game.staticInt193 < Game.staticPlayerArray1.length) {
-														var631 = Game.staticPlayerArray1[Game.staticInt193];
+													if (Client.staticInt255 == 10 && Client.staticInt193 >= 0
+															&& Client.staticInt193 < Client.staticPlayerArray1.length) {
+														var631 = Client.staticPlayerArray1[Client.staticInt193];
 														if (var631 != null) {
 															var41 = var631.anInt628 / 32
 																	- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
@@ -3379,10 +3379,10 @@ public class Static {
 													}
 												}
 
-												if (Game.staticInt296 != 0) {
-													var51 = 2 + Game.staticInt296 * 4
+												if (Client.staticInt296 != 0) {
+													var51 = 2 + Client.staticInt296 * 4
 															- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
-													var41 = Game.staticInt240 * 4 + 2
+													var41 = Client.staticInt240 * 4 + 2
 															- AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
 													staticMethod116(var24, var18, var51, var41,
 															staticSpriteArray2[0], var47);
@@ -3396,7 +3396,7 @@ public class Static {
 											}
 
 											for (var42 = 0; var42 < 104; var42++) {
-												Class39 var521 = Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var46][var42];
+												Class39 var521 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var46][var42];
 												if (var521 != null) {
 													var41 = var46 * 4 + 2
 															- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
@@ -3413,7 +3413,7 @@ public class Static {
 										staticMethod421(var24, var18, 0, var47.anIntArray101, var47.anIntArray102);
 									}
 
-									Game.staticBoolArray6[var13] = true;
+									Client.staticBoolArray6[var13] = true;
 								}
 
 								staticMethod416(var2, var3, var4, var5);
@@ -3449,7 +3449,7 @@ public class Static {
 										var24 - var10.anInt335, var18 - var10.anInt312, var13);
 							}
 
-							NodeSub18 var14 = (NodeSub18) Game.staticHashTable5.method149(var10.anInt294);
+							NodeSub18 var14 = (NodeSub18) Client.staticHashTable5.method149(var10.anInt294);
 							if (var14 != null) {
 								staticMethod226(var14.anInt384, var29, var22, var31, var32, var24, var18, var13);
 							}
@@ -3458,7 +3458,7 @@ public class Static {
 							staticMethod449();
 						}
 
-						if (Game.staticBool36 || Game.staticBoolArray9[var13] || Game.staticInt286 > 1) {
+						if (Client.staticBool36 || Client.staticBoolArray9[var13] || Client.staticInt286 > 1) {
 							if (var10.anInt296 == 0 && !var10.aBool42 && var10.anInt361 > var10.anInt351) {
 								staticMethod136(var24 + var10.anInt307, var18, var10.anInt312, var10.anInt351,
 										var10.anInt361);
@@ -3492,9 +3492,9 @@ public class Static {
 												if (32 + var25 > var2 && var25 < var4 && 32 + var46 > var3
 														&& var46 < var5
 														|| NodeSub3.staticWidget5 == var10
-																&& Game.staticInt161 == var20) {
+																&& Client.staticInt161 == var20) {
 													Sprite var53;
-													if (Game.staticInt258 == 1 && var20 == staticInt102
+													if (Client.staticInt258 == 1 && var20 == staticInt102
 															&& var10.anInt294 == GameObject.staticInt332) {
 														var53 = staticMethod140(var41, var10.anIntArray77[var20], 2, 0,
 																2, false);
@@ -3505,9 +3505,9 @@ public class Static {
 
 													if (var53 != null) {
 														if (var10 == NodeSub3.staticWidget5
-																&& var20 == Game.staticInt161) {
-															var42 = MouseHandler.staticInt94 - Game.staticInt242;
-															var51 = MouseHandler.staticInt88 - Game.staticInt243;
+																&& var20 == Client.staticInt161) {
+															var42 = MouseHandler.staticInt94 - Client.staticInt242;
+															var51 = MouseHandler.staticInt88 - Client.staticInt243;
 															if (var42 < 5 && var42 > -5) {
 																var42 = 0;
 															}
@@ -3516,7 +3516,7 @@ public class Static {
 																var51 = 0;
 															}
 
-															if (Game.staticInt244 < 5) {
+															if (Client.staticInt244 < 5) {
 																var42 = 0;
 																var51 = 0;
 															}
@@ -3526,12 +3526,12 @@ public class Static {
 																Widget var481 = var0[var1 & 0xffff];
 																if (var46 + var51 < Rasterizer2D.staticInt328
 																		&& var481.anInt312 > 0) {
-																	var33 = Game.staticInt171
+																	var33 = Client.staticInt171
 																			* (Rasterizer2D.staticInt328 - var46
 																					- var51)
 																			/ 3;
-																	if (var33 > Game.staticInt171 * 10) {
-																		var33 = Game.staticInt171 * 10;
+																	if (var33 > Client.staticInt171 * 10) {
+																		var33 = Client.staticInt171 * 10;
 																	}
 
 																	if (var33 > var481.anInt312) {
@@ -3539,7 +3539,7 @@ public class Static {
 																	}
 
 																	var481.anInt312 -= var33;
-																	Game.staticInt243 += var33;
+																	Client.staticInt243 += var33;
 																	staticMethod73(var481);
 																}
 
@@ -3548,9 +3548,9 @@ public class Static {
 																				- var481.anInt351) {
 																	var33 = (32 + var46 + var51
 																			- Rasterizer2D.staticInt325)
-																			* Game.staticInt171 / 3;
-																	if (var33 > Game.staticInt171 * 10) {
-																		var33 = Game.staticInt171 * 10;
+																			* Client.staticInt171 / 3;
+																	if (var33 > Client.staticInt171 * 10) {
+																		var33 = Client.staticInt171 * 10;
 																	}
 
 																	if (var33 > var481.anInt361 - var481.anInt351
@@ -3560,12 +3560,12 @@ public class Static {
 																	}
 
 																	var481.anInt312 += var33;
-																	Game.staticInt243 -= var33;
+																	Client.staticInt243 -= var33;
 																	staticMethod73(var481);
 																}
 															}
 														} else if (Tile.staticWidget11 == var10
-																&& Game.staticInt228 == var20) {
+																&& Client.staticInt228 == var20) {
 															var53.method646(var25, var46, 128);
 														} else {
 															var53.method637(var25, var46);
@@ -3702,7 +3702,7 @@ public class Static {
 												}
 											}
 
-											if (var10 == Game.staticWidget6) {
+											if (var10 == Client.staticWidget6) {
 												var62 = "Please wait...";
 												var23 = var10.anInt360;
 											}
@@ -3804,7 +3804,7 @@ public class Static {
 												}
 											} else if (var10.anInt348 == 5) {
 												if (var10.anInt295 == 0) {
-													var66 = Game.staticClass49_1.method248((AnimDef) null, -1,
+													var66 = Client.staticClass49_1.method248((AnimDef) null, -1,
 															(AnimDef) null, -1);
 												} else {
 													var66 = AbstractClass2Sub1.staticPlayer1.method434();
@@ -3923,7 +3923,7 @@ public class Static {
 											}
 
 											if (var10.anInt296 == 8 && FloorUnderlayDef.staticWidget12 == var10
-													&& Game.staticInt257 == Game.staticInt185) {
+													&& Client.staticInt257 == Client.staticInt185) {
 												var20 = 0;
 												var23 = 0;
 												Rasterizer2DSub2Sub1 var58 = Class59.staticRasterizer2DSub2Sub1_2;
@@ -4059,7 +4059,7 @@ public class Static {
 			Widget var9 = var0[var8];
 			if (var9 != null
 					&& (!var9.aBool42 || var9.anInt296 == 0 || var9.aBool31 || staticMethod192(var9) != 0
-							|| var9 == Game.staticWidget8 || var9.anInt298 == 1338)
+							|| var9 == Client.staticWidget8 || var9.anInt298 == 1338)
 					&& var1 == var9.anInt342 && (!var9.aBool42 || !staticMethod247(var9))) {
 				int var11 = var9.anInt341 + var6;
 				int var14 = var7 + var9.anInt306;
@@ -4106,10 +4106,10 @@ public class Static {
 					var17 = var18 < var5 ? var18 : var5;
 				}
 
-				if (Game.staticWidget7 == var9) {
-					Game.staticBool29 = true;
-					Game.staticInt272 = var11;
-					Game.staticInt290 = var14;
+				if (Client.staticWidget7 == var9) {
+					Client.staticBool29 = true;
+					Client.staticInt272 = var11;
+					Client.staticInt290 = var14;
 				}
 
 				if (!var9.aBool42 || var21 < var10 && var22 < var17) {
@@ -4121,7 +4121,7 @@ public class Static {
 					}
 
 					if (var9.anInt298 == 1337) {
-						if (!Game.staticBool21 && !Game.staticBool30 && var13 >= var21 && var18 >= var22
+						if (!Client.staticBool21 && !Client.staticBool30 && var13 >= var21 && var18 >= var22
 								&& var13 < var10 && var18 < var17) {
 							staticMethod249(var13, var18, var21, var22);
 						}
@@ -4129,7 +4129,7 @@ public class Static {
 						int var23;
 						int var33;
 						if (var9.anInt298 == 1338) {
-							if ((Game.staticInt298 == 0 || Game.staticInt298 == 3) && (MouseHandler.staticInt98 == 1
+							if ((Client.staticInt298 == 0 || Client.staticInt298 == 3) && (MouseHandler.staticInt98 == 1
 									|| !staticBool18 && MouseHandler.staticInt98 == 4)) {
 								CacheableSub3 var301 = var9.method389(true);
 								if (var301 != null) {
@@ -4138,40 +4138,40 @@ public class Static {
 									if (var301.method470(var20, var331)) {
 										var20 -= var301.anInt426 / 2;
 										var331 -= var301.anInt427 / 2;
-										var33 = Game.staticInt221 + Game.staticInt209 & 0x7ff;
+										var33 = Client.staticInt221 + Client.staticInt209 & 0x7ff;
 										var16 = Rasterizer2DSub1.staticIntArray154[var33];
 										var23 = Rasterizer2DSub1.staticIntArray159[var33];
-										var16 = (256 + Game.staticInt211) * var16 >> 8;
-										var23 = (Game.staticInt211 + 256) * var23 >> 8;
+										var16 = (256 + Client.staticInt211) * var16 >> 8;
+										var23 = (Client.staticInt211 + 256) * var23 >> 8;
 										int var32 = var23 * var20 + var16 * var331 >> 11;
 										int var34 = var23 * var331 - var20 * var16 >> 11;
 										int var361 = var32 + AbstractClass2Sub1.staticPlayer1.anInt628 >> 7;
 										int var35 = AbstractClass2Sub1.staticPlayer1.anInt591 - var34 >> 7;
-										Game.staticEncryptedStream1.method471(95);
-										Game.staticEncryptedStream1.writeByte(18);
-										Game.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82]
+										Client.staticEncryptedStream1.method471(95);
+										Client.staticEncryptedStream1.writeByte(18);
+										Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82]
 												? KeyboardHandler.staticBoolArray2[81] ? 2 : 1 : 0);
-										Game.staticEncryptedStream1.method369(var35 + Class34.staticInt75);
-										Game.staticEncryptedStream1.method369(var361 + NodeSub3.staticInt154);
-										Game.staticEncryptedStream1.writeByte(var20);
-										Game.staticEncryptedStream1.writeByte(var331);
-										Game.staticEncryptedStream1.writeShort(Game.staticInt221);
-										Game.staticEncryptedStream1.writeByte(57);
-										Game.staticEncryptedStream1.writeByte(Game.staticInt209);
-										Game.staticEncryptedStream1.writeByte(Game.staticInt211);
-										Game.staticEncryptedStream1.writeByte(89);
-										Game.staticEncryptedStream1
+										Client.staticEncryptedStream1.method369(var35 + Class34.staticInt75);
+										Client.staticEncryptedStream1.method369(var361 + NodeSub3.staticInt154);
+										Client.staticEncryptedStream1.writeByte(var20);
+										Client.staticEncryptedStream1.writeByte(var331);
+										Client.staticEncryptedStream1.writeShort(Client.staticInt221);
+										Client.staticEncryptedStream1.writeByte(57);
+										Client.staticEncryptedStream1.writeByte(Client.staticInt209);
+										Client.staticEncryptedStream1.writeByte(Client.staticInt211);
+										Client.staticEncryptedStream1.writeByte(89);
+										Client.staticEncryptedStream1
 												.writeShort(AbstractClass2Sub1.staticPlayer1.anInt628);
-										Game.staticEncryptedStream1
+										Client.staticEncryptedStream1
 												.writeShort(AbstractClass2Sub1.staticPlayer1.anInt591);
-										Game.staticEncryptedStream1.writeByte(63);
-										Game.staticInt296 = var361;
-										Game.staticInt240 = var35;
+										Client.staticEncryptedStream1.writeByte(63);
+										Client.staticInt296 = var361;
+										Client.staticInt240 = var35;
 									}
 								}
 							}
 						} else {
-							if (!Game.staticBool30 && var13 >= var21 && var18 >= var22 && var13 < var10
+							if (!Client.staticBool30 && var13 >= var21 && var18 >= var22 && var13 < var10
 									&& var18 < var17) {
 								staticMethod260(var9, var13 - var11, var18 - var14);
 							}
@@ -4188,14 +4188,14 @@ public class Static {
 											var11 - var9.anInt335, var14 - var9.anInt312);
 								}
 
-								NodeSub18 var29 = (NodeSub18) Game.staticHashTable5.method149(var9.anInt294);
+								NodeSub18 var29 = (NodeSub18) Client.staticHashTable5.method149(var9.anInt294);
 								if (var29 != null) {
 									if (var29.anInt383 == 0 && MouseHandler.staticInt94 >= var21
 											&& MouseHandler.staticInt88 >= var22 && MouseHandler.staticInt94 < var10
-											&& MouseHandler.staticInt88 < var17 && !Game.staticBool30
-											&& !Game.staticBool40) {
-										for (NodeSub16 var30 = (NodeSub16) Game.staticClass39_8
-												.method195(); var30 != null; var30 = (NodeSub16) Game.staticClass39_8
+											&& MouseHandler.staticInt88 < var17 && !Client.staticBool30
+											&& !Client.staticBool40) {
+										for (NodeSub16 var30 = (NodeSub16) Client.staticClass39_8
+												.method195(); var30 != null; var30 = (NodeSub16) Client.staticClass39_8
 														.method193()) {
 											if (var30.aBool30) {
 												var30.method174();
@@ -4204,18 +4204,18 @@ public class Static {
 										}
 
 										if (Class2.staticInt4 == 0) {
-											Game.staticWidget7 = null;
-											Game.staticWidget8 = null;
+											Client.staticWidget7 = null;
+											Client.staticWidget8 = null;
 										}
 
-										if (!Game.staticBool30) {
-											Game.staticInt252 = 0;
-											Game.staticInt217 = -1;
-											Game.staticBool30 = false;
-											Game.staticStringArray9[0] = "Cancel";
-											Game.staticStringArray8[0] = "";
-											Game.staticIntArray98[0] = 1006;
-											Game.staticInt252 = 1;
+										if (!Client.staticBool30) {
+											Client.staticInt252 = 0;
+											Client.staticInt217 = -1;
+											Client.staticBool30 = false;
+											Client.staticStringArray9[0] = "Cancel";
+											Client.staticStringArray8[0] = "";
+											Client.staticIntArray98[0] = 1006;
+											Client.staticInt252 = 1;
 										}
 									}
 
@@ -4233,8 +4233,8 @@ public class Static {
 									if (var9.aBool38 && MouseHandler.staticInt94 >= var21
 											&& MouseHandler.staticInt88 >= var22 && MouseHandler.staticInt94 < var10
 											&& MouseHandler.staticInt88 < var17) {
-										for (var291 = (NodeSub16) Game.staticClass39_8
-												.method195(); var291 != null; var291 = (NodeSub16) Game.staticClass39_8
+										for (var291 = (NodeSub16) Client.staticClass39_8
+												.method195(); var291 != null; var291 = (NodeSub16) Client.staticClass39_8
 														.method193()) {
 											if (var291.aBool30
 													&& var291.aWidget1.anObjectArray30 == var291.anObjectArray2) {
@@ -4244,8 +4244,8 @@ public class Static {
 									}
 								} else if (MouseHandler.staticInt94 >= var21 && MouseHandler.staticInt88 >= var22
 										&& MouseHandler.staticInt94 < var10 && MouseHandler.staticInt88 < var17) {
-									for (var291 = (NodeSub16) Game.staticClass39_8
-											.method195(); var291 != null; var291 = (NodeSub16) Game.staticClass39_8
+									for (var291 = (NodeSub16) Client.staticClass39_8
+											.method195(); var291 != null; var291 = (NodeSub16) Client.staticClass39_8
 													.method193()) {
 										if (var291.aBool30) {
 											var291.method174();
@@ -4254,15 +4254,15 @@ public class Static {
 									}
 
 									if (Class2.staticInt4 == 0) {
-										Game.staticWidget7 = null;
-										Game.staticWidget8 = null;
+										Client.staticWidget7 = null;
+										Client.staticWidget8 = null;
 									}
 
-									if (!Game.staticBool30) {
-										Game.staticStringArray9[0] = "Cancel";
-										Game.staticStringArray8[0] = "";
-										Game.staticIntArray98[0] = 1006;
-										Game.staticInt252 = 1;
+									if (!Client.staticBool30) {
+										Client.staticStringArray9[0] = "Cancel";
+										Client.staticStringArray8[0] = "";
+										Client.staticIntArray98[0] = 1006;
+										Client.staticInt252 = 1;
 									}
 								}
 
@@ -4293,30 +4293,30 @@ public class Static {
 											MouseHandler.staticInt100 - var14);
 								}
 
-								if (Game.staticWidget7 != null && Game.staticWidget7 != var9 && var311
+								if (Client.staticWidget7 != null && Client.staticWidget7 != var9 && var311
 										&& staticMethod251(staticMethod192(var9))) {
-									Game.staticWidget9 = var9;
+									Client.staticWidget9 = var9;
 								}
 
-								if (var9 == Game.staticWidget8) {
-									Game.staticBool35 = true;
-									Game.staticInt183 = var11;
-									Game.staticInt313 = var14;
+								if (var9 == Client.staticWidget8) {
+									Client.staticBool35 = true;
+									Client.staticInt183 = var11;
+									Client.staticInt313 = var14;
 								}
 
 								if (var9.aBool31) {
 									NodeSub16 var15;
-									if (var311 && Game.staticInt284 != 0 && var9.anObjectArray30 != null) {
+									if (var311 && Client.staticInt284 != 0 && var9.anObjectArray30 != null) {
 										var15 = new NodeSub16();
 										var15.aBool30 = true;
 										var15.aWidget1 = var9;
-										var15.anInt285 = Game.staticInt284;
+										var15.anInt285 = Client.staticInt284;
 										var15.anObjectArray2 = var9.anObjectArray30;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									if (Game.staticWidget7 != null || NodeSub3.staticWidget5 != null
-											|| Game.staticBool30) {
+									if (Client.staticWidget7 != null || NodeSub3.staticWidget5 != null
+											|| Client.staticBool30) {
 										var19 = false;
 										var36 = false;
 										var311 = false;
@@ -4331,7 +4331,7 @@ public class Static {
 											var15.anInt284 = MouseHandler.staticInt99 - var11;
 											var15.anInt285 = MouseHandler.staticInt100 - var14;
 											var15.anObjectArray2 = var9.anObjectArray5;
-											Game.staticClass39_8.method198(var15);
+											Client.staticClass39_8.method198(var15);
 										}
 									}
 
@@ -4342,7 +4342,7 @@ public class Static {
 										var15.anInt284 = MouseHandler.staticInt94 - var11;
 										var15.anInt285 = MouseHandler.staticInt88 - var14;
 										var15.anObjectArray2 = var9.anObjectArray3;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
 									if (var9.aBool45 && !var36) {
@@ -4354,7 +4354,7 @@ public class Static {
 											var15.anInt284 = MouseHandler.staticInt94 - var11;
 											var15.anInt285 = MouseHandler.staticInt88 - var14;
 											var15.anObjectArray2 = var9.anObjectArray29;
-											Game.staticClass39_10.method198(var15);
+											Client.staticClass39_10.method198(var15);
 										}
 									}
 
@@ -4365,7 +4365,7 @@ public class Static {
 										var15.anInt284 = MouseHandler.staticInt94 - var11;
 										var15.anInt285 = MouseHandler.staticInt88 - var14;
 										var15.anObjectArray2 = var9.anObjectArray6;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
 									if (!var9.aBool44 && var311) {
@@ -4377,7 +4377,7 @@ public class Static {
 											var15.anInt284 = MouseHandler.staticInt94 - var11;
 											var15.anInt285 = MouseHandler.staticInt88 - var14;
 											var15.anObjectArray2 = var9.anObjectArray7;
-											Game.staticClass39_8.method198(var15);
+											Client.staticClass39_8.method198(var15);
 										}
 									}
 
@@ -4388,7 +4388,7 @@ public class Static {
 										var15.anInt284 = MouseHandler.staticInt94 - var11;
 										var15.anInt285 = MouseHandler.staticInt88 - var14;
 										var15.anObjectArray2 = var9.anObjectArray8;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
 									if (var9.aBool44 && !var311) {
@@ -4400,7 +4400,7 @@ public class Static {
 											var15.anInt284 = MouseHandler.staticInt94 - var11;
 											var15.anInt285 = MouseHandler.staticInt88 - var14;
 											var15.anObjectArray2 = var9.anObjectArray9;
-											Game.staticClass39_10.method198(var15);
+											Client.staticClass39_10.method198(var15);
 										}
 									}
 
@@ -4408,21 +4408,21 @@ public class Static {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray16;
-										Game.staticClass39_9.method198(var15);
+										Client.staticClass39_9.method198(var15);
 									}
 
 									NodeSub16 var26;
-									if (var9.anObjectArray13 != null && Game.staticInt275 > var9.anInt356) {
-										if (var9.anIntArray74 != null && Game.staticInt275 - var9.anInt356 <= 32) {
-											label517: for (var33 = var9.anInt356; var33 < Game.staticInt275; var33++) {
-												var16 = Game.staticIntArray104[var33 & 0x1f];
+									if (var9.anObjectArray13 != null && Client.staticInt275 > var9.anInt356) {
+										if (var9.anIntArray74 != null && Client.staticInt275 - var9.anInt356 <= 32) {
+											label517: for (var33 = var9.anInt356; var33 < Client.staticInt275; var33++) {
+												var16 = Client.staticIntArray104[var33 & 0x1f];
 
 												for (var23 = 0; var23 < var9.anIntArray74.length; var23++) {
 													if (var16 == var9.anIntArray74[var23]) {
 														var26 = new NodeSub16();
 														var26.aWidget1 = var9;
 														var26.anObjectArray2 = var9.anObjectArray13;
-														Game.staticClass39_8.method198(var26);
+														Client.staticClass39_8.method198(var26);
 														break label517;
 													}
 												}
@@ -4431,23 +4431,23 @@ public class Static {
 											var15 = new NodeSub16();
 											var15.aWidget1 = var9;
 											var15.anObjectArray2 = var9.anObjectArray13;
-											Game.staticClass39_8.method198(var15);
+											Client.staticClass39_8.method198(var15);
 										}
 
-										var9.anInt356 = Game.staticInt275;
+										var9.anInt356 = Client.staticInt275;
 									}
 
-									if (var9.anObjectArray14 != null && Game.staticInt276 > var9.anInt357) {
-										if (var9.anIntArray69 != null && Game.staticInt276 - var9.anInt357 <= 32) {
-											label493: for (var33 = var9.anInt357; var33 < Game.staticInt276; var33++) {
-												var16 = Game.staticIntArray86[var33 & 0x1f];
+									if (var9.anObjectArray14 != null && Client.staticInt276 > var9.anInt357) {
+										if (var9.anIntArray69 != null && Client.staticInt276 - var9.anInt357 <= 32) {
+											label493: for (var33 = var9.anInt357; var33 < Client.staticInt276; var33++) {
+												var16 = Client.staticIntArray86[var33 & 0x1f];
 
 												for (var23 = 0; var23 < var9.anIntArray69.length; var23++) {
 													if (var9.anIntArray69[var23] == var16) {
 														var26 = new NodeSub16();
 														var26.aWidget1 = var9;
 														var26.anObjectArray2 = var9.anObjectArray14;
-														Game.staticClass39_8.method198(var26);
+														Client.staticClass39_8.method198(var26);
 														break label493;
 													}
 												}
@@ -4456,23 +4456,23 @@ public class Static {
 											var15 = new NodeSub16();
 											var15.aWidget1 = var9;
 											var15.anObjectArray2 = var9.anObjectArray14;
-											Game.staticClass39_8.method198(var15);
+											Client.staticClass39_8.method198(var15);
 										}
 
-										var9.anInt357 = Game.staticInt276;
+										var9.anInt357 = Client.staticInt276;
 									}
 
-									if (var9.anObjectArray15 != null && Game.staticInt278 > var9.anInt358) {
-										if (var9.anIntArray71 != null && Game.staticInt278 - var9.anInt358 <= 32) {
-											label469: for (var33 = var9.anInt358; var33 < Game.staticInt278; var33++) {
-												var16 = Game.staticIntArray105[var33 & 0x1f];
+									if (var9.anObjectArray15 != null && Client.staticInt278 > var9.anInt358) {
+										if (var9.anIntArray71 != null && Client.staticInt278 - var9.anInt358 <= 32) {
+											label469: for (var33 = var9.anInt358; var33 < Client.staticInt278; var33++) {
+												var16 = Client.staticIntArray105[var33 & 0x1f];
 
 												for (var23 = 0; var23 < var9.anIntArray71.length; var23++) {
 													if (var16 == var9.anIntArray71[var23]) {
 														var26 = new NodeSub16();
 														var26.aWidget1 = var9;
 														var26.anObjectArray2 = var9.anObjectArray15;
-														Game.staticClass39_8.method198(var26);
+														Client.staticClass39_8.method198(var26);
 														break label469;
 													}
 												}
@@ -4481,75 +4481,75 @@ public class Static {
 											var15 = new NodeSub16();
 											var15.aWidget1 = var9;
 											var15.anObjectArray2 = var9.anObjectArray15;
-											Game.staticClass39_8.method198(var15);
+											Client.staticClass39_8.method198(var15);
 										}
 
-										var9.anInt358 = Game.staticInt278;
+										var9.anInt358 = Client.staticInt278;
 									}
 
-									if (Game.staticInt279 > var9.anInt355 && var9.anObjectArray18 != null) {
+									if (Client.staticInt279 > var9.anInt355 && var9.anObjectArray18 != null) {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray18;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									if (Game.staticInt280 * 1604201655 > var9.anInt355
+									if (Client.staticInt280 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray20 != null) {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray20;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									if (Game.staticInt281 * 1604201655 > var9.anInt355
+									if (Client.staticInt281 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray21 != null) {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray21;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									if (Game.staticInt295 * 1604201655 > var9.anInt355
+									if (Client.staticInt295 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray26 != null) {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray26;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									if (Game.staticInt282 * 1604201655 > var9.anInt355
+									if (Client.staticInt282 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray27 != null) {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray27;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									if (Game.staticInt283 * 1604201655 > var9.anInt355
+									if (Client.staticInt283 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray22 != null) {
 										var15 = new NodeSub16();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray22;
-										Game.staticClass39_8.method198(var15);
+										Client.staticClass39_8.method198(var15);
 									}
 
-									var9.anInt355 = Game.staticInt274 * -2038739763;
+									var9.anInt355 = Client.staticInt274 * -2038739763;
 									if (var9.anObjectArray19 != null) {
-										for (var33 = 0; var33 < Game.staticInt264; var33++) {
+										for (var33 = 0; var33 < Client.staticInt264; var33++) {
 											NodeSub16 var31 = new NodeSub16();
 											var31.aWidget1 = var9;
-											var31.anInt288 = Game.staticIntArray111[var33];
-											var31.anInt287 = Game.staticIntArray110[var33];
+											var31.anInt288 = Client.staticIntArray111[var33];
+											var31.anInt287 = Client.staticIntArray110[var33];
 											var31.anObjectArray2 = var9.anObjectArray19;
-											Game.staticClass39_8.method198(var31);
+											Client.staticClass39_8.method198(var31);
 										}
 									}
 								}
 							}
 
-							if (!var9.aBool42 && Game.staticWidget7 == null && NodeSub3.staticWidget5 == null
-									&& !Game.staticBool30) {
+							if (!var9.aBool42 && Client.staticWidget7 == null && NodeSub3.staticWidget5 == null
+									&& !Client.staticBool30) {
 								if ((var9.anInt310 >= 0 || var9.anInt321 != 0) && MouseHandler.staticInt94 >= var21
 										&& MouseHandler.staticInt88 >= var22 && MouseHandler.staticInt94 < var10
 										&& MouseHandler.staticInt88 < var17) {
@@ -4596,7 +4596,7 @@ public class Static {
 	}
 
 	static final void staticMethod93(boolean var0) {
-		int var1 = Game.staticInt263;
+		int var1 = Client.staticInt263;
 		int var2 = staticInt86;
 		int var3 = Class47.staticInt121;
 		if (staticMethod4(var1)) {
@@ -4637,7 +4637,7 @@ public class Static {
 			Class29.staticAbstractClass1_1.method167(Class38.staticCanvas1);
 		}
 
-		Game.staticGame1.method201();
+		Client.staticGame1.method201();
 		Class38.staticCanvas1.setBackground(Color.black);
 		Canvas var0 = Class38.staticCanvas1;
 		var0.setFocusTraversalKeysEnabled(false);
@@ -4651,7 +4651,7 @@ public class Static {
 			Class29.staticAbstractClass1_1.method166(Class38.staticCanvas1);
 		}
 
-		if (Game.staticInt263 != -1) {
+		if (Client.staticInt263 != -1) {
 			staticMethod93(false);
 		}
 
@@ -5084,7 +5084,7 @@ public class Static {
 						}
 
 						if (var26 >= 1 && var26 < 103
-								&& (!Game.staticBool27 || (staticByteArrayArrayArray4[0][var3][var26] & 0x2) != 0
+								&& (!Client.staticBool27 || (staticByteArrayArrayArray4[0][var3][var26] & 0x2) != 0
 										|| (staticByteArrayArrayArray4[var2][var3][var26] & 0x10) == 0)) {
 							if (var2 < staticInt112) {
 								staticInt112 = var2;
@@ -5479,15 +5479,15 @@ public class Static {
 
 	static String staticMethod109(String var0, boolean var1) {
 		String var2 = var1 ? "https://" : "http://";
-		if (Game.staticInt207 == 1) {
+		if (Client.staticInt207 == 1) {
 			var0 = var0 + "-wtrc";
-		} else if (Game.staticInt207 == 2) {
+		} else if (Client.staticInt207 == 2) {
 			var0 = var0 + "-wtqa";
-		} else if (Game.staticInt207 == 3) {
+		} else if (Client.staticInt207 == 3) {
 			var0 = var0 + "-wtwip";
-		} else if (Game.staticInt207 == 5) {
+		} else if (Client.staticInt207 == 5) {
 			var0 = var0 + "-wti";
-		} else if (Game.staticInt207 == 4) {
+		} else if (Client.staticInt207 == 4) {
 			var0 = "local";
 		}
 
@@ -5497,15 +5497,15 @@ public class Static {
 		}
 
 		String var3 = "runescape.com";
-		return var2 + var0 + "." + var3 + "/l=" + Game.staticInt231 + "/a=" + Game.staticInt164 + var4 + "/";
+		return var2 + var0 + "." + var3 + "/l=" + Client.staticInt231 + "/a=" + Client.staticInt164 + var4 + "/";
 	}
 
 	static final void staticMethod110(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7,
 			int var8) {
 		NodeSub19 var9 = null;
 
-		for (NodeSub19 var10 = (NodeSub19) Game.staticClass39_7
-				.method195(); var10 != null; var10 = (NodeSub19) Game.staticClass39_7.method193()) {
+		for (NodeSub19 var10 = (NodeSub19) Client.staticClass39_7
+				.method195(); var10 != null; var10 = (NodeSub19) Client.staticClass39_7.method193()) {
 			if (var0 == var10.anInt389 && var10.anInt388 == var1 && var2 == var10.anInt390 && var10.anInt387 == var3) {
 				var9 = var10;
 				break;
@@ -5519,7 +5519,7 @@ public class Static {
 			var9.anInt388 = var1;
 			var9.anInt390 = var2;
 			staticMethod284(var9);
-			Game.staticClass39_7.method198(var9);
+			Client.staticClass39_7.method198(var9);
 		}
 
 		var9.anInt397 = var4;
@@ -5674,22 +5674,22 @@ public class Static {
 	static final void staticMethod136(int var0, int var1, int var2, int var3, int var4) {
 		Class33.staticRasterizer2DSub3Array2[0].method655(var0, var1);
 		Class33.staticRasterizer2DSub3Array2[1].method655(var0, var3 + var1 - 16);
-		staticMethod418(var0, 16 + var1, 16, var3 - 32, Game.staticInt216);
+		staticMethod418(var0, 16 + var1, 16, var3 - 32, Client.staticInt216);
 		int var6 = (var3 - 32) * var3 / var4;
 		if (var6 < 8) {
 			var6 = 8;
 		}
 
 		int var5 = (var3 - 32 - var6) * var2 / (var4 - var3);
-		staticMethod418(var0, var5 + 16 + var1, 16, var6, Game.staticInt234);
-		staticMethod415(var0, var5 + var1 + 16, var6, Game.staticInt218);
-		staticMethod415(var0 + 1, var1 + 16 + var5, var6, Game.staticInt218);
-		staticMethod413(var0, var5 + var1 + 16, 16, Game.staticInt218);
-		staticMethod413(var0, var5 + var1 + 17, 16, Game.staticInt218);
-		staticMethod415(var0 + 15, var1 + 16 + var5, var6, Game.staticInt235);
-		staticMethod415(var0 + 14, var1 + 17 + var5, var6 - 1, Game.staticInt235);
-		staticMethod413(var0, var6 + var5 + 15 + var1, 16, Game.staticInt235);
-		staticMethod413(var0 + 1, var6 + var5 + 14 + var1, 15, Game.staticInt235);
+		staticMethod418(var0, var5 + 16 + var1, 16, var6, Client.staticInt234);
+		staticMethod415(var0, var5 + var1 + 16, var6, Client.staticInt218);
+		staticMethod415(var0 + 1, var1 + 16 + var5, var6, Client.staticInt218);
+		staticMethod413(var0, var5 + var1 + 16, 16, Client.staticInt218);
+		staticMethod413(var0, var5 + var1 + 17, 16, Client.staticInt218);
+		staticMethod415(var0 + 15, var1 + 16 + var5, var6, Client.staticInt235);
+		staticMethod415(var0 + 14, var1 + 17 + var5, var6 - 1, Client.staticInt235);
+		staticMethod413(var0, var6 + var5 + 15 + var1, 16, Client.staticInt235);
+		staticMethod413(var0 + 1, var6 + var5 + 14 + var1, 15, Client.staticInt235);
 	}
 
 	static Class2 staticMethod137() {
@@ -5733,16 +5733,16 @@ public class Static {
 			var7 = 100;
 		}
 
-		int var12 = var7 * (Game.staticShort4 - Game.staticShort3) / 100 + Game.staticShort3;
+		int var12 = var7 * (Client.staticShort4 - Client.staticShort3) / 100 + Client.staticShort3;
 		int var6 = var12 * var3 * 512 / (var2 * 334);
 		int var5;
 		int var13;
 		short var15;
-		if (var6 < Game.staticShort7) {
-			var15 = Game.staticShort7;
+		if (var6 < Client.staticShort7) {
+			var15 = Client.staticShort7;
 			var12 = var2 * var15 * 334 / (var3 * 512);
-			if (var12 > Game.staticShort6) {
-				var12 = Game.staticShort6;
+			if (var12 > Client.staticShort6) {
+				var12 = Client.staticShort6;
 				var13 = var12 * var3 * 512 / (var15 * 334);
 				var5 = (var2 - var13) / 2;
 				if (var4) {
@@ -5754,11 +5754,11 @@ public class Static {
 				var0 += var5;
 				var2 -= var5 * 2;
 			}
-		} else if (var6 > Game.staticShort8) {
-			var15 = Game.staticShort8;
+		} else if (var6 > Client.staticShort8) {
+			var15 = Client.staticShort8;
 			var12 = var15 * var2 * 334 / (var3 * 512);
-			if (var12 < Game.staticShort1) {
-				var12 = Game.staticShort1;
+			if (var12 < Client.staticShort1) {
+				var12 = Client.staticShort1;
 				var13 = var2 * var15 * 334 / (var12 * 512);
 				var5 = (var3 - var13) / 2;
 				if (var4) {
@@ -5772,9 +5772,9 @@ public class Static {
 			}
 		}
 
-		var13 = (Game.staticShort2 - Game.staticShort5) * var7 / 100 + Game.staticShort5;
-		Game.staticInt307 = var12 * var3 * var13 / 85504 << 1;
-		if (Game.staticInt305 != var2 || Game.staticInt306 != var3) {
+		var13 = (Client.staticShort2 - Client.staticShort5) * var7 / 100 + Client.staticShort5;
+		Client.staticInt307 = var12 * var3 * var13 / 85504 << 1;
+		if (Client.staticInt305 != var2 || Client.staticInt306 != var3) {
 			int[] var14 = new int[9];
 
 			for (int var8 = 0; var8 < 9; var8++) {
@@ -5787,10 +5787,10 @@ public class Static {
 			staticMethod77(var14, 500, 800, var2, var3);
 		}
 
-		Game.staticInt304 = var0;
-		Game.staticInt254 = var1;
-		Game.staticInt305 = var2;
-		Game.staticInt306 = var3;
+		Client.staticInt304 = var0;
+		Client.staticInt254 = var1;
+		Client.staticInt305 = var2;
+		Client.staticInt306 = var3;
 	}
 
 	public static Widget staticMethod32(int var0, int var1) {
@@ -5866,9 +5866,9 @@ public class Static {
 	}
 
 	static final int staticMethod165() {
-		return Game.staticInt252 <= 0 ? -1
-				: Game.staticBool39 && KeyboardHandler.staticBoolArray2[81] && Game.staticInt217 != -1
-						? Game.staticInt217 : Game.staticInt252 - 1;
+		return Client.staticInt252 <= 0 ? -1
+				: Client.staticBool39 && KeyboardHandler.staticBoolArray2[81] && Client.staticInt217 != -1
+						? Client.staticInt217 : Client.staticInt252 - 1;
 	}
 
 	static final void staticMethod209(Actor var0, int var1, int var2, int var3, int var4, int var5) {
@@ -5897,7 +5897,7 @@ public class Static {
 
 				for (NodeSub3 var78 = (NodeSub3) var0.aClass36_3
 						.method160(); var78 != null; var78 = (NodeSub3) var0.aClass36_3.method164()) {
-					NodeSub2 var80 = var78.method293(Game.staticInt166);
+					NodeSub2 var80 = var78.method293(Client.staticInt166);
 					if (var80 == null) {
 						if (var78.method294()) {
 							var78.method174();
@@ -5918,7 +5918,7 @@ public class Static {
 						}
 
 						int var87 = 255;
-						int var86 = Game.staticInt166 - var80.anInt220;
+						int var86 = Client.staticInt166 - var80.anInt220;
 						int var75 = var23 * var80.anInt218 / var81.anInt522;
 						if (var80.anInt221 > var86) {
 							var53 = var81.anInt517 == 0 ? 0 : var86 / var81.anInt517 * var81.anInt517;
@@ -5936,8 +5936,8 @@ public class Static {
 							var46 = 1;
 						}
 
-						var53 = var2 + Game.staticInt189 - (var23 >> 1);
-						var27 = var3 + Game.staticInt180 - var15;
+						var53 = var2 + Client.staticInt189 - (var23 >> 1);
+						var27 = var3 + Client.staticInt180 - var15;
 						if (var82 != null && var83 != null) {
 							var53 -= var84;
 							if (var46 == var23) {
@@ -5961,7 +5961,7 @@ public class Static {
 							staticMethod416(var2, var3, var4 + var2, var5 + var3);
 							var15 += 2;
 						} else {
-							if (Game.staticInt189 > -1) {
+							if (Client.staticInt189 > -1) {
 								staticMethod418(var53, var27, var46, 5, '\uff00');
 								staticMethod418(var53 + var46, var27, var23 - var46, 5, 16711680);
 							}
@@ -5984,26 +5984,26 @@ public class Static {
 
 				if (var781.anInt683 != -1 || var781.anInt684 != -1) {
 					staticMethod186(var0, var0.anInt609 + 15);
-					if (Game.staticInt189 > -1) {
+					if (Client.staticInt189 > -1) {
 						if (var781.anInt683 != -1) {
-							Class59.staticSpriteArray7[var781.anInt683].method637(Game.staticInt189 + var2 - 12,
-									var3 + Game.staticInt180 - var15);
+							Class59.staticSpriteArray7[var781.anInt683].method637(Client.staticInt189 + var2 - 12,
+									var3 + Client.staticInt180 - var15);
 							var15 += 25;
 						}
 
 						if (var781.anInt684 != -1) {
-							staticSpriteArray3[var781.anInt684].method637(var2 + Game.staticInt189 - 12,
-									var3 + Game.staticInt180 - var15);
+							staticSpriteArray3[var781.anInt684].method637(var2 + Client.staticInt189 - 12,
+									var3 + Client.staticInt180 - var15);
 							var15 += 25;
 						}
 					}
 				}
 
-				if (var1 >= 0 && Game.staticInt255 == 10 && Game.staticInt193 == var14[var1]) {
+				if (var1 >= 0 && Client.staticInt255 == 10 && Client.staticInt193 == var14[var1]) {
 					staticMethod186(var0, var0.anInt609 + 15);
-					if (Game.staticInt189 > -1) {
-						Class59.staticSpriteArray6[1].method637(var2 + Game.staticInt189 - 12,
-								Game.staticInt180 + var3 - var15);
+					if (Client.staticInt189 > -1) {
+						Class59.staticSpriteArray6[1].method637(var2 + Client.staticInt189 - 12,
+								Client.staticInt180 + var3 - var15);
 					}
 				}
 			} else {
@@ -6014,37 +6014,37 @@ public class Static {
 
 				if (var76.anInt548 >= 0 && var76.anInt548 < staticSpriteArray3.length) {
 					staticMethod186(var0, 15 + var0.anInt609);
-					if (Game.staticInt189 > -1) {
-						staticSpriteArray3[var76.anInt548].method637(Game.staticInt189 + var2 - 12,
-								Game.staticInt180 + var3 - 30);
+					if (Client.staticInt189 > -1) {
+						staticSpriteArray3[var76.anInt548].method637(Client.staticInt189 + var2 - 12,
+								Client.staticInt180 + var3 - 30);
 					}
 				}
 
-				if (Game.staticInt255 == 1 && Game.staticIntArray121[var1 - var751] == Game.staticInt172
-						&& Game.staticInt166 % 20 < 10) {
+				if (Client.staticInt255 == 1 && Client.staticIntArray121[var1 - var751] == Client.staticInt172
+						&& Client.staticInt166 % 20 < 10) {
 					staticMethod186(var0, var0.anInt609 + 15);
-					if (Game.staticInt189 > -1) {
-						Class59.staticSpriteArray6[0].method637(var2 + Game.staticInt189 - 12,
-								Game.staticInt180 + var3 - 28);
+					if (Client.staticInt189 > -1) {
+						Class59.staticSpriteArray6[0].method637(var2 + Client.staticInt189 - 12,
+								Client.staticInt180 + var3 - 28);
 					}
 				}
 			}
 
 			if (var0.aString39 != null && (var1 >= var751 || !var0.aBool77
-					&& (Game.staticInt160 == 4 || !var0.aBool75 && (Game.staticInt160 == 0 || Game.staticInt160 == 3
-							|| Game.staticInt160 == 1 && staticMethod422(((Player) var0).aString40, false))))) {
+					&& (Client.staticInt160 == 4 || !var0.aBool75 && (Client.staticInt160 == 0 || Client.staticInt160 == 3
+							|| Client.staticInt160 == 1 && staticMethod422(((Player) var0).aString40, false))))) {
 				staticMethod186(var0, var0.anInt609);
-				if (Game.staticInt189 > -1 && Game.staticInt187 < Game.staticInt169) {
-					Game.staticIntArray85[Game.staticInt187] = GraphicsBuffer.staticRasterizer2DSub2Sub1_1
+				if (Client.staticInt189 > -1 && Client.staticInt187 < Client.staticInt169) {
+					Client.staticIntArray85[Client.staticInt187] = GraphicsBuffer.staticRasterizer2DSub2Sub1_1
 							.method613(var0.aString39) / 2;
-					Game.staticIntArray87[Game.staticInt187] = GraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669;
-					Game.staticIntArray101[Game.staticInt187] = Game.staticInt189;
-					Game.staticIntArray102[Game.staticInt187] = Game.staticInt180;
-					Game.staticIntArray89[Game.staticInt187] = var0.anInt602;
-					Game.staticIntArray90[Game.staticInt187] = var0.anInt603;
-					Game.staticIntArray99[Game.staticInt187] = var0.anInt601;
-					Game.staticStringArray10[Game.staticInt187] = var0.aString39;
-					++Game.staticInt187;
+					Client.staticIntArray87[Client.staticInt187] = GraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669;
+					Client.staticIntArray101[Client.staticInt187] = Client.staticInt189;
+					Client.staticIntArray102[Client.staticInt187] = Client.staticInt180;
+					Client.staticIntArray89[Client.staticInt187] = var0.anInt602;
+					Client.staticIntArray90[Client.staticInt187] = var0.anInt603;
+					Client.staticIntArray99[Client.staticInt187] = var0.anInt601;
+					Client.staticStringArray10[Client.staticInt187] = var0.aString39;
+					++Client.staticInt187;
 				}
 			}
 
@@ -6054,7 +6054,7 @@ public class Static {
 				CacheableSub5 var811 = null;
 				int var821 = 0;
 				if (var801 >= 0) {
-					if (var77 <= Game.staticInt166) {
+					if (var77 <= Client.staticInt166) {
 						continue;
 					}
 
@@ -6080,24 +6080,24 @@ public class Static {
 					}
 				}
 
-				if (var77 - var821 <= Game.staticInt166) {
+				if (var77 - var821 <= Client.staticInt166) {
 					if (var811 == null) {
 						var0.anIntArray126[var791] = -1;
 					} else {
 						staticMethod186(var0, var0.anInt609 / 2);
-						if (Game.staticInt189 > -1) {
+						if (Client.staticInt189 > -1) {
 							if (var791 == 1) {
-								Game.staticInt180 -= 20;
+								Client.staticInt180 -= 20;
 							}
 
 							if (var791 == 2) {
-								Game.staticInt189 -= 15;
-								Game.staticInt180 -= 10;
+								Client.staticInt189 -= 15;
+								Client.staticInt180 -= 10;
 							}
 
 							if (var791 == 3) {
-								Game.staticInt189 += 15;
-								Game.staticInt180 -= 10;
+								Client.staticInt189 += 15;
+								Client.staticInt180 -= 10;
 							}
 
 							Sprite var841 = null;
@@ -6322,11 +6322,11 @@ public class Static {
 								}
 							}
 
-							var41 = var0.anIntArray126[var791] - Game.staticInt166;
+							var41 = var0.anIntArray126[var791] - Client.staticInt166;
 							int var71 = var811.anInt477 - var811.anInt477 * var41 / var811.anInt473;
 							int var72 = -var811.anInt478 + var41 * var811.anInt478 / var811.anInt473;
-							int var34 = var2 + Game.staticInt189 - (var11 >> 1) + var71;
-							int var36 = var3 + Game.staticInt180 - 12 + var72;
+							int var34 = var2 + Client.staticInt189 - (var11 >> 1) + var71;
+							int var36 = var3 + Client.staticInt180 - 12 + var72;
 							int var54 = var36;
 							int var40 = var39 + var36;
 							int var52 = 15 + var36 + var811.anInt480;
@@ -6454,18 +6454,18 @@ public class Static {
 
 	static final void staticMethod33(boolean var0) {
 		staticMethod17();
-		++Game.staticInt273;
-		if (Game.staticInt273 >= 50 || var0) {
-			Game.staticInt273 = 0;
-			if (!Game.staticBool43 && Class56.staticConnection3 != null) {
-				Game.staticEncryptedStream1.method471(184);
+		++Client.staticInt273;
+		if (Client.staticInt273 >= 50 || var0) {
+			Client.staticInt273 = 0;
+			if (!Client.staticBool43 && Class56.staticConnection3 != null) {
+				Client.staticEncryptedStream1.method471(184);
 
 				try {
-					Class56.staticConnection3.method151(Game.staticEncryptedStream1.buf, 0,
-							Game.staticEncryptedStream1.off);
-					Game.staticEncryptedStream1.off = 0;
+					Class56.staticConnection3.method151(Client.staticEncryptedStream1.buf, 0,
+							Client.staticEncryptedStream1.off);
+					Client.staticEncryptedStream1.off = 0;
 				} catch (IOException var2) {
-					Game.staticBool43 = true;
+					Client.staticBool43 = true;
 				}
 			}
 		}
@@ -6725,18 +6725,18 @@ public class Static {
 	}
 
 	static final void staticMethod235(String var0, String var1, int var2, int var3, int var4, int var5, boolean var6) {
-		if (!Game.staticBool30 && Game.staticInt252 < 500) {
-			Game.staticStringArray9[Game.staticInt252] = var0;
-			Game.staticStringArray8[Game.staticInt252] = var1;
-			Game.staticIntArray98[Game.staticInt252] = var2;
-			Game.staticIntArray112[Game.staticInt252] = var3;
-			Game.staticIntArray109[Game.staticInt252] = var4;
-			Game.staticIntArray97[Game.staticInt252] = var5;
+		if (!Client.staticBool30 && Client.staticInt252 < 500) {
+			Client.staticStringArray9[Client.staticInt252] = var0;
+			Client.staticStringArray8[Client.staticInt252] = var1;
+			Client.staticIntArray98[Client.staticInt252] = var2;
+			Client.staticIntArray112[Client.staticInt252] = var3;
+			Client.staticIntArray109[Client.staticInt252] = var4;
+			Client.staticIntArray97[Client.staticInt252] = var5;
 			if (var6) {
-				Game.staticInt217 = Game.staticInt252;
+				Client.staticInt217 = Client.staticInt252;
 			}
 
-			++Game.staticInt252;
+			++Client.staticInt252;
 		}
 
 	}
@@ -6765,7 +6765,7 @@ public class Static {
 
 		int var2;
 		for (var2 = 0; var2 < staticInt24; var2++) {
-			Player var4 = Game.staticPlayerArray1[var0[var2]];
+			Player var4 = Client.staticPlayerArray1[var0[var2]];
 			if (var4 != null && var4.anInt601 > 0) {
 				--var4.anInt601;
 				if (var4.anInt601 == 0) {
@@ -6774,9 +6774,9 @@ public class Static {
 			}
 		}
 
-		for (var2 = 0; var2 < Game.staticInt186; var2++) {
-			int var41 = Game.staticIntArray121[var2];
-			Npc var1 = Game.staticNpcArray1[var41];
+		for (var2 = 0; var2 < Client.staticInt186; var2++) {
+			int var41 = Client.staticIntArray121[var2];
+			Npc var1 = Client.staticNpcArray1[var41];
 			if (var1 != null && var1.anInt601 > 0) {
 				--var1.anInt601;
 				if (var1.anInt601 == 0) {
@@ -6836,7 +6836,7 @@ public class Static {
 	}
 
 	static final void staticMethod242(Widget var0, int var1, int var2) {
-		if (Game.staticWidget7 == null && !Game.staticBool30 && var0 != null) {
+		if (Client.staticWidget7 == null && !Client.staticBool30 && var0 != null) {
 			Widget var4 = var0;
 			int var5 = staticMethod192(var0);
 			int var6 = var5 >> 17 & 0x7;
@@ -6865,7 +6865,7 @@ public class Static {
 			}
 
 			if (var11 != null) {
-				Game.staticWidget7 = var0;
+				Client.staticWidget7 = var0;
 				var4 = var0;
 				var5 = staticMethod192(var0);
 				var6 = var5 >> 17 & 0x7;
@@ -6891,19 +6891,19 @@ public class Static {
 					var11 = var0.aWidget3;
 				}
 
-				Game.staticWidget8 = var11;
-				Game.staticInt287 = var1;
-				Game.staticInt261 = var2;
+				Client.staticWidget8 = var11;
+				Client.staticInt287 = var1;
+				Client.staticInt261 = var2;
 				Class2.staticInt4 = 0;
-				Game.staticBool25 = false;
+				Client.staticBool25 = false;
 				int var10 = staticMethod165();
 				if (var10 != -1) {
 					Class20.staticContextMenuItem1 = new ContextMenuItem();
-					Class20.staticContextMenuItem1.anInt7 = Game.staticIntArray109[var10];
-					Class20.staticContextMenuItem1.anInt10 = Game.staticIntArray97[var10];
-					Class20.staticContextMenuItem1.anInt8 = Game.staticIntArray98[var10];
-					Class20.staticContextMenuItem1.anInt9 = Game.staticIntArray112[var10];
-					Class20.staticContextMenuItem1.aString3 = Game.staticStringArray9[var10];
+					Class20.staticContextMenuItem1.anInt7 = Client.staticIntArray109[var10];
+					Class20.staticContextMenuItem1.anInt10 = Client.staticIntArray97[var10];
+					Class20.staticContextMenuItem1.anInt8 = Client.staticIntArray98[var10];
+					Class20.staticContextMenuItem1.anInt9 = Client.staticIntArray112[var10];
+					Class20.staticContextMenuItem1.aString3 = Client.staticStringArray9[var10];
 				}
 
 				return;
@@ -6913,7 +6913,7 @@ public class Static {
 	}
 
 	static final void staticMethod243(Player var0, int var1, int var2, int var3) {
-		if (AbstractClass2Sub1.staticPlayer1 != var0 && Game.staticInt252 < 400) {
+		if (AbstractClass2Sub1.staticPlayer1 != var0 && Client.staticInt252 < 400) {
 			String var7;
 			if (var0.anInt691 == 0) {
 				var7 = var0.aStringArray11[0] + var0.aString40 + var0.aStringArray11[1]
@@ -6926,27 +6926,27 @@ public class Static {
 			}
 
 			int var4;
-			if (Game.staticInt258 == 1) {
+			if (Client.staticInt258 == 1) {
 				staticMethod341("Use",
-						Game.staticString32 + " " + staticString14 + " " + staticMethod118(16777215) + var7, 14,
+						Client.staticString32 + " " + staticString14 + " " + staticMethod118(16777215) + var7, 14,
 						var1, var2, var3);
-			} else if (Game.staticBool32) {
+			} else if (Client.staticBool32) {
 				if ((Class57.staticInt144 & 0x8) == 8) {
-					staticMethod341(Game.staticString31,
-							Game.staticString30 + " " + staticString14 + " " + staticMethod118(16777215) + var7,
+					staticMethod341(Client.staticString31,
+							Client.staticString30 + " " + staticString14 + " " + staticMethod118(16777215) + var7,
 							15, var1, var2, var3);
 				}
 			} else {
 				for (var4 = 7; var4 >= 0; --var4) {
-					if (Game.staticStringArray7[var4] != null) {
+					if (Client.staticStringArray7[var4] != null) {
 						short var5 = 0;
-						if (Game.staticStringArray7[var4].equalsIgnoreCase("Attack")) {
-							if (Class4.staticClass4_2 == Game.staticClass4_5) {
+						if (Client.staticStringArray7[var4].equalsIgnoreCase("Attack")) {
+							if (Class4.staticClass4_2 == Client.staticClass4_5) {
 								continue;
 							}
 
-							if (Class4.staticClass4_1 == Game.staticClass4_5
-									|| Class4.staticClass4_4 == Game.staticClass4_5
+							if (Class4.staticClass4_1 == Client.staticClass4_5
+									|| Class4.staticClass4_4 == Client.staticClass4_5
 											&& var0.anInt685 > AbstractClass2Sub1.staticPlayer1.anInt685) {
 								var5 = 2000;
 							}
@@ -6958,20 +6958,20 @@ public class Static {
 									var5 = 0;
 								}
 							}
-						} else if (Game.staticBoolArray5[var4]) {
+						} else if (Client.staticBoolArray5[var4]) {
 							var5 = 2000;
 						}
 
-						int var8 = Game.staticIntArray94[var4] + var5;
-						staticMethod341(Game.staticStringArray7[var4], staticMethod118(16777215) + var7, var8, var1,
+						int var8 = Client.staticIntArray94[var4] + var5;
+						staticMethod341(Client.staticStringArray7[var4], staticMethod118(16777215) + var7, var8, var1,
 								var2, var3);
 					}
 				}
 			}
 
-			for (var4 = 0; var4 < Game.staticInt252; var4++) {
-				if (Game.staticIntArray98[var4] == 23) {
-					Game.staticStringArray8[var4] = staticMethod118(16777215) + var7;
+			for (var4 = 0; var4 < Client.staticInt252; var4++) {
+				if (Client.staticIntArray98[var4] == 23) {
+					Client.staticStringArray8[var4] = staticMethod118(16777215) + var7;
 					break;
 				}
 			}
@@ -7058,8 +7058,8 @@ public class Static {
 
 		var5.method344(var3.nextLong());
 		var5.writeHexByte(var3.nextLong());
-		if (Game.staticByteArray6 != null) {
-			var5.method326(Game.staticByteArray6, 0, Game.staticByteArray6.length);
+		if (Client.staticByteArray6 != null) {
+			var5.method326(Client.staticByteArray6, 0, Client.staticByteArray6.length);
 		} else {
 			byte[] var20 = new byte[24];
 
@@ -7161,20 +7161,20 @@ public class Static {
 	}
 
 	static void staticMethod253() {
-		for (int var0 = 0; var0 < Game.staticInt252; var0++) {
-			if (staticMethod6(Game.staticIntArray98[var0])) {
-				if (var0 < Game.staticInt252 - 1) {
-					for (int var1 = var0; var1 < Game.staticInt252 - 1; var1++) {
-						Game.staticStringArray9[var1] = Game.staticStringArray9[var1 + 1];
-						Game.staticStringArray8[var1] = Game.staticStringArray8[1 + var1];
-						Game.staticIntArray98[var1] = Game.staticIntArray98[var1 + 1];
-						Game.staticIntArray112[var1] = Game.staticIntArray112[1 + var1];
-						Game.staticIntArray109[var1] = Game.staticIntArray109[var1 + 1];
-						Game.staticIntArray97[var1] = Game.staticIntArray97[var1 + 1];
+		for (int var0 = 0; var0 < Client.staticInt252; var0++) {
+			if (staticMethod6(Client.staticIntArray98[var0])) {
+				if (var0 < Client.staticInt252 - 1) {
+					for (int var1 = var0; var1 < Client.staticInt252 - 1; var1++) {
+						Client.staticStringArray9[var1] = Client.staticStringArray9[var1 + 1];
+						Client.staticStringArray8[var1] = Client.staticStringArray8[1 + var1];
+						Client.staticIntArray98[var1] = Client.staticIntArray98[var1 + 1];
+						Client.staticIntArray112[var1] = Client.staticIntArray112[1 + var1];
+						Client.staticIntArray109[var1] = Client.staticIntArray109[var1 + 1];
+						Client.staticIntArray97[var1] = Client.staticIntArray97[var1 + 1];
 					}
 				}
 
-				--Game.staticInt252;
+				--Client.staticInt252;
 			}
 		}
 
@@ -7224,10 +7224,10 @@ public class Static {
 				staticIntArray12[++staticInt22 - 1] = var1;
 			}
 
-			if (Game.staticPlayerArray1[var1] != null) {
+			if (Client.staticPlayerArray1[var1] != null) {
 				throw new RuntimeException();
 			} else {
-				Player var12 = Game.staticPlayerArray1[var1] = new Player();
+				Player var12 = Client.staticPlayerArray1[var1] = new Player();
 				var12.anInt686 = var1;
 				if (staticStreamArray1[var1] != null) {
 					var12.method658(staticStreamArray1[var1]);
@@ -7324,7 +7324,7 @@ public class Static {
 
 		int var4;
 		int var5;
-		for (var4 = 0; var4 < Game.staticInt252; var4++) {
+		for (var4 = 0; var4 < Client.staticInt252; var4++) {
 			var5 = GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613(staticMethod473(var4));
 			if (var5 > var2) {
 				var2 = var5;
@@ -7332,7 +7332,7 @@ public class Static {
 		}
 
 		var2 += 8;
-		var4 = Game.staticInt252 * 15 + 22;
+		var4 = Client.staticInt252 * 15 + 22;
 		var5 = var0 - var2 / 2;
 		if (var2 + var5 > staticInt86) {
 			var5 = staticInt86 - var2;
@@ -7352,11 +7352,11 @@ public class Static {
 		}
 
 		Friend.staticScene1.method121(NodeSub4.staticInt155, var0, var1, false);
-		Game.staticBool30 = true;
+		Client.staticBool30 = true;
 		Class62.staticInt147 = var5;
 		NodeSub20.staticInt320 = var3;
 		KeyboardHandler.staticInt84 = var2;
-		NpcDefinition.staticInt324 = Game.staticInt252 * 15 + 22;
+		NpcDefinition.staticInt324 = Client.staticInt252 * 15 + 22;
 	}
 
 	static final void staticMethod38(Rasterizer2DSub3 var0) {
@@ -7429,7 +7429,7 @@ public class Static {
 		String var3;
 		int var5;
 		int var6;
-		if (var0.anInt331 == 2 && !Game.staticBool32) {
+		if (var0.anInt331 == 2 && !Client.staticBool32) {
 			var5 = staticMethod192(var0);
 			var6 = var5 >> 11 & 0x3f;
 			if (var6 == 0) {
@@ -7457,7 +7457,7 @@ public class Static {
 			staticMethod341(var0.aString18, "", 29, 0, 0, var0.anInt294);
 		}
 
-		if (var0.anInt331 == 6 && Game.staticWidget6 == null) {
+		if (var0.anInt331 == 6 && Client.staticWidget6 == null) {
 			staticMethod341(var0.aString18, "", 30, 0, -1, var0.anInt294);
 		}
 
@@ -7475,20 +7475,20 @@ public class Static {
 					}
 
 					if (var1 >= var25 && var2 >= var12 && var1 < var25 + 32 && var2 < 32 + var12) {
-						Game.staticInt230 = var20;
+						Client.staticInt230 = var20;
 						Class34.staticWidget3 = var0;
 						if (var0.anIntArray76[var20] > 0) {
 							label321: {
 								ItemDefinition var4 = staticMethod153(var0.anIntArray76[var20] - 1);
 								boolean var8;
 								int var14;
-								if (Game.staticInt258 == 1) {
+								if (Client.staticInt258 == 1) {
 									var14 = staticMethod192(var0);
 									var8 = (var14 >> 30 & 0x1) != 0;
 									if (var8) {
 										if (var0.anInt294 != GameObject.staticInt332 || staticInt102 != var20) {
 											staticMethod341("Use",
-													Game.staticString32 + " " + staticString14 + " "
+													Client.staticString32 + " " + staticString14 + " "
 															+ staticMethod118(16748608) + var4.aString31,
 													31, var4.anInt437, var20, var0.anInt294);
 										}
@@ -7496,13 +7496,13 @@ public class Static {
 									}
 								}
 
-								if (Game.staticBool32) {
+								if (Client.staticBool32) {
 									var14 = staticMethod192(var0);
 									var8 = (var14 >> 30 & 0x1) != 0;
 									if (var8) {
 										if ((Class57.staticInt144 & 0x10) == 16) {
-											staticMethod341(Game.staticString31,
-													Game.staticString30 + " " + staticString14 + " "
+											staticMethod341(Client.staticString31,
+													Client.staticString30 + " " + staticString14 + " "
 															+ staticMethod118(16748608) + var4.aString31,
 													32, var4.anInt437, var20, var0.anInt294);
 										}
@@ -7511,7 +7511,7 @@ public class Static {
 								}
 
 								String[] var23 = var4.aStringArray6;
-								if (Game.staticBool34) {
+								if (Client.staticBool34) {
 									var23 = staticMethod425(var23);
 								}
 
@@ -7574,7 +7574,7 @@ public class Static {
 								}
 
 								var23 = var0.aStringArray3;
-								if (Game.staticBool34) {
+								if (Client.staticBool34) {
 									var23 = staticMethod425(var23);
 								}
 
@@ -7620,10 +7620,10 @@ public class Static {
 		}
 
 		if (var0.aBool42) {
-			if (Game.staticBool32) {
+			if (Client.staticBool32) {
 				if (staticMethod272(staticMethod192(var0)) && (Class57.staticInt144 & 0x20) == 32) {
-					staticMethod341(Game.staticString31,
-							Game.staticString30 + " " + staticString14 + " " + var0.aString21, 58, 0,
+					staticMethod341(Client.staticString31,
+							Client.staticString30 + " " + staticString14 + " " + var0.aString21, 58, 0,
 							var0.anInt319, var0.anInt294);
 				}
 			} else {
@@ -7678,7 +7678,7 @@ public class Static {
 						staticMethod261(var3.aWidgetArray1, var3.anInt294);
 					}
 
-					NodeSub18 var5 = (NodeSub18) Game.staticHashTable5.method149(var3.anInt294);
+					NodeSub18 var5 = (NodeSub18) Client.staticHashTable5.method149(var3.anInt294);
 					if (var5 != null) {
 						staticMethod14(var5.anInt384);
 					}
@@ -7697,7 +7697,7 @@ public class Static {
 						if (var7 != -1) {
 							AnimDef var6 = staticMethod210(var7);
 
-							for (var3.anInt314 += Game.staticInt171; var3.anInt314 > var6.anIntArray119[var3.anInt354]; staticMethod73(
+							for (var3.anInt314 += Client.staticInt171; var3.anInt314 > var6.anIntArray119[var3.anInt354]; staticMethod73(
 									var3)) {
 								var3.anInt314 -= var6.anIntArray119[var3.anInt354];
 								++var3.anInt354;
@@ -7714,8 +7714,8 @@ public class Static {
 					if (var3.anInt336 != 0 && !var3.aBool42) {
 						int var81 = var3.anInt336 >> 16;
 						var7 = var3.anInt336 << 16 >> 16;
-						var81 *= Game.staticInt171;
-						var7 *= Game.staticInt171;
+						var81 *= Client.staticInt171;
+						var7 *= Client.staticInt171;
 						var3.anInt325 = var3.anInt325 + var81 & 0x7ff;
 						var3.anInt332 = var7 + var3.anInt332 & 0x7ff;
 						staticMethod73(var3);
@@ -7727,7 +7727,7 @@ public class Static {
 	}
 
 	static final void staticMethod262(int var0, int var1) {
-		Class39 var2 = Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var0][var1];
+		Class39 var2 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var0][var1];
 		if (var2 == null) {
 			Friend.staticScene1.method109(NodeSub4.staticInt155, var0, var1);
 		} else {
@@ -7882,7 +7882,7 @@ public class Static {
 
 						for (var3 = 1; var3 < 2048; var3++) {
 							staticByteArray1[var3] = (byte) (staticByteArray1[var3] >> 1);
-							Player var5 = Game.staticPlayerArray1[var3];
+							Player var5 = Client.staticPlayerArray1[var3];
 							if (var5 != null) {
 								staticIntArray7[++staticInt24 - 1] = var3;
 							} else {
@@ -7973,8 +7973,8 @@ public class Static {
 		}
 
 		staticMethod253();
-		if (Game.staticInt263 != -1) {
-			var3 = Game.staticInt263;
+		if (Client.staticInt263 != -1) {
+			var3 = Client.staticInt263;
 			if (staticMethod4(var3)) {
 				staticMethod280(Widget.staticWidgetArrayArray1[var3], 1);
 			}
@@ -7983,11 +7983,11 @@ public class Static {
 	}
 
 	static void staticMethod267(byte[] var0, int var1) {
-		if (Game.staticByteArray6 == null) {
-			Game.staticByteArray6 = new byte[24];
+		if (Client.staticByteArray6 == null) {
+			Client.staticByteArray6 = new byte[24];
 		}
 
-		staticMethod217(var0, var1, Game.staticByteArray6, 0, 24);
+		staticMethod217(var0, var1, Client.staticByteArray6, 0, 24);
 	}
 
 	public static RuntimeExceptionSub1 staticMethod268(Throwable var0, String var1) {
@@ -8014,9 +8014,9 @@ public class Static {
 				if (var0 == 3202) {
 					staticInt27 -= 2;
 					var3 = staticIntArray16[staticInt27];
-					if (Game.staticInt299 != 0 && var3 != -1) {
-						staticMethod30(Class56.staticJs5IndexImpl6, var3, 0, Game.staticInt299, false);
-						Game.staticBool38 = true;
+					if (Client.staticInt299 != 0 && var3 != -1) {
+						staticMethod30(Class56.staticJs5IndexImpl6, var3, 0, Client.staticInt299, false);
+						Client.staticBool38 = true;
 					}
 
 					return 1;
@@ -8025,13 +8025,13 @@ public class Static {
 				}
 			} else {
 				var3 = staticIntArray16[--staticInt27];
-				if (var3 == -1 && !Game.staticBool38) {
+				if (var3 == -1 && !Client.staticBool38) {
 					staticNodeSub8Sub3_1.method440();
 					staticInt118 = 1;
 					staticJs5Index3 = null;
-				} else if (var3 != -1 && Game.staticInt249 != var3 && Game.staticInt299 != 0 && !Game.staticBool38) {
+				} else if (var3 != -1 && Client.staticInt249 != var3 && Client.staticInt299 != 0 && !Client.staticBool38) {
 					Js5IndexImpl var4 = Class34.staticJs5IndexImpl3;
-					int var5 = Game.staticInt299;
+					int var5 = Client.staticInt299;
 					staticInt118 = 1;
 					staticJs5Index3 = var4;
 					staticInt119 = var3;
@@ -8041,7 +8041,7 @@ public class Static {
 					NodeSub1.staticInt151 = 2;
 				}
 
-				Game.staticInt249 = var3;
+				Client.staticInt249 = var3;
 				return 1;
 			}
 		}
@@ -8260,8 +8260,8 @@ public class Static {
 
 	static final void staticMethod48(EncryptedStream var0) {
 		var0.method475();
-		int var5 = Game.staticInt246;
-		Player var6 = AbstractClass2Sub1.staticPlayer1 = Game.staticPlayerArray1[var5] = new Player();
+		int var5 = Client.staticInt246;
+		Player var6 = AbstractClass2Sub1.staticPlayer1 = Client.staticPlayerArray1[var5] = new Player();
 		var6.anInt686 = var5;
 		int var2 = var0.method477(30);
 		byte var3 = (byte) (var2 >> 28);
@@ -8388,8 +8388,8 @@ public class Static {
 	static final void staticMethod117(Widget var0, int var1, int var2, int var3) {
 		CacheableSub3 var4 = var0.method389(false);
 		if (var4 != null) {
-			if (Game.staticInt298 < 3) {
-				Class59.staticSprite3.method642(var1, var2, var4.anInt426, var4.anInt427, 25, 25, Game.staticInt221,
+			if (Client.staticInt298 < 3) {
+				Class59.staticSprite3.method642(var1, var2, var4.anInt426, var4.anInt427, 25, 25, Client.staticInt221,
 						256, var4.anIntArray101, var4.anIntArray102);
 			} else {
 				staticMethod421(var1, var2, 0, var4.anIntArray101, var4.anIntArray102);
@@ -8428,7 +8428,7 @@ public class Static {
 			}
 		}
 
-		if (var0.anInt596 != -1 && Game.staticInt166 >= var0.anInt619) {
+		if (var0.anInt596 != -1 && Client.staticInt166 >= var0.anInt619) {
 			if (var0.anInt616 < 0) {
 				var0.anInt616 = 0;
 			}
@@ -8459,8 +8459,8 @@ public class Static {
 
 		if (var0.anInt612 != -1 && var0.anInt615 <= 1) {
 			var1 = staticMethod210(var0.anInt612);
-			if (var1.anInt566 == 1 && var0.anInt599 > 0 && var0.anInt625 <= Game.staticInt166
-					&& var0.anInt604 < Game.staticInt166) {
+			if (var1.anInt566 == 1 && var0.anInt599 > 0 && var0.anInt625 <= Client.staticInt166
+					&& var0.anInt604 < Client.staticInt166) {
 				var0.anInt615 = 1;
 				return;
 			}
@@ -8603,10 +8603,10 @@ public class Static {
 				}
 			}
 
-			if (Game.staticInt165 != 5) {
+			if (Client.staticInt165 != 5) {
 				++staticInt12;
-				if (Game.staticInt165 == 10 || Game.staticInt165 == 11) {
-					if (Game.staticInt231 == 0) {
+				if (Client.staticInt165 == 10 || Client.staticInt165 == 11) {
+					if (Client.staticInt231 == 0) {
 						if (MouseHandler.staticInt98 == 1 || !staticBool18 && MouseHandler.staticInt98 == 4) {
 							var12 = 5 + staticInt6;
 							short var121 = 463;
@@ -8657,15 +8657,15 @@ public class Static {
 						var131 = 180 + staticInt8 + 80;
 						if (var12 == 1 && var1 >= var131 - 75 && var1 <= 75 + var131 && var5 >= var14 - 20
 								&& var5 <= var14 + 20 || var151) {
-							if ((Game.staticInt201 & 0x2000000) != 0) {
+							if ((Client.staticInt201 & 0x2000000) != 0) {
 								staticString5 = "";
 								staticString4 = "This is a <col=00ffff>Beta<col=ffffff> world.";
 								staticString1 = "Your normal account will not be affected.";
 								staticString6 = "";
 								staticInt13 = 1;
 								staticInt15 = 0;
-							} else if ((Game.staticInt201 & 0x4) != 0) {
-								if ((Game.staticInt201 & 0x400) != 0) {
+							} else if ((Client.staticInt201 & 0x4) != 0) {
+								if ((Client.staticInt201 & 0x400) != 0) {
 									staticString4 = "This is a <col=ffff00>High Risk <col=ff0000>PvP<col=ffffff> world.";
 									staticString1 = "Players can attack each other almost everywhere";
 									staticString6 = "and the Protect Item prayer won\'t work.";
@@ -8678,7 +8678,7 @@ public class Static {
 								staticString5 = "Warning!";
 								staticInt13 = 1;
 								staticInt15 = 0;
-							} else if ((Game.staticInt201 & 0x400) != 0) {
+							} else if ((Client.staticInt201 & 0x400) != 0) {
 								staticString4 = "This is a <col=ffff00>High Risk<col=ffffff> world.";
 								staticString1 = "The Protect Item prayer will";
 								staticString6 = "not work on this world.";
@@ -9179,8 +9179,8 @@ public class Static {
 		} else {
 			String var3 = staticMethod111(var0, staticClass53_1);
 
-			for (int var1 = 0; var1 < Game.staticInt310; var1++) {
-				Class7 var2 = Game.staticClass7Array1[var1];
+			for (int var1 = 0; var1 < Client.staticInt310; var1++) {
+				Class7 var2 = Client.staticClass7Array1[var1];
 				if (var3.equalsIgnoreCase(staticMethod111(var2.aString5, staticClass53_1))) {
 					return true;
 				}
@@ -9233,7 +9233,7 @@ public class Static {
 			byte[] var6 = var1.method269("title.jpg", "");
 			staticSprite2 = new Sprite(var6, var0);
 			staticSprite1 = staticSprite2.method650();
-			if ((Game.staticInt201 & 0x20000000) != 0) {
+			if ((Client.staticInt201 & 0x20000000) != 0) {
 				Config5.staticRasterizer2DSub3_6 = staticMethod25(var2, "logo_deadman_mode", "");
 			} else {
 				Config5.staticRasterizer2DSub3_6 = staticMethod25(var2, "logo", "");
@@ -9332,7 +9332,7 @@ public class Static {
 
 			staticMethod1(false);
 			staticBool2 = true;
-			staticInt6 = (staticInt86 - Game.staticInt288) / 2;
+			staticInt6 = (staticInt86 - Client.staticInt288) / 2;
 			staticInt8 = 202 + staticInt6;
 			staticSprite2.method636(staticInt6, 0);
 			staticSprite1.method636(staticInt6 + 382, 0);
@@ -9349,13 +9349,13 @@ public class Static {
 
 	static final void staticMethod116(int var0, int var1, int var2, int var3, Sprite var4, CacheableSub3 var5) {
 		if (var4 != null) {
-			int var8 = Game.staticInt209 + Game.staticInt221 & 0x7ff;
+			int var8 = Client.staticInt209 + Client.staticInt221 & 0x7ff;
 			int var9 = var3 * var3 + var2 * var2;
 			if (var9 <= 6400) {
 				int var11 = Rasterizer2DSub1.staticIntArray154[var8];
 				int var10 = Rasterizer2DSub1.staticIntArray159[var8];
-				var11 = var11 * 256 / (Game.staticInt211 + 256);
-				var10 = var10 * 256 / (Game.staticInt211 + 256);
+				var11 = var11 * 256 / (Client.staticInt211 + 256);
+				var10 = var10 * 256 / (Client.staticInt211 + 256);
 				int var6 = var11 * var3 + var2 * var10 >> 16;
 				int var7 = var3 * var10 - var11 * var2 >> 16;
 				if (var9 > 2500) {
@@ -9400,38 +9400,38 @@ public class Static {
 			var6 = var7 * var5 - var1 * var8 >> 16;
 			var1 = var1 * var7 + var5 * var8 >> 16;
 			if (var1 >= 50) {
-				Game.staticInt189 = Game.staticInt305 / 2 + var0 * Game.staticInt307 / var1;
-				Game.staticInt180 = Game.staticInt306 / 2 + Game.staticInt307 * var6 / var1;
+				Client.staticInt189 = Client.staticInt305 / 2 + var0 * Client.staticInt307 / var1;
+				Client.staticInt180 = Client.staticInt306 / 2 + Client.staticInt307 * var6 / var1;
 			} else {
-				Game.staticInt189 = -1;
-				Game.staticInt180 = -1;
+				Client.staticInt189 = -1;
+				Client.staticInt180 = -1;
 			}
 		} else {
-			Game.staticInt189 = -1;
-			Game.staticInt180 = -1;
+			Client.staticInt189 = -1;
+			Client.staticInt180 = -1;
 		}
 
 	}
 
 	static void staticMethod128() {
 		int var1;
-		if (Game.staticInt179 == 0) {
+		if (Client.staticInt179 == 0) {
 			Friend.staticScene1 = new Scene(4, 104, 104, staticIntArrayArrayArray1);
 
 			for (var1 = 0; var1 < 4; var1++) {
-				Game.staticClass38Array1[var1] = new Class38(104, 104);
+				Client.staticClass38Array1[var1] = new Class38(104, 104);
 			}
 
 			Actor.staticSprite5 = new Sprite(512, 512);
 			staticString3 = "Starting game engine...";
 			staticInt14 = 15;
-			Game.staticInt179 = 20;
+			Client.staticInt179 = 20;
 		} else {
 			int var0;
 			int var5;
 			int var17;
 			int var21;
-			if (Game.staticInt179 == 20) {
+			if (Client.staticInt179 == 20) {
 				int[] var4 = new int[9];
 
 				for (var17 = 0; var17 < 9; var17++) {
@@ -9444,9 +9444,9 @@ public class Static {
 				staticMethod77(var4, 500, 800, 512, 334);
 				staticString3 = "Prepared visibility map";
 				staticInt14 = 30;
-				Game.staticInt179 = 30;
-			} else if (Game.staticInt179 == 30) {
-				Game.staticJs5IndexImpl8 = staticMethod202(0, false, true, true);
+				Client.staticInt179 = 30;
+			} else if (Client.staticInt179 == 30) {
+				Client.staticJs5IndexImpl8 = staticMethod202(0, false, true, true);
 				FloorUnderlayDef.staticJs5IndexImpl13 = staticMethod202(1, false, true, true);
 				Class23.staticJs5IndexImpl2 = staticMethod202(2, true, false, true);
 				CanvasSub1.staticJs5IndexImpl5 = staticMethod202(3, false, true, true);
@@ -9461,13 +9461,13 @@ public class Static {
 				Connection.staticJs5IndexImpl4 = staticMethod202(12, false, true, true);
 				NodeSub12.staticJs5IndexImpl11 = staticMethod202(13, true, false, true);
 				staticJs5IndexImpl1 = staticMethod202(14, false, true, false);
-				Game.staticJs5IndexImpl9 = staticMethod202(15, false, true, true);
+				Client.staticJs5IndexImpl9 = staticMethod202(15, false, true, true);
 				staticString3 = "Connecting to update server";
 				staticInt14 = 60;
-				Game.staticInt179 = 40;
-			} else if (Game.staticInt179 == 40) {
+				Client.staticInt179 = 40;
+			} else if (Client.staticInt179 == 40) {
 				byte var20 = 0;
-				var1 = var20 + Game.staticJs5IndexImpl8.method395() * 4 / 100;
+				var1 = var20 + Client.staticJs5IndexImpl8.method395() * 4 / 100;
 				var1 += FloorUnderlayDef.staticJs5IndexImpl13.method395() * 4 / 100;
 				var1 += Class23.staticJs5IndexImpl2.method395() * 2 / 100;
 				var1 += CanvasSub1.staticJs5IndexImpl5.method395() * 2 / 100;
@@ -9482,7 +9482,7 @@ public class Static {
 				var1 += Connection.staticJs5IndexImpl4.method395() * 2 / 100;
 				var1 += NodeSub12.staticJs5IndexImpl11.method395() * 2 / 100;
 				var1 += staticJs5IndexImpl1.method395() * 2 / 100;
-				var1 += Game.staticJs5IndexImpl9.method395() * 2 / 100;
+				var1 += Client.staticJs5IndexImpl9.method395() * 2 / 100;
 				if (var1 != 100) {
 					if (var1 != 0) {
 						staticString3 = "Checking for updates - " + var1 + "%";
@@ -9492,13 +9492,13 @@ public class Static {
 				} else {
 					staticString3 = "Loaded update list";
 					staticInt14 = 90;
-					Game.staticInt179 = 45;
+					Client.staticInt179 = 45;
 				}
 			} else {
 				Js5IndexImpl var22;
 				Js5IndexImpl var211;
-				if (Game.staticInt179 == 45) {
-					boolean var3 = !Game.staticBool27;
+				if (Client.staticInt179 == 45) {
+					boolean var3 = !Client.staticBool27;
 					staticInt120 = 22050;
 					Class19.staticBool5 = var3;
 					Class19.staticInt35 = 2;
@@ -9507,7 +9507,7 @@ public class Static {
 					Stream.staticClass19_2 = staticMethod431(BufferedFile.staticTaskManager1, Class38.staticCanvas1, 0,
 							22050);
 					Stream.staticClass19_2.method77(var10);
-					var211 = Game.staticJs5IndexImpl9;
+					var211 = Client.staticJs5IndexImpl9;
 					Js5IndexImpl var15 = staticJs5IndexImpl1;
 					var22 = Config19.staticJs5IndexImpl15;
 					staticJs5Index6 = var211;
@@ -9521,8 +9521,8 @@ public class Static {
 					Class16.staticClass20_1 = new Class20(22050, staticInt120);
 					staticString3 = "Prepared sound engine";
 					staticInt14 = 105;
-					Game.staticInt179 = 50;
-				} else if (Game.staticInt179 == 50) {
+					Client.staticInt179 = 50;
+				} else if (Client.staticInt179 == 50) {
 					var1 = 0;
 					if (NodeSub4.staticRasterizer2DSub2Sub1_3 == null) {
 						NodeSub4.staticRasterizer2DSub2Sub1_3 = staticMethod386(Class62.staticJs5IndexImpl7,
@@ -9552,9 +9552,9 @@ public class Static {
 						Class57.staticComputerInfo1 = new ComputerInfo(true);
 						staticString3 = "Loaded fonts";
 						staticInt14 = 120;
-						Game.staticInt179 = 60;
+						Client.staticInt179 = 60;
 					}
-				} else if (Game.staticInt179 == 60) {
+				} else if (Client.staticInt179 == 60) {
 					var1 = staticMethod389(AbstractClass3Sub1.staticJs5IndexImpl10, Class62.staticJs5IndexImpl7);
 					byte var221 = 9;
 					if (var1 < var221) {
@@ -9564,9 +9564,9 @@ public class Static {
 						staticString3 = "Loaded title screen";
 						staticInt14 = 150;
 						staticMethod396(5);
-						Game.staticInt179 = 70;
+						Client.staticInt179 = 70;
 					}
-				} else if (Game.staticInt179 == 70) {
+				} else if (Client.staticInt179 == 70) {
 					if (!Class23.staticJs5IndexImpl2.method259()) {
 						staticString3 = "Loading config - " + Class23.staticJs5IndexImpl2.method399() + "%";
 						staticInt14 = 180;
@@ -9577,14 +9577,14 @@ public class Static {
 						staticMethod9(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14);
 						Js5IndexImpl var25 = Class23.staticJs5IndexImpl2;
 						var211 = ClientScriptMap.staticJs5IndexImpl14;
-						boolean var29 = Game.staticBool27;
+						boolean var29 = Client.staticBool27;
 						ObjectDefinition.staticJs5Index20 = var25;
 						ObjectDefinition.staticJs5Index19 = var211;
 						ObjectDefinition.staticBool46 = var29;
 						staticMethod321(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14);
 						staticMethod3(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14,
-								Game.staticBool20, NodeSub4.staticRasterizer2DSub2Sub1_3);
-						staticMethod88(Class23.staticJs5IndexImpl2, Game.staticJs5IndexImpl8,
+								Client.staticBool20, NodeSub4.staticRasterizer2DSub2Sub1_3);
+						staticMethod88(Class23.staticJs5IndexImpl2, Client.staticJs5IndexImpl8,
 								FloorUnderlayDef.staticJs5IndexImpl13);
 						staticMethod397(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14);
 						staticMethod299(Class23.staticJs5IndexImpl2);
@@ -9618,30 +9618,30 @@ public class Static {
 						CacheableSub6.staticJs5Index23 = var14;
 						staticString3 = "Loaded config";
 						staticInt14 = 180;
-						Game.staticInt179 = 80;
+						Client.staticInt179 = 80;
 					}
-				} else if (Game.staticInt179 != 80) {
-					if (Game.staticInt179 == 90) {
+				} else if (Client.staticInt179 != 80) {
+					if (Client.staticInt179 == 90) {
 						if (!IdentityKit.staticJs5IndexImpl12.method259()) {
 							staticString3 = "Loading textures - " + IdentityKit.staticJs5IndexImpl12.method399()
 									+ "%";
 							staticInt14 = 270;
 						} else {
 							Class11 var24 = new Class11(IdentityKit.staticJs5IndexImpl12, Class62.staticJs5IndexImpl7,
-									20, 0.8D, Game.staticBool27 ? 64 : 128);
+									20, 0.8D, Client.staticBool27 ? 64 : 128);
 							staticMethod441(var24);
 							staticMethod453(0.8D);
 							staticString3 = "Loaded textures";
 							staticInt14 = 270;
-							Game.staticInt179 = 110;
+							Client.staticInt179 = 110;
 						}
-					} else if (Game.staticInt179 == 110) {
-						Game.staticMouseCapturer1 = new MouseCapturer();
-						BufferedFile.staticTaskManager1.method94(Game.staticMouseCapturer1, 10);
+					} else if (Client.staticInt179 == 110) {
+						Client.staticMouseCapturer1 = new MouseCapturer();
+						BufferedFile.staticTaskManager1.method94(Client.staticMouseCapturer1, 10);
 						staticString3 = "Loaded input handler";
 						staticInt14 = 282;
-						Game.staticInt179 = 120;
-					} else if (Game.staticInt179 == 120) {
+						Client.staticInt179 = 120;
+					} else if (Client.staticInt179 == 120) {
 						if (!AbstractClass3Sub1.staticJs5IndexImpl10.method270("huffman", "")) {
 							staticString3 = "Loading wordpack - 0%";
 							staticInt14 = 288;
@@ -9651,9 +9651,9 @@ public class Static {
 							staticMethod301(var261);
 							staticString3 = "Loaded wordpack";
 							staticInt14 = 288;
-							Game.staticInt179 = 130;
+							Client.staticInt179 = 130;
 						}
-					} else if (Game.staticInt179 == 130) {
+					} else if (Client.staticInt179 == 130) {
 						if (!CanvasSub1.staticJs5IndexImpl5.method259()) {
 							staticString3 = "Loading interfaces - "
 									+ CanvasSub1.staticJs5IndexImpl5.method399() * 4 / 5 + "%";
@@ -9669,9 +9669,9 @@ public class Static {
 						} else {
 							staticString3 = "Loaded interfaces";
 							staticInt14 = 300;
-							Game.staticInt179 = 140;
+							Client.staticInt179 = 140;
 						}
-					} else if (Game.staticInt179 == 140) {
+					} else if (Client.staticInt179 == 140) {
 						staticMethod396(10);
 					}
 				} else {
@@ -9735,8 +9735,8 @@ public class Static {
 						++var1;
 					}
 
-					if (Game.staticSpriteArray8 == null) {
-						Game.staticSpriteArray8 = staticMethod309(Class62.staticJs5IndexImpl7, "cross", "");
+					if (Client.staticSpriteArray8 == null) {
+						Client.staticSpriteArray8 = staticMethod309(Class62.staticJs5IndexImpl7, "cross", "");
 					} else {
 						++var1;
 					}
@@ -9779,7 +9779,7 @@ public class Static {
 						Class20.staticRasterizer2DSub3Array1[0].method654(var5 + var17, var5 + var21, var0 + var5);
 						staticString3 = "Loaded sprites";
 						staticInt14 = 210;
-						Game.staticInt179 = 90;
+						Client.staticInt179 = 90;
 					}
 				}
 			}
@@ -10154,38 +10154,38 @@ public class Static {
 	}
 
 	static final void staticMethod12() {
-		for (RenderableSub1 var0 = (RenderableSub1) Game.staticClass39_5
-				.method195(); var0 != null; var0 = (RenderableSub1) Game.staticClass39_5.method193()) {
-			if (var0.anInt575 == NodeSub4.staticInt155 && Game.staticInt166 <= var0.anInt580) {
-				if (Game.staticInt166 >= var0.anInt578) {
+		for (RenderableSub1 var0 = (RenderableSub1) Client.staticClass39_5
+				.method195(); var0 != null; var0 = (RenderableSub1) Client.staticClass39_5.method193()) {
+			if (var0.anInt575 == NodeSub4.staticInt155 && Client.staticInt166 <= var0.anInt580) {
+				if (Client.staticInt166 >= var0.anInt578) {
 					if (var0.anInt583 > 0) {
-						Npc var2 = Game.staticNpcArray1[var0.anInt583 - 1];
+						Npc var2 = Client.staticNpcArray1[var0.anInt583 - 1];
 						if (var2 != null && var2.anInt628 >= 0 && var2.anInt628 < 13312 && var2.anInt591 >= 0
 								&& var2.anInt591 < 13312) {
 							var0.method562(var2.anInt628, var2.anInt591,
 									staticMethod240(var2.anInt628, var2.anInt591, var0.anInt575) - var0.anInt584,
-									Game.staticInt166);
+									Client.staticInt166);
 						}
 					}
 
 					if (var0.anInt583 < 0) {
 						int var21 = -var0.anInt583 - 1;
 						Player var3;
-						if (var21 == Game.staticInt246) {
+						if (var21 == Client.staticInt246) {
 							var3 = AbstractClass2Sub1.staticPlayer1;
 						} else {
-							var3 = Game.staticPlayerArray1[var21];
+							var3 = Client.staticPlayerArray1[var21];
 						}
 
 						if (var3 != null && var3.anInt628 >= 0 && var3.anInt628 < 13312 && var3.anInt591 >= 0
 								&& var3.anInt591 < 13312) {
 							var0.method562(var3.anInt628, var3.anInt591,
 									staticMethod240(var3.anInt628, var3.anInt591, var0.anInt575) - var0.anInt584,
-									Game.staticInt166);
+									Client.staticInt166);
 						}
 					}
 
-					var0.method561(Game.staticInt171);
+					var0.method561(Client.staticInt171);
 					Friend.staticScene1.method102(NodeSub4.staticInt155, (int) var0.aDouble9, (int) var0.aDouble3,
 							(int) var0.aDouble6, 60, var0, var0.anInt577, -1, false);
 				}
@@ -10204,26 +10204,26 @@ public class Static {
 	}
 
 	static final void staticMethod130() {
-		if (Game.staticInt170 > 1) {
-			--Game.staticInt170;
+		if (Client.staticInt170 > 1) {
+			--Client.staticInt170;
 		}
 
-		if (Game.staticInt196 > 0) {
-			--Game.staticInt196;
+		if (Client.staticInt196 > 0) {
+			--Client.staticInt196;
 		}
 
-		if (Game.staticBool43) {
-			Game.staticBool43 = false;
+		if (Client.staticBool43) {
+			Client.staticBool43 = false;
 			staticMethod329();
 		} else {
-			if (!Game.staticBool30) {
-				Game.staticInt252 = 0;
-				Game.staticInt217 = -1;
-				Game.staticBool30 = false;
-				Game.staticStringArray9[0] = "Cancel";
-				Game.staticStringArray8[0] = "";
-				Game.staticIntArray98[0] = 1006;
-				Game.staticInt252 = 1;
+			if (!Client.staticBool30) {
+				Client.staticInt252 = 0;
+				Client.staticInt217 = -1;
+				Client.staticBool30 = false;
+				Client.staticStringArray9[0] = "Cancel";
+				Client.staticStringArray8[0] = "";
+				Client.staticIntArray98[0] = 1006;
+				Client.staticInt252 = 1;
 			}
 
 			int var0;
@@ -10231,7 +10231,7 @@ public class Static {
 				;
 			}
 
-			if (Game.staticInt165 == 30) {
+			if (Client.staticInt165 == 30) {
 				while (true) {
 					NodeSub17 var1 = (NodeSub17) staticClass36_1.method160();
 					boolean var24;
@@ -10250,26 +10250,26 @@ public class Static {
 						int var6;
 						int var7;
 						int var8;
-						synchronized (Game.staticMouseCapturer1.anObject3) {
-							if (!Game.staticBool42) {
-								Game.staticMouseCapturer1.anInt211 = 0;
-							} else if (MouseHandler.staticInt98 != 0 || Game.staticMouseCapturer1.anInt211 >= 40) {
-								Game.staticEncryptedStream1.method471(252);
-								Game.staticEncryptedStream1.writeByte(0);
-								var25 = Game.staticEncryptedStream1.off;
+						synchronized (Client.staticMouseCapturer1.anObject3) {
+							if (!Client.staticBool42) {
+								Client.staticMouseCapturer1.anInt211 = 0;
+							} else if (MouseHandler.staticInt98 != 0 || Client.staticMouseCapturer1.anInt211 >= 40) {
+								Client.staticEncryptedStream1.method471(252);
+								Client.staticEncryptedStream1.writeByte(0);
+								var25 = Client.staticEncryptedStream1.off;
 								var2 = 0;
 
-								for (var3 = 0; var3 < Game.staticMouseCapturer1.anInt211
-										&& Game.staticEncryptedStream1.off - var25 < 240; var3++) {
+								for (var3 = 0; var3 < Client.staticMouseCapturer1.anInt211
+										&& Client.staticEncryptedStream1.off - var25 < 240; var3++) {
 									++var2;
-									var4 = Game.staticMouseCapturer1.anIntArray58[var3];
+									var4 = Client.staticMouseCapturer1.anIntArray58[var3];
 									if (var4 < 0) {
 										var4 = 0;
 									} else if (var4 > 502) {
 										var4 = 502;
 									}
 
-									var5 = Game.staticMouseCapturer1.anIntArray57[var3];
+									var5 = Client.staticMouseCapturer1.anIntArray57[var3];
 									if (var5 < 0) {
 										var5 = 0;
 									} else if (var5 > 764) {
@@ -10277,51 +10277,51 @@ public class Static {
 									}
 
 									var6 = var5 + var4 * 765;
-									if (Game.staticMouseCapturer1.anIntArray58[var3] == -1
-											&& Game.staticMouseCapturer1.anIntArray57[var3] == -1) {
+									if (Client.staticMouseCapturer1.anIntArray58[var3] == -1
+											&& Client.staticMouseCapturer1.anIntArray57[var3] == -1) {
 										var5 = -1;
 										var4 = -1;
 										var6 = 524287;
 									}
 
-									if (Game.staticInt167 == var5 && var4 == Game.staticInt168) {
-										if (Game.staticInt163 < 2047) {
-											++Game.staticInt163;
+									if (Client.staticInt167 == var5 && var4 == Client.staticInt168) {
+										if (Client.staticInt163 < 2047) {
+											++Client.staticInt163;
 										}
 									} else {
-										var7 = var5 - Game.staticInt167;
-										Game.staticInt167 = var5;
-										var8 = var4 - Game.staticInt168;
-										Game.staticInt168 = var4;
-										if (Game.staticInt163 < 8 && var7 >= -32 && var7 <= 31 && var8 >= -32
+										var7 = var5 - Client.staticInt167;
+										Client.staticInt167 = var5;
+										var8 = var4 - Client.staticInt168;
+										Client.staticInt168 = var4;
+										if (Client.staticInt163 < 8 && var7 >= -32 && var7 <= 31 && var8 >= -32
 												&& var8 <= 31) {
 											var7 += 32;
 											var8 += 32;
-											Game.staticEncryptedStream1
-													.writeShort(var8 + (Game.staticInt163 << 12) + (var7 << 6));
-											Game.staticInt163 = 0;
-										} else if (Game.staticInt163 < 8) {
-											Game.staticEncryptedStream1
-													.writeTriByte(8388608 + (Game.staticInt163 << 19) + var6);
-											Game.staticInt163 = 0;
+											Client.staticEncryptedStream1
+													.writeShort(var8 + (Client.staticInt163 << 12) + (var7 << 6));
+											Client.staticInt163 = 0;
+										} else if (Client.staticInt163 < 8) {
+											Client.staticEncryptedStream1
+													.writeTriByte(8388608 + (Client.staticInt163 << 19) + var6);
+											Client.staticInt163 = 0;
 										} else {
-											Game.staticEncryptedStream1
-													.writeInt(-1073741824 + (Game.staticInt163 << 19) + var6);
-											Game.staticInt163 = 0;
+											Client.staticEncryptedStream1
+													.writeInt(-1073741824 + (Client.staticInt163 << 19) + var6);
+											Client.staticInt163 = 0;
 										}
 									}
 								}
 
-								Game.staticEncryptedStream1.method327(Game.staticEncryptedStream1.off - var25);
-								if (var2 >= Game.staticMouseCapturer1.anInt211) {
-									Game.staticMouseCapturer1.anInt211 = 0;
+								Client.staticEncryptedStream1.method327(Client.staticEncryptedStream1.off - var25);
+								if (var2 >= Client.staticMouseCapturer1.anInt211) {
+									Client.staticMouseCapturer1.anInt211 = 0;
 								} else {
-									Game.staticMouseCapturer1.anInt211 -= var2;
+									Client.staticMouseCapturer1.anInt211 -= var2;
 
-									for (var3 = 0; var3 < Game.staticMouseCapturer1.anInt211; var3++) {
-										Game.staticMouseCapturer1.anIntArray57[var3] = Game.staticMouseCapturer1.anIntArray57[var3
+									for (var3 = 0; var3 < Client.staticMouseCapturer1.anInt211; var3++) {
+										Client.staticMouseCapturer1.anIntArray57[var3] = Client.staticMouseCapturer1.anIntArray57[var3
 												+ var2];
-										Game.staticMouseCapturer1.anIntArray58[var3] = Game.staticMouseCapturer1.anIntArray58[var2
+										Client.staticMouseCapturer1.anIntArray58[var3] = Client.staticMouseCapturer1.anIntArray58[var2
 												+ var3];
 									}
 								}
@@ -10331,12 +10331,12 @@ public class Static {
 						long var261;
 						if (MouseHandler.staticInt98 == 1 || !staticBool18 && MouseHandler.staticInt98 == 4
 								|| MouseHandler.staticInt98 == 2) {
-							var261 = (MouseHandler.staticLong2 * 1586812740019762345L - -Game.staticLong10) / 50L;
+							var261 = (MouseHandler.staticLong2 * 1586812740019762345L - -Client.staticLong10) / 50L;
 							if (var261 > 4095L) {
 								var261 = 4095L;
 							}
 
-							Game.staticLong10 = MouseHandler.staticLong2 * -1586812740019762345L;
+							Client.staticLong10 = MouseHandler.staticLong2 * -1586812740019762345L;
 							var2 = MouseHandler.staticInt100;
 							if (var2 < 0) {
 								var2 = 0;
@@ -10352,66 +10352,66 @@ public class Static {
 							}
 
 							var4 = (int) var261;
-							Game.staticEncryptedStream1.method471(152);
-							Game.staticEncryptedStream1
+							Client.staticEncryptedStream1.method471(152);
+							Client.staticEncryptedStream1
 									.writeShort((MouseHandler.staticInt98 == 2 ? 1 : 0) + (var4 << 1));
-							Game.staticEncryptedStream1.writeShort(var3);
-							Game.staticEncryptedStream1.writeShort(var2);
+							Client.staticEncryptedStream1.writeShort(var3);
+							Client.staticEncryptedStream1.writeShort(var2);
 						}
 
 						if (KeyboardHandler.staticInt76 > 0) {
-							Game.staticEncryptedStream1.method471(217);
-							Game.staticEncryptedStream1.writeShort(0);
-							var0 = Game.staticEncryptedStream1.off;
+							Client.staticEncryptedStream1.method471(217);
+							Client.staticEncryptedStream1.writeShort(0);
+							var0 = Client.staticEncryptedStream1.off;
 							var261 = staticMethod297();
 
 							for (var3 = 0; var3 < KeyboardHandler.staticInt76; var3++) {
-								long var30 = var261 - Game.staticLong13;
+								long var30 = var261 - Client.staticLong13;
 								if (var30 > 16777215L) {
 									var30 = 16777215L;
 								}
 
-								Game.staticLong13 = var261;
-								Game.staticEncryptedStream1.method357((int) var30);
-								Game.staticEncryptedStream1.writeByte(KeyboardHandler.staticIntArray48[var3]);
+								Client.staticLong13 = var261;
+								Client.staticEncryptedStream1.method357((int) var30);
+								Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticIntArray48[var3]);
 							}
 
-							Game.staticEncryptedStream1.method371(Game.staticEncryptedStream1.off - var0);
+							Client.staticEncryptedStream1.method371(Client.staticEncryptedStream1.off - var0);
 						}
 
-						if (Game.staticInt226 > 0) {
-							--Game.staticInt226;
+						if (Client.staticInt226 > 0) {
+							--Client.staticInt226;
 						}
 
 						if (KeyboardHandler.staticBoolArray2[96] || KeyboardHandler.staticBoolArray2[97]
 								|| KeyboardHandler.staticBoolArray2[98] || KeyboardHandler.staticBoolArray2[99]) {
-							Game.staticBool26 = true;
+							Client.staticBool26 = true;
 						}
 
-						if (Game.staticBool26 && Game.staticInt226 <= 0) {
-							Game.staticInt226 = 20;
-							Game.staticBool26 = false;
-							Game.staticEncryptedStream1.method471(213);
-							Game.staticEncryptedStream1.method369(Game.staticInt220);
-							Game.staticEncryptedStream1.method369(Game.staticInt221);
+						if (Client.staticBool26 && Client.staticInt226 <= 0) {
+							Client.staticInt226 = 20;
+							Client.staticBool26 = false;
+							Client.staticEncryptedStream1.method471(213);
+							Client.staticEncryptedStream1.method369(Client.staticInt220);
+							Client.staticEncryptedStream1.method369(Client.staticInt221);
 						}
 
-						if (RuntimeExceptionSub1.staticBool9 && !Game.staticBool41) {
-							Game.staticBool41 = true;
-							Game.staticEncryptedStream1.method471(124);
-							Game.staticEncryptedStream1.writeByte(1);
+						if (RuntimeExceptionSub1.staticBool9 && !Client.staticBool41) {
+							Client.staticBool41 = true;
+							Client.staticEncryptedStream1.method471(124);
+							Client.staticEncryptedStream1.writeByte(1);
 						}
 
-						if (!RuntimeExceptionSub1.staticBool9 && Game.staticBool41) {
-							Game.staticBool41 = false;
-							Game.staticEncryptedStream1.method471(124);
-							Game.staticEncryptedStream1.writeByte(0);
+						if (!RuntimeExceptionSub1.staticBool9 && Client.staticBool41) {
+							Client.staticBool41 = false;
+							Client.staticEncryptedStream1.method471(124);
+							Client.staticEncryptedStream1.writeByte(0);
 						}
 
 						int var16;
 						int var27;
-						if (NodeSub4.staticInt155 != -Game.staticInt294) {
-							Game.staticInt294 = -NodeSub4.staticInt155;
+						if (NodeSub4.staticInt155 != -Client.staticInt294) {
+							Client.staticInt294 = -NodeSub4.staticInt155;
 							var0 = NodeSub4.staticInt155;
 							int[] var281 = Actor.staticSprite5.anIntArray154;
 							var2 = var281.length;
@@ -10456,7 +10456,7 @@ public class Static {
 								}
 							}
 
-							Game.staticInt311 = 0;
+							Client.staticInt311 = 0;
 
 							for (var5 = 0; var5 < 104; var5++) {
 								for (var6 = 0; var6 < 104; var6++) {
@@ -10469,7 +10469,7 @@ public class Static {
 											var16 = var6;
 											if (var8 != 22 && var8 != 29 && var8 != 34 && var8 != 36 && var8 != 46
 													&& var8 != 47 && var8 != 48) {
-												int[][] var28 = Game.staticClass38Array1[NodeSub4.staticInt155].anIntArrayArray5;
+												int[][] var28 = Client.staticClass38Array1[NodeSub4.staticInt155].anIntArrayArray5;
 
 												for (int var31 = 0; var31 < 10; var31++) {
 													int var36 = (int) (Math.random() * 4.0D);
@@ -10495,10 +10495,10 @@ public class Static {
 												}
 											}
 
-											Game.staticSpriteArray9[Game.staticInt311] = staticSpriteArray4[var8];
-											Game.staticIntArray113[Game.staticInt311] = var27;
-											Game.staticIntArray103[Game.staticInt311] = var16;
-											++Game.staticInt311;
+											Client.staticSpriteArray9[Client.staticInt311] = staticSpriteArray4[var8];
+											Client.staticIntArray113[Client.staticInt311] = var27;
+											Client.staticIntArray103[Client.staticInt311] = var16;
+											++Client.staticInt311;
 										}
 									}
 								}
@@ -10507,12 +10507,12 @@ public class Static {
 							CacheableSub2.staticGraphicsBuffer1.method281();
 						}
 
-						if (Game.staticInt165 != 30) {
+						if (Client.staticInt165 != 30) {
 							return;
 						}
 
-						for (NodeSub19 var29 = (NodeSub19) Game.staticClass39_7
-								.method195(); var29 != null; var29 = (NodeSub19) Game.staticClass39_7.method193()) {
+						for (NodeSub19 var29 = (NodeSub19) Client.staticClass39_7
+								.method195(); var29 != null; var29 = (NodeSub19) Client.staticClass39_7.method193()) {
 							if (var29.anInt386 > 0) {
 								--var29.anInt386;
 							}
@@ -10545,8 +10545,8 @@ public class Static {
 						}
 
 						staticMethod29();
-						++Game.staticInt192;
-						if (Game.staticInt192 > 750) {
+						++Client.staticInt192;
+						if (Client.staticInt192 > 750) {
 							staticMethod329();
 							return;
 						}
@@ -10554,17 +10554,17 @@ public class Static {
 						staticMethod203();
 						staticMethod384();
 						staticMethod239();
-						++Game.staticInt171;
-						if (Game.staticInt239 != 0) {
-							Game.staticInt297 += 20;
-							if (Game.staticInt297 >= 400) {
-								Game.staticInt239 = 0;
+						++Client.staticInt171;
+						if (Client.staticInt239 != 0) {
+							Client.staticInt297 += 20;
+							if (Client.staticInt297 >= 400) {
+								Client.staticInt239 = 0;
 							}
 						}
 
 						if (Tile.staticWidget11 != null) {
-							++Game.staticInt241;
-							if (Game.staticInt241 >= 15) {
+							++Client.staticInt241;
+							if (Client.staticInt241 >= 15) {
 								staticMethod73(Tile.staticWidget11);
 								Tile.staticWidget11 = null;
 							}
@@ -10574,13 +10574,13 @@ public class Static {
 						Widget var301 = FloorUnderlayDef.staticWidget12;
 						Class56.staticWidget4 = null;
 						FloorUnderlayDef.staticWidget12 = null;
-						Game.staticWidget9 = null;
-						Game.staticBool29 = false;
-						Game.staticBool35 = false;
-						Game.staticInt264 = 0;
+						Client.staticWidget9 = null;
+						Client.staticBool29 = false;
+						Client.staticBool35 = false;
+						Client.staticInt264 = 0;
 
-						while (staticMethod106() && Game.staticInt264 < 128) {
-							if (Game.staticInt268 >= 2 && KeyboardHandler.staticBoolArray2[82]
+						while (staticMethod106() && Client.staticInt264 < 128) {
+							if (Client.staticInt268 >= 2 && KeyboardHandler.staticBoolArray2[82]
 									&& FileOnDisk.staticInt38 == 66) {
 								String var321 = "";
 
@@ -10593,14 +10593,14 @@ public class Static {
 								NodeSub19.staticClipboard1.setContents(new StringSelection(var321),
 										(ClipboardOwner) null);
 							} else {
-								Game.staticIntArray111[Game.staticInt264] = FileOnDisk.staticInt38;
-								Game.staticIntArray110[Game.staticInt264] = staticChar1;
-								++Game.staticInt264;
+								Client.staticIntArray111[Client.staticInt264] = FileOnDisk.staticInt38;
+								Client.staticIntArray110[Client.staticInt264] = staticChar1;
+								++Client.staticInt264;
 							}
 						}
 
-						if (Game.staticInt263 != -1) {
-							var2 = Game.staticInt263;
+						if (Client.staticInt263 != -1) {
+							var2 = Client.staticInt263;
 							var3 = staticInt86;
 							var4 = Class47.staticInt121;
 							if (staticMethod4(var2)) {
@@ -10608,22 +10608,22 @@ public class Static {
 							}
 						}
 
-						Game.staticInt274 += 502628357;
+						Client.staticInt274 += 502628357;
 
 						while (true) {
 							NodeSub16 var33;
 							Widget var35;
 							Widget var361;
 							do {
-								var33 = (NodeSub16) Game.staticClass39_9.method194();
+								var33 = (NodeSub16) Client.staticClass39_9.method194();
 								if (var33 == null) {
 									while (true) {
 										do {
-											var33 = (NodeSub16) Game.staticClass39_10.method194();
+											var33 = (NodeSub16) Client.staticClass39_10.method194();
 											if (var33 == null) {
 												while (true) {
 													do {
-														var33 = (NodeSub16) Game.staticClass39_8.method194();
+														var33 = (NodeSub16) Client.staticClass39_8.method194();
 														if (var33 == null) {
 															boolean var32 = false;
 
@@ -10631,38 +10631,38 @@ public class Static {
 															while (!var32) {
 																var32 = true;
 
-																for (var3 = 0; var3 < Game.staticInt252 - 1; var3++) {
-																	if (Game.staticIntArray98[var3] < 1000
-																			&& Game.staticIntArray98[1 + var3] > 1000) {
-																		String var20 = Game.staticStringArray8[var3];
-																		Game.staticStringArray8[var3] = Game.staticStringArray8[var3
+																for (var3 = 0; var3 < Client.staticInt252 - 1; var3++) {
+																	if (Client.staticIntArray98[var3] < 1000
+																			&& Client.staticIntArray98[1 + var3] > 1000) {
+																		String var20 = Client.staticStringArray8[var3];
+																		Client.staticStringArray8[var3] = Client.staticStringArray8[var3
 																				+ 1];
-																		Game.staticStringArray8[var3 + 1] = var20;
-																		var22 = Game.staticStringArray9[var3];
-																		Game.staticStringArray9[var3] = Game.staticStringArray9[1
+																		Client.staticStringArray8[var3 + 1] = var20;
+																		var22 = Client.staticStringArray9[var3];
+																		Client.staticStringArray9[var3] = Client.staticStringArray9[1
 																				+ var3];
-																		Game.staticStringArray9[1 + var3] = var22;
-																		var6 = Game.staticIntArray98[var3];
-																		Game.staticIntArray98[var3] = Game.staticIntArray98[1
+																		Client.staticStringArray9[1 + var3] = var22;
+																		var6 = Client.staticIntArray98[var3];
+																		Client.staticIntArray98[var3] = Client.staticIntArray98[1
 																				+ var3];
-																		Game.staticIntArray98[var3 + 1] = var6;
-																		var6 = Game.staticIntArray109[var3];
-																		Game.staticIntArray109[var3] = Game.staticIntArray109[var3
+																		Client.staticIntArray98[var3 + 1] = var6;
+																		var6 = Client.staticIntArray109[var3];
+																		Client.staticIntArray109[var3] = Client.staticIntArray109[var3
 																				+ 1];
-																		Game.staticIntArray109[1 + var3] = var6;
-																		var6 = Game.staticIntArray97[var3];
-																		Game.staticIntArray97[var3] = Game.staticIntArray97[var3
+																		Client.staticIntArray109[1 + var3] = var6;
+																		var6 = Client.staticIntArray97[var3];
+																		Client.staticIntArray97[var3] = Client.staticIntArray97[var3
 																				+ 1];
-																		Game.staticIntArray97[1 + var3] = var6;
-																		var6 = Game.staticIntArray112[var3];
-																		Game.staticIntArray112[var3] = Game.staticIntArray112[1
+																		Client.staticIntArray97[1 + var3] = var6;
+																		var6 = Client.staticIntArray112[var3];
+																		Client.staticIntArray112[var3] = Client.staticIntArray112[1
 																				+ var3];
-																		Game.staticIntArray112[1 + var3] = var6;
-																		if (Game.staticInt217 != -1) {
-																			if (Game.staticInt217 == var3) {
-																				Game.staticInt217 = var3 + 1;
-																			} else if (var3 + 1 == Game.staticInt217) {
-																				Game.staticInt217 = var3;
+																		Client.staticIntArray112[1 + var3] = var6;
+																		if (Client.staticInt217 != -1) {
+																			if (Client.staticInt217 == var3) {
+																				Client.staticInt217 = var3 + 1;
+																			} else if (var3 + 1 == Client.staticInt217) {
+																				Client.staticInt217 = var3;
 																			}
 																		}
 
@@ -10675,10 +10675,10 @@ public class Static {
 															Widget var39;
 															boolean var40;
 															if (NodeSub3.staticWidget5 == null
-																	&& Game.staticWidget7 == null) {
+																	&& Client.staticWidget7 == null) {
 																var2 = MouseHandler.staticInt98;
 																String var46;
-																if (Game.staticBool30) {
+																if (Client.staticBool30) {
 																	if (var2 != 1
 																			&& (staticBool18 || var2 != 4)) {
 																		var3 = MouseHandler.staticInt94;
@@ -10690,7 +10690,7 @@ public class Static {
 																				|| var4 < NodeSub20.staticInt320 - 10
 																				|| var4 > 10 + NpcDefinition.staticInt324
 																						+ NodeSub20.staticInt320) {
-																			Game.staticBool30 = false;
+																			Client.staticBool30 = false;
 																			staticMethod327(Class62.staticInt147,
 																					NodeSub20.staticInt320,
 																					KeyboardHandler.staticInt84,
@@ -10707,8 +10707,8 @@ public class Static {
 																		var7 = MouseHandler.staticInt100;
 																		var8 = -1;
 
-																		for (var27 = 0; var27 < Game.staticInt252; var27++) {
-																			var16 = (Game.staticInt252 - 1 - var27) * 15
+																		for (var27 = 0; var27 < Client.staticInt252; var27++) {
+																			var16 = (Client.staticInt252 - 1 - var27) * 15
 																					+ var4 + 31;
 																			if (var6 > var3 && var6 < var5 + var3
 																					&& var7 > var16 - 13
@@ -10718,19 +10718,19 @@ public class Static {
 																		}
 
 																		if (var8 != -1 && var8 >= 0) {
-																			var27 = Game.staticIntArray109[var8];
-																			var16 = Game.staticIntArray97[var8];
-																			var37 = Game.staticIntArray98[var8];
-																			int var381 = Game.staticIntArray112[var8];
-																			var46 = Game.staticStringArray9[var8];
-																			String var49 = Game.staticStringArray8[var8];
+																			var27 = Client.staticIntArray109[var8];
+																			var16 = Client.staticIntArray97[var8];
+																			var37 = Client.staticIntArray98[var8];
+																			int var381 = Client.staticIntArray112[var8];
+																			var46 = Client.staticStringArray9[var8];
+																			String var49 = Client.staticStringArray8[var8];
 																			staticMethod66(var27, var16, var37, var381,
 																					var46, var49,
 																					MouseHandler.staticInt99,
 																					MouseHandler.staticInt100);
 																		}
 
-																		Game.staticBool30 = false;
+																		Client.staticBool30 = false;
 																		staticMethod327(Class62.staticInt147,
 																				NodeSub20.staticInt320,
 																				KeyboardHandler.staticInt84,
@@ -10742,15 +10742,15 @@ public class Static {
 																		if ((var2 == 1
 																				|| !staticBool18 && var2 == 4)
 																				&& var3 >= 0) {
-																			var4 = Game.staticIntArray98[var3];
+																			var4 = Client.staticIntArray98[var3];
 																			if (var4 == 39 || var4 == 40 || var4 == 41
 																					|| var4 == 42 || var4 == 43
 																					|| var4 == 33 || var4 == 34
 																					|| var4 == 35 || var4 == 36
 																					|| var4 == 37 || var4 == 38
 																					|| var4 == 1005) {
-																				var5 = Game.staticIntArray109[var3];
-																				var6 = Game.staticIntArray97[var3];
+																				var5 = Client.staticIntArray109[var3];
+																				var6 = Client.staticIntArray97[var3];
 																				var39 = staticMethod8(var6);
 																				if (staticMethod379(
 																						staticMethod192(var39))
@@ -10758,20 +10758,20 @@ public class Static {
 																								staticMethod192(
 																										var39))) {
 																					if (NodeSub3.staticWidget5 != null
-																							&& !Game.staticBool31) {
+																							&& !Client.staticBool31) {
 																						var8 = staticMethod165();
-																						if (Game.staticInt214 != 1
+																						if (Client.staticInt214 != 1
 																								&& !staticMethod475(
 																										var8)
-																								&& Game.staticInt252 > 0) {
+																								&& Client.staticInt252 > 0) {
 																							staticMethod371(
-																									Game.staticInt242,
-																									Game.staticInt243);
+																									Client.staticInt242,
+																									Client.staticInt243);
 																						}
 																					}
 
-																					Game.staticBool31 = false;
-																					Game.staticInt244 = 0;
+																					Client.staticBool31 = false;
+																					Client.staticInt244 = 0;
 																					if (NodeSub3.staticWidget5 != null) {
 																						staticMethod73(
 																								NodeSub3.staticWidget5);
@@ -10779,16 +10779,16 @@ public class Static {
 
 																					NodeSub3.staticWidget5 = staticMethod8(
 																							var6);
-																					Game.staticInt161 = var5;
-																					Game.staticInt242 = MouseHandler.staticInt99;
-																					Game.staticInt243 = MouseHandler.staticInt100;
+																					Client.staticInt161 = var5;
+																					Client.staticInt242 = MouseHandler.staticInt99;
+																					Client.staticInt243 = MouseHandler.staticInt100;
 																					if (var3 >= 0) {
 																						Class20.staticContextMenuItem1 = new ContextMenuItem();
-																						Class20.staticContextMenuItem1.anInt7 = Game.staticIntArray109[var3];
-																						Class20.staticContextMenuItem1.anInt10 = Game.staticIntArray97[var3];
-																						Class20.staticContextMenuItem1.anInt8 = Game.staticIntArray98[var3];
-																						Class20.staticContextMenuItem1.anInt9 = Game.staticIntArray112[var3];
-																						Class20.staticContextMenuItem1.aString3 = Game.staticStringArray9[var3];
+																						Class20.staticContextMenuItem1.anInt7 = Client.staticIntArray109[var3];
+																						Class20.staticContextMenuItem1.anInt10 = Client.staticIntArray97[var3];
+																						Class20.staticContextMenuItem1.anInt8 = Client.staticIntArray98[var3];
+																						Class20.staticContextMenuItem1.anInt9 = Client.staticIntArray112[var3];
+																						Class20.staticContextMenuItem1.aString3 = Client.staticStringArray9[var3];
 																					}
 
 																					staticMethod73(
@@ -10802,13 +10802,13 @@ public class Static {
 																				|| !staticBool18 && var2 == 4) {
 																			label1261: {
 																				label869: {
-																					if (Game.staticInt214 == 1
-																							&& Game.staticInt252 > 2) {
-																						if (Game.staticInt252 <= 0) {
+																					if (Client.staticInt214 == 1
+																							&& Client.staticInt252 > 2) {
+																						if (Client.staticInt252 <= 0) {
 																							var40 = false;
-																						} else if (Game.staticBool39
+																						} else if (Client.staticBool39
 																								&& KeyboardHandler.staticBoolArray2[81]
-																								&& Game.staticInt217 != -1) {
+																								&& Client.staticInt217 != -1) {
 																							var40 = true;
 																						} else {
 																							var40 = false;
@@ -10830,20 +10830,20 @@ public class Static {
 
 																		if ((var2 == 1
 																				|| !staticBool18 && var2 == 4)
-																				&& Game.staticInt252 > 0 && var3 >= 0) {
-																			var4 = Game.staticIntArray109[var3];
-																			var5 = Game.staticIntArray97[var3];
-																			var6 = Game.staticIntArray98[var3];
-																			var7 = Game.staticIntArray112[var3];
-																			var22 = Game.staticStringArray9[var3];
-																			var46 = Game.staticStringArray8[var3];
+																				&& Client.staticInt252 > 0 && var3 >= 0) {
+																			var4 = Client.staticIntArray109[var3];
+																			var5 = Client.staticIntArray97[var3];
+																			var6 = Client.staticIntArray98[var3];
+																			var7 = Client.staticIntArray112[var3];
+																			var22 = Client.staticStringArray9[var3];
+																			var46 = Client.staticStringArray8[var3];
 																			staticMethod66(var4, var5, var6, var7,
 																					var22, var46,
 																					MouseHandler.staticInt99,
 																					MouseHandler.staticInt100);
 																		}
 
-																		if (var2 == 2 && Game.staticInt252 > 0) {
+																		if (var2 == 2 && Client.staticInt252 > 0) {
 																			staticMethod37(MouseHandler.staticInt99,
 																					MouseHandler.staticInt100);
 																		}
@@ -10851,39 +10851,39 @@ public class Static {
 																}
 															}
 
-															if (Game.staticWidget7 != null) {
+															if (Client.staticWidget7 != null) {
 																staticMethod20();
 															}
 
 															if (NodeSub3.staticWidget5 != null) {
 																staticMethod73(NodeSub3.staticWidget5);
-																++Game.staticInt244;
+																++Client.staticInt244;
 																if (MouseHandler.staticInt93 == 0) {
-																	if (Game.staticBool31) {
+																	if (Client.staticBool31) {
 																		if (Class34.staticWidget3 == NodeSub3.staticWidget5
-																				&& Game.staticInt161 != Game.staticInt230) {
+																				&& Client.staticInt161 != Client.staticInt230) {
 																			var39 = NodeSub3.staticWidget5;
 																			byte var41 = 0;
-																			if (Game.staticInt266 == 1
+																			if (Client.staticInt266 == 1
 																					&& var39.anInt298 == 206) {
 																				var41 = 1;
 																			}
 
-																			if (var39.anIntArray76[Game.staticInt230] <= 0) {
+																			if (var39.anIntArray76[Client.staticInt230] <= 0) {
 																				var41 = 0;
 																			}
 
 																			if (staticMethod133(
 																					staticMethod192(var39))) {
-																				var4 = Game.staticInt161;
-																				var5 = Game.staticInt230;
+																				var4 = Client.staticInt161;
+																				var5 = Client.staticInt230;
 																				var39.anIntArray76[var5] = var39.anIntArray76[var4];
 																				var39.anIntArray77[var5] = var39.anIntArray77[var4];
 																				var39.anIntArray76[var4] = -1;
 																				var39.anIntArray77[var4] = 0;
 																			} else if (var41 == 1) {
-																				var4 = Game.staticInt161;
-																				var5 = Game.staticInt230;
+																				var4 = Client.staticInt161;
+																				var5 = Client.staticInt230;
 
 																				while (var4 != var5) {
 																					if (var4 > var5) {
@@ -10895,31 +10895,31 @@ public class Static {
 																					}
 																				}
 																			} else {
-																				var39.method386(Game.staticInt230,
-																						Game.staticInt161);
+																				var39.method386(Client.staticInt230,
+																						Client.staticInt161);
 																			}
 
-																			Game.staticEncryptedStream1.method471(151);
-																			Game.staticEncryptedStream1
-																					.method351(Game.staticInt161);
-																			Game.staticEncryptedStream1
-																					.writeShort(Game.staticInt230);
-																			Game.staticEncryptedStream1
+																			Client.staticEncryptedStream1.method471(151);
+																			Client.staticEncryptedStream1
+																					.method351(Client.staticInt161);
+																			Client.staticEncryptedStream1
+																					.writeShort(Client.staticInt230);
+																			Client.staticEncryptedStream1
 																					.writeByte(var41);
-																			Game.staticEncryptedStream1.method360(
+																			Client.staticEncryptedStream1.method360(
 																					NodeSub3.staticWidget5.anInt294);
 																		}
 																	} else {
 																		label1226: {
 																			label1244: {
 																				var2 = staticMethod165();
-																				if (Game.staticInt252 > 2) {
-																					if (Game.staticInt214 == 1) {
-																						if (Game.staticInt252 <= 0) {
+																				if (Client.staticInt252 > 2) {
+																					if (Client.staticInt214 == 1) {
+																						if (Client.staticInt252 <= 0) {
 																							var40 = false;
-																						} else if (Game.staticBool39
+																						} else if (Client.staticBool39
 																								&& KeyboardHandler.staticBoolArray2[81]
-																								&& Game.staticInt217 != -1) {
+																								&& Client.staticInt217 != -1) {
 																							var40 = true;
 																						} else {
 																							var40 = false;
@@ -10935,55 +10935,55 @@ public class Static {
 																					}
 																				}
 
-																				if (Game.staticInt252 > 0) {
-																					staticMethod371(Game.staticInt242,
-																							Game.staticInt243);
+																				if (Client.staticInt252 > 0) {
+																					staticMethod371(Client.staticInt242,
+																							Client.staticInt243);
 																				}
 																				break label1226;
 																			}
 
-																			staticMethod37(Game.staticInt242,
-																					Game.staticInt243);
+																			staticMethod37(Client.staticInt242,
+																					Client.staticInt243);
 																		}
 																	}
 
-																	Game.staticInt241 = 10;
+																	Client.staticInt241 = 10;
 																	MouseHandler.staticInt98 = 0;
 																	NodeSub3.staticWidget5 = null;
-																} else if (Game.staticInt244 >= 5
-																		&& (MouseHandler.staticInt94 > Game.staticInt242
+																} else if (Client.staticInt244 >= 5
+																		&& (MouseHandler.staticInt94 > Client.staticInt242
 																				+ 5
-																				|| MouseHandler.staticInt94 < Game.staticInt242
+																				|| MouseHandler.staticInt94 < Client.staticInt242
 																						- 5
 																				|| MouseHandler.staticInt88 > 5
-																						+ Game.staticInt243
-																				|| MouseHandler.staticInt88 < Game.staticInt243
+																						+ Client.staticInt243
+																				|| MouseHandler.staticInt88 < Client.staticInt243
 																						- 5)) {
-																	Game.staticBool31 = true;
+																	Client.staticBool31 = true;
 																}
 															}
 
 															if (staticMethod80()) {
 																var2 = Scene.staticInt57;
 																var3 = Scene.staticInt58;
-																Game.staticEncryptedStream1.method471(147);
-																Game.staticEncryptedStream1.writeByte(5);
-																Game.staticEncryptedStream1
+																Client.staticEncryptedStream1.method471(147);
+																Client.staticEncryptedStream1.writeByte(5);
+																Client.staticEncryptedStream1
 																		.method343(KeyboardHandler.staticBoolArray2[82]
 																				? KeyboardHandler.staticBoolArray2[81]
 																						? 2 : 1
 																				: 0);
-																Game.staticEncryptedStream1
+																Client.staticEncryptedStream1
 																		.method369(var3 + Class34.staticInt75);
-																Game.staticEncryptedStream1
+																Client.staticEncryptedStream1
 																		.method369(var2 + NodeSub3.staticInt154);
 																staticMethod78();
-																Game.staticInt238 = MouseHandler.staticInt99;
-																Game.staticInt237 = MouseHandler.staticInt100;
-																Game.staticInt239 = 1;
-																Game.staticInt297 = 0;
-																Game.staticInt296 = var2;
-																Game.staticInt240 = var3;
+																Client.staticInt238 = MouseHandler.staticInt99;
+																Client.staticInt237 = MouseHandler.staticInt100;
+																Client.staticInt239 = 1;
+																Client.staticInt297 = 0;
+																Client.staticInt296 = var2;
+																Client.staticInt240 = var3;
 															}
 
 															if (Class56.staticWidget4 != var311) {
@@ -10997,7 +10997,7 @@ public class Static {
 															}
 
 															if (FloorUnderlayDef.staticWidget12 != var301
-																	&& Game.staticInt257 == Game.staticInt185) {
+																	&& Client.staticInt257 == Client.staticInt185) {
 																if (var301 != null) {
 																	staticMethod73(var301);
 																}
@@ -11008,20 +11008,20 @@ public class Static {
 															}
 
 															if (FloorUnderlayDef.staticWidget12 != null) {
-																if (Game.staticInt185 < Game.staticInt257) {
-																	++Game.staticInt185;
-																	if (Game.staticInt185 == Game.staticInt257) {
+																if (Client.staticInt185 < Client.staticInt257) {
+																	++Client.staticInt185;
+																	if (Client.staticInt185 == Client.staticInt257) {
 																		staticMethod73(FloorUnderlayDef.staticWidget12);
 																	}
 																}
-															} else if (Game.staticInt185 > 0) {
-																--Game.staticInt185;
+															} else if (Client.staticInt185 > 0) {
+																--Client.staticInt185;
 															}
 
-															var2 = Game.staticInt203
+															var2 = Client.staticInt203
 																	+ AbstractClass2Sub1.staticPlayer1.anInt628;
 															var3 = AbstractClass2Sub1.staticPlayer1.anInt591
-																	+ Game.staticInt233;
+																	+ Client.staticInt233;
 															if (GraphicsBufferSub1.staticInt316 - var2 < -500
 																	|| GraphicsBufferSub1.staticInt316 - var2 > 500
 																	|| Class4.staticInt21 - var3 < -500
@@ -11041,54 +11041,54 @@ public class Static {
 
 															if (MouseHandler.staticInt93 == 4 && staticBool18) {
 																var4 = MouseHandler.staticInt88
-																		- Game.staticInt224 * -211836111;
-																Game.staticInt222 = var4 * 2;
-																Game.staticInt224 = (var4 != -1 && var4 != 1
+																		- Client.staticInt224 * -211836111;
+																Client.staticInt222 = var4 * 2;
+																Client.staticInt224 = (var4 != -1 && var4 != 1
 																		? (MouseHandler.staticInt88
-																				+ Game.staticInt224 * -211836111) / 2
+																				+ Client.staticInt224 * -211836111) / 2
 																		: MouseHandler.staticInt88) * -1922771503;
-																var5 = Game.staticInt223 * -2117374245
+																var5 = Client.staticInt223 * -2117374245
 																		- MouseHandler.staticInt94;
-																Game.staticInt251 = var5 * 2;
-																Game.staticInt223 = -1198989997 * (var5 != -1
+																Client.staticInt251 = var5 * 2;
+																Client.staticInt223 = -1198989997 * (var5 != -1
 																		&& var5 != 1
 																				? (MouseHandler.staticInt94
-																						+ Game.staticInt223
+																						+ Client.staticInt223
 																								* -2117374245)
 																						/ 2
 																				: MouseHandler.staticInt94);
 															} else {
 																if (KeyboardHandler.staticBoolArray2[96]) {
-																	Game.staticInt251 += (-24 - Game.staticInt251) / 2;
+																	Client.staticInt251 += (-24 - Client.staticInt251) / 2;
 																} else if (KeyboardHandler.staticBoolArray2[97]) {
-																	Game.staticInt251 += (24 - Game.staticInt251) / 2;
+																	Client.staticInt251 += (24 - Client.staticInt251) / 2;
 																} else {
-																	Game.staticInt251 /= 2;
+																	Client.staticInt251 /= 2;
 																}
 
 																if (KeyboardHandler.staticBoolArray2[98]) {
-																	Game.staticInt222 += (12 - Game.staticInt222) / 2;
+																	Client.staticInt222 += (12 - Client.staticInt222) / 2;
 																} else if (KeyboardHandler.staticBoolArray2[99]) {
-																	Game.staticInt222 += (-12 - Game.staticInt222) / 2;
+																	Client.staticInt222 += (-12 - Client.staticInt222) / 2;
 																} else {
-																	Game.staticInt222 /= 2;
+																	Client.staticInt222 /= 2;
 																}
 
-																Game.staticInt224 = MouseHandler.staticInt88
+																Client.staticInt224 = MouseHandler.staticInt88
 																		* -1922771503;
-																Game.staticInt223 = MouseHandler.staticInt94
+																Client.staticInt223 = MouseHandler.staticInt94
 																		* -1198989997;
 															}
 
-															Game.staticInt221 = Game.staticInt221
-																	+ Game.staticInt251 / 2 & 0x7ff;
-															Game.staticInt220 += Game.staticInt222 / 2;
-															if (Game.staticInt220 < 128) {
-																Game.staticInt220 = 128;
+															Client.staticInt221 = Client.staticInt221
+																	+ Client.staticInt251 / 2 & 0x7ff;
+															Client.staticInt220 += Client.staticInt222 / 2;
+															if (Client.staticInt220 < 128) {
+																Client.staticInt220 = 128;
 															}
 
-															if (Game.staticInt220 > 383) {
-																Game.staticInt220 = 383;
+															if (Client.staticInt220 > 383) {
+																Client.staticInt220 = 383;
 															}
 
 															var4 = GraphicsBufferSub1.staticInt316 >> 7;
@@ -11124,102 +11124,102 @@ public class Static {
 																var8 = '\u8000';
 															}
 
-															if (var8 > Game.staticInt277) {
-																Game.staticInt277 += (var8 - Game.staticInt277) / 24;
-															} else if (var8 < Game.staticInt277) {
-																Game.staticInt277 += (var8 - Game.staticInt277) / 80;
+															if (var8 > Client.staticInt277) {
+																Client.staticInt277 += (var8 - Client.staticInt277) / 24;
+															} else if (var8 < Client.staticInt277) {
+																Client.staticInt277 += (var8 - Client.staticInt277) / 80;
 															}
 
-															if (Game.staticBool28) {
+															if (Client.staticBool28) {
 																staticMethod45();
 															}
 
 															for (var2 = 0; var2 < 5; var2++) {
-																++Game.staticIntArray120[var2];
+																++Client.staticIntArray120[var2];
 															}
 
 															Class57.staticClass5_1.method20();
 															var2 = staticMethod304();
 															var3 = staticMethod100();
 															if (var2 > 15000 && var3 > 15000) {
-																Game.staticInt196 = 250;
+																Client.staticInt196 = 250;
 																MouseHandler.staticInt89 = 14500;
-																Game.staticEncryptedStream1.method471(255);
+																Client.staticEncryptedStream1.method471(255);
 															}
 
-															++Game.staticInt208;
-															if (Game.staticInt208 > 500) {
-																Game.staticInt208 = 0;
+															++Client.staticInt208;
+															if (Client.staticInt208 > 500) {
+																Client.staticInt208 = 0;
 																var4 = (int) (Math.random() * 8.0D);
 																if ((var4 & 0x1) == 1) {
-																	Game.staticInt203 += Game.staticInt204
+																	Client.staticInt203 += Client.staticInt204
 																			* -1212882327;
 																}
 
 																if ((var4 & 0x2) == 2) {
-																	Game.staticInt233 += Game.staticInt205 * 5647881;
+																	Client.staticInt233 += Client.staticInt205 * 5647881;
 																}
 
 																if ((var4 & 0x4) == 4) {
-																	Game.staticInt206 += Game.staticInt248;
+																	Client.staticInt206 += Client.staticInt248;
 																}
 															}
 
-															if (Game.staticInt203 < -50) {
-																Game.staticInt204 = -1487037518;
+															if (Client.staticInt203 < -50) {
+																Client.staticInt204 = -1487037518;
 															}
 
-															if (Game.staticInt203 > 50) {
-																Game.staticInt204 = 1487037518;
+															if (Client.staticInt203 > 50) {
+																Client.staticInt204 = 1487037518;
 															}
 
-															if (Game.staticInt233 < -55) {
-																Game.staticInt205 = -1803321230;
+															if (Client.staticInt233 < -55) {
+																Client.staticInt205 = -1803321230;
 															}
 
-															if (Game.staticInt233 > 55) {
-																Game.staticInt205 = 1803321230;
+															if (Client.staticInt233 > 55) {
+																Client.staticInt205 = 1803321230;
 															}
 
-															if (Game.staticInt206 < -40) {
-																Game.staticInt248 = 1;
+															if (Client.staticInt206 < -40) {
+																Client.staticInt248 = 1;
 															}
 
-															if (Game.staticInt206 > 40) {
-																Game.staticInt248 = -1;
+															if (Client.staticInt206 > 40) {
+																Client.staticInt248 = -1;
 															}
 
-															++Game.staticInt213;
-															if (Game.staticInt213 > 500) {
-																Game.staticInt213 = 0;
+															++Client.staticInt213;
+															if (Client.staticInt213 > 500) {
+																Client.staticInt213 = 0;
 																var4 = (int) (Math.random() * 8.0D);
 																if ((var4 & 0x1) == 1) {
-																	Game.staticInt209 += Game.staticInt210 * 362425261;
+																	Client.staticInt209 += Client.staticInt210 * 362425261;
 																}
 
 																if ((var4 & 0x2) == 2) {
-																	Game.staticInt211 += Game.staticInt212;
+																	Client.staticInt211 += Client.staticInt212;
 																}
 															}
 
-															if (Game.staticInt209 < -60) {
-																Game.staticInt210 = 790159434;
+															if (Client.staticInt209 < -60) {
+																Client.staticInt210 = 790159434;
 															}
 
-															if (Game.staticInt209 > 60) {
-																Game.staticInt210 = -790159434;
+															if (Client.staticInt209 > 60) {
+																Client.staticInt210 = -790159434;
 															}
 
-															if (Game.staticInt211 < -20) {
-																Game.staticInt212 = 1;
+															if (Client.staticInt211 < -20) {
+																Client.staticInt212 = 1;
 															}
 
-															if (Game.staticInt211 > 10) {
-																Game.staticInt212 = -1;
+															if (Client.staticInt211 > 10) {
+																Client.staticInt212 = -1;
 															}
 
-															for (Class40Sub1 var42 = (Class40Sub1) Game.staticClass41_1
-																	.method217(); var42 != null; var42 = (Class40Sub1) Game.staticClass41_1
+															for (Class40Sub1 var42 = (Class40Sub1) Client.staticClass41_1
+																	.method217(); var42 != null; var42 = (Class40Sub1) Client.staticClass41_1
 																			.method219()) {
 																if (var42.anInt385 < staticMethod297() / 1000L - 5L) {
 																	if (var42.aShort1 > 0) {
@@ -11236,19 +11236,19 @@ public class Static {
 																}
 															}
 
-															++Game.staticInt273;
-															if (Game.staticInt273 > 50) {
-																Game.staticEncryptedStream1.method471(184);
+															++Client.staticInt273;
+															if (Client.staticInt273 > 50) {
+																Client.staticEncryptedStream1.method471(184);
 															}
 
 															try {
 																if (Class56.staticConnection3 != null
-																		&& Game.staticEncryptedStream1.off > 0) {
+																		&& Client.staticEncryptedStream1.off > 0) {
 																	Class56.staticConnection3.method151(
-																			Game.staticEncryptedStream1.buf, 0,
-																			Game.staticEncryptedStream1.off);
-																	Game.staticEncryptedStream1.off = 0;
-																	Game.staticInt273 = 0;
+																			Client.staticEncryptedStream1.buf, 0,
+																			Client.staticEncryptedStream1.off);
+																	Client.staticEncryptedStream1.off = 0;
+																	Client.staticInt273 = 0;
 																}
 															} catch (IOException var241) {
 																staticMethod329();
@@ -11299,11 +11299,11 @@ public class Static {
 						}
 					}
 
-					Game.staticEncryptedStream1.method471(52);
-					Game.staticEncryptedStream1.writeByte(0);
-					var25 = Game.staticEncryptedStream1.off;
-					staticMethod348(Game.staticEncryptedStream1);
-					Game.staticEncryptedStream1.method327(Game.staticEncryptedStream1.off - var25);
+					Client.staticEncryptedStream1.method471(52);
+					Client.staticEncryptedStream1.writeByte(0);
+					var25 = Client.staticEncryptedStream1.off;
+					staticMethod348(Client.staticEncryptedStream1);
+					Client.staticEncryptedStream1.method327(Client.staticEncryptedStream1.off - var25);
 				}
 			}
 		}
@@ -11317,7 +11317,7 @@ public class Static {
 	static void staticMethod134(Rasterizer2DSub2Sub1 var0, Rasterizer2DSub2Sub1 var1, Rasterizer2DSub2Sub1 var2,
 			boolean var3) {
 		if (var3) {
-			staticInt6 = (staticInt86 - Game.staticInt288) / 2;
+			staticInt6 = (staticInt86 - Client.staticInt288) / 2;
 			staticInt8 = 202 + staticInt6;
 		}
 
@@ -11559,7 +11559,7 @@ public class Static {
 						.method655(staticInt6 + 382 - Config5.staticRasterizer2DSub3_6.anInt677 / 2, 18);
 			}
 
-			if (Game.staticInt165 == 0 || Game.staticInt165 == 5) {
+			if (Client.staticInt165 == 0 || Client.staticInt165 == 5) {
 				var4 = 20;
 				var0.method630("RuneScape is loading - please wait...", staticInt8 + 180, 245 - var4, 16777215,
 						-1);
@@ -11578,7 +11578,7 @@ public class Static {
 			String var311;
 			short var331;
 			short var341;
-			if (Game.staticInt165 == 20) {
+			if (Client.staticInt165 == 20) {
 				staticRasterizer2DSub3_4.method655(
 						staticInt8 + 180 - staticRasterizer2DSub3_4.anInt677 / 2,
 						271 - staticRasterizer2DSub3_4.anInt678 / 2);
@@ -11609,7 +11609,7 @@ public class Static {
 				}
 			}
 
-			if (Game.staticInt165 == 10 || Game.staticInt165 == 11) {
+			if (Client.staticInt165 == 10 || Client.staticInt165 == 11) {
 				staticRasterizer2DSub3_4.method655(staticInt8, 171);
 				short var351;
 				if (staticInt13 == 0) {
@@ -11659,7 +11659,7 @@ public class Static {
 						}
 
 						var0.method616(
-								staticMethod456(var281) + (staticInt15 == 0 & Game.staticInt166 % 40 < 20
+								staticMethod456(var281) + (staticInt15 == 0 & Client.staticInt166 % 40 < 20
 										? staticMethod118(16776960) + staticString15 : ""),
 								180 + staticInt8 - 70, var25, 16777215, 0);
 						var25 += 15;
@@ -11668,7 +11668,7 @@ public class Static {
 						var30 = staticMethod254('*', var311.length());
 						var0.method616(
 								var291 + var30
-										+ (staticInt15 == 1 & Game.staticInt166 % 40 < 20
+										+ (staticInt15 == 1 & Client.staticInt166 % 40 < 20
 												? staticMethod118(16776960) + staticString15 : ""),
 								staticInt8 + 180 - 108, var25, 16777215, 0);
 						var25 += 15;
@@ -11714,7 +11714,7 @@ public class Static {
 						String var371 = staticMethod254('*', var291.length());
 						var0.method616(
 								var281 + var371
-										+ (Game.staticInt166 % 40 < 20
+										+ (Client.staticInt166 % 40 < 20
 												? staticMethod118(16776960) + staticString15 : ""),
 								staticInt8 + 180 - 108, var25, 16777215, 0);
 						var25 -= 8;
@@ -11773,7 +11773,7 @@ public class Static {
 						}
 
 						var0.method616(
-								staticMethod456(var281) + (Game.staticInt166 % 40 < 20
+								staticMethod456(var281) + (Client.staticInt166 % 40 < 20
 										? staticMethod118(16776960) + staticString15 : ""),
 								180 + staticInt8 - 34, var25, 16777215, 0);
 						var25 += 15;
@@ -11848,7 +11848,7 @@ public class Static {
 						}
 
 						staticInt16 += var25;
-						var33 = (var25 + (Game.staticInt166 & 0x1)) / 2;
+						var33 = (var25 + (Client.staticInt166 & 0x1)) / 2;
 						if (var33 > 0) {
 							for (var35 = 0; var35 < staticInt16 * 100; var35++) {
 								var11 = (int) (Math.random() * 124.0D) + 2;
@@ -11919,14 +11919,14 @@ public class Static {
 			staticMethod196();
 			Class33.staticRasterizer2DSub3Array3[staticClass6_1.aBool2 ? 1 : 0]
 					.method655(staticInt6 + 765 - 40, 463);
-			if (Game.staticInt165 > 5 && Game.staticInt231 == 0) {
-				if (Game.staticRasterizer2DSub3_5 != null) {
+			if (Client.staticInt165 > 5 && Client.staticInt231 == 0) {
+				if (Client.staticRasterizer2DSub3_5 != null) {
 					var25 = 5 + staticInt6;
 					var341 = 463;
 					byte var381 = 100;
 					byte var391 = 35;
-					Game.staticRasterizer2DSub3_5.method655(var25, var341);
-					var0.method630("World " + Game.staticInt309, var25 + var381 / 2, var391 / 2 + var341 - 2, 16777215,
+					Client.staticRasterizer2DSub3_5.method655(var25, var341);
+					var0.method630("World " + Client.staticInt309, var25 + var381 / 2, var391 / 2 + var341 - 2, 16777215,
 							0);
 					if (Class2.staticClass3_1 != null) {
 						var1.method630("Loading...", var25 + var381 / 2, var391 / 2 + var341 + 12, 16777215, 0);
@@ -11934,7 +11934,7 @@ public class Static {
 						var1.method630("Click to switch", var25 + var381 / 2, var341 + var391 / 2 + 12, 16777215, 0);
 					}
 				} else {
-					Game.staticRasterizer2DSub3_5 = staticMethod25(Class62.staticJs5IndexImpl7, "sl_button", "");
+					Client.staticRasterizer2DSub3_5 = staticMethod25(Class62.staticJs5IndexImpl7, "sl_button", "");
 				}
 			}
 
@@ -11956,7 +11956,7 @@ public class Static {
 			staticMethod215(var1.aWidgetArray1, var1.anInt294, var5, var6, var2);
 		}
 
-		NodeSub18 var3 = (NodeSub18) Game.staticHashTable5.method149(var1.anInt294);
+		NodeSub18 var3 = (NodeSub18) Client.staticHashTable5.method149(var1.anInt294);
 		if (var3 != null) {
 			int var4 = var3.anInt384;
 			if (staticMethod4(var4)) {
@@ -11989,7 +11989,7 @@ public class Static {
 				var4.aWidget1 = var3;
 				var4.anObjectArray2 = var3.anObjectArray25;
 				var4.anInt289 = staticInt29 * 972573517 + 223297939;
-				Game.staticClass39_8.method198(var4);
+				Client.staticClass39_8.method198(var4);
 				return 1;
 			}
 		} else {
@@ -12015,75 +12015,75 @@ public class Static {
 	}
 
 	static void staticMethod150() {
-		Game.staticLong10 = 1L;
-		Game.staticInt163 = -1;
-		Game.staticMouseCapturer1.anInt211 = 0;
+		Client.staticLong10 = 1L;
+		Client.staticInt163 = -1;
+		Client.staticMouseCapturer1.anInt211 = 0;
 		RuntimeExceptionSub1.staticBool9 = true;
-		Game.staticBool41 = true;
-		Game.staticLong13 = -1L;
+		Client.staticBool41 = true;
+		Client.staticLong13 = -1L;
 		staticMethod63();
-		Game.staticEncryptedStream1.off = 0;
-		Game.staticEncryptedStream3.off = 0;
-		Game.staticInt191 = -1;
-		Game.staticInt270 = 1;
-		Game.staticInt194 = 1;
-		Game.staticInt195 = 1;
-		Game.staticInt192 = 0;
-		Game.staticInt170 = 0;
-		Game.staticInt196 = 0;
-		Game.staticInt255 = 0;
-		Game.staticInt252 = 0;
-		Game.staticInt217 = -1;
-		Game.staticBool30 = false;
+		Client.staticEncryptedStream1.off = 0;
+		Client.staticEncryptedStream3.off = 0;
+		Client.staticInt191 = -1;
+		Client.staticInt270 = 1;
+		Client.staticInt194 = 1;
+		Client.staticInt195 = 1;
+		Client.staticInt192 = 0;
+		Client.staticInt170 = 0;
+		Client.staticInt196 = 0;
+		Client.staticInt255 = 0;
+		Client.staticInt252 = 0;
+		Client.staticInt217 = -1;
+		Client.staticBool30 = false;
 		MouseHandler.staticInt89 = 0;
 		staticMap1.clear();
 		staticClass35_1.method158();
 		staticClass45_1.method221();
 		staticInt18 = 0;
-		Game.staticInt258 = 0;
-		Game.staticBool32 = false;
-		Game.staticInt236 = 0;
-		Game.staticInt203 = (int) (Math.random() * 100.0D) - 50;
-		Game.staticInt233 = (int) (Math.random() * 110.0D) - 55;
-		Game.staticInt206 = (int) (Math.random() * 80.0D) - 40;
-		Game.staticInt209 = (int) (Math.random() * 120.0D) - 60;
-		Game.staticInt211 = (int) (Math.random() * 30.0D) - 20;
-		Game.staticInt221 = (int) (Math.random() * 20.0D) - 10 & 0x7ff;
-		Game.staticInt298 = 0;
-		Game.staticInt294 = 1;
-		Game.staticInt296 = 0;
-		Game.staticInt240 = 0;
-		Game.staticClass4_5 = Class4.staticClass4_2;
-		Game.staticClass4_6 = Class4.staticClass4_2;
-		Game.staticInt186 = 0;
+		Client.staticInt258 = 0;
+		Client.staticBool32 = false;
+		Client.staticInt236 = 0;
+		Client.staticInt203 = (int) (Math.random() * 100.0D) - 50;
+		Client.staticInt233 = (int) (Math.random() * 110.0D) - 55;
+		Client.staticInt206 = (int) (Math.random() * 80.0D) - 40;
+		Client.staticInt209 = (int) (Math.random() * 120.0D) - 60;
+		Client.staticInt211 = (int) (Math.random() * 30.0D) - 20;
+		Client.staticInt221 = (int) (Math.random() * 20.0D) - 10 & 0x7ff;
+		Client.staticInt298 = 0;
+		Client.staticInt294 = 1;
+		Client.staticInt296 = 0;
+		Client.staticInt240 = 0;
+		Client.staticClass4_5 = Class4.staticClass4_2;
+		Client.staticClass4_6 = Class4.staticClass4_2;
+		Client.staticInt186 = 0;
 		staticMethod398();
 
 		int var0;
 		for (var0 = 0; var0 < 2048; var0++) {
-			Game.staticPlayerArray1[var0] = null;
+			Client.staticPlayerArray1[var0] = null;
 		}
 
 		for (var0 = 0; var0 < '\u8000'; var0++) {
-			Game.staticNpcArray1[var0] = null;
+			Client.staticNpcArray1[var0] = null;
 		}
 
-		Game.staticInt229 = -1;
-		Game.staticClass39_5.method191();
-		Game.staticClass39_6.method191();
+		Client.staticInt229 = -1;
+		Client.staticClass39_5.method191();
+		Client.staticClass39_6.method191();
 
 		int var1;
 		for (var0 = 0; var0 < 4; var0++) {
 			for (int var4 = 0; var4 < 104; var4++) {
 				for (var1 = 0; var1 < 104; var1++) {
-					Game.staticClass39ArrayArrayArray1[var0][var4][var1] = null;
+					Client.staticClass39ArrayArrayArray1[var0][var4][var1] = null;
 				}
 			}
 		}
 
-		Game.staticClass39_7 = new Class39();
-		Game.staticInt202 = 0;
-		Game.staticInt308 = 0;
-		Game.staticInt310 = 0;
+		Client.staticClass39_7 = new Class39();
+		Client.staticInt202 = 0;
+		Client.staticInt308 = 0;
+		Client.staticInt310 = 0;
 
 		for (var0 = 0; var0 < Varp.staticInt323; var0++) {
 			Varp var3 = staticMethod119(var0);
@@ -12094,9 +12094,9 @@ public class Static {
 		}
 
 		Class57.staticClass5_1.method19();
-		Game.staticInt269 = 1;
-		if (Game.staticInt263 != -1) {
-			var0 = Game.staticInt263;
+		Client.staticInt269 = 1;
+		if (Client.staticInt263 != -1) {
+			var0 = Client.staticInt263;
 			if (var0 != -1 && Npc.staticBoolArray12[var0]) {
 				Widget.staticJs5Index10.method265(var0);
 				if (Widget.staticWidgetArrayArray1[var0] != null) {
@@ -12121,38 +12121,38 @@ public class Static {
 			}
 		}
 
-		for (NodeSub18 var5 = (NodeSub18) Game.staticHashTable5
-				.method146(); var5 != null; var5 = (NodeSub18) Game.staticHashTable5.method147()) {
+		for (NodeSub18 var5 = (NodeSub18) Client.staticHashTable5
+				.method146(); var5 != null; var5 = (NodeSub18) Client.staticHashTable5.method147()) {
 			staticMethod266(var5, true);
 		}
 
-		Game.staticInt263 = -1;
-		Game.staticHashTable5 = new HashTable(8);
-		Game.staticWidget6 = null;
-		Game.staticInt252 = 0;
-		Game.staticInt217 = -1;
-		Game.staticBool30 = false;
-		Game.staticClass49_1.method252((int[]) null, new int[5], false, -1);
+		Client.staticInt263 = -1;
+		Client.staticHashTable5 = new HashTable(8);
+		Client.staticWidget6 = null;
+		Client.staticInt252 = 0;
+		Client.staticInt217 = -1;
+		Client.staticBool30 = false;
+		Client.staticClass49_1.method252((int[]) null, new int[5], false, -1);
 
 		for (var0 = 0; var0 < 8; var0++) {
-			Game.staticStringArray7[var0] = null;
-			Game.staticBoolArray5[var0] = false;
+			Client.staticStringArray7[var0] = null;
+			Client.staticBoolArray5[var0] = false;
 		}
 
 		staticMethod145();
-		Game.staticBool21 = true;
+		Client.staticBool21 = true;
 
 		for (var0 = 0; var0 < 100; var0++) {
-			Game.staticBoolArray8[var0] = true;
+			Client.staticBoolArray8[var0] = true;
 		}
 
 		staticMethod34();
-		Game.staticString34 = null;
+		Client.staticString34 = null;
 		staticInt149 = 0;
 		Class43.staticNodeSub1Array1 = null;
 
 		for (var0 = 0; var0 < 8; var0++) {
-			Game.staticClass61Array1[var0] = new Class61();
+			Client.staticClass61Array1[var0] = new Class61();
 		}
 
 		staticClass56_1 = null;
@@ -12342,10 +12342,10 @@ public class Static {
 					int var13 = var2 + var11;
 					if (var8 > 0 && var13 > 0 && var8 < 103 && var13 < 103) {
 						ObjectDefinition var4 = staticMethod394(var5);
-						if (var14 != 22 || !Game.staticBool27 || var4.anInt489 != 0 || var4.anInt487 == 1
+						if (var14 != 22 || !Client.staticBool27 || var4.anInt489 != 0 || var4.anInt487 == 1
 								|| var4.aBool63) {
 							if (!var4.method513()) {
-								++Game.staticInt199;
+								++Client.staticInt199;
 								var3 = false;
 							}
 
@@ -12434,7 +12434,7 @@ public class Static {
 					}
 
 					var19 = var0.method379();
-					var2.method566(var20, var161, var16, var12, Game.staticInt166, var19);
+					var2.method566(var20, var161, var16, var12, Client.staticInt166, var19);
 				}
 			}
 
@@ -12447,7 +12447,7 @@ public class Static {
 						var12 = var0.method379();
 						var19 = var0.method367();
 						int var18 = var161 > 0 ? var0.method367() : var19;
-						var2.method564(var16, Game.staticInt166, var161, var12, var19, var18);
+						var2.method564(var16, Client.staticInt166, var161, var12, var19, var18);
 					} else {
 						var2.method563(var16);
 					}
@@ -12477,7 +12477,7 @@ public class Static {
 					var201 = true;
 				}
 
-				if (!var201 && Game.staticInt245 == 0 && !var2.aBool81) {
+				if (!var201 && Client.staticInt245 == 0 && !var2.aBool81) {
 					staticStream1.off = 0;
 					var0.readBytes(staticStream1.buf, 0, var161);
 					staticStream1.off = 0;
@@ -12488,7 +12488,7 @@ public class Static {
 					var2.anInt601 = 150;
 					var2.aBool75 = var211;
 					var2.aBool77 = AbstractClass2Sub1.staticPlayer1 != var2 && var191.aBool14
-							&& Game.staticString33 != "" && var21.toLowerCase().indexOf(Game.staticString33) == -1;
+							&& Client.staticString33 != "" && var21.toLowerCase().indexOf(Client.staticString33) == -1;
 					int var9;
 					if (var191.aBool15) {
 						var9 = var211 ? 91 : 1;
@@ -12511,10 +12511,10 @@ public class Static {
 			var2.anInt596 = var0.method370();
 			var7 = var0.readInt();
 			var2.anInt620 = var7 >> 16;
-			var2.anInt619 = Game.staticInt166 + (var7 & 0xffff);
+			var2.anInt619 = Client.staticInt166 + (var7 & 0xffff);
 			var2.anInt616 = 0;
 			var2.anInt618 = 0;
-			if (var2.anInt619 > Game.staticInt166) {
+			if (var2.anInt619 > Client.staticInt166) {
 				var2.anInt616 = -1;
 			}
 
@@ -12528,8 +12528,8 @@ public class Static {
 			var2.anInt623 = var0.readByte();
 			var2.anInt617 = var0.readByte();
 			var2.anInt624 = var0.readByte();
-			var2.anInt625 = var0.method370() + Game.staticInt166;
-			var2.anInt604 = var0.method370() + Game.staticInt166;
+			var2.anInt625 = var0.method370() + Client.staticInt166;
+			var2.anInt604 = var0.method370() + Client.staticInt166;
 			var2.anInt627 = var0.method370() * -1576115929;
 			if (var2.aBool82) {
 				var2.anInt606 += var2.anInt700;
@@ -12650,21 +12650,21 @@ public class Static {
 	}
 
 	static void staticMethod159(AnimDef var0, int var1, int var2, int var3) {
-		if (Game.staticInt236 < 50 && Game.staticInt301 != 0 && var0.anIntArray120 != null
+		if (Client.staticInt236 < 50 && Client.staticInt301 != 0 && var0.anIntArray120 != null
 				&& var1 < var0.anIntArray120.length) {
 			int var7 = var0.anIntArray120[var1];
 			if (var7 != 0) {
 				int var8 = var7 >> 8;
 				int var9 = var7 >> 4 & 0x7;
 				int var4 = var7 & 0xf;
-				Game.staticIntArray114[Game.staticInt236] = var8;
-				Game.staticIntArray115[Game.staticInt236] = var9;
-				Game.staticIntArray116[Game.staticInt236] = 0;
-				Game.staticClass9Array1[Game.staticInt236] = null;
+				Client.staticIntArray114[Client.staticInt236] = var8;
+				Client.staticIntArray115[Client.staticInt236] = var9;
+				Client.staticIntArray116[Client.staticInt236] = 0;
+				Client.staticClass9Array1[Client.staticInt236] = null;
 				int var5 = (var2 - 64) / 128;
 				int var6 = (var3 - 64) / 128;
-				Game.staticIntArray117[Game.staticInt236] = var4 + (var5 << 16) + (var6 << 8);
-				++Game.staticInt236;
+				Client.staticIntArray117[Client.staticInt236] = var4 + (var5 << 16) + (var6 << 8);
+				++Client.staticInt236;
 			}
 		}
 
@@ -12693,7 +12693,7 @@ public class Static {
 		Widget.staticCache4.method171();
 		((Class11) Rasterizer2DSub1.staticInterface2_1).method35();
 		CacheableSub1.staticCache6.method171();
-		Game.staticJs5IndexImpl8.method272();
+		Client.staticJs5IndexImpl8.method272();
 		FloorUnderlayDef.staticJs5IndexImpl13.method272();
 		CanvasSub1.staticJs5IndexImpl5.method272();
 		Config19.staticJs5IndexImpl15.method272();
@@ -12879,63 +12879,63 @@ public class Static {
 	}
 
 	static final void staticMethod20() {
-		staticMethod73(Game.staticWidget7);
+		staticMethod73(Client.staticWidget7);
 		++Class2.staticInt4;
-		if (Game.staticBool29 && Game.staticBool35) {
+		if (Client.staticBool29 && Client.staticBool35) {
 			int var1 = MouseHandler.staticInt94;
 			int var3 = MouseHandler.staticInt88;
-			var1 -= Game.staticInt287;
-			var3 -= Game.staticInt261;
-			if (var1 < Game.staticInt183) {
-				var1 = Game.staticInt183;
+			var1 -= Client.staticInt287;
+			var3 -= Client.staticInt261;
+			if (var1 < Client.staticInt183) {
+				var1 = Client.staticInt183;
 			}
 
-			if (Game.staticWidget7.anInt307 + var1 > Game.staticWidget8.anInt307 + Game.staticInt183) {
-				var1 = Game.staticWidget8.anInt307 + Game.staticInt183 - Game.staticWidget7.anInt307;
+			if (Client.staticWidget7.anInt307 + var1 > Client.staticWidget8.anInt307 + Client.staticInt183) {
+				var1 = Client.staticWidget8.anInt307 + Client.staticInt183 - Client.staticWidget7.anInt307;
 			}
 
-			if (var3 < Game.staticInt313) {
-				var3 = Game.staticInt313;
+			if (var3 < Client.staticInt313) {
+				var3 = Client.staticInt313;
 			}
 
-			if (Game.staticWidget7.anInt351 + var3 > Game.staticWidget8.anInt351 + Game.staticInt313) {
-				var3 = Game.staticWidget8.anInt351 + Game.staticInt313 - Game.staticWidget7.anInt351;
+			if (Client.staticWidget7.anInt351 + var3 > Client.staticWidget8.anInt351 + Client.staticInt313) {
+				var3 = Client.staticWidget8.anInt351 + Client.staticInt313 - Client.staticWidget7.anInt351;
 			}
 
-			int var4 = var1 - Game.staticInt272;
-			int var6 = var3 - Game.staticInt290;
-			int var5 = Game.staticWidget7.anInt345;
-			if (Class2.staticInt4 > Game.staticWidget7.anInt316
+			int var4 = var1 - Client.staticInt272;
+			int var6 = var3 - Client.staticInt290;
+			int var5 = Client.staticWidget7.anInt345;
+			if (Class2.staticInt4 > Client.staticWidget7.anInt316
 					&& (var4 > var5 || var4 < -var5 || var6 > var5 || var6 < -var5)) {
-				Game.staticBool25 = true;
+				Client.staticBool25 = true;
 			}
 
-			int var7 = Game.staticWidget8.anInt335 + var1 - Game.staticInt183;
-			int var9 = var3 - Game.staticInt313 + Game.staticWidget8.anInt312;
+			int var7 = Client.staticWidget8.anInt335 + var1 - Client.staticInt183;
+			int var9 = var3 - Client.staticInt313 + Client.staticWidget8.anInt312;
 			NodeSub16 var0;
-			if (Game.staticWidget7.anObjectArray10 != null && Game.staticBool25) {
+			if (Client.staticWidget7.anObjectArray10 != null && Client.staticBool25) {
 				var0 = new NodeSub16();
-				var0.aWidget1 = Game.staticWidget7;
+				var0.aWidget1 = Client.staticWidget7;
 				var0.anInt284 = var7;
 				var0.anInt285 = var9;
-				var0.anObjectArray2 = Game.staticWidget7.anObjectArray10;
+				var0.anObjectArray2 = Client.staticWidget7.anObjectArray10;
 				staticMethod375(var0);
 			}
 
 			if (MouseHandler.staticInt93 == 0) {
-				if (Game.staticBool25) {
-					if (Game.staticWidget7.anObjectArray28 != null) {
+				if (Client.staticBool25) {
+					if (Client.staticWidget7.anObjectArray28 != null) {
 						var0 = new NodeSub16();
-						var0.aWidget1 = Game.staticWidget7;
+						var0.aWidget1 = Client.staticWidget7;
 						var0.anInt284 = var7;
 						var0.anInt285 = var9;
-						var0.aWidget2 = Game.staticWidget9;
-						var0.anObjectArray2 = Game.staticWidget7.anObjectArray28;
+						var0.aWidget2 = Client.staticWidget9;
+						var0.anObjectArray2 = Client.staticWidget7.anObjectArray28;
 						staticMethod375(var0);
 					}
 
-					if (Game.staticWidget9 != null) {
-						Widget var141 = Game.staticWidget7;
+					if (Client.staticWidget9 != null) {
+						Widget var141 = Client.staticWidget7;
 						int var15 = staticMethod192(var141);
 						int var10 = var15 >> 17 & 0x7;
 						int var11 = var10;
@@ -12957,26 +12957,26 @@ public class Static {
 						}
 
 						if (var14 != null) {
-							Game.staticEncryptedStream1.method471(157);
-							Game.staticEncryptedStream1.method351(Game.staticWidget9.anInt352);
-							Game.staticEncryptedStream1.method351(Game.staticWidget7.anInt319);
-							Game.staticEncryptedStream1.method352(Game.staticWidget9.anInt319);
-							Game.staticEncryptedStream1.method369(Game.staticWidget7.anInt352);
-							Game.staticEncryptedStream1.method359(Game.staticWidget9.anInt294);
-							Game.staticEncryptedStream1.writeInt(Game.staticWidget7.anInt294);
+							Client.staticEncryptedStream1.method471(157);
+							Client.staticEncryptedStream1.method351(Client.staticWidget9.anInt352);
+							Client.staticEncryptedStream1.method351(Client.staticWidget7.anInt319);
+							Client.staticEncryptedStream1.method352(Client.staticWidget9.anInt319);
+							Client.staticEncryptedStream1.method369(Client.staticWidget7.anInt352);
+							Client.staticEncryptedStream1.method359(Client.staticWidget9.anInt294);
+							Client.staticEncryptedStream1.writeInt(Client.staticWidget7.anInt294);
 						}
 					}
 				} else {
 					label135: {
 						label141: {
 							int var13 = staticMethod165();
-							if (Game.staticInt252 > 2) {
-								if (Game.staticInt214 == 1) {
+							if (Client.staticInt252 > 2) {
+								if (Client.staticInt214 == 1) {
 									boolean var2;
-									if (Game.staticInt252 <= 0) {
+									if (Client.staticInt252 <= 0) {
 										var2 = false;
-									} else if (Game.staticBool39 && KeyboardHandler.staticBoolArray2[81]
-											&& Game.staticInt217 != -1) {
+									} else if (Client.staticBool39 && KeyboardHandler.staticBoolArray2[81]
+											&& Client.staticInt217 != -1) {
 										var2 = true;
 									} else {
 										var2 = false;
@@ -12992,40 +12992,40 @@ public class Static {
 								}
 							}
 
-							if (Game.staticInt252 > 0) {
-								staticMethod371(Game.staticInt287 + Game.staticInt272,
-										Game.staticInt261 + Game.staticInt290);
+							if (Client.staticInt252 > 0) {
+								staticMethod371(Client.staticInt287 + Client.staticInt272,
+										Client.staticInt261 + Client.staticInt290);
 							}
 							break label135;
 						}
 
-						staticMethod37(Game.staticInt287 + Game.staticInt272, Game.staticInt290 + Game.staticInt261);
+						staticMethod37(Client.staticInt287 + Client.staticInt272, Client.staticInt290 + Client.staticInt261);
 					}
 				}
 
-				Game.staticWidget7 = null;
+				Client.staticWidget7 = null;
 			}
 		} else if (Class2.staticInt4 > 1) {
-			Game.staticWidget7 = null;
+			Client.staticWidget7 = null;
 		}
 
 	}
 
 	static final void staticMethod21() {
 		try {
-			if (Game.staticInt303 == 0) {
+			if (Client.staticInt303 == 0) {
 				if (Class56.staticConnection3 != null) {
 					Class56.staticConnection3.method150();
 					Class56.staticConnection3 = null;
 				}
 
 				NodeSub18.staticTask3 = null;
-				Game.staticBool43 = false;
-				Game.staticInt262 = 0;
-				Game.staticInt303 = 1;
+				Client.staticBool43 = false;
+				Client.staticInt262 = 0;
+				Client.staticInt303 = 1;
 			}
 
-			if (Game.staticInt303 == 1) {
+			if (Client.staticInt303 == 1) {
 				if (NodeSub18.staticTask3 == null) {
 					NodeSub18.staticTask3 = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
 							Class32.staticInt73 * 462737933);
@@ -13039,20 +13039,20 @@ public class Static {
 					Class56.staticConnection3 = new Connection((Socket) NodeSub18.staticTask3.anObject2,
 							BufferedFile.staticTaskManager1);
 					NodeSub18.staticTask3 = null;
-					Game.staticInt303 = 2;
+					Client.staticInt303 = 2;
 				}
 			}
 
-			if (Game.staticInt303 == 2) {
-				Game.staticEncryptedStream1.off = 0;
-				Game.staticEncryptedStream1.writeByte(14);
-				Class56.staticConnection3.method151(Game.staticEncryptedStream1.buf, 0, 1);
-				Game.staticEncryptedStream3.off = 0;
-				Game.staticInt303 = 3;
+			if (Client.staticInt303 == 2) {
+				Client.staticEncryptedStream1.off = 0;
+				Client.staticEncryptedStream1.writeByte(14);
+				Class56.staticConnection3.method151(Client.staticEncryptedStream1.buf, 0, 1);
+				Client.staticEncryptedStream3.off = 0;
+				Client.staticInt303 = 3;
 			}
 
 			int var10;
-			if (Game.staticInt303 == 3) {
+			if (Client.staticInt303 == 3) {
 				if (Stream.staticClass19_2 != null) {
 					Stream.staticClass19_2.method67();
 				}
@@ -13075,81 +13075,81 @@ public class Static {
 					return;
 				}
 
-				Game.staticEncryptedStream3.off = 0;
-				Game.staticInt303 = 4;
+				Client.staticEncryptedStream3.off = 0;
+				Client.staticInt303 = 4;
 			}
 
-			if (Game.staticInt303 == 4) {
-				if (Game.staticEncryptedStream3.off < 8) {
+			if (Client.staticInt303 == 4) {
+				if (Client.staticEncryptedStream3.off < 8) {
 					var10 = Class56.staticConnection3.available();
-					if (var10 > 8 - Game.staticEncryptedStream3.off) {
-						var10 = 8 - Game.staticEncryptedStream3.off;
+					if (var10 > 8 - Client.staticEncryptedStream3.off) {
+						var10 = 8 - Client.staticEncryptedStream3.off;
 					}
 
 					if (var10 > 0) {
-						Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf,
-								Game.staticEncryptedStream3.off, var10);
-						Game.staticEncryptedStream3.off += var10;
+						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf,
+								Client.staticEncryptedStream3.off, var10);
+						Client.staticEncryptedStream3.off += var10;
 					}
 				}
 
-				if (Game.staticEncryptedStream3.off == 8) {
-					Game.staticEncryptedStream3.off = 0;
-					NodeSub18.staticLong15 = Game.staticEncryptedStream3.readLong();
-					Game.staticInt303 = 5;
+				if (Client.staticEncryptedStream3.off == 8) {
+					Client.staticEncryptedStream3.off = 0;
+					NodeSub18.staticLong15 = Client.staticEncryptedStream3.readLong();
+					Client.staticInt303 = 5;
 				}
 			}
 
 			int var1;
 			int var2;
-			if (Game.staticInt303 == 5) {
+			if (Client.staticInt303 == 5) {
 				int[] var19 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D),
 						(int) (NodeSub18.staticLong15 >> 32), (int) (NodeSub18.staticLong15 & 0xffffffffffffffffL) };
-				Game.staticEncryptedStream1.off = 0;
-				Game.staticEncryptedStream1.writeByte(1);
-				Game.staticEncryptedStream1.writeByte(staticClass28_1.method12());
-				Game.staticEncryptedStream1.writeInt(var19[0]);
-				Game.staticEncryptedStream1.writeInt(var19[1]);
-				Game.staticEncryptedStream1.writeInt(var19[2]);
-				Game.staticEncryptedStream1.writeInt(var19[3]);
+				Client.staticEncryptedStream1.off = 0;
+				Client.staticEncryptedStream1.writeByte(1);
+				Client.staticEncryptedStream1.writeByte(staticClass28_1.method12());
+				Client.staticEncryptedStream1.writeInt(var19[0]);
+				Client.staticEncryptedStream1.writeInt(var19[1]);
+				Client.staticEncryptedStream1.writeInt(var19[2]);
+				Client.staticEncryptedStream1.writeInt(var19[3]);
 				switch (staticClass28_1.anInt84) {
 				case 0:
-					Game.staticEncryptedStream1.writeInt(((Integer) staticClass6_1.aLinkedHashMap1
+					Client.staticEncryptedStream1.writeInt(((Integer) staticClass6_1.aLinkedHashMap1
 							.get(Integer.valueOf(staticMethod149(staticString2)))).intValue());
-					Game.staticEncryptedStream1.off += 4;
+					Client.staticEncryptedStream1.off += 4;
 					break;
 				case 1:
 				case 2:
-					Game.staticEncryptedStream1.writeTriByte(NodeSub3.staticInt152);
-					Game.staticEncryptedStream1.off += 5;
+					Client.staticEncryptedStream1.writeTriByte(NodeSub3.staticInt152);
+					Client.staticEncryptedStream1.off += 5;
 					break;
 				case 3:
-					Game.staticEncryptedStream1.off += 8;
+					Client.staticEncryptedStream1.off += 8;
 				}
 
-				Game.staticEncryptedStream1.method323(staticString7);
-				Game.staticEncryptedStream1.method342(staticBigInteger3, staticBigInteger4);
-				Game.staticEncryptedStream2.off = 0;
-				if (Game.staticInt165 == 40) {
-					Game.staticEncryptedStream2.writeByte(18);
+				Client.staticEncryptedStream1.method323(staticString7);
+				Client.staticEncryptedStream1.method342(staticBigInteger3, staticBigInteger4);
+				Client.staticEncryptedStream2.off = 0;
+				if (Client.staticInt165 == 40) {
+					Client.staticEncryptedStream2.writeByte(18);
 				} else {
-					Game.staticEncryptedStream2.writeByte(16);
+					Client.staticEncryptedStream2.writeByte(16);
 				}
 
-				Game.staticEncryptedStream2.writeShort(0);
-				var1 = Game.staticEncryptedStream2.off;
-				Game.staticEncryptedStream2.writeInt(138);
-				Game.staticEncryptedStream2.method326(Game.staticEncryptedStream1.buf, 0,
-						Game.staticEncryptedStream1.off);
-				var2 = Game.staticEncryptedStream2.off;
-				Game.staticEncryptedStream2.method323(staticString2);
-				Game.staticEncryptedStream2.writeByte((Game.staticBool36 ? 1 : 0) << 1 | (Game.staticBool27 ? 1 : 0));
-				Game.staticEncryptedStream2.writeShort(staticInt86);
-				Game.staticEncryptedStream2.writeShort(Class47.staticInt121);
-				EncryptedStream var16 = Game.staticEncryptedStream2;
+				Client.staticEncryptedStream2.writeShort(0);
+				var1 = Client.staticEncryptedStream2.off;
+				Client.staticEncryptedStream2.writeInt(138);
+				Client.staticEncryptedStream2.method326(Client.staticEncryptedStream1.buf, 0,
+						Client.staticEncryptedStream1.off);
+				var2 = Client.staticEncryptedStream2.off;
+				Client.staticEncryptedStream2.method323(staticString2);
+				Client.staticEncryptedStream2.writeByte((Client.staticBool36 ? 1 : 0) << 1 | (Client.staticBool27 ? 1 : 0));
+				Client.staticEncryptedStream2.writeShort(staticInt86);
+				Client.staticEncryptedStream2.writeShort(Class47.staticInt121);
+				EncryptedStream var16 = Client.staticEncryptedStream2;
 				int var20;
-				if (Game.staticByteArray6 != null) {
-					var16.method326(Game.staticByteArray6, 0, Game.staticByteArray6.length);
+				if (Client.staticByteArray6 != null) {
+					var16.method326(Client.staticByteArray6, 0, Client.staticByteArray6.length);
 				} else {
 					byte[] var17 = new byte[24];
 
@@ -13173,87 +13173,87 @@ public class Static {
 					var16.method326(var17, 0, var17.length);
 				}
 
-				Game.staticEncryptedStream2.method323(BuildType.staticString27);
-				Game.staticEncryptedStream2.writeInt(Game.staticInt164);
+				Client.staticEncryptedStream2.method323(BuildType.staticString27);
+				Client.staticEncryptedStream2.writeInt(Client.staticInt164);
 				Stream var161 = new Stream(Class57.staticComputerInfo1.method404());
 				Class57.staticComputerInfo1.method403(var161);
-				Game.staticEncryptedStream2.method326(var161.buf, 0, var161.buf.length);
-				Game.staticEncryptedStream2.writeByte(NodeSub19.staticInt319);
-				Game.staticEncryptedStream2.writeInt(0);
-				Game.staticEncryptedStream2.writeInt(Game.staticJs5IndexImpl8.anInt201);
-				Game.staticEncryptedStream2.writeInt(FloorUnderlayDef.staticJs5IndexImpl13.anInt201);
-				Game.staticEncryptedStream2.writeInt(Class23.staticJs5IndexImpl2.anInt201);
-				Game.staticEncryptedStream2.writeInt(CanvasSub1.staticJs5IndexImpl5.anInt201);
-				Game.staticEncryptedStream2.writeInt(Config19.staticJs5IndexImpl15.anInt201);
-				Game.staticEncryptedStream2.writeInt(RenderableSub2.staticJs5IndexImpl16.anInt201);
-				Game.staticEncryptedStream2.writeInt(Class34.staticJs5IndexImpl3.anInt201);
-				Game.staticEncryptedStream2.writeInt(ClientScriptMap.staticJs5IndexImpl14.anInt201);
-				Game.staticEncryptedStream2.writeInt(Class62.staticJs5IndexImpl7.anInt201);
-				Game.staticEncryptedStream2.writeInt(IdentityKit.staticJs5IndexImpl12.anInt201);
-				Game.staticEncryptedStream2.writeInt(AbstractClass3Sub1.staticJs5IndexImpl10.anInt201);
-				Game.staticEncryptedStream2.writeInt(Class56.staticJs5IndexImpl6.anInt201);
-				Game.staticEncryptedStream2.writeInt(Connection.staticJs5IndexImpl4.anInt201);
-				Game.staticEncryptedStream2.writeInt(NodeSub12.staticJs5IndexImpl11.anInt201);
-				Game.staticEncryptedStream2.writeInt(staticJs5IndexImpl1.anInt201);
-				Game.staticEncryptedStream2.writeInt(Game.staticJs5IndexImpl9.anInt201);
-				Game.staticEncryptedStream2.method341(var19, var2, Game.staticEncryptedStream2.off);
-				Game.staticEncryptedStream2.method371(Game.staticEncryptedStream2.off - var1);
-				Class56.staticConnection3.method151(Game.staticEncryptedStream2.buf, 0,
-						Game.staticEncryptedStream2.off);
-				Game.staticEncryptedStream1.method476(var19);
+				Client.staticEncryptedStream2.method326(var161.buf, 0, var161.buf.length);
+				Client.staticEncryptedStream2.writeByte(NodeSub19.staticInt319);
+				Client.staticEncryptedStream2.writeInt(0);
+				Client.staticEncryptedStream2.writeInt(Client.staticJs5IndexImpl8.anInt201);
+				Client.staticEncryptedStream2.writeInt(FloorUnderlayDef.staticJs5IndexImpl13.anInt201);
+				Client.staticEncryptedStream2.writeInt(Class23.staticJs5IndexImpl2.anInt201);
+				Client.staticEncryptedStream2.writeInt(CanvasSub1.staticJs5IndexImpl5.anInt201);
+				Client.staticEncryptedStream2.writeInt(Config19.staticJs5IndexImpl15.anInt201);
+				Client.staticEncryptedStream2.writeInt(RenderableSub2.staticJs5IndexImpl16.anInt201);
+				Client.staticEncryptedStream2.writeInt(Class34.staticJs5IndexImpl3.anInt201);
+				Client.staticEncryptedStream2.writeInt(ClientScriptMap.staticJs5IndexImpl14.anInt201);
+				Client.staticEncryptedStream2.writeInt(Class62.staticJs5IndexImpl7.anInt201);
+				Client.staticEncryptedStream2.writeInt(IdentityKit.staticJs5IndexImpl12.anInt201);
+				Client.staticEncryptedStream2.writeInt(AbstractClass3Sub1.staticJs5IndexImpl10.anInt201);
+				Client.staticEncryptedStream2.writeInt(Class56.staticJs5IndexImpl6.anInt201);
+				Client.staticEncryptedStream2.writeInt(Connection.staticJs5IndexImpl4.anInt201);
+				Client.staticEncryptedStream2.writeInt(NodeSub12.staticJs5IndexImpl11.anInt201);
+				Client.staticEncryptedStream2.writeInt(staticJs5IndexImpl1.anInt201);
+				Client.staticEncryptedStream2.writeInt(Client.staticJs5IndexImpl9.anInt201);
+				Client.staticEncryptedStream2.method341(var19, var2, Client.staticEncryptedStream2.off);
+				Client.staticEncryptedStream2.method371(Client.staticEncryptedStream2.off - var1);
+				Class56.staticConnection3.method151(Client.staticEncryptedStream2.buf, 0,
+						Client.staticEncryptedStream2.off);
+				Client.staticEncryptedStream1.method476(var19);
 
 				for (var20 = 0; var20 < 4; var20++) {
 					var19[var20] += 50;
 				}
 
-				Game.staticEncryptedStream3.method476(var19);
-				Game.staticInt303 = 6;
+				Client.staticEncryptedStream3.method476(var19);
+				Client.staticInt303 = 6;
 			}
 
-			if (Game.staticInt303 == 6 && Class56.staticConnection3.available() > 0) {
+			if (Client.staticInt303 == 6 && Class56.staticConnection3.available() > 0) {
 				var10 = Class56.staticConnection3.method152();
-				if (var10 == 21 && Game.staticInt165 == 20) {
-					Game.staticInt303 = 7;
+				if (var10 == 21 && Client.staticInt165 == 20) {
+					Client.staticInt303 = 7;
 				} else if (var10 == 2) {
-					Game.staticInt303 = 9;
-				} else if (var10 == 15 && Game.staticInt165 == 40) {
-					Game.staticInt190 = -1;
-					Game.staticInt303 = 13;
-				} else if (var10 == 23 && Game.staticInt302 < 1) {
-					++Game.staticInt302;
-					Game.staticInt303 = 0;
+					Client.staticInt303 = 9;
+				} else if (var10 == 15 && Client.staticInt165 == 40) {
+					Client.staticInt190 = -1;
+					Client.staticInt303 = 13;
+				} else if (var10 == 23 && Client.staticInt302 < 1) {
+					++Client.staticInt302;
+					Client.staticInt303 = 0;
 				} else {
 					if (var10 != 29) {
 						staticMethod220(var10);
 						return;
 					}
 
-					Game.staticInt303 = 11;
+					Client.staticInt303 = 11;
 				}
 			}
 
-			if (Game.staticInt303 == 7 && Class56.staticConnection3.available() > 0) {
-				Game.staticInt184 = (Class56.staticConnection3.method152() + 3) * 60;
-				Game.staticInt303 = 8;
+			if (Client.staticInt303 == 7 && Class56.staticConnection3.available() > 0) {
+				Client.staticInt184 = (Class56.staticConnection3.method152() + 3) * 60;
+				Client.staticInt303 = 8;
 			}
 
-			if (Game.staticInt303 == 8) {
-				Game.staticInt262 = 0;
+			if (Client.staticInt303 == 8) {
+				Client.staticInt262 = 0;
 				staticMethod231("You have only just left another world.", "Your profile will be transferred in:",
-						Game.staticInt184 / 60 + " seconds.");
-				if (--Game.staticInt184 <= 0) {
-					Game.staticInt303 = 0;
+						Client.staticInt184 / 60 + " seconds.");
+				if (--Client.staticInt184 <= 0) {
+					Client.staticInt303 = 0;
 				}
 			} else {
-				if (Game.staticInt303 == 9 && Class56.staticConnection3.available() >= 13) {
+				if (Client.staticInt303 == 9 && Class56.staticConnection3.available() >= 13) {
 					boolean var11 = Class56.staticConnection3.method152() == 1;
-					Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 4);
-					Game.staticEncryptedStream3.off = 0;
+					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 4);
+					Client.staticEncryptedStream3.off = 0;
 					if (var11) {
-						var1 = Game.staticEncryptedStream3.method472() << 24;
-						var1 |= Game.staticEncryptedStream3.method472() << 16;
-						var1 |= Game.staticEncryptedStream3.method472() << 8;
-						var1 |= Game.staticEncryptedStream3.method472();
+						var1 = Client.staticEncryptedStream3.method472() << 24;
+						var1 |= Client.staticEncryptedStream3.method472() << 16;
+						var1 |= Client.staticEncryptedStream3.method472() << 8;
+						var1 |= Client.staticEncryptedStream3.method472();
 						var2 = staticMethod149(staticString2);
 						if (staticClass6_1.aLinkedHashMap1.size() >= 10
 								&& !staticClass6_1.aLinkedHashMap1.containsKey(Integer.valueOf(var2))) {
@@ -13266,113 +13266,113 @@ public class Static {
 						staticMethod270();
 					}
 
-					Game.staticInt268 = Class56.staticConnection3.method152();
-					Game.staticBool33 = Class56.staticConnection3.method152() == 1;
-					Game.staticInt246 = Class56.staticConnection3.method152();
-					Game.staticInt246 <<= 8;
-					Game.staticInt246 += Class56.staticConnection3.method152();
-					Game.staticInt289 = Class56.staticConnection3.method152();
-					Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 1);
-					Game.staticEncryptedStream3.off = 0;
-					Game.staticInt191 = Game.staticEncryptedStream3.method472();
-					Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 2);
-					Game.staticEncryptedStream3.off = 0;
-					Game.staticInt190 = Game.staticEncryptedStream3.method370();
+					Client.staticInt268 = Class56.staticConnection3.method152();
+					Client.staticBool33 = Class56.staticConnection3.method152() == 1;
+					Client.staticInt246 = Class56.staticConnection3.method152();
+					Client.staticInt246 <<= 8;
+					Client.staticInt246 += Class56.staticConnection3.method152();
+					Client.staticInt289 = Class56.staticConnection3.method152();
+					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 1);
+					Client.staticEncryptedStream3.off = 0;
+					Client.staticInt191 = Client.staticEncryptedStream3.method472();
+					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+					Client.staticEncryptedStream3.off = 0;
+					Client.staticInt190 = Client.staticEncryptedStream3.method370();
 
 					try {
-						Game var18 = Game.staticGame1;
+						Client var18 = Client.staticGame1;
 						JSObject.getWindow(var18).call("zap", (Object[]) null);
 					} catch (Throwable var8) {
 						;
 					}
 
-					Game.staticInt303 = 10;
+					Client.staticInt303 = 10;
 				}
 
-				if (Game.staticInt303 == 10) {
-					if (Class56.staticConnection3.available() >= Game.staticInt190) {
-						Game.staticEncryptedStream3.off = 0;
-						Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, Game.staticInt190);
+				if (Client.staticInt303 == 10) {
+					if (Class56.staticConnection3.available() >= Client.staticInt190) {
+						Client.staticEncryptedStream3.off = 0;
+						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
 						staticMethod150();
-						staticMethod48(Game.staticEncryptedStream3);
+						staticMethod48(Client.staticEncryptedStream3);
 						FileOnDisk.staticInt39 = -1;
 						staticMethod294(false);
-						Game.staticInt191 = -1;
+						Client.staticInt191 = -1;
 					}
 				} else {
-					if (Game.staticInt303 == 11 && Class56.staticConnection3.available() >= 2) {
-						Game.staticEncryptedStream3.off = 0;
-						Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 2);
-						Game.staticEncryptedStream3.off = 0;
-						FileOnDisk.staticInt37 = Game.staticEncryptedStream3.method370();
-						Game.staticInt303 = 12;
+					if (Client.staticInt303 == 11 && Class56.staticConnection3.available() >= 2) {
+						Client.staticEncryptedStream3.off = 0;
+						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+						Client.staticEncryptedStream3.off = 0;
+						FileOnDisk.staticInt37 = Client.staticEncryptedStream3.method370();
+						Client.staticInt303 = 12;
 					}
 
-					if (Game.staticInt303 == 12 && Class56.staticConnection3.available() >= FileOnDisk.staticInt37) {
-						Game.staticEncryptedStream3.off = 0;
-						Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, FileOnDisk.staticInt37);
-						Game.staticEncryptedStream3.off = 0;
-						String var12 = Game.staticEncryptedStream3.method365();
-						String var15 = Game.staticEncryptedStream3.method365();
-						String var191 = Game.staticEncryptedStream3.method365();
+					if (Client.staticInt303 == 12 && Class56.staticConnection3.available() >= FileOnDisk.staticInt37) {
+						Client.staticEncryptedStream3.off = 0;
+						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, FileOnDisk.staticInt37);
+						Client.staticEncryptedStream3.off = 0;
+						String var12 = Client.staticEncryptedStream3.method365();
+						String var15 = Client.staticEncryptedStream3.method365();
+						String var191 = Client.staticEncryptedStream3.method365();
 						staticMethod231(var12, var15, var191);
 						staticMethod396(10);
 					}
 
-					if (Game.staticInt303 != 13) {
-						++Game.staticInt262;
-						if (Game.staticInt262 > 2000) {
-							if (Game.staticInt302 < 1) {
+					if (Client.staticInt303 != 13) {
+						++Client.staticInt262;
+						if (Client.staticInt262 > 2000) {
+							if (Client.staticInt302 < 1) {
 								if (Class32.staticInt73 * 462737933 == Class7.staticInt30 * 462737933) {
-									Class32.staticInt73 = Game.staticInt250 * 1584772929;
+									Class32.staticInt73 = Client.staticInt250 * 1584772929;
 								} else {
 									Class32.staticInt73 = Class7.staticInt30;
 								}
 
-								++Game.staticInt302;
-								Game.staticInt303 = 0;
+								++Client.staticInt302;
+								Client.staticInt303 = 0;
 							} else {
 								staticMethod220(-3);
 							}
 						}
 					} else {
-						if (Game.staticInt190 == -1) {
+						if (Client.staticInt190 == -1) {
 							if (Class56.staticConnection3.available() < 2) {
 								return;
 							}
 
-							Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 2);
-							Game.staticEncryptedStream3.off = 0;
-							Game.staticInt190 = Game.staticEncryptedStream3.method370();
+							Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+							Client.staticEncryptedStream3.off = 0;
+							Client.staticInt190 = Client.staticEncryptedStream3.method370();
 						}
 
-						if (Class56.staticConnection3.available() >= Game.staticInt190) {
-							Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, Game.staticInt190);
-							Game.staticEncryptedStream3.off = 0;
-							var10 = Game.staticInt190;
-							Game.staticEncryptedStream1.off = 0;
-							Game.staticEncryptedStream3.off = 0;
-							Game.staticInt191 = -1;
-							Game.staticInt270 = 1;
-							Game.staticInt194 = 1;
-							Game.staticInt195 = 1;
-							Game.staticInt190 = 0;
-							Game.staticInt192 = 0;
-							Game.staticInt170 = 0;
-							Game.staticInt252 = 0;
-							Game.staticInt217 = -1;
-							Game.staticBool30 = false;
-							Game.staticInt298 = 0;
-							Game.staticInt296 = 0;
+						if (Class56.staticConnection3.available() >= Client.staticInt190) {
+							Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+							Client.staticEncryptedStream3.off = 0;
+							var10 = Client.staticInt190;
+							Client.staticEncryptedStream1.off = 0;
+							Client.staticEncryptedStream3.off = 0;
+							Client.staticInt191 = -1;
+							Client.staticInt270 = 1;
+							Client.staticInt194 = 1;
+							Client.staticInt195 = 1;
+							Client.staticInt190 = 0;
+							Client.staticInt192 = 0;
+							Client.staticInt170 = 0;
+							Client.staticInt252 = 0;
+							Client.staticInt217 = -1;
+							Client.staticBool30 = false;
+							Client.staticInt298 = 0;
+							Client.staticInt296 = 0;
 
 							for (var1 = 0; var1 < 2048; var1++) {
-								Game.staticPlayerArray1[var1] = null;
+								Client.staticPlayerArray1[var1] = null;
 							}
 
 							AbstractClass2Sub1.staticPlayer1 = null;
 
-							for (var1 = 0; var1 < Game.staticNpcArray1.length; var1++) {
-								Npc var13 = Game.staticNpcArray1[var1];
+							for (var1 = 0; var1 < Client.staticNpcArray1.length; var1++) {
+								Npc var13 = Client.staticNpcArray1[var1];
 								if (var13 != null) {
 									var13.anInt600 = -1;
 									var13.aBool76 = false;
@@ -13383,12 +13383,12 @@ public class Static {
 							staticMethod396(30);
 
 							for (var1 = 0; var1 < 100; var1++) {
-								Game.staticBoolArray8[var1] = true;
+								Client.staticBoolArray8[var1] = true;
 							}
 
 							staticMethod34();
-							staticMethod48(Game.staticEncryptedStream3);
-							if (var10 != Game.staticEncryptedStream3.off) {
+							staticMethod48(Client.staticEncryptedStream3);
+							if (var10 != Client.staticEncryptedStream3.off) {
 								throw new RuntimeException();
 							}
 						}
@@ -13396,15 +13396,15 @@ public class Static {
 				}
 			}
 		} catch (IOException var101) {
-			if (Game.staticInt302 < 1) {
+			if (Client.staticInt302 < 1) {
 				if (Class7.staticInt30 * 462737933 == Class32.staticInt73 * 462737933) {
-					Class32.staticInt73 = Game.staticInt250 * 1584772929;
+					Class32.staticInt73 = Client.staticInt250 * 1584772929;
 				} else {
 					Class32.staticInt73 = Class7.staticInt30;
 				}
 
-				++Game.staticInt302;
-				Game.staticInt303 = 0;
+				++Client.staticInt302;
+				Client.staticInt303 = 0;
 			} else {
 				staticMethod220(-2);
 			}
@@ -13413,11 +13413,11 @@ public class Static {
 	}
 
 	static final void staticMethod22() {
-		for (RenderableSub2 var0 = (RenderableSub2) Game.staticClass39_6
-				.method195(); var0 != null; var0 = (RenderableSub2) Game.staticClass39_6.method193()) {
+		for (RenderableSub2 var0 = (RenderableSub2) Client.staticClass39_6
+				.method195(); var0 != null; var0 = (RenderableSub2) Client.staticClass39_6.method193()) {
 			if (var0.anInt637 == NodeSub4.staticInt155 && !var0.aBool78) {
-				if (Game.staticInt166 >= var0.anInt636) {
-					var0.method568(Game.staticInt171);
+				if (Client.staticInt166 >= var0.anInt636) {
+					var0.method568(Client.staticInt171);
 					if (var0.aBool78) {
 						var0.method174();
 					} else {
@@ -13492,7 +13492,7 @@ public class Static {
 			var0.anInt351 = var0.anInt307 * var0.anInt346 / var0.anInt309;
 		}
 
-		if (Game.staticBool40 && var0.anInt296 == 0) {
+		if (Client.staticBool40 && var0.anInt296 == 0) {
 			if (var0.anInt351 < 5 && var0.anInt307 < 5) {
 				var0.anInt351 = 5;
 				var0.anInt307 = 5;
@@ -13508,14 +13508,14 @@ public class Static {
 		}
 
 		if (var0.anInt298 == 1337) {
-			Game.staticWidget10 = var0;
+			Client.staticWidget10 = var0;
 		}
 
 		if (var3 && var0.anObjectArray25 != null && (var4 != var0.anInt307 || var5 != var0.anInt351)) {
 			NodeSub16 var6 = new NodeSub16();
 			var6.aWidget1 = var0;
 			var6.anObjectArray2 = var0.anObjectArray25;
-			Game.staticClass39_8.method198(var6);
+			Client.staticClass39_8.method198(var6);
 		}
 
 	}
@@ -13536,12 +13536,12 @@ public class Static {
 
 	static int staticMethod177(int var0, CacheableSub1 var1, boolean var2) {
 		if (var0 == 3600) {
-			if (Game.staticInt202 == 0) {
+			if (Client.staticInt202 == 0) {
 				staticIntArray16[++staticInt27 - 1] = -2;
-			} else if (Game.staticInt202 == 1) {
+			} else if (Client.staticInt202 == 1) {
 				staticIntArray16[++staticInt27 - 1] = -1;
 			} else {
-				staticIntArray16[++staticInt27 - 1] = Game.staticInt308;
+				staticIntArray16[++staticInt27 - 1] = Client.staticInt308;
 			}
 
 			return 1;
@@ -13549,9 +13549,9 @@ public class Static {
 			int var5;
 			if (var0 == 3601) {
 				var5 = staticIntArray16[--staticInt27];
-				if (Game.staticInt202 == 2 && var5 < Game.staticInt308) {
-					staticStringArray1[++staticInt148 - 1] = Game.staticFriendArray1[var5].aString14;
-					staticStringArray1[++staticInt148 - 1] = Game.staticFriendArray1[var5].aString13;
+				if (Client.staticInt202 == 2 && var5 < Client.staticInt308) {
+					staticStringArray1[++staticInt148 - 1] = Client.staticFriendArray1[var5].aString14;
+					staticStringArray1[++staticInt148 - 1] = Client.staticFriendArray1[var5].aString13;
 				} else {
 					staticStringArray1[++staticInt148 - 1] = "";
 					staticStringArray1[++staticInt148 - 1] = "";
@@ -13560,8 +13560,8 @@ public class Static {
 				return 1;
 			} else if (var0 == 3602) {
 				var5 = staticIntArray16[--staticInt27];
-				if (Game.staticInt202 == 2 && var5 < Game.staticInt308) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticFriendArray1[var5].anInt210;
+				if (Client.staticInt202 == 2 && var5 < Client.staticInt308) {
+					staticIntArray16[++staticInt27 - 1] = Client.staticFriendArray1[var5].anInt210;
 				} else {
 					staticIntArray16[++staticInt27 - 1] = 0;
 				}
@@ -13569,8 +13569,8 @@ public class Static {
 				return 1;
 			} else if (var0 == 3603) {
 				var5 = staticIntArray16[--staticInt27];
-				if (Game.staticInt202 == 2 && var5 < Game.staticInt308) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticFriendArray1[var5].anInt209;
+				if (Client.staticInt202 == 2 && var5 < Client.staticInt308) {
+					staticIntArray16[++staticInt27 - 1] = Client.staticFriendArray1[var5].anInt209;
 				} else {
 					staticIntArray16[++staticInt27 - 1] = 0;
 				}
@@ -13581,10 +13581,10 @@ public class Static {
 				if (var0 == 3604) {
 					var14 = staticStringArray1[--staticInt148];
 					int var151 = staticIntArray16[--staticInt27];
-					Game.staticEncryptedStream1.method471(22);
-					Game.staticEncryptedStream1.writeByte(staticMethod378(var14) + 1);
-					Game.staticEncryptedStream1.method345(var151);
-					Game.staticEncryptedStream1.method323(var14);
+					Client.staticEncryptedStream1.method471(22);
+					Client.staticEncryptedStream1.writeByte(staticMethod378(var14) + 1);
+					Client.staticEncryptedStream1.method345(var151);
+					Client.staticEncryptedStream1.method323(var14);
 					return 1;
 				} else {
 					String var8;
@@ -13596,15 +13596,15 @@ public class Static {
 					if (var0 == 3605) {
 						var14 = staticStringArray1[--staticInt148];
 						if (var14 != null) {
-							if ((Game.staticInt308 < 200 || Game.staticInt289 == 1) && Game.staticInt308 < 400) {
+							if ((Client.staticInt308 < 200 || Client.staticInt289 == 1) && Client.staticInt308 < 400) {
 								var12 = staticMethod111(var14, staticClass53_1);
 								if (var12 != null) {
 									var11 = 0;
 
 									while (true) {
-										if (var11 >= Game.staticInt308) {
-											for (var11 = 0; var11 < Game.staticInt310; var11++) {
-												var15 = Game.staticClass7Array1[var11];
+										if (var11 >= Client.staticInt308) {
+											for (var11 = 0; var11 < Client.staticInt310; var11++) {
+												var15 = Client.staticClass7Array1[var11];
 												var17 = staticMethod111(var15.aString5, staticClass53_1);
 												if (var17 != null && var17.equals(var12)) {
 													staticMethod36(30, "",
@@ -13627,14 +13627,14 @@ public class Static {
 												staticMethod36(30, "",
 														"You can\'t add yourself to your own friend list");
 											} else {
-												Game.staticEncryptedStream1.method471(36);
-												Game.staticEncryptedStream1.writeByte(staticMethod378(var14));
-												Game.staticEncryptedStream1.method323(var14);
+												Client.staticEncryptedStream1.method471(36);
+												Client.staticEncryptedStream1.writeByte(staticMethod378(var14));
+												Client.staticEncryptedStream1.method323(var14);
 											}
 											break;
 										}
 
-										var16 = Game.staticFriendArray1[var11];
+										var16 = Client.staticFriendArray1[var11];
 										var17 = staticMethod111(var16.aString14, staticClass53_1);
 										if (var17 != null && var17.equals(var12)) {
 											staticMethod36(30, "", var14 + " is already on your friend list");
@@ -13664,8 +13664,8 @@ public class Static {
 						if (var14 != null) {
 							var12 = staticMethod111(var14, staticClass53_1);
 							if (var12 != null) {
-								for (var11 = 0; var11 < Game.staticInt308; var11++) {
-									var16 = Game.staticFriendArray1[var11];
+								for (var11 = 0; var11 < Client.staticInt308; var11++) {
+									var16 = Client.staticFriendArray1[var11];
 									var17 = var16.aString14;
 									var8 = staticMethod111(var17, staticClass53_1);
 									boolean var161;
@@ -13680,16 +13680,16 @@ public class Static {
 									}
 
 									if (var161) {
-										--Game.staticInt308;
+										--Client.staticInt308;
 
-										for (int var171 = var11; var171 < Game.staticInt308; var171++) {
-											Game.staticFriendArray1[var171] = Game.staticFriendArray1[var171 + 1];
+										for (int var171 = var11; var171 < Client.staticInt308; var171++) {
+											Client.staticFriendArray1[var171] = Client.staticFriendArray1[var171 + 1];
 										}
 
-										Game.staticInt280 = Game.staticInt274 * 2073400987;
-										Game.staticEncryptedStream1.method471(196);
-										Game.staticEncryptedStream1.writeByte(staticMethod378(var14));
-										Game.staticEncryptedStream1.method323(var14);
+										Client.staticInt280 = Client.staticInt274 * 2073400987;
+										Client.staticEncryptedStream1.method471(196);
+										Client.staticEncryptedStream1.writeByte(staticMethod378(var14));
+										Client.staticEncryptedStream1.method323(var14);
 										break;
 									}
 								}
@@ -13700,15 +13700,15 @@ public class Static {
 					} else if (var0 == 3607) {
 						var14 = staticStringArray1[--staticInt148];
 						if (var14 != null) {
-							if ((Game.staticInt310 < 100 || Game.staticInt289 == 1) && Game.staticInt310 < 400) {
+							if ((Client.staticInt310 < 100 || Client.staticInt289 == 1) && Client.staticInt310 < 400) {
 								var12 = staticMethod111(var14, staticClass53_1);
 								if (var12 != null) {
 									var11 = 0;
 
 									while (true) {
-										if (var11 >= Game.staticInt310) {
-											for (var11 = 0; var11 < Game.staticInt308; var11++) {
-												var16 = Game.staticFriendArray1[var11];
+										if (var11 >= Client.staticInt310) {
+											for (var11 = 0; var11 < Client.staticInt308; var11++) {
+												var16 = Client.staticFriendArray1[var11];
 												var17 = staticMethod111(var16.aString14, staticClass53_1);
 												if (var17 != null && var17.equals(var12)) {
 													staticMethod36(31, "",
@@ -13731,14 +13731,14 @@ public class Static {
 												staticMethod36(31, "",
 														"You can\'t add yourself to your own ignore list");
 											} else {
-												Game.staticEncryptedStream1.method471(190);
-												Game.staticEncryptedStream1.writeByte(staticMethod378(var14));
-												Game.staticEncryptedStream1.method323(var14);
+												Client.staticEncryptedStream1.method471(190);
+												Client.staticEncryptedStream1.writeByte(staticMethod378(var14));
+												Client.staticEncryptedStream1.method323(var14);
 											}
 											break;
 										}
 
-										var15 = Game.staticClass7Array1[var11];
+										var15 = Client.staticClass7Array1[var11];
 										var17 = staticMethod111(var15.aString5, staticClass53_1);
 										if (var17 != null && var17.equals(var12)) {
 											staticMethod36(31, "", var14 + " is already on your ignore list");
@@ -13785,15 +13785,15 @@ public class Static {
 						staticIntArray16[++staticInt27 - 1] = staticMethod422(var14, false) ? 1 : 0;
 						return 1;
 					} else if (var0 == 3611) {
-						if (Game.staticString34 != null) {
-							staticStringArray1[++staticInt148 - 1] = staticMethod91(Game.staticString34);
+						if (Client.staticString34 != null) {
+							staticStringArray1[++staticInt148 - 1] = staticMethod91(Client.staticString34);
 						} else {
 							staticStringArray1[++staticInt148 - 1] = "";
 						}
 
 						return 1;
 					} else if (var0 == 3612) {
-						if (Game.staticString34 != null) {
+						if (Client.staticString34 != null) {
 							staticIntArray16[++staticInt27 - 1] = staticInt149;
 						} else {
 							staticIntArray16[++staticInt27 - 1] = 0;
@@ -13802,7 +13802,7 @@ public class Static {
 						return 1;
 					} else if (var0 == 3613) {
 						var5 = staticIntArray16[--staticInt27];
-						if (Game.staticString34 != null && var5 < staticInt149) {
+						if (Client.staticString34 != null && var5 < staticInt149) {
 							staticStringArray1[++staticInt148
 									- 1] = Class43.staticNodeSub1Array1[var5].aString15;
 						} else {
@@ -13812,7 +13812,7 @@ public class Static {
 						return 1;
 					} else if (var0 == 3614) {
 						var5 = staticIntArray16[--staticInt27];
-						if (Game.staticString34 != null && var5 < staticInt149) {
+						if (Client.staticString34 != null && var5 < staticInt149) {
 							staticIntArray16[++staticInt27
 									- 1] = Class43.staticNodeSub1Array1[var5].anInt217;
 						} else {
@@ -13822,7 +13822,7 @@ public class Static {
 						return 1;
 					} else if (var0 == 3615) {
 						var5 = staticIntArray16[--staticInt27];
-						if (Game.staticString34 != null && var5 < staticInt149) {
+						if (Client.staticString34 != null && var5 < staticInt149) {
 							staticIntArray16[++staticInt27
 									- 1] = Class43.staticNodeSub1Array1[var5].aByte3;
 						} else {
@@ -13845,24 +13845,24 @@ public class Static {
 						staticMethod279(var14);
 						return 1;
 					} else if (var0 == 3620) {
-						Game.staticEncryptedStream1.method471(164);
-						Game.staticEncryptedStream1.writeByte(0);
+						Client.staticEncryptedStream1.method471(164);
+						Client.staticEncryptedStream1.writeByte(0);
 						return 1;
 					} else if (var0 == 3621) {
-						if (Game.staticInt202 == 0) {
+						if (Client.staticInt202 == 0) {
 							staticIntArray16[++staticInt27 - 1] = -1;
 						} else {
-							staticIntArray16[++staticInt27 - 1] = Game.staticInt310;
+							staticIntArray16[++staticInt27 - 1] = Client.staticInt310;
 						}
 
 						return 1;
 					} else if (var0 == 3622) {
 						var5 = staticIntArray16[--staticInt27];
-						if (Game.staticInt202 != 0 && var5 < Game.staticInt310) {
+						if (Client.staticInt202 != 0 && var5 < Client.staticInt310) {
 							staticStringArray1[++staticInt148
-									- 1] = Game.staticClass7Array1[var5].aString5;
+									- 1] = Client.staticClass7Array1[var5].aString5;
 							staticStringArray1[++staticInt148
-									- 1] = Game.staticClass7Array1[var5].aString4;
+									- 1] = Client.staticClass7Array1[var5].aString4;
 						} else {
 							staticStringArray1[++staticInt148 - 1] = "";
 							staticStringArray1[++staticInt148 - 1] = "";
@@ -13879,9 +13879,9 @@ public class Static {
 						return 1;
 					} else if (var0 != 3624) {
 						if (var0 == 3625) {
-							if (Game.staticString29 != null) {
+							if (Client.staticString29 != null) {
 								staticStringArray1[++staticInt148 - 1] = staticMethod91(
-										Game.staticString29);
+										Client.staticString29);
 							} else {
 								staticStringArray1[++staticInt148 - 1] = "";
 							}
@@ -14151,62 +14151,62 @@ public class Static {
 	static int staticMethod190(int var0, CacheableSub1 var1, boolean var2) {
 		if (var0 == 6200) {
 			staticInt27 -= 2;
-			Game.staticShort3 = (short) staticIntArray16[staticInt27];
-			if (Game.staticShort3 <= 0) {
-				Game.staticShort3 = 256;
+			Client.staticShort3 = (short) staticIntArray16[staticInt27];
+			if (Client.staticShort3 <= 0) {
+				Client.staticShort3 = 256;
 			}
 
-			Game.staticShort4 = (short) staticIntArray16[staticInt27 + 1];
-			if (Game.staticShort4 <= 0) {
-				Game.staticShort4 = 205;
+			Client.staticShort4 = (short) staticIntArray16[staticInt27 + 1];
+			if (Client.staticShort4 <= 0) {
+				Client.staticShort4 = 205;
 			}
 
 			return 1;
 		} else if (var0 == 6201) {
 			staticInt27 -= 2;
-			Game.staticShort5 = (short) staticIntArray16[staticInt27];
-			if (Game.staticShort5 <= 0) {
-				Game.staticShort5 = 256;
+			Client.staticShort5 = (short) staticIntArray16[staticInt27];
+			if (Client.staticShort5 <= 0) {
+				Client.staticShort5 = 256;
 			}
 
-			Game.staticShort2 = (short) staticIntArray16[1 + staticInt27];
-			if (Game.staticShort2 <= 0) {
-				Game.staticShort2 = 320;
+			Client.staticShort2 = (short) staticIntArray16[1 + staticInt27];
+			if (Client.staticShort2 <= 0) {
+				Client.staticShort2 = 320;
 			}
 
 			return 1;
 		} else if (var0 == 6202) {
 			staticInt27 -= 4;
-			Game.staticShort1 = (short) staticIntArray16[staticInt27];
-			if (Game.staticShort1 <= 0) {
-				Game.staticShort1 = 1;
+			Client.staticShort1 = (short) staticIntArray16[staticInt27];
+			if (Client.staticShort1 <= 0) {
+				Client.staticShort1 = 1;
 			}
 
-			Game.staticShort6 = (short) staticIntArray16[1 + staticInt27];
-			if (Game.staticShort6 <= 0) {
-				Game.staticShort6 = 32767;
-			} else if (Game.staticShort6 < Game.staticShort1) {
-				Game.staticShort6 = Game.staticShort1;
+			Client.staticShort6 = (short) staticIntArray16[1 + staticInt27];
+			if (Client.staticShort6 <= 0) {
+				Client.staticShort6 = 32767;
+			} else if (Client.staticShort6 < Client.staticShort1) {
+				Client.staticShort6 = Client.staticShort1;
 			}
 
-			Game.staticShort7 = (short) staticIntArray16[staticInt27 + 2];
-			if (Game.staticShort7 <= 0) {
-				Game.staticShort7 = 1;
+			Client.staticShort7 = (short) staticIntArray16[staticInt27 + 2];
+			if (Client.staticShort7 <= 0) {
+				Client.staticShort7 = 1;
 			}
 
-			Game.staticShort8 = (short) staticIntArray16[3 + staticInt27];
-			if (Game.staticShort8 <= 0) {
-				Game.staticShort8 = 32767;
-			} else if (Game.staticShort8 < Game.staticShort7) {
-				Game.staticShort8 = Game.staticShort7;
+			Client.staticShort8 = (short) staticIntArray16[3 + staticInt27];
+			if (Client.staticShort8 <= 0) {
+				Client.staticShort8 = 32767;
+			} else if (Client.staticShort8 < Client.staticShort7) {
+				Client.staticShort8 = Client.staticShort7;
 			}
 
 			return 1;
 		} else if (var0 == 6203) {
-			if (Game.staticWidget10 != null) {
-				staticMethod31(0, 0, Game.staticWidget10.anInt307, Game.staticWidget10.anInt351, false);
-				staticIntArray16[++staticInt27 - 1] = Game.staticInt305;
-				staticIntArray16[++staticInt27 - 1] = Game.staticInt306;
+			if (Client.staticWidget10 != null) {
+				staticMethod31(0, 0, Client.staticWidget10.anInt307, Client.staticWidget10.anInt351, false);
+				staticIntArray16[++staticInt27 - 1] = Client.staticInt305;
+				staticIntArray16[++staticInt27 - 1] = Client.staticInt306;
 			} else {
 				staticIntArray16[++staticInt27 - 1] = -1;
 				staticIntArray16[++staticInt27 - 1] = -1;
@@ -14214,12 +14214,12 @@ public class Static {
 
 			return 1;
 		} else if (var0 == 6204) {
-			staticIntArray16[++staticInt27 - 1] = Game.staticShort5;
-			staticIntArray16[++staticInt27 - 1] = Game.staticShort2;
+			staticIntArray16[++staticInt27 - 1] = Client.staticShort5;
+			staticIntArray16[++staticInt27 - 1] = Client.staticShort2;
 			return 1;
 		} else if (var0 == 6205) {
-			staticIntArray16[++staticInt27 - 1] = Game.staticShort3;
-			staticIntArray16[++staticInt27 - 1] = Game.staticShort4;
+			staticIntArray16[++staticInt27 - 1] = Client.staticShort3;
+			staticIntArray16[++staticInt27 - 1] = Client.staticShort4;
 			return 1;
 		} else {
 			return 2;
@@ -14231,7 +14231,7 @@ public class Static {
 	}
 
 	static int staticMethod192(Widget var0) {
-		NodeSub15 var1 = (NodeSub15) Game.staticHashTable6.method149(((long) var0.anInt294 << 32) + var0.anInt319);
+		NodeSub15 var1 = (NodeSub15) Client.staticHashTable6.method149(((long) var0.anInt294 << 32) + var0.anInt319);
 		return var1 != null ? var1.anInt283 : var0.anInt343;
 	}
 
@@ -14348,7 +14348,7 @@ public class Static {
 			int var5;
 			int var10;
 			for (var10 = 0; var10 < '\u8000'; var10++) {
-				Npc var20 = Game.staticNpcArray1[var10];
+				Npc var20 = Client.staticNpcArray1[var10];
 				if (var20 != null) {
 					for (var5 = 0; var5 < 10; var5++) {
 						var20.anIntArray127[var5] -= var11;
@@ -14361,7 +14361,7 @@ public class Static {
 			}
 
 			for (var10 = 0; var10 < 2048; var10++) {
-				Player var191 = Game.staticPlayerArray1[var10];
+				Player var191 = Client.staticPlayerArray1[var10];
 				if (var191 != null) {
 					for (var5 = 0; var5 < 10; var5++) {
 						var191.anIntArray127[var5] -= var11;
@@ -14399,16 +14399,16 @@ public class Static {
 
 					for (int var16 = 0; var16 < 4; var16++) {
 						if (var15 >= 0 && var12 >= 0 && var15 < 104 && var12 < 104) {
-							Game.staticClass39ArrayArrayArray1[var16][var21][var2] = Game.staticClass39ArrayArrayArray1[var16][var15][var12];
+							Client.staticClass39ArrayArrayArray1[var16][var21][var2] = Client.staticClass39ArrayArrayArray1[var16][var15][var12];
 						} else {
-							Game.staticClass39ArrayArrayArray1[var16][var21][var2] = null;
+							Client.staticClass39ArrayArrayArray1[var16][var21][var2] = null;
 						}
 					}
 				}
 			}
 
-			for (NodeSub19 var211 = (NodeSub19) Game.staticClass39_7
-					.method195(); var211 != null; var211 = (NodeSub19) Game.staticClass39_7.method193()) {
+			for (NodeSub19 var211 = (NodeSub19) Client.staticClass39_7
+					.method195(); var211 != null; var211 = (NodeSub19) Client.staticClass39_7.method193()) {
 				var211.anInt388 -= var11;
 				var211.anInt390 -= var9;
 				if (var211.anInt388 < 0 || var211.anInt390 < 0 || var211.anInt388 >= 104 || var211.anInt390 >= 104) {
@@ -14416,19 +14416,19 @@ public class Static {
 				}
 			}
 
-			if (Game.staticInt296 != 0) {
-				Game.staticInt296 -= var11;
-				Game.staticInt240 -= var9;
+			if (Client.staticInt296 != 0) {
+				Client.staticInt296 -= var11;
+				Client.staticInt240 -= var9;
 			}
 
-			Game.staticInt236 = 0;
-			Game.staticBool28 = false;
-			Game.staticInt294 = 1;
-			Game.staticClass39_6.method191();
-			Game.staticClass39_5.method191();
+			Client.staticInt236 = 0;
+			Client.staticBool28 = false;
+			Client.staticInt294 = 1;
+			Client.staticClass39_6.method191();
+			Client.staticClass39_5.method191();
 
 			for (var2 = 0; var2 < 4; var2++) {
-				Game.staticClass38Array1[var2].method182();
+				Client.staticClass38Array1[var2].method182();
 			}
 		}
 
@@ -14626,7 +14626,7 @@ public class Static {
 		int[] var3 = staticIntArray7;
 
 		for (int var1 = 0; var1 < var0; var1++) {
-			Player var2 = Game.staticPlayerArray1[var3[var1]];
+			Player var2 = Client.staticPlayerArray1[var3[var1]];
 			if (var2 != null) {
 				staticMethod324(var2, 1);
 			}
@@ -14695,7 +14695,7 @@ public class Static {
 					var24 = ++staticInt27 - 1;
 					String var231 = staticStringArray1[staticInt148];
 					String var261 = staticStringArray1[staticInt148 + 1];
-					var28 = Game.staticInt231;
+					var28 = Client.staticInt231;
 					int var291 = var231.length();
 					int var30 = var261.length();
 					int var31 = 0;
@@ -14975,7 +14975,7 @@ public class Static {
 
 	static int staticMethod24(int var0, CacheableSub1 var1, boolean var2) {
 		if (var0 == 3300) {
-			staticIntArray16[++staticInt27 - 1] = Game.staticInt166;
+			staticIntArray16[++staticInt27 - 1] = Client.staticInt166;
 			return 1;
 		} else {
 			int var3;
@@ -15030,15 +15030,15 @@ public class Static {
 				return 1;
 			} else if (var0 == 3305) {
 				var3 = staticIntArray16[--staticInt27];
-				staticIntArray16[++staticInt27 - 1] = Game.staticIntArray91[var3];
+				staticIntArray16[++staticInt27 - 1] = Client.staticIntArray91[var3];
 				return 1;
 			} else if (var0 == 3306) {
 				var3 = staticIntArray16[--staticInt27];
-				staticIntArray16[++staticInt27 - 1] = Game.staticIntArray96[var3];
+				staticIntArray16[++staticInt27 - 1] = Client.staticIntArray96[var3];
 				return 1;
 			} else if (var0 == 3307) {
 				var3 = staticIntArray16[--staticInt27];
-				staticIntArray16[++staticInt27 - 1] = Game.staticIntArray108[var3];
+				staticIntArray16[++staticInt27 - 1] = Client.staticIntArray108[var3];
 				return 1;
 			} else if (var0 == 3308) {
 				var3 = NodeSub4.staticInt155;
@@ -15059,7 +15059,7 @@ public class Static {
 				staticIntArray16[++staticInt27 - 1] = var3 & 0x3fff;
 				return 1;
 			} else if (var0 == 3312) {
-				staticIntArray16[++staticInt27 - 1] = Game.staticBool20 ? 1 : 0;
+				staticIntArray16[++staticInt27 - 1] = Client.staticBool20 ? 1 : 0;
 				return 1;
 			} else if (var0 == 3313) {
 				staticInt27 -= 2;
@@ -15086,27 +15086,27 @@ public class Static {
 					staticIntArray16[++staticInt27 - 1] = staticMethod238(var3, var6);
 					return 1;
 				} else if (var0 == 3316) {
-					if (Game.staticInt268 >= 2) {
-						staticIntArray16[++staticInt27 - 1] = Game.staticInt268;
+					if (Client.staticInt268 >= 2) {
+						staticIntArray16[++staticInt27 - 1] = Client.staticInt268;
 					} else {
 						staticIntArray16[++staticInt27 - 1] = 0;
 					}
 
 					return 1;
 				} else if (var0 == 3317) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticInt170;
+					staticIntArray16[++staticInt27 - 1] = Client.staticInt170;
 					return 1;
 				} else if (var0 == 3318) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticInt309;
+					staticIntArray16[++staticInt27 - 1] = Client.staticInt309;
 					return 1;
 				} else if (var0 == 3321) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticInt267;
+					staticIntArray16[++staticInt27 - 1] = Client.staticInt267;
 					return 1;
 				} else if (var0 == 3322) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticInt232;
+					staticIntArray16[++staticInt27 - 1] = Client.staticInt232;
 					return 1;
 				} else if (var0 == 3323) {
-					if (Game.staticBool33) {
+					if (Client.staticBool33) {
 						staticIntArray16[++staticInt27 - 1] = 1;
 					} else {
 						staticIntArray16[++staticInt27 - 1] = 0;
@@ -15114,7 +15114,7 @@ public class Static {
 
 					return 1;
 				} else if (var0 == 3324) {
-					staticIntArray16[++staticInt27 - 1] = Game.staticInt201;
+					staticIntArray16[++staticInt27 - 1] = Client.staticInt201;
 					return 1;
 				} else {
 					return 2;
@@ -15168,12 +15168,12 @@ public class Static {
 		}
 
 		int var4 = var0.method477(2);
-		Player var6 = Game.staticPlayerArray1[var1];
+		Player var6 = Client.staticPlayerArray1[var1];
 		if (var4 == 0) {
 			if (var3) {
 				var6.aBool82 = false;
 			} else {
-				if (var1 == Game.staticInt246) {
+				if (var1 == Client.staticInt246) {
 					throw new RuntimeException();
 				}
 
@@ -15186,7 +15186,7 @@ public class Static {
 				}
 
 				staticIntArray11[var1] = var6.anInt600;
-				Game.staticPlayerArray1[var1] = null;
+				Client.staticPlayerArray1[var1] = null;
 				if (var0.method477(1) != 0) {
 					staticMethod256(var0, var1);
 				}
@@ -15221,7 +15221,7 @@ public class Static {
 					++var5;
 				}
 
-				if (var1 != Game.staticInt246 || var6.anInt628 >= 1536 && var6.anInt591 >= 1536 && var6.anInt628 < 11776
+				if (var1 != Client.staticInt246 || var6.anInt628 >= 1536 && var6.anInt591 >= 1536 && var6.anInt628 < 11776
 						&& var6.anInt591 < 11776) {
 					if (var3) {
 						var6.aBool82 = true;
@@ -15285,7 +15285,7 @@ public class Static {
 					var5 += 2;
 				}
 
-				if (Game.staticInt246 != var1 || var6.anInt628 >= 1536 && var6.anInt591 >= 1536 && var6.anInt628 < 11776
+				if (Client.staticInt246 != var1 || var6.anInt628 >= 1536 && var6.anInt591 >= 1536 && var6.anInt628 < 11776
 						&& var6.anInt591 < 11776) {
 					if (var3) {
 						var6.aBool82 = true;
@@ -15320,7 +15320,7 @@ public class Static {
 
 					var11 = var6.anIntArray127[0] + var9;
 					var8 = var10 + var6.anIntArray122[0];
-					if (var1 == Game.staticInt246 && (var6.anInt628 < 1536 || var6.anInt591 < 1536
+					if (var1 == Client.staticInt246 && (var6.anInt628 < 1536 || var6.anInt591 < 1536
 							|| var6.anInt628 >= 11776 || var6.anInt591 >= 11776)) {
 						var6.method661(var11, var8);
 						var6.aBool82 = false;
@@ -15334,7 +15334,7 @@ public class Static {
 					}
 
 					var6.anInt698 = (byte) (var6.anInt698 + var5 & 0x3);
-					if (var1 == Game.staticInt246) {
+					if (var1 == Client.staticInt246) {
 						NodeSub4.staticInt155 = var6.anInt698;
 					}
 				} else {
@@ -15344,7 +15344,7 @@ public class Static {
 					var10 = var7 & 0x3fff;
 					var11 = (var6.anIntArray127[0] + NodeSub3.staticInt154 + var9 & 0x3fff) - NodeSub3.staticInt154;
 					var8 = (var10 + var6.anIntArray122[0] + Class34.staticInt75 & 0x3fff) - Class34.staticInt75;
-					if (Game.staticInt246 == var1 && (var6.anInt628 < 1536 || var6.anInt591 < 1536
+					if (Client.staticInt246 == var1 && (var6.anInt628 < 1536 || var6.anInt591 < 1536
 							|| var6.anInt628 >= 11776 || var6.anInt591 >= 11776)) {
 						var6.method661(var11, var8);
 						var6.aBool82 = false;
@@ -15358,7 +15358,7 @@ public class Static {
 					}
 
 					var6.anInt698 = -1467680121 * (byte) (var6.anInt698 + var5 & 0x3);
-					if (var1 == Game.staticInt246) {
+					if (var1 == Client.staticInt246) {
 						NodeSub4.staticInt155 = var6.anInt698;
 					}
 				}
@@ -15368,8 +15368,8 @@ public class Static {
 	}
 
 	static void staticMethod208() {
-		if (Game.staticBool32) {
-			Widget var1 = staticMethod32(Class3.staticInt19, Game.staticInt260);
+		if (Client.staticBool32) {
+			Widget var1 = staticMethod32(Class3.staticInt19, Client.staticInt260);
 			if (var1 != null && var1.anObjectArray12 != null) {
 				NodeSub16 var0 = new NodeSub16();
 				var0.aWidget1 = var1;
@@ -15377,7 +15377,7 @@ public class Static {
 				staticMethod375(var0);
 			}
 
-			Game.staticBool32 = false;
+			Client.staticBool32 = false;
 			staticMethod73(var1);
 		}
 
@@ -15717,7 +15717,7 @@ public class Static {
 		ChatMessage var5 = var4.method2(var0, var1, var2, var3);
 		staticClass35_1.method157(var5, var5.anInt571);
 		staticClass45_1.method222(var5);
-		Game.staticInt279 = Game.staticInt274 * -2038739763;
+		Client.staticInt279 = Client.staticInt274 * -2038739763;
 	}
 
 	static final void staticMethod226(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
@@ -15730,10 +15730,10 @@ public class Static {
 				Class11.staticWidgetArray1 = null;
 			}
 		} else if (var7 != -1) {
-			Game.staticBoolArray8[var7] = true;
+			Client.staticBoolArray8[var7] = true;
 		} else {
 			for (int var8 = 0; var8 < 100; var8++) {
-				Game.staticBoolArray8[var8] = true;
+				Client.staticBoolArray8[var8] = true;
 			}
 		}
 
@@ -15772,31 +15772,31 @@ public class Static {
 	}
 
 	static final void staticMethod29() {
-		for (int var0 = 0; var0 < Game.staticInt236; var0++) {
-			--Game.staticIntArray116[var0];
-			if (Game.staticIntArray116[var0] >= -10) {
-				Class9 var91 = Game.staticClass9Array1[var0];
+		for (int var0 = 0; var0 < Client.staticInt236; var0++) {
+			--Client.staticIntArray116[var0];
+			if (Client.staticIntArray116[var0] >= -10) {
+				Class9 var91 = Client.staticClass9Array1[var0];
 				if (var91 == null) {
-					var91 = staticMethod52(Config19.staticJs5IndexImpl15, Game.staticIntArray114[var0], 0);
+					var91 = staticMethod52(Config19.staticJs5IndexImpl15, Client.staticIntArray114[var0], 0);
 					if (var91 == null) {
 						continue;
 					}
 
-					Game.staticIntArray116[var0] += var91.method26();
-					Game.staticClass9Array1[var0] = var91;
+					Client.staticIntArray116[var0] += var91.method26();
+					Client.staticClass9Array1[var0] = var91;
 				}
 
-				if (Game.staticIntArray116[var0] < 0) {
+				if (Client.staticIntArray116[var0] < 0) {
 					int var10;
-					if (Game.staticIntArray117[var0] != 0) {
-						int var9 = (Game.staticIntArray117[var0] & 0xff) * 128;
-						int var11 = Game.staticIntArray117[var0] >> 16 & 0xff;
+					if (Client.staticIntArray117[var0] != 0) {
+						int var9 = (Client.staticIntArray117[var0] & 0xff) * 128;
+						int var11 = Client.staticIntArray117[var0] >> 16 & 0xff;
 						int var5 = 64 + var11 * 128 - AbstractClass2Sub1.staticPlayer1.anInt628;
 						if (var5 < 0) {
 							var5 = -var5;
 						}
 
-						int var6 = Game.staticIntArray117[var0] >> 8 & 0xff;
+						int var6 = Client.staticIntArray117[var0] >> 8 & 0xff;
 						int var7 = 64 + var6 * 128 - AbstractClass2Sub1.staticPlayer1.anInt591;
 						if (var7 < 0) {
 							var7 = -var7;
@@ -15804,7 +15804,7 @@ public class Static {
 
 						int var1 = var7 + var5 - 128;
 						if (var1 > var9) {
-							Game.staticIntArray116[var0] = -100;
+							Client.staticIntArray116[var0] = -100;
 							continue;
 						}
 
@@ -15812,75 +15812,75 @@ public class Static {
 							var1 = 0;
 						}
 
-						var10 = Game.staticInt301 * (var9 - var1) / var9;
+						var10 = Client.staticInt301 * (var9 - var1) / var9;
 					} else {
-						var10 = Game.staticInt300 * 127;
+						var10 = Client.staticInt300 * 127;
 					}
 
 					if (var10 > 0) {
 						NodeSub6Sub1 var111 = var91.method25().method433(Class16.staticClass20_1);
 						NodeSub8Sub2 var12 = staticMethod352(var111, 100, var10);
-						var12.method430(Game.staticIntArray115[var0] - 1);
+						var12.method430(Client.staticIntArray115[var0] - 1);
 						ClientScriptMap.staticNodeSub8Sub1_1.method408(var12);
 					}
 
-					Game.staticIntArray116[var0] = -100;
+					Client.staticIntArray116[var0] = -100;
 				}
 			} else {
-				--Game.staticInt236;
+				--Client.staticInt236;
 
-				for (int var3 = var0; var3 < Game.staticInt236; var3++) {
-					Game.staticIntArray114[var3] = Game.staticIntArray114[1 + var3];
-					Game.staticClass9Array1[var3] = Game.staticClass9Array1[var3 + 1];
-					Game.staticIntArray115[var3] = Game.staticIntArray115[1 + var3];
-					Game.staticIntArray116[var3] = Game.staticIntArray116[var3 + 1];
-					Game.staticIntArray117[var3] = Game.staticIntArray117[1 + var3];
+				for (int var3 = var0; var3 < Client.staticInt236; var3++) {
+					Client.staticIntArray114[var3] = Client.staticIntArray114[1 + var3];
+					Client.staticClass9Array1[var3] = Client.staticClass9Array1[var3 + 1];
+					Client.staticIntArray115[var3] = Client.staticIntArray115[1 + var3];
+					Client.staticIntArray116[var3] = Client.staticIntArray116[var3 + 1];
+					Client.staticIntArray117[var3] = Client.staticIntArray117[1 + var3];
 				}
 
 				--var0;
 			}
 		}
 
-		if (Game.staticBool38 && !staticMethod257()) {
-			if (Game.staticInt299 != 0 && Game.staticInt249 != -1) {
-				staticMethod30(Class34.staticJs5IndexImpl3, Game.staticInt249, 0, Game.staticInt299, false);
+		if (Client.staticBool38 && !staticMethod257()) {
+			if (Client.staticInt299 != 0 && Client.staticInt249 != -1) {
+				staticMethod30(Class34.staticJs5IndexImpl3, Client.staticInt249, 0, Client.staticInt299, false);
 			}
 
-			Game.staticBool38 = false;
+			Client.staticBool38 = false;
 		}
 
 	}
 
 	static final void staticMethod229(NpcDefinition var0, int var1, int var2, int var3) {
-		if (Game.staticInt252 < 400) {
+		if (Client.staticInt252 < 400) {
 			if (var0.anIntArray116 != null) {
 				var0 = var0.method544();
 			}
 
-			if (var0 != null && var0.aBool69 && (!var0.aBool71 || var1 == -Game.staticInt269)) {
+			if (var0 != null && var0.aBool69 && (!var0.aBool71 || var1 == -Client.staticInt269)) {
 				String var8 = var0.aString35;
 				if (var0.anInt544 != 0) {
 					var8 = var8 + staticMethod211(var0.anInt544, AbstractClass2Sub1.staticPlayer1.anInt685) + " "
 							+ staticString10 + "level-" + var0.anInt544 + staticString13;
 				}
 
-				if (var0.aBool71 && Game.staticBool22) {
+				if (var0.aBool71 && Client.staticBool22) {
 					staticMethod341("Examine", staticMethod118(16776960) + var8, 1003, var1, var2, var3);
 				}
 
-				if (Game.staticInt258 == 1) {
+				if (Client.staticInt258 == 1) {
 					staticMethod341("Use",
-							Game.staticString32 + " " + staticString14 + " " + staticMethod118(16776960) + var8,
+							Client.staticString32 + " " + staticString14 + " " + staticMethod118(16776960) + var8,
 							7, var1, var2, var3);
-				} else if (Game.staticBool32) {
+				} else if (Client.staticBool32) {
 					if ((Class57.staticInt144 & 0x2) == 2) {
-						staticMethod341(Game.staticString31, Game.staticString30 + " " + staticString14 + " "
+						staticMethod341(Client.staticString31, Client.staticString30 + " " + staticString14 + " "
 								+ staticMethod118(16776960) + var8, 8, var1, var2, var3);
 					}
 				} else {
-					int var6 = var0.aBool71 && Game.staticBool22 ? 2000 : 0;
+					int var6 = var0.aBool71 && Client.staticBool22 ? 2000 : 0;
 					String[] var4 = var0.aStringArray10;
-					if (Game.staticBool34) {
+					if (Client.staticBool34) {
 						var4 = staticMethod425(var4);
 					}
 
@@ -15919,9 +15919,9 @@ public class Static {
 						for (var5 = 4; var5 >= 0; --var5) {
 							if (var4[var5] != null && var4[var5].equalsIgnoreCase("Attack")) {
 								short var9 = 0;
-								if (Game.staticClass4_6 != Class4.staticClass4_2) {
-									if (Class4.staticClass4_1 == Game.staticClass4_6
-											|| Class4.staticClass4_4 == Game.staticClass4_6
+								if (Client.staticClass4_6 != Class4.staticClass4_2) {
+									if (Class4.staticClass4_1 == Client.staticClass4_6
+											|| Class4.staticClass4_4 == Client.staticClass4_6
 													&& var0.anInt544 > AbstractClass2Sub1.staticPlayer1.anInt685) {
 										var9 = 2000;
 									}
@@ -15954,7 +15954,7 @@ public class Static {
 						}
 					}
 
-					if (!var0.aBool71 || !Game.staticBool22) {
+					if (!var0.aBool71 || !Client.staticBool22) {
 						staticMethod341("Examine", staticMethod118(16776960) + var8, 1003, var1, var2, var3);
 					}
 				}
@@ -15988,26 +15988,26 @@ public class Static {
 	}
 
 	static void staticMethod34() {
-		Game.staticEncryptedStream1.method471(230);
-		Game.staticEncryptedStream1.writeByte(staticMethod248());
-		Game.staticEncryptedStream1.writeShort(staticInt86);
-		Game.staticEncryptedStream1.writeShort(Class47.staticInt121);
+		Client.staticEncryptedStream1.method471(230);
+		Client.staticEncryptedStream1.writeByte(staticMethod248());
+		Client.staticEncryptedStream1.writeShort(staticInt86);
+		Client.staticEncryptedStream1.writeShort(Class47.staticInt121);
 	}
 
 	static final void staticMethod35(boolean var0) {
-		for (int var1 = 0; var1 < Game.staticInt186; var1++) {
-			Npc var2 = Game.staticNpcArray1[Game.staticIntArray121[var1]];
-			int var5 = 536870912 + (Game.staticIntArray121[var1] << 14);
+		for (int var1 = 0; var1 < Client.staticInt186; var1++) {
+			Npc var2 = Client.staticNpcArray1[Client.staticIntArray121[var1]];
+			int var5 = 536870912 + (Client.staticIntArray121[var1] << 14);
 			if (var2 != null && var2.method565() && var0 == var2.aNpcDef1.aBool68 && var2.aNpcDef1.method543()) {
 				int var3 = var2.anInt628 >> 7;
 				int var4 = var2.anInt591 >> 7;
 				if (var3 >= 0 && var3 < 104 && var4 >= 0 && var4 < 104) {
 					if (var2.anInt626 == 1 && (var2.anInt628 & 0x7f) == 64 && (var2.anInt591 & 0x7f) == 64) {
-						if (Game.staticInt292 == Game.staticIntArrayArray9[var3][var4]) {
+						if (Client.staticInt292 == Client.staticIntArrayArray9[var3][var4]) {
 							continue;
 						}
 
-						Game.staticIntArrayArray9[var3][var4] = Game.staticInt292;
+						Client.staticIntArrayArray9[var3][var4] = Client.staticInt292;
 					}
 
 					if (!var2.aNpcDef1.aBool69) {
@@ -16112,7 +16112,7 @@ public class Static {
 	}
 
 	static boolean staticMethod247(Widget var0) {
-		if (Game.staticBool40) {
+		if (Client.staticBool40) {
 			if (staticMethod192(var0) != 0) {
 				return false;
 			}
@@ -16126,11 +16126,11 @@ public class Static {
 	}
 
 	static int staticMethod248() {
-		return Game.staticBool36 ? 2 : 1;
+		return Client.staticBool36 ? 2 : 1;
 	}
 
 	static final void staticMethod249(int var0, int var1, int var2, int var3) {
-		if (Game.staticInt258 == 0 && !Game.staticBool32) {
+		if (Client.staticInt258 == 0 && !Client.staticBool32) {
 			staticMethod341("Walk here", "", 23, 0, var0 - var2, var1 - var3);
 		}
 
@@ -16157,17 +16157,17 @@ public class Static {
 						continue;
 					}
 
-					if (Game.staticInt258 == 1) {
-						staticMethod341("Use", Game.staticString32 + " " + staticString14 + " "
+					if (Client.staticInt258 == 1) {
+						staticMethod341("Use", Client.staticString32 + " " + staticString14 + " "
 								+ staticMethod118('\uffff') + var11.aString33, 1, var8, var26, var10);
-					} else if (Game.staticBool32) {
+					} else if (Client.staticBool32) {
 						if ((Class57.staticInt144 & 0x4) == 4) {
-							staticMethod341(Game.staticString31, Game.staticString30 + " " + staticString14 + " "
+							staticMethod341(Client.staticString31, Client.staticString30 + " " + staticString14 + " "
 									+ staticMethod118('\uffff') + var11.aString33, 2, var8, var26, var10);
 						}
 					} else {
 						String[] var18 = var11.aStringArray8;
-						if (Game.staticBool34) {
+						if (Client.staticBool34) {
 							var18 = staticMethod425(var18);
 						}
 
@@ -16212,18 +16212,18 @@ public class Static {
 				Npc var261;
 				int[] var281;
 				if (var15 == 1) {
-					Npc var25 = Game.staticNpcArray1[var16];
+					Npc var25 = Client.staticNpcArray1[var16];
 					if (var25 == null) {
 						continue;
 					}
 
 					if (var25.aNpcDef1.anInt538 == 1 && (var25.anInt628 & 0x7f) == 64
 							&& (var25.anInt591 & 0x7f) == 64) {
-						for (var251 = 0; var251 < Game.staticInt186; var251++) {
-							var261 = Game.staticNpcArray1[Game.staticIntArray121[var251]];
+						for (var251 = 0; var251 < Client.staticInt186; var251++) {
+							var261 = Client.staticNpcArray1[Client.staticIntArray121[var251]];
 							if (var261 != null && var261 != var25 && var261.aNpcDef1.anInt538 == 1
 									&& var25.anInt628 == var261.anInt628 && var25.anInt591 == var261.anInt591) {
-								staticMethod229(var261.aNpcDef1, Game.staticIntArray121[var251], var26, var10);
+								staticMethod229(var261.aNpcDef1, Client.staticIntArray121[var251], var26, var10);
 							}
 						}
 
@@ -16231,7 +16231,7 @@ public class Static {
 						var281 = staticIntArray7;
 
 						for (var27 = 0; var27 < var251; var27++) {
-							var24 = Game.staticPlayerArray1[var281[var27]];
+							var24 = Client.staticPlayerArray1[var281[var27]];
 							if (var24 != null && var24.anInt628 == var25.anInt628 && var24.anInt591 == var25.anInt591) {
 								staticMethod243(var24, var281[var27], var26, var10);
 							}
@@ -16242,17 +16242,17 @@ public class Static {
 				}
 
 				if (var15 == 0) {
-					Player var271 = Game.staticPlayerArray1[var16];
+					Player var271 = Client.staticPlayerArray1[var16];
 					if (var271 == null) {
 						continue;
 					}
 
 					if ((var271.anInt628 & 0x7f) == 64 && (var271.anInt591 & 0x7f) == 64) {
-						for (var251 = 0; var251 < Game.staticInt186; var251++) {
-							var261 = Game.staticNpcArray1[Game.staticIntArray121[var251]];
+						for (var251 = 0; var251 < Client.staticInt186; var251++) {
+							var261 = Client.staticNpcArray1[Client.staticIntArray121[var251]];
 							if (var261 != null && var261.aNpcDef1.anInt538 == 1 && var261.anInt628 == var271.anInt628
 									&& var271.anInt591 == var261.anInt591) {
-								staticMethod229(var261.aNpcDef1, Game.staticIntArray121[var251], var26, var10);
+								staticMethod229(var261.aNpcDef1, Client.staticIntArray121[var251], var26, var10);
 							}
 						}
 
@@ -16260,7 +16260,7 @@ public class Static {
 						var281 = staticIntArray7;
 
 						for (var27 = 0; var27 < var251; var27++) {
-							var24 = Game.staticPlayerArray1[var281[var27]];
+							var24 = Client.staticPlayerArray1[var281[var27]];
 							if (var24 != null && var24 != var271 && var24.anInt628 == var271.anInt628
 									&& var24.anInt591 == var271.anInt591) {
 								staticMethod243(var24, var281[var27], var26, var10);
@@ -16268,7 +16268,7 @@ public class Static {
 						}
 					}
 
-					if (Game.staticInt229 != var16) {
+					if (Client.staticInt229 != var16) {
 						staticMethod243(var271, var16, var26, var10);
 					} else {
 						var12 = var8;
@@ -16276,25 +16276,25 @@ public class Static {
 				}
 
 				if (var15 == 3) {
-					Class39 var291 = Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var26][var10];
+					Class39 var291 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var26][var10];
 					if (var291 != null) {
 						for (Item var22 = (Item) var291.method196(); var22 != null; var22 = (Item) var291.method197()) {
 							ItemDefinition var23 = staticMethod153(var22.anInt573);
-							if (Game.staticInt258 == 1) {
+							if (Client.staticInt258 == 1) {
 								staticMethod341("Use",
-										Game.staticString32 + " " + staticString14 + " "
+										Client.staticString32 + " " + staticString14 + " "
 												+ staticMethod118(16748608) + var23.aString31,
 										16, var22.anInt573, var26, var10);
-							} else if (Game.staticBool32) {
+							} else if (Client.staticBool32) {
 								if ((Class57.staticInt144 & 0x1) == 1) {
-									staticMethod341(Game.staticString31,
-											Game.staticString30 + " " + staticString14 + " "
+									staticMethod341(Client.staticString31,
+											Client.staticString30 + " " + staticString14 + " "
 													+ staticMethod118(16748608) + var23.aString31,
 											17, var22.anInt573, var26, var10);
 								}
 							} else {
 								String[] var28 = var23.aStringArray7;
-								if (Game.staticBool34) {
+								if (Client.staticBool34) {
 									var28 = staticMethod425(var28);
 								}
 
@@ -16341,15 +16341,15 @@ public class Static {
 		if (var12 != -1) {
 			var14 = var12 & 0x7f;
 			var8 = var12 >> 7 & 0x7f;
-			Player var231 = Game.staticPlayerArray1[Game.staticInt229];
-			staticMethod243(var231, Game.staticInt229, var14, var8);
+			Player var231 = Client.staticPlayerArray1[Client.staticInt229];
+			staticMethod243(var231, Client.staticInt229, var14, var8);
 		}
 
 	}
 
 	static void staticMethod250() {
-		for (NodeSub18 var0 = (NodeSub18) Game.staticHashTable5
-				.method146(); var0 != null; var0 = (NodeSub18) Game.staticHashTable5.method147()) {
+		for (NodeSub18 var0 = (NodeSub18) Client.staticHashTable5
+				.method146(); var0 != null; var0 = (NodeSub18) Client.staticHashTable5.method147()) {
 			int var2 = var0.anInt384;
 			if (staticMethod4(var2)) {
 				boolean var1 = true;
@@ -16444,15 +16444,15 @@ public class Static {
 					}
 
 					if (var6 == 1) {
-						var7 = Game.staticIntArray91[var13[var4++]];
+						var7 = Client.staticIntArray91[var13[var4++]];
 					}
 
 					if (var6 == 2) {
-						var7 = Game.staticIntArray96[var13[var4++]];
+						var7 = Client.staticIntArray96[var13[var4++]];
 					}
 
 					if (var6 == 3) {
-						var7 = Game.staticIntArray108[var13[var4++]];
+						var7 = Client.staticIntArray108[var13[var4++]];
 					}
 
 					int var9;
@@ -16464,7 +16464,7 @@ public class Static {
 						var9 += var13[var4++];
 						var10 = staticMethod8(var9);
 						var11 = var13[var4++];
-						if (var11 != -1 && (!staticMethod153(var11).aBool55 || Game.staticBool20)) {
+						if (var11 != -1 && (!staticMethod153(var11).aBool55 || Client.staticBool20)) {
 							for (var12 = 0; var12 < var10.anIntArray76.length; var12++) {
 								if (var11 + 1 == var10.anIntArray76[var12]) {
 									var7 += var10.anIntArray77[var12];
@@ -16478,7 +16478,7 @@ public class Static {
 					}
 
 					if (var6 == 6) {
-						var7 = staticIntArray60[Game.staticIntArray96[var13[var4++]] - 1];
+						var7 = staticIntArray60[Client.staticIntArray96[var13[var4++]] - 1];
 					}
 
 					if (var6 == 7) {
@@ -16492,7 +16492,7 @@ public class Static {
 					if (var6 == 9) {
 						for (var9 = 0; var9 < 25; var9++) {
 							if (staticBoolArray3[var9]) {
-								var7 += Game.staticIntArray96[var9];
+								var7 += Client.staticIntArray96[var9];
 							}
 						}
 					}
@@ -16502,7 +16502,7 @@ public class Static {
 						var9 += var13[var4++];
 						var10 = staticMethod8(var9);
 						var11 = var13[var4++];
-						if (var11 != -1 && (!staticMethod153(var11).aBool55 || Game.staticBool20)) {
+						if (var11 != -1 && (!staticMethod153(var11).aBool55 || Client.staticBool20)) {
 							for (var12 = 0; var12 < var10.anIntArray76.length; var12++) {
 								if (var10.anIntArray76[var12] == 1 + var11) {
 									var7 = 999999999;
@@ -16513,11 +16513,11 @@ public class Static {
 					}
 
 					if (var6 == 11) {
-						var7 = Game.staticInt267;
+						var7 = Client.staticInt267;
 					}
 
 					if (var6 == 12) {
-						var7 = Game.staticInt232;
+						var7 = Client.staticInt232;
 					}
 
 					if (var6 == 13) {
@@ -16589,48 +16589,48 @@ public class Static {
 		int var3;
 		if (var0 == 3903) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Game.staticClass61Array1[var3].method286();
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].method286();
 			return 1;
 		} else if (var0 == 3904) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Game.staticClass61Array1[var3].anInt212;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt212;
 			return 1;
 		} else if (var0 == 3905) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Game.staticClass61Array1[var3].anInt213;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt213;
 			return 1;
 		} else if (var0 == 3906) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Game.staticClass61Array1[var3].anInt214;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt214;
 			return 1;
 		} else if (var0 == 3907) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Game.staticClass61Array1[var3].anInt215;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt215;
 			return 1;
 		} else if (var0 == 3908) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Game.staticClass61Array1[var3].anInt216;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt216;
 			return 1;
 		} else {
 			int var13;
 			if (var0 == 3910) {
 				var3 = staticIntArray16[--staticInt27];
-				var13 = Game.staticClass61Array1[var3].method289();
+				var13 = Client.staticClass61Array1[var3].method289();
 				staticIntArray16[++staticInt27 - 1] = var13 == 0 ? 1 : 0;
 				return 1;
 			} else if (var0 == 3911) {
 				var3 = staticIntArray16[--staticInt27];
-				var13 = Game.staticClass61Array1[var3].method289();
+				var13 = Client.staticClass61Array1[var3].method289();
 				staticIntArray16[++staticInt27 - 1] = var13 == 2 ? 1 : 0;
 				return 1;
 			} else if (var0 == 3912) {
 				var3 = staticIntArray16[--staticInt27];
-				var13 = Game.staticClass61Array1[var3].method289();
+				var13 = Client.staticClass61Array1[var3].method289();
 				staticIntArray16[++staticInt27 - 1] = var13 == 5 ? 1 : 0;
 				return 1;
 			} else if (var0 == 3913) {
 				var3 = staticIntArray16[--staticInt27];
-				var13 = Game.staticClass61Array1[var3].method289();
+				var13 = Client.staticClass61Array1[var3].method289();
 				staticIntArray16[++staticInt27 - 1] = var13 == 1 ? 1 : 0;
 				return 1;
 			} else {
@@ -16729,7 +16729,7 @@ public class Static {
 	static final void staticMethod44(EncryptedStream var0) {
 		for (int var1 = 0; var1 < staticInt22; var1++) {
 			int var3 = staticIntArray12[var1];
-			Player var4 = Game.staticPlayerArray1[var3];
+			Player var4 = Client.staticPlayerArray1[var3];
 			int var2 = var0.method367();
 			if ((var2 & 0x40) != 0) {
 				var2 += var0.method367() << 8;
@@ -16855,7 +16855,7 @@ public class Static {
 
 	static final void staticMethod46(int var0, int var1, int var2, int var3, int var4, int var5, Scene var6,
 			Class38 var7) {
-		if (!Game.staticBool27 || (staticByteArrayArrayArray4[0][var1][var2] & 0x2) != 0
+		if (!Client.staticBool27 || (staticByteArrayArrayArray4[0][var1][var2] & 0x2) != 0
 				|| (staticByteArrayArrayArray4[var0][var1][var2] & 0x10) == 0) {
 			if (var0 < staticInt112) {
 				staticInt112 = var0;
@@ -16912,7 +16912,7 @@ public class Static {
 
 			Object var13;
 			if (var5 == 22) {
-				if (!Game.staticBool27 || var8.anInt489 != 0 || var8.anInt487 == 1 || var8.aBool63) {
+				if (!Client.staticBool27 || var8.anInt489 != 0 || var8.anInt487 == 1 || var8.aBool63) {
 					if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
 						var13 = var8.method514(22, var4, var9, var10, var11, var12);
 					} else {
@@ -17248,18 +17248,18 @@ public class Static {
 	}
 
 	static final void staticMethod120() {
-		Game.staticEncryptedStream1.method471(66);
+		Client.staticEncryptedStream1.method471(66);
 
-		for (NodeSub18 var0 = (NodeSub18) Game.staticHashTable5
-				.method146(); var0 != null; var0 = (NodeSub18) Game.staticHashTable5.method147()) {
+		for (NodeSub18 var0 = (NodeSub18) Client.staticHashTable5
+				.method146(); var0 != null; var0 = (NodeSub18) Client.staticHashTable5.method147()) {
 			if (var0.anInt383 == 0 || var0.anInt383 == 3) {
 				staticMethod266(var0, true);
 			}
 		}
 
-		if (Game.staticWidget6 != null) {
-			staticMethod73(Game.staticWidget6);
-			Game.staticWidget6 = null;
+		if (Client.staticWidget6 != null) {
+			staticMethod73(Client.staticWidget6);
+			Client.staticWidget6 = null;
 		}
 
 	}
@@ -17331,8 +17331,8 @@ public class Static {
 	}
 
 	static void staticMethod335() {
-		synchronized (Game.staticGame1) {
-			Container var11 = Game.staticGame1.method207();
+		synchronized (Client.staticGame1) {
+			Container var11 = Client.staticGame1.method207();
 			if (var11 != null) {
 				Class40Sub1.staticInt317 = Math.max(var11.getSize().width, staticInt123 * 179870289);
 				BuildType.staticInt124 = Math.max(var11.getSize().height, KeyboardHandler.staticInt83 * 1562169393);
@@ -17352,8 +17352,8 @@ public class Static {
 				}
 
 				if (staticMethod248() == 1) {
-					staticInt86 = Game.staticInt288;
-					Class47.staticInt121 = Game.staticInt173 * 503;
+					staticInt86 = Client.staticInt288;
+					Class47.staticInt121 = Client.staticInt173 * 503;
 				} else {
 					staticInt86 = Math.min(Class40Sub1.staticInt317, 7680);
 					Class47.staticInt121 = Math.min(BuildType.staticInt124, 2160);
@@ -17373,7 +17373,7 @@ public class Static {
 				}
 
 				staticMethod395();
-				if (Game.staticInt263 != -1) {
+				if (Client.staticInt263 != -1) {
 					staticMethod93(true);
 				}
 
@@ -17419,12 +17419,12 @@ public class Static {
 			int var9 = var5;
 			int var10 = var6;
 
-			for (int var11 = 0; var11 < Game.staticInt162; var11++) {
-				if (Game.staticIntArray82[var11] + Game.staticIntArray107[var11] > var131
-						&& Game.staticIntArray82[var11] < var9 + var131
-						&& Game.staticIntArray88[var11] + Game.staticIntArray106[var11] > var8
-						&& Game.staticIntArray88[var11] < var10 + var8) {
-					Game.staticBoolArray6[var11] = true;
+			for (int var11 = 0; var11 < Client.staticInt162; var11++) {
+				if (Client.staticIntArray82[var11] + Client.staticIntArray107[var11] > var131
+						&& Client.staticIntArray82[var11] < var9 + var131
+						&& Client.staticIntArray88[var11] + Client.staticIntArray106[var11] > var8
+						&& Client.staticIntArray88[var11] < var10 + var8) {
+					Client.staticBoolArray6[var11] = true;
 				}
 			}
 		}
@@ -17701,7 +17701,7 @@ public class Static {
 	}
 
 	static final void staticMethod329() {
-		if (Game.staticInt196 > 0) {
+		if (Client.staticInt196 > 0) {
 			staticMethod87();
 		} else {
 			staticMethod396(40);
@@ -17837,8 +17837,8 @@ public class Static {
 		if (var0 != null) {
 			String var1 = staticMethod111(var0, staticClass53_1);
 			if (var1 != null) {
-				for (int var3 = 0; var3 < Game.staticInt310; var3++) {
-					Class7 var4 = Game.staticClass7Array1[var3];
+				for (int var3 = 0; var3 < Client.staticInt310; var3++) {
+					Class7 var4 = Client.staticClass7Array1[var3];
 					String var5 = var4.aString5;
 					String var6 = staticMethod111(var5, staticClass53_1);
 					boolean var2;
@@ -17853,16 +17853,16 @@ public class Static {
 					}
 
 					if (var2) {
-						--Game.staticInt310;
+						--Client.staticInt310;
 
-						for (int var7 = var3; var7 < Game.staticInt310; var7++) {
-							Game.staticClass7Array1[var7] = Game.staticClass7Array1[1 + var7];
+						for (int var7 = var3; var7 < Client.staticInt310; var7++) {
+							Client.staticClass7Array1[var7] = Client.staticClass7Array1[1 + var7];
 						}
 
-						Game.staticInt280 = Game.staticInt274 * 2073400987;
-						Game.staticEncryptedStream1.method471(237);
-						Game.staticEncryptedStream1.writeByte(staticMethod378(var0));
-						Game.staticEncryptedStream1.method323(var0);
+						Client.staticInt280 = Client.staticInt274 * 2073400987;
+						Client.staticEncryptedStream1.method471(237);
+						Client.staticEncryptedStream1.writeByte(staticMethod378(var0));
+						Client.staticEncryptedStream1.method323(var0);
 						break;
 					}
 				}
@@ -17886,7 +17886,7 @@ public class Static {
 
 	static final void staticMethod276(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var2 >= 1 && var3 >= 1 && var2 <= 102 && var3 <= 102) {
-			if (Game.staticBool27 && var0 != NodeSub4.staticInt155) {
+			if (Client.staticBool27 && var0 != NodeSub4.staticInt155) {
 				return;
 			}
 
@@ -17918,7 +17918,7 @@ public class Static {
 					Friend.staticScene1.method106(var0, var2, var3);
 					var8 = staticMethod394(var37);
 					if (var8.anInt487 != 0) {
-						Game.staticClass38Array1[var0].method179(var2, var3, var7, var10, var8.aBool60);
+						Client.staticClass38Array1[var0].method179(var2, var3, var7, var10, var8.aBool60);
 					}
 				}
 
@@ -17935,7 +17935,7 @@ public class Static {
 					}
 
 					if (var8.anInt487 != 0) {
-						Game.staticClass38Array1[var0].method178(var2, var3, var8.anInt485, var8.anInt486, var10,
+						Client.staticClass38Array1[var0].method178(var2, var3, var8.anInt485, var8.anInt486, var10,
 								var8.aBool60);
 					}
 				}
@@ -17944,7 +17944,7 @@ public class Static {
 					Friend.staticScene1.method118(var0, var2, var3);
 					var8 = staticMethod394(var37);
 					if (var8.anInt487 == 1) {
-						Game.staticClass38Array1[var0].method181(var2, var3);
+						Client.staticClass38Array1[var0].method181(var2, var3);
 					}
 				}
 			}
@@ -17956,7 +17956,7 @@ public class Static {
 				}
 
 				Scene var371 = Friend.staticScene1;
-				Class38 var71 = Game.staticClass38Array1[var0];
+				Class38 var71 = Client.staticClass38Array1[var0];
 				ObjectDefinition var101 = staticMethod394(var4);
 				int var9;
 				int var81;
@@ -18297,7 +18297,7 @@ public class Static {
 	}
 
 	static final void staticMethod294(boolean var0) {
-		Game.staticBool37 = var0;
+		Client.staticBool37 = var0;
 		int var1;
 		int var2;
 		int var3;
@@ -18305,15 +18305,15 @@ public class Static {
 		int var5;
 		int var6;
 		int var8;
-		if (!Game.staticBool37) {
-			var3 = Game.staticEncryptedStream3.method372();
-			var5 = Game.staticEncryptedStream3.method355();
-			var2 = Game.staticEncryptedStream3.method370();
+		if (!Client.staticBool37) {
+			var3 = Client.staticEncryptedStream3.method372();
+			var5 = Client.staticEncryptedStream3.method355();
+			var2 = Client.staticEncryptedStream3.method370();
 			Class61.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
 				for (var4 = 0; var4 < 4; var4++) {
-					Class61.staticIntArrayArray8[var1][var4] = Game.staticEncryptedStream3.readInt();
+					Class61.staticIntArrayArray8[var1][var4] = Client.staticEncryptedStream3.readInt();
 				}
 			}
 
@@ -18350,31 +18350,31 @@ public class Static {
 
 			staticMethod195(var5, var3);
 		} else {
-			var3 = Game.staticEncryptedStream3.method355();
-			var5 = Game.staticEncryptedStream3.method370();
-			var2 = Game.staticEncryptedStream3.method370();
-			Game.staticEncryptedStream3.method475();
+			var3 = Client.staticEncryptedStream3.method355();
+			var5 = Client.staticEncryptedStream3.method370();
+			var2 = Client.staticEncryptedStream3.method370();
+			Client.staticEncryptedStream3.method475();
 
 			for (var1 = 0; var1 < 4; var1++) {
 				for (var4 = 0; var4 < 13; var4++) {
 					for (var6 = 0; var6 < 13; var6++) {
-						var8 = Game.staticEncryptedStream3.method477(1);
+						var8 = Client.staticEncryptedStream3.method477(1);
 						if (var8 == 1) {
-							Game.staticIntArrayArrayArray3[var1][var4][var6] = Game.staticEncryptedStream3
+							Client.staticIntArrayArrayArray3[var1][var4][var6] = Client.staticEncryptedStream3
 									.method477(26);
 						} else {
-							Game.staticIntArrayArrayArray3[var1][var4][var6] = -1;
+							Client.staticIntArrayArrayArray3[var1][var4][var6] = -1;
 						}
 					}
 				}
 			}
 
-			Game.staticEncryptedStream3.method474();
+			Client.staticEncryptedStream3.method474();
 			Class61.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
 				for (var4 = 0; var4 < 4; var4++) {
-					Class61.staticIntArrayArray8[var1][var4] = Game.staticEncryptedStream3.readInt();
+					Class61.staticIntArrayArray8[var1][var4] = Client.staticEncryptedStream3.readInt();
 				}
 			}
 
@@ -18388,7 +18388,7 @@ public class Static {
 			for (var1 = 0; var1 < 4; var1++) {
 				for (var4 = 0; var4 < 13; var4++) {
 					for (var6 = 0; var6 < 13; var6++) {
-						var8 = Game.staticIntArrayArrayArray3[var1][var4][var6];
+						var8 = Client.staticIntArrayArrayArray3[var1][var4][var6];
 						if (var8 != -1) {
 							int var13 = var8 >> 14 & 0x3ff;
 							int var12 = var8 >> 3 & 0x7ff;
@@ -18496,57 +18496,57 @@ public class Static {
 					return false;
 				}
 
-				if (Game.staticInt191 == -1) {
-					Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 1);
-					Game.staticEncryptedStream3.off = 0;
-					Game.staticInt191 = Game.staticEncryptedStream3.method472();
-					Game.staticInt190 = staticIntArray70[Game.staticInt191];
+				if (Client.staticInt191 == -1) {
+					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 1);
+					Client.staticEncryptedStream3.off = 0;
+					Client.staticInt191 = Client.staticEncryptedStream3.method472();
+					Client.staticInt190 = staticIntArray70[Client.staticInt191];
 					--var44;
 				}
 
-				if (Game.staticInt190 == -1) {
+				if (Client.staticInt190 == -1) {
 					if (var44 <= 0) {
 						return false;
 					}
 
-					Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 1);
-					Game.staticInt190 = Game.staticEncryptedStream3.buf[0] & 0xff;
+					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 1);
+					Client.staticInt190 = Client.staticEncryptedStream3.buf[0] & 0xff;
 					--var44;
 				}
 
-				if (Game.staticInt190 == -2) {
+				if (Client.staticInt190 == -2) {
 					if (var44 <= 1) {
 						return false;
 					}
 
-					Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, 2);
-					Game.staticEncryptedStream3.off = 0;
-					Game.staticInt190 = Game.staticEncryptedStream3.method370();
+					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+					Client.staticEncryptedStream3.off = 0;
+					Client.staticInt190 = Client.staticEncryptedStream3.method370();
 					var44 -= 2;
 				}
 
-				if (var44 < Game.staticInt190) {
+				if (var44 < Client.staticInt190) {
 					return false;
 				}
 
-				Game.staticEncryptedStream3.off = 0;
-				Class56.staticConnection3.method153(Game.staticEncryptedStream3.buf, 0, Game.staticInt190);
-				Game.staticInt192 = 0;
-				Game.staticInt195 = Game.staticInt194;
-				Game.staticInt194 = Game.staticInt270;
-				Game.staticInt270 = -Game.staticInt191;
-				if (Game.staticInt191 == 209) {
-					ChatMessage.staticInt331 = Game.staticEncryptedStream3.method348();
-					staticInt122 = Game.staticEncryptedStream3.method348();
-					Game.staticInt191 = -1;
+				Client.staticEncryptedStream3.off = 0;
+				Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+				Client.staticInt192 = 0;
+				Client.staticInt195 = Client.staticInt194;
+				Client.staticInt194 = Client.staticInt270;
+				Client.staticInt270 = -Client.staticInt191;
+				if (Client.staticInt191 == 209) {
+					ChatMessage.staticInt331 = Client.staticEncryptedStream3.method348();
+					staticInt122 = Client.staticEncryptedStream3.method348();
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				int var45;
 				Widget var47;
-				if (Game.staticInt191 == 21) {
-					var45 = Game.staticEncryptedStream3.method378();
-					var2 = Game.staticEncryptedStream3.method355();
+				if (Client.staticInt191 == 21) {
+					var45 = Client.staticEncryptedStream3.method378();
+					var2 = Client.staticEncryptedStream3.method355();
 					var47 = staticMethod8(var45);
 					if (var47.anInt348 != 1 || var47.anInt295 != var2) {
 						var47.anInt348 = 1;
@@ -18554,7 +18554,7 @@ public class Static {
 						staticMethod73(var47);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
@@ -18563,13 +18563,13 @@ public class Static {
 				int var6;
 				int var48;
 				int var58;
-				if (Game.staticInt191 == 25) {
-					Game.staticBool28 = true;
-					staticInt101 = Game.staticEncryptedStream3.method367();
-					Class29.staticInt72 = Game.staticEncryptedStream3.method367();
-					Class7.staticInt31 = Game.staticEncryptedStream3.method370();
-					Class28.staticInt71 = Game.staticEncryptedStream3.method367();
-					Class61.staticInt146 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 25) {
+					Client.staticBool28 = true;
+					staticInt101 = Client.staticEncryptedStream3.method367();
+					Class29.staticInt72 = Client.staticEncryptedStream3.method367();
+					Class7.staticInt31 = Client.staticEncryptedStream3.method370();
+					Class28.staticInt71 = Client.staticEncryptedStream3.method367();
+					Class61.staticInt146 = Client.staticEncryptedStream3.method367();
 					if (Class61.staticInt146 >= 100) {
 						var45 = 64 + staticInt101 * 128;
 						var2 = Class29.staticInt72 * 128 + 64;
@@ -18589,82 +18589,82 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 88) {
-					var45 = Game.staticEncryptedStream3.method370();
-					var2 = Game.staticEncryptedStream3.method367();
-					var3 = Game.staticEncryptedStream3.method370();
+				if (Client.staticInt191 == 88) {
+					var45 = Client.staticEncryptedStream3.method370();
+					var2 = Client.staticEncryptedStream3.method367();
+					var3 = Client.staticEncryptedStream3.method370();
 					staticMethod311(var45, var2, var3);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				boolean var109;
-				if (Game.staticInt191 == 80) {
-					var109 = Game.staticEncryptedStream3.method367() == 1;
+				if (Client.staticInt191 == 80) {
+					var109 = Client.staticEncryptedStream3.method367() == 1;
 					if (var109) {
-						Class48.staticLong7 = staticMethod297() - Game.staticEncryptedStream3.readLong();
-						staticClass56_1 = new Class56(Game.staticEncryptedStream3, true);
+						Class48.staticLong7 = staticMethod297() - Client.staticEncryptedStream3.readLong();
+						staticClass56_1 = new Class56(Client.staticEncryptedStream3, true);
 					} else {
 						staticClass56_1 = null;
 					}
 
-					Game.staticInt282 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+					Client.staticInt282 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 41) {
-					var45 = Game.staticEncryptedStream3.method353();
-					var2 = Game.staticEncryptedStream3.readInt();
+				if (Client.staticInt191 == 41) {
+					var45 = Client.staticEncryptedStream3.method353();
+					var2 = Client.staticEncryptedStream3.readInt();
 					staticIntArray63[var45] = var2;
 					if (staticIntArray64[var45] != var2) {
 						staticIntArray64[var45] = var2;
 					}
 
 					staticMethod471(var45);
-					Game.staticIntArray104[++Game.staticInt275 - 1 & 0x1f] = var45;
-					Game.staticInt191 = -1;
+					Client.staticIntArray104[++Client.staticInt275 - 1 & 0x1f] = var45;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				Widget var4;
-				if (Game.staticInt191 == 68) {
-					var45 = Game.staticEncryptedStream3.method370();
-					var2 = Game.staticEncryptedStream3.method370();
-					var3 = Game.staticEncryptedStream3.method378();
+				if (Client.staticInt191 == 68) {
+					var45 = Client.staticEncryptedStream3.method370();
+					var2 = Client.staticEncryptedStream3.method370();
+					var3 = Client.staticEncryptedStream3.method378();
 					var4 = staticMethod8(var3);
 					var4.anInt336 = var45 + (var2 << 16);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				int var8;
 				NodeSub18 var53;
-				if (Game.staticInt191 == 24) {
-					var45 = Game.staticInt190 + Game.staticEncryptedStream3.off;
-					var2 = Game.staticEncryptedStream3.method370();
-					var3 = Game.staticEncryptedStream3.method370();
-					if (var2 != Game.staticInt263) {
-						Game.staticInt263 = var2;
+				if (Client.staticInt191 == 24) {
+					var45 = Client.staticInt190 + Client.staticEncryptedStream3.off;
+					var2 = Client.staticEncryptedStream3.method370();
+					var3 = Client.staticEncryptedStream3.method370();
+					if (var2 != Client.staticInt263) {
+						Client.staticInt263 = var2;
 						staticMethod93(false);
-						staticMethod393(Game.staticInt263);
-						staticMethod2(Game.staticInt263);
+						staticMethod393(Client.staticInt263);
+						staticMethod2(Client.staticInt263);
 
 						for (var48 = 0; var48 < 100; var48++) {
-							Game.staticBoolArray8[var48] = true;
+							Client.staticBoolArray8[var48] = true;
 						}
 					}
 
 					NodeSub18 var60;
 					for (; var3-- > 0; var60.aBool50 = true) {
-						var48 = Game.staticEncryptedStream3.readInt();
-						var5 = Game.staticEncryptedStream3.method370();
-						var6 = Game.staticEncryptedStream3.method367();
-						var60 = (NodeSub18) Game.staticHashTable5.method149(var48);
+						var48 = Client.staticEncryptedStream3.readInt();
+						var5 = Client.staticEncryptedStream3.method370();
+						var6 = Client.staticEncryptedStream3.method367();
+						var60 = (NodeSub18) Client.staticHashTable5.method149(var48);
 						if (var60 != null && var60.anInt384 != var5) {
 							staticMethod266(var60, true);
 							var60 = null;
@@ -18675,8 +18675,8 @@ public class Static {
 						}
 					}
 
-					for (var53 = (NodeSub18) Game.staticHashTable5
-							.method146(); var53 != null; var53 = (NodeSub18) Game.staticHashTable5.method147()) {
+					for (var53 = (NodeSub18) Client.staticHashTable5
+							.method146(); var53 != null; var53 = (NodeSub18) Client.staticHashTable5.method147()) {
 						if (var53.aBool50) {
 							var53.aBool50 = false;
 						} else {
@@ -18684,21 +18684,21 @@ public class Static {
 						}
 					}
 
-					Game.staticHashTable6 = new HashTable(512);
+					Client.staticHashTable6 = new HashTable(512);
 
-					while (Game.staticEncryptedStream3.off < var45) {
-						var48 = Game.staticEncryptedStream3.readInt();
-						var5 = Game.staticEncryptedStream3.method370();
-						var6 = Game.staticEncryptedStream3.method370();
-						var58 = Game.staticEncryptedStream3.readInt();
+					while (Client.staticEncryptedStream3.off < var45) {
+						var48 = Client.staticEncryptedStream3.readInt();
+						var5 = Client.staticEncryptedStream3.method370();
+						var6 = Client.staticEncryptedStream3.method370();
+						var58 = Client.staticEncryptedStream3.readInt();
 
 						for (var8 = var5; var8 <= var6; var8++) {
 							long var591 = var8 + ((long) var48 << 32);
-							Game.staticHashTable6.method148(new NodeSub15(var58), var591);
+							Client.staticHashTable6.method148(new NodeSub15(var58), var591);
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
@@ -18706,99 +18706,99 @@ public class Static {
 				Npc var78;
 				int var82;
 				Npc var93;
-				if (Game.staticInt191 == 210) {
-					Game.staticInt247 = 0;
-					Game.staticInt188 = 0;
-					Game.staticEncryptedStream3.method475();
-					var45 = Game.staticEncryptedStream3.method477(8);
-					if (var45 < Game.staticInt186) {
-						for (var2 = var45; var2 < Game.staticInt186; var2++) {
-							Game.staticIntArray93[++Game.staticInt247 - 1] = Game.staticIntArray121[var2];
+				if (Client.staticInt191 == 210) {
+					Client.staticInt247 = 0;
+					Client.staticInt188 = 0;
+					Client.staticEncryptedStream3.method475();
+					var45 = Client.staticEncryptedStream3.method477(8);
+					if (var45 < Client.staticInt186) {
+						for (var2 = var45; var2 < Client.staticInt186; var2++) {
+							Client.staticIntArray93[++Client.staticInt247 - 1] = Client.staticIntArray121[var2];
 						}
 					}
 
-					if (var45 > Game.staticInt186) {
+					if (var45 > Client.staticInt186) {
 						throw new RuntimeException("");
 					}
 
-					Game.staticInt186 = 0;
+					Client.staticInt186 = 0;
 
 					for (var2 = 0; var2 < var45; var2++) {
-						var3 = Game.staticIntArray121[var2];
-						var78 = Game.staticNpcArray1[var3];
-						var5 = Game.staticEncryptedStream3.method477(1);
+						var3 = Client.staticIntArray121[var2];
+						var78 = Client.staticNpcArray1[var3];
+						var5 = Client.staticEncryptedStream3.method477(1);
 						if (var5 == 0) {
-							Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-							var78.anInt605 = Game.staticInt166 * 1142679911;
+							Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+							var78.anInt605 = Client.staticInt166 * 1142679911;
 						} else {
-							var6 = Game.staticEncryptedStream3.method477(2);
+							var6 = Client.staticEncryptedStream3.method477(2);
 							if (var6 == 0) {
-								Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-								var78.anInt605 = Game.staticInt166 * 1142679911;
-								Game.staticIntArray92[++Game.staticInt188 - 1] = var3;
+								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+								var78.anInt605 = Client.staticInt166 * 1142679911;
+								Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 							} else if (var6 == 1) {
-								Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-								var78.anInt605 = Game.staticInt166 * 1142679911;
-								var58 = Game.staticEncryptedStream3.method477(3);
+								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+								var78.anInt605 = Client.staticInt166 * 1142679911;
+								var58 = Client.staticEncryptedStream3.method477(3);
 								var78.method656(var58, (byte) 1);
-								var8 = Game.staticEncryptedStream3.method477(1);
+								var8 = Client.staticEncryptedStream3.method477(1);
 								if (var8 == 1) {
-									Game.staticIntArray92[++Game.staticInt188 - 1] = var3;
+									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
 							} else if (var6 == 2) {
-								Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-								var78.anInt605 = Game.staticInt166 * 1142679911;
-								var58 = Game.staticEncryptedStream3.method477(3);
+								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+								var78.anInt605 = Client.staticInt166 * 1142679911;
+								var58 = Client.staticEncryptedStream3.method477(3);
 								var78.method656(var58, (byte) 2);
-								var8 = Game.staticEncryptedStream3.method477(3);
+								var8 = Client.staticEncryptedStream3.method477(3);
 								var78.method656(var8, (byte) 2);
-								var82 = Game.staticEncryptedStream3.method477(1);
+								var82 = Client.staticEncryptedStream3.method477(1);
 								if (var82 == 1) {
-									Game.staticIntArray92[++Game.staticInt188 - 1] = var3;
+									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
 							} else if (var6 == 3) {
-								Game.staticIntArray93[++Game.staticInt247 - 1] = var3;
+								Client.staticIntArray93[++Client.staticInt247 - 1] = var3;
 							}
 						}
 					}
 
-					while (Game.staticEncryptedStream3.method473(Game.staticInt190) >= 27) {
-						var45 = Game.staticEncryptedStream3.method477(15);
+					while (Client.staticEncryptedStream3.method473(Client.staticInt190) >= 27) {
+						var45 = Client.staticEncryptedStream3.method477(15);
 						if (var45 == 32767) {
 							break;
 						}
 
 						var49 = false;
-						if (Game.staticNpcArray1[var45] == null) {
-							Game.staticNpcArray1[var45] = new Npc();
+						if (Client.staticNpcArray1[var45] == null) {
+							Client.staticNpcArray1[var45] = new Npc();
 							var49 = true;
 						}
 
-						var93 = Game.staticNpcArray1[var45];
-						Game.staticIntArray121[++Game.staticInt186 - 1] = var45;
-						var93.anInt605 = Game.staticInt166 * 1142679911;
-						var48 = Game.staticEncryptedStream3.method477(5);
+						var93 = Client.staticNpcArray1[var45];
+						Client.staticIntArray121[++Client.staticInt186 - 1] = var45;
+						var93.anInt605 = Client.staticInt166 * 1142679911;
+						var48 = Client.staticEncryptedStream3.method477(5);
 						if (var48 > 15) {
 							var48 -= 32;
 						}
 
-						var5 = Game.staticIntArray95[Game.staticEncryptedStream3.method477(3)];
+						var5 = Client.staticIntArray95[Client.staticEncryptedStream3.method477(3)];
 						if (var49) {
 							var93.anInt630 = var93.anInt592 = var5;
 						}
 
-						var93.aNpcDef1 = staticMethod85(Game.staticEncryptedStream3.method477(14));
-						var6 = Game.staticEncryptedStream3.method477(5);
+						var93.aNpcDef1 = staticMethod85(Client.staticEncryptedStream3.method477(14));
+						var6 = Client.staticEncryptedStream3.method477(5);
 						if (var6 > 15) {
 							var6 -= 32;
 						}
 
-						var58 = Game.staticEncryptedStream3.method477(1);
+						var58 = Client.staticEncryptedStream3.method477(1);
 						if (var58 == 1) {
-							Game.staticIntArray92[++Game.staticInt188 - 1] = var45;
+							Client.staticIntArray92[++Client.staticInt188 - 1] = var45;
 						}
 
-						var8 = Game.staticEncryptedStream3.method477(1);
+						var8 = Client.staticEncryptedStream3.method477(1);
 						var93.anInt626 = var93.aNpcDef1.anInt538;
 						var93.anInt631 = var93.aNpcDef1.anInt549 * 494637525;
 						if (var93.anInt631 == 0) {
@@ -18816,59 +18816,59 @@ public class Static {
 								AbstractClass2Sub1.staticPlayer1.anIntArray122[0] + var6, var8 == 1);
 					}
 
-					Game.staticEncryptedStream3.method474();
+					Client.staticEncryptedStream3.method474();
 					staticMethod391();
 
-					for (var45 = 0; var45 < Game.staticInt247; var45++) {
-						var2 = Game.staticIntArray93[var45];
-						if (Game.staticInt166 != Game.staticNpcArray1[var2].anInt605 * 1205609047) {
-							Game.staticNpcArray1[var2].aNpcDef1 = null;
-							Game.staticNpcArray1[var2] = null;
+					for (var45 = 0; var45 < Client.staticInt247; var45++) {
+						var2 = Client.staticIntArray93[var45];
+						if (Client.staticInt166 != Client.staticNpcArray1[var2].anInt605 * 1205609047) {
+							Client.staticNpcArray1[var2].aNpcDef1 = null;
+							Client.staticNpcArray1[var2] = null;
 						}
 					}
 
-					if (Game.staticInt190 != Game.staticEncryptedStream3.off) {
+					if (Client.staticInt190 != Client.staticEncryptedStream3.off) {
 						throw new RuntimeException(
-								Game.staticEncryptedStream3.off + staticString11 + Game.staticInt190);
+								Client.staticEncryptedStream3.off + staticString11 + Client.staticInt190);
 					}
 
-					for (var45 = 0; var45 < Game.staticInt186; var45++) {
-						if (Game.staticNpcArray1[Game.staticIntArray121[var45]] == null) {
-							throw new RuntimeException(var45 + staticString11 + Game.staticInt186);
+					for (var45 = 0; var45 < Client.staticInt186; var45++) {
+						if (Client.staticNpcArray1[Client.staticIntArray121[var45]] == null) {
+							throw new RuntimeException(var45 + staticString11 + Client.staticInt186);
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 118) {
-					Game.staticEncryptedStream3.off += 28;
-					if (Game.staticEncryptedStream3.method363()) {
-						staticMethod336(Game.staticEncryptedStream3, Game.staticEncryptedStream3.off - 28);
+				if (Client.staticInt191 == 118) {
+					Client.staticEncryptedStream3.off += 28;
+					if (Client.staticEncryptedStream3.method363()) {
+						staticMethod336(Client.staticEncryptedStream3, Client.staticEncryptedStream3.off - 28);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 14) {
-					Game.staticInt298 = Game.staticEncryptedStream3.method367();
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 14) {
+					Client.staticInt298 = Client.staticEncryptedStream3.method367();
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 223) {
+				if (Client.staticInt191 == 223) {
 					staticMethod250();
-					Game.staticInt232 = Game.staticEncryptedStream3.method364();
-					Game.staticInt283 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+					Client.staticInt232 = Client.staticEncryptedStream3.method364();
+					Client.staticInt283 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 156) {
-					var45 = Game.staticEncryptedStream3.readInt();
-					var2 = Game.staticEncryptedStream3.method370();
+				if (Client.staticInt191 == 156) {
+					var45 = Client.staticEncryptedStream3.readInt();
+					var2 = Client.staticEncryptedStream3.method370();
 					if (var45 < -70000) {
 						var2 += '\u8000';
 					}
@@ -18887,15 +18887,15 @@ public class Static {
 					}
 
 					staticMethod162(var2);
-					var48 = Game.staticEncryptedStream3.method370();
+					var48 = Client.staticEncryptedStream3.method370();
 
 					for (var5 = 0; var5 < var48; var5++) {
-						var6 = Game.staticEncryptedStream3.method346();
+						var6 = Client.staticEncryptedStream3.method346();
 						if (var6 == 255) {
-							var6 = Game.staticEncryptedStream3.readInt();
+							var6 = Client.staticEncryptedStream3.readInt();
 						}
 
-						var58 = Game.staticEncryptedStream3.method353();
+						var58 = Client.staticEncryptedStream3.method353();
 						if (var47 != null && var5 < var47.anIntArray76.length) {
 							var47.anIntArray76[var5] = var58;
 							var47.anIntArray77[var5] = var6;
@@ -18909,29 +18909,29 @@ public class Static {
 					}
 
 					staticMethod250();
-					Game.staticIntArray86[++Game.staticInt276 - 1 & 0x1f] = var2 & 0x7fff;
-					Game.staticInt191 = -1;
+					Client.staticIntArray86[++Client.staticInt276 - 1 & 0x1f] = var2 & 0x7fff;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 47) {
-					var45 = Game.staticEncryptedStream3.method355();
+				if (Client.staticInt191 == 47) {
+					var45 = Client.staticEncryptedStream3.method355();
 					staticMethod281(var45);
-					Game.staticIntArray86[++Game.staticInt276 - 1 & 0x1f] = var45 & 0x7fff;
-					Game.staticInt191 = -1;
+					Client.staticIntArray86[++Client.staticInt276 - 1 & 0x1f] = var45 & 0x7fff;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 106) {
+				if (Client.staticInt191 == 106) {
 					for (var45 = 0; var45 < staticIntArray64.length; var45++) {
 						if (staticIntArray63[var45] != staticIntArray64[var45]) {
 							staticIntArray64[var45] = staticIntArray63[var45];
 							staticMethod471(var45);
-							Game.staticIntArray104[++Game.staticInt275 - 1 & 0x1f] = var45;
+							Client.staticIntArray104[++Client.staticInt275 - 1 & 0x1f] = var45;
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
@@ -18939,19 +18939,19 @@ public class Static {
 				long var14;
 				long var16;
 				boolean var66;
-				if (Game.staticInt191 == 237) {
-					var1 = Game.staticEncryptedStream3.method365();
-					var12 = Game.staticEncryptedStream3.method370();
-					var14 = Game.staticEncryptedStream3.readTriByte();
+				if (Client.staticInt191 == 237) {
+					var1 = Client.staticEncryptedStream3.method365();
+					var12 = Client.staticEncryptedStream3.method370();
+					var14 = Client.staticEncryptedStream3.readTriByte();
 					Class48[] var611 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
 							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
 							Class48.staticClass48_3 };
-					Class48 var621 = (Class48) staticMethod233(var611, Game.staticEncryptedStream3.method367());
+					Class48 var621 = (Class48) staticMethod233(var611, Client.staticEncryptedStream3.method367());
 					var16 = var14 + (var12 << 32);
 					var66 = false;
 
 					for (int var69 = 0; var69 < 100; var69++) {
-						if (var16 == Game.staticLongArray3[var69]) {
+						if (var16 == Client.staticLongArray3[var69]) {
 							var66 = true;
 							break;
 						}
@@ -18961,10 +18961,10 @@ public class Static {
 						var66 = true;
 					}
 
-					if (!var66 && Game.staticInt245 == 0) {
-						Game.staticLongArray3[Game.staticInt293] = var16;
-						Game.staticInt293 = (Game.staticInt293 + 1) % 100;
-						String var72 = staticMethod456(staticMethod265(staticMethod191(Game.staticEncryptedStream3)));
+					if (!var66 && Client.staticInt245 == 0) {
+						Client.staticLongArray3[Client.staticInt293] = var16;
+						Client.staticInt293 = (Client.staticInt293 + 1) % 100;
+						String var72 = staticMethod456(staticMethod265(staticMethod191(Client.staticEncryptedStream3)));
 						byte var73;
 						if (var621.aBool15) {
 							var73 = 7;
@@ -18979,13 +18979,13 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 201) {
-					var45 = Game.staticEncryptedStream3.method370();
-					var2 = Game.staticEncryptedStream3.method378();
+				if (Client.staticInt191 == 201) {
+					var45 = Client.staticEncryptedStream3.method370();
+					var2 = Client.staticEncryptedStream3.method378();
 					var47 = staticMethod8(var2);
 					if (var47 != null && var47.anInt296 == 0) {
 						if (var45 > var47.anInt361 - var47.anInt351) {
@@ -19002,41 +19002,41 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				String var57;
 				String var62;
 				boolean var54;
-				if (Game.staticInt191 == 221) {
+				if (Client.staticInt191 == 221) {
 					Friend var821;
-					while (Game.staticEncryptedStream3.off < Game.staticInt190) {
-						var109 = Game.staticEncryptedStream3.method367() == 1;
-						var62 = Game.staticEncryptedStream3.method365();
-						var57 = Game.staticEncryptedStream3.method365();
-						var48 = Game.staticEncryptedStream3.method370();
-						var5 = Game.staticEncryptedStream3.method367();
-						var6 = Game.staticEncryptedStream3.method367();
+					while (Client.staticEncryptedStream3.off < Client.staticInt190) {
+						var109 = Client.staticEncryptedStream3.method367() == 1;
+						var62 = Client.staticEncryptedStream3.method365();
+						var57 = Client.staticEncryptedStream3.method365();
+						var48 = Client.staticEncryptedStream3.method370();
+						var5 = Client.staticEncryptedStream3.method367();
+						var6 = Client.staticEncryptedStream3.method367();
 						boolean var661 = (var6 & 0x2) != 0;
 						var54 = (var6 & 0x1) != 0;
 						if (var48 > 0) {
-							Game.staticEncryptedStream3.method365();
-							Game.staticEncryptedStream3.method367();
-							Game.staticEncryptedStream3.readInt();
+							Client.staticEncryptedStream3.method365();
+							Client.staticEncryptedStream3.method367();
+							Client.staticEncryptedStream3.readInt();
 						}
 
-						Game.staticEncryptedStream3.method365();
+						Client.staticEncryptedStream3.method365();
 
-						for (var82 = 0; var82 < Game.staticInt308; var82++) {
-							var821 = Game.staticFriendArray1[var82];
+						for (var82 = 0; var82 < Client.staticInt308; var82++) {
+							var821 = Client.staticFriendArray1[var82];
 							if (!var109) {
 								if (var62.equals(var821.aString14)) {
 									if (var48 != var821.anInt210) {
 										boolean var781 = true;
 
-										for (Class40Sub1 var80 = (Class40Sub1) Game.staticClass41_1
-												.method217(); var80 != null; var80 = (Class40Sub1) Game.staticClass41_1
+										for (Class40Sub1 var80 = (Class40Sub1) Client.staticClass41_1
+												.method217(); var80 != null; var80 = (Class40Sub1) Client.staticClass41_1
 														.method219()) {
 											if (var80.aString30.equals(var62)) {
 												if (var48 != 0 && var80.aShort1 == 0) {
@@ -19050,7 +19050,7 @@ public class Static {
 										}
 
 										if (var781) {
-											Game.staticClass41_1.method218(new Class40Sub1(var62, var48));
+											Client.staticClass41_1.method218(new Class40Sub1(var62, var48));
 										}
 
 										var821.anInt210 = var48;
@@ -19071,23 +19071,23 @@ public class Static {
 							}
 						}
 
-						if (var62 != null && Game.staticInt308 < 400) {
+						if (var62 != null && Client.staticInt308 < 400) {
 							var821 = new Friend();
-							Game.staticFriendArray1[Game.staticInt308] = var821;
+							Client.staticFriendArray1[Client.staticInt308] = var821;
 							var821.aString14 = var62;
 							var821.aString13 = var57;
 							var821.anInt210 = var48;
 							var821.anInt209 = var5;
 							var821.aBool20 = var661;
 							var821.aBool19 = var54;
-							++Game.staticInt308;
+							++Client.staticInt308;
 						}
 					}
 
-					Game.staticInt202 = 2;
-					Game.staticInt280 = Game.staticInt274 * 2073400987;
+					Client.staticInt202 = 2;
+					Client.staticInt280 = Client.staticInt274 * 2073400987;
 					var109 = false;
-					var2 = Game.staticInt308;
+					var2 = Client.staticInt308;
 
 					while (var2 > 0) {
 						var109 = true;
@@ -19095,9 +19095,9 @@ public class Static {
 
 						for (var3 = 0; var3 < var2; var3++) {
 							var66 = false;
-							Friend var67 = Game.staticFriendArray1[var3];
-							Friend var701 = Game.staticFriendArray1[var3 + 1];
-							if (var67.anInt210 != Game.staticInt309 && Game.staticInt309 == var701.anInt210) {
+							Friend var67 = Client.staticFriendArray1[var3];
+							Friend var701 = Client.staticFriendArray1[var3 + 1];
+							if (var67.anInt210 != Client.staticInt309 && Client.staticInt309 == var701.anInt210) {
 								var66 = true;
 							}
 
@@ -19114,9 +19114,9 @@ public class Static {
 							}
 
 							if (var66) {
-								var821 = Game.staticFriendArray1[var3];
-								Game.staticFriendArray1[var3] = Game.staticFriendArray1[var3 + 1];
-								Game.staticFriendArray1[1 + var3] = var821;
+								var821 = Client.staticFriendArray1[var3];
+								Client.staticFriendArray1[var3] = Client.staticFriendArray1[var3 + 1];
+								Client.staticFriendArray1[1 + var3] = var821;
 								var109 = false;
 							}
 						}
@@ -19126,59 +19126,59 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 208) {
+				if (Client.staticInt191 == 208) {
 					Class2 var65 = new Class2();
-					var65.aString1 = Game.staticEncryptedStream3.method365();
-					var65.anInt4 = Game.staticEncryptedStream3.method370();
-					var2 = Game.staticEncryptedStream3.readInt();
+					var65.aString1 = Client.staticEncryptedStream3.method365();
+					var65.anInt4 = Client.staticEncryptedStream3.method370();
+					var2 = Client.staticEncryptedStream3.readInt();
 					var65.anInt3 = var2;
 					staticMethod396(45);
 					Class56.staticConnection3.method150();
 					Class56.staticConnection3 = null;
 					staticMethod59(var65);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return false;
 				}
 
-				if (Game.staticInt191 == 49) {
-					Game.staticInt160 = Game.staticEncryptedStream3.method367();
-					Game.staticInt291 = Game.staticEncryptedStream3.method367();
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 49) {
+					Client.staticInt160 = Client.staticEncryptedStream3.method367();
+					Client.staticInt291 = Client.staticEncryptedStream3.method367();
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 28) {
-					var45 = Game.staticEncryptedStream3.method370();
-					Game.staticInt263 = var45;
+				if (Client.staticInt191 == 28) {
+					var45 = Client.staticEncryptedStream3.method370();
+					Client.staticInt263 = var45;
 					staticMethod93(false);
 					staticMethod393(var45);
-					staticMethod2(Game.staticInt263);
+					staticMethod2(Client.staticInt263);
 
 					for (var2 = 0; var2 < 100; var2++) {
-						Game.staticBoolArray8[var2] = true;
+						Client.staticBoolArray8[var2] = true;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 206) {
-					Game.staticBool28 = false;
+				if (Client.staticInt191 == 206) {
+					Client.staticBool28 = false;
 
 					for (var45 = 0; var45 < 5; var45++) {
-						Game.staticBoolArray7[var45] = false;
+						Client.staticBoolArray7[var45] = false;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 92) {
-					var2 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 92) {
+					var2 = Client.staticEncryptedStream3.method367();
 					Class55[] var64 = new Class55[] { Class55.staticClass55_2, Class55.staticClass55_4,
 							Class55.staticClass55_3 };
 					Class55[] var68 = var64;
@@ -19201,24 +19201,24 @@ public class Static {
 					}
 
 					staticClass55_1 = var81;
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 195) {
-					var45 = Game.staticEncryptedStream3.method353();
+				if (Client.staticInt191 == 195) {
+					var45 = Client.staticEncryptedStream3.method353();
 					if (var45 == '\uffff') {
 						var45 = -1;
 					}
 
-					if (var45 == -1 && !Game.staticBool38) {
+					if (var45 == -1 && !Client.staticBool38) {
 						staticNodeSub8Sub3_1.method440();
 						staticInt118 = 1;
 						staticJs5Index3 = null;
-					} else if (var45 != -1 && Game.staticInt249 != var45 && Game.staticInt299 != 0
-							&& !Game.staticBool38) {
+					} else if (var45 != -1 && Client.staticInt249 != var45 && Client.staticInt299 != 0
+							&& !Client.staticBool38) {
 						Js5IndexImpl var63 = Class34.staticJs5IndexImpl3;
-						var3 = Game.staticInt299;
+						var3 = Client.staticInt299;
 						staticInt118 = 1;
 						staticJs5Index3 = var63;
 						staticInt119 = var45;
@@ -19228,60 +19228,60 @@ public class Static {
 						NodeSub1.staticInt151 = 2;
 					}
 
-					Game.staticInt249 = var45;
-					Game.staticInt191 = -1;
+					Client.staticInt249 = var45;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 60) {
-					var45 = Game.staticEncryptedStream3.method358();
-					var2 = Game.staticEncryptedStream3.method370();
+				if (Client.staticInt191 == 60) {
+					var45 = Client.staticEncryptedStream3.method358();
+					var2 = Client.staticEncryptedStream3.method370();
 					if (var2 == '\uffff') {
 						var2 = -1;
 					}
 
-					if (Game.staticInt299 != 0 && var2 != -1) {
-						staticMethod30(Class56.staticJs5IndexImpl6, var2, 0, Game.staticInt299, false);
-						Game.staticBool38 = true;
+					if (Client.staticInt299 != 0 && var2 != -1) {
+						staticMethod30(Class56.staticJs5IndexImpl6, var2, 0, Client.staticInt299, false);
+						Client.staticBool38 = true;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 168 || Game.staticInt191 == 23 || Game.staticInt191 == 97
-						|| Game.staticInt191 == 232 || Game.staticInt191 == 73 || Game.staticInt191 == 251
-						|| Game.staticInt191 == 143 || Game.staticInt191 == 29 || Game.staticInt191 == 186
-						|| Game.staticInt191 == 117) {
+				if (Client.staticInt191 == 168 || Client.staticInt191 == 23 || Client.staticInt191 == 97
+						|| Client.staticInt191 == 232 || Client.staticInt191 == 73 || Client.staticInt191 == 251
+						|| Client.staticInt191 == 143 || Client.staticInt191 == 29 || Client.staticInt191 == 186
+						|| Client.staticInt191 == 117) {
 					staticMethod345();
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 61) {
-					var45 = Game.staticEncryptedStream3.method377();
-					var62 = Game.staticEncryptedStream3.method365();
-					var3 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 61) {
+					var45 = Client.staticEncryptedStream3.method377();
+					var62 = Client.staticEncryptedStream3.method365();
+					var3 = Client.staticEncryptedStream3.method367();
 					if (var3 >= 1 && var3 <= 8) {
 						if (var62.equalsIgnoreCase("null")) {
 							var62 = null;
 						}
 
-						Game.staticStringArray7[var3 - 1] = var62;
-						Game.staticBoolArray5[var3 - 1] = var45 == 0;
+						Client.staticStringArray7[var3 - 1] = var62;
+						Client.staticBoolArray5[var3 - 1] = var45 == 0;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 129) {
-					Game.staticBool28 = true;
-					TaskManager.staticInt40 = Game.staticEncryptedStream3.method367();
-					staticInt137 = Game.staticEncryptedStream3.method367();
-					ObjectDefinition.staticInt322 = Game.staticEncryptedStream3.method370();
-					staticInt17 = Game.staticEncryptedStream3.method367();
-					staticInt150 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 129) {
+					Client.staticBool28 = true;
+					TaskManager.staticInt40 = Client.staticEncryptedStream3.method367();
+					staticInt137 = Client.staticEncryptedStream3.method367();
+					ObjectDefinition.staticInt322 = Client.staticEncryptedStream3.method370();
+					staticInt17 = Client.staticEncryptedStream3.method367();
+					staticInt150 = Client.staticEncryptedStream3.method367();
 					if (staticInt150 >= 100) {
 						Class20.staticInt36 = 64 + TaskManager.staticInt40 * 128;
 						NodeSub3.staticInt153 = staticInt137 * 128 + 64;
@@ -19289,16 +19289,16 @@ public class Static {
 								NodeSub4.staticInt155) - ObjectDefinition.staticInt322;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				Widget var70;
-				if (Game.staticInt191 == 217) {
-					var45 = Game.staticEncryptedStream3.method355();
-					var2 = Game.staticEncryptedStream3.method355();
-					var3 = Game.staticEncryptedStream3.method353();
-					var48 = Game.staticEncryptedStream3.method362();
+				if (Client.staticInt191 == 217) {
+					var45 = Client.staticEncryptedStream3.method355();
+					var2 = Client.staticEncryptedStream3.method355();
+					var3 = Client.staticEncryptedStream3.method353();
+					var48 = Client.staticEncryptedStream3.method362();
 					var70 = staticMethod8(var48);
 					if (var70.anInt325 != var45 || var70.anInt332 != var2 || var70.anInt334 != var3) {
 						var70.anInt325 = var45;
@@ -19307,103 +19307,103 @@ public class Static {
 						staticMethod73(var70);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 43) {
-					Game.staticInt247 = 0;
-					Game.staticInt188 = 0;
-					Game.staticEncryptedStream3.method475();
-					var45 = Game.staticEncryptedStream3.method477(8);
-					if (var45 < Game.staticInt186) {
-						for (var2 = var45; var2 < Game.staticInt186; var2++) {
-							Game.staticIntArray93[++Game.staticInt247 - 1] = Game.staticIntArray121[var2];
+				if (Client.staticInt191 == 43) {
+					Client.staticInt247 = 0;
+					Client.staticInt188 = 0;
+					Client.staticEncryptedStream3.method475();
+					var45 = Client.staticEncryptedStream3.method477(8);
+					if (var45 < Client.staticInt186) {
+						for (var2 = var45; var2 < Client.staticInt186; var2++) {
+							Client.staticIntArray93[++Client.staticInt247 - 1] = Client.staticIntArray121[var2];
 						}
 					}
 
-					if (var45 > Game.staticInt186) {
+					if (var45 > Client.staticInt186) {
 						throw new RuntimeException("");
 					}
 
-					Game.staticInt186 = 0;
+					Client.staticInt186 = 0;
 
 					for (var2 = 0; var2 < var45; var2++) {
-						var3 = Game.staticIntArray121[var2];
-						var78 = Game.staticNpcArray1[var3];
-						var5 = Game.staticEncryptedStream3.method477(1);
+						var3 = Client.staticIntArray121[var2];
+						var78 = Client.staticNpcArray1[var3];
+						var5 = Client.staticEncryptedStream3.method477(1);
 						if (var5 == 0) {
-							Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-							var78.anInt605 = Game.staticInt166 * 1142679911;
+							Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+							var78.anInt605 = Client.staticInt166 * 1142679911;
 						} else {
-							var6 = Game.staticEncryptedStream3.method477(2);
+							var6 = Client.staticEncryptedStream3.method477(2);
 							if (var6 == 0) {
-								Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-								var78.anInt605 = Game.staticInt166 * 1142679911;
-								Game.staticIntArray92[++Game.staticInt188 - 1] = var3;
+								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+								var78.anInt605 = Client.staticInt166 * 1142679911;
+								Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 							} else if (var6 == 1) {
-								Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-								var78.anInt605 = Game.staticInt166 * 1142679911;
-								var58 = Game.staticEncryptedStream3.method477(3);
+								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+								var78.anInt605 = Client.staticInt166 * 1142679911;
+								var58 = Client.staticEncryptedStream3.method477(3);
 								var78.method656(var58, (byte) 1);
-								var8 = Game.staticEncryptedStream3.method477(1);
+								var8 = Client.staticEncryptedStream3.method477(1);
 								if (var8 == 1) {
-									Game.staticIntArray92[++Game.staticInt188 - 1] = var3;
+									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
 							} else if (var6 == 2) {
-								Game.staticIntArray121[++Game.staticInt186 - 1] = var3;
-								var78.anInt605 = Game.staticInt166 * 1142679911;
-								var58 = Game.staticEncryptedStream3.method477(3);
+								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
+								var78.anInt605 = Client.staticInt166 * 1142679911;
+								var58 = Client.staticEncryptedStream3.method477(3);
 								var78.method656(var58, (byte) 2);
-								var8 = Game.staticEncryptedStream3.method477(3);
+								var8 = Client.staticEncryptedStream3.method477(3);
 								var78.method656(var8, (byte) 2);
-								var82 = Game.staticEncryptedStream3.method477(1);
+								var82 = Client.staticEncryptedStream3.method477(1);
 								if (var82 == 1) {
-									Game.staticIntArray92[++Game.staticInt188 - 1] = var3;
+									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
 							} else if (var6 == 3) {
-								Game.staticIntArray93[++Game.staticInt247 - 1] = var3;
+								Client.staticIntArray93[++Client.staticInt247 - 1] = var3;
 							}
 						}
 					}
 
-					while (Game.staticEncryptedStream3.method473(Game.staticInt190) >= 27) {
-						var45 = Game.staticEncryptedStream3.method477(15);
+					while (Client.staticEncryptedStream3.method473(Client.staticInt190) >= 27) {
+						var45 = Client.staticEncryptedStream3.method477(15);
 						if (var45 == 32767) {
 							break;
 						}
 
 						var49 = false;
-						if (Game.staticNpcArray1[var45] == null) {
-							Game.staticNpcArray1[var45] = new Npc();
+						if (Client.staticNpcArray1[var45] == null) {
+							Client.staticNpcArray1[var45] = new Npc();
 							var49 = true;
 						}
 
-						var93 = Game.staticNpcArray1[var45];
-						Game.staticIntArray121[++Game.staticInt186 - 1] = var45;
-						var93.anInt605 = Game.staticInt166 * 1142679911;
-						var48 = Game.staticEncryptedStream3.method477(8);
+						var93 = Client.staticNpcArray1[var45];
+						Client.staticIntArray121[++Client.staticInt186 - 1] = var45;
+						var93.anInt605 = Client.staticInt166 * 1142679911;
+						var48 = Client.staticEncryptedStream3.method477(8);
 						if (var48 > 127) {
 							var48 -= 256;
 						}
 
-						var5 = Game.staticIntArray95[Game.staticEncryptedStream3.method477(3)];
+						var5 = Client.staticIntArray95[Client.staticEncryptedStream3.method477(3)];
 						if (var49) {
 							var93.anInt630 = var93.anInt592 = var5;
 						}
 
-						var93.aNpcDef1 = staticMethod85(Game.staticEncryptedStream3.method477(14));
-						var6 = Game.staticEncryptedStream3.method477(8);
+						var93.aNpcDef1 = staticMethod85(Client.staticEncryptedStream3.method477(14));
+						var6 = Client.staticEncryptedStream3.method477(8);
 						if (var6 > 127) {
 							var6 -= 256;
 						}
 
-						var58 = Game.staticEncryptedStream3.method477(1);
+						var58 = Client.staticEncryptedStream3.method477(1);
 						if (var58 == 1) {
-							Game.staticIntArray92[++Game.staticInt188 - 1] = var45;
+							Client.staticIntArray92[++Client.staticInt188 - 1] = var45;
 						}
 
-						var8 = Game.staticEncryptedStream3.method477(1);
+						var8 = Client.staticEncryptedStream3.method477(1);
 						var93.anInt626 = var93.aNpcDef1.anInt538;
 						var93.anInt631 = var93.aNpcDef1.anInt549 * 494637525;
 						if (var93.anInt631 == 0) {
@@ -19421,51 +19421,51 @@ public class Static {
 								AbstractClass2Sub1.staticPlayer1.anIntArray122[0] + var6, var8 == 1);
 					}
 
-					Game.staticEncryptedStream3.method474();
+					Client.staticEncryptedStream3.method474();
 					staticMethod391();
 
-					for (var45 = 0; var45 < Game.staticInt247; var45++) {
-						var2 = Game.staticIntArray93[var45];
-						if (Game.staticInt166 != Game.staticNpcArray1[var2].anInt605 * 1205609047) {
-							Game.staticNpcArray1[var2].aNpcDef1 = null;
-							Game.staticNpcArray1[var2] = null;
+					for (var45 = 0; var45 < Client.staticInt247; var45++) {
+						var2 = Client.staticIntArray93[var45];
+						if (Client.staticInt166 != Client.staticNpcArray1[var2].anInt605 * 1205609047) {
+							Client.staticNpcArray1[var2].aNpcDef1 = null;
+							Client.staticNpcArray1[var2] = null;
 						}
 					}
 
-					if (Game.staticEncryptedStream3.off != Game.staticInt190) {
+					if (Client.staticEncryptedStream3.off != Client.staticInt190) {
 						throw new RuntimeException(
-								Game.staticEncryptedStream3.off + staticString11 + Game.staticInt190);
+								Client.staticEncryptedStream3.off + staticString11 + Client.staticInt190);
 					}
 
-					for (var45 = 0; var45 < Game.staticInt186; var45++) {
-						if (Game.staticNpcArray1[Game.staticIntArray121[var45]] == null) {
-							throw new RuntimeException(var45 + staticString11 + Game.staticInt186);
+					for (var45 = 0; var45 < Client.staticInt186; var45++) {
+						if (Client.staticNpcArray1[Client.staticIntArray121[var45]] == null) {
+							throw new RuntimeException(var45 + staticString11 + Client.staticInt186);
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 202) {
-					var45 = Game.staticEncryptedStream3.method367();
-					var2 = Game.staticEncryptedStream3.method367();
-					var3 = Game.staticEncryptedStream3.method367();
-					var48 = Game.staticEncryptedStream3.method367();
-					Game.staticBoolArray7[var45] = true;
-					Game.staticIntArray118[var45] = var2;
-					Game.staticIntArray119[var45] = var3;
-					Game.staticIntArray83[var45] = var48;
-					Game.staticIntArray120[var45] = 0;
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 202) {
+					var45 = Client.staticEncryptedStream3.method367();
+					var2 = Client.staticEncryptedStream3.method367();
+					var3 = Client.staticEncryptedStream3.method367();
+					var48 = Client.staticEncryptedStream3.method367();
+					Client.staticBoolArray7[var45] = true;
+					Client.staticIntArray118[var45] = var2;
+					Client.staticIntArray119[var45] = var3;
+					Client.staticIntArray83[var45] = var48;
+					Client.staticIntArray120[var45] = 0;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				byte var75;
-				if (Game.staticInt191 == 155) {
-					var1 = Game.staticEncryptedStream3.method365();
-					var2 = Game.staticEncryptedStream3.method370();
-					var75 = Game.staticEncryptedStream3.readByte();
+				if (Client.staticInt191 == 155) {
+					var1 = Client.staticEncryptedStream3.method365();
+					var2 = Client.staticEncryptedStream3.method370();
+					var75 = Client.staticEncryptedStream3.readByte();
 					var66 = false;
 					if (var75 == -128) {
 						var66 = true;
@@ -19473,7 +19473,7 @@ public class Static {
 
 					if (var66) {
 						if (staticInt149 == 0) {
-							Game.staticInt191 = -1;
+							Client.staticInt191 = -1;
 							return true;
 						}
 
@@ -19495,7 +19495,7 @@ public class Static {
 							Class43.staticNodeSub1Array1[staticInt149] = null;
 						}
 					} else {
-						Game.staticEncryptedStream3.method365();
+						Client.staticEncryptedStream3.method365();
 						NodeSub1 var74 = new NodeSub1();
 						var74.aString15 = var1;
 						var74.aString16 = staticMethod111(var74.aString15, staticClass53_1);
@@ -19511,8 +19511,8 @@ public class Static {
 									staticByte3 = var75;
 								}
 
-								Game.staticInt281 = Game.staticInt274 * 2073400987;
-								Game.staticInt191 = -1;
+								Client.staticInt281 = Client.staticInt274 * 2073400987;
+								Client.staticInt191 = -1;
 								return true;
 							}
 
@@ -19522,7 +19522,7 @@ public class Static {
 						}
 
 						if (staticInt149 >= Class43.staticNodeSub1Array1.length) {
-							Game.staticInt191 = -1;
+							Client.staticInt191 = -1;
 							return true;
 						}
 
@@ -19541,32 +19541,32 @@ public class Static {
 						}
 					}
 
-					Game.staticInt281 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+					Client.staticInt281 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 121) {
+				if (Client.staticInt191 == 121) {
 					staticMethod87();
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return false;
 				}
 
-				if (Game.staticInt191 == 170) {
-					staticInt122 = Game.staticEncryptedStream3.method367();
-					ChatMessage.staticInt331 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 170) {
+					staticInt122 = Client.staticEncryptedStream3.method367();
+					ChatMessage.staticInt331 = Client.staticEncryptedStream3.method367();
 
 					for (var45 = staticInt122; var45 < 8 + staticInt122; var45++) {
 						for (var2 = ChatMessage.staticInt331; var2 < ChatMessage.staticInt331 + 8; var2++) {
-							if (Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var45][var2] != null) {
-								Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var45][var2] = null;
+							if (Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var45][var2] != null) {
+								Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var45][var2] = null;
 								staticMethod262(var45, var2);
 							}
 						}
 					}
 
-					for (NodeSub19 var79 = (NodeSub19) Game.staticClass39_7
-							.method195(); var79 != null; var79 = (NodeSub19) Game.staticClass39_7.method193()) {
+					for (NodeSub19 var79 = (NodeSub19) Client.staticClass39_7
+							.method195(); var79 != null; var79 = (NodeSub19) Client.staticClass39_7.method193()) {
 						if (var79.anInt388 >= staticInt122 && var79.anInt388 < 8 + staticInt122
 								&& var79.anInt390 >= ChatMessage.staticInt331
 								&& var79.anInt390 < 8 + ChatMessage.staticInt331
@@ -19575,76 +19575,76 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 247) {
-					var1 = Game.staticEncryptedStream3.method365();
+				if (Client.staticInt191 == 247) {
+					var1 = Client.staticEncryptedStream3.method365();
 					Object[] var77 = new Object[var1.length() + 1];
 
 					for (var3 = var1.length() - 1; var3 >= 0; --var3) {
 						if (var1.charAt(var3) == 115) {
-							var77[1 + var3] = Game.staticEncryptedStream3.method365();
+							var77[1 + var3] = Client.staticEncryptedStream3.method365();
 						} else {
-							var77[var3 + 1] = new Integer(Game.staticEncryptedStream3.readInt());
+							var77[var3 + 1] = new Integer(Client.staticEncryptedStream3.readInt());
 						}
 					}
 
-					var77[0] = new Integer(Game.staticEncryptedStream3.readInt());
+					var77[0] = new Integer(Client.staticEncryptedStream3.readInt());
 					NodeSub16 var89 = new NodeSub16();
 					var89.anObjectArray2 = var77;
 					staticMethod375(var89);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 122) {
-					var45 = Game.staticEncryptedStream3.method353();
-					var75 = Game.staticEncryptedStream3.method368();
+				if (Client.staticInt191 == 122) {
+					var45 = Client.staticEncryptedStream3.method353();
+					var75 = Client.staticEncryptedStream3.method368();
 					staticIntArray63[var45] = var75;
 					if (var75 != staticIntArray64[var45]) {
 						staticIntArray64[var45] = var75;
 					}
 
 					staticMethod471(var45);
-					Game.staticIntArray104[++Game.staticInt275 - 1 & 0x1f] = var45;
-					Game.staticInt191 = -1;
+					Client.staticIntArray104[++Client.staticInt275 - 1 & 0x1f] = var45;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 179) {
-					var45 = Game.staticEncryptedStream3.method379();
-					var49 = Game.staticEncryptedStream3.method367() == 1;
+				if (Client.staticInt191 == 179) {
+					var45 = Client.staticEncryptedStream3.method379();
+					var49 = Client.staticEncryptedStream3.method367() == 1;
 					var57 = "";
 					var66 = false;
 					if (var49) {
-						var57 = Game.staticEncryptedStream3.method365();
+						var57 = Client.staticEncryptedStream3.method365();
 						if (staticMethod141(var57)) {
 							var66 = true;
 						}
 					}
 
-					String var71 = Game.staticEncryptedStream3.method365();
+					String var71 = Client.staticEncryptedStream3.method365();
 					if (!var66) {
 						staticMethod36(var45, var57, var71);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 72) {
-					var1 = Game.staticEncryptedStream3.method365();
-					var62 = staticMethod456(staticMethod265(staticMethod191(Game.staticEncryptedStream3)));
+				if (Client.staticInt191 == 72) {
+					var1 = Client.staticEncryptedStream3.method365();
+					var62 = staticMethod456(staticMethod265(staticMethod191(Client.staticEncryptedStream3)));
 					staticMethod36(6, var1, var62);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 242) {
-					var45 = Game.staticEncryptedStream3.method354();
-					var2 = Game.staticEncryptedStream3.method356();
+				if (Client.staticInt191 == 242) {
+					var45 = Client.staticEncryptedStream3.method354();
+					var2 = Client.staticEncryptedStream3.method356();
 					var47 = staticMethod8(var45);
 					if (var47.anInt327 != var2 || var2 == -1) {
 						var47.anInt327 = var2;
@@ -19653,15 +19653,15 @@ public class Static {
 						staticMethod73(var47);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				long var23;
 				long var25;
-				if (Game.staticInt191 == 65) {
-					var45 = Game.staticEncryptedStream3.readInt();
-					var2 = Game.staticEncryptedStream3.readInt();
+				if (Client.staticInt191 == 65) {
+					var45 = Client.staticEncryptedStream3.readInt();
+					var2 = Client.staticEncryptedStream3.readInt();
 					if (staticGarbageCollectorMXBean1 == null
 							|| !staticGarbageCollectorMXBean1.isValid()) {
 						try {
@@ -19671,8 +19671,8 @@ public class Static {
 								GarbageCollectorMXBean var90 = (GarbageCollectorMXBean) var85.next();
 								if (var90.isValid()) {
 									staticGarbageCollectorMXBean1 = var90;
-									Game.staticLong14 = -1L;
-									Game.staticLong12 = -1L;
+									Client.staticLong14 = -1L;
+									Client.staticLong12 = -1L;
 								}
 							}
 						} catch (Throwable var56) {
@@ -19684,65 +19684,65 @@ public class Static {
 					var5 = -1;
 					if (staticGarbageCollectorMXBean1 != null) {
 						var23 = staticGarbageCollectorMXBean1.getCollectionTime();
-						if (Game.staticLong12 != -1L) {
-							var16 = var23 - Game.staticLong12;
-							var25 = var86 - Game.staticLong14;
+						if (Client.staticLong12 != -1L) {
+							var16 = var23 - Client.staticLong12;
+							var25 = var86 - Client.staticLong14;
 							if (var25 != 0L) {
 								var5 = (int) (var16 * 100L / var25);
 							}
 						}
 
-						Game.staticLong12 = var23;
-						Game.staticLong14 = var86;
+						Client.staticLong12 = var23;
+						Client.staticLong14 = var86;
 					}
 
-					Game.staticEncryptedStream1.method471(178);
-					Game.staticEncryptedStream1.writeInt(var45);
-					Game.staticEncryptedStream1.method360(var2);
-					Game.staticEncryptedStream1.method373(GameShell.staticInt107);
-					Game.staticEncryptedStream1.method373(var5);
-					Game.staticInt191 = -1;
+					Client.staticEncryptedStream1.method471(178);
+					Client.staticEncryptedStream1.writeInt(var45);
+					Client.staticEncryptedStream1.method360(var2);
+					Client.staticEncryptedStream1.method373(GameShell.staticInt107);
+					Client.staticEncryptedStream1.method373(var5);
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 226) {
-					for (var45 = 0; var45 < Game.staticPlayerArray1.length; var45++) {
-						if (Game.staticPlayerArray1[var45] != null) {
-							Game.staticPlayerArray1[var45].anInt612 = -1;
+				if (Client.staticInt191 == 226) {
+					for (var45 = 0; var45 < Client.staticPlayerArray1.length; var45++) {
+						if (Client.staticPlayerArray1[var45] != null) {
+							Client.staticPlayerArray1[var45].anInt612 = -1;
 						}
 					}
 
-					for (var45 = 0; var45 < Game.staticNpcArray1.length; var45++) {
-						if (Game.staticNpcArray1[var45] != null) {
-							Game.staticNpcArray1[var45].anInt612 = -1;
+					for (var45 = 0; var45 < Client.staticNpcArray1.length; var45++) {
+						if (Client.staticNpcArray1[var45] != null) {
+							Client.staticNpcArray1[var45].anInt612 = -1;
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 167) {
+				if (Client.staticInt191 == 167) {
 					staticMethod294(false);
-					Game.staticEncryptedStream3.method472();
-					var45 = Game.staticEncryptedStream3.method370();
-					staticMethod313(Game.staticEncryptedStream3, var45);
-					Game.staticInt191 = -1;
+					Client.staticEncryptedStream3.method472();
+					var45 = Client.staticEncryptedStream3.method370();
+					staticMethod313(Client.staticEncryptedStream3, var45);
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 119) {
-					var45 = Game.staticEncryptedStream3.readInt();
-					var2 = Game.staticEncryptedStream3.method378();
-					NodeSub18 var84 = (NodeSub18) Game.staticHashTable5.method149(var2);
-					var53 = (NodeSub18) Game.staticHashTable5.method149(var45);
+				if (Client.staticInt191 == 119) {
+					var45 = Client.staticEncryptedStream3.readInt();
+					var2 = Client.staticEncryptedStream3.method378();
+					NodeSub18 var84 = (NodeSub18) Client.staticHashTable5.method149(var2);
+					var53 = (NodeSub18) Client.staticHashTable5.method149(var45);
 					if (var53 != null) {
 						staticMethod266(var53, var84 == null || var53.anInt384 != var84.anInt384);
 					}
 
 					if (var84 != null) {
 						var84.method174();
-						Game.staticHashTable5.method148(var84, var45);
+						Client.staticHashTable5.method148(var84, var45);
 					}
 
 					var70 = staticMethod8(var2);
@@ -19756,18 +19756,18 @@ public class Static {
 						staticMethod135(Widget.staticWidgetArrayArray1[var70.anInt294 >>> 16], var70, true);
 					}
 
-					if (Game.staticInt263 != -1) {
-						var6 = Game.staticInt263;
+					if (Client.staticInt263 != -1) {
+						var6 = Client.staticInt263;
 						if (staticMethod4(var6)) {
 							staticMethod280(Widget.staticWidgetArrayArray1[var6], 1);
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 81) {
+				if (Client.staticInt191 == 81) {
 					for (var45 = 0; var45 < Varp.staticInt323; var45++) {
 						Varp var83 = staticMethod119(var45);
 						if (var83 != null) {
@@ -19777,14 +19777,14 @@ public class Static {
 					}
 
 					staticMethod250();
-					Game.staticInt275 += 32;
-					Game.staticInt191 = -1;
+					Client.staticInt275 += 32;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				Widget var61;
-				if (Game.staticInt191 == 133) {
-					var45 = Game.staticEncryptedStream3.readInt();
+				if (Client.staticInt191 == 133) {
+					var45 = Client.staticEncryptedStream3.readInt();
 					var61 = staticMethod8(var45);
 
 					for (var3 = 0; var3 < var61.anIntArray76.length; var3++) {
@@ -19793,56 +19793,56 @@ public class Static {
 					}
 
 					staticMethod73(var61);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 86) {
-					var45 = Game.staticEncryptedStream3.method367();
-					if (Game.staticEncryptedStream3.method367() == 0) {
-						Game.staticClass61Array1[var45] = new Class61();
-						Game.staticEncryptedStream3.off += 18;
+				if (Client.staticInt191 == 86) {
+					var45 = Client.staticEncryptedStream3.method367();
+					if (Client.staticEncryptedStream3.method367() == 0) {
+						Client.staticClass61Array1[var45] = new Class61();
+						Client.staticEncryptedStream3.off += 18;
 					} else {
-						--Game.staticEncryptedStream3.off;
-						Game.staticClass61Array1[var45] = new Class61(Game.staticEncryptedStream3, false);
+						--Client.staticEncryptedStream3.off;
+						Client.staticClass61Array1[var45] = new Class61(Client.staticEncryptedStream3, false);
 					}
 
-					Game.staticInt295 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+					Client.staticInt295 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 151) {
+				if (Client.staticInt191 == 151) {
 					staticMethod250();
-					Game.staticInt267 = Game.staticEncryptedStream3.method367();
-					Game.staticInt283 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+					Client.staticInt267 = Client.staticEncryptedStream3.method367();
+					Client.staticInt283 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 35) {
+				if (Client.staticInt191 == 35) {
 					staticMethod398();
 
 					for (var45 = 0; var45 < 2048; var45++) {
-						Game.staticPlayerArray1[var45] = null;
+						Client.staticPlayerArray1[var45] = null;
 					}
 
-					staticMethod48(Game.staticEncryptedStream3);
-					Game.staticInt191 = -1;
+					staticMethod48(Client.staticEncryptedStream3);
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 166) {
-					while (Game.staticEncryptedStream3.off < Game.staticInt190) {
-						var45 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 166) {
+					while (Client.staticEncryptedStream3.off < Client.staticInt190) {
+						var45 = Client.staticEncryptedStream3.method367();
 						var49 = (var45 & 0x1) == 1;
-						var57 = Game.staticEncryptedStream3.method365();
-						String var88 = Game.staticEncryptedStream3.method365();
-						Game.staticEncryptedStream3.method365();
+						var57 = Client.staticEncryptedStream3.method365();
+						String var88 = Client.staticEncryptedStream3.method365();
+						Client.staticEncryptedStream3.method365();
 
 						Class7 var96;
-						for (var5 = 0; var5 < Game.staticInt310; var5++) {
-							var96 = Game.staticClass7Array1[var5];
+						for (var5 = 0; var5 < Client.staticInt310; var5++) {
+							var96 = Client.staticClass7Array1[var5];
 							if (var49) {
 								if (var88.equals(var96.aString5)) {
 									var96.aString5 = var57;
@@ -19858,36 +19858,36 @@ public class Static {
 							}
 						}
 
-						if (var57 != null && Game.staticInt310 < 400) {
+						if (var57 != null && Client.staticInt310 < 400) {
 							var96 = new Class7();
-							Game.staticClass7Array1[Game.staticInt310] = var96;
+							Client.staticClass7Array1[Client.staticInt310] = var96;
 							var96.aString5 = var57;
 							var96.aString4 = var88;
-							++Game.staticInt310;
+							++Client.staticInt310;
 						}
 					}
 
-					Game.staticInt280 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+					Client.staticInt280 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
 				int var27;
 				String var59;
-				if (Game.staticInt191 == 238) {
-					var1 = Game.staticEncryptedStream3.method365();
-					var12 = Game.staticEncryptedStream3.readLong();
-					var14 = Game.staticEncryptedStream3.method370();
-					var23 = Game.staticEncryptedStream3.readTriByte();
+				if (Client.staticInt191 == 238) {
+					var1 = Client.staticEncryptedStream3.method365();
+					var12 = Client.staticEncryptedStream3.readLong();
+					var14 = Client.staticEncryptedStream3.method370();
+					var23 = Client.staticEncryptedStream3.readTriByte();
 					Class48[] var95 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
 							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
 							Class48.staticClass48_3 };
-					Class48 var91 = (Class48) staticMethod233(var95, Game.staticEncryptedStream3.method367());
+					Class48 var91 = (Class48) staticMethod233(var95, Client.staticEncryptedStream3.method367());
 					var25 = (var14 << 32) + var23;
 					boolean var981 = false;
 
 					for (var27 = 0; var27 < 100; var27++) {
-						if (Game.staticLongArray3[var27] == var25) {
+						if (Client.staticLongArray3[var27] == var25) {
 							var981 = true;
 							break;
 						}
@@ -19897,10 +19897,10 @@ public class Static {
 						var981 = true;
 					}
 
-					if (!var981 && Game.staticInt245 == 0) {
-						Game.staticLongArray3[Game.staticInt293] = var25;
-						Game.staticInt293 = (Game.staticInt293 + 1) % 100;
-						var59 = staticMethod456(staticMethod265(staticMethod191(Game.staticEncryptedStream3)));
+					if (!var981 && Client.staticInt245 == 0) {
+						Client.staticLongArray3[Client.staticInt293] = var25;
+						Client.staticInt293 = (Client.staticInt293 + 1) % 100;
+						var59 = staticMethod456(staticMethod265(staticMethod191(Client.staticEncryptedStream3)));
 						if (var91.anInt192 != -1) {
 							staticMethod224(9, staticMethod123(var91.anInt192) + var1, var59, staticMethod182(var12));
 						} else {
@@ -19908,159 +19908,159 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 51) {
-					var45 = Game.staticEncryptedStream3.method354();
-					var62 = Game.staticEncryptedStream3.method365();
+				if (Client.staticInt191 == 51) {
+					var45 = Client.staticEncryptedStream3.method354();
+					var62 = Client.staticEncryptedStream3.method365();
 					var47 = staticMethod8(var45);
 					if (!var62.equals(var47.aString20)) {
 						var47.aString20 = var62;
 						staticMethod73(var47);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 204) {
-					var45 = Game.staticEncryptedStream3.method362();
+				if (Client.staticInt191 == 204) {
+					var45 = Client.staticEncryptedStream3.method362();
 					var61 = staticMethod8(var45);
 					var61.anInt348 = 3;
 					var61.anInt295 = AbstractClass2Sub1.staticPlayer1.aClass49_1.method250();
 					staticMethod73(var61);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 140) {
-					var45 = Game.staticEncryptedStream3.method353();
+				if (Client.staticInt191 == 140) {
+					var45 = Client.staticEncryptedStream3.method353();
 					if (var45 == '\uffff') {
 						var45 = -1;
 					}
 
-					var2 = Game.staticEncryptedStream3.method362();
-					var3 = Game.staticEncryptedStream3.readInt();
-					var48 = Game.staticEncryptedStream3.method370();
+					var2 = Client.staticEncryptedStream3.method362();
+					var3 = Client.staticEncryptedStream3.readInt();
+					var48 = Client.staticEncryptedStream3.method370();
 					if (var48 == '\uffff') {
 						var48 = -1;
 					}
 
 					for (var5 = var48; var5 <= var45; var5++) {
 						var23 = ((long) var2 << 32) + var5;
-						Node var94 = Game.staticHashTable6.method149(var23);
+						Node var94 = Client.staticHashTable6.method149(var23);
 						if (var94 != null) {
 							var94.method174();
 						}
 
-						Game.staticHashTable6.method148(new NodeSub15(var3), var23);
+						Client.staticHashTable6.method148(new NodeSub15(var3), var23);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 77) {
+				if (Client.staticInt191 == 77) {
 					staticMethod294(true);
-					Game.staticEncryptedStream3.method472();
-					var45 = Game.staticEncryptedStream3.method370();
-					staticMethod313(Game.staticEncryptedStream3, var45);
-					Game.staticInt191 = -1;
+					Client.staticEncryptedStream3.method472();
+					var45 = Client.staticEncryptedStream3.method370();
+					staticMethod313(Client.staticEncryptedStream3, var45);
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 176) {
-					var45 = Game.staticEncryptedStream3.readInt();
-					NodeSub18 var931 = (NodeSub18) Game.staticHashTable5.method149(var45);
+				if (Client.staticInt191 == 176) {
+					var45 = Client.staticEncryptedStream3.readInt();
+					NodeSub18 var931 = (NodeSub18) Client.staticHashTable5.method149(var45);
 					if (var931 != null) {
 						staticMethod266(var931, true);
 					}
 
-					if (Game.staticWidget6 != null) {
-						staticMethod73(Game.staticWidget6);
-						Game.staticWidget6 = null;
+					if (Client.staticWidget6 != null) {
+						staticMethod73(Client.staticWidget6);
+						Client.staticWidget6 = null;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 32) {
-					Game.staticInt202 = 1;
-					Game.staticInt280 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 32) {
+					Client.staticInt202 = 1;
+					Client.staticInt280 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 99) {
-					Game.staticInt296 = Game.staticEncryptedStream3.method367();
-					if (Game.staticInt296 == 255) {
-						Game.staticInt296 = 0;
+				if (Client.staticInt191 == 99) {
+					Client.staticInt296 = Client.staticEncryptedStream3.method367();
+					if (Client.staticInt296 == 255) {
+						Client.staticInt296 = 0;
 					}
 
-					Game.staticInt240 = Game.staticEncryptedStream3.method367();
-					if (Game.staticInt240 == 255) {
-						Game.staticInt240 = 0;
+					Client.staticInt240 = Client.staticEncryptedStream3.method367();
+					if (Client.staticInt240 == 255) {
+						Client.staticInt240 = 0;
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 190) {
+				if (Client.staticInt191 == 190) {
 					staticMethod250();
-					var45 = Game.staticEncryptedStream3.method378();
-					var2 = Game.staticEncryptedStream3.method348();
-					var3 = Game.staticEncryptedStream3.method346();
-					Game.staticIntArray108[var3] = var45;
-					Game.staticIntArray91[var3] = var2;
-					Game.staticIntArray96[var3] = 1;
+					var45 = Client.staticEncryptedStream3.method378();
+					var2 = Client.staticEncryptedStream3.method348();
+					var3 = Client.staticEncryptedStream3.method346();
+					Client.staticIntArray108[var3] = var45;
+					Client.staticIntArray91[var3] = var2;
+					Client.staticIntArray96[var3] = 1;
 
 					for (var48 = 0; var48 < 98; var48++) {
 						if (var45 >= staticIntArray60[var48]) {
-							Game.staticIntArray96[var3] = var48 + 2;
+							Client.staticIntArray96[var3] = var48 + 2;
 						}
 					}
 
-					Game.staticIntArray105[++Game.staticInt278 - 1 & 0x1f] = var3;
-					Game.staticInt191 = -1;
+					Client.staticIntArray105[++Client.staticInt278 - 1 & 0x1f] = var3;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 76) {
-					var45 = Game.staticEncryptedStream3.method370();
-					var2 = Game.staticEncryptedStream3.method367();
-					var3 = Game.staticEncryptedStream3.method354();
-					var53 = (NodeSub18) Game.staticHashTable5.method149(var3);
+				if (Client.staticInt191 == 76) {
+					var45 = Client.staticEncryptedStream3.method370();
+					var2 = Client.staticEncryptedStream3.method367();
+					var3 = Client.staticEncryptedStream3.method354();
+					var53 = (NodeSub18) Client.staticHashTable5.method149(var3);
 					if (var53 != null) {
 						staticMethod266(var53, var53.anInt384 != var45);
 					}
 
 					staticMethod315(var3, var45, var2);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 136) {
-					Game.staticInt281 = Game.staticInt274 * 2073400987;
-					if (Game.staticInt190 == 0) {
-						Game.staticString34 = null;
-						Game.staticString29 = null;
+				if (Client.staticInt191 == 136) {
+					Client.staticInt281 = Client.staticInt274 * 2073400987;
+					if (Client.staticInt190 == 0) {
+						Client.staticString34 = null;
+						Client.staticString29 = null;
 						staticInt149 = 0;
 						Class43.staticNodeSub1Array1 = null;
-						Game.staticInt191 = -1;
+						Client.staticInt191 = -1;
 						return true;
 					}
 
-					Game.staticString29 = Game.staticEncryptedStream3.method365();
-					long var92 = Game.staticEncryptedStream3.readLong();
-					Game.staticString34 = staticMethod5(var92);
-					staticByte1 = Game.staticEncryptedStream3.readByte();
-					var3 = Game.staticEncryptedStream3.method367();
+					Client.staticString29 = Client.staticEncryptedStream3.method365();
+					long var92 = Client.staticEncryptedStream3.readLong();
+					Client.staticString34 = staticMethod5(var92);
+					staticByte1 = Client.staticEncryptedStream3.readByte();
+					var3 = Client.staticEncryptedStream3.method367();
 					if (var3 == 255) {
-						Game.staticInt191 = -1;
+						Client.staticInt191 = -1;
 						return true;
 					}
 
@@ -20069,11 +20069,11 @@ public class Static {
 
 					for (var5 = 0; var5 < staticInt149; var5++) {
 						var97[var5] = new NodeSub1();
-						var97[var5].aString15 = Game.staticEncryptedStream3.method365();
+						var97[var5].aString15 = Client.staticEncryptedStream3.method365();
 						var97[var5].aString16 = staticMethod111(var97[var5].aString15, staticClass53_1);
-						var97[var5].anInt217 = Game.staticEncryptedStream3.method370();
-						var97[var5].aByte3 = Game.staticEncryptedStream3.readByte();
-						Game.staticEncryptedStream3.method365();
+						var97[var5].anInt217 = Client.staticEncryptedStream3.method370();
+						var97[var5].aByte3 = Client.staticEncryptedStream3.readByte();
+						Client.staticEncryptedStream3.method365();
 						if (var97[var5].aString15.equals(AbstractClass2Sub1.staticPlayer1.aString40)) {
 							staticByte3 = var97[var5].aByte3;
 						}
@@ -20101,32 +20101,32 @@ public class Static {
 					}
 
 					Class43.staticNodeSub1Array1 = var97;
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 8) {
-					staticInt122 = Game.staticEncryptedStream3.method348();
-					ChatMessage.staticInt331 = Game.staticEncryptedStream3.method346();
+				if (Client.staticInt191 == 8) {
+					staticInt122 = Client.staticEncryptedStream3.method348();
+					ChatMessage.staticInt331 = Client.staticEncryptedStream3.method346();
 
-					while (Game.staticEncryptedStream3.off < Game.staticInt190) {
-						Game.staticInt191 = Game.staticEncryptedStream3.method367();
+					while (Client.staticEncryptedStream3.off < Client.staticInt190) {
+						Client.staticInt191 = Client.staticEncryptedStream3.method367();
 						staticMethod345();
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 89) {
-					staticMethod313(Game.staticEncryptedStream3, Game.staticInt190);
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 89) {
+					staticMethod313(Client.staticEncryptedStream3, Client.staticInt190);
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 132) {
-					var45 = Game.staticEncryptedStream3.method372();
-					var2 = Game.staticEncryptedStream3.method362();
+				if (Client.staticInt191 == 132) {
+					var45 = Client.staticEncryptedStream3.method372();
+					var2 = Client.staticEncryptedStream3.method362();
 					var47 = staticMethod8(var2);
 					if (var47.anInt348 != 2 || var47.anInt295 != var45) {
 						var47.anInt348 = 2;
@@ -20134,83 +20134,83 @@ public class Static {
 						staticMethod73(var47);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 127) {
-					staticMethod476(Game.staticEncryptedStream3.method365());
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 127) {
+					staticMethod476(Client.staticEncryptedStream3.method365());
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 161) {
-					Game.staticInt255 = Game.staticEncryptedStream3.method367();
-					if (Game.staticInt255 == 1) {
-						Game.staticInt172 = Game.staticEncryptedStream3.method370();
+				if (Client.staticInt191 == 161) {
+					Client.staticInt255 = Client.staticEncryptedStream3.method367();
+					if (Client.staticInt255 == 1) {
+						Client.staticInt172 = Client.staticEncryptedStream3.method370();
 					}
 
-					if (Game.staticInt255 >= 2 && Game.staticInt255 <= 6) {
-						if (Game.staticInt255 == 2) {
-							Game.staticInt177 = 64;
-							Game.staticInt178 = 64;
+					if (Client.staticInt255 >= 2 && Client.staticInt255 <= 6) {
+						if (Client.staticInt255 == 2) {
+							Client.staticInt177 = 64;
+							Client.staticInt178 = 64;
 						}
 
-						if (Game.staticInt255 == 3) {
-							Game.staticInt177 = 0;
-							Game.staticInt178 = 64;
+						if (Client.staticInt255 == 3) {
+							Client.staticInt177 = 0;
+							Client.staticInt178 = 64;
 						}
 
-						if (Game.staticInt255 == 4) {
-							Game.staticInt177 = 128;
-							Game.staticInt178 = 64;
+						if (Client.staticInt255 == 4) {
+							Client.staticInt177 = 128;
+							Client.staticInt178 = 64;
 						}
 
-						if (Game.staticInt255 == 5) {
-							Game.staticInt177 = 64;
-							Game.staticInt178 = 0;
+						if (Client.staticInt255 == 5) {
+							Client.staticInt177 = 64;
+							Client.staticInt178 = 0;
 						}
 
-						if (Game.staticInt255 == 6) {
-							Game.staticInt177 = 64;
-							Game.staticInt178 = 128;
+						if (Client.staticInt255 == 6) {
+							Client.staticInt177 = 64;
+							Client.staticInt178 = 128;
 						}
 
-						Game.staticInt255 = 2;
-						Game.staticInt174 = Game.staticEncryptedStream3.method370();
-						Game.staticInt175 = Game.staticEncryptedStream3.method370();
-						Game.staticInt176 = Game.staticEncryptedStream3.method367();
+						Client.staticInt255 = 2;
+						Client.staticInt174 = Client.staticEncryptedStream3.method370();
+						Client.staticInt175 = Client.staticEncryptedStream3.method370();
+						Client.staticInt176 = Client.staticEncryptedStream3.method367();
 					}
 
-					if (Game.staticInt255 == 10) {
-						Game.staticInt193 = Game.staticEncryptedStream3.method370();
+					if (Client.staticInt255 == 10) {
+						Client.staticInt193 = Client.staticEncryptedStream3.method370();
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 178) {
-					var45 = Game.staticEncryptedStream3.method354();
+				if (Client.staticInt191 == 178) {
+					var45 = Client.staticEncryptedStream3.method354();
 					KeyboardHandler.staticTask2 = BufferedFile.staticTaskManager1.method95(var45);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 2) {
-					var45 = Game.staticEncryptedStream3.method354();
-					var2 = Game.staticEncryptedStream3.method353();
+				if (Client.staticInt191 == 2) {
+					var45 = Client.staticEncryptedStream3.method354();
+					var2 = Client.staticEncryptedStream3.method353();
 					if (var2 == '\uffff') {
 						var2 = -1;
 					}
 
-					var3 = Game.staticEncryptedStream3.method378();
+					var3 = Client.staticEncryptedStream3.method378();
 					var4 = staticMethod8(var45);
 					ItemDefinition var891;
 					if (!var4.aBool42) {
 						if (var2 == -1) {
 							var4.anInt348 = 0;
-							Game.staticInt191 = -1;
+							Client.staticInt191 = -1;
 							return true;
 						}
 
@@ -20246,25 +20246,25 @@ public class Static {
 						staticMethod73(var4);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 124) {
-					if (Game.staticInt263 != -1) {
-						var45 = Game.staticInt263;
+				if (Client.staticInt191 == 124) {
+					if (Client.staticInt263 != -1) {
+						var45 = Client.staticInt263;
 						if (staticMethod4(var45)) {
 							staticMethod280(Widget.staticWidgetArrayArray1[var45], 0);
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 158) {
-					EncryptedStream var87 = Game.staticEncryptedStream3;
-					var2 = Game.staticInt190;
+				if (Client.staticInt191 == 158) {
+					EncryptedStream var87 = Client.staticEncryptedStream3;
+					var2 = Client.staticInt190;
 					NodeSub17 var50 = new NodeSub17();
 					var50.anInt367 = var87.method367();
 					var50.anInt366 = var87.readInt();
@@ -20368,33 +20368,33 @@ public class Static {
 					}
 
 					staticClass36_1.method165(var50);
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 31) {
-					Game.staticInt170 = Game.staticEncryptedStream3.method370() * 30;
-					Game.staticInt283 = Game.staticInt274 * 2073400987;
-					Game.staticInt191 = -1;
+				if (Client.staticInt191 == 31) {
+					Client.staticInt170 = Client.staticEncryptedStream3.method370() * 30;
+					Client.staticInt283 = Client.staticInt274 * 2073400987;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 194) {
-					var45 = Game.staticEncryptedStream3.method378();
-					var49 = Game.staticEncryptedStream3.method377() == 1;
+				if (Client.staticInt191 == 194) {
+					var45 = Client.staticEncryptedStream3.method378();
+					var49 = Client.staticEncryptedStream3.method377() == 1;
 					var47 = staticMethod8(var45);
 					if (var49 != var47.aBool32) {
 						var47.aBool32 = var49;
 						staticMethod73(var47);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 123) {
-					var45 = Game.staticEncryptedStream3.readInt();
-					var2 = Game.staticEncryptedStream3.method355();
+				if (Client.staticInt191 == 123) {
+					var45 = Client.staticEncryptedStream3.readInt();
+					var2 = Client.staticEncryptedStream3.method355();
 					var3 = var2 >> 10 & 0x1f;
 					var48 = var2 >> 5 & 0x1f;
 					var5 = var2 & 0x1f;
@@ -20405,13 +20405,13 @@ public class Static {
 						staticMethod73(var7);
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 79) {
-					var45 = Game.staticEncryptedStream3.readInt();
-					var2 = Game.staticEncryptedStream3.method370();
+				if (Client.staticInt191 == 79) {
+					var45 = Client.staticEncryptedStream3.readInt();
+					var2 = Client.staticEncryptedStream3.method370();
 					if (var45 < -70000) {
 						var2 += '\u8000';
 					}
@@ -20422,15 +20422,15 @@ public class Static {
 						var47 = null;
 					}
 
-					for (; Game.staticEncryptedStream3.off < Game.staticInt190; staticMethod104(var2, var48, var5 - 1,
+					for (; Client.staticEncryptedStream3.off < Client.staticInt190; staticMethod104(var2, var48, var5 - 1,
 							var6)) {
-						var48 = Game.staticEncryptedStream3.method379();
-						var5 = Game.staticEncryptedStream3.method370();
+						var48 = Client.staticEncryptedStream3.method379();
+						var5 = Client.staticEncryptedStream3.method370();
 						var6 = 0;
 						if (var5 != 0) {
-							var6 = Game.staticEncryptedStream3.method367();
+							var6 = Client.staticEncryptedStream3.method367();
 							if (var6 == 255) {
-								var6 = Game.staticEncryptedStream3.readInt();
+								var6 = Client.staticEncryptedStream3.readInt();
 							}
 						}
 
@@ -20445,15 +20445,15 @@ public class Static {
 					}
 
 					staticMethod250();
-					Game.staticIntArray86[++Game.staticInt276 - 1 & 0x1f] = var2 & 0x7fff;
-					Game.staticInt191 = -1;
+					Client.staticIntArray86[++Client.staticInt276 - 1 & 0x1f] = var2 & 0x7fff;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				if (Game.staticInt191 == 56) {
-					var45 = Game.staticEncryptedStream3.method354();
-					var2 = Game.staticEncryptedStream3.method364();
-					var3 = Game.staticEncryptedStream3.method364();
+				if (Client.staticInt191 == 56) {
+					var45 = Client.staticEncryptedStream3.method354();
+					var2 = Client.staticEncryptedStream3.method364();
+					var3 = Client.staticEncryptedStream3.method364();
 					var4 = staticMethod8(var45);
 					if (var4.anInt302 != var3 || var4.anInt303 != var2 || var4.anInt299 != 0 || var4.anInt300 != 0) {
 						var4.anInt302 = var3;
@@ -20467,25 +20467,25 @@ public class Static {
 						}
 					}
 
-					Game.staticInt191 = -1;
+					Client.staticInt191 = -1;
 					return true;
 				}
 
-				staticMethod285(Game.staticInt191 + staticString11 + -Game.staticInt194 + staticString11
-						+ -Game.staticInt195 + staticString11 + Game.staticInt190, (Throwable) null);
+				staticMethod285(Client.staticInt191 + staticString11 + -Client.staticInt194 + staticString11
+						+ -Client.staticInt195 + staticString11 + Client.staticInt190, (Throwable) null);
 				staticMethod87();
 			} catch (IOException var571) {
 				staticMethod329();
 			} catch (Exception var581) {
-				var1 = Game.staticInt191 + staticString11 + -Game.staticInt194 + staticString11
-						+ -Game.staticInt195 + staticString11 + Game.staticInt190 + staticString11
+				var1 = Client.staticInt191 + staticString11 + -Client.staticInt194 + staticString11
+						+ -Client.staticInt195 + staticString11 + Client.staticInt190 + staticString11
 						+ (AbstractClass2Sub1.staticPlayer1.anIntArray127[0] + NodeSub3.staticInt154)
 						+ staticString11
 						+ (Class34.staticInt75 + AbstractClass2Sub1.staticPlayer1.anIntArray122[0])
 						+ staticString11;
 
-				for (var2 = 0; var2 < Game.staticInt190 && var2 < 50; var2++) {
-					var1 = var1 + Game.staticEncryptedStream3.buf[var2] + staticString11;
+				for (var2 = 0; var2 < Client.staticInt190 && var2 < 50; var2++) {
+					var1 = var1 + Client.staticEncryptedStream3.buf[var2] + staticString11;
 				}
 
 				staticMethod285(var1, var581);
@@ -20497,21 +20497,21 @@ public class Static {
 	}
 
 	static void staticMethod311(int var0, int var1, int var2) {
-		if (Game.staticInt300 * 127 != 0 && var1 != 0 && Game.staticInt236 < 50) {
-			Game.staticIntArray114[Game.staticInt236] = var0;
-			Game.staticIntArray115[Game.staticInt236] = var1;
-			Game.staticIntArray116[Game.staticInt236] = var2;
-			Game.staticClass9Array1[Game.staticInt236] = null;
-			Game.staticIntArray117[Game.staticInt236] = 0;
-			++Game.staticInt236;
+		if (Client.staticInt300 * 127 != 0 && var1 != 0 && Client.staticInt236 < 50) {
+			Client.staticIntArray114[Client.staticInt236] = var0;
+			Client.staticIntArray115[Client.staticInt236] = var1;
+			Client.staticIntArray116[Client.staticInt236] = var2;
+			Client.staticClass9Array1[Client.staticInt236] = null;
+			Client.staticIntArray117[Client.staticInt236] = 0;
+			++Client.staticInt236;
 		}
 
 	}
 
 	static final void staticMethod312(Class59 var0) {
-		if (Game.staticInt296 == AbstractClass2Sub1.staticPlayer1.anInt628 >> 7
-				&& Game.staticInt240 == AbstractClass2Sub1.staticPlayer1.anInt591 >> 7) {
-			Game.staticInt296 = 0;
+		if (Client.staticInt296 == AbstractClass2Sub1.staticPlayer1.anInt628 >> 7
+				&& Client.staticInt240 == AbstractClass2Sub1.staticPlayer1.anInt591 >> 7) {
+			Client.staticInt296 = 0;
 		}
 
 		int var4 = staticInt24;
@@ -20528,19 +20528,19 @@ public class Static {
 				var6 = AbstractClass2Sub1.staticPlayer1;
 				var3 = AbstractClass2Sub1.staticPlayer1.anInt686 << 14;
 			} else if (Class59.staticClass59_3 == var0) {
-				var6 = Game.staticPlayerArray1[Game.staticInt229];
-				var3 = Game.staticInt229 << 14;
+				var6 = Client.staticPlayerArray1[Client.staticInt229];
+				var3 = Client.staticInt229 << 14;
 			} else {
-				var6 = Game.staticPlayerArray1[var1[var2]];
+				var6 = Client.staticPlayerArray1[var1[var2]];
 				var3 = var1[var2] << 14;
-				if (var0 == Class59.staticClass59_4 && Game.staticInt229 == var1[var2]) {
+				if (var0 == Class59.staticClass59_4 && Client.staticInt229 == var1[var2]) {
 					continue;
 				}
 			}
 
 			if (var6 != null && var6.method565() && !var6.aBool81) {
 				var6.aBool83 = false;
-				if ((Game.staticBool27 && var4 > 50 || var4 > 200) && Class59.staticClass59_1 != var0
+				if ((Client.staticBool27 && var4 > 50 || var4 > 200) && Class59.staticClass59_1 != var0
 						&& var6.anInt594 == var6.anInt590) {
 					var6.aBool83 = true;
 				}
@@ -20548,8 +20548,8 @@ public class Static {
 				int var7 = var6.anInt628 >> 7;
 				int var8 = var6.anInt591 >> 7;
 				if (var7 >= 0 && var7 < 104 && var8 >= 0 && var8 < 104) {
-					if (var6.aModel1 != null && Game.staticInt166 >= var6.anInt688
-							&& Game.staticInt166 < var6.anInt699) {
+					if (var6.aModel1 != null && Client.staticInt166 >= var6.anInt688
+							&& Client.staticInt166 < var6.anInt699) {
 						var6.aBool83 = false;
 						var6.anInt687 = staticMethod240(var6.anInt628, var6.anInt591, NodeSub4.staticInt155);
 						Friend.staticScene1.method133(NodeSub4.staticInt155, var6.anInt628, var6.anInt591,
@@ -20557,11 +20557,11 @@ public class Static {
 								var6.anInt694, var6.anInt695);
 					} else {
 						if ((var6.anInt628 & 0x7f) == 64 && (var6.anInt591 & 0x7f) == 64) {
-							if (Game.staticInt292 == Game.staticIntArrayArray9[var7][var8]) {
+							if (Client.staticInt292 == Client.staticIntArrayArray9[var7][var8]) {
 								continue;
 							}
 
-							Game.staticIntArrayArray9[var7][var8] = Game.staticInt292;
+							Client.staticIntArrayArray9[var7][var8] = Client.staticInt292;
 						}
 
 						var6.anInt687 = staticMethod240(var6.anInt628, var6.anInt591, NodeSub4.staticInt155);
@@ -20630,20 +20630,20 @@ public class Static {
 		NodeSub18 var3 = new NodeSub18();
 		var3.anInt384 = var1;
 		var3.anInt383 = var2;
-		Game.staticHashTable5.method148(var3, var0);
+		Client.staticHashTable5.method148(var3, var0);
 		staticMethod393(var1);
 		Widget var4 = staticMethod8(var0);
 		staticMethod73(var4);
-		if (Game.staticWidget6 != null) {
-			staticMethod73(Game.staticWidget6);
-			Game.staticWidget6 = null;
+		if (Client.staticWidget6 != null) {
+			staticMethod73(Client.staticWidget6);
+			Client.staticWidget6 = null;
 		}
 
 		staticMethod253();
 		staticMethod135(Widget.staticWidgetArrayArray1[var0 >> 16], var4, false);
 		staticMethod2(var1);
-		if (Game.staticInt263 != -1) {
-			int var5 = Game.staticInt263;
+		if (Client.staticInt263 != -1) {
+			int var5 = Client.staticInt263;
 			if (staticMethod4(var5)) {
 				staticMethod280(Widget.staticWidgetArrayArray1[var5], 1);
 			}
@@ -20654,9 +20654,9 @@ public class Static {
 
 	static final void staticMethod316(String var0) {
 		if (Class43.staticNodeSub1Array1 != null) {
-			Game.staticEncryptedStream1.method471(214);
-			Game.staticEncryptedStream1.writeByte(staticMethod378(var0));
-			Game.staticEncryptedStream1.method323(var0);
+			Client.staticEncryptedStream1.method471(214);
+			Client.staticEncryptedStream1.writeByte(staticMethod378(var0));
+			Client.staticEncryptedStream1.method323(var0);
 		}
 
 	}
@@ -20676,7 +20676,7 @@ public class Static {
 			staticRasterizer2DSub3Array4 = null;
 			AbstractClass3Sub1.staticRasterizer2DSub3Array6 = null;
 			RenderableSub2.staticRasterizer2DSub3Array8 = null;
-			Game.staticRasterizer2DSub3_5 = null;
+			Client.staticRasterizer2DSub3_5 = null;
 			staticIntArray67 = null;
 			staticIntArray61 = null;
 			staticIntArray3 = null;
@@ -20786,9 +20786,9 @@ public class Static {
 	}
 
 	static final void staticMethod324(Actor var0, int var1) {
-		if (var0.anInt625 > Game.staticInt166) {
+		if (var0.anInt625 > Client.staticInt166) {
 			staticMethod81(var0);
-		} else if (var0.anInt604 >= Game.staticInt166) {
+		} else if (var0.anInt604 >= Client.staticInt166) {
 			staticMethod126(var0);
 		} else {
 			staticMethod472(var0);
@@ -20819,9 +20819,9 @@ public class Static {
 			if (var0.anInt600 != -1) {
 				Object var5 = null;
 				if (var0.anInt600 < '\u8000') {
-					var5 = Game.staticNpcArray1[var0.anInt600];
+					var5 = Client.staticNpcArray1[var0.anInt600];
 				} else if (var0.anInt600 >= '\u8000') {
-					var5 = Game.staticPlayerArray1[var0.anInt600 - '\u8000'];
+					var5 = Client.staticPlayerArray1[var0.anInt600 - '\u8000'];
 				}
 
 				if (var5 != null) {
@@ -21014,12 +21014,12 @@ public class Static {
 	}
 
 	static final void staticMethod327(int var0, int var1, int var2, int var3) {
-		for (int var4 = 0; var4 < Game.staticInt162; var4++) {
-			if (Game.staticIntArray107[var4] + Game.staticIntArray82[var4] > var0
-					&& Game.staticIntArray82[var4] < var0 + var2
-					&& Game.staticIntArray88[var4] + Game.staticIntArray106[var4] > var1
-					&& Game.staticIntArray88[var4] < var1 + var3) {
-				Game.staticBoolArray8[var4] = true;
+		for (int var4 = 0; var4 < Client.staticInt162; var4++) {
+			if (Client.staticIntArray107[var4] + Client.staticIntArray82[var4] > var0
+					&& Client.staticIntArray82[var4] < var0 + var2
+					&& Client.staticIntArray88[var4] + Client.staticIntArray106[var4] > var1
+					&& Client.staticIntArray88[var4] < var1 + var3) {
+				Client.staticBoolArray8[var4] = true;
 			}
 		}
 
@@ -21118,9 +21118,9 @@ public class Static {
 
 	static final void staticMethod279(String var0) {
 		if (!var0.equals("")) {
-			Game.staticEncryptedStream1.method471(164);
-			Game.staticEncryptedStream1.writeByte(staticMethod378(var0));
-			Game.staticEncryptedStream1.method323(var0);
+			Client.staticEncryptedStream1.method471(164);
+			Client.staticEncryptedStream1.writeByte(staticMethod378(var0));
+			Client.staticEncryptedStream1.method323(var0);
 		}
 
 	}
@@ -21134,7 +21134,7 @@ public class Static {
 						staticMethod280(var3.aWidgetArray1, var1);
 					}
 
-					NodeSub18 var6 = (NodeSub18) Game.staticHashTable5.method149(var3.anInt294);
+					NodeSub18 var6 = (NodeSub18) Client.staticHashTable5.method149(var3.anInt294);
 					if (var6 != null) {
 						int var7 = var6.anInt384;
 						if (staticMethod4(var7)) {
@@ -21176,25 +21176,25 @@ public class Static {
 		boolean var6 = false;
 
 		for (int var4 = 0; var4 < var2; var4++) {
-			Player var3 = Game.staticPlayerArray1[var5[var4]];
+			Player var3 = Client.staticPlayerArray1[var5[var4]];
 			if (var3 != null && var3 != AbstractClass2Sub1.staticPlayer1 && var3.aString40 != null
 					&& var3.aString40.equalsIgnoreCase(var1)) {
 				if (var0 == 1) {
-					Game.staticEncryptedStream1.method471(197);
-					Game.staticEncryptedStream1.method351(var5[var4]);
-					Game.staticEncryptedStream1.method343(0);
+					Client.staticEncryptedStream1.method471(197);
+					Client.staticEncryptedStream1.method351(var5[var4]);
+					Client.staticEncryptedStream1.method343(0);
 				} else if (var0 == 4) {
-					Game.staticEncryptedStream1.method471(98);
-					Game.staticEncryptedStream1.method343(0);
-					Game.staticEncryptedStream1.method369(var5[var4]);
+					Client.staticEncryptedStream1.method471(98);
+					Client.staticEncryptedStream1.method343(0);
+					Client.staticEncryptedStream1.method369(var5[var4]);
 				} else if (var0 == 6) {
-					Game.staticEncryptedStream1.method471(240);
-					Game.staticEncryptedStream1.method343(0);
-					Game.staticEncryptedStream1.method351(var5[var4]);
+					Client.staticEncryptedStream1.method471(240);
+					Client.staticEncryptedStream1.method343(0);
+					Client.staticEncryptedStream1.method351(var5[var4]);
 				} else if (var0 == 7) {
-					Game.staticEncryptedStream1.method471(101);
-					Game.staticEncryptedStream1.method351(var5[var4]);
-					Game.staticEncryptedStream1.writeByte(0);
+					Client.staticEncryptedStream1.method471(101);
+					Client.staticEncryptedStream1.method351(var5[var4]);
+					Client.staticEncryptedStream1.writeByte(0);
 				}
 
 				var6 = true;
@@ -21238,27 +21238,27 @@ public class Static {
 		int var14;
 		int var15;
 		int var18;
-		if (Game.staticInt191 == 97) {
-			var14 = Game.staticEncryptedStream3.method355();
-			var2 = Game.staticEncryptedStream3.method353();
-			var3 = Game.staticEncryptedStream3.method370();
-			byte var29 = Game.staticEncryptedStream3.method350();
-			var4 = Game.staticEncryptedStream3.method353();
-			byte var31 = Game.staticEncryptedStream3.method368();
-			byte var35 = Game.staticEncryptedStream3.method368();
-			byte var37 = Game.staticEncryptedStream3.method349();
-			var10 = Game.staticEncryptedStream3.method346();
+		if (Client.staticInt191 == 97) {
+			var14 = Client.staticEncryptedStream3.method355();
+			var2 = Client.staticEncryptedStream3.method353();
+			var3 = Client.staticEncryptedStream3.method370();
+			byte var29 = Client.staticEncryptedStream3.method350();
+			var4 = Client.staticEncryptedStream3.method353();
+			byte var31 = Client.staticEncryptedStream3.method368();
+			byte var35 = Client.staticEncryptedStream3.method368();
+			byte var37 = Client.staticEncryptedStream3.method349();
+			var10 = Client.staticEncryptedStream3.method346();
 			var15 = staticInt122 + (var10 >> 4 & 0x7);
 			var18 = (var10 & 0x7) + ChatMessage.staticInt331;
-			var8 = Game.staticEncryptedStream3.method377();
+			var8 = Client.staticEncryptedStream3.method377();
 			var9 = var8 >> 2;
 			int var36 = var8 & 0x3;
-			int var34 = Game.staticIntArray84[var9];
+			int var34 = Client.staticIntArray84[var9];
 			Player var7;
-			if (Game.staticInt246 == var2) {
+			if (Client.staticInt246 == var2) {
 				var7 = AbstractClass2Sub1.staticPlayer1;
 			} else {
-				var7 = Game.staticPlayerArray1[var2];
+				var7 = Client.staticPlayerArray1[var2];
 			}
 
 			if (var7 != null) {
@@ -21284,8 +21284,8 @@ public class Static {
 				Model var26 = var12.method519(var9, var36, var24, var21, var25, var22);
 				if (var26 != null) {
 					staticMethod110(NodeSub4.staticInt155, var15, var18, var34, -1, 0, 0, 1 + var4, 1 + var14);
-					var7.anInt688 = var4 + Game.staticInt166;
-					var7.anInt699 = Game.staticInt166 + var14;
+					var7.anInt688 = var4 + Client.staticInt166;
+					var7.anInt699 = Client.staticInt166 + var14;
 					var7.aModel1 = var26;
 					var7.anInt690 = var15 * 128 + var13 * 64;
 					var7.anInt696 = var19 * 64 + var18 * 128;
@@ -21315,13 +21315,13 @@ public class Static {
 		int var30;
 		int var311;
 		int var32;
-		if (Game.staticInt191 == 29) {
-			var14 = Game.staticEncryptedStream3.method353();
-			var2 = Game.staticEncryptedStream3.method367();
+		if (Client.staticInt191 == 29) {
+			var14 = Client.staticEncryptedStream3.method353();
+			var2 = Client.staticEncryptedStream3.method367();
 			var3 = var2 >> 2;
 			var32 = var2 & 0x3;
-			var4 = Game.staticIntArray84[var3];
-			var311 = Game.staticEncryptedStream3.method367();
+			var4 = Client.staticIntArray84[var3];
+			var311 = Client.staticEncryptedStream3.method367();
 			var291 = (var311 >> 4 & 0x7) + staticInt122;
 			var30 = ChatMessage.staticInt331 + (var311 & 0x7);
 			if (var291 >= 0 && var30 >= 0 && var291 < 103 && var30 < 103) {
@@ -21385,15 +21385,15 @@ public class Static {
 					}
 				}
 			}
-		} else if (Game.staticInt191 == 23) {
-			var14 = Game.staticEncryptedStream3.method367();
+		} else if (Client.staticInt191 == 23) {
+			var14 = Client.staticEncryptedStream3.method367();
 			var2 = staticInt122 + (var14 >> 4 & 0x7);
 			var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-			var32 = Game.staticEncryptedStream3.method370();
-			var4 = Game.staticEncryptedStream3.method370();
-			var311 = Game.staticEncryptedStream3.method370();
+			var32 = Client.staticEncryptedStream3.method370();
+			var4 = Client.staticEncryptedStream3.method370();
+			var311 = Client.staticEncryptedStream3.method370();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
-				Class39 var38 = Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
+				Class39 var38 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 				if (var38 != null) {
 					for (Item var361 = (Item) var38.method195(); var361 != null; var361 = (Item) var38.method193()) {
 						if ((var32 & 0x7fff) == var361.anInt573 && var4 == var361.anInt574) {
@@ -21405,20 +21405,20 @@ public class Static {
 					staticMethod262(var2, var3);
 				}
 			}
-		} else if (Game.staticInt191 == 73) {
-			var14 = Game.staticEncryptedStream3.method367();
+		} else if (Client.staticInt191 == 73) {
+			var14 = Client.staticEncryptedStream3.method367();
 			var2 = (var14 >> 4 & 0x7) + staticInt122;
 			var3 = (var14 & 0x7) + ChatMessage.staticInt331;
-			var32 = var2 + Game.staticEncryptedStream3.readByte();
-			var4 = var3 + Game.staticEncryptedStream3.readByte();
-			var311 = Game.staticEncryptedStream3.method364();
-			var291 = Game.staticEncryptedStream3.method370();
-			var30 = Game.staticEncryptedStream3.method367() * 4;
-			var10 = Game.staticEncryptedStream3.method367() * 4;
-			var15 = Game.staticEncryptedStream3.method370();
-			var18 = Game.staticEncryptedStream3.method370();
-			var8 = Game.staticEncryptedStream3.method367();
-			var9 = Game.staticEncryptedStream3.method367();
+			var32 = var2 + Client.staticEncryptedStream3.readByte();
+			var4 = var3 + Client.staticEncryptedStream3.readByte();
+			var311 = Client.staticEncryptedStream3.method364();
+			var291 = Client.staticEncryptedStream3.method370();
+			var30 = Client.staticEncryptedStream3.method367() * 4;
+			var10 = Client.staticEncryptedStream3.method367() * 4;
+			var15 = Client.staticEncryptedStream3.method370();
+			var18 = Client.staticEncryptedStream3.method370();
+			var8 = Client.staticEncryptedStream3.method367();
+			var9 = Client.staticEncryptedStream3.method367();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104 && var32 >= 0 && var4 >= 0 && var32 < 104
 					&& var4 < 104 && var291 != '\uffff') {
 				var2 = var2 * 128 + 64;
@@ -21426,105 +21426,105 @@ public class Static {
 				var32 = var32 * 128 + 64;
 				var4 = 64 + var4 * 128;
 				RenderableSub1 var39 = new RenderableSub1(var291, NodeSub4.staticInt155, var2, var3,
-						staticMethod240(var2, var3, NodeSub4.staticInt155) - var30, Game.staticInt166 + var15,
-						var18 + Game.staticInt166, var8, var9, var311, var10);
+						staticMethod240(var2, var3, NodeSub4.staticInt155) - var30, Client.staticInt166 + var15,
+						var18 + Client.staticInt166, var8, var9, var311, var10);
 				var39.method562(var32, var4, staticMethod240(var32, var4, NodeSub4.staticInt155) - var10,
-						var15 + Game.staticInt166);
-				Game.staticClass39_5.method198(var39);
+						var15 + Client.staticInt166);
+				Client.staticClass39_5.method198(var39);
 			}
 		} else {
 			Item var41;
-			if (Game.staticInt191 == 143) {
-				var14 = Game.staticEncryptedStream3.method353();
-				var2 = Game.staticEncryptedStream3.method355();
-				var3 = Game.staticEncryptedStream3.method377();
+			if (Client.staticInt191 == 143) {
+				var14 = Client.staticEncryptedStream3.method353();
+				var2 = Client.staticEncryptedStream3.method355();
+				var3 = Client.staticEncryptedStream3.method377();
 				var32 = (var3 >> 4 & 0x7) + staticInt122;
 				var4 = (var3 & 0x7) + ChatMessage.staticInt331;
 				if (var32 >= 0 && var4 >= 0 && var32 < 104 && var4 < 104) {
 					var41 = new Item();
 					var41.anInt573 = var14;
 					var41.anInt574 = var2;
-					if (Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] == null) {
-						Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] = new Class39();
+					if (Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] == null) {
+						Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] = new Class39();
 					}
 
-					Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4].method198(var41);
+					Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4].method198(var41);
 					staticMethod262(var32, var4);
 				}
-			} else if (Game.staticInt191 == 117) {
-				var14 = Game.staticEncryptedStream3.method377();
+			} else if (Client.staticInt191 == 117) {
+				var14 = Client.staticEncryptedStream3.method377();
 				var2 = var14 >> 2;
 				var3 = var14 & 0x3;
-				var32 = Game.staticIntArray84[var2];
-				var4 = Game.staticEncryptedStream3.method355();
-				var311 = Game.staticEncryptedStream3.method377();
+				var32 = Client.staticIntArray84[var2];
+				var4 = Client.staticEncryptedStream3.method355();
+				var311 = Client.staticEncryptedStream3.method377();
 				var291 = (var311 >> 4 & 0x7) + staticInt122;
 				var30 = ChatMessage.staticInt331 + (var311 & 0x7);
 				if (var291 >= 0 && var30 >= 0 && var291 < 104 && var30 < 104) {
 					staticMethod110(NodeSub4.staticInt155, var291, var30, var32, var4, var2, var3, 0, -1);
 				}
 			} else {
-				if (Game.staticInt191 == 168) {
-					var14 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 == 168) {
+					var14 = Client.staticEncryptedStream3.method367();
 					var2 = staticInt122 + (var14 >> 4 & 0x7);
 					var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-					var32 = Game.staticEncryptedStream3.method370();
-					var4 = Game.staticEncryptedStream3.method367();
+					var32 = Client.staticEncryptedStream3.method370();
+					var4 = Client.staticEncryptedStream3.method367();
 					var311 = var4 >> 4 & 0xf;
 					var291 = var4 & 0x7;
-					var30 = Game.staticEncryptedStream3.method367();
+					var30 = Client.staticEncryptedStream3.method367();
 					if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 						var10 = 1 + var311;
 						if (AbstractClass2Sub1.staticPlayer1.anIntArray127[0] >= var2 - var10
 								&& AbstractClass2Sub1.staticPlayer1.anIntArray127[0] <= var10 + var2
 								&& AbstractClass2Sub1.staticPlayer1.anIntArray122[0] >= var3 - var10
 								&& AbstractClass2Sub1.staticPlayer1.anIntArray122[0] <= var10 + var3
-								&& Game.staticInt301 != 0 && var291 > 0 && Game.staticInt236 < 50) {
-							Game.staticIntArray114[Game.staticInt236] = var32;
-							Game.staticIntArray115[Game.staticInt236] = var291;
-							Game.staticIntArray116[Game.staticInt236] = var30;
-							Game.staticClass9Array1[Game.staticInt236] = null;
-							Game.staticIntArray117[Game.staticInt236] = (var2 << 16) + (var3 << 8) + var311;
-							++Game.staticInt236;
+								&& Client.staticInt301 != 0 && var291 > 0 && Client.staticInt236 < 50) {
+							Client.staticIntArray114[Client.staticInt236] = var32;
+							Client.staticIntArray115[Client.staticInt236] = var291;
+							Client.staticIntArray116[Client.staticInt236] = var30;
+							Client.staticClass9Array1[Client.staticInt236] = null;
+							Client.staticIntArray117[Client.staticInt236] = (var2 << 16) + (var3 << 8) + var311;
+							++Client.staticInt236;
 						}
 					}
 				}
 
-				if (Game.staticInt191 != 251) {
-					if (Game.staticInt191 == 232) {
-						var14 = Game.staticEncryptedStream3.method367();
+				if (Client.staticInt191 != 251) {
+					if (Client.staticInt191 == 232) {
+						var14 = Client.staticEncryptedStream3.method367();
 						var2 = staticInt122 + (var14 >> 4 & 0x7);
 						var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-						var32 = Game.staticEncryptedStream3.method370();
-						var4 = Game.staticEncryptedStream3.method367();
-						var311 = Game.staticEncryptedStream3.method370();
+						var32 = Client.staticEncryptedStream3.method370();
+						var4 = Client.staticEncryptedStream3.method367();
+						var311 = Client.staticEncryptedStream3.method370();
 						if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 							var2 = 64 + var2 * 128;
 							var3 = var3 * 128 + 64;
 							RenderableSub2 var40 = new RenderableSub2(var32, NodeSub4.staticInt155, var2, var3,
 									staticMethod240(var2, var3, NodeSub4.staticInt155) - var4, var311,
-									Game.staticInt166);
-							Game.staticClass39_6.method198(var40);
+									Client.staticInt166);
+							Client.staticClass39_6.method198(var40);
 						}
-					} else if (Game.staticInt191 == 186) {
-						var14 = Game.staticEncryptedStream3.method377();
+					} else if (Client.staticInt191 == 186) {
+						var14 = Client.staticEncryptedStream3.method377();
 						var2 = staticInt122 + (var14 >> 4 & 0x7);
 						var3 = (var14 & 0x7) + ChatMessage.staticInt331;
-						var32 = Game.staticEncryptedStream3.method377();
+						var32 = Client.staticEncryptedStream3.method377();
 						var4 = var32 >> 2;
 						var311 = var32 & 0x3;
-						var291 = Game.staticIntArray84[var4];
+						var291 = Client.staticIntArray84[var4];
 						if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 							staticMethod110(NodeSub4.staticInt155, var2, var3, var291, -1, var4, var311, 0, -1);
 						}
 					}
 				} else {
-					var14 = Game.staticEncryptedStream3.method348();
+					var14 = Client.staticEncryptedStream3.method348();
 					var2 = staticInt122 + (var14 >> 4 & 0x7);
 					var3 = (var14 & 0x7) + ChatMessage.staticInt331;
-					var32 = Game.staticEncryptedStream3.method353();
+					var32 = Client.staticEncryptedStream3.method353();
 					if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
-						Class39 var42 = Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
+						Class39 var42 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 						if (var42 != null) {
 							for (var41 = (Item) var42.method195(); var41 != null; var41 = (Item) var42.method193()) {
 								if ((var32 & 0x7fff) == var41.anInt573) {
@@ -21534,7 +21534,7 @@ public class Static {
 							}
 
 							if (var42.method195() == null) {
-								Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3] = null;
+								Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3] = null;
 							}
 
 							staticMethod262(var2, var3);
@@ -21565,73 +21565,73 @@ public class Static {
 
 			if (var71 && staticMethod89(staticMethod192(var5), var0 - 1)) {
 				if (var0 == 1) {
-					Game.staticEncryptedStream1.method471(168);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(168);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 2) {
-					Game.staticEncryptedStream1.method471(34);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(34);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 3) {
-					Game.staticEncryptedStream1.method471(86);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(86);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 4) {
-					Game.staticEncryptedStream1.method471(186);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(186);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 5) {
-					Game.staticEncryptedStream1.method471(103);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(103);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 6) {
-					Game.staticEncryptedStream1.method471(76);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(76);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 7) {
-					Game.staticEncryptedStream1.method471(185);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(185);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 8) {
-					Game.staticEncryptedStream1.method471(63);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(63);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 9) {
-					Game.staticEncryptedStream1.method471(148);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(148);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 
 				if (var0 == 10) {
-					Game.staticEncryptedStream1.method471(204);
-					Game.staticEncryptedStream1.writeInt(var1);
-					Game.staticEncryptedStream1.writeShort(var2);
-					Game.staticEncryptedStream1.writeShort(var3);
+					Client.staticEncryptedStream1.method471(204);
+					Client.staticEncryptedStream1.writeInt(var1);
+					Client.staticEncryptedStream1.writeShort(var2);
+					Client.staticEncryptedStream1.writeShort(var3);
 				}
 			}
 		}
@@ -21672,7 +21672,7 @@ public class Static {
 	static final boolean staticMethod282(Widget var0) {
 		int var1 = var0.anInt298;
 		if (var1 == 205) {
-			Game.staticInt196 = 250;
+			Client.staticInt196 = 250;
 			return true;
 		} else {
 			int var2;
@@ -21680,26 +21680,26 @@ public class Static {
 			if (var1 >= 300 && var1 <= 313) {
 				var2 = (var1 - 300) / 2;
 				var3 = var1 & 0x1;
-				Game.staticClass49_1.method244(var2, var3 == 1);
+				Client.staticClass49_1.method244(var2, var3 == 1);
 			}
 
 			if (var1 >= 314 && var1 <= 323) {
 				var2 = (var1 - 314) / 2;
 				var3 = var1 & 0x1;
-				Game.staticClass49_1.method245(var2, var3 == 1);
+				Client.staticClass49_1.method245(var2, var3 == 1);
 			}
 
 			if (var1 == 324) {
-				Game.staticClass49_1.method246(false);
+				Client.staticClass49_1.method246(false);
 			}
 
 			if (var1 == 325) {
-				Game.staticClass49_1.method246(true);
+				Client.staticClass49_1.method246(true);
 			}
 
 			if (var1 == 326) {
-				Game.staticEncryptedStream1.method471(23);
-				Game.staticClass49_1.method251(Game.staticEncryptedStream1);
+				Client.staticEncryptedStream1.method471(23);
+				Client.staticClass49_1.method251(Client.staticEncryptedStream1);
 				return true;
 			} else {
 				return false;
@@ -22332,13 +22332,13 @@ public class Static {
 					var5 += var4.anInt223 - var2;
 				}
 
-				if (var5 - 64 <= var4.anInt226 && Game.staticInt301 != 0 && var0 == var4.anInt222) {
+				if (var5 - 64 <= var4.anInt226 && Client.staticInt301 != 0 && var0 == var4.anInt222) {
 					var5 -= 64;
 					if (var5 < 0) {
 						var5 = 0;
 					}
 
-					int var9 = Game.staticInt301 * (var4.anInt226 - var5) / var4.anInt226;
+					int var9 = Client.staticInt301 * (var4.anInt226 - var5) / var4.anInt226;
 					if (var4.aNodeSub8Sub2_1 == null) {
 						if (var4.anInt227 >= 0) {
 							Class9 var11 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anInt227, 0);
@@ -22391,9 +22391,9 @@ public class Static {
 	}
 
 	static final void staticMethod384() {
-		for (int var0 = 0; var0 < Game.staticInt186; var0++) {
-			int var2 = Game.staticIntArray121[var0];
-			Npc var1 = Game.staticNpcArray1[var2];
+		for (int var0 = 0; var0 < Client.staticInt186; var0++) {
+			int var2 = Client.staticIntArray121[var0];
+			Npc var1 = Client.staticNpcArray1[var2];
 			if (var1 != null) {
 				staticMethod324(var1, var1.aNpcDef1.anInt538);
 			}
@@ -22418,19 +22418,19 @@ public class Static {
 	}
 
 	static final void staticMethod391() {
-		for (int var0 = 0; var0 < Game.staticInt188; var0++) {
-			int var3 = Game.staticIntArray92[var0];
-			Npc var1 = Game.staticNpcArray1[var3];
-			int var5 = Game.staticEncryptedStream3.method367();
+		for (int var0 = 0; var0 < Client.staticInt188; var0++) {
+			int var3 = Client.staticIntArray92[var0];
+			Npc var1 = Client.staticNpcArray1[var3];
+			int var5 = Client.staticEncryptedStream3.method367();
 			int var6;
 			if ((var5 & 0x20) != 0) {
-				var1.anInt596 = Game.staticEncryptedStream3.method355();
-				var6 = Game.staticEncryptedStream3.method362();
+				var1.anInt596 = Client.staticEncryptedStream3.method355();
+				var6 = Client.staticEncryptedStream3.method362();
 				var1.anInt620 = var6 >> 16;
-				var1.anInt619 = Game.staticInt166 + (var6 & 0xffff);
+				var1.anInt619 = Client.staticInt166 + (var6 & 0xffff);
 				var1.anInt616 = 0;
 				var1.anInt618 = 0;
-				if (var1.anInt619 > Game.staticInt166) {
+				if (var1.anInt619 > Client.staticInt166) {
 					var1.anInt616 = -1;
 				}
 
@@ -22443,7 +22443,7 @@ public class Static {
 			int var4;
 			int var8;
 			if ((var5 & 0x4) != 0) {
-				var6 = Game.staticEncryptedStream3.method348();
+				var6 = Client.staticEncryptedStream3.method348();
 				int var7;
 				int var9;
 				int var10;
@@ -22452,33 +22452,33 @@ public class Static {
 						var4 = -1;
 						var9 = -1;
 						var10 = -1;
-						var2 = Game.staticEncryptedStream3.method379();
+						var2 = Client.staticEncryptedStream3.method379();
 						if (var2 == 32767) {
-							var2 = Game.staticEncryptedStream3.method379();
-							var9 = Game.staticEncryptedStream3.method379();
-							var4 = Game.staticEncryptedStream3.method379();
-							var10 = Game.staticEncryptedStream3.method379();
+							var2 = Client.staticEncryptedStream3.method379();
+							var9 = Client.staticEncryptedStream3.method379();
+							var4 = Client.staticEncryptedStream3.method379();
+							var10 = Client.staticEncryptedStream3.method379();
 						} else if (var2 != 32766) {
-							var9 = Game.staticEncryptedStream3.method379();
+							var9 = Client.staticEncryptedStream3.method379();
 						} else {
 							var2 = -1;
 						}
 
-						var7 = Game.staticEncryptedStream3.method379();
-						var1.method566(var2, var9, var4, var10, Game.staticInt166, var7);
+						var7 = Client.staticEncryptedStream3.method379();
+						var1.method566(var2, var9, var4, var10, Client.staticInt166, var7);
 					}
 				}
 
-				var8 = Game.staticEncryptedStream3.method348();
+				var8 = Client.staticEncryptedStream3.method348();
 				if (var8 > 0) {
 					for (var2 = 0; var2 < var8; var2++) {
-						var4 = Game.staticEncryptedStream3.method379();
-						var9 = Game.staticEncryptedStream3.method379();
+						var4 = Client.staticEncryptedStream3.method379();
+						var9 = Client.staticEncryptedStream3.method379();
 						if (var9 != 32767) {
-							var10 = Game.staticEncryptedStream3.method379();
-							var7 = Game.staticEncryptedStream3.method367();
-							int var11 = var9 > 0 ? Game.staticEncryptedStream3.method346() : var7;
-							var1.method564(var4, Game.staticInt166, var9, var10, var7, var11);
+							var10 = Client.staticEncryptedStream3.method379();
+							var7 = Client.staticEncryptedStream3.method367();
+							int var11 = var9 > 0 ? Client.staticEncryptedStream3.method346() : var7;
+							var1.method564(var4, Client.staticInt166, var9, var10, var7, var11);
 						} else {
 							var1.method563(var4);
 						}
@@ -22487,7 +22487,7 @@ public class Static {
 			}
 
 			if ((var5 & 0x1) != 0) {
-				var1.aNpcDef1 = staticMethod85(Game.staticEncryptedStream3.method372());
+				var1.aNpcDef1 = staticMethod85(Client.staticEncryptedStream3.method372());
 				var1.anInt626 = var1.aNpcDef1.anInt538;
 				var1.anInt631 = var1.aNpcDef1.anInt549 * 494637525;
 				var1.anInt621 = var1.aNpcDef1.anInt550;
@@ -22500,12 +22500,12 @@ public class Static {
 			}
 
 			if ((var5 & 0x40) != 0) {
-				var6 = Game.staticEncryptedStream3.method355();
+				var6 = Client.staticEncryptedStream3.method355();
 				if (var6 == '\uffff') {
 					var6 = -1;
 				}
 
-				var8 = Game.staticEncryptedStream3.method377();
+				var8 = Client.staticEncryptedStream3.method377();
 				if (var1.anInt612 == var6 && var6 != -1) {
 					var2 = staticMethod210(var6).anInt568;
 					if (var2 == 1) {
@@ -22530,8 +22530,8 @@ public class Static {
 			}
 
 			if ((var5 & 0x2) != 0) {
-				var6 = Game.staticEncryptedStream3.method355();
-				var8 = Game.staticEncryptedStream3.method355();
+				var6 = Client.staticEncryptedStream3.method355();
+				var8 = Client.staticEncryptedStream3.method355();
 				var2 = var1.anInt628 - (var6 - NodeSub3.staticInt154 - NodeSub3.staticInt154) * 64;
 				var4 = var1.anInt591 - (var8 - Class34.staticInt75 - Class34.staticInt75) * 64;
 				if (var2 != 0 || var4 != 0) {
@@ -22540,14 +22540,14 @@ public class Static {
 			}
 
 			if ((var5 & 0x10) != 0) {
-				var1.anInt600 = Game.staticEncryptedStream3.method370();
+				var1.anInt600 = Client.staticEncryptedStream3.method370();
 				if (var1.anInt600 == '\uffff') {
 					var1.anInt600 = -1;
 				}
 			}
 
 			if ((var5 & 0x8) != 0) {
-				var1.aString39 = Game.staticEncryptedStream3.method365();
+				var1.aString39 = Client.staticEncryptedStream3.method365();
 				var1.anInt601 = 100;
 			}
 		}
@@ -22560,10 +22560,10 @@ public class Static {
 		} else {
 			String var2 = staticMethod111(var0, staticClass53_1);
 
-			for (int var3 = 0; var3 < Game.staticInt308; var3++) {
+			for (int var3 = 0; var3 < Client.staticInt308; var3++) {
 				if (var2.equalsIgnoreCase(
-						staticMethod111(Game.staticFriendArray1[var3].aString14, staticClass53_1))
-						&& (!var1 || Game.staticFriendArray1[var3].anInt210 != 0)) {
+						staticMethod111(Client.staticFriendArray1[var3].aString14, staticClass53_1))
+						&& (!var1 || Client.staticFriendArray1[var3].anInt210 != 0)) {
 					return true;
 				}
 			}
@@ -22694,7 +22694,7 @@ public class Static {
 						var8 = 1;
 					} else if (var0 == 2702) {
 						var14 = staticIntArray16[--staticInt27];
-						NodeSub18 var37 = (NodeSub18) Game.staticHashTable5.method149(var14);
+						NodeSub18 var37 = (NodeSub18) Client.staticHashTable5.method149(var14);
 						if (var37 != null) {
 							staticIntArray16[++staticInt27 - 1] = 1;
 						} else {
@@ -22703,7 +22703,7 @@ public class Static {
 
 						var8 = 1;
 					} else if (var0 == 2706) {
-						staticIntArray16[++staticInt27 - 1] = Game.staticInt263;
+						staticIntArray16[++staticInt27 - 1] = Client.staticInt263;
 						var8 = 1;
 					} else {
 						var8 = 2;
@@ -22771,20 +22771,20 @@ public class Static {
 								var19 = staticMethod388(var15);
 							}
 
-							Game.staticEncryptedStream1.method471(189);
-							Game.staticEncryptedStream1.writeInt(var19);
+							Client.staticEncryptedStream1.method471(189);
+							Client.staticEncryptedStream1.writeInt(var19);
 							var8 = 1;
 						} else if (var0 == 3105) {
 							var15 = staticStringArray1[--staticInt148];
-							Game.staticEncryptedStream1.method471(37);
-							Game.staticEncryptedStream1.writeByte(var15.length() + 1);
-							Game.staticEncryptedStream1.method323(var15);
+							Client.staticEncryptedStream1.method471(37);
+							Client.staticEncryptedStream1.writeByte(var15.length() + 1);
+							Client.staticEncryptedStream1.method323(var15);
 							var8 = 1;
 						} else if (var0 == 3106) {
 							var15 = staticStringArray1[--staticInt148];
-							Game.staticEncryptedStream1.method471(128);
-							Game.staticEncryptedStream1.writeByte(var15.length() + 1);
-							Game.staticEncryptedStream1.method323(var15);
+							Client.staticEncryptedStream1.method471(128);
+							Client.staticEncryptedStream1.writeByte(var15.length() + 1);
+							Client.staticEncryptedStream1.method323(var15);
 							var8 = 1;
 						} else if (var0 == 3107) {
 							var14 = staticIntArray16[--staticInt27];
@@ -22826,8 +22826,8 @@ public class Static {
 								var8 = 1;
 							} else if (var0 == 3115) {
 								var14 = staticIntArray16[--staticInt27];
-								Game.staticEncryptedStream1.method471(92);
-								Game.staticEncryptedStream1.writeShort(var14);
+								Client.staticEncryptedStream1.method471(92);
+								Client.staticEncryptedStream1.writeShort(var14);
 								var8 = 1;
 							} else if (var0 == 3116) {
 								var14 = staticIntArray16[--staticInt27];
@@ -22839,16 +22839,16 @@ public class Static {
 								} else if (var17.length() > 500) {
 									var8 = 1;
 								} else {
-									Game.staticEncryptedStream1.method471(136);
-									Game.staticEncryptedStream1
+									Client.staticEncryptedStream1.method471(136);
+									Client.staticEncryptedStream1
 											.writeShort(1 + staticMethod378(var23) + staticMethod378(var17));
-									Game.staticEncryptedStream1.method323(var17);
-									Game.staticEncryptedStream1.method343(var14);
-									Game.staticEncryptedStream1.method323(var23);
+									Client.staticEncryptedStream1.method323(var17);
+									Client.staticEncryptedStream1.method343(var14);
+									Client.staticEncryptedStream1.method323(var23);
 									var8 = 1;
 								}
 							} else if (var0 == 3117) {
-								Game.staticBool39 = staticIntArray16[--staticInt27] == 1;
+								Client.staticBool39 = staticIntArray16[--staticInt27] == 1;
 								var8 = 1;
 							} else {
 								var8 = 2;
@@ -23142,33 +23142,33 @@ public class Static {
 								return var8;
 							} else if (var0 < 5100) {
 								if (var0 == 5000) {
-									staticIntArray16[++staticInt27 - 1] = Game.staticInt160;
+									staticIntArray16[++staticInt27 - 1] = Client.staticInt160;
 									var8 = 1;
 								} else if (var0 == 5001) {
 									staticInt27 -= 3;
-									Game.staticInt160 = staticIntArray16[staticInt27];
+									Client.staticInt160 = staticIntArray16[staticInt27];
 									staticClass55_1 = staticMethod255(
 											staticIntArray16[staticInt27 + 1]);
 									if (staticClass55_1 == null) {
 										staticClass55_1 = Class55.staticClass55_2;
 									}
 
-									Game.staticInt291 = staticIntArray16[2 + staticInt27];
-									Game.staticEncryptedStream1.method471(2);
-									Game.staticEncryptedStream1.writeByte(Game.staticInt160);
-									Game.staticEncryptedStream1.writeByte(staticClass55_1.anInt207);
-									Game.staticEncryptedStream1.writeByte(Game.staticInt291);
+									Client.staticInt291 = staticIntArray16[2 + staticInt27];
+									Client.staticEncryptedStream1.method471(2);
+									Client.staticEncryptedStream1.writeByte(Client.staticInt160);
+									Client.staticEncryptedStream1.writeByte(staticClass55_1.anInt207);
+									Client.staticEncryptedStream1.writeByte(Client.staticInt291);
 									var8 = 1;
 								} else if (var0 == 5002) {
 									var15 = staticStringArray1[--staticInt148];
 									staticInt27 -= 2;
 									var19 = staticIntArray16[staticInt27];
 									var4 = staticIntArray16[staticInt27 + 1];
-									Game.staticEncryptedStream1.method471(195);
-									Game.staticEncryptedStream1.writeByte(staticMethod378(var15) + 2);
-									Game.staticEncryptedStream1.method323(var15);
-									Game.staticEncryptedStream1.writeByte(var19 - 1);
-									Game.staticEncryptedStream1.writeByte(var4);
+									Client.staticEncryptedStream1.method471(195);
+									Client.staticEncryptedStream1.writeByte(staticMethod378(var15) + 2);
+									Client.staticEncryptedStream1.method323(var15);
+									Client.staticEncryptedStream1.writeByte(var19 - 1);
+									Client.staticEncryptedStream1.writeByte(var4);
 									var8 = 1;
 								} else {
 									ChatMessage var29;
@@ -23266,7 +23266,7 @@ public class Static {
 										} else if (var17.startsWith("glow3:")) {
 											var301 = 11;
 											var15 = var15.substring("glow3:".length());
-										} else if (Game.staticInt231 != 0) {
+										} else if (Client.staticInt231 != 0) {
 											if (var17.startsWith("yellow:")) {
 												var301 = 0;
 												var15 = var15.substring("yellow:".length());
@@ -23323,7 +23323,7 @@ public class Static {
 										} else if (var17.startsWith("slide:")) {
 											var311 = 5;
 											var15 = var15.substring("slide:".length());
-										} else if (Game.staticInt231 != 0) {
+										} else if (Client.staticInt231 != 0) {
 											if (var17.startsWith("wave:")) {
 												var311 = 1;
 												var15 = var15.substring("wave:".length());
@@ -23342,35 +23342,35 @@ public class Static {
 											}
 										}
 
-										Game.staticEncryptedStream1.method471(79);
-										Game.staticEncryptedStream1.writeByte(0);
-										var7 = Game.staticEncryptedStream1.off;
-										Game.staticEncryptedStream1.writeByte(var19);
-										Game.staticEncryptedStream1.writeByte(var301);
-										Game.staticEncryptedStream1.writeByte(var311);
-										EncryptedStream var10 = Game.staticEncryptedStream1;
+										Client.staticEncryptedStream1.method471(79);
+										Client.staticEncryptedStream1.writeByte(0);
+										var7 = Client.staticEncryptedStream1.off;
+										Client.staticEncryptedStream1.writeByte(var19);
+										Client.staticEncryptedStream1.writeByte(var301);
+										Client.staticEncryptedStream1.writeByte(var311);
+										EncryptedStream var10 = Client.staticEncryptedStream1;
 										var11 = var10.off;
 										byte[] var12 = staticMethod340(var15);
 										var10.method328(var12.length);
 										var10.off += staticClass47_1.method239(var12, 0, var12.length, var10.buf,
 												var10.off);
-										Game.staticEncryptedStream1.method327(Game.staticEncryptedStream1.off - var7);
+										Client.staticEncryptedStream1.method327(Client.staticEncryptedStream1.off - var7);
 										var8 = 1;
 									} else if (var0 == 5009) {
 										staticInt148 -= 2;
 										var15 = staticStringArray1[staticInt148];
 										var23 = staticStringArray1[staticInt148 + 1];
-										Game.staticEncryptedStream1.method471(169);
-										Game.staticEncryptedStream1.writeShort(0);
-										var4 = Game.staticEncryptedStream1.off;
-										Game.staticEncryptedStream1.method323(var15);
-										EncryptedStream var38 = Game.staticEncryptedStream1;
+										Client.staticEncryptedStream1.method471(169);
+										Client.staticEncryptedStream1.writeShort(0);
+										var4 = Client.staticEncryptedStream1.off;
+										Client.staticEncryptedStream1.method323(var15);
+										EncryptedStream var38 = Client.staticEncryptedStream1;
 										var30 = var38.off;
 										byte[] var35 = staticMethod340(var23);
 										var38.method328(var35.length);
 										var38.off += staticClass47_1.method239(var35, 0, var35.length, var38.buf,
 												var38.off);
-										Game.staticEncryptedStream1.method371(Game.staticEncryptedStream1.off - var4);
+										Client.staticEncryptedStream1.method371(Client.staticEncryptedStream1.off - var4);
 										var8 = 1;
 									} else if (var0 == 5015) {
 										if (AbstractClass2Sub1.staticPlayer1 != null
@@ -23383,7 +23383,7 @@ public class Static {
 										staticStringArray1[++staticInt148 - 1] = var15;
 										var8 = 1;
 									} else if (var0 == 5016) {
-										staticIntArray16[++staticInt27 - 1] = Game.staticInt291;
+										staticIntArray16[++staticInt27 - 1] = Client.staticInt291;
 										var8 = 1;
 									} else if (var0 == 5017) {
 										var14 = staticIntArray16[--staticInt27];
@@ -23424,11 +23424,11 @@ public class Static {
 										staticMethod127(var15);
 										var8 = 1;
 									} else if (var0 == 5021) {
-										Game.staticString33 = staticStringArray1[--staticInt148]
+										Client.staticString33 = staticStringArray1[--staticInt148]
 												.toLowerCase().trim();
 										var8 = 1;
 									} else if (var0 == 5022) {
-										staticStringArray1[++staticInt148 - 1] = Game.staticString33;
+										staticStringArray1[++staticInt148 - 1] = Client.staticString33;
 										var8 = 1;
 									} else {
 										var8 = 2;
@@ -23443,15 +23443,15 @@ public class Static {
 								} else if (var0 == 5307) {
 									var14 = staticIntArray16[--staticInt27];
 									if (var14 == 1 || var14 == 2) {
-										Game.staticLong11 = 0L;
+										Client.staticLong11 = 0L;
 										if (var14 >= 2) {
-											Game.staticBool36 = true;
+											Client.staticBool36 = true;
 										} else {
-											Game.staticBool36 = false;
+											Client.staticBool36 = false;
 										}
 
 										staticMethod335();
-										if (Game.staticInt165 >= 25) {
+										if (Client.staticInt165 >= 25) {
 											staticMethod34();
 										}
 
@@ -23479,7 +23479,7 @@ public class Static {
 								return staticMethod60(var0, var1, var2);
 							} else if (var0 < 5700) {
 								if (var0 == 5630) {
-									Game.staticInt196 = 250;
+									Client.staticInt196 = 250;
 									var8 = 1;
 								} else {
 									var8 = 2;
@@ -23597,7 +23597,7 @@ public class Static {
 
 											var8 = 1;
 										} else if (var0 == 6512) {
-											Game.staticBool22 = staticIntArray16[--staticInt27] == 1;
+											Client.staticBool22 = staticIntArray16[--staticInt27] == 1;
 											var8 = 1;
 										} else {
 											var8 = 2;
@@ -23740,7 +23740,7 @@ public class Static {
 
 		if (staticClass6_1 != null) {
 			try {
-				Game var2 = Game.staticGame1;
+				Client var2 = Client.staticGame1;
 				Object[] var3 = new Object[] { Integer.valueOf(staticMethod248()) };
 				JSObject.getWindow(var2).call("resize", var3);
 			} catch (Throwable var4) {
@@ -23761,8 +23761,8 @@ public class Static {
 	}
 
 	static void staticMethod380(int var0) {
-		for (NodeSub15 var1 = (NodeSub15) Game.staticHashTable6
-				.method146(); var1 != null; var1 = (NodeSub15) Game.staticHashTable6.method147()) {
+		for (NodeSub15 var1 = (NodeSub15) Client.staticHashTable6
+				.method146(); var1 != null; var1 = (NodeSub15) Client.staticHashTable6.method147()) {
 			if (var0 == (var1.id >> 48 & 0xffff)) {
 				var1.method174();
 			}
@@ -25547,17 +25547,17 @@ public class Static {
 	}
 
 	static void staticMethod396(int var0) {
-		if (var0 != Game.staticInt165) {
-			if (Game.staticInt165 == 0) {
+		if (var0 != Client.staticInt165) {
+			if (Client.staticInt165 == 0) {
 				staticImage1 = null;
 				Class28.staticFont1 = null;
 				Class26.staticFontMetrics1 = null;
 			}
 
 			if (var0 == 20 || var0 == 40 || var0 == 45) {
-				Game.staticInt303 = 0;
-				Game.staticInt262 = 0;
-				Game.staticInt302 = 0;
+				Client.staticInt303 = 0;
+				Client.staticInt262 = 0;
+				Client.staticInt302 = 0;
 			}
 
 			if (var0 != 20 && var0 != 40 && staticConnection1 != null) {
@@ -25565,18 +25565,18 @@ public class Static {
 				staticConnection1 = null;
 			}
 
-			if (Game.staticInt165 == 25) {
-				Game.staticInt200 = 0;
-				Game.staticInt215 = 0;
-				Game.staticInt198 = 1;
-				Game.staticInt199 = 0;
-				Game.staticInt253 = 1;
+			if (Client.staticInt165 == 25) {
+				Client.staticInt200 = 0;
+				Client.staticInt215 = 0;
+				Client.staticInt198 = 1;
+				Client.staticInt199 = 0;
+				Client.staticInt253 = 1;
 			}
 
 			if (var0 != 5 && var0 != 10) {
 				if (var0 == 20) {
 					staticMethod114(Class38.staticCanvas1, AbstractClass3Sub1.staticJs5IndexImpl10,
-							Class62.staticJs5IndexImpl7, true, Game.staticInt165 == 11 ? 4 : 0);
+							Class62.staticJs5IndexImpl7, true, Client.staticInt165 == 11 ? 4 : 0);
 				} else if (var0 == 11) {
 					staticMethod114(Class38.staticCanvas1, AbstractClass3Sub1.staticJs5IndexImpl10,
 							Class62.staticJs5IndexImpl7, false, 4);
@@ -25588,7 +25588,7 @@ public class Static {
 						Class62.staticJs5IndexImpl7, true, 0);
 			}
 
-			Game.staticInt165 = var0;
+			Client.staticInt165 = var0;
 		}
 
 	}
@@ -25642,19 +25642,19 @@ public class Static {
 	}
 
 	static final void staticMethod433() {
-		Game.staticInt245 = 0;
+		Client.staticInt245 = 0;
 		int var1 = NodeSub3.staticInt154 + (AbstractClass2Sub1.staticPlayer1.anInt628 >> 7);
 		int var0 = (AbstractClass2Sub1.staticPlayer1.anInt591 >> 7) + Class34.staticInt75;
 		if (var1 >= 3053 && var1 <= 3156 && var0 >= 3056 && var0 <= 3136) {
-			Game.staticInt245 = 1;
+			Client.staticInt245 = 1;
 		}
 
 		if (var1 >= 3072 && var1 <= 3118 && var0 >= 9492 && var0 <= 9535) {
-			Game.staticInt245 = 1;
+			Client.staticInt245 = 1;
 		}
 
-		if (Game.staticInt245 == 1 && var1 >= 3139 && var1 <= 3199 && var0 >= 3008 && var0 <= 3062) {
-			Game.staticInt245 = 0;
+		if (Client.staticInt245 == 1 && var1 >= 3139 && var1 <= 3199 && var0 >= 3008 && var0 <= 3062) {
+			Client.staticInt245 = 0;
 		}
 
 	}
@@ -29798,13 +29798,13 @@ public class Static {
 	}
 
 	static final void staticMethod469(Widget var0, int var1, int var2, int var3, int var4, int var5, int var6) {
-		if (Game.staticBool24) {
-			Game.staticInt219 = 32;
+		if (Client.staticBool24) {
+			Client.staticInt219 = 32;
 		} else {
-			Game.staticInt219 = 0;
+			Client.staticInt219 = 0;
 		}
 
-		Game.staticBool24 = false;
+		Client.staticBool24 = false;
 		int var7;
 		if (MouseHandler.staticInt93 == 1 || !staticBool18 && MouseHandler.staticInt93 == 4) {
 			if (var5 >= var1 && var5 < var1 + 16 && var6 >= var2 && var6 < 16 + var2) {
@@ -29813,7 +29813,7 @@ public class Static {
 			} else if (var5 >= var1 && var5 < 16 + var1 && var6 >= var3 + var2 - 16 && var6 < var2 + var3) {
 				var0.anInt312 += 4;
 				staticMethod73(var0);
-			} else if (var5 >= var1 - Game.staticInt219 && var5 < 16 + var1 + Game.staticInt219 && var6 >= 16 + var2
+			} else if (var5 >= var1 - Client.staticInt219 && var5 < 16 + var1 + Client.staticInt219 && var6 >= 16 + var2
 					&& var6 < var2 + var3 - 16) {
 				var7 = (var3 - 32) * var3 / var4;
 				if (var7 < 8) {
@@ -29824,14 +29824,14 @@ public class Static {
 				int var9 = var3 - 32 - var7;
 				var0.anInt312 = (var4 - var3) * var8 / var9;
 				staticMethod73(var0);
-				Game.staticBool24 = true;
+				Client.staticBool24 = true;
 			}
 		}
 
-		if (Game.staticInt284 != 0) {
+		if (Client.staticInt284 != 0) {
 			var7 = var0.anInt307;
 			if (var5 >= var1 - var7 && var6 >= var2 && var5 < 16 + var1 && var6 <= var2 + var3) {
-				var0.anInt312 += Game.staticInt284 * 45;
+				var0.anInt312 += Client.staticInt284 * 45;
 				staticMethod73(var0);
 			}
 		}
@@ -29946,107 +29946,107 @@ public class Static {
 					var5 = 0;
 				}
 
-				if (Game.staticInt299 != var5) {
-					if (Game.staticInt299 == 0 && Game.staticInt249 != -1) {
-						staticMethod30(Class34.staticJs5IndexImpl3, Game.staticInt249, 0, var5, false);
-						Game.staticBool38 = false;
+				if (Client.staticInt299 != var5) {
+					if (Client.staticInt299 == 0 && Client.staticInt249 != -1) {
+						staticMethod30(Class34.staticJs5IndexImpl3, Client.staticInt249, 0, var5, false);
+						Client.staticBool38 = false;
 					} else if (var5 == 0) {
 						staticNodeSub8Sub3_1.method440();
 						staticInt118 = 1;
 						staticJs5Index3 = null;
-						Game.staticBool38 = false;
+						Client.staticBool38 = false;
 					} else {
 						staticMethod264(var5);
 					}
 
-					Game.staticInt299 = var5;
+					Client.staticInt299 = var5;
 				}
 			}
 
 			if (var41 == 4) {
 				if (var1 == 0) {
-					Game.staticInt300 = 1;
+					Client.staticInt300 = 1;
 				}
 
 				if (var1 == 1) {
-					Game.staticInt300 = -202911840;
+					Client.staticInt300 = -202911840;
 				}
 
 				if (var1 == 2) {
-					Game.staticInt300 = -135274560;
+					Client.staticInt300 = -135274560;
 				}
 
 				if (var1 == 3) {
-					Game.staticInt300 = -67637280;
+					Client.staticInt300 = -67637280;
 				}
 
 				if (var1 == 4) {
-					Game.staticInt300 = 0;
+					Client.staticInt300 = 0;
 				}
 			}
 
 			if (var41 == 5) {
-				Game.staticInt214 = var1;
+				Client.staticInt214 = var1;
 			}
 
 			if (var41 == 6) {
-				Game.staticInt265 = var1;
+				Client.staticInt265 = var1;
 			}
 
 			if (var41 == 9) {
-				Game.staticInt266 = var1;
+				Client.staticInt266 = var1;
 			}
 
 			if (var41 == 10) {
 				if (var1 == 0) {
-					Game.staticInt301 = 127;
+					Client.staticInt301 = 127;
 				}
 
 				if (var1 == 1) {
-					Game.staticInt301 = 96;
+					Client.staticInt301 = 96;
 				}
 
 				if (var1 == 2) {
-					Game.staticInt301 = 64;
+					Client.staticInt301 = 64;
 				}
 
 				if (var1 == 3) {
-					Game.staticInt301 = 32;
+					Client.staticInt301 = 32;
 				}
 
 				if (var1 == 4) {
-					Game.staticInt301 = 0;
+					Client.staticInt301 = 0;
 				}
 			}
 
 			if (var41 == 17) {
-				Game.staticInt269 = -(var1 & 0xffff);
+				Client.staticInt269 = -(var1 & 0xffff);
 			}
 
 			Class4[] var51;
 			if (var41 == 18) {
 				var51 = new Class4[] { Class4.staticClass4_4, Class4.staticClass4_3, Class4.staticClass4_1,
 						Class4.staticClass4_2 };
-				Game.staticClass4_5 = (Class4) staticMethod233(var51, var1);
-				if (Game.staticClass4_5 == null) {
-					Game.staticClass4_5 = Class4.staticClass4_4;
+				Client.staticClass4_5 = (Class4) staticMethod233(var51, var1);
+				if (Client.staticClass4_5 == null) {
+					Client.staticClass4_5 = Class4.staticClass4_4;
 				}
 			}
 
 			if (var41 == 19) {
 				if (var1 == -1) {
-					Game.staticInt229 = -1;
+					Client.staticInt229 = -1;
 				} else {
-					Game.staticInt229 = var1 & 0x7ff;
+					Client.staticInt229 = var1 & 0x7ff;
 				}
 			}
 
 			if (var41 == 22) {
 				var51 = new Class4[] { Class4.staticClass4_4, Class4.staticClass4_3, Class4.staticClass4_1,
 						Class4.staticClass4_2 };
-				Game.staticClass4_6 = (Class4) staticMethod233(var51, var1);
-				if (Game.staticClass4_6 == null) {
-					Game.staticClass4_6 = Class4.staticClass4_4;
+				Client.staticClass4_6 = (Class4) staticMethod233(var51, var1);
+				if (Client.staticClass4_6 == null) {
+					Client.staticClass4_6 = Class4.staticClass4_4;
 				}
 			}
 		}
@@ -30210,9 +30210,9 @@ public class Static {
 
 	static String staticMethod473(int var0) {
 		return var0 < 0 ? ""
-				: Game.staticStringArray8[var0].length() > 0
-						? Game.staticStringArray9[var0] + " " + Game.staticStringArray8[var0]
-						: Game.staticStringArray9[var0];
+				: Client.staticStringArray8[var0].length() > 0
+						? Client.staticStringArray9[var0] + " " + Client.staticStringArray8[var0]
+						: Client.staticStringArray9[var0];
 	}
 
 	static void staticMethod474(NodeSub16 var0, int var1) {
@@ -30665,7 +30665,7 @@ public class Static {
 		if (var0 < 0) {
 			return false;
 		} else {
-			int var1 = Game.staticIntArray98[var0];
+			int var1 = Client.staticIntArray98[var0];
 			if (var1 >= 2000) {
 				var1 -= 2000;
 			}
@@ -30678,8 +30678,8 @@ public class Static {
 		BuildType.staticString27 = var0;
 
 		try {
-			String var1 = Game.staticGame1.getParameter(Class52.staticClass52_11.aString11);
-			String var2 = Game.staticGame1.getParameter(Class52.staticClass52_12.aString11);
+			String var1 = Client.staticGame1.getParameter(Class52.staticClass52_11.aString11);
+			String var2 = Client.staticGame1.getParameter(Class52.staticClass52_12.aString11);
 			String var3 = var1 + "settings=" + var0 + "; version=1; path=/; domain=" + var2;
 			if (var0.length() == 0) {
 				var3 = var3 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
@@ -30688,7 +30688,7 @@ public class Static {
 						+ 94608000L;
 			}
 
-			staticMethod102(Game.staticGame1, "document.cookie=\"" + var3 + "\"");
+			staticMethod102(Client.staticGame1, "document.cookie=\"" + var3 + "\"");
 		} catch (Throwable var4) {
 			;
 		}

@@ -114,7 +114,7 @@ public final class Player extends Actor {
 		anInt685 = var1.method367();
 		anInt691 = var1.method370();
 		aBool81 = var1.method367() == 1;
-		if (Game.staticInt207 == 0 && Game.staticInt268 >= 2) {
+		if (Client.staticInt207 == 0 && Client.staticInt268 >= 2) {
 			aBool81 = false;
 		}
 
@@ -155,11 +155,11 @@ public final class Player extends Actor {
 				}
 
 				if (!aBool83 && aModel1 != null) {
-					if (Game.staticInt166 >= anInt699) {
+					if (Client.staticInt166 >= anInt699) {
 						aModel1 = null;
 					}
 
-					if (Game.staticInt166 >= anInt688 && Game.staticInt166 < anInt699) {
+					if (Client.staticInt166 >= anInt688 && Client.staticInt166 < anInt699) {
 						var1 = aModel1;
 						var1.method601(anInt690 - anInt628, anInt689 - anInt687, anInt696 - anInt591);
 						if (anInt630 == 512) {
@@ -212,16 +212,16 @@ public final class Player extends Actor {
 					if (var7 >= var6 && var7 < 104 - var6 && var5 >= var6 && var5 < 104 - var6 && var1 >= var6
 							&& var1 < 104 - var6 && var2 >= var6 && var2 < 104 - var6) {
 						int var11 = method659();
-						Game.staticAbstractClass2Sub1_1.anInt153 = var1;
-						Game.staticAbstractClass2Sub1_1.anInt152 = var2;
-						Game.staticAbstractClass2Sub1_1.anInt154 = 1;
-						Game.staticAbstractClass2Sub1_1.anInt155 = 1;
-						AbstractClass2Sub1 var12 = Game.staticAbstractClass2Sub1_1;
-						int var13 = Static.staticMethod98(var7, var5, var11, var12, Game.staticClass38Array1[anInt698],
-								true, Game.staticIntArray122, Game.staticIntArray123);
+						Client.staticAbstractClass2Sub1_1.anInt153 = var1;
+						Client.staticAbstractClass2Sub1_1.anInt152 = var2;
+						Client.staticAbstractClass2Sub1_1.anInt154 = 1;
+						Client.staticAbstractClass2Sub1_1.anInt155 = 1;
+						AbstractClass2Sub1 var12 = Client.staticAbstractClass2Sub1_1;
+						int var13 = Static.staticMethod98(var7, var5, var11, var12, Client.staticClass38Array1[anInt698],
+								true, Client.staticIntArray122, Client.staticIntArray123);
 						if (var13 >= 1) {
 							for (int var9 = 0; var9 < var13 - 1; var9++) {
-								var4.method662(Game.staticIntArray122[var9], Game.staticIntArray123[var9], (byte) 2);
+								var4.method662(Client.staticIntArray122[var9], Client.staticIntArray123[var9], (byte) 2);
 							}
 						}
 					}
