@@ -1769,7 +1769,7 @@ public class Static {
 			Game.staticInt297 = 0;
 			var16 = Game.staticNpcArray1[var3];
 			if (var16 != null) {
-				NpcDef var22 = var16.aNpcDef1;
+				NpcDefinition var22 = var16.aNpcDef1;
 				if (var22.anIntArray116 != null) {
 					var22 = var22.method544();
 				}
@@ -2755,20 +2755,20 @@ public class Static {
 		}
 	}
 
-	public static NpcDef staticMethod85(int var0) {
-		NpcDef var1 = (NpcDef) NpcDef.staticCache28.get(var0);
+	public static NpcDefinition staticMethod85(int var0) {
+		NpcDefinition var1 = (NpcDefinition) NpcDefinition.staticCache28.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {
-			byte[] var2 = NpcDef.staticJs5Index28.getFile(9, var0);
-			var1 = new NpcDef();
+			byte[] var2 = NpcDefinition.staticJs5Index28.getFile(9, var0);
+			var1 = new NpcDefinition();
 			var1.anInt537 = var0;
 			if (var2 != null) {
 				var1.method540(new Stream(var2));
 			}
 
 			var1.method545();
-			NpcDef.staticCache28.method170(var1, var0);
+			NpcDefinition.staticCache28.method170(var1, var0);
 			return var1;
 		}
 	}
@@ -3276,7 +3276,7 @@ public class Static {
 												for (var46 = 0; var46 < Game.staticInt186; var46++) {
 													Npc var54 = Game.staticNpcArray1[Game.staticIntArray121[var46]];
 													if (var54 != null && var54.method565()) {
-														NpcDef var57 = var54.aNpcDef1;
+														NpcDefinition var57 = var54.aNpcDef1;
 														if (var57 != null && var57.anIntArray116 != null) {
 															var57 = var57.method544();
 														}
@@ -5874,7 +5874,7 @@ public class Static {
 	static final void staticMethod209(Actor var0, int var1, int var2, int var3, int var4, int var5) {
 		if (var0 != null && var0.method565()) {
 			if (var0 instanceof Npc) {
-				NpcDef var79 = ((Npc) var0).aNpcDef1;
+				NpcDefinition var79 = ((Npc) var0).aNpcDef1;
 				if (var79.anIntArray116 != null) {
 					var79 = var79.method544();
 				}
@@ -6007,7 +6007,7 @@ public class Static {
 					}
 				}
 			} else {
-				NpcDef var76 = ((Npc) var0).aNpcDef1;
+				NpcDefinition var76 = ((Npc) var0).aNpcDef1;
 				if (var76.anIntArray116 != null) {
 					var76 = var76.method544();
 				}
@@ -7356,7 +7356,7 @@ public class Static {
 		Class62.staticInt147 = var5;
 		NodeSub20.staticInt320 = var3;
 		KeyboardHandler.staticInt84 = var2;
-		NpcDef.staticInt324 = Game.staticInt252 * 15 + 22;
+		NpcDefinition.staticInt324 = Game.staticInt252 * 15 + 22;
 	}
 
 	static final void staticMethod38(Rasterizer2DSub3 var0) {
@@ -10688,13 +10688,13 @@ public class Static {
 																						+ KeyboardHandler.staticInt84
 																						+ 10
 																				|| var4 < NodeSub20.staticInt320 - 10
-																				|| var4 > 10 + NpcDef.staticInt324
+																				|| var4 > 10 + NpcDefinition.staticInt324
 																						+ NodeSub20.staticInt320) {
 																			Game.staticBool30 = false;
 																			staticMethod327(Class62.staticInt147,
 																					NodeSub20.staticInt320,
 																					KeyboardHandler.staticInt84,
-																					NpcDef.staticInt324);
+																					NpcDefinition.staticInt324);
 																		}
 																	}
 
@@ -10734,7 +10734,7 @@ public class Static {
 																		staticMethod327(Class62.staticInt147,
 																				NodeSub20.staticInt320,
 																				KeyboardHandler.staticInt84,
-																				NpcDef.staticInt324);
+																				NpcDefinition.staticInt324);
 																	}
 																} else {
 																	label1268: {
@@ -15851,7 +15851,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod229(NpcDef var0, int var1, int var2, int var3) {
+	static final void staticMethod229(NpcDefinition var0, int var1, int var2, int var3) {
 		if (Game.staticInt252 < 400) {
 			if (var0.anIntArray116 != null) {
 				var0 = var0.method544();
@@ -17829,8 +17829,8 @@ public class Static {
 	}
 
 	public static void staticMethod321(Js5Index var0, Js5Index var1) {
-		NpcDef.staticJs5Index28 = var0;
-		NpcDef.staticJs5Index29 = var1;
+		NpcDefinition.staticJs5Index28 = var0;
+		NpcDefinition.staticJs5Index29 = var1;
 	}
 
 	static final void staticMethod323(String var0) {
@@ -23615,8 +23615,8 @@ public class Static {
 	}
 
 	public static void staticMethod424() {
-		NpcDef.staticCache28.method171();
-		NpcDef.staticCache27.method171();
+		NpcDefinition.staticCache28.method171();
+		NpcDefinition.staticCache27.method171();
 	}
 
 	public static String staticMethod392(byte[] var0, int var1, int var2) {

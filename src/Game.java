@@ -1763,7 +1763,7 @@ public final class Game extends GameShell {
 					var4 = Class62.staticInt147;
 					var21 = NodeSub20.staticInt320;
 					var211 = KeyboardHandler.staticInt84;
-					int var23 = NpcDef.staticInt324;
+					int var23 = NpcDefinition.staticInt324;
 					int var241 = 6116423;
 					Static.staticMethod418(var4, var21, var211, var23, var241);
 					Static.staticMethod418(1 + var4, 1 + var21, var211 - 2, 16, 0);
@@ -1790,7 +1790,7 @@ public final class Game extends GameShell {
 					var261 = Class62.staticInt147;
 					var12 = NodeSub20.staticInt320;
 					var13 = KeyboardHandler.staticInt84;
-					int var14 = NpcDef.staticInt324;
+					int var14 = NpcDefinition.staticInt324;
 
 					for (int var15 = 0; var15 < staticInt162; var15++) {
 						if (staticIntArray82[var15] + staticIntArray107[var15] > var261

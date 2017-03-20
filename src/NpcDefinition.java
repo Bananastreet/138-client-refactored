@@ -1,4 +1,4 @@
-public class NpcDef extends Cacheable {
+public class NpcDefinition extends Cacheable {
 
 	static Js5Index staticJs5Index28;
 	static Js5Index staticJs5Index29;
@@ -51,7 +51,7 @@ public class NpcDef extends Cacheable {
 
 	public final Model method541(AnimDef var1, int var2, AnimDef var3, int var4) {
 		if (anIntArray116 != null) {
-			NpcDef var11 = method544();
+			NpcDefinition var11 = method544();
 			return var11 == null ? null : var11.method541(var1, var2, var3, var4);
 		} else {
 			Model var5 = (Model) staticCache27.get(anInt537);
@@ -119,7 +119,7 @@ public class NpcDef extends Cacheable {
 
 	public final RenderableSub3 method542() {
 		if (anIntArray116 != null) {
-			NpcDef var5 = method544();
+			NpcDefinition var5 = method544();
 			return var5 == null ? null : var5.method542();
 		} else if (anIntArray115 == null) {
 			return null;
@@ -182,7 +182,7 @@ public class NpcDef extends Cacheable {
 		}
 	}
 
-	public final NpcDef method544() {
+	public final NpcDefinition method544() {
 		int var1 = -1;
 		if (anInt545 != -1) {
 			var1 = Static.staticMethod82(anInt545);

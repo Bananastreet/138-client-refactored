@@ -1,7 +1,7 @@
 public final class Npc extends Actor {
 
 	public static boolean[] staticBoolArray12;
-	NpcDef aNpcDef1;
+	NpcDefinition aNpcDef1;
 
 	protected final Model method434() {
 		if (aNpcDef1 == null) {
