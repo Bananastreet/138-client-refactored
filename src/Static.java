@@ -1206,10 +1206,10 @@ public class Static {
 	}
 
 	public static void staticMethod3(Js5Index var0, Js5Index var1, boolean var2, Rasterizer2DSub2Sub1 var3) {
-		ItemDef.staticJs5Index15 = var0;
-		ItemDef.staticJs5Index14 = var1;
+		ItemDefinition.staticJs5Index15 = var0;
+		ItemDefinition.staticJs5Index14 = var1;
 		staticBool4 = var2;
-		KeyboardHandler.staticInt85 = ItemDef.staticJs5Index15.method263(10);
+		KeyboardHandler.staticInt85 = ItemDefinition.staticJs5Index15.method263(10);
 		NodeSub19.staticRasterizer2DSub2Sub1_4 = var3;
 	}
 
@@ -3658,7 +3658,7 @@ public class Static {
 											}
 
 											if (var10.aBool42 && var10.anInt352 != -1) {
-												ItemDef var61 = staticMethod153(var10.anInt352);
+												ItemDefinition var61 = staticMethod153(var10.anInt352);
 												var62 = var61.aString31;
 												if (var62 == null) {
 													var62 = "null";
@@ -3779,7 +3779,7 @@ public class Static {
 											}
 										}
 									} else {
-										ItemDef var17;
+										ItemDefinition var17;
 										if (var10.anInt296 == 6) {
 											var60 = staticMethod318(var10);
 											if (var60) {
@@ -7479,7 +7479,7 @@ public class Static {
 						Class34.staticWidget3 = var0;
 						if (var0.anIntArray76[var20] > 0) {
 							label321: {
-								ItemDef var4 = staticMethod153(var0.anIntArray76[var20] - 1);
+								ItemDefinition var4 = staticMethod153(var0.anIntArray76[var20] - 1);
 								boolean var8;
 								int var14;
 								if (Game.staticInt258 == 1) {
@@ -7736,7 +7736,7 @@ public class Static {
 
 			Item var7;
 			for (var7 = (Item) var2.method195(); var7 != null; var7 = (Item) var2.method193()) {
-				ItemDef var12 = staticMethod153(var7.anInt573);
+				ItemDefinition var12 = staticMethod153(var7.anInt573);
 				long var11 = var12.anInt460;
 				if (var12.anInt442 == 1) {
 					var11 *= var7.anInt574 + 1;
@@ -9066,13 +9066,13 @@ public class Static {
 		long var8 = ((long) var2 << 38) + var0 + ((long) var1 << 16) + ((long) var4 << 40) + ((long) var3 << 42);
 		Sprite var6;
 		if (!var5) {
-			var6 = (Sprite) ItemDef.staticCache9.get(var8);
+			var6 = (Sprite) ItemDefinition.staticCache9.get(var8);
 			if (var6 != null) {
 				return var6;
 			}
 		}
 
-		ItemDef var10 = staticMethod153(var0);
+		ItemDefinition var10 = staticMethod153(var0);
 		if (var1 > 1 && var10.anIntArray105 != null) {
 			int var19 = -1;
 
@@ -9162,7 +9162,7 @@ public class Static {
 			}
 
 			if (!var5) {
-				ItemDef.staticCache9.method170(var6, var8);
+				ItemDefinition.staticCache9.method170(var6, var8);
 			}
 
 			staticMethod400(var17, var18, var7);
@@ -12272,13 +12272,13 @@ public class Static {
 		}
 	}
 
-	public static ItemDef staticMethod153(int var0) {
-		ItemDef var1 = (ItemDef) ItemDef.staticCache10.get(var0);
+	public static ItemDefinition staticMethod153(int var0) {
+		ItemDefinition var1 = (ItemDefinition) ItemDefinition.staticCache10.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {
-			byte[] var2 = ItemDef.staticJs5Index15.getFile(10, var0);
-			var1 = new ItemDef();
+			byte[] var2 = ItemDefinition.staticJs5Index15.getFile(10, var0);
+			var1 = new ItemDefinition();
 			var1.anInt437 = var0;
 			if (var2 != null) {
 				var1.method498(new Stream(var2));
@@ -12306,7 +12306,7 @@ public class Static {
 				var1.anInt463 = 0;
 			}
 
-			ItemDef.staticCache10.method170(var1, var0);
+			ItemDefinition.staticCache10.method170(var1, var0);
 			return var1;
 		}
 	}
@@ -15646,7 +15646,7 @@ public class Static {
 			int var6 = staticIntArray16[1 + staticInt27];
 			var3.anInt352 = var5;
 			var3.anInt353 = var6;
-			ItemDef var4 = staticMethod153(var5);
+			ItemDefinition var4 = staticMethod153(var5);
 			var3.anInt325 = var4.anInt456;
 			var3.anInt332 = var4.anInt466;
 			var3.anInt324 = var4.anInt468;
@@ -16279,7 +16279,7 @@ public class Static {
 					Class39 var291 = Game.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var26][var10];
 					if (var291 != null) {
 						for (Item var22 = (Item) var291.method196(); var22 != null; var22 = (Item) var291.method197()) {
-							ItemDef var23 = staticMethod153(var22.anInt573);
+							ItemDefinition var23 = staticMethod153(var22.anInt573);
 							if (Game.staticInt258 == 1) {
 								staticMethod341("Use",
 										Game.staticString32 + " " + staticString14 + " "
@@ -16376,9 +16376,9 @@ public class Static {
 	}
 
 	public static void staticMethod39() {
-		ItemDef.staticCache10.method171();
-		ItemDef.staticCache11.method171();
-		ItemDef.staticCache9.method171();
+		ItemDefinition.staticCache10.method171();
+		ItemDefinition.staticCache11.method171();
+		ItemDefinition.staticCache9.method171();
 	}
 
 	static final void staticMethod40(byte[] var0, int var1, int var2, int var3, int var4, Class38[] var5) {
@@ -20206,7 +20206,7 @@ public class Static {
 
 					var3 = Game.staticEncryptedStream3.method378();
 					var4 = staticMethod8(var45);
-					ItemDef var891;
+					ItemDefinition var891;
 					if (!var4.aBool42) {
 						if (var2 == -1) {
 							var4.anInt348 = 0;
@@ -22982,7 +22982,7 @@ public class Static {
 											- 1] = staticMethod153(var14).aString31;
 									var8 = 1;
 								} else {
-									ItemDef var391;
+									ItemDefinition var391;
 									if (var0 == 4201) {
 										staticInt27 -= 2;
 										var14 = staticIntArray16[staticInt27];
@@ -23020,7 +23020,7 @@ public class Static {
 												- 1] = staticMethod153(var14).anInt442 == 1 ? 1 : 0;
 										var8 = 1;
 									} else {
-										ItemDef var36;
+										ItemDefinition var36;
 										if (var0 == 4205) {
 											var14 = staticIntArray16[--staticInt27];
 											var36 = staticMethod153(var14);
@@ -23092,7 +23092,7 @@ public class Static {
 													break;
 												}
 
-												ItemDef var33 = staticMethod153(var31);
+												ItemDefinition var33 = staticMethod153(var31);
 												if ((!var9 || var33.aBool56) && var33.anInt457 == -1
 														&& var33.aString31.toLowerCase().indexOf(var17) != -1) {
 													if (var7 >= 250) {
@@ -29921,7 +29921,7 @@ public class Static {
 					((Class11) Rasterizer2DSub1.staticInterface2_1).method33(0.6D);
 				}
 
-				ItemDef.staticCache9.method171();
+				ItemDefinition.staticCache9.method171();
 			}
 
 			if (var41 == 3) {

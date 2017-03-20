@@ -395,7 +395,7 @@ public class Widget extends Node {
 				}
 
 				if (var7 == 4) {
-					ItemDef var5 = Static.staticMethod153(var8);
+					ItemDefinition var5 = Static.staticMethod153(var8);
 					var6 = var5.method496(10);
 					if (var6 == null) {
 						staticBool44 = true;

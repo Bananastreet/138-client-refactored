@@ -1,4 +1,4 @@
-public class ItemDef extends Cacheable {
+public class ItemDefinition extends Cacheable {
 
 	static Js5Index staticJs5Index14;
 	public int anInt437;
@@ -210,7 +210,7 @@ public class ItemDef extends Cacheable {
 
 	}
 
-	void method489(ItemDef var1, ItemDef var2) {
+	void method489(ItemDefinition var1, ItemDefinition var2) {
 		anInt441 = var1.anInt441 * 1;
 		anInt444 = var1.anInt444 * 1;
 		anInt456 = var1.anInt456 * 1;
@@ -228,7 +228,7 @@ public class ItemDef extends Cacheable {
 		anInt442 = 1;
 	}
 
-	void method490(ItemDef var1, ItemDef var2) {
+	void method490(ItemDefinition var1, ItemDefinition var2) {
 		anInt441 = var1.anInt441 * 1;
 		anInt444 = var1.anInt444 * 1;
 		anInt456 = var1.anInt456 * 1;
@@ -266,7 +266,7 @@ public class ItemDef extends Cacheable {
 		anInt460 = 0;
 	}
 
-	public ItemDef method491(int var1) {
+	public ItemDefinition method491(int var1) {
 		if (anIntArray105 != null && var1 > 1) {
 			int var3 = -1;
 
@@ -477,7 +477,7 @@ public class ItemDef extends Cacheable {
 		}
 	}
 
-	void method497(ItemDef var1, ItemDef var2) {
+	void method497(ItemDefinition var1, ItemDefinition var2) {
 		anInt441 = var1.anInt441 * 1;
 		anInt444 = var1.anInt444 * 1;
 		anInt456 = var1.anInt456 * 1;
