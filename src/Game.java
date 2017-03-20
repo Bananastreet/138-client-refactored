@@ -1009,7 +1009,7 @@ public final class Game extends GameShell {
 							}
 						}
 
-						ObjectDef.staticCache15.method171();
+						ObjectDefinition.staticCache15.method171();
 						if (Class40Sub1.staticFrame1 != null) {
 							staticEncryptedStream1.method471(137);
 							staticEncryptedStream1.writeInt(1057001181);

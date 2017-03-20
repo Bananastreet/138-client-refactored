@@ -8089,7 +8089,7 @@ public class Static {
 			int[] var17 = Actor.staticSprite5.anIntArray154;
 			var12 = var1 * 4 + 24624 + (103 - var2) * 2048;
 			var10 = var5 >> 14 & 0x7fff;
-			ObjectDef var23 = staticMethod394(var10);
+			ObjectDefinition var23 = staticMethod394(var10);
 			if (var23.anInt507 != -1) {
 				var19 = Class20.staticRasterizer2DSub3Array1[var23.anInt507];
 				if (var19 != null) {
@@ -8161,7 +8161,7 @@ public class Static {
 		}
 
 		var5 = Friend.staticScene1.method119(var0, var1, var2);
-		ObjectDef var171;
+		ObjectDefinition var171;
 		if (var5 != 0) {
 			var7 = Friend.staticScene1.method117(var0, var1, var2, var5);
 			var8 = var7 >> 6 & 0x3;
@@ -9578,9 +9578,9 @@ public class Static {
 						Js5IndexImpl var25 = Class23.staticJs5IndexImpl2;
 						var211 = ClientScriptMap.staticJs5IndexImpl14;
 						boolean var29 = Game.staticBool27;
-						ObjectDef.staticJs5Index20 = var25;
-						ObjectDef.staticJs5Index19 = var211;
-						ObjectDef.staticBool46 = var29;
+						ObjectDefinition.staticJs5Index20 = var25;
+						ObjectDefinition.staticJs5Index19 = var211;
+						ObjectDefinition.staticBool46 = var29;
 						staticMethod321(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14);
 						staticMethod3(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14,
 								Game.staticBool20, NodeSub4.staticRasterizer2DSub2Sub1_3);
@@ -10147,10 +10147,10 @@ public class Static {
 	}
 
 	public static void staticMethod11() {
-		ObjectDef.staticCache18.method171();
-		ObjectDef.staticCache15.method171();
-		ObjectDef.staticCache16.method171();
-		ObjectDef.staticCache17.method171();
+		ObjectDefinition.staticCache18.method171();
+		ObjectDefinition.staticCache15.method171();
+		ObjectDefinition.staticCache16.method171();
+		ObjectDefinition.staticCache17.method171();
 	}
 
 	static final void staticMethod12() {
@@ -12002,7 +12002,7 @@ public class Static {
 	}
 
 	static final boolean staticMethod146(int var0, int var1) {
-		ObjectDef var2 = staticMethod394(var0);
+		ObjectDefinition var2 = staticMethod394(var0);
 		if (var1 == 11) {
 			var1 = 10;
 		}
@@ -12205,7 +12205,7 @@ public class Static {
 				int var25 = var24 >> 2;
 				int var26 = var24 & 0x3;
 				if (var12 == var4 && var13 >= var5 && var13 < 8 + var5 && var30 >= var6 && var30 < var6 + 8) {
-					ObjectDef var28 = staticMethod394(var14);
+					ObjectDefinition var28 = staticMethod394(var14);
 					int var29 = var13 & 0x7;
 					int var16 = var30 & 0x7;
 					int var23 = var28.anInt485;
@@ -12341,7 +12341,7 @@ public class Static {
 					int var8 = var15 + var1;
 					int var13 = var2 + var11;
 					if (var8 > 0 && var13 > 0 && var8 < 103 && var13 < 103) {
-						ObjectDef var4 = staticMethod394(var5);
+						ObjectDefinition var4 = staticMethod394(var5);
 						if (var14 != 22 || !Game.staticBool27 || var4.anInt489 != 0 || var4.anInt487 == 1
 								|| var4.aBool63) {
 							if (!var4.method513()) {
@@ -16080,7 +16080,7 @@ public class Static {
 		}
 	}
 
-	static void staticMethod246(int var0, int var1, int var2, ObjectDef var3, int var4) {
+	static void staticMethod246(int var0, int var1, int var2, ObjectDefinition var3, int var4) {
 		NodeSub4 var5 = new NodeSub4();
 		var5.anInt222 = var0;
 		var5.anInt224 = var1 * 128;
@@ -16148,7 +16148,7 @@ public class Static {
 			if (var13 != var8) {
 				var13 = var8;
 				if (var15 == 2 && Friend.staticScene1.method117(NodeSub4.staticInt155, var26, var10, var8) >= 0) {
-					ObjectDef var11 = staticMethod394(var16);
+					ObjectDefinition var11 = staticMethod394(var16);
 					if (var11.anIntArray111 != null) {
 						var11 = var11.method516();
 					}
@@ -16743,7 +16743,7 @@ public class Static {
 	static final void staticMethod45() {
 		int var0 = TaskManager.staticInt40 * 128 + 64;
 		int var1 = 64 + staticInt137 * 128;
-		int var2 = staticMethod240(var0, var1, NodeSub4.staticInt155) - ObjectDef.staticInt322;
+		int var2 = staticMethod240(var0, var1, NodeSub4.staticInt155) - ObjectDefinition.staticInt322;
 		if (Class20.staticInt36 < var0) {
 			Class20.staticInt36 += staticInt17 + (var0 - Class20.staticInt36) * staticInt150 / 1000;
 			if (Class20.staticInt36 > var0) {
@@ -16861,7 +16861,7 @@ public class Static {
 				staticInt112 = var0;
 			}
 
-			ObjectDef var8 = staticMethod394(var3);
+			ObjectDefinition var8 = staticMethod394(var3);
 			int var15;
 			int var16;
 			if (var4 != 1 && var4 != 3) {
@@ -17913,7 +17913,7 @@ public class Static {
 				int var37 = var11 >> 14 & 0x7fff;
 				int var7 = var15 & 0x1f;
 				int var10 = var15 >> 6 & 0x3;
-				ObjectDef var8;
+				ObjectDefinition var8;
 				if (var1 == 0) {
 					Friend.staticScene1.method106(var0, var2, var3);
 					var8 = staticMethod394(var37);
@@ -17957,7 +17957,7 @@ public class Static {
 
 				Scene var371 = Friend.staticScene1;
 				Class38 var71 = Game.staticClass38Array1[var0];
-				ObjectDef var101 = staticMethod394(var4);
+				ObjectDefinition var101 = staticMethod394(var4);
 				int var9;
 				int var81;
 				if (var5 != 1 && var5 != 3) {
@@ -19279,14 +19279,14 @@ public class Static {
 					Game.staticBool28 = true;
 					TaskManager.staticInt40 = Game.staticEncryptedStream3.method367();
 					staticInt137 = Game.staticEncryptedStream3.method367();
-					ObjectDef.staticInt322 = Game.staticEncryptedStream3.method370();
+					ObjectDefinition.staticInt322 = Game.staticEncryptedStream3.method370();
 					staticInt17 = Game.staticEncryptedStream3.method367();
 					staticInt150 = Game.staticEncryptedStream3.method367();
 					if (staticInt150 >= 100) {
 						Class20.staticInt36 = 64 + TaskManager.staticInt40 * 128;
 						NodeSub3.staticInt153 = staticInt137 * 128 + 64;
 						staticInt125 = staticMethod240(Class20.staticInt36, NodeSub3.staticInt153,
-								NodeSub4.staticInt155) - ObjectDef.staticInt322;
+								NodeSub4.staticInt155) - ObjectDefinition.staticInt322;
 					}
 
 					Game.staticInt191 = -1;
@@ -21262,7 +21262,7 @@ public class Static {
 			}
 
 			if (var7 != null) {
-				ObjectDef var12 = staticMethod394(var3);
+				ObjectDefinition var12 = staticMethod394(var3);
 				int var13;
 				int var19;
 				if (var36 != 1 && var36 != 3) {
@@ -23658,13 +23658,13 @@ public class Static {
 
 	}
 
-	public static ObjectDef staticMethod394(int var0) {
-		ObjectDef var1 = (ObjectDef) ObjectDef.staticCache18.get(var0);
+	public static ObjectDefinition staticMethod394(int var0) {
+		ObjectDefinition var1 = (ObjectDefinition) ObjectDefinition.staticCache18.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {
-			byte[] var2 = ObjectDef.staticJs5Index20.getFile(6, var0);
-			var1 = new ObjectDef();
+			byte[] var2 = ObjectDefinition.staticJs5Index20.getFile(6, var0);
+			var1 = new ObjectDefinition();
 			var1.anInt483 = var0;
 			if (var2 != null) {
 				var1.method518(new Stream(var2));
@@ -23676,7 +23676,7 @@ public class Static {
 				var1.aBool60 = false;
 			}
 
-			ObjectDef.staticCache18.method170(var1, var0);
+			ObjectDefinition.staticCache18.method170(var1, var0);
 			return var1;
 		}
 	}

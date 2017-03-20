@@ -1,4 +1,4 @@
-public class ObjectDef extends Cacheable {
+public class ObjectDefinition extends Cacheable {
 
 	public static Js5Index staticJs5Index19;
 	public int anInt483;
@@ -492,7 +492,7 @@ public class ObjectDef extends Cacheable {
 		return var91;
 	}
 
-	public final ObjectDef method516() {
+	public final ObjectDefinition method516() {
 		int var1 = -1;
 		if (anInt503 != -1) {
 			var1 = Static.staticMethod82(anInt503);
@@ -516,7 +516,7 @@ public class ObjectDef extends Cacheable {
 		} else {
 			for (int var1 = 0; var1 < anIntArray111.length; var1++) {
 				if (anIntArray111[var1] != -1) {
-					ObjectDef var2 = Static.staticMethod394(anIntArray111[var1]);
+					ObjectDefinition var2 = Static.staticMethod394(anIntArray111[var1]);
 					if (var2.anInt504 != -1 || var2.anIntArray109 != null) {
 						return true;
 					}

@@ -9,7 +9,7 @@ public final class NodeSub4 extends Node {
 	NodeSub8Sub2 aNodeSub8Sub2_2;
 	int anInt231;
 	static int staticInt155;
-	ObjectDef anObjectDef1;
+	ObjectDefinition anObjectDef1;
 	static Class39 staticClass39_4 = new Class39();
 	int anInt227;
 	int anInt226;
@@ -20,7 +20,7 @@ public final class NodeSub4 extends Node {
 
 	void method295() {
 		int var1 = anInt227;
-		ObjectDef var2 = anObjectDef1.method516();
+		ObjectDefinition var2 = anObjectDef1.method516();
 		if (var2 != null) {
 			anInt227 = var2.anInt504;
 			anInt226 = var2.anInt505 * 128;

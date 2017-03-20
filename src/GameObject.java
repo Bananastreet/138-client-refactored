@@ -38,7 +38,7 @@ public class GameObject extends Renderable {
 			anInt648 = Game.staticInt166 - var12;
 		}
 
-		ObjectDef var121 = Static.staticMethod394(anInt643);
+		ObjectDefinition var121 = Static.staticMethod394(anInt643);
 		if (var121.anIntArray111 != null) {
 			var121 = var121.method516();
 		}
