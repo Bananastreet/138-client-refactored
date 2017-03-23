@@ -1,4 +1,4 @@
-public class Class50 implements Runnable {
+public class FileRequestTask implements Runnable {
 
 	static int staticInt128 = 0;
 	static Class39 staticClass39_3 = new Class39();

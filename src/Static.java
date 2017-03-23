@@ -12538,9 +12538,9 @@ public class Static {
 
 	static void staticMethod156(int var0, Js5DiskCache var1, Js5IndexImpl var2) {
 		byte[] var3 = null;
-		synchronized (Class50.staticClass39_3) {
-			for (Js5CacheWriteRequest var5 = (Js5CacheWriteRequest) Class50.staticClass39_3
-					.method195(); var5 != null; var5 = (Js5CacheWriteRequest) Class50.staticClass39_3.method193()) {
+		synchronized (FileRequestTask.staticClass39_3) {
+			for (Js5CacheWriteRequest var5 = (Js5CacheWriteRequest) FileRequestTask.staticClass39_3
+					.method195(); var5 != null; var5 = (Js5CacheWriteRequest) FileRequestTask.staticClass39_3.method193()) {
 				if (var5.id == var0 && var1 == var5.aJs5DiskCache1 && var5.anInt290 == 0) {
 					var3 = var5.aByteArray22;
 					break;
@@ -17527,12 +17527,12 @@ public class Static {
 	}
 
 	static void staticMethod298() {
-		synchronized (Class50.staticObject1) {
-			if (Class50.staticInt128 == 0) {
-				BufferedFile.staticTaskManager1.method94(new Class50(), 5);
+		synchronized (FileRequestTask.staticObject1) {
+			if (FileRequestTask.staticInt128 == 0) {
+				BufferedFile.staticTaskManager1.method94(new FileRequestTask(), 5);
 			}
 
-			Class50.staticInt128 = 600;
+			FileRequestTask.staticInt128 = 600;
 		}
 	}
 
@@ -17840,8 +17840,8 @@ public class Static {
 		var3.id = var0;
 		var3.aByteArray22 = var1;
 		var3.aJs5DiskCache1 = var2;
-		synchronized (Class50.staticClass39_3) {
-			Class50.staticClass39_3.method198(var3);
+		synchronized (FileRequestTask.staticClass39_3) {
+			FileRequestTask.staticClass39_3.method198(var3);
 		}
 
 		staticMethod298();
@@ -20962,12 +20962,12 @@ public class Static {
 	}
 
 	public static void staticMethod326() {
-		synchronized (Class50.staticObject1) {
-			if (Class50.staticInt128 != 0) {
-				Class50.staticInt128 = 1;
+		synchronized (FileRequestTask.staticObject1) {
+			if (FileRequestTask.staticInt128 != 0) {
+				FileRequestTask.staticInt128 = 1;
 
 				try {
-					Class50.staticObject1.wait();
+					FileRequestTask.staticObject1.wait();
 				} catch (InterruptedException var3) {
 					;
 				}
@@ -29410,8 +29410,8 @@ public class Static {
 	public static void staticMethod427() {
 		while (true) {
 			Js5CacheWriteRequest var1;
-			synchronized (Class50.staticClass39_3) {
-				var1 = (Js5CacheWriteRequest) Class50.staticClass39_2.method194();
+			synchronized (FileRequestTask.staticClass39_3) {
+				var1 = (Js5CacheWriteRequest) FileRequestTask.staticClass39_2.method194();
 			}
 
 			if (var1 == null) {

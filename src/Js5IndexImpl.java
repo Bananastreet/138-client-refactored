@@ -218,8 +218,8 @@ public class Js5IndexImpl extends Js5Index {
 					var4.id = var1;
 					var4.aJs5DiskCache1 = var2;
 					var4.aJs5IndexImpl1 = this;
-					synchronized (Class50.staticClass39_3) {
-						Class50.staticClass39_3.method198(var4);
+					synchronized (FileRequestTask.staticClass39_3) {
+						FileRequestTask.staticClass39_3.method198(var4);
 					}
 
 					Static.staticMethod298();
