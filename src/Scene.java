@@ -444,7 +444,7 @@ public class Scene {
 		}
 	}
 
-	public Class33 method112(int var1, int var2, int var3) {
+	public DataClass6 method112(int var1, int var2, int var3) {
 		Tile var4 = aTileArrayArrayArray1[var1][var2][var3];
 		return var4 != null && var4.aClass33_1 != null ? var4.aClass33_1 : null;
 	}
@@ -1309,7 +1309,7 @@ public class Scene {
 											}
 
 											if (var22) {
-												Class33 var34 = var3.aClass33_1;
+												DataClass6 var34 = var3.aClass33_1;
 												if (var34 != null) {
 													var34.aRenderable9.method435(0, staticInt68, staticInt60,
 															staticInt61, staticInt49, var34.anInt139 - staticInt52,
@@ -1696,7 +1696,7 @@ public class Scene {
 							}
 						}
 
-						Class33 var141 = var6.aClass33_1;
+						DataClass6 var141 = var6.aClass33_1;
 						if (var141 != null && var141.aRenderable9 instanceof RenderableSub3) {
 							var10 = (RenderableSub3) var141.aRenderable9;
 							method136(var10, var4, var7, var8);
@@ -2212,7 +2212,7 @@ public class Scene {
 
 	public void method140(int var1, int var2, int var3, int var4, Renderable var5, int var6, int var7) {
 		if (var5 != null) {
-			Class33 var8 = new Class33();
+			DataClass6 var8 = new DataClass6();
 			var8.aRenderable9 = var5;
 			var8.anInt139 = var2 * 128 + 64;
 			var8.anInt138 = var3 * 128 + 64;

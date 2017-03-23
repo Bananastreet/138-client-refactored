@@ -5672,8 +5672,8 @@ public class Static {
 	}
 
 	static final void staticMethod136(int var0, int var1, int var2, int var3, int var4) {
-		Class33.staticRasterizer2DSub3Array2[0].method655(var0, var1);
-		Class33.staticRasterizer2DSub3Array2[1].method655(var0, var3 + var1 - 16);
+		DataClass6.staticRasterizer2DSub3Array2[0].method655(var0, var1);
+		DataClass6.staticRasterizer2DSub3Array2[1].method655(var0, var3 + var1 - 16);
 		staticMethod418(var0, 16 + var1, 16, var3 - 32, Client.staticInt216);
 		int var6 = (var3 - 32) * var3 / var4;
 		if (var6 < 8) {
@@ -9196,7 +9196,7 @@ public class Static {
 			staticRasterizer2DSub3_4 = staticMethod25(var2, "titlebox", "");
 			staticRasterizer2DSub3_1 = staticMethod25(var2, "titlebutton", "");
 			staticRasterizer2DSub3Array5 = staticMethod274(var2, "runes", "");
-			Class33.staticRasterizer2DSub3Array3 = staticMethod274(var2, "title_mute", "");
+			DataClass6.staticRasterizer2DSub3Array3 = staticMethod274(var2, "title_mute", "");
 			staticRasterizer2DSub3_2 = staticMethod25(var2, "options_radio_buttons,0", "");
 			staticRasterizer2DSub3_3 = staticMethod25(var2, "options_radio_buttons,2", "");
 			staticIntArray67 = new int[256];
@@ -9702,8 +9702,8 @@ public class Static {
 						++var1;
 					}
 
-					if (Class33.staticRasterizer2DSub3Array2 == null) {
-						Class33.staticRasterizer2DSub3Array2 = staticMethod274(Class62.staticJs5IndexImpl7, "scrollbar",
+					if (DataClass6.staticRasterizer2DSub3Array2 == null) {
+						DataClass6.staticRasterizer2DSub3Array2 = staticMethod274(Class62.staticJs5IndexImpl7, "scrollbar",
 								"");
 					} else {
 						++var1;
@@ -11872,7 +11872,7 @@ public class Static {
 			}
 
 			staticMethod196();
-			Class33.staticRasterizer2DSub3Array3[staticClass6_1.aBool2 ? 1 : 0]
+			DataClass6.staticRasterizer2DSub3Array3[staticClass6_1.aBool2 ? 1 : 0]
 					.method655(staticInt6 + 765 - 40, 463);
 			if (Client.staticInt165 > 5 && Client.staticInt231 == 0) {
 				if (Client.staticRasterizer2DSub3_5 != null) {
@@ -20632,7 +20632,7 @@ public class Static {
 			staticSprite2 = null;
 			staticSprite1 = null;
 			Config5.staticRasterizer2DSub3_6 = null;
-			Class33.staticRasterizer2DSub3Array3 = null;
+			DataClass6.staticRasterizer2DSub3Array3 = null;
 			staticRasterizer2DSub3_2 = null;
 			staticRasterizer2DSub3_3 = null;
 			staticSpriteArray5 = null;
@@ -21341,7 +21341,7 @@ public class Static {
 				}
 
 				if (var4 == 3) {
-					Class33 var371 = Friend.staticScene1.method112(NodeSub4.staticInt155, var291, var30);
+					DataClass6 var371 = Friend.staticScene1.method112(NodeSub4.staticInt155, var291, var30);
 					if (var371 != null) {
 						var371.aRenderable9 = new GameObject(var371.anInt140 >> 14 & 0x7fff, 22, var32,
 								NodeSub4.staticInt155, var291, var30, var14, false, var371.aRenderable9);
