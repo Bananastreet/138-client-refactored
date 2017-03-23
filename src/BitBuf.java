@@ -1,4 +1,4 @@
-public final class EncryptedStream extends Stream {
+public final class BitBuf extends Stream {
 
 	static int staticInt321;
 	static final int[] staticIntArray128 = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191,
@@ -50,7 +50,7 @@ public final class EncryptedStream extends Stream {
 		return var4;
 	}
 
-	public EncryptedStream(int var1) {
+	public BitBuf(int var1) {
 		super(var1);
 	}
 

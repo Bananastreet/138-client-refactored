@@ -1,6 +1,7 @@
 public class Class47 {
 
-	protected static int staticInt121;
+	protected static int gameHeight;
+	
 	static byte[][] staticByteArrayArray6;
 	int[] anIntArray44;
 	byte[] aByteArray14;

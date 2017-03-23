@@ -1252,8 +1252,8 @@ public class Static {
 	static void staticMethod53() {
 		int var0 = GameShell.staticInt106;
 		int var1 = GameShell.staticInt109;
-		int var2 = Class40Sub1.staticInt317 - staticInt86 - var0;
-		int var3 = BuildType.staticInt124 - Class47.staticInt121 - var1;
+		int var2 = Class40Sub1.staticInt317 - gameWidth - var0;
+		int var3 = BuildType.staticInt124 - Class47.gameHeight - var1;
 		if (var0 > 0 || var2 > 0 || var1 > 0 || var3 > 0) {
 			try {
 				Container var4 = Client.staticGame1.method207();
@@ -2811,7 +2811,7 @@ public class Static {
 
 	static final void staticMethod90() {
 		Scene.staticBool6 = false;
-		Client.staticBool27 = false;
+		Client.lowMemory = false;
 	}
 
 	public static String staticMethod91(CharSequence var0) {
@@ -3016,11 +3016,11 @@ public class Static {
 									Runtime var511 = Runtime.getRuntime();
 									var23 = (int) ((var511.totalMemory() - var511.freeMemory()) / 1024L);
 									var16 = 16776960;
-									if (var23 > '\u8000' && Client.staticBool27) {
+									if (var23 > '\u8000' && Client.lowMemory) {
 										var16 = 16711680;
 									}
 
-									if (var23 > 65536 && !Client.staticBool27) {
+									if (var23 > 65536 && !Client.lowMemory) {
 										var16 = 16711680;
 									}
 
@@ -3458,7 +3458,7 @@ public class Static {
 							staticMethod449();
 						}
 
-						if (Client.staticBool36 || Client.staticBoolArray9[var13] || Client.staticInt286 > 1) {
+						if (Client.resizable || Client.staticBoolArray9[var13] || Client.staticInt286 > 1) {
 							if (var10.anInt296 == 0 && !var10.aBool42 && var10.anInt361 > var10.anInt351) {
 								staticMethod136(var24 + var10.anInt307, var18, var10.anInt312, var10.anInt351,
 										var10.anInt361);
@@ -4584,8 +4584,8 @@ public class Static {
 		int var2;
 		int var3;
 		if (var1 == null) {
-			var2 = staticInt86;
-			var3 = Class47.staticInt121;
+			var2 = gameWidth;
+			var3 = Class47.gameHeight;
 		} else {
 			var2 = var1.anInt307;
 			var3 = var1.anInt351;
@@ -4597,8 +4597,8 @@ public class Static {
 
 	static final void staticMethod93(boolean var0) {
 		int var1 = Client.staticInt263;
-		int var2 = staticInt86;
-		int var3 = Class47.staticInt121;
+		int var2 = gameWidth;
+		int var3 = Class47.gameHeight;
 		if (staticMethod4(var1)) {
 			staticMethod215(Widget.staticWidgetArrayArray1[var1], -1, var2, var3, var0);
 		}
@@ -5084,7 +5084,7 @@ public class Static {
 						}
 
 						if (var26 >= 1 && var26 < 103
-								&& (!Client.staticBool27 || (staticByteArrayArrayArray4[0][var3][var26] & 0x2) != 0
+								&& (!Client.lowMemory || (staticByteArrayArrayArray4[0][var3][var26] & 0x2) != 0
 										|| (staticByteArrayArrayArray4[var2][var3][var26] & 0x10) == 0)) {
 							if (var2 < staticInt112) {
 								staticInt112 = var2;
@@ -7049,7 +7049,7 @@ public class Static {
 			var4.writeInt(var3.nextInt());
 		}
 
-		var4.method342(staticBigInteger1, staticBigInteger2);
+		var4.encryptRSA(staticBigInteger1, staticBigInteger2);
 		var5.writeByte(10);
 
 		for (var7 = 0; var7 < 3; var7++) {
@@ -7059,7 +7059,7 @@ public class Static {
 		var5.method344(var3.nextLong());
 		var5.writeHexByte(var3.nextLong());
 		if (Client.staticByteArray6 != null) {
-			var5.method326(Client.staticByteArray6, 0, Client.staticByteArray6.length);
+			var5.writeBytes(Client.staticByteArray6, 0, Client.staticByteArray6.length);
 		} else {
 			byte[] var20 = new byte[24];
 
@@ -7081,11 +7081,11 @@ public class Static {
 				}
 			}
 
-			var5.method326(var20, 0, var20.length);
+			var5.writeBytes(var20, 0, var20.length);
 		}
 
 		var5.method344(var3.nextLong());
-		var5.method342(staticBigInteger1, staticBigInteger2);
+		var5.encryptRSA(staticBigInteger1, staticBigInteger2);
 		var7 = staticMethod378(var2);
 		if (var7 % 8 != 0) {
 			var7 += 8 - var7 % 8;
@@ -7098,11 +7098,11 @@ public class Static {
 		Stream var221 = new Stream(var211.position + var5.position + 5 + var4.position);
 		var221.writeByte(2);
 		var221.writeByte(var4.position);
-		var221.method326(var4.buf, 0, var4.position);
+		var221.writeBytes(var4.buf, 0, var4.position);
 		var221.writeByte(var5.position);
-		var221.method326(var5.buf, 0, var5.position);
+		var221.writeBytes(var5.buf, 0, var5.position);
 		var221.writeShort(var211.position);
-		var221.method326(var211.buf, 0, var211.position);
+		var221.writeBytes(var211.buf, 0, var211.position);
 		byte[] var231 = var221.buf;
 		String var22 = staticMethod392(var231, 0, var231.length);
 		String var12 = var22;
@@ -7204,7 +7204,7 @@ public class Static {
 		return null;
 	}
 
-	static boolean staticMethod256(EncryptedStream var0, int var1) {
+	static boolean staticMethod256(BitBuf var0, int var1) {
 		int var2 = var0.method477(2);
 		int var4;
 		int var5;
@@ -7334,8 +7334,8 @@ public class Static {
 		var2 += 8;
 		var4 = Client.staticInt252 * 15 + 22;
 		var5 = var0 - var2 / 2;
-		if (var2 + var5 > staticInt86) {
-			var5 = staticInt86 - var2;
+		if (var2 + var5 > gameWidth) {
+			var5 = gameWidth - var2;
 		}
 
 		if (var5 < 0) {
@@ -7343,8 +7343,8 @@ public class Static {
 		}
 
 		int var3 = var1;
-		if (var4 + var1 > Class47.staticInt121) {
-			var3 = Class47.staticInt121 - var4;
+		if (var4 + var1 > Class47.gameHeight) {
+			var3 = Class47.gameHeight - var4;
 		}
 
 		if (var3 < 0) {
@@ -7776,7 +7776,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod263(EncryptedStream var0) {
+	static final void staticMethod263(BitBuf var0) {
 		int var1 = 0;
 		var0.method475();
 
@@ -8258,7 +8258,7 @@ public class Static {
 		return var7;
 	}
 
-	static final void staticMethod48(EncryptedStream var0) {
+	static final void staticMethod48(BitBuf var0) {
 		var0.method475();
 		int var5 = Client.staticInt246;
 		Player var6 = AbstractClass2Sub1.staticPlayer1 = Client.staticPlayerArray1[var5] = new Player();
@@ -9333,7 +9333,7 @@ public class Static {
 
 			staticMethod1(false);
 			staticBool2 = true;
-			staticInt6 = (staticInt86 - Client.staticInt288) / 2;
+			staticInt6 = (gameWidth - Client.staticInt288) / 2;
 			staticInt8 = 202 + staticInt6;
 			staticSprite2.method636(staticInt6, 0);
 			staticSprite1.method636(staticInt6 + 382, 0);
@@ -9499,7 +9499,7 @@ public class Static {
 				Js5IndexImpl var22;
 				Js5IndexImpl var211;
 				if (Client.staticInt179 == 45) {
-					boolean var3 = !Client.staticBool27;
+					boolean var3 = !Client.lowMemory;
 					staticInt120 = 22050;
 					Class19.staticBool5 = var3;
 					Class19.staticInt35 = 2;
@@ -9578,7 +9578,7 @@ public class Static {
 						staticMethod9(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14);
 						Js5IndexImpl var25 = Class23.staticJs5IndexImpl2;
 						var211 = ClientScriptMap.staticJs5IndexImpl14;
-						boolean var29 = Client.staticBool27;
+						boolean var29 = Client.lowMemory;
 						ObjectDefinition.staticJs5Index20 = var25;
 						ObjectDefinition.staticJs5Index19 = var211;
 						ObjectDefinition.staticBool46 = var29;
@@ -9629,7 +9629,7 @@ public class Static {
 							staticInt14 = 270;
 						} else {
 							Class11 var24 = new Class11(IdentityKit.staticJs5IndexImpl12, Class62.staticJs5IndexImpl7,
-									20, 0.8D, Client.staticBool27 ? 64 : 128);
+									20, 0.8D, Client.lowMemory ? 64 : 128);
 							staticMethod441(var24);
 							staticMethod453(0.8D);
 							staticString3 = "Loaded textures";
@@ -10341,15 +10341,15 @@ public class Static {
 							var2 = MouseHandler.staticInt100;
 							if (var2 < 0) {
 								var2 = 0;
-							} else if (var2 > Class47.staticInt121) {
-								var2 = Class47.staticInt121;
+							} else if (var2 > Class47.gameHeight) {
+								var2 = Class47.gameHeight;
 							}
 
 							var3 = MouseHandler.staticInt99;
 							if (var3 < 0) {
 								var3 = 0;
-							} else if (var3 > staticInt86) {
-								var3 = staticInt86;
+							} else if (var3 > gameWidth) {
+								var3 = gameWidth;
 							}
 
 							var4 = (int) var261;
@@ -10602,8 +10602,8 @@ public class Static {
 
 						if (Client.staticInt263 != -1) {
 							var2 = Client.staticInt263;
-							var3 = staticInt86;
-							var4 = Class47.staticInt121;
+							var3 = gameWidth;
+							var4 = Class47.gameHeight;
 							if (staticMethod4(var2)) {
 								staticMethod26(Widget.staticWidgetArrayArray1[var2], -1, 0, 0, var3, var4, 0, 0);
 							}
@@ -11318,7 +11318,7 @@ public class Static {
 	static void staticMethod134(Rasterizer2DSub2Sub1 var0, Rasterizer2DSub2Sub1 var1, Rasterizer2DSub2Sub1 var2,
 			boolean var3) {
 		if (var3) {
-			staticInt6 = (staticInt86 - Client.staticInt288) / 2;
+			staticInt6 = (gameWidth - Client.staticInt288) / 2;
 			staticInt8 = 202 + staticInt6;
 		}
 
@@ -12343,7 +12343,7 @@ public class Static {
 					int var13 = var2 + var11;
 					if (var8 > 0 && var13 > 0 && var8 < 103 && var13 < 103) {
 						ObjectDefinition var4 = staticMethod394(var5);
-						if (var14 != 22 || !Client.staticBool27 || var4.anInt489 != 0 || var4.anInt487 == 1
+						if (var14 != 22 || !Client.lowMemory || var4.anInt489 != 0 || var4.anInt487 == 1
 								|| var4.aBool63) {
 							if (!var4.method513()) {
 								++Client.staticInt199;
@@ -12365,7 +12365,7 @@ public class Static {
 		}
 	}
 
-	static final void staticMethod155(EncryptedStream var0, int var1, Player var2, int var3) {
+	static final void staticMethod155(BitBuf var0, int var1, Player var2, int var3) {
 		byte var4 = -1;
 		int var7;
 		if ((var3 & 0x80) != 0) {
@@ -12828,7 +12828,7 @@ public class Static {
 
 	}
 
-	static int staticMethod18(EncryptedStream var0) {
+	static int staticMethod18(BitBuf var0) {
 		int var1 = var0.method477(2);
 		int var2;
 		if (var1 == 0) {
@@ -13130,28 +13130,33 @@ public class Static {
 				}
 
 				Client.outBuffer.method323(staticString7);
-				Client.outBuffer.method342(staticBigInteger3, staticBigInteger4);
-				Client.staticEncryptedStream2.position = 0;
+				//TODO RSA
+				Client.outBuffer.encryptRSA(staticBigInteger3, staticBigInteger4);
+				Client.loginBuffer.position = 0;
+				
+				//TODO connection type
 				if (Client.staticInt165 == 40) {
-					Client.staticEncryptedStream2.writeByte(18);
+					Client.loginBuffer.writeByte(18);
 				} else {
-					Client.staticEncryptedStream2.writeByte(16);
+					Client.loginBuffer.writeByte(16);
 				}
 
-				Client.staticEncryptedStream2.writeShort(0);
-				varStart = Client.staticEncryptedStream2.position;
-				Client.staticEncryptedStream2.writeInt(138);
-				Client.staticEncryptedStream2.method326(Client.outBuffer.buf, 0,
+				Client.loginBuffer.writeShort(0);
+				varStart = Client.loginBuffer.position;
+				
+				// client version
+				Client.loginBuffer.writeInt(138);
+				Client.loginBuffer.writeBytes(Client.outBuffer.buf, 0,
 						Client.outBuffer.position);
-				xteaStart = Client.staticEncryptedStream2.position;
-				Client.staticEncryptedStream2.method323(staticString2);
-				Client.staticEncryptedStream2.writeByte((Client.staticBool36 ? 1 : 0) << 1 | (Client.staticBool27 ? 1 : 0));
-				Client.staticEncryptedStream2.writeShort(staticInt86);
-				Client.staticEncryptedStream2.writeShort(Class47.staticInt121);
-				EncryptedStream var16 = Client.staticEncryptedStream2;
+				xteaStart = Client.loginBuffer.position;
+				Client.loginBuffer.method323(staticString2);
+				Client.loginBuffer.writeByte((Client.resizable ? 1 : 0) << 1 | (Client.lowMemory ? 1 : 0));
+				Client.loginBuffer.writeShort(gameWidth);
+				Client.loginBuffer.writeShort(Class47.gameHeight);
+				BitBuf var16 = Client.loginBuffer;
 				int var20;
 				if (Client.staticByteArray6 != null) {
-					var16.method326(Client.staticByteArray6, 0, Client.staticByteArray6.length);
+					var16.writeBytes(Client.staticByteArray6, 0, Client.staticByteArray6.length);
 				} else {
 					byte[] var17 = new byte[24];
 
@@ -13172,36 +13177,36 @@ public class Static {
 						}
 					}
 
-					var16.method326(var17, 0, var17.length);
+					var16.writeBytes(var17, 0, var17.length);
 				}
 
-				Client.staticEncryptedStream2.method323(BuildType.staticString27);
-				Client.staticEncryptedStream2.writeInt(Client.staticInt164);
+				Client.loginBuffer.method323(BuildType.staticString27);
+				Client.loginBuffer.writeInt(Client.staticInt164);
 				Stream var161 = new Stream(Class57.staticComputerInfo1.method404());
 				Class57.staticComputerInfo1.method403(var161);
-				Client.staticEncryptedStream2.method326(var161.buf, 0, var161.buf.length);
-				Client.staticEncryptedStream2.writeByte(NodeSub19.staticInt319);
-				Client.staticEncryptedStream2.writeInt(0);
-				Client.staticEncryptedStream2.writeInt(Client.staticJs5IndexImpl8.anInt201);
-				Client.staticEncryptedStream2.writeInt(FloorUnderlayDef.staticJs5IndexImpl13.anInt201);
-				Client.staticEncryptedStream2.writeInt(Class23.staticJs5IndexImpl2.anInt201);
-				Client.staticEncryptedStream2.writeInt(CanvasSub1.staticJs5IndexImpl5.anInt201);
-				Client.staticEncryptedStream2.writeInt(Config19.staticJs5IndexImpl15.anInt201);
-				Client.staticEncryptedStream2.writeInt(RenderableSub2.staticJs5IndexImpl16.anInt201);
-				Client.staticEncryptedStream2.writeInt(Class34.staticJs5IndexImpl3.anInt201);
-				Client.staticEncryptedStream2.writeInt(ClientScriptMap.staticJs5IndexImpl14.anInt201);
-				Client.staticEncryptedStream2.writeInt(Class62.staticJs5IndexImpl7.anInt201);
-				Client.staticEncryptedStream2.writeInt(IdentityKit.staticJs5IndexImpl12.anInt201);
-				Client.staticEncryptedStream2.writeInt(AbstractClass3Sub1.staticJs5IndexImpl10.anInt201);
-				Client.staticEncryptedStream2.writeInt(Class56.staticJs5IndexImpl6.anInt201);
-				Client.staticEncryptedStream2.writeInt(Connection.staticJs5IndexImpl4.anInt201);
-				Client.staticEncryptedStream2.writeInt(NodeSub12.staticJs5IndexImpl11.anInt201);
-				Client.staticEncryptedStream2.writeInt(staticJs5IndexImpl1.anInt201);
-				Client.staticEncryptedStream2.writeInt(Client.staticJs5IndexImpl9.anInt201);
-				Client.staticEncryptedStream2.method341(var19, xteaStart, Client.staticEncryptedStream2.position);
-				Client.staticEncryptedStream2.method371(Client.staticEncryptedStream2.position - varStart);
-				Class56.gameConnection.write(Client.staticEncryptedStream2.buf, 0,
-						Client.staticEncryptedStream2.position);
+				Client.loginBuffer.writeBytes(var161.buf, 0, var161.buf.length);
+				Client.loginBuffer.writeByte(NodeSub19.staticInt319);
+				Client.loginBuffer.writeInt(0);
+				Client.loginBuffer.writeInt(Client.staticJs5IndexImpl8.anInt201);
+				Client.loginBuffer.writeInt(FloorUnderlayDef.staticJs5IndexImpl13.anInt201);
+				Client.loginBuffer.writeInt(Class23.staticJs5IndexImpl2.anInt201);
+				Client.loginBuffer.writeInt(CanvasSub1.staticJs5IndexImpl5.anInt201);
+				Client.loginBuffer.writeInt(Config19.staticJs5IndexImpl15.anInt201);
+				Client.loginBuffer.writeInt(RenderableSub2.staticJs5IndexImpl16.anInt201);
+				Client.loginBuffer.writeInt(Class34.staticJs5IndexImpl3.anInt201);
+				Client.loginBuffer.writeInt(ClientScriptMap.staticJs5IndexImpl14.anInt201);
+				Client.loginBuffer.writeInt(Class62.staticJs5IndexImpl7.anInt201);
+				Client.loginBuffer.writeInt(IdentityKit.staticJs5IndexImpl12.anInt201);
+				Client.loginBuffer.writeInt(AbstractClass3Sub1.staticJs5IndexImpl10.anInt201);
+				Client.loginBuffer.writeInt(Class56.staticJs5IndexImpl6.anInt201);
+				Client.loginBuffer.writeInt(Connection.staticJs5IndexImpl4.anInt201);
+				Client.loginBuffer.writeInt(NodeSub12.staticJs5IndexImpl11.anInt201);
+				Client.loginBuffer.writeInt(staticJs5IndexImpl1.anInt201);
+				Client.loginBuffer.writeInt(Client.staticJs5IndexImpl9.anInt201);
+				Client.loginBuffer.method341(var19, xteaStart, Client.loginBuffer.position);
+				Client.loginBuffer.method371(Client.loginBuffer.position - varStart);
+				Class56.gameConnection.write(Client.loginBuffer.buf, 0,
+						Client.loginBuffer.position);
 				Client.outBuffer.method476(var19);
 
 				for (var20 = 0; var20 < 4; var20++) {
@@ -15163,7 +15168,7 @@ public class Static {
 		return var3;
 	}
 
-	static void staticMethod207(EncryptedStream var0, int var1) {
+	static void staticMethod207(BitBuf var0, int var1) {
 		boolean var3 = var0.method477(1) == 1;
 		if (var3) {
 			staticIntArray12[++staticInt22 - 1] = var1;
@@ -15992,8 +15997,8 @@ public class Static {
 	static void staticMethod34() {
 		Client.outBuffer.method471(230);
 		Client.outBuffer.writeByte(staticMethod248());
-		Client.outBuffer.writeShort(staticInt86);
-		Client.outBuffer.writeShort(Class47.staticInt121);
+		Client.outBuffer.writeShort(gameWidth);
+		Client.outBuffer.writeShort(Class47.gameHeight);
 	}
 
 	static final void staticMethod35(boolean var0) {
@@ -16128,7 +16133,7 @@ public class Static {
 	}
 
 	static int staticMethod248() {
-		return Client.staticBool36 ? 2 : 1;
+		return Client.resizable ? 2 : 1;
 	}
 
 	static final void staticMethod249(int var0, int var1, int var2, int var3) {
@@ -16728,7 +16733,7 @@ public class Static {
 		}
 	}
 
-	static final void staticMethod44(EncryptedStream var0) {
+	static final void staticMethod44(BitBuf var0) {
 		for (int var1 = 0; var1 < staticInt22; var1++) {
 			int var3 = staticIntArray12[var1];
 			Player var4 = Client.staticPlayerArray1[var3];
@@ -16857,7 +16862,7 @@ public class Static {
 
 	static final void staticMethod46(int var0, int var1, int var2, int var3, int var4, int var5, Scene var6,
 			Class38 var7) {
-		if (!Client.staticBool27 || (staticByteArrayArrayArray4[0][var1][var2] & 0x2) != 0
+		if (!Client.lowMemory || (staticByteArrayArrayArray4[0][var1][var2] & 0x2) != 0
 				|| (staticByteArrayArrayArray4[var0][var1][var2] & 0x10) == 0) {
 			if (var0 < staticInt112) {
 				staticInt112 = var0;
@@ -16914,7 +16919,7 @@ public class Static {
 
 			Object var13;
 			if (var5 == 22) {
-				if (!Client.staticBool27 || var8.anInt489 != 0 || var8.anInt487 == 1 || var8.aBool63) {
+				if (!Client.lowMemory || var8.anInt489 != 0 || var8.anInt487 == 1 || var8.aBool63) {
 					if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
 						var13 = var8.method514(22, var4, var9, var10, var11, var12);
 					} else {
@@ -17354,17 +17359,17 @@ public class Static {
 				}
 
 				if (staticMethod248() == 1) {
-					staticInt86 = Client.staticInt288;
-					Class47.staticInt121 = Client.staticInt173 * 503;
+					gameWidth = Client.staticInt288;
+					Class47.gameHeight = Client.staticInt173 * 503;
 				} else {
-					staticInt86 = Math.min(Class40Sub1.staticInt317, 7680);
-					Class47.staticInt121 = Math.min(BuildType.staticInt124, 2160);
+					gameWidth = Math.min(Class40Sub1.staticInt317, 7680);
+					Class47.gameHeight = Math.min(BuildType.staticInt124, 2160);
 				}
 
-				GameShell.staticInt106 = (Class40Sub1.staticInt317 - staticInt86) / 2;
+				GameShell.staticInt106 = (Class40Sub1.staticInt317 - gameWidth) / 2;
 				GameShell.staticInt109 = 0;
-				Class38.staticCanvas1.setSize(staticInt86, Class47.staticInt121);
-				CacheableSub2.staticGraphicsBuffer1 = staticMethod390(staticInt86, Class47.staticInt121,
+				Class38.staticCanvas1.setSize(gameWidth, Class47.gameHeight);
+				CacheableSub2.staticGraphicsBuffer1 = staticMethod390(gameWidth, Class47.gameHeight,
 						Class38.staticCanvas1);
 				if (Class40Sub1.staticFrame1 == var11) {
 					var2 = Class40Sub1.staticFrame1.getInsets();
@@ -17888,7 +17893,7 @@ public class Static {
 
 	static final void staticMethod276(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var2 >= 1 && var3 >= 1 && var2 <= 102 && var3 <= 102) {
-			if (Client.staticBool27 && var0 != NodeSub4.staticInt155) {
+			if (Client.lowMemory && var0 != NodeSub4.staticInt155) {
 				return;
 			}
 
@@ -20265,7 +20270,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 158) {
-					EncryptedStream var87 = Client.inBuffer;
+					BitBuf var87 = Client.inBuffer;
 					var2 = Client.staticInt190;
 					NodeSub17 var50 = new NodeSub17();
 					var50.anInt367 = var87.method367();
@@ -20542,7 +20547,7 @@ public class Static {
 
 			if (var6 != null && var6.method565() && !var6.aBool81) {
 				var6.aBool83 = false;
-				if ((Client.staticBool27 && var4 > 50 || var4 > 200) && Class59.staticClass59_1 != var0
+				if ((Client.lowMemory && var4 > 50 || var4 > 200) && Class59.staticClass59_1 != var0
 						&& var6.anInt594 == var6.anInt590) {
 					var6.aBool83 = true;
 				}
@@ -20576,7 +20581,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod313(EncryptedStream var0, int var1) {
+	static final void staticMethod313(BitBuf var0, int var1) {
 		int var2 = var0.position;
 		staticInt22 = 0;
 		staticMethod263(var0);
@@ -22158,7 +22163,7 @@ public class Static {
 		}
 	}
 
-	public static void staticMethod348(EncryptedStream var0) {
+	public static void staticMethod348(BitBuf var0) {
 		NodeSub17 var1 = (NodeSub17) staticClass36_1.method160();
 		if (var1 != null) {
 			int var2 = var0.position;
@@ -23350,7 +23355,7 @@ public class Static {
 										Client.outBuffer.writeByte(var19);
 										Client.outBuffer.writeByte(var301);
 										Client.outBuffer.writeByte(var311);
-										EncryptedStream var10 = Client.outBuffer;
+										BitBuf var10 = Client.outBuffer;
 										var11 = var10.position;
 										byte[] var12 = staticMethod340(var15);
 										var10.method328(var12.length);
@@ -23366,7 +23371,7 @@ public class Static {
 										Client.outBuffer.writeShort(0);
 										var4 = Client.outBuffer.position;
 										Client.outBuffer.method323(var15);
-										EncryptedStream var38 = Client.outBuffer;
+										BitBuf var38 = Client.outBuffer;
 										var30 = var38.position;
 										byte[] var35 = staticMethod340(var23);
 										var38.method328(var35.length);
@@ -23447,9 +23452,9 @@ public class Static {
 									if (var14 == 1 || var14 == 2) {
 										Client.staticLong11 = 0L;
 										if (var14 >= 2) {
-											Client.staticBool36 = true;
+											Client.resizable = true;
 										} else {
-											Client.staticBool36 = false;
+											Client.resizable = false;
 										}
 
 										staticMethod335();
@@ -23730,8 +23735,8 @@ public class Static {
 	}
 
 	static void staticMethod395() {
-		int var0 = staticInt86;
-		int var1 = Class47.staticInt121;
+		int var0 = gameWidth;
+		int var1 = Class47.gameHeight;
 		if (Class40Sub1.staticInt317 < var0) {
 			var0 = Class40Sub1.staticInt317;
 		}
@@ -30698,7 +30703,7 @@ public class Static {
 	}
 
 	static int staticInt87;
-	public static int staticInt86;
+	public static int gameWidth;	
 	static BZip2DState staticBZip2DState1 = new BZip2DState();
 	static Rasterizer2DSub3 staticRasterizer2DSub3_1;
 	static Sprite staticSprite1;

@@ -47,8 +47,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			}
 
 			staticGameShell1 = this;
-			Static.staticInt86 = var1;
-			Class47.staticInt121 = var2;
+			Static.gameWidth = var1;
+			Class47.gameHeight = var2;
 			RuntimeExceptionSub1.staticInt74 = var3;
 			RuntimeExceptionSub1.staticApplet1 = this;
 			if (BufferedFile.staticTaskManager1 == null) {
@@ -70,18 +70,18 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			var1.remove(Class38.staticCanvas1);
 		}
 
-		Static.staticInt86 = Math.max(var1.getWidth(), Static.staticInt123 * 179870289);
-		Class47.staticInt121 = Math.max(var1.getHeight(), KeyboardHandler.staticInt83 * 1562169393);
+		Static.gameWidth = Math.max(var1.getWidth(), Static.staticInt123 * 179870289);
+		Class47.gameHeight = Math.max(var1.getHeight(), KeyboardHandler.staticInt83 * 1562169393);
 		Insets var2;
 		if (Class40Sub1.staticFrame1 != null) {
 			var2 = Class40Sub1.staticFrame1.getInsets();
-			Static.staticInt86 -= var2.left + var2.right;
-			Class47.staticInt121 -= var2.top + var2.bottom;
+			Static.gameWidth -= var2.left + var2.right;
+			Class47.gameHeight -= var2.top + var2.bottom;
 		}
 
 		Class38.staticCanvas1 = new CanvasSub1(this);
 		var1.add(Class38.staticCanvas1);
-		Class38.staticCanvas1.setSize(Static.staticInt86, Class47.staticInt121);
+		Class38.staticCanvas1.setSize(Static.gameWidth, Class47.gameHeight);
 		Class38.staticCanvas1.setVisible(true);
 		if (Class40Sub1.staticFrame1 == var1) {
 			var2 = Class40Sub1.staticFrame1.getInsets();
@@ -93,7 +93,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		Class38.staticCanvas1.addFocusListener(this);
 		Class38.staticCanvas1.requestFocus();
 		staticBool14 = true;
-		GraphicsBuffer var3 = Static.staticMethod390(Static.staticInt86, Class47.staticInt121, Class38.staticCanvas1);
+		GraphicsBuffer var3 = Static.staticMethod390(Static.gameWidth, Class47.gameHeight, Class38.staticCanvas1);
 		if (CacheableSub2.staticGraphicsBuffer1 != null) {
 			CacheableSub2.staticGraphicsBuffer1.method279(var3.anImage1.getGraphics(), 0, 0);
 		}
@@ -137,9 +137,9 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	void method203() {
 		Container var1 = method207();
 		long var5 = Static.staticMethod297();
-		long var2 = staticLongArray1[EncryptedStream.staticInt321];
-		staticLongArray1[EncryptedStream.staticInt321] = var5;
-		EncryptedStream.staticInt321 = 1 + EncryptedStream.staticInt321 & 0x1f;
+		long var2 = staticLongArray1[BitBuf.staticInt321];
+		staticLongArray1[BitBuf.staticInt321] = var5;
+		BitBuf.staticInt321 = 1 + BitBuf.staticInt321 & 0x1f;
 		if (var2 != 0L && var5 > var2) {
 			int var7 = (int) (var5 - var2);
 			staticInt107 = ((var7 >> 1) + 32000) / var7;
@@ -148,7 +148,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		if (++staticInt108 - 1 > 50) {
 			staticInt108 -= 50;
 			staticBool14 = true;
-			Class38.staticCanvas1.setSize(Static.staticInt86, Class47.staticInt121);
+			Class38.staticCanvas1.setSize(Static.gameWidth, Class47.gameHeight);
 			Class38.staticCanvas1.setVisible(true);
 			if (Class40Sub1.staticFrame1 == var1) {
 				Insets var71 = Class40Sub1.staticFrame1.getInsets();
@@ -396,7 +396,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			if (TaskManager.staticString20 != null && TaskManager.staticString20.startsWith("1.5")
 					&& Static.staticMethod297() - staticLong4 > 1000L) {
 				Rectangle var2 = var1.getClipBounds();
-				if (var2 == null || var2.width >= Static.staticInt86 && var2.height >= Class47.staticInt121) {
+				if (var2 == null || var2.width >= Static.gameWidth && var2.height >= Class47.gameHeight) {
 					staticBool11 = true;
 				}
 			}

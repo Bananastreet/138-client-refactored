@@ -137,7 +137,7 @@ public class Stream extends Node {
 		position += Static.staticMethod71(buf, position, var1);
 	}
 
-	public void method326(byte[] var1, int var2, int var3) {
+	public void writeBytes(byte[] var1, int var2, int var3) {		
 		for (int var4 = var2; var4 < var3 + var2; var4++) {
 			buf[position++] = var1[var4];
 		}
@@ -340,7 +340,7 @@ public class Stream extends Node {
 		position = var4;
 	}
 
-	public void method342(BigInteger var1, BigInteger var2) {
+	public void encryptRSA(BigInteger var1, BigInteger var2) {		
 		int var3 = position;
 		position = 0;
 		byte[] var6 = new byte[var3];
@@ -350,7 +350,7 @@ public class Stream extends Node {
 		byte[] var7 = var5.toByteArray();
 		position = 0;
 		writeShort(var7.length);
-		method326(var7, 0, var7.length);
+		writeBytes(var7, 0, var7.length);
 	}
 
 	public void method343(int var1) {

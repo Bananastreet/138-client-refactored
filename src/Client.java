@@ -23,7 +23,7 @@ public final class Client extends GameShell {
 	static int staticInt201 = 0;
 	static int staticInt207 = 0;
 	static boolean staticBool20 = false;
-	static boolean staticBool27 = false;
+	static boolean lowMemory = false;	
 	static int staticInt231 = 0;
 	static boolean staticBool21 = true;
 	static long staticLong10 = 1L;
@@ -56,9 +56,9 @@ public final class Client extends GameShell {
 	static int[] staticIntArray121;
 	static int staticInt188;
 	static int[] staticIntArray92;
-	static EncryptedStream outBuffer;	
-	static EncryptedStream staticEncryptedStream2;
-	static EncryptedStream inBuffer;	
+	static BitBuf outBuffer;	
+	static BitBuf loginBuffer;	
+	static BitBuf inBuffer;	
 	static int staticInt190;
 	static int staticInt191;
 	static int staticInt192;
@@ -227,7 +227,7 @@ public final class Client extends GameShell {
 	static int[] staticIntArray106;
 	static int staticInt286;
 	static long staticLong11;
-	static boolean staticBool36;
+	static boolean resizable;	
 	static int staticInt288;
 	static int staticInt173;
 	static int[] staticIntArray100;
@@ -317,9 +317,9 @@ public final class Client extends GameShell {
 		staticIntArray121 = new int['\u8000'];
 		staticInt188 = 0;
 		staticIntArray92 = new int[250];
-		outBuffer = new EncryptedStream(5000);
-		staticEncryptedStream2 = new EncryptedStream(5000);
-		inBuffer = new EncryptedStream(15000);
+		outBuffer = new BitBuf(5000);
+		loginBuffer = new BitBuf(5000);
+		inBuffer = new BitBuf(15000);
 		staticInt190 = 0;
 		staticInt191 = 0;
 		staticInt192 = 0;
@@ -488,7 +488,7 @@ public final class Client extends GameShell {
 		staticIntArray106 = new int[100];
 		staticInt286 = 0;
 		staticLong11 = 0L;
-		staticBool36 = true;
+		resizable = true;
 		staticInt288 = 765;
 		staticInt173 = 1;
 		staticIntArray100 = new int[] { 16776960, 16711680, '\uff00', '\uffff', 16711935, 16777215 };
@@ -631,9 +631,9 @@ public final class Client extends GameShell {
 		int var131 = Static.staticClass6_1.anInt15;
 		staticLong11 = 0L;
 		if (var131 >= 2) {
-			staticBool36 = true;
+			resizable = true;
 		} else {
-			staticBool36 = false;
+			resizable = false;
 		}
 
 		Static.staticMethod335();
@@ -985,7 +985,7 @@ public final class Client extends GameShell {
 							var32 = NodeSub4.staticInt155 - 1;
 						}
 
-						if (staticBool27) {
+						if (lowMemory) {
 							Friend.staticScene1.method139(Static.staticInt112);
 						} else {
 							Friend.staticScene1.method139(0);
@@ -1587,9 +1587,9 @@ public final class Client extends GameShell {
 				int var20 = Static.staticMethod248();
 				staticLong11 = 0L;
 				if (var20 >= 2) {
-					staticBool36 = true;
+					resizable = true;
 				} else {
-					staticBool36 = false;
+					resizable = false;
 				}
 
 				Static.staticMethod335();
@@ -1642,7 +1642,7 @@ public final class Client extends GameShell {
 
 				if (var3) {
 					var26.setColor(Color.black);
-					var26.fillRect(0, 0, Static.staticInt86, Class47.staticInt121);
+					var26.fillRect(0, 0, Static.gameWidth, Class47.gameHeight);
 				}
 
 				if (var18 == null) {
@@ -1664,11 +1664,11 @@ public final class Client extends GameShell {
 					var11.setFont(Class28.staticFont1);
 					var11.setColor(Color.white);
 					var11.drawString(var24, (304 - Class26.staticFontMetrics1.stringWidth(var24)) / 2, 22);
-					var26.drawImage(Static.staticImage1, Static.staticInt86 / 2 - 152, Class47.staticInt121 / 2 - 18,
+					var26.drawImage(Static.staticImage1, Static.gameWidth / 2 - 152, Class47.gameHeight / 2 - 18,
 							(ImageObserver) null);
 				} catch (Exception var16) {
-					var9 = Static.staticInt86 / 2 - 152;
-					var10 = Class47.staticInt121 / 2 - 18;
+					var9 = Static.gameWidth / 2 - 152;
+					var10 = Class47.gameHeight / 2 - 18;
 					var26.setColor(var18);
 					var26.drawRect(var9, var10, 303, 33);
 					var26.fillRect(var9 + 2, 2 + var10, var4 * 3, 30);
@@ -1730,7 +1730,7 @@ public final class Client extends GameShell {
 				Class34.staticWidget3 = null;
 				if (staticInt263 != -1) {
 					staticInt162 = 0;
-					Static.staticMethod226(staticInt263, 0, 0, Static.staticInt86, Class47.staticInt121, 0, 0, -1);
+					Static.staticMethod226(staticInt263, 0, 0, Static.gameWidth, Class47.gameHeight, 0, 0, -1);
 				}
 
 				Static.staticMethod401();
