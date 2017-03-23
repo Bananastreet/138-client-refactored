@@ -2800,9 +2800,9 @@ public class Static {
 	}
 
 	public static void staticMethod88(Js5Index var0, Js5Index var1, Js5Index var2) {
-		AnimDef.staticJs5Index33 = var0;
-		AnimDef.staticJs5Index32 = var1;
-		AnimDef.staticJs5Index31 = var2;
+		AnimationDefintion.staticJs5Index33 = var0;
+		AnimationDefintion.staticJs5Index32 = var1;
+		AnimationDefintion.staticJs5Index31 = var2;
 	}
 
 	public static boolean staticMethod89(int var0, int var1) {
@@ -3804,19 +3804,19 @@ public class Static {
 												}
 											} else if (var10.anInt348 == 5) {
 												if (var10.anInt295 == 0) {
-													var66 = Client.staticClass49_1.method248((AnimDef) null, -1,
-															(AnimDef) null, -1);
+													var66 = Client.staticClass49_1.method248((AnimationDefintion) null, -1,
+															(AnimationDefintion) null, -1);
 												} else {
 													var66 = AbstractClass2Sub1.staticPlayer1.method434();
 												}
 											} else if (var23 == -1) {
-												var66 = var10.method388((AnimDef) null, -1, var60,
+												var66 = var10.method388((AnimationDefintion) null, -1, var60,
 														AbstractClass2Sub1.staticPlayer1.aClass49_1);
 												if (var66 == null && Widget.staticBool44) {
 													staticMethod73(var10);
 												}
 											} else {
-												AnimDef var48 = staticMethod210(var23);
+												AnimationDefintion var48 = staticMethod210(var23);
 												var66 = var10.method388(var48, var10.anInt354, var60,
 														AbstractClass2Sub1.staticPlayer1.aClass49_1);
 												if (var66 == null && Widget.staticBool44) {
@@ -7689,7 +7689,7 @@ public class Static {
 						}
 
 						if (var7 != -1) {
-							AnimDef var6 = staticMethod210(var7);
+							AnimationDefintion var6 = staticMethod210(var7);
 
 							for (var3.anInt314 += Client.staticInt171; var3.anInt314 > var6.anIntArray119[var3.anInt354]; staticMethod73(
 									var3)) {
@@ -8361,7 +8361,7 @@ public class Static {
 
 	static final void staticMethod15(Actor var0) {
 		var0.aBool74 = false;
-		AnimDef var1;
+		AnimationDefintion var1;
 		if (var0.anInt590 != -1) {
 			var1 = staticMethod210(var0.anInt590);
 			if (var1 != null && var1.anIntArray121 != null) {
@@ -8389,7 +8389,7 @@ public class Static {
 
 			int var3 = staticMethod322(var0.anInt596).anInt556;
 			if (var3 != -1) {
-				AnimDef var2 = staticMethod210(var3);
+				AnimationDefintion var2 = staticMethod210(var3);
 				if (var2 != null && var2.anIntArray121 != null) {
 					++var0.anInt618;
 					if (var0.anInt616 < var2.anIntArray121.length
@@ -12606,7 +12606,7 @@ public class Static {
 		return var0;
 	}
 
-	static void staticMethod159(AnimDef var0, int var1, int var2, int var3) {
+	static void staticMethod159(AnimationDefintion var0, int var1, int var2, int var3) {
 		if (Client.staticInt236 < 50 && Client.staticInt301 != 0 && var0.anIntArray120 != null
 				&& var1 < var0.anIntArray120.length) {
 			int var7 = var0.anIntArray120[var1];
@@ -15346,19 +15346,19 @@ public class Static {
 
 	}
 
-	public static AnimDef staticMethod210(int var0) {
-		AnimDef var1 = (AnimDef) AnimDef.staticCache32.get(var0);
+	public static AnimationDefintion staticMethod210(int var0) {
+		AnimationDefintion var1 = (AnimationDefintion) AnimationDefintion.staticCache32.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {
-			byte[] var2 = AnimDef.staticJs5Index33.getFile(12, var0);
-			var1 = new AnimDef();
+			byte[] var2 = AnimationDefintion.staticJs5Index33.getFile(12, var0);
+			var1 = new AnimationDefintion();
 			if (var2 != null) {
 				var1.method550(new ByteBuf(var2));
 			}
 
 			var1.method555();
-			AnimDef.staticCache32.method170(var1, var0);
+			AnimationDefintion.staticCache32.method170(var1, var0);
 			return var1;
 		}
 	}
@@ -17289,8 +17289,8 @@ public class Static {
 	}
 
 	public static void staticMethod334() {
-		AnimDef.staticCache32.method171();
-		AnimDef.staticCache31.method171();
+		AnimationDefintion.staticCache32.method171();
+		AnimationDefintion.staticCache31.method171();
 	}
 
 	static void staticMethod335() {
@@ -21172,13 +21172,13 @@ public class Static {
 	}
 
 	static CacheableSub2 staticMethod343(int var0) {
-		CacheableSub2 var1 = (CacheableSub2) AnimDef.staticCache31.get(var0);
+		CacheableSub2 var1 = (CacheableSub2) AnimationDefintion.staticCache31.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {
-			var1 = staticMethod216(AnimDef.staticJs5Index32, AnimDef.staticJs5Index31, var0, false);
+			var1 = staticMethod216(AnimationDefintion.staticJs5Index32, AnimationDefintion.staticJs5Index31, var0, false);
 			if (var1 != null) {
-				AnimDef.staticCache31.method170(var1, var0);
+				AnimationDefintion.staticCache31.method170(var1, var0);
 			}
 
 			return var1;
@@ -30025,7 +30025,7 @@ public class Static {
 			var0.anInt633 = 0;
 		} else {
 			if (var0.anInt612 != -1 && var0.anInt615 == 0) {
-				AnimDef var10 = staticMethod210(var0.anInt612);
+				AnimationDefintion var10 = staticMethod210(var0.anInt612);
 				if (var0.anInt599 > 0 && var10.anInt566 == 0) {
 					++var0.anInt633;
 					return;

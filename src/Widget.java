@@ -340,7 +340,7 @@ public class Widget extends Node {
 		aBool38 = false;
 	}
 
-	public Model method388(AnimDef var1, int var2, boolean var3, Class49 var4) {
+	public Model method388(AnimationDefintion var1, int var2, boolean var3, Class49 var4) {
 		staticBool44 = false;
 		int var7;
 		int var8;

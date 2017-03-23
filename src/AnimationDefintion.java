@@ -1,4 +1,4 @@
-public class AnimDef extends Cacheable {
+public class AnimationDefintion extends Cacheable {
 
 	static Js5Index staticJs5Index31;
 	static Js5Index staticJs5Index32;
@@ -175,7 +175,7 @@ public class AnimDef extends Cacheable {
 
 	}
 
-	public Model method556(Model var1, int var2, AnimDef var3, int var4) {
+	public Model method556(Model var1, int var2, AnimationDefintion var3, int var4) {
 		var2 = anIntArray121[var2];
 		CacheableSub2 var6 = Static.staticMethod343(var2 >> 16);
 		var2 &= '\uffff';

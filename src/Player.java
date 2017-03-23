@@ -134,8 +134,8 @@ public final class Player extends Actor {
 		if (aClass49_1 == null) {
 			return null;
 		} else {
-			AnimDef var2 = anInt612 != -1 && anInt615 == 0 ? Static.staticMethod210(anInt612) : null;
-			AnimDef var4 = anInt590 != -1 && !aBool83 && (anInt594 != anInt590 || var2 == null)
+			AnimationDefintion var2 = anInt612 != -1 && anInt615 == 0 ? Static.staticMethod210(anInt612) : null;
+			AnimationDefintion var4 = anInt590 != -1 && !aBool83 && (anInt594 != anInt590 || var2 == null)
 					? Static.staticMethod210(anInt590) : null;
 			Model var3 = aClass49_1.method248(var2, anInt613, var4, anInt610);
 			if (var3 == null) {

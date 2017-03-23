@@ -12,7 +12,7 @@ public final class RenderableSub2 extends Renderable {
 	int anInt639;
 	int anInt642;
 	int anInt636;
-	AnimDef anAnimDef2;
+	AnimationDefintion anAnimDef2;
 
 	final void method568(int var1) {
 		if (!aBool78) {

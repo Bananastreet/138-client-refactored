@@ -49,7 +49,7 @@ public class NpcDefinition extends Cacheable {
 		}
 	}
 
-	public final Model method541(AnimDef var1, int var2, AnimDef var3, int var4) {
+	public final Model method541(AnimationDefintion var1, int var2, AnimationDefintion var3, int var4) {
 		if (anIntArray116 != null) {
 			NpcDefinition var11 = method544();
 			return var11 == null ? null : var11.method541(var1, var2, var3, var4);

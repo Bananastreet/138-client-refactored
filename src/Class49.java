@@ -111,7 +111,7 @@ public class Class49 {
 
 	}
 
-	public Model method248(AnimDef var1, int var2, AnimDef var3, int var4) {
+	public Model method248(AnimationDefintion var1, int var2, AnimationDefintion var3, int var4) {
 		if (anInt198 != -1) {
 			return Static.staticMethod85(anInt198).method541(var1, var2, var3, var4);
 		} else {

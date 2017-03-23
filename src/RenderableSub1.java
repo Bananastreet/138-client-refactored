@@ -20,7 +20,7 @@ public final class RenderableSub1 extends Renderable {
 	int anInt582;
 	int anInt583;
 	int anInt584;
-	AnimDef anAnimDef1;
+	AnimationDefintion anAnimDef1;
 	double aDouble4;
 	double aDouble5;
 	double aDouble8;

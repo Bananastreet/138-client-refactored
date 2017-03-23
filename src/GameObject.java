@@ -3,7 +3,7 @@ public class GameObject extends Renderable {
 	static int staticInt332;
 	int anInt648;
 	int anInt645;
-	AnimDef anAnimDef3;
+	AnimationDefintion anAnimDef3;
 	int anInt643;
 	int anInt647;
 	int anInt650;

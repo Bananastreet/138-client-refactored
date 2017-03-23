@@ -263,7 +263,7 @@ public class ObjectDefinition extends Cacheable {
 		}
 	}
 
-	public final Model method512(int var1, int var2, int[][] var3, int var4, int var5, int var6, AnimDef var7,
+	public final Model method512(int var1, int var2, int[][] var3, int var4, int var5, int var6, AnimationDefintion var7,
 			int var8) {
 		long var9;
 		if (anIntArray108 == null) {

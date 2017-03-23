@@ -7,8 +7,8 @@ public final class Npc extends Actor {
 		if (aNpcDef1 == null) {
 			return null;
 		} else {
-			AnimDef var3 = anInt612 != -1 && anInt615 == 0 ? Static.staticMethod210(anInt612) : null;
-			AnimDef var4 = anInt590 != -1 && (anInt594 != anInt590 || var3 == null) ? Static.staticMethod210(anInt590)
+			AnimationDefintion var3 = anInt612 != -1 && anInt615 == 0 ? Static.staticMethod210(anInt612) : null;
+			AnimationDefintion var4 = anInt590 != -1 && (anInt594 != anInt590 || var3 == null) ? Static.staticMethod210(anInt590)
 					: null;
 			Model var1 = aNpcDef1.method541(var3, anInt613, var4, anInt610);
 			if (var1 == null) {
