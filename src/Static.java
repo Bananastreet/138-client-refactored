@@ -1375,7 +1375,7 @@ public class Static {
 			}
 		}
 
-		Class31.staticString21 = var0.aString1;
+		DataClass5.staticString21 = var0.aString1;
 		Client.staticInt309 = var0.anInt4;
 		Client.staticInt201 = var0.anInt3;
 		Class7.staticInt30 = 1568197829 * (Client.staticInt207 == 0 ? '\uaa4a' : var0.anInt4 + '\u9c40');
@@ -12985,7 +12985,7 @@ public class Static {
 
 			if (Client.loginStage == 1) {
 				if (KeyFocusListener.socket == null) {
-					KeyFocusListener.socket = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
+					KeyFocusListener.socket = BufferedFile.staticTaskManager1.method93(DataClass5.staticString21,
 							Class32.staticInt73 * 462737933);
 				}
 
@@ -21289,7 +21289,7 @@ public class Static {
 			var30 = ChatMessage.staticInt331 + (var311 & 0x7);
 			if (var291 >= 0 && var30 >= 0 && var291 < 103 && var30 < 103) {
 				if (var4 == 0) {
-					Class31 var33 = Friend.staticScene1.method100(NodeSub4.staticInt155, var291, var30);
+					DataClass5 var33 = Friend.staticScene1.method100(NodeSub4.staticInt155, var291, var30);
 					if (var33 != null) {
 						var15 = var33.anInt114 >> 14 & 0x7fff;
 						if (var3 == 2) {

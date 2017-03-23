@@ -255,7 +255,7 @@ public class Scene {
 
 	}
 
-	public Class31 method100(int var1, int var2, int var3) {
+	public DataClass5 method100(int var1, int var2, int var3) {
 		Tile var4 = aTileArrayArrayArray1[var1][var2][var3];
 		return var4 == null ? null : var4.aClass31_1;
 	}
@@ -263,7 +263,7 @@ public class Scene {
 	public void method101(int var1, int var2, int var3, int var4, Renderable var5, Renderable var6, int var7, int var8,
 			int var9, int var10) {
 		if (var5 != null || var6 != null) {
-			Class31 var11 = new Class31();
+			DataClass5 var11 = new DataClass5();
 			var11.anInt114 = var9;
 			var11.anInt113 = var10;
 			var11.anInt110 = var2 * 128 + 64;
@@ -672,7 +672,7 @@ public class Scene {
 													+ anIntArrayArrayArray3[var2][var3 + 1][var4]
 													+ anIntArrayArrayArray3[var2][var3][var4 + 1]
 													+ anIntArrayArrayArray3[var2][var3 + 1][var4 + 1]) / 4;
-									Class31 var20 = var8.aClass31_1;
+									DataClass5 var20 = var8.aClass31_1;
 									if (var20 != null) {
 										RenderableSub3 var23;
 										if (var20.aRenderable5 instanceof RenderableSub3) {
@@ -1092,7 +1092,7 @@ public class Scene {
 							do {
 								do {
 									while (true) {
-										Class31 var29;
+										DataClass5 var29;
 										Class32 var32;
 										int var28;
 										int var18;
@@ -1210,7 +1210,7 @@ public class Scene {
 
 											var21 = 0;
 											var11 = 0;
-											Class31 var20 = var3.aClass31_1;
+											DataClass5 var20 = var3.aClass31_1;
 											WallObject var35 = var3.aWallObject1;
 											if (var20 != null || var35 != null) {
 												if (staticInt42 == var4) {
@@ -1611,7 +1611,7 @@ public class Scene {
 					}
 				}
 
-				Class31 var311 = var3.aClass31_1;
+				DataClass5 var311 = var3.aClass31_1;
 				if (var311 != null) {
 					if ((var311.anInt115 & var3.anInt260) != 0 && !method123(var7, var4, var5, var311.anInt115)) {
 						var311.aRenderable4.method435(0, staticInt68, staticInt60, staticInt61, staticInt49,
@@ -1671,7 +1671,7 @@ public class Scene {
 				for (int var8 = 0; var8 < anInt68; var8++) {
 					Tile var6 = aTileArrayArrayArray1[var4][var7][var8];
 					if (var6 != null) {
-						Class31 var5 = var6.aClass31_1;
+						DataClass5 var5 = var6.aClass31_1;
 						RenderableSub3 var10;
 						if (var5 != null && var5.aRenderable5 instanceof RenderableSub3) {
 							RenderableSub3 var14 = (RenderableSub3) var5.aRenderable5;

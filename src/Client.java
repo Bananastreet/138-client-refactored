@@ -1434,7 +1434,7 @@ public final class Client extends GameShell {
 			}
 
 			Static.staticMethod90();
-			Class31.staticString21 = getCodeBase().getHost();
+			DataClass5.staticString21 = getCodeBase().getHost();
 			String var16 = NodeSub1.staticBuildType5.aString10;
 			byte var17 = 0;
 
@@ -1877,7 +1877,7 @@ public final class Client extends GameShell {
 			if (--staticInt181 + 1 <= 0) {
 				try {
 					if (staticInt271 == 0) {
-						FileOnDisk.staticTask1 = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
+						FileOnDisk.staticTask1 = BufferedFile.staticTaskManager1.method93(DataClass5.staticString21,
 								Class32.staticInt73 * 462737933);
 						++staticInt271;
 					}
