@@ -1,6 +1,6 @@
 public class Friend {
 
-	static Scene staticScene1;
+	static SceneGraph staticScene1;
 	String aString13;
 	boolean aBool19;
 	int anInt209;
