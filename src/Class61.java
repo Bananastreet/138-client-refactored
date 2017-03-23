@@ -39,7 +39,7 @@ public class Class61 {
 						break;
 					}
 
-					--var1.off;
+					--var1.position;
 					if (var1.method370() != 0) {
 						throw new IllegalStateException("");
 					}

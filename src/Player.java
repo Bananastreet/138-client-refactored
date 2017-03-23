@@ -28,7 +28,7 @@ public final class Player extends Actor {
 	boolean aBool82;
 
 	final void method658(Stream var1) {
-		var1.off = 0;
+		var1.position = 0;
 		int var8 = var1.method367();
 		anInt683 = var1.readByte();
 		anInt684 = var1.readByte();

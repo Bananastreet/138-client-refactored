@@ -56,9 +56,9 @@ public final class Client extends GameShell {
 	static int[] staticIntArray121;
 	static int staticInt188;
 	static int[] staticIntArray92;
-	static EncryptedStream staticEncryptedStream1;
+	static EncryptedStream outBuffer;	
 	static EncryptedStream staticEncryptedStream2;
-	static EncryptedStream staticEncryptedStream3;
+	static EncryptedStream inBuffer;	
 	static int staticInt190;
 	static int staticInt191;
 	static int staticInt192;
@@ -317,9 +317,9 @@ public final class Client extends GameShell {
 		staticIntArray121 = new int['\u8000'];
 		staticInt188 = 0;
 		staticIntArray92 = new int[250];
-		staticEncryptedStream1 = new EncryptedStream(5000);
+		outBuffer = new EncryptedStream(5000);
 		staticEncryptedStream2 = new EncryptedStream(5000);
-		staticEncryptedStream3 = new EncryptedStream(15000);
+		inBuffer = new EncryptedStream(15000);
 		staticInt190 = 0;
 		staticInt191 = 0;
 		staticInt192 = 0;
@@ -1011,8 +1011,8 @@ public final class Client extends GameShell {
 
 						ObjectDefinition.staticCache15.method171();
 						if (Class40Sub1.staticFrame1 != null) {
-							staticEncryptedStream1.method471(137);
-							staticEncryptedStream1.writeInt(1057001181);
+							outBuffer.method471(137);
+							outBuffer.writeInt(1057001181);
 						}
 
 						if (!staticBool37) {
@@ -1034,7 +1034,7 @@ public final class Client extends GameShell {
 						Static.staticMethod396(30);
 						Static.staticMethod17();
 						Static.staticMethod180();
-						staticEncryptedStream1.method471(60);
+						outBuffer.method471(60);
 						Static.staticMethod74();
 					}
 				}
@@ -1062,7 +1062,7 @@ public final class Client extends GameShell {
 
 		staticMouseCapturer1 = null;
 		if (Class56.gameConnection != null) {
-			Class56.gameConnection.method150();
+			Class56.gameConnection.shutdown();
 			Class56.gameConnection = null;
 		}
 
@@ -1083,7 +1083,7 @@ public final class Client extends GameShell {
 		}
 
 		if (Static.staticConnection2 != null) {
-			Static.staticConnection2.method150();
+			Static.staticConnection2.shutdown();
 		}
 
 		Static.staticMethod326();
@@ -1133,7 +1133,7 @@ public final class Client extends GameShell {
 							var6 = new Stream(4);
 							var6.writeByte(1);
 							var6.writeTriByte((int) var21.id);
-							Static.staticConnection2.method151(var6.buf, 0, 4);
+							Static.staticConnection2.write(var6.buf, 0, 4);
 							Static.staticHashTable2.method148(var21, var21.id);
 							--Static.staticInt130;
 							++Static.staticInt136;
@@ -1144,7 +1144,7 @@ public final class Client extends GameShell {
 							var6 = new Stream(4);
 							var6.writeByte(0);
 							var6.writeTriByte((int) var21.id);
-							Static.staticConnection2.method151(var6.buf, 0, 4);
+							Static.staticConnection2.write(var6.buf, 0, 4);
 							var21.method314();
 							Static.staticHashTable3.method148(var21, var21.id);
 							--Static.staticInt132;
@@ -1174,26 +1174,26 @@ public final class Client extends GameShell {
 							int var10;
 							int var12;
 							if (var7 > 0) {
-								var8 = var7 - Static.staticStream3.off;
+								var8 = var7 - Static.staticStream3.position;
 								if (var8 > var23) {
 									var8 = var23;
 								}
 
-								Static.staticConnection2.method153(Static.staticStream3.buf, Static.staticStream3.off,
+								Static.staticConnection2.method153(Static.staticStream3.buf, Static.staticStream3.position,
 										var8);
 								if (Static.staticByte2 != 0) {
 									for (var9 = 0; var9 < var8; var9++) {
-										Static.staticStream3.buf[Static.staticStream3.off + var9] ^= Static.staticByte2;
+										Static.staticStream3.buf[Static.staticStream3.position + var9] ^= Static.staticByte2;
 									}
 								}
 
-								Static.staticStream3.off += var8;
-								if (Static.staticStream3.off < var7) {
+								Static.staticStream3.position += var8;
+								if (Static.staticStream3.position < var7) {
 									break;
 								}
 
 								if (FloorUnderlayDef.staticCacheableSub4_1 == null) {
-									Static.staticStream3.off = 0;
+									Static.staticStream3.position = 0;
 									var9 = Static.staticStream3.method367();
 									var10 = Static.staticStream3.method370();
 									int var24 = Static.staticStream3.method367();
@@ -1217,11 +1217,11 @@ public final class Client extends GameShell {
 									BufferedFile.staticStream2.writeByte(var24);
 									BufferedFile.staticStream2.writeInt(var12);
 									Static.staticInt134 = 8;
-									Static.staticStream3.off = 0;
+									Static.staticStream3.position = 0;
 								} else if (Static.staticInt134 == 0) {
 									if (Static.staticStream3.buf[0] == -1) {
 										Static.staticInt134 = 1;
-										Static.staticStream3.off = 0;
+										Static.staticStream3.position = 0;
 									} else {
 										FloorUnderlayDef.staticCacheableSub4_1 = null;
 									}
@@ -1230,8 +1230,8 @@ public final class Client extends GameShell {
 								var8 = BufferedFile.staticStream2.buf.length
 										- FloorUnderlayDef.staticCacheableSub4_1.aByte4;
 								var9 = 512 - Static.staticInt134;
-								if (var9 > var8 - BufferedFile.staticStream2.off) {
-									var9 = var8 - BufferedFile.staticStream2.off;
+								if (var9 > var8 - BufferedFile.staticStream2.position) {
+									var9 = var8 - BufferedFile.staticStream2.position;
 								}
 
 								if (var9 > var23) {
@@ -1239,24 +1239,24 @@ public final class Client extends GameShell {
 								}
 
 								Static.staticConnection2.method153(BufferedFile.staticStream2.buf,
-										BufferedFile.staticStream2.off, var9);
+										BufferedFile.staticStream2.position, var9);
 								if (Static.staticByte2 != 0) {
 									for (var10 = 0; var10 < var9; var10++) {
-										BufferedFile.staticStream2.buf[BufferedFile.staticStream2.off
+										BufferedFile.staticStream2.buf[BufferedFile.staticStream2.position
 												+ var10] ^= Static.staticByte2;
 									}
 								}
 
-								BufferedFile.staticStream2.off += var9;
+								BufferedFile.staticStream2.position += var9;
 								Static.staticInt134 += var9;
-								if (var8 == BufferedFile.staticStream2.off) {
+								if (var8 == BufferedFile.staticStream2.position) {
 									if (FloorUnderlayDef.staticCacheableSub4_1.id == 16711935L) {
 										Class55.staticStream4 = BufferedFile.staticStream2;
 
 										for (var10 = 0; var10 < 256; var10++) {
 											Js5IndexImpl var221 = Static.staticJs5IndexImplArray1[var10];
 											if (var221 != null) {
-												Class55.staticStream4.off = var10 * 8 + 5;
+												Class55.staticStream4.position = var10 * 8 + 5;
 												var12 = Class55.staticStream4.readInt();
 												int var231 = Class55.staticStream4.readInt();
 												var221.method396(var12, var231);
@@ -1268,7 +1268,7 @@ public final class Client extends GameShell {
 										var10 = (int) Static.staticCRC32_1.getValue();
 										if (FloorUnderlayDef.staticCacheableSub4_1.anInt429 != var10) {
 											try {
-												Static.staticConnection2.method150();
+												Static.staticConnection2.shutdown();
 											} catch (Exception var20) {
 												;
 											}
@@ -1313,7 +1313,7 @@ public final class Client extends GameShell {
 					}
 				} catch (IOException var211) {
 					try {
-						Static.staticConnection2.method150();
+						Static.staticConnection2.shutdown();
 					} catch (Exception var19) {
 						;
 					}
@@ -1899,7 +1899,7 @@ public final class Client extends GameShell {
 						Stream var2 = new Stream(5);
 						var2.writeByte(15);
 						var2.writeInt(138);
-						Item.staticConnection4.method151(var2.buf, 0, 5);
+						Item.staticConnection4.write(var2.buf, 0, 5);
 						++staticInt271;
 						Class60.staticLong9 = Static.staticMethod297();
 					}

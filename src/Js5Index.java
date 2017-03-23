@@ -180,7 +180,7 @@ public abstract class Js5Index {
 					var9 -= var10 * var3 * 4;
 					Stream var11 = new Stream(var201);
 					int[] var12 = new int[var3];
-					var11.off = var9;
+					var11.position = var9;
 
 					int var14;
 					int var15;
@@ -200,7 +200,7 @@ public abstract class Js5Index {
 						var12[var14] = 0;
 					}
 
-					var11.off = var9;
+					var11.position = var9;
 					var14 = 0;
 
 					for (var15 = 0; var15 < var10; var15++) {

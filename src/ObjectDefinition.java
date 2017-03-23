@@ -59,7 +59,7 @@ public class ObjectDefinition extends Cacheable {
 			var4 = var1.method367();
 			if (var4 > 0) {
 				if (anIntArray110 != null && !staticBool46) {
-					var1.off += var4 * 3;
+					var1.position += var4 * 3;
 				} else {
 					anIntArray108 = new int[var4];
 					anIntArray110 = new int[var4];
@@ -76,7 +76,7 @@ public class ObjectDefinition extends Cacheable {
 			var4 = var1.method367();
 			if (var4 > 0) {
 				if (anIntArray110 != null && !staticBool46) {
-					var1.off += var4 * 2;
+					var1.position += var4 * 2;
 				} else {
 					anIntArray108 = null;
 					anIntArray110 = new int[var4];

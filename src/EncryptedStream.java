@@ -8,11 +8,11 @@ public final class EncryptedStream extends Stream {
 	Isaac anIsaac1;
 
 	public void method471(int var1) {
-		buf[++off - 1] = (byte) (var1 + anIsaac1.method241());
+		buf[++position - 1] = (byte) (var1 + anIsaac1.method241());
 	}
 
 	public int method472() {
-		return buf[++off - 1] - anIsaac1.method241() & 0xff;
+		return buf[++position - 1] - anIsaac1.method241() & 0xff;
 	}
 
 	public int method473(int var1) {
@@ -20,11 +20,11 @@ public final class EncryptedStream extends Stream {
 	}
 
 	public void method474() {
-		off = (7 + anInt428) / 8;
+		position = (7 + anInt428) / 8;
 	}
 
 	public void method475() {
-		anInt428 = off * 8;
+		anInt428 = position * 8;
 	}
 
 	public void method476(int[] var1) {

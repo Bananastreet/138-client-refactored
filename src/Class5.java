@@ -122,7 +122,7 @@ public class Class5 {
 				}
 			}
 
-			var1.method88(var171.buf, 0, var171.off);
+			var1.method88(var171.buf, 0, var171.position);
 		} catch (Exception var15) {
 			;
 		} finally {
@@ -177,7 +177,7 @@ public class Class5 {
 				}
 
 				Stream var231 = new Stream(var2);
-				if (var231.buf.length - var231.off < 1) {
+				if (var231.buf.length - var231.position < 1) {
 					return;
 				}
 

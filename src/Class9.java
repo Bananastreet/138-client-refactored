@@ -13,7 +13,7 @@ public class Class9 {
 		for (int var2 = 0; var2 < 10; var2++) {
 			int var3 = var1.method367();
 			if (var3 != 0) {
-				--var1.off;
+				--var1.position;
 				aClass17Array1[var2] = new Class17();
 				aClass17Array1[var2].method60(var1);
 			}

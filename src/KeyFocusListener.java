@@ -1,7 +1,7 @@
 public class KeyFocusListener extends Node {
 
 	int anInt383;
-	static Task staticTask3;
+	static Task socket;	
 	int anInt384;
 	static long staticLong15;
 	static GameType staticGameType7;

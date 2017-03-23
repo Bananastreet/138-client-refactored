@@ -16,11 +16,11 @@ public class Class24 {
 		aNodeSub10_1 = var2;
 		Stream var5 = new Stream(var1);
 		Stream var6 = new Stream(var1);
-		var5.off = 2;
+		var5.position = 2;
 		int var7 = var5.method367();
 		int var8 = -1;
 		int var9 = 0;
-		var6.off = var5.off + var7;
+		var6.position = var5.position + var7;
 
 		int var3;
 		for (var3 = 0; var3 < var7; var3++) {
@@ -71,7 +71,7 @@ public class Class24 {
 			}
 		}
 
-		if (var6.off != var1.length) {
+		if (var6.position != var1.length) {
 			throw new RuntimeException();
 		} else {
 			anInt67 = var9;

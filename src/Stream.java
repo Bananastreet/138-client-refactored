@@ -6,7 +6,7 @@ public class Stream extends Node {
 	static int[] staticIntArray124 = new int[256];
 	static long[] staticLongArray4;
 	public byte[] buf;
-	public int off;
+	public int position;	
 
 	static {
 		int var5;
@@ -44,39 +44,39 @@ public class Stream extends Node {
 
 	public Stream(byte[] var1) {
 		buf = var1;
-		off = 0;
+		position = 0;
 	}
 
 	public void writeShort(int var1) {
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) var1;
 	}
 
 	public void writeTriByte(int var1) {
-		buf[off++] = (byte) (var1 >> 16);
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 16);
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) var1;
 	}
 
 	public void writeInt(int var1) {
-		buf[off++] = (byte) (var1 >> 24);
-		buf[off++] = (byte) (var1 >> 16);
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 24);
+		buf[position++] = (byte) (var1 >> 16);
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) var1;
 	}
 
 	public void writeHexByte(long var1) {
-		buf[off++] = (byte) (int) (var1 >> 40);
-		buf[off++] = (byte) (int) (var1 >> 32);
-		buf[off++] = (byte) (int) (var1 >> 24);
-		buf[off++] = (byte) (int) (var1 >> 16);
-		buf[off++] = (byte) (int) (var1 >> 8);
-		buf[off++] = (byte) (int) var1;
+		buf[position++] = (byte) (int) (var1 >> 40);
+		buf[position++] = (byte) (int) (var1 >> 32);
+		buf[position++] = (byte) (int) (var1 >> 24);
+		buf[position++] = (byte) (int) (var1 >> 16);
+		buf[position++] = (byte) (int) (var1 >> 8);
+		buf[position++] = (byte) (int) var1;
 	}
 
 	public void method322(int[] var1) {
-		int var2 = off / 8;
-		off = 0;
+		int var2 = position / 8;
+		position = 0;
 
 		for (int var3 = 0; var3 < var2; var3++) {
 			int var7 = readInt();
@@ -89,7 +89,7 @@ public class Stream extends Node {
 				var4 -= var5;
 			}
 
-			off -= 8;
+			position -= 8;
 			writeInt(var7);
 			writeInt(var6);
 		}
@@ -101,8 +101,8 @@ public class Stream extends Node {
 		if (var2 >= 0) {
 			throw new IllegalArgumentException("");
 		} else {
-			off += Static.staticMethod214(var1, 0, var1.length(), buf, off);
-			buf[off++] = 0;
+			position += Static.staticMethod214(var1, 0, var1.length(), buf, position);
+			buf[position++] = 0;
 		}
 	}
 
@@ -111,9 +111,9 @@ public class Stream extends Node {
 		if (var2 >= 0) {
 			throw new IllegalArgumentException("");
 		} else {
-			buf[off++] = 0;
-			off += Static.staticMethod214(var1, 0, var1.length(), buf, off);
-			buf[off++] = 0;
+			buf[position++] = 0;
+			position += Static.staticMethod214(var1, 0, var1.length(), buf, position);
+			buf[position++] = 0;
 		}
 	}
 
@@ -132,20 +132,20 @@ public class Stream extends Node {
 			}
 		}
 
-		buf[off++] = 0;
+		buf[position++] = 0;
 		method329(var5);
-		off += Static.staticMethod71(buf, off, var1);
+		position += Static.staticMethod71(buf, position, var1);
 	}
 
 	public void method326(byte[] var1, int var2, int var3) {
 		for (int var4 = var2; var4 < var3 + var2; var4++) {
-			buf[off++] = var1[var4];
+			buf[position++] = var1[var4];
 		}
 
 	}
 
 	public void method327(int var1) {
-		buf[off - var1 - 1] = (byte) var1;
+		buf[position - var1 - 1] = (byte) var1;
 	}
 
 	public void method328(int var1) {
@@ -182,18 +182,18 @@ public class Stream extends Node {
 	}
 
 	public byte readByte() {
-		return buf[off++];
+		return buf[position++];
 	}
 
 	public int readTriByte() {
-		off += 3;
-		return (buf[off - 1] & 0xff) + ((buf[off - 2] & 0xff) << 8) + ((buf[off - 3] & 0xff) << 16);
+		position += 3;
+		return (buf[position - 1] & 0xff) + ((buf[position - 2] & 0xff) << 8) + ((buf[position - 3] & 0xff) << 16);
 	}
 
 	public int readInt() {
-		off += 4;
-		return ((buf[off - 4] & 0xff) << 24) + ((buf[off - 3] & 0xff) << 16) + ((buf[off - 2] & 0xff) << 8)
-				+ (buf[off - 1] & 0xff);
+		position += 4;
+		return ((buf[position - 4] & 0xff) << 24) + ((buf[position - 3] & 0xff) << 16) + ((buf[position - 2] & 0xff) << 8)
+				+ (buf[position - 1] & 0xff);
 	}
 
 	public long readLong() {
@@ -203,8 +203,8 @@ public class Stream extends Node {
 	}
 
 	public String method334() {
-		if (buf[off] == 0) {
-			++off;
+		if (buf[position] == 0) {
+			++position;
 			return null;
 		} else {
 			return method365();
@@ -213,21 +213,21 @@ public class Stream extends Node {
 
 	public void readBytes(byte[] var1, int var2, int var3) {
 		for (int var4 = var2; var4 < var3 + var2; var4++) {
-			var1[var4] = buf[off++];
+			var1[var4] = buf[position++];
 		}
 
 	}
 
 	public void writeByte(int var1) {
-		buf[off++] = (byte) var1;
+		buf[position++] = (byte) var1;
 	}
 
 	public int method337() {
-		return buf[off] < 0 ? readInt() & 0x7fffffff : method370();
+		return buf[position] < 0 ? readInt() & 0x7fffffff : method370();
 	}
 
 	public int method338() {
-		if (buf[off] < 0) {
+		if (buf[position] < 0) {
 			return readInt() & 0x7fffffff;
 		} else {
 			int var1 = method370();
@@ -236,10 +236,10 @@ public class Stream extends Node {
 	}
 
 	public int method339() {
-		byte var1 = buf[off++];
+		byte var1 = buf[position++];
 
 		int var2;
-		for (var2 = 0; var1 < 0; var1 = buf[off++]) {
+		for (var2 = 0; var1 < 0; var1 = buf[position++]) {
 			var2 = (var2 | var1 & 0x7f) << 7;
 		}
 
@@ -247,16 +247,16 @@ public class Stream extends Node {
 	}
 
 	public String method340() {
-		byte var1 = buf[off++];
+		byte var1 = buf[position++];
 		if (var1 != 0) {
 			throw new IllegalStateException("");
 		} else {
 			int var6 = method339();
-			if (off + var6 > buf.length) {
+			if (position + var6 > buf.length) {
 				throw new IllegalStateException("");
 			} else {
 				byte[] var2 = buf;
-				int var7 = off;
+				int var7 = position;
 				char[] var3 = new char[var6];
 				int var4 = 0;
 				int var9 = var7;
@@ -309,15 +309,15 @@ public class Stream extends Node {
 				}
 
 				String var111 = new String(var3, 0, var4);
-				off += var6;
+				position += var6;
 				return var111;
 			}
 		}
 	}
 
 	public void method341(int[] var1, int var2, int var3) {
-		int var4 = off;
-		off = var2;
+		int var4 = position;
+		position = var2;
 		int var6 = (var3 - var2) / 8;
 
 		for (int var5 = 0; var5 < var6; var5++) {
@@ -332,53 +332,53 @@ public class Stream extends Node {
 				var8 += var9;
 			}
 
-			off -= 8;
+			position -= 8;
 			writeInt(var11);
 			writeInt(var7);
 		}
 
-		off = var4;
+		position = var4;
 	}
 
 	public void method342(BigInteger var1, BigInteger var2) {
-		int var3 = off;
-		off = 0;
+		int var3 = position;
+		position = 0;
 		byte[] var6 = new byte[var3];
 		readBytes(var6, 0, var3);
 		BigInteger var4 = new BigInteger(var6);
 		BigInteger var5 = var4.modPow(var1, var2);
 		byte[] var7 = var5.toByteArray();
-		off = 0;
+		position = 0;
 		writeShort(var7.length);
 		method326(var7, 0, var7.length);
 	}
 
 	public void method343(int var1) {
-		buf[off++] = (byte) (128 + var1);
+		buf[position++] = (byte) (128 + var1);
 	}
 
 	public void method344(long var1) {
-		buf[off++] = (byte) (int) (var1 >> 56);
-		buf[off++] = (byte) (int) (var1 >> 48);
-		buf[off++] = (byte) (int) (var1 >> 40);
-		buf[off++] = (byte) (int) (var1 >> 32);
-		buf[off++] = (byte) (int) (var1 >> 24);
-		buf[off++] = (byte) (int) (var1 >> 16);
-		buf[off++] = (byte) (int) (var1 >> 8);
-		buf[off++] = (byte) (int) var1;
+		buf[position++] = (byte) (int) (var1 >> 56);
+		buf[position++] = (byte) (int) (var1 >> 48);
+		buf[position++] = (byte) (int) (var1 >> 40);
+		buf[position++] = (byte) (int) (var1 >> 32);
+		buf[position++] = (byte) (int) (var1 >> 24);
+		buf[position++] = (byte) (int) (var1 >> 16);
+		buf[position++] = (byte) (int) (var1 >> 8);
+		buf[position++] = (byte) (int) var1;
 	}
 
 	public void method345(int var1) {
-		buf[off++] = (byte) (128 - var1);
+		buf[position++] = (byte) (128 - var1);
 	}
 
 	public int method346() {
-		return buf[off++] - 128 & 0xff;
+		return buf[position++] - 128 & 0xff;
 	}
 
 	public void method347(int[] var1) {
-		int var2 = off / 8;
-		off = 0;
+		int var2 = position / 8;
+		position = 0;
 
 		for (int var4 = 0; var4 < var2; var4++) {
 			int var5 = readInt();
@@ -391,7 +391,7 @@ public class Stream extends Node {
 				var3 += var6;
 			}
 
-			off -= 8;
+			position -= 8;
 			writeInt(var5);
 			writeInt(var7);
 		}
@@ -399,46 +399,46 @@ public class Stream extends Node {
 	}
 
 	public int method348() {
-		return 128 - buf[off++] & 0xff;
+		return 128 - buf[position++] & 0xff;
 	}
 
 	public byte method349() {
-		return (byte) (buf[off++] - 128);
+		return (byte) (buf[position++] - 128);
 	}
 
 	public byte method350() {
-		return (byte) (128 - buf[off++]);
+		return (byte) (128 - buf[position++]);
 	}
 
 	public void method351(int var1) {
-		buf[off++] = (byte) var1;
-		buf[off++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 8);
 	}
 
 	public void method352(int var1) {
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) (128 + var1);
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) (128 + var1);
 	}
 
 	public int method353() {
-		off += 2;
-		return (buf[off - 2] & 0xff) + ((buf[off - 1] & 0xff) << 8);
+		position += 2;
+		return (buf[position - 2] & 0xff) + ((buf[position - 1] & 0xff) << 8);
 	}
 
 	public int method354() {
-		off += 4;
-		return ((buf[off - 3] & 0xff) << 24) + ((buf[off - 4] & 0xff) << 16) + ((buf[off - 1] & 0xff) << 8)
-				+ (buf[off - 2] & 0xff);
+		position += 4;
+		return ((buf[position - 3] & 0xff) << 24) + ((buf[position - 4] & 0xff) << 16) + ((buf[position - 1] & 0xff) << 8)
+				+ (buf[position - 2] & 0xff);
 	}
 
 	public int method355() {
-		off += 2;
-		return ((buf[off - 1] & 0xff) << 8) + (buf[off - 2] - 128 & 0xff);
+		position += 2;
+		return ((buf[position - 1] & 0xff) << 8) + (buf[position - 2] - 128 & 0xff);
 	}
 
 	public int method356() {
-		off += 2;
-		int var1 = ((buf[off - 1] & 0xff) << 8) + (buf[off - 2] - 128 & 0xff);
+		position += 2;
+		int var1 = ((buf[position - 1] & 0xff) << 8) + (buf[position - 2] - 128 & 0xff);
 		if (var1 > 32767) {
 			var1 -= 65536;
 		}
@@ -447,52 +447,52 @@ public class Stream extends Node {
 	}
 
 	public void method357(int var1) {
-		buf[off++] = (byte) var1;
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) (var1 >> 16);
+		buf[position++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) (var1 >> 16);
 	}
 
 	public int method358() {
-		off += 3;
-		return ((buf[off - 3] & 0xff) << 8) + ((buf[off - 2] & 0xff) << 16) + (buf[off - 1] & 0xff);
+		position += 3;
+		return ((buf[position - 3] & 0xff) << 8) + ((buf[position - 2] & 0xff) << 16) + (buf[position - 1] & 0xff);
 	}
 
 	public void method359(int var1) {
-		buf[off++] = (byte) var1;
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) (var1 >> 16);
-		buf[off++] = (byte) (var1 >> 24);
+		buf[position++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) (var1 >> 16);
+		buf[position++] = (byte) (var1 >> 24);
 	}
 
 	public void method360(int var1) {
-		buf[off++] = (byte) (var1 >> 8);
-		buf[off++] = (byte) var1;
-		buf[off++] = (byte) (var1 >> 24);
-		buf[off++] = (byte) (var1 >> 16);
+		buf[position++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 24);
+		buf[position++] = (byte) (var1 >> 16);
 	}
 
 	public void method361(int var1) {
-		buf[off++] = (byte) (var1 >> 16);
-		buf[off++] = (byte) (var1 >> 24);
-		buf[off++] = (byte) var1;
-		buf[off++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) (var1 >> 16);
+		buf[position++] = (byte) (var1 >> 24);
+		buf[position++] = (byte) var1;
+		buf[position++] = (byte) (var1 >> 8);
 	}
 
 	public int method362() {
-		off += 4;
-		return (buf[off - 4] & 0xff) + ((buf[off - 2] & 0xff) << 16) + ((buf[off - 1] & 0xff) << 24)
-				+ ((buf[off - 3] & 0xff) << 8);
+		position += 4;
+		return (buf[position - 4] & 0xff) + ((buf[position - 2] & 0xff) << 16) + ((buf[position - 1] & 0xff) << 24)
+				+ ((buf[position - 3] & 0xff) << 8);
 	}
 
 	public Stream(int var1) {
 		buf = Static.staticMethod151(var1);
-		off = 0;
+		position = 0;
 	}
 
 	public boolean method363() {
-		off -= 4;
+		position -= 4;
 		byte[] var2 = buf;
-		int var5 = off;
+		int var5 = position;
 		int var1 = -1;
 
 		int var3;
@@ -506,8 +506,8 @@ public class Stream extends Node {
 	}
 
 	public int method364() {
-		off += 2;
-		int var1 = ((buf[off - 2] & 0xff) << 8) + (buf[off - 1] & 0xff);
+		position += 2;
+		int var1 = ((buf[position - 2] & 0xff) << 8) + (buf[position - 1] & 0xff);
 		if (var1 > 32767) {
 			var1 -= 65536;
 		}
@@ -516,79 +516,79 @@ public class Stream extends Node {
 	}
 
 	public String method365() {
-		int var1 = off;
+		int var1 = position;
 
-		while (buf[off++] != 0) {
+		while (buf[position++] != 0) {
 			;
 		}
 
-		int var2 = off - var1 - 1;
+		int var2 = position - var1 - 1;
 		return var2 == 0 ? "" : Static.staticMethod227(buf, var1, var2);
 	}
 
 	public int method366() {
-		int var1 = buf[off] & 0xff;
+		int var1 = buf[position] & 0xff;
 		return var1 < 128 ? method367() - 64 : method370() - '\uc000';
 	}
 
 	public int method367() {
-		return buf[off++] & 0xff;
+		return buf[position++] & 0xff;
 	}
 
 	public byte method368() {
-		return (byte) (0 - buf[off++]);
+		return (byte) (0 - buf[position++]);
 	}
 
 	public void method369(int var1) {
-		buf[off++] = (byte) (var1 + 128);
-		buf[off++] = (byte) (var1 >> 8);
+		buf[position++] = (byte) (var1 + 128);
+		buf[position++] = (byte) (var1 >> 8);
 	}
 
 	public int method370() {
-		off += 2;
-		return ((buf[off - 2] & 0xff) << 8) + (buf[off - 1] & 0xff);
+		position += 2;
+		return ((buf[position - 2] & 0xff) << 8) + (buf[position - 1] & 0xff);
 	}
 
 	public void method371(int var1) {
-		buf[off - var1 - 2] = (byte) (var1 >> 8);
-		buf[off - var1 - 1] = (byte) var1;
+		buf[position - var1 - 2] = (byte) (var1 >> 8);
+		buf[position - var1 - 1] = (byte) var1;
 	}
 
 	public int method372() {
-		off += 2;
-		return ((buf[off - 2] & 0xff) << 8) + (buf[off - 1] - 128 & 0xff);
+		position += 2;
+		return ((buf[position - 2] & 0xff) << 8) + (buf[position - 1] - 128 & 0xff);
 	}
 
 	public void method373(int var1) {
-		buf[off++] = (byte) (0 - var1);
+		buf[position++] = (byte) (0 - var1);
 	}
 
 	public String method374() {
-		byte var1 = buf[off++];
+		byte var1 = buf[position++];
 		if (var1 != 0) {
 			throw new IllegalStateException("");
 		} else {
-			int var2 = off;
+			int var2 = position;
 
-			while (buf[off++] != 0) {
+			while (buf[position++] != 0) {
 				;
 			}
 
-			int var3 = off - var2 - 1;
+			int var3 = position - var2 - 1;
 			return var3 == 0 ? "" : Static.staticMethod227(buf, var2, var3);
 		}
 	}
 
 	public void method375(int var1) {
-		buf[off - var1 - 4] = (byte) (var1 >> 24);
-		buf[off - var1 - 3] = (byte) (var1 >> 16);
-		buf[off - var1 - 2] = (byte) (var1 >> 8);
-		buf[off - var1 - 1] = (byte) var1;
+		buf[position - var1 - 4] = (byte) (var1 >> 24);
+		buf[position - var1 - 3] = (byte) (var1 >> 16);
+		buf[position - var1 - 2] = (byte) (var1 >> 8);
+		buf[position - var1 - 1] = (byte) var1;
 	}
 
 	public int method376(int var1) {
 		byte[] var2 = buf;
-		int var5 = off;
+		int var5 = position;
 		int var4 = -1;
 
 		for (int var3 = var1; var3 < var5; var3++) {
@@ -601,23 +601,23 @@ public class Stream extends Node {
 	}
 
 	public int method377() {
-		return 0 - buf[off++] & 0xff;
+		return 0 - buf[position++] & 0xff;
 	}
 
 	public int method378() {
-		off += 4;
-		return ((buf[off - 4] & 0xff) << 8) + ((buf[off - 2] & 0xff) << 24) + ((buf[off - 1] & 0xff) << 16)
-				+ (buf[off - 3] & 0xff);
+		position += 4;
+		return ((buf[position - 4] & 0xff) << 8) + ((buf[position - 2] & 0xff) << 24) + ((buf[position - 1] & 0xff) << 16)
+				+ (buf[position - 3] & 0xff);
 	}
 
 	public int method379() {
-		int var1 = buf[off] & 0xff;
+		int var1 = buf[position] & 0xff;
 		return var1 < 128 ? method367() : method370() - '\u8000';
 	}
 
 	public void method380(int[] var1, int var2, int var3) {
-		int var4 = off;
-		off = var2;
+		int var4 = position;
+		position = var2;
 		int var5 = (var3 - var2) / 8;
 
 		for (int var6 = 0; var6 < var5; var6++) {
@@ -631,12 +631,12 @@ public class Stream extends Node {
 				var8 -= var11;
 			}
 
-			off -= 8;
+			position -= 8;
 			writeInt(var7);
 			writeInt(var9);
 		}
 
-		off = var4;
+		position = var4;
 	}
 
 }

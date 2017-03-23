@@ -265,7 +265,7 @@ public class Class17 {
 		aClass14_1.method49(var1);
 		int var2 = var1.method367();
 		if (var2 != 0) {
-			--var1.off;
+			--var1.position;
 			aClass14_3 = new Class14();
 			aClass14_3.method49(var1);
 			aClass14_2 = new Class14();
@@ -274,7 +274,7 @@ public class Class17 {
 
 		var2 = var1.method367();
 		if (var2 != 0) {
-			--var1.off;
+			--var1.position;
 			aClass14_5 = new Class14();
 			aClass14_5.method49(var1);
 			aClass14_8 = new Class14();
@@ -283,7 +283,7 @@ public class Class17 {
 
 		var2 = var1.method367();
 		if (var2 != 0) {
-			--var1.off;
+			--var1.position;
 			aClass14_6 = new Class14();
 			aClass14_6.method49(var1);
 			aClass14_9 = new Class14();

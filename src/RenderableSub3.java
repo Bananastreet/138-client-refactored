@@ -68,7 +68,7 @@ public class RenderableSub3 extends Renderable {
 		Stream var8 = new Stream(var1);
 		Stream var9 = new Stream(var1);
 		Stream var55 = new Stream(var1);
-		var2.off = var1.length - 23;
+		var2.position = var1.length - 23;
 		int var33 = var2.method370();
 		int var13 = var2.method370();
 		int var14 = var2.method367();
@@ -89,7 +89,7 @@ public class RenderableSub3 extends Renderable {
 		int var27;
 		if (var14 > 0) {
 			aByteArray30 = new byte[var14];
-			var2.off = 0;
+			var2.position = 0;
 
 			for (var27 = 0; var27 < var14; var27++) {
 				byte var32 = aByteArray30[var27] = var2.readByte();
@@ -222,11 +222,11 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var2.off = var14;
-		var11.off = var35;
-		var6.off = var43;
-		var7.off = var30;
-		var8.off = var53;
+		var2.position = var14;
+		var11.position = var35;
+		var6.position = var43;
+		var7.position = var30;
+		var8.position = var53;
 		int var4 = 0;
 		int var54 = 0;
 		int var56 = 0;
@@ -264,13 +264,13 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var2.off = var41;
-		var11.off = var561;
-		var6.off = var44;
-		var7.off = var57;
-		var8.off = var36;
-		var9.off = var39;
-		var55.off = var52;
+		var2.position = var41;
+		var11.position = var561;
+		var6.position = var44;
+		var7.position = var57;
+		var8.position = var36;
+		var9.position = var39;
+		var55.position = var52;
 
 		for (var3 = 0; var3 < var13; var3++) {
 			aShortArray22[var3] = (short) var2.method370();
@@ -299,8 +299,8 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var2.off = var31;
-		var11.off = var34;
+		var2.position = var31;
+		var11.position = var34;
 		var3 = 0;
 		var22 = 0;
 		var5 = 0;
@@ -349,12 +349,12 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var2.off = var50;
-		var11.off = var45;
-		var6.off = var46;
-		var7.off = var47;
-		var8.off = var42;
-		var9.off = var48;
+		var2.position = var50;
+		var11.position = var45;
+		var6.position = var46;
+		var7.position = var47;
+		var8.position = var42;
+		var9.position = var48;
 
 		for (var10 = 0; var10 < var14; var10++) {
 			var29 = aByteArray30[var10] & 0xff;
@@ -402,7 +402,7 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var2.off = var27;
+		var2.position = var27;
 		var10 = var2.method367();
 		if (var10 != 0) {
 			new Class25();
@@ -422,7 +422,7 @@ public class RenderableSub3 extends Renderable {
 		Stream var7 = new Stream(var1);
 		Stream var11 = new Stream(var1);
 		Stream var9 = new Stream(var1);
-		var5.off = var1.length - 18;
+		var5.position = var1.length - 18;
 		int var16 = var5.method370();
 		int var12 = var5.method370();
 		int var29 = var5.method367();
@@ -515,11 +515,11 @@ public class RenderableSub3 extends Renderable {
 		}
 
 		aShortArray22 = new short[var12];
-		var5.off = var3;
-		var6.off = var30;
-		var7.off = var41;
-		var11.off = var45;
-		var9.off = var24;
+		var5.position = var3;
+		var6.position = var30;
+		var7.position = var41;
+		var11.position = var45;
+		var9.position = var24;
 		int var39 = 0;
 		int var40 = 0;
 		int var42 = 0;
@@ -557,11 +557,11 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var5.off = var26;
-		var6.off = var38;
-		var7.off = var4;
-		var11.off = var25;
-		var9.off = var22;
+		var5.position = var26;
+		var6.position = var38;
+		var7.position = var4;
+		var11.position = var25;
+		var9.position = var22;
 
 		for (var34 = 0; var34 < var12; var34++) {
 			aShortArray22[var34] = (short) var5.method370();
@@ -600,8 +600,8 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var5.off = var44;
-		var6.off = var20;
+		var5.position = var44;
+		var6.position = var20;
 		var34 = 0;
 		var37 = 0;
 		var17 = 0;
@@ -651,7 +651,7 @@ public class RenderableSub3 extends Renderable {
 			}
 		}
 
-		var5.off = var28;
+		var5.position = var28;
 
 		for (var21 = 0; var21 < var29; var21++) {
 			aByteArray30[var21] = 0;

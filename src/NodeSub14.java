@@ -50,7 +50,7 @@ public class NodeSub14 extends Node {
 		Stream var5 = new Stream(var1);
 
 		int var6;
-		for (var6 = 0; var5.buf[var5.off + var6] != 0; var6++) {
+		for (var6 = 0; var5.buf[var5.position + var6] != 0; var6++) {
 			;
 		}
 
@@ -61,13 +61,13 @@ public class NodeSub14 extends Node {
 			var8[var10] = var5.readByte();
 		}
 
-		++var5.off;
+		++var5.position;
 		++var6;
-		var10 = var5.off;
-		var5.off += var6;
+		var10 = var5.position;
+		var5.position += var6;
 
 		int var13;
-		for (var13 = 0; var5.buf[var5.off + var13] != 0; var13++) {
+		for (var13 = 0; var5.buf[var5.position + var13] != 0; var13++) {
 			;
 		}
 
@@ -78,13 +78,13 @@ public class NodeSub14 extends Node {
 			var14[var9] = var5.readByte();
 		}
 
-		++var5.off;
+		++var5.position;
 		++var13;
-		var9 = var5.off;
-		var5.off += var13;
+		var9 = var5.position;
+		var5.position += var13;
 
 		int var16;
-		for (var16 = 0; var5.buf[var16 + var5.off] != 0; var16++) {
+		for (var16 = 0; var5.buf[var16 + var5.position] != 0; var16++) {
 			;
 		}
 
@@ -94,7 +94,7 @@ public class NodeSub14 extends Node {
 			var18[var45] = var5.readByte();
 		}
 
-		++var5.off;
+		++var5.position;
 		++var16;
 		byte[] var421 = new byte[var16];
 		int var22;
@@ -145,7 +145,7 @@ public class NodeSub14 extends Node {
 		byte[] var42 = var23 > 0 ? new byte[var23 * 2] : null;
 
 		int var31;
-		for (var31 = 0; var5.buf[var31 + var5.off] != 0; var31++) {
+		for (var31 = 0; var5.buf[var31 + var5.position] != 0; var31++) {
 			;
 		}
 
@@ -156,7 +156,7 @@ public class NodeSub14 extends Node {
 			var32[var30] = var5.readByte();
 		}
 
-		++var5.off;
+		++var5.position;
 		++var31;
 		var30 = 0;
 

@@ -85,7 +85,7 @@ public class Js5IndexImpl extends Js5Index {
 			long var3 = var1 + 16711680;
 			int var5;
 			if (FloorUnderlayDef.staticCacheableSub4_1 != null && var3 == FloorUnderlayDef.staticCacheableSub4_1.id) {
-				var5 = 1 + BufferedFile.staticStream2.off * 99
+				var5 = 1 + BufferedFile.staticStream2.position * 99
 						/ (BufferedFile.staticStream2.buf.length - FloorUnderlayDef.staticCacheableSub4_1.aByte4);
 			} else {
 				var5 = 0;
@@ -167,7 +167,7 @@ public class Js5IndexImpl extends Js5Index {
 			long var4 = (var3 << 16) + var1;
 			int var2;
 			if (FloorUnderlayDef.staticCacheableSub4_1 != null && var4 == FloorUnderlayDef.staticCacheableSub4_1.id) {
-				var2 = BufferedFile.staticStream2.off * 99
+				var2 = BufferedFile.staticStream2.position * 99
 						/ (BufferedFile.staticStream2.buf.length - FloorUnderlayDef.staticCacheableSub4_1.aByte4) + 1;
 			} else {
 				var2 = 0;

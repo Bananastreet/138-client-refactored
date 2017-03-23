@@ -8,7 +8,7 @@ public class Class28 implements Interface3 {
 	public static final Class28 staticClass28_3 = new Class28(2, 1);
 	public static final Class28 staticClass28_4 = new Class28(3, 2);
 	public static final Class28 staticClass28_5 = new Class28(1, 3);
-	public final int anInt84;
+	public final int type;	
 	final int anInt83;
 
 	public int method12() {
@@ -16,7 +16,7 @@ public class Class28 implements Interface3 {
 	}
 
 	Class28(int var1, int var2) {
-		anInt84 = var1;
+		type = var1;
 		anInt83 = var2;
 	}
 

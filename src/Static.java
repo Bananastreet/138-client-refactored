@@ -304,20 +304,20 @@ public class Static {
 			} else {
 				var1 = new CacheableSub1();
 				Stream var4 = new Stream(var3);
-				var4.off = var4.buf.length - 12;
+				var4.position = var4.buf.length - 12;
 				int var6 = var4.readInt();
 				var1.anInt398 = var4.method370();
 				var1.anInt399 = var4.method370();
 				var1.anInt401 = var4.method370();
 				var1.anInt400 = var4.method370();
-				var4.off = 0;
+				var4.position = 0;
 				var4.method334();
 				var1.anIntArray84 = new int[var6];
 				var1.anIntArray85 = new int[var6];
 				var1.aStringArray5 = new String[var6];
 
 				int var2;
-				for (int var5 = 0; var4.off < var4.buf.length - 12; var1.anIntArray84[var5++] = var2) {
+				for (int var5 = 0; var4.position < var4.buf.length - 12; var1.anIntArray84[var5++] = var2) {
 					var2 = var4.method370();
 					if (var2 == 3) {
 						var1.aStringArray5[var5] = var4.method365();
@@ -1136,9 +1136,9 @@ public class Static {
 			}
 		}
 
-		Client.staticEncryptedStream1.method471(13);
-		Client.staticEncryptedStream1.writeByte(var0.length() + 1);
-		Client.staticEncryptedStream1.method323(var0);
+		Client.outBuffer.method471(13);
+		Client.outBuffer.writeByte(var0.length() + 1);
+		Client.outBuffer.method323(var0);
 	}
 
 	public static String staticMethod5(long var0) {
@@ -1173,10 +1173,10 @@ public class Static {
 				Stream var4 = new Stream(4);
 				var4.writeByte(var0 ? 2 : 3);
 				var4.writeTriByte(0);
-				staticConnection2.method151(var4.buf, 0, 4);
+				staticConnection2.write(var4.buf, 0, 4);
 			} catch (IOException var41) {
 				try {
-					staticConnection2.method150();
+					staticConnection2.shutdown();
 				} catch (Exception var3) {
 					;
 				}
@@ -1551,13 +1551,13 @@ public class Static {
 		}
 
 		if (var2 == 31) {
-			Client.staticEncryptedStream1.method471(233);
-			Client.staticEncryptedStream1.method359(var1);
-			Client.staticEncryptedStream1.method369(staticInt102);
-			Client.staticEncryptedStream1.method351(staticInt126);
-			Client.staticEncryptedStream1.method360(GameObject.staticInt332);
-			Client.staticEncryptedStream1.method352(var0);
-			Client.staticEncryptedStream1.method351(var3);
+			Client.outBuffer.method471(233);
+			Client.outBuffer.method359(var1);
+			Client.outBuffer.method369(staticInt102);
+			Client.outBuffer.method351(staticInt126);
+			Client.outBuffer.method360(GameObject.staticInt332);
+			Client.outBuffer.method352(var0);
+			Client.outBuffer.method351(var3);
 			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
 			Client.staticInt228 = var0;
@@ -1573,12 +1573,12 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(146);
-				Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.writeShort(staticInt126);
-				Client.staticEncryptedStream1.method352(staticInt102);
-				Client.staticEncryptedStream1.writeShort(var3);
-				Client.staticEncryptedStream1.method360(GameObject.staticInt332);
+				Client.outBuffer.method471(146);
+				Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.writeShort(staticInt126);
+				Client.outBuffer.method352(staticInt102);
+				Client.outBuffer.writeShort(var3);
+				Client.outBuffer.method360(GameObject.staticInt332);
 			}
 		}
 
@@ -1592,9 +1592,9 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(199);
-				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.method352(var3);
+				Client.outBuffer.method471(199);
+				Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method352(var3);
 			}
 		}
 
@@ -1607,9 +1607,9 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(45);
-				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.method352(var3);
+				Client.outBuffer.method471(45);
+				Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method352(var3);
 			}
 		}
 
@@ -1622,15 +1622,15 @@ public class Static {
 			}
 
 			if (var19) {
-				Client.staticEncryptedStream1.method471(62);
-				Client.staticEncryptedStream1.writeInt(var1);
+				Client.outBuffer.method471(62);
+				Client.outBuffer.writeInt(var1);
 			}
 		}
 
 		if (var2 == 30 && Client.staticWidget6 == null) {
-			Client.staticEncryptedStream1.method471(171);
-			Client.staticEncryptedStream1.method351(var0);
-			Client.staticEncryptedStream1.writeInt(var1);
+			Client.outBuffer.method471(171);
+			Client.outBuffer.method351(var0);
+			Client.outBuffer.writeInt(var1);
 			Client.staticWidget6 = staticMethod32(var1, var0);
 			staticMethod73(Client.staticWidget6);
 		}
@@ -1644,9 +1644,9 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(99);
-				Client.staticEncryptedStream1.writeShort(var3);
-				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method471(99);
+				Client.outBuffer.writeShort(var3);
+				Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 			}
 		}
 
@@ -1655,15 +1655,15 @@ public class Static {
 			Client.staticInt237 = var7;
 			Client.staticInt239 = 2;
 			Client.staticInt297 = 0;
-			Client.staticEncryptedStream1.method471(88);
-			Client.staticEncryptedStream1.method369(var3 >> 14 & 0x7fff);
+			Client.outBuffer.method471(88);
+			Client.outBuffer.method369(var3 >> 14 & 0x7fff);
 		}
 
 		if (var2 == 39) {
-			Client.staticEncryptedStream1.method471(29);
-			Client.staticEncryptedStream1.method369(var0);
-			Client.staticEncryptedStream1.method369(var3);
-			Client.staticEncryptedStream1.method360(var1);
+			Client.outBuffer.method471(29);
+			Client.outBuffer.method369(var0);
+			Client.outBuffer.method369(var3);
+			Client.outBuffer.method360(var1);
 			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
 			Client.staticInt228 = var0;
@@ -1671,8 +1671,8 @@ public class Static {
 
 		int var191;
 		if (var2 == 29) {
-			Client.staticEncryptedStream1.method471(62);
-			Client.staticEncryptedStream1.writeInt(var1);
+			Client.outBuffer.method471(62);
+			Client.outBuffer.writeInt(var1);
 			var17 = staticMethod8(var1);
 			if (var17.anIntArrayArray12 != null && var17.anIntArrayArray12[0][0] == 5) {
 				var191 = var17.anIntArrayArray12[0][1];
@@ -1692,11 +1692,11 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(30);
-				Client.staticEncryptedStream1.writeShort(Client.staticInt260);
-				Client.staticEncryptedStream1.method369(var3);
-				Client.staticEncryptedStream1.method359(Class3.staticInt19);
-				Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method471(30);
+				Client.outBuffer.writeShort(Client.staticInt260);
+				Client.outBuffer.method369(var3);
+				Client.outBuffer.method359(Class3.staticInt19);
+				Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 			}
 		}
 
@@ -1717,17 +1717,17 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(240);
-				Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.method351(var3);
+				Client.outBuffer.method471(240);
+				Client.outBuffer.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method351(var3);
 			}
 		}
 
 		if (var2 == 36) {
-			Client.staticEncryptedStream1.method471(249);
-			Client.staticEncryptedStream1.method369(var0);
-			Client.staticEncryptedStream1.method369(var3);
-			Client.staticEncryptedStream1.method361(var1);
+			Client.outBuffer.method471(249);
+			Client.outBuffer.method369(var0);
+			Client.outBuffer.method369(var3);
+			Client.outBuffer.method361(var1);
 			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
 			Client.staticInt228 = var0;
@@ -1742,21 +1742,21 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(241);
-				Client.staticEncryptedStream1.method369(Client.staticInt260);
-				Client.staticEncryptedStream1.writeShort(var3);
-				Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.method359(Class3.staticInt19);
+				Client.outBuffer.method471(241);
+				Client.outBuffer.method369(Client.staticInt260);
+				Client.outBuffer.writeShort(var3);
+				Client.outBuffer.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method359(Class3.staticInt19);
 			}
 		}
 
 		if (var2 == 32) {
-			Client.staticEncryptedStream1.method471(19);
-			Client.staticEncryptedStream1.method359(Class3.staticInt19);
-			Client.staticEncryptedStream1.method369(var3);
-			Client.staticEncryptedStream1.method369(Client.staticInt260);
-			Client.staticEncryptedStream1.method359(var1);
-			Client.staticEncryptedStream1.method352(var0);
+			Client.outBuffer.method471(19);
+			Client.outBuffer.method359(Class3.staticInt19);
+			Client.outBuffer.method369(var3);
+			Client.outBuffer.method369(Client.staticInt260);
+			Client.outBuffer.method359(var1);
+			Client.outBuffer.method352(var0);
 			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
 			Client.staticInt228 = var0;
@@ -1775,8 +1775,8 @@ public class Static {
 				}
 
 				if (var22 != null) {
-					Client.staticEncryptedStream1.method471(229);
-					Client.staticEncryptedStream1.method352(var22.anInt537);
+					Client.outBuffer.method471(229);
+					Client.outBuffer.method352(var22.anInt537);
 				}
 			}
 		}
@@ -1788,26 +1788,26 @@ public class Static {
 			Client.staticInt297 = 0;
 			Client.staticInt296 = var0;
 			Client.staticInt240 = var1;
-			Client.staticEncryptedStream1.method471(159);
-			Client.staticEncryptedStream1.method369(staticInt102);
-			Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Client.staticEncryptedStream1.method369(Class34.staticInt75 + var1);
-			Client.staticEncryptedStream1.method360(GameObject.staticInt332);
-			Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
-			Client.staticEncryptedStream1.writeShort(staticInt126);
-			Client.staticEncryptedStream1.method351(var3);
+			Client.outBuffer.method471(159);
+			Client.outBuffer.method369(staticInt102);
+			Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.outBuffer.method369(Class34.staticInt75 + var1);
+			Client.outBuffer.method360(GameObject.staticInt332);
+			Client.outBuffer.writeShort(var0 + NodeSub3.staticInt154);
+			Client.outBuffer.writeShort(staticInt126);
+			Client.outBuffer.method351(var3);
 		}
 
 		if (var2 == 58) {
 			var17 = staticMethod32(var1, var0);
 			if (var17 != null) {
-				Client.staticEncryptedStream1.method471(91);
-				Client.staticEncryptedStream1.method351(Client.staticInt227);
-				Client.staticEncryptedStream1.method359(Class3.staticInt19);
-				Client.staticEncryptedStream1.method369(Client.staticInt260);
-				Client.staticEncryptedStream1.method351(var0);
-				Client.staticEncryptedStream1.method360(var1);
-				Client.staticEncryptedStream1.method352(var17.anInt352);
+				Client.outBuffer.method471(91);
+				Client.outBuffer.method351(Client.staticInt227);
+				Client.outBuffer.method359(Class3.staticInt19);
+				Client.outBuffer.method369(Client.staticInt260);
+				Client.outBuffer.method351(var0);
+				Client.outBuffer.method360(var1);
+				Client.outBuffer.method352(var17.anInt352);
 			}
 		}
 
@@ -1818,11 +1818,11 @@ public class Static {
 			Client.staticInt297 = 0;
 			Client.staticInt296 = var0;
 			Client.staticInt240 = var1;
-			Client.staticEncryptedStream1.method471(238);
-			Client.staticEncryptedStream1.method352(var3);
-			Client.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
-			Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
+			Client.outBuffer.method471(238);
+			Client.outBuffer.method352(var3);
+			Client.outBuffer.method352(NodeSub3.staticInt154 + var0);
+			Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.outBuffer.method351(var1 + Class34.staticInt75);
 		}
 
 		if (var2 == 20) {
@@ -1832,18 +1832,18 @@ public class Static {
 			Client.staticInt297 = 0;
 			Client.staticInt296 = var0;
 			Client.staticInt240 = var1;
-			Client.staticEncryptedStream1.method471(27);
-			Client.staticEncryptedStream1.method351(var3);
-			Client.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
-			Client.staticEncryptedStream1.method352(var0 + NodeSub3.staticInt154);
-			Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.outBuffer.method471(27);
+			Client.outBuffer.method351(var3);
+			Client.outBuffer.method352(Class34.staticInt75 + var1);
+			Client.outBuffer.method352(var0 + NodeSub3.staticInt154);
+			Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 		}
 
 		if (var2 == 37) {
-			Client.staticEncryptedStream1.method471(251);
-			Client.staticEncryptedStream1.writeInt(var1);
-			Client.staticEncryptedStream1.method369(var0);
-			Client.staticEncryptedStream1.method351(var3);
+			Client.outBuffer.method471(251);
+			Client.outBuffer.writeInt(var1);
+			Client.outBuffer.method369(var0);
+			Client.outBuffer.method351(var3);
 			Client.staticInt241 = 0;
 			Tile.staticWidget11 = staticMethod8(var1);
 			Client.staticInt228 = var0;
@@ -1856,13 +1856,13 @@ public class Static {
 			Client.staticInt297 = 0;
 			Client.staticInt296 = var0;
 			Client.staticInt240 = var1;
-			Client.staticEncryptedStream1.method471(54);
-			Client.staticEncryptedStream1.method352(var0 + NodeSub3.staticInt154);
-			Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
-			Client.staticEncryptedStream1.method359(Class3.staticInt19);
-			Client.staticEncryptedStream1.method352(Client.staticInt260);
-			Client.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
+			Client.outBuffer.method471(54);
+			Client.outBuffer.method352(var0 + NodeSub3.staticInt154);
+			Client.outBuffer.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.outBuffer.method352(var3 >> 14 & 0x7fff);
+			Client.outBuffer.method359(Class3.staticInt19);
+			Client.outBuffer.method352(Client.staticInt260);
+			Client.outBuffer.method352(Class34.staticInt75 + var1);
 		}
 
 		if (var2 == 21) {
@@ -1872,11 +1872,11 @@ public class Static {
 			Client.staticInt297 = 0;
 			Client.staticInt296 = var0;
 			Client.staticInt240 = var1;
-			Client.staticEncryptedStream1.method471(28);
-			Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-			Client.staticEncryptedStream1.method352(var3);
-			Client.staticEncryptedStream1.method369(var1 + Class34.staticInt75);
-			Client.staticEncryptedStream1.method369(NodeSub3.staticInt154 + var0);
+			Client.outBuffer.method471(28);
+			Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+			Client.outBuffer.method352(var3);
+			Client.outBuffer.method369(var1 + Class34.staticInt75);
+			Client.outBuffer.method369(NodeSub3.staticInt154 + var0);
 		}
 
 		if (var2 == 25) {
@@ -1937,10 +1937,10 @@ public class Static {
 			}
 		} else {
 			if (var2 == 35) {
-				Client.staticEncryptedStream1.method471(94);
-				Client.staticEncryptedStream1.method351(var3);
-				Client.staticEncryptedStream1.method352(var0);
-				Client.staticEncryptedStream1.writeInt(var1);
+				Client.outBuffer.method471(94);
+				Client.outBuffer.method351(var3);
+				Client.outBuffer.method352(var0);
+				Client.outBuffer.writeInt(var1);
 				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
 				Client.staticInt228 = var0;
@@ -1955,9 +1955,9 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(100);
-					Client.staticEncryptedStream1.writeShort(var3);
-					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method471(100);
+					Client.outBuffer.writeShort(var3);
+					Client.outBuffer.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
@@ -1970,9 +1970,9 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(131);
-					Client.staticEncryptedStream1.method352(var3);
-					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method471(131);
+					Client.outBuffer.method352(var3);
+					Client.outBuffer.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
@@ -1983,11 +1983,11 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(130);
-				Client.staticEncryptedStream1.method369(var0 + NodeSub3.staticInt154);
-				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.method352(Class34.staticInt75 + var1);
-				Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
+				Client.outBuffer.method471(130);
+				Client.outBuffer.method369(var0 + NodeSub3.staticInt154);
+				Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method352(Class34.staticInt75 + var1);
+				Client.outBuffer.method352(var3 >> 14 & 0x7fff);
 			}
 
 			if (var2 == 46) {
@@ -1999,9 +1999,9 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(216);
-					Client.staticEncryptedStream1.method351(var3);
-					Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method471(216);
+					Client.outBuffer.method351(var3);
+					Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
@@ -2013,20 +2013,20 @@ public class Static {
 			}
 
 			if (var2 == 42) {
-				Client.staticEncryptedStream1.method471(58);
-				Client.staticEncryptedStream1.method369(var3);
-				Client.staticEncryptedStream1.method361(var1);
-				Client.staticEncryptedStream1.method351(var0);
+				Client.outBuffer.method471(58);
+				Client.outBuffer.method369(var3);
+				Client.outBuffer.method361(var1);
+				Client.outBuffer.method351(var0);
 				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
 				Client.staticInt228 = var0;
 			}
 
 			if (var2 == 33) {
-				Client.staticEncryptedStream1.method471(132);
-				Client.staticEncryptedStream1.writeShort(var3);
-				Client.staticEncryptedStream1.method352(var0);
-				Client.staticEncryptedStream1.method360(var1);
+				Client.outBuffer.method471(132);
+				Client.outBuffer.writeShort(var3);
+				Client.outBuffer.method352(var0);
+				Client.outBuffer.method360(var1);
 				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
 				Client.staticInt228 = var0;
@@ -2041,9 +2041,9 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(197);
-					Client.staticEncryptedStream1.method351(var3);
-					Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method471(197);
+					Client.outBuffer.method351(var3);
+					Client.outBuffer.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
@@ -2054,20 +2054,20 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(67);
-				Client.staticEncryptedStream1.method369(Client.staticInt260);
-				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
-				Client.staticEncryptedStream1.method351(var3);
-				Client.staticEncryptedStream1.writeShort(var1 + Class34.staticInt75);
-				Client.staticEncryptedStream1.method360(Class3.staticInt19);
+				Client.outBuffer.method471(67);
+				Client.outBuffer.method369(Client.staticInt260);
+				Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.writeShort(var0 + NodeSub3.staticInt154);
+				Client.outBuffer.method351(var3);
+				Client.outBuffer.writeShort(var1 + Class34.staticInt75);
+				Client.outBuffer.method360(Class3.staticInt19);
 			}
 
 			if (var2 == 41) {
-				Client.staticEncryptedStream1.method471(161);
-				Client.staticEncryptedStream1.method359(var1);
-				Client.staticEncryptedStream1.method351(var3);
-				Client.staticEncryptedStream1.method351(var0);
+				Client.outBuffer.method471(161);
+				Client.outBuffer.method359(var1);
+				Client.outBuffer.method351(var3);
+				Client.outBuffer.method351(var0);
 				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
 				Client.staticInt228 = var0;
@@ -2078,8 +2078,8 @@ public class Static {
 				if (var17 != null && var17.anIntArray77[var0] >= 100000) {
 					staticMethod36(27, "", var17.anIntArray77[var0] + " x " + staticMethod153(var3).aString31);
 				} else {
-					Client.staticEncryptedStream1.method471(59);
-					Client.staticEncryptedStream1.method351(var3);
+					Client.outBuffer.method471(59);
+					Client.outBuffer.method351(var3);
 				}
 
 				Client.staticInt241 = 0;
@@ -2096,17 +2096,17 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(98);
-					Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.method369(var3);
+					Client.outBuffer.method471(98);
+					Client.outBuffer.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method369(var3);
 				}
 			}
 
 			if (var2 == 40) {
-				Client.staticEncryptedStream1.method471(167);
-				Client.staticEncryptedStream1.method369(var3);
-				Client.staticEncryptedStream1.writeInt(var1);
-				Client.staticEncryptedStream1.method352(var0);
+				Client.outBuffer.method471(167);
+				Client.outBuffer.method369(var3);
+				Client.outBuffer.writeInt(var1);
+				Client.outBuffer.method352(var0);
 				Client.staticInt241 = 0;
 				Tile.staticWidget11 = staticMethod8(var1);
 				Client.staticInt228 = var0;
@@ -2119,11 +2119,11 @@ public class Static {
 				Client.staticInt297 = 0;
 				Client.staticInt296 = var0;
 				Client.staticInt240 = var1;
-				Client.staticEncryptedStream1.method471(221);
-				Client.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
-				Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
-				Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-				Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
+				Client.outBuffer.method471(221);
+				Client.outBuffer.method352(NodeSub3.staticInt154 + var0);
+				Client.outBuffer.method351(var1 + Class34.staticInt75);
+				Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+				Client.outBuffer.method352(var3 >> 14 & 0x7fff);
 			}
 
 			if (var2 == 9) {
@@ -2135,9 +2135,9 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(39);
-					Client.staticEncryptedStream1.method351(var3);
-					Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method471(39);
+					Client.outBuffer.method351(var3);
+					Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 				}
 			}
 
@@ -2162,14 +2162,14 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(82);
-					Client.staticEncryptedStream1.method351(Class34.staticInt75 + var1);
-					Client.staticEncryptedStream1.method361(GameObject.staticInt332);
-					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.method352(NodeSub3.staticInt154 + var0);
-					Client.staticEncryptedStream1.method369(staticInt102);
-					Client.staticEncryptedStream1.writeShort(staticInt126);
-					Client.staticEncryptedStream1.method351(var3 >> 14 & 0x7fff);
+					Client.outBuffer.method471(82);
+					Client.outBuffer.method351(Class34.staticInt75 + var1);
+					Client.outBuffer.method361(GameObject.staticInt332);
+					Client.outBuffer.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method352(NodeSub3.staticInt154 + var0);
+					Client.outBuffer.method369(staticInt102);
+					Client.outBuffer.writeShort(staticInt126);
+					Client.outBuffer.method351(var3 >> 14 & 0x7fff);
 				}
 
 				if (var2 == 50) {
@@ -2181,17 +2181,17 @@ public class Static {
 						Client.staticInt297 = 0;
 						Client.staticInt296 = var0;
 						Client.staticInt240 = var1;
-						Client.staticEncryptedStream1.method471(101);
-						Client.staticEncryptedStream1.method351(var3);
-						Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.outBuffer.method471(101);
+						Client.outBuffer.method351(var3);
+						Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
 				if (var2 == 34) {
-					Client.staticEncryptedStream1.method471(207);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.method369(var3);
-					Client.staticEncryptedStream1.writeShort(var0);
+					Client.outBuffer.method471(207);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.method369(var3);
+					Client.outBuffer.writeShort(var0);
 					Client.staticInt241 = 0;
 					Tile.staticWidget11 = staticMethod8(var1);
 					Client.staticInt228 = var0;
@@ -2204,11 +2204,11 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(219);
-					Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
-					Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
-					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.writeShort(var3 >> 14 & 0x7fff);
+					Client.outBuffer.method471(219);
+					Client.outBuffer.writeShort(var0 + NodeSub3.staticInt154);
+					Client.outBuffer.method351(var1 + Class34.staticInt75);
+					Client.outBuffer.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.writeShort(var3 >> 14 & 0x7fff);
 				}
 
 				if (var2 == 26) {
@@ -2222,11 +2222,11 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(119);
-					Client.staticEncryptedStream1.method369(NodeSub3.staticInt154 + var0);
-					Client.staticEncryptedStream1.method369(var1 + Class34.staticInt75);
-					Client.staticEncryptedStream1.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.writeShort(var3 >> 14 & 0x7fff);
+					Client.outBuffer.method471(119);
+					Client.outBuffer.method369(NodeSub3.staticInt154 + var0);
+					Client.outBuffer.method369(var1 + Class34.staticInt75);
+					Client.outBuffer.method373(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.writeShort(var3 >> 14 & 0x7fff);
 				}
 
 				if (var2 == 4) {
@@ -2236,11 +2236,11 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(26);
-					Client.staticEncryptedStream1.writeShort(Class34.staticInt75 + var1);
-					Client.staticEncryptedStream1.method352(var3 >> 14 & 0x7fff);
-					Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.writeShort(var0 + NodeSub3.staticInt154);
+					Client.outBuffer.method471(26);
+					Client.outBuffer.writeShort(Class34.staticInt75 + var1);
+					Client.outBuffer.method352(var3 >> 14 & 0x7fff);
+					Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.writeShort(var0 + NodeSub3.staticInt154);
 				}
 
 				if (var2 == 19) {
@@ -2250,18 +2250,18 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(93);
-					Client.staticEncryptedStream1.writeShort(NodeSub3.staticInt154 + var0);
-					Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.method352(var3);
-					Client.staticEncryptedStream1.writeShort(var1 + Class34.staticInt75);
+					Client.outBuffer.method471(93);
+					Client.outBuffer.writeShort(NodeSub3.staticInt154 + var0);
+					Client.outBuffer.method343(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method352(var3);
+					Client.outBuffer.writeShort(var1 + Class34.staticInt75);
 				}
 
 				if (var2 == 43) {
-					Client.staticEncryptedStream1.method471(153);
-					Client.staticEncryptedStream1.writeShort(var0);
-					Client.staticEncryptedStream1.method369(var3);
-					Client.staticEncryptedStream1.writeInt(var1);
+					Client.outBuffer.method471(153);
+					Client.outBuffer.writeShort(var0);
+					Client.outBuffer.method369(var3);
+					Client.outBuffer.writeInt(var1);
 					Client.staticInt241 = 0;
 					Tile.staticWidget11 = staticMethod8(var1);
 					Client.staticInt228 = var0;
@@ -2272,13 +2272,13 @@ public class Static {
 					Client.staticInt237 = var7;
 					Client.staticInt239 = 2;
 					Client.staticInt297 = 0;
-					Client.staticEncryptedStream1.method471(59);
-					Client.staticEncryptedStream1.method351(var3);
+					Client.outBuffer.method471(59);
+					Client.outBuffer.method351(var3);
 				}
 
 				if (var2 == 28) {
-					Client.staticEncryptedStream1.method471(62);
-					Client.staticEncryptedStream1.writeInt(var1);
+					Client.outBuffer.method471(62);
+					Client.outBuffer.writeInt(var1);
 					var17 = staticMethod8(var1);
 					if (var17.anIntArrayArray12 != null && var17.anIntArrayArray12[0][0] == 5) {
 						var191 = var17.anIntArrayArray12[0][1];
@@ -2296,12 +2296,12 @@ public class Static {
 						Client.staticInt297 = 0;
 						Client.staticInt296 = var0;
 						Client.staticInt240 = var1;
-						Client.staticEncryptedStream1.method471(222);
-						Client.staticEncryptedStream1.method369(staticInt126);
-						Client.staticEncryptedStream1.method361(GameObject.staticInt332);
-						Client.staticEncryptedStream1.method351(staticInt102);
-						Client.staticEncryptedStream1.writeShort(var3);
-						Client.staticEncryptedStream1.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.outBuffer.method471(222);
+						Client.outBuffer.method369(staticInt126);
+						Client.outBuffer.method361(GameObject.staticInt332);
+						Client.outBuffer.method351(staticInt102);
+						Client.outBuffer.writeShort(var3);
+						Client.outBuffer.method345(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
@@ -2312,11 +2312,11 @@ public class Static {
 					Client.staticInt297 = 0;
 					Client.staticInt296 = var0;
 					Client.staticInt240 = var1;
-					Client.staticEncryptedStream1.method471(254);
-					Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
-					Client.staticEncryptedStream1.method351(var1 + Class34.staticInt75);
-					Client.staticEncryptedStream1.method351(NodeSub3.staticInt154 + var0);
-					Client.staticEncryptedStream1.method351(var3);
+					Client.outBuffer.method471(254);
+					Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+					Client.outBuffer.method351(var1 + Class34.staticInt75);
+					Client.outBuffer.method351(NodeSub3.staticInt154 + var0);
+					Client.outBuffer.method351(var3);
 				}
 
 				if (var2 == 45) {
@@ -2328,9 +2328,9 @@ public class Static {
 						Client.staticInt297 = 0;
 						Client.staticInt296 = var0;
 						Client.staticInt240 = var1;
-						Client.staticEncryptedStream1.method471(160);
-						Client.staticEncryptedStream1.method369(var3);
-						Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.outBuffer.method471(160);
+						Client.outBuffer.method369(var3);
+						Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
@@ -2343,9 +2343,9 @@ public class Static {
 						Client.staticInt297 = 0;
 						Client.staticInt296 = var0;
 						Client.staticInt240 = var1;
-						Client.staticEncryptedStream1.method471(110);
-						Client.staticEncryptedStream1.writeShort(var3);
-						Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
+						Client.outBuffer.method471(110);
+						Client.outBuffer.writeShort(var3);
+						Client.outBuffer.writeByte(KeyboardHandler.staticBoolArray2[82] ? 1 : 0);
 					}
 				}
 
@@ -2519,9 +2519,9 @@ public class Static {
 			} else if (var0 == 1121) {
 				var5 = var4.anInt294;
 				int var8 = var4.anInt319;
-				Client.staticEncryptedStream1.method471(171);
-				Client.staticEncryptedStream1.method351(var8);
-				Client.staticEncryptedStream1.writeInt(var5);
+				Client.outBuffer.method471(171);
+				Client.outBuffer.method351(var8);
+				Client.outBuffer.writeInt(var5);
 				Client.staticWidget6 = var4;
 				staticMethod73(var4);
 				return 1;
@@ -2780,7 +2780,7 @@ public class Static {
 
 	static final void staticMethod87() {
 		if (Class56.gameConnection != null) {
-			Class56.gameConnection.method150();
+			Class56.gameConnection.shutdown();
 			Class56.gameConnection = null;
 		}
 
@@ -4147,24 +4147,24 @@ public class Static {
 										int var34 = var23 * var331 - var20 * var16 >> 11;
 										int var361 = var32 + AbstractClass2Sub1.staticPlayer1.anInt628 >> 7;
 										int var35 = AbstractClass2Sub1.staticPlayer1.anInt591 - var34 >> 7;
-										Client.staticEncryptedStream1.method471(95);
-										Client.staticEncryptedStream1.writeByte(18);
-										Client.staticEncryptedStream1.method343(KeyboardHandler.staticBoolArray2[82]
+										Client.outBuffer.method471(95);
+										Client.outBuffer.writeByte(18);
+										Client.outBuffer.method343(KeyboardHandler.staticBoolArray2[82]
 												? KeyboardHandler.staticBoolArray2[81] ? 2 : 1 : 0);
-										Client.staticEncryptedStream1.method369(var35 + Class34.staticInt75);
-										Client.staticEncryptedStream1.method369(var361 + NodeSub3.staticInt154);
-										Client.staticEncryptedStream1.writeByte(var20);
-										Client.staticEncryptedStream1.writeByte(var331);
-										Client.staticEncryptedStream1.writeShort(Client.staticInt221);
-										Client.staticEncryptedStream1.writeByte(57);
-										Client.staticEncryptedStream1.writeByte(Client.staticInt209);
-										Client.staticEncryptedStream1.writeByte(Client.staticInt211);
-										Client.staticEncryptedStream1.writeByte(89);
-										Client.staticEncryptedStream1
+										Client.outBuffer.method369(var35 + Class34.staticInt75);
+										Client.outBuffer.method369(var361 + NodeSub3.staticInt154);
+										Client.outBuffer.writeByte(var20);
+										Client.outBuffer.writeByte(var331);
+										Client.outBuffer.writeShort(Client.staticInt221);
+										Client.outBuffer.writeByte(57);
+										Client.outBuffer.writeByte(Client.staticInt209);
+										Client.outBuffer.writeByte(Client.staticInt211);
+										Client.outBuffer.writeByte(89);
+										Client.outBuffer
 												.writeShort(AbstractClass2Sub1.staticPlayer1.anInt628);
-										Client.staticEncryptedStream1
+										Client.outBuffer
 												.writeShort(AbstractClass2Sub1.staticPlayer1.anInt591);
-										Client.staticEncryptedStream1.writeByte(63);
+										Client.outBuffer.writeByte(63);
 										Client.staticInt296 = var361;
 										Client.staticInt240 = var35;
 									}
@@ -5803,7 +5803,7 @@ public class Static {
 	public static void staticMethod163(Connection var0, boolean var1) {
 		if (staticConnection2 != null) {
 			try {
-				staticConnection2.method150();
+				staticConnection2.shutdown();
 			} catch (Exception var7) {
 				;
 			}
@@ -5813,7 +5813,7 @@ public class Static {
 
 		staticConnection2 = var0;
 		staticMethod1(var1);
-		staticStream3.off = 0;
+		staticStream3.position = 0;
 		FloorUnderlayDef.staticCacheableSub4_1 = null;
 		BufferedFile.staticStream2 = null;
 		staticInt134 = 0;
@@ -5830,10 +5830,10 @@ public class Static {
 								var5.writeByte(4);
 								var5.writeByte(staticByte2);
 								var5.writeShort(0);
-								staticConnection2.method151(var5.buf, 0, 4);
+								staticConnection2.write(var5.buf, 0, 4);
 							} catch (IOException var6) {
 								try {
-									staticConnection2.method150();
+									staticConnection2.shutdown();
 								} catch (Exception var51) {
 									;
 								}
@@ -6458,12 +6458,12 @@ public class Static {
 		if (Client.staticInt273 >= 50 || var0) {
 			Client.staticInt273 = 0;
 			if (!Client.staticBool43 && Class56.gameConnection != null) {
-				Client.staticEncryptedStream1.method471(184);
+				Client.outBuffer.method471(184);
 
 				try {
-					Class56.gameConnection.method151(Client.staticEncryptedStream1.buf, 0,
-							Client.staticEncryptedStream1.off);
-					Client.staticEncryptedStream1.off = 0;
+					Class56.gameConnection.write(Client.outBuffer.buf, 0,
+							Client.outBuffer.position);
+					Client.outBuffer.position = 0;
 				} catch (IOException var2) {
 					Client.staticBool43 = true;
 				}
@@ -6486,14 +6486,14 @@ public class Static {
 
 				Stream var15;
 				int var23;
-				for (var15 = new Stream((int) var18.method87()); var15.off < var15.buf.length; var15.off += var23) {
-					var23 = var18.method84(var15.buf, var15.off, var15.buf.length - var15.off);
+				for (var15 = new Stream((int) var18.method87()); var15.position < var15.buf.length; var15.position += var23) {
+					var23 = var18.method84(var15.buf, var15.position, var15.buf.length - var15.position);
 					if (var23 == -1) {
 						throw new IOException();
 					}
 				}
 
-				var15.off = 0;
+				var15.position = 0;
 				var23 = var15.method367();
 				if (var23 < 1 || var23 > 3) {
 					throw new IOException("" + var23);
@@ -7093,16 +7093,16 @@ public class Static {
 
 		Stream var211 = new Stream(var7);
 		var211.method323(var2);
-		var211.off = var7;
+		var211.position = var7;
 		var211.method347(var6);
-		Stream var221 = new Stream(var211.off + var5.off + 5 + var4.off);
+		Stream var221 = new Stream(var211.position + var5.position + 5 + var4.position);
 		var221.writeByte(2);
-		var221.writeByte(var4.off);
-		var221.method326(var4.buf, 0, var4.off);
-		var221.writeByte(var5.off);
-		var221.method326(var5.buf, 0, var5.off);
-		var221.writeShort(var211.off);
-		var221.method326(var211.buf, 0, var211.off);
+		var221.writeByte(var4.position);
+		var221.method326(var4.buf, 0, var4.position);
+		var221.writeByte(var5.position);
+		var221.method326(var5.buf, 0, var5.position);
+		var221.writeShort(var211.position);
+		var221.method326(var211.buf, 0, var211.position);
 		byte[] var231 = var221.buf;
 		String var22 = staticMethod392(var231, 0, var231.length);
 		String var12 = var22;
@@ -7120,7 +7120,7 @@ public class Static {
 			var221 = new Stream(new byte[1000]);
 
 			do {
-				int var17 = var16.read(var221.buf, var221.off, 1000 - var221.off);
+				int var17 = var16.read(var221.buf, var221.position, 1000 - var221.position);
 				if (var17 == -1) {
 					var15.close();
 					var16.close();
@@ -7136,11 +7136,11 @@ public class Static {
 					} else {
 						var221.method322(var6);
 
-						while (var221.off > 0 && var221.buf[var221.off - 1] == 0) {
-							--var221.off;
+						while (var221.position > 0 && var221.buf[var221.position - 1] == 0) {
+							--var221.position;
 						}
 
-						var23 = new String(var221.buf, 0, var221.off);
+						var23 = new String(var221.buf, 0, var221.position);
 						if (staticMethod332(var23)) {
 							staticMethod125(var23, true, false);
 							return 2;
@@ -7150,8 +7150,8 @@ public class Static {
 					}
 				}
 
-				var221.off += var17;
-			} while (var221.off < 1000);
+				var221.position += var17;
+			} while (var221.position < 1000);
 
 			return 5;
 		} catch (Throwable var19) {
@@ -8053,7 +8053,7 @@ public class Static {
 		try {
 			var0 = staticMethod70("", KeyFocusListener.staticGameType7.aString9, true);
 			Stream var1 = staticClass6_1.method23();
-			var0.method88(var1.buf, 0, var1.off);
+			var0.method88(var1.buf, 0, var1.position);
 		} catch (Exception var3) {
 			;
 		}
@@ -8735,7 +8735,7 @@ public class Static {
 									}
 
 									staticMethod231("", "Connecting to server...", "");
-									staticClass28_1 = staticClass6_1.aLinkedHashMap1
+									blockType = staticClass6_1.aLinkedHashMap1
 											.containsKey(Integer.valueOf(staticMethod149(staticString2)))
 													? Class28.staticClass28_2 : Class28.staticClass28_4;
 									staticMethod396(20);
@@ -8808,7 +8808,7 @@ public class Static {
 												}
 
 												staticMethod231("", "Connecting to server...", "");
-												staticClass28_1 = staticClass6_1.aLinkedHashMap1
+												blockType = staticClass6_1.aLinkedHashMap1
 														.containsKey(
 																Integer.valueOf(staticMethod149(staticString2)))
 																		? Class28.staticClass28_2
@@ -8865,7 +8865,7 @@ public class Static {
 
 										NodeSub3.staticInt152 = Integer.parseInt(GZipDecompressor.staticString26);
 										GZipDecompressor.staticString26 = "";
-										staticClass28_1 = staticBool3 ? Class28.staticClass28_3
+										blockType = staticBool3 ? Class28.staticClass28_3
 												: Class28.staticClass28_5;
 										staticMethod231("", "Connecting to server...", "");
 										staticMethod396(20);
@@ -8926,7 +8926,7 @@ public class Static {
 												NodeSub3.staticInt152 = Integer
 														.parseInt(GZipDecompressor.staticString26);
 												GZipDecompressor.staticString26 = "";
-												staticClass28_1 = staticBool3 ? Class28.staticClass28_3
+												blockType = staticBool3 ? Class28.staticClass28_3
 														: Class28.staticClass28_5;
 												staticMethod231("", "Connecting to server...", "");
 												staticMethod396(20);
@@ -10255,13 +10255,13 @@ public class Static {
 							if (!Client.staticBool42) {
 								Client.staticMouseCapturer1.anInt211 = 0;
 							} else if (MouseHandler.staticInt98 != 0 || Client.staticMouseCapturer1.anInt211 >= 40) {
-								Client.staticEncryptedStream1.method471(252);
-								Client.staticEncryptedStream1.writeByte(0);
-								var25 = Client.staticEncryptedStream1.off;
+								Client.outBuffer.method471(252);
+								Client.outBuffer.writeByte(0);
+								var25 = Client.outBuffer.position;
 								var2 = 0;
 
 								for (var3 = 0; var3 < Client.staticMouseCapturer1.anInt211
-										&& Client.staticEncryptedStream1.off - var25 < 240; var3++) {
+										&& Client.outBuffer.position - var25 < 240; var3++) {
 									++var2;
 									var4 = Client.staticMouseCapturer1.anIntArray58[var3];
 									if (var4 < 0) {
@@ -10298,22 +10298,22 @@ public class Static {
 												&& var8 <= 31) {
 											var7 += 32;
 											var8 += 32;
-											Client.staticEncryptedStream1
+											Client.outBuffer
 													.writeShort(var8 + (Client.staticInt163 << 12) + (var7 << 6));
 											Client.staticInt163 = 0;
 										} else if (Client.staticInt163 < 8) {
-											Client.staticEncryptedStream1
+											Client.outBuffer
 													.writeTriByte(8388608 + (Client.staticInt163 << 19) + var6);
 											Client.staticInt163 = 0;
 										} else {
-											Client.staticEncryptedStream1
+											Client.outBuffer
 													.writeInt(-1073741824 + (Client.staticInt163 << 19) + var6);
 											Client.staticInt163 = 0;
 										}
 									}
 								}
 
-								Client.staticEncryptedStream1.method327(Client.staticEncryptedStream1.off - var25);
+								Client.outBuffer.method327(Client.outBuffer.position - var25);
 								if (var2 >= Client.staticMouseCapturer1.anInt211) {
 									Client.staticMouseCapturer1.anInt211 = 0;
 								} else {
@@ -10353,17 +10353,17 @@ public class Static {
 							}
 
 							var4 = (int) var261;
-							Client.staticEncryptedStream1.method471(152);
-							Client.staticEncryptedStream1
+							Client.outBuffer.method471(152);
+							Client.outBuffer
 									.writeShort((MouseHandler.staticInt98 == 2 ? 1 : 0) + (var4 << 1));
-							Client.staticEncryptedStream1.writeShort(var3);
-							Client.staticEncryptedStream1.writeShort(var2);
+							Client.outBuffer.writeShort(var3);
+							Client.outBuffer.writeShort(var2);
 						}
 
 						if (KeyboardHandler.staticInt76 > 0) {
-							Client.staticEncryptedStream1.method471(217);
-							Client.staticEncryptedStream1.writeShort(0);
-							var0 = Client.staticEncryptedStream1.off;
+							Client.outBuffer.method471(217);
+							Client.outBuffer.writeShort(0);
+							var0 = Client.outBuffer.position;
 							var261 = staticMethod297();
 
 							for (var3 = 0; var3 < KeyboardHandler.staticInt76; var3++) {
@@ -10373,11 +10373,11 @@ public class Static {
 								}
 
 								Client.staticLong13 = var261;
-								Client.staticEncryptedStream1.method357((int) var30);
-								Client.staticEncryptedStream1.writeByte(KeyboardHandler.staticIntArray48[var3]);
+								Client.outBuffer.method357((int) var30);
+								Client.outBuffer.writeByte(KeyboardHandler.staticIntArray48[var3]);
 							}
 
-							Client.staticEncryptedStream1.method371(Client.staticEncryptedStream1.off - var0);
+							Client.outBuffer.method371(Client.outBuffer.position - var0);
 						}
 
 						if (Client.staticInt226 > 0) {
@@ -10392,21 +10392,21 @@ public class Static {
 						if (Client.staticBool26 && Client.staticInt226 <= 0) {
 							Client.staticInt226 = 20;
 							Client.staticBool26 = false;
-							Client.staticEncryptedStream1.method471(213);
-							Client.staticEncryptedStream1.method369(Client.staticInt220);
-							Client.staticEncryptedStream1.method369(Client.staticInt221);
+							Client.outBuffer.method471(213);
+							Client.outBuffer.method369(Client.staticInt220);
+							Client.outBuffer.method369(Client.staticInt221);
 						}
 
 						if (RuntimeExceptionSub1.staticBool9 && !Client.staticBool41) {
 							Client.staticBool41 = true;
-							Client.staticEncryptedStream1.method471(124);
-							Client.staticEncryptedStream1.writeByte(1);
+							Client.outBuffer.method471(124);
+							Client.outBuffer.writeByte(1);
 						}
 
 						if (!RuntimeExceptionSub1.staticBool9 && Client.staticBool41) {
 							Client.staticBool41 = false;
-							Client.staticEncryptedStream1.method471(124);
-							Client.staticEncryptedStream1.writeByte(0);
+							Client.outBuffer.method471(124);
+							Client.outBuffer.writeByte(0);
 						}
 
 						int var16;
@@ -10900,14 +10900,14 @@ public class Static {
 																						Client.staticInt161);
 																			}
 
-																			Client.staticEncryptedStream1.method471(151);
-																			Client.staticEncryptedStream1
+																			Client.outBuffer.method471(151);
+																			Client.outBuffer
 																					.method351(Client.staticInt161);
-																			Client.staticEncryptedStream1
+																			Client.outBuffer
 																					.writeShort(Client.staticInt230);
-																			Client.staticEncryptedStream1
+																			Client.outBuffer
 																					.writeByte(var41);
-																			Client.staticEncryptedStream1.method360(
+																			Client.outBuffer.method360(
 																					NodeSub3.staticWidget5.anInt294);
 																		}
 																	} else {
@@ -10967,16 +10967,16 @@ public class Static {
 															if (staticMethod80()) {
 																var2 = Scene.staticInt57;
 																var3 = Scene.staticInt58;
-																Client.staticEncryptedStream1.method471(147);
-																Client.staticEncryptedStream1.writeByte(5);
-																Client.staticEncryptedStream1
+																Client.outBuffer.method471(147);
+																Client.outBuffer.writeByte(5);
+																Client.outBuffer
 																		.method343(KeyboardHandler.staticBoolArray2[82]
 																				? KeyboardHandler.staticBoolArray2[81]
 																						? 2 : 1
 																				: 0);
-																Client.staticEncryptedStream1
+																Client.outBuffer
 																		.method369(var3 + Class34.staticInt75);
-																Client.staticEncryptedStream1
+																Client.outBuffer
 																		.method369(var2 + NodeSub3.staticInt154);
 																staticMethod78();
 																Client.staticInt238 = MouseHandler.staticInt99;
@@ -11145,7 +11145,7 @@ public class Static {
 															if (var2 > 15000 && var3 > 15000) {
 																Client.staticInt196 = 250;
 																MouseHandler.staticInt89 = 14500;
-																Client.staticEncryptedStream1.method471(255);
+																Client.outBuffer.method471(255);
 															}
 
 															++Client.staticInt208;
@@ -11239,16 +11239,16 @@ public class Static {
 
 															++Client.staticInt273;
 															if (Client.staticInt273 > 50) {
-																Client.staticEncryptedStream1.method471(184);
+																Client.outBuffer.method471(184);
 															}
 
 															try {
 																if (Class56.gameConnection != null
-																		&& Client.staticEncryptedStream1.off > 0) {
-																	Class56.gameConnection.method151(
-																			Client.staticEncryptedStream1.buf, 0,
-																			Client.staticEncryptedStream1.off);
-																	Client.staticEncryptedStream1.off = 0;
+																		&& Client.outBuffer.position > 0) {
+																	Class56.gameConnection.write(
+																			Client.outBuffer.buf, 0,
+																			Client.outBuffer.position);
+																	Client.outBuffer.position = 0;
 																	Client.staticInt273 = 0;
 																}
 															} catch (IOException var241) {
@@ -11300,11 +11300,11 @@ public class Static {
 						}
 					}
 
-					Client.staticEncryptedStream1.method471(52);
-					Client.staticEncryptedStream1.writeByte(0);
-					var25 = Client.staticEncryptedStream1.off;
-					staticMethod348(Client.staticEncryptedStream1);
-					Client.staticEncryptedStream1.method327(Client.staticEncryptedStream1.off - var25);
+					Client.outBuffer.method471(52);
+					Client.outBuffer.writeByte(0);
+					var25 = Client.outBuffer.position;
+					staticMethod348(Client.outBuffer);
+					Client.outBuffer.method327(Client.outBuffer.position - var25);
 				}
 			}
 		}
@@ -12023,8 +12023,8 @@ public class Static {
 		Client.staticBool41 = true;
 		Client.staticLong13 = -1L;
 		staticMethod63();
-		Client.staticEncryptedStream1.off = 0;
-		Client.staticEncryptedStream3.off = 0;
+		Client.outBuffer.position = 0;
+		Client.inBuffer.position = 0;
 		Client.staticInt191 = -1;
 		Client.staticInt270 = 1;
 		Client.staticInt194 = 1;
@@ -12471,7 +12471,7 @@ public class Static {
 			Class48 var191 = (Class48) staticMethod233(var17, var0.method367());
 			boolean var211 = var0.method367() == 1;
 			var161 = var0.method367();
-			var12 = var0.off;
+			var12 = var0.position;
 			if (var2.aString40 != null && var2.aClass49_1 != null) {
 				boolean var201 = false;
 				if (var191.aBool14 && staticMethod141(var2.aString40)) {
@@ -12479,9 +12479,9 @@ public class Static {
 				}
 
 				if (!var201 && Client.staticInt245 == 0 && !var2.aBool81) {
-					staticStream1.off = 0;
+					staticStream1.position = 0;
 					var0.readBytes(staticStream1.buf, 0, var161);
-					staticStream1.off = 0;
+					staticStream1.position = 0;
 					String var21 = staticMethod456(staticMethod265(staticMethod191(staticStream1)));
 					var2.aString39 = var21.trim();
 					var2.anInt602 = var7 >> 8;
@@ -12505,7 +12505,7 @@ public class Static {
 				}
 			}
 
-			var0.off = var12 + var161;
+			var0.position = var12 + var161;
 		}
 
 		if ((var3 & 0x200) != 0) {
@@ -12958,13 +12958,13 @@ public class Static {
 						}
 
 						if (var14 != null) {
-							Client.staticEncryptedStream1.method471(157);
-							Client.staticEncryptedStream1.method351(Client.staticWidget9.anInt352);
-							Client.staticEncryptedStream1.method351(Client.staticWidget7.anInt319);
-							Client.staticEncryptedStream1.method352(Client.staticWidget9.anInt319);
-							Client.staticEncryptedStream1.method369(Client.staticWidget7.anInt352);
-							Client.staticEncryptedStream1.method359(Client.staticWidget9.anInt294);
-							Client.staticEncryptedStream1.writeInt(Client.staticWidget7.anInt294);
+							Client.outBuffer.method471(157);
+							Client.outBuffer.method351(Client.staticWidget9.anInt352);
+							Client.outBuffer.method351(Client.staticWidget7.anInt319);
+							Client.outBuffer.method352(Client.staticWidget9.anInt319);
+							Client.outBuffer.method369(Client.staticWidget7.anInt352);
+							Client.outBuffer.method359(Client.staticWidget9.anInt294);
+							Client.outBuffer.writeInt(Client.staticWidget7.anInt294);
 						}
 					}
 				} else {
@@ -13017,39 +13017,39 @@ public class Static {
 		try {
 			if (Client.loginStage == 0) {
 				if (Class56.gameConnection != null) {
-					Class56.gameConnection.method150();
+					Class56.gameConnection.shutdown();
 					Class56.gameConnection = null;
 				}
 
-				KeyFocusListener.staticTask3 = null;
+				KeyFocusListener.socket = null;
 				Client.staticBool43 = false;
 				Client.staticInt262 = 0;
 				Client.loginStage = 1;
 			}
 
 			if (Client.loginStage == 1) {
-				if (KeyFocusListener.staticTask3 == null) {
-					KeyFocusListener.staticTask3 = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
+				if (KeyFocusListener.socket == null) {
+					KeyFocusListener.socket = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
 							Class32.staticInt73 * 462737933);
 				}
 
-				if (KeyFocusListener.staticTask3.anInt86 == 2) {
+				if (KeyFocusListener.socket.anInt86 == 2) {
 					throw new IOException();
 				}
 
-				if (KeyFocusListener.staticTask3.anInt86 == 1) {
-					Class56.gameConnection = new Connection((Socket) KeyFocusListener.staticTask3.anObject2,
+				if (KeyFocusListener.socket.anInt86 == 1) {
+					Class56.gameConnection = new Connection((Socket) KeyFocusListener.socket.anObject2,
 							BufferedFile.staticTaskManager1);
-					KeyFocusListener.staticTask3 = null;
+					KeyFocusListener.socket = null;
 					Client.loginStage = 2;
 				}
 			}
 
 			if (Client.loginStage == 2) {
-				Client.staticEncryptedStream1.off = 0;
-				Client.staticEncryptedStream1.writeByte(14);
-				Class56.gameConnection.method151(Client.staticEncryptedStream1.buf, 0, 1);
-				Client.staticEncryptedStream3.off = 0;
+				Client.outBuffer.position = 0;
+				Client.outBuffer.writeByte(14);
+				Class56.gameConnection.write(Client.outBuffer.buf, 0, 1);
+				Client.inBuffer.position = 0;
 				Client.loginStage = 3;
 			}
 
@@ -13077,61 +13077,61 @@ public class Static {
 					return;
 				}
 
-				Client.staticEncryptedStream3.off = 0;
+				Client.inBuffer.position = 0;
 				Client.loginStage = 4;
 			}
 
 			if (Client.loginStage == 4) {
-				if (Client.staticEncryptedStream3.off < 8) {
+				if (Client.inBuffer.position < 8) {
 					var10 = Class56.gameConnection.available();
-					if (var10 > 8 - Client.staticEncryptedStream3.off) {
-						var10 = 8 - Client.staticEncryptedStream3.off;
+					if (var10 > 8 - Client.inBuffer.position) {
+						var10 = 8 - Client.inBuffer.position;
 					}
 
 					if (var10 > 0) {
-						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf,
-								Client.staticEncryptedStream3.off, var10);
-						Client.staticEncryptedStream3.off += var10;
+						Class56.gameConnection.method153(Client.inBuffer.buf,
+								Client.inBuffer.position, var10);
+						Client.inBuffer.position += var10;
 					}
 				}
 
-				if (Client.staticEncryptedStream3.off == 8) {
-					Client.staticEncryptedStream3.off = 0;
-					KeyFocusListener.staticLong15 = Client.staticEncryptedStream3.readLong();
+				if (Client.inBuffer.position == 8) {
+					Client.inBuffer.position = 0;
+					KeyFocusListener.staticLong15 = Client.inBuffer.readLong();
 					Client.loginStage = 5;
 				}
 			}
 
-			int var1;
-			int var2;
+			int varStart;			
+			int xteaStart;			
 			if (Client.loginStage == 5) {
 				int[] var19 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D),
 						(int) (KeyFocusListener.staticLong15 >> 32), (int) (KeyFocusListener.staticLong15 & 0xffffffffffffffffL) };
-				Client.staticEncryptedStream1.off = 0;
-				Client.staticEncryptedStream1.writeByte(1);
-				Client.staticEncryptedStream1.writeByte(staticClass28_1.method12());
-				Client.staticEncryptedStream1.writeInt(var19[0]);
-				Client.staticEncryptedStream1.writeInt(var19[1]);
-				Client.staticEncryptedStream1.writeInt(var19[2]);
-				Client.staticEncryptedStream1.writeInt(var19[3]);
-				switch (staticClass28_1.anInt84) {
+				Client.outBuffer.position = 0;
+				Client.outBuffer.writeByte(1);
+				Client.outBuffer.writeByte(blockType.method12());
+				Client.outBuffer.writeInt(var19[0]);
+				Client.outBuffer.writeInt(var19[1]);
+				Client.outBuffer.writeInt(var19[2]);
+				Client.outBuffer.writeInt(var19[3]);
+				switch (blockType.type) {
 				case 0:
-					Client.staticEncryptedStream1.writeInt(((Integer) staticClass6_1.aLinkedHashMap1
+					Client.outBuffer.writeInt(((Integer) staticClass6_1.aLinkedHashMap1
 							.get(Integer.valueOf(staticMethod149(staticString2)))).intValue());
-					Client.staticEncryptedStream1.off += 4;
+					Client.outBuffer.position += 4;
 					break;
 				case 1:
 				case 2:
-					Client.staticEncryptedStream1.writeTriByte(NodeSub3.staticInt152);
-					Client.staticEncryptedStream1.off += 5;
+					Client.outBuffer.writeTriByte(NodeSub3.staticInt152);
+					Client.outBuffer.position += 5;
 					break;
 				case 3:
-					Client.staticEncryptedStream1.off += 8;
+					Client.outBuffer.position += 8;
 				}
 
-				Client.staticEncryptedStream1.method323(staticString7);
-				Client.staticEncryptedStream1.method342(staticBigInteger3, staticBigInteger4);
-				Client.staticEncryptedStream2.off = 0;
+				Client.outBuffer.method323(staticString7);
+				Client.outBuffer.method342(staticBigInteger3, staticBigInteger4);
+				Client.staticEncryptedStream2.position = 0;
 				if (Client.staticInt165 == 40) {
 					Client.staticEncryptedStream2.writeByte(18);
 				} else {
@@ -13139,11 +13139,11 @@ public class Static {
 				}
 
 				Client.staticEncryptedStream2.writeShort(0);
-				var1 = Client.staticEncryptedStream2.off;
+				varStart = Client.staticEncryptedStream2.position;
 				Client.staticEncryptedStream2.writeInt(138);
-				Client.staticEncryptedStream2.method326(Client.staticEncryptedStream1.buf, 0,
-						Client.staticEncryptedStream1.off);
-				var2 = Client.staticEncryptedStream2.off;
+				Client.staticEncryptedStream2.method326(Client.outBuffer.buf, 0,
+						Client.outBuffer.position);
+				xteaStart = Client.staticEncryptedStream2.position;
 				Client.staticEncryptedStream2.method323(staticString2);
 				Client.staticEncryptedStream2.writeByte((Client.staticBool36 ? 1 : 0) << 1 | (Client.staticBool27 ? 1 : 0));
 				Client.staticEncryptedStream2.writeShort(staticInt86);
@@ -13198,17 +13198,17 @@ public class Static {
 				Client.staticEncryptedStream2.writeInt(NodeSub12.staticJs5IndexImpl11.anInt201);
 				Client.staticEncryptedStream2.writeInt(staticJs5IndexImpl1.anInt201);
 				Client.staticEncryptedStream2.writeInt(Client.staticJs5IndexImpl9.anInt201);
-				Client.staticEncryptedStream2.method341(var19, var2, Client.staticEncryptedStream2.off);
-				Client.staticEncryptedStream2.method371(Client.staticEncryptedStream2.off - var1);
-				Class56.gameConnection.method151(Client.staticEncryptedStream2.buf, 0,
-						Client.staticEncryptedStream2.off);
-				Client.staticEncryptedStream1.method476(var19);
+				Client.staticEncryptedStream2.method341(var19, xteaStart, Client.staticEncryptedStream2.position);
+				Client.staticEncryptedStream2.method371(Client.staticEncryptedStream2.position - varStart);
+				Class56.gameConnection.write(Client.staticEncryptedStream2.buf, 0,
+						Client.staticEncryptedStream2.position);
+				Client.outBuffer.method476(var19);
 
 				for (var20 = 0; var20 < 4; var20++) {
 					var19[var20] += 50;
 				}
 
-				Client.staticEncryptedStream3.method476(var19);
+				Client.inBuffer.method476(var19);
 				Client.loginStage = 6;
 			}
 
@@ -13249,22 +13249,22 @@ public class Static {
 			} else {
 				if (Client.loginStage == 9 && Class56.gameConnection.available() >= 13) {
 					boolean var11 = Class56.gameConnection.method152() == 1;
-					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 4);
-					Client.staticEncryptedStream3.off = 0;
+					Class56.gameConnection.method153(Client.inBuffer.buf, 0, 4);
+					Client.inBuffer.position = 0;
 					if (var11) {
-						var1 = Client.staticEncryptedStream3.method472() << 24;
-						var1 |= Client.staticEncryptedStream3.method472() << 16;
-						var1 |= Client.staticEncryptedStream3.method472() << 8;
-						var1 |= Client.staticEncryptedStream3.method472();
-						var2 = staticMethod149(staticString2);
+						varStart = Client.inBuffer.method472() << 24;
+						varStart |= Client.inBuffer.method472() << 16;
+						varStart |= Client.inBuffer.method472() << 8;
+						varStart |= Client.inBuffer.method472();
+						xteaStart = staticMethod149(staticString2);
 						if (staticClass6_1.aLinkedHashMap1.size() >= 10
-								&& !staticClass6_1.aLinkedHashMap1.containsKey(Integer.valueOf(var2))) {
+								&& !staticClass6_1.aLinkedHashMap1.containsKey(Integer.valueOf(xteaStart))) {
 							Iterator var171 = staticClass6_1.aLinkedHashMap1.entrySet().iterator();
 							var171.next();
 							var171.remove();
 						}
 
-						staticClass6_1.aLinkedHashMap1.put(Integer.valueOf(var2), Integer.valueOf(var1));
+						staticClass6_1.aLinkedHashMap1.put(Integer.valueOf(xteaStart), Integer.valueOf(varStart));
 						staticMethod270();
 					}
 
@@ -13274,12 +13274,12 @@ public class Static {
 					Client.staticInt246 <<= 8;
 					Client.staticInt246 += Class56.gameConnection.method152();
 					Client.staticInt289 = Class56.gameConnection.method152();
-					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 1);
-					Client.staticEncryptedStream3.off = 0;
-					Client.staticInt191 = Client.staticEncryptedStream3.method472();
-					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
-					Client.staticEncryptedStream3.off = 0;
-					Client.staticInt190 = Client.staticEncryptedStream3.method370();
+					Class56.gameConnection.method153(Client.inBuffer.buf, 0, 1);
+					Client.inBuffer.position = 0;
+					Client.staticInt191 = Client.inBuffer.method472();
+					Class56.gameConnection.method153(Client.inBuffer.buf, 0, 2);
+					Client.inBuffer.position = 0;
+					Client.staticInt190 = Client.inBuffer.method370();
 
 					try {
 						Client var18 = Client.staticGame1;
@@ -13293,30 +13293,30 @@ public class Static {
 
 				if (Client.loginStage == 10) {
 					if (Class56.gameConnection.available() >= Client.staticInt190) {
-						Client.staticEncryptedStream3.off = 0;
-						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+						Client.inBuffer.position = 0;
+						Class56.gameConnection.method153(Client.inBuffer.buf, 0, Client.staticInt190);
 						staticMethod150();
-						staticMethod48(Client.staticEncryptedStream3);
+						staticMethod48(Client.inBuffer);
 						FileOnDisk.staticInt39 = -1;
 						staticMethod294(false);
 						Client.staticInt191 = -1;
 					}
 				} else {
 					if (Client.loginStage == 11 && Class56.gameConnection.available() >= 2) {
-						Client.staticEncryptedStream3.off = 0;
-						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
-						Client.staticEncryptedStream3.off = 0;
-						FileOnDisk.staticInt37 = Client.staticEncryptedStream3.method370();
+						Client.inBuffer.position = 0;
+						Class56.gameConnection.method153(Client.inBuffer.buf, 0, 2);
+						Client.inBuffer.position = 0;
+						FileOnDisk.staticInt37 = Client.inBuffer.method370();
 						Client.loginStage = 12;
 					}
 
 					if (Client.loginStage == 12 && Class56.gameConnection.available() >= FileOnDisk.staticInt37) {
-						Client.staticEncryptedStream3.off = 0;
-						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, FileOnDisk.staticInt37);
-						Client.staticEncryptedStream3.off = 0;
-						String var12 = Client.staticEncryptedStream3.method365();
-						String var15 = Client.staticEncryptedStream3.method365();
-						String var191 = Client.staticEncryptedStream3.method365();
+						Client.inBuffer.position = 0;
+						Class56.gameConnection.method153(Client.inBuffer.buf, 0, FileOnDisk.staticInt37);
+						Client.inBuffer.position = 0;
+						String var12 = Client.inBuffer.method365();
+						String var15 = Client.inBuffer.method365();
+						String var191 = Client.inBuffer.method365();
 						staticMethod231(var12, var15, var191);
 						staticMethod396(10);
 					}
@@ -13343,17 +13343,17 @@ public class Static {
 								return;
 							}
 
-							Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
-							Client.staticEncryptedStream3.off = 0;
-							Client.staticInt190 = Client.staticEncryptedStream3.method370();
+							Class56.gameConnection.method153(Client.inBuffer.buf, 0, 2);
+							Client.inBuffer.position = 0;
+							Client.staticInt190 = Client.inBuffer.method370();
 						}
 
 						if (Class56.gameConnection.available() >= Client.staticInt190) {
-							Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
-							Client.staticEncryptedStream3.off = 0;
+							Class56.gameConnection.method153(Client.inBuffer.buf, 0, Client.staticInt190);
+							Client.inBuffer.position = 0;
 							var10 = Client.staticInt190;
-							Client.staticEncryptedStream1.off = 0;
-							Client.staticEncryptedStream3.off = 0;
+							Client.outBuffer.position = 0;
+							Client.inBuffer.position = 0;
 							Client.staticInt191 = -1;
 							Client.staticInt270 = 1;
 							Client.staticInt194 = 1;
@@ -13367,14 +13367,14 @@ public class Static {
 							Client.staticInt298 = 0;
 							Client.staticInt296 = 0;
 
-							for (var1 = 0; var1 < 2048; var1++) {
-								Client.staticPlayerArray1[var1] = null;
+							for (varStart = 0; varStart < 2048; varStart++) {
+								Client.staticPlayerArray1[varStart] = null;
 							}
 
 							AbstractClass2Sub1.staticPlayer1 = null;
 
-							for (var1 = 0; var1 < Client.staticNpcArray1.length; var1++) {
-								Npc var13 = Client.staticNpcArray1[var1];
+							for (varStart = 0; varStart < Client.staticNpcArray1.length; varStart++) {
+								Npc var13 = Client.staticNpcArray1[varStart];
 								if (var13 != null) {
 									var13.anInt600 = -1;
 									var13.aBool76 = false;
@@ -13384,13 +13384,13 @@ public class Static {
 							staticMethod145();
 							staticMethod396(30);
 
-							for (var1 = 0; var1 < 100; var1++) {
-								Client.staticBoolArray8[var1] = true;
+							for (varStart = 0; varStart < 100; varStart++) {
+								Client.staticBoolArray8[varStart] = true;
 							}
 
 							staticMethod34();
-							staticMethod48(Client.staticEncryptedStream3);
-							if (var10 != Client.staticEncryptedStream3.off) {
+							staticMethod48(Client.inBuffer);
+							if (var10 != Client.inBuffer.position) {
 								throw new RuntimeException();
 							}
 						}
@@ -13583,10 +13583,10 @@ public class Static {
 				if (var0 == 3604) {
 					var14 = staticStringArray1[--staticInt148];
 					int var151 = staticIntArray16[--staticInt27];
-					Client.staticEncryptedStream1.method471(22);
-					Client.staticEncryptedStream1.writeByte(staticMethod378(var14) + 1);
-					Client.staticEncryptedStream1.method345(var151);
-					Client.staticEncryptedStream1.method323(var14);
+					Client.outBuffer.method471(22);
+					Client.outBuffer.writeByte(staticMethod378(var14) + 1);
+					Client.outBuffer.method345(var151);
+					Client.outBuffer.method323(var14);
 					return 1;
 				} else {
 					String var8;
@@ -13629,9 +13629,9 @@ public class Static {
 												staticMethod36(30, "",
 														"You can\'t add yourself to your own friend list");
 											} else {
-												Client.staticEncryptedStream1.method471(36);
-												Client.staticEncryptedStream1.writeByte(staticMethod378(var14));
-												Client.staticEncryptedStream1.method323(var14);
+												Client.outBuffer.method471(36);
+												Client.outBuffer.writeByte(staticMethod378(var14));
+												Client.outBuffer.method323(var14);
 											}
 											break;
 										}
@@ -13689,9 +13689,9 @@ public class Static {
 										}
 
 										Client.staticInt280 = Client.staticInt274 * 2073400987;
-										Client.staticEncryptedStream1.method471(196);
-										Client.staticEncryptedStream1.writeByte(staticMethod378(var14));
-										Client.staticEncryptedStream1.method323(var14);
+										Client.outBuffer.method471(196);
+										Client.outBuffer.writeByte(staticMethod378(var14));
+										Client.outBuffer.method323(var14);
 										break;
 									}
 								}
@@ -13733,9 +13733,9 @@ public class Static {
 												staticMethod36(31, "",
 														"You can\'t add yourself to your own ignore list");
 											} else {
-												Client.staticEncryptedStream1.method471(190);
-												Client.staticEncryptedStream1.writeByte(staticMethod378(var14));
-												Client.staticEncryptedStream1.method323(var14);
+												Client.outBuffer.method471(190);
+												Client.outBuffer.writeByte(staticMethod378(var14));
+												Client.outBuffer.method323(var14);
 											}
 											break;
 										}
@@ -13847,8 +13847,8 @@ public class Static {
 						staticMethod279(var14);
 						return 1;
 					} else if (var0 == 3620) {
-						Client.staticEncryptedStream1.method471(164);
-						Client.staticEncryptedStream1.writeByte(0);
+						Client.outBuffer.method471(164);
+						Client.outBuffer.writeByte(0);
 						return 1;
 					} else if (var0 == 3621) {
 						if (Client.staticInt202 == 0) {
@@ -15688,15 +15688,15 @@ public class Static {
 			Stream var4 = new Stream(new byte[1000]);
 
 			do {
-				int var5 = var3.read(var4.buf, var4.off, 1000 - var4.off);
+				int var5 = var3.read(var4.buf, var4.position, 1000 - var4.position);
 				if (var5 == -1) {
-					var4.off = 0;
+					var4.position = 0;
 					long var6 = var4.readLong();
 					return var6;
 				}
 
-				var4.off += var5;
-			} while (var4.off < 1000);
+				var4.position += var5;
+			} while (var4.position < 1000);
 
 			return 0L;
 		} catch (Exception var81) {
@@ -15990,10 +15990,10 @@ public class Static {
 	}
 
 	static void staticMethod34() {
-		Client.staticEncryptedStream1.method471(230);
-		Client.staticEncryptedStream1.writeByte(staticMethod248());
-		Client.staticEncryptedStream1.writeShort(staticInt86);
-		Client.staticEncryptedStream1.writeShort(Class47.staticInt121);
+		Client.outBuffer.method471(230);
+		Client.outBuffer.writeByte(staticMethod248());
+		Client.outBuffer.writeShort(staticInt86);
+		Client.outBuffer.writeShort(Class47.staticInt121);
 	}
 
 	static final void staticMethod35(boolean var0) {
@@ -17250,7 +17250,7 @@ public class Static {
 	}
 
 	static final void staticMethod120() {
-		Client.staticEncryptedStream1.method471(66);
+		Client.outBuffer.method471(66);
 
 		for (KeyFocusListener var0 = (KeyFocusListener) Client.staticHashTable5
 				.method146(); var0 != null; var0 = (KeyFocusListener) Client.staticHashTable5.method147()) {
@@ -17862,9 +17862,9 @@ public class Static {
 						}
 
 						Client.staticInt280 = Client.staticInt274 * 2073400987;
-						Client.staticEncryptedStream1.method471(237);
-						Client.staticEncryptedStream1.writeByte(staticMethod378(var0));
-						Client.staticEncryptedStream1.method323(var0);
+						Client.outBuffer.method471(237);
+						Client.outBuffer.writeByte(staticMethod378(var0));
+						Client.outBuffer.method323(var0);
 						break;
 					}
 				}
@@ -18308,14 +18308,14 @@ public class Static {
 		int var6;
 		int var8;
 		if (!Client.staticBool37) {
-			var3 = Client.staticEncryptedStream3.method372();
-			var5 = Client.staticEncryptedStream3.method355();
-			var2 = Client.staticEncryptedStream3.method370();
+			var3 = Client.inBuffer.method372();
+			var5 = Client.inBuffer.method355();
+			var2 = Client.inBuffer.method370();
 			Class61.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
 				for (var4 = 0; var4 < 4; var4++) {
-					Class61.staticIntArrayArray8[var1][var4] = Client.staticEncryptedStream3.readInt();
+					Class61.staticIntArrayArray8[var1][var4] = Client.inBuffer.readInt();
 				}
 			}
 
@@ -18352,17 +18352,17 @@ public class Static {
 
 			staticMethod195(var5, var3);
 		} else {
-			var3 = Client.staticEncryptedStream3.method355();
-			var5 = Client.staticEncryptedStream3.method370();
-			var2 = Client.staticEncryptedStream3.method370();
-			Client.staticEncryptedStream3.method475();
+			var3 = Client.inBuffer.method355();
+			var5 = Client.inBuffer.method370();
+			var2 = Client.inBuffer.method370();
+			Client.inBuffer.method475();
 
 			for (var1 = 0; var1 < 4; var1++) {
 				for (var4 = 0; var4 < 13; var4++) {
 					for (var6 = 0; var6 < 13; var6++) {
-						var8 = Client.staticEncryptedStream3.method477(1);
+						var8 = Client.inBuffer.method477(1);
 						if (var8 == 1) {
-							Client.staticIntArrayArrayArray3[var1][var4][var6] = Client.staticEncryptedStream3
+							Client.staticIntArrayArrayArray3[var1][var4][var6] = Client.inBuffer
 									.method477(26);
 						} else {
 							Client.staticIntArrayArrayArray3[var1][var4][var6] = -1;
@@ -18371,12 +18371,12 @@ public class Static {
 				}
 			}
 
-			Client.staticEncryptedStream3.method474();
+			Client.inBuffer.method474();
 			Class61.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
 				for (var4 = 0; var4 < 4; var4++) {
-					Class61.staticIntArrayArray8[var1][var4] = Client.staticEncryptedStream3.readInt();
+					Class61.staticIntArrayArray8[var1][var4] = Client.inBuffer.readInt();
 				}
 			}
 
@@ -18499,9 +18499,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == -1) {
-					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 1);
-					Client.staticEncryptedStream3.off = 0;
-					Client.staticInt191 = Client.staticEncryptedStream3.method472();
+					Class56.gameConnection.method153(Client.inBuffer.buf, 0, 1);
+					Client.inBuffer.position = 0;
+					Client.staticInt191 = Client.inBuffer.method472();
 					Client.staticInt190 = staticIntArray70[Client.staticInt191];
 					--var44;
 				}
@@ -18511,8 +18511,8 @@ public class Static {
 						return false;
 					}
 
-					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 1);
-					Client.staticInt190 = Client.staticEncryptedStream3.buf[0] & 0xff;
+					Class56.gameConnection.method153(Client.inBuffer.buf, 0, 1);
+					Client.staticInt190 = Client.inBuffer.buf[0] & 0xff;
 					--var44;
 				}
 
@@ -18521,9 +18521,9 @@ public class Static {
 						return false;
 					}
 
-					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
-					Client.staticEncryptedStream3.off = 0;
-					Client.staticInt190 = Client.staticEncryptedStream3.method370();
+					Class56.gameConnection.method153(Client.inBuffer.buf, 0, 2);
+					Client.inBuffer.position = 0;
+					Client.staticInt190 = Client.inBuffer.method370();
 					var44 -= 2;
 				}
 
@@ -18531,15 +18531,15 @@ public class Static {
 					return false;
 				}
 
-				Client.staticEncryptedStream3.off = 0;
-				Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+				Client.inBuffer.position = 0;
+				Class56.gameConnection.method153(Client.inBuffer.buf, 0, Client.staticInt190);
 				Client.staticInt192 = 0;
 				Client.staticInt195 = Client.staticInt194;
 				Client.staticInt194 = Client.staticInt270;
 				Client.staticInt270 = -Client.staticInt191;
 				if (Client.staticInt191 == 209) {
-					ChatMessage.staticInt331 = Client.staticEncryptedStream3.method348();
-					staticInt122 = Client.staticEncryptedStream3.method348();
+					ChatMessage.staticInt331 = Client.inBuffer.method348();
+					staticInt122 = Client.inBuffer.method348();
 					Client.staticInt191 = -1;
 					return true;
 				}
@@ -18547,8 +18547,8 @@ public class Static {
 				int var45;
 				Widget var47;
 				if (Client.staticInt191 == 21) {
-					var45 = Client.staticEncryptedStream3.method378();
-					var2 = Client.staticEncryptedStream3.method355();
+					var45 = Client.inBuffer.method378();
+					var2 = Client.inBuffer.method355();
 					var47 = staticMethod8(var45);
 					if (var47.anInt348 != 1 || var47.anInt295 != var2) {
 						var47.anInt348 = 1;
@@ -18567,11 +18567,11 @@ public class Static {
 				int var58;
 				if (Client.staticInt191 == 25) {
 					Client.staticBool28 = true;
-					staticInt101 = Client.staticEncryptedStream3.method367();
-					Class29.staticInt72 = Client.staticEncryptedStream3.method367();
-					Class7.staticInt31 = Client.staticEncryptedStream3.method370();
-					Class28.staticInt71 = Client.staticEncryptedStream3.method367();
-					Class61.staticInt146 = Client.staticEncryptedStream3.method367();
+					staticInt101 = Client.inBuffer.method367();
+					Class29.staticInt72 = Client.inBuffer.method367();
+					Class7.staticInt31 = Client.inBuffer.method370();
+					Class28.staticInt71 = Client.inBuffer.method367();
+					Class61.staticInt146 = Client.inBuffer.method367();
 					if (Class61.staticInt146 >= 100) {
 						var45 = 64 + staticInt101 * 128;
 						var2 = Class29.staticInt72 * 128 + 64;
@@ -18596,9 +18596,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 88) {
-					var45 = Client.staticEncryptedStream3.method370();
-					var2 = Client.staticEncryptedStream3.method367();
-					var3 = Client.staticEncryptedStream3.method370();
+					var45 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.method367();
+					var3 = Client.inBuffer.method370();
 					staticMethod311(var45, var2, var3);
 					Client.staticInt191 = -1;
 					return true;
@@ -18606,10 +18606,10 @@ public class Static {
 
 				boolean var109;
 				if (Client.staticInt191 == 80) {
-					var109 = Client.staticEncryptedStream3.method367() == 1;
+					var109 = Client.inBuffer.method367() == 1;
 					if (var109) {
-						Class48.staticLong7 = staticMethod297() - Client.staticEncryptedStream3.readLong();
-						staticClass56_1 = new Class56(Client.staticEncryptedStream3, true);
+						Class48.staticLong7 = staticMethod297() - Client.inBuffer.readLong();
+						staticClass56_1 = new Class56(Client.inBuffer, true);
 					} else {
 						staticClass56_1 = null;
 					}
@@ -18620,8 +18620,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 41) {
-					var45 = Client.staticEncryptedStream3.method353();
-					var2 = Client.staticEncryptedStream3.readInt();
+					var45 = Client.inBuffer.method353();
+					var2 = Client.inBuffer.readInt();
 					staticIntArray63[var45] = var2;
 					if (staticIntArray64[var45] != var2) {
 						staticIntArray64[var45] = var2;
@@ -18635,9 +18635,9 @@ public class Static {
 
 				Widget var4;
 				if (Client.staticInt191 == 68) {
-					var45 = Client.staticEncryptedStream3.method370();
-					var2 = Client.staticEncryptedStream3.method370();
-					var3 = Client.staticEncryptedStream3.method378();
+					var45 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.method370();
+					var3 = Client.inBuffer.method378();
 					var4 = staticMethod8(var3);
 					var4.anInt336 = var45 + (var2 << 16);
 					Client.staticInt191 = -1;
@@ -18647,9 +18647,9 @@ public class Static {
 				int var8;
 				KeyFocusListener var53;
 				if (Client.staticInt191 == 24) {
-					var45 = Client.staticInt190 + Client.staticEncryptedStream3.off;
-					var2 = Client.staticEncryptedStream3.method370();
-					var3 = Client.staticEncryptedStream3.method370();
+					var45 = Client.staticInt190 + Client.inBuffer.position;
+					var2 = Client.inBuffer.method370();
+					var3 = Client.inBuffer.method370();
 					if (var2 != Client.staticInt263) {
 						Client.staticInt263 = var2;
 						staticMethod93(false);
@@ -18663,9 +18663,9 @@ public class Static {
 
 					KeyFocusListener var60;
 					for (; var3-- > 0; var60.aBool50 = true) {
-						var48 = Client.staticEncryptedStream3.readInt();
-						var5 = Client.staticEncryptedStream3.method370();
-						var6 = Client.staticEncryptedStream3.method367();
+						var48 = Client.inBuffer.readInt();
+						var5 = Client.inBuffer.method370();
+						var6 = Client.inBuffer.method367();
 						var60 = (KeyFocusListener) Client.staticHashTable5.method149(var48);
 						if (var60 != null && var60.anInt384 != var5) {
 							staticMethod266(var60, true);
@@ -18688,11 +18688,11 @@ public class Static {
 
 					Client.staticHashTable6 = new HashTable(512);
 
-					while (Client.staticEncryptedStream3.off < var45) {
-						var48 = Client.staticEncryptedStream3.readInt();
-						var5 = Client.staticEncryptedStream3.method370();
-						var6 = Client.staticEncryptedStream3.method370();
-						var58 = Client.staticEncryptedStream3.readInt();
+					while (Client.inBuffer.position < var45) {
+						var48 = Client.inBuffer.readInt();
+						var5 = Client.inBuffer.method370();
+						var6 = Client.inBuffer.method370();
+						var58 = Client.inBuffer.readInt();
 
 						for (var8 = var5; var8 <= var6; var8++) {
 							long var591 = var8 + ((long) var48 << 32);
@@ -18711,8 +18711,8 @@ public class Static {
 				if (Client.staticInt191 == 210) {
 					Client.staticInt247 = 0;
 					Client.staticInt188 = 0;
-					Client.staticEncryptedStream3.method475();
-					var45 = Client.staticEncryptedStream3.method477(8);
+					Client.inBuffer.method475();
+					var45 = Client.inBuffer.method477(8);
 					if (var45 < Client.staticInt186) {
 						for (var2 = var45; var2 < Client.staticInt186; var2++) {
 							Client.staticIntArray93[++Client.staticInt247 - 1] = Client.staticIntArray121[var2];
@@ -18728,12 +18728,12 @@ public class Static {
 					for (var2 = 0; var2 < var45; var2++) {
 						var3 = Client.staticIntArray121[var2];
 						var78 = Client.staticNpcArray1[var3];
-						var5 = Client.staticEncryptedStream3.method477(1);
+						var5 = Client.inBuffer.method477(1);
 						if (var5 == 0) {
 							Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 							var78.anInt605 = Client.staticInt166 * 1142679911;
 						} else {
-							var6 = Client.staticEncryptedStream3.method477(2);
+							var6 = Client.inBuffer.method477(2);
 							if (var6 == 0) {
 								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 								var78.anInt605 = Client.staticInt166 * 1142679911;
@@ -18741,20 +18741,20 @@ public class Static {
 							} else if (var6 == 1) {
 								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 								var78.anInt605 = Client.staticInt166 * 1142679911;
-								var58 = Client.staticEncryptedStream3.method477(3);
+								var58 = Client.inBuffer.method477(3);
 								var78.method656(var58, (byte) 1);
-								var8 = Client.staticEncryptedStream3.method477(1);
+								var8 = Client.inBuffer.method477(1);
 								if (var8 == 1) {
 									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
 							} else if (var6 == 2) {
 								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 								var78.anInt605 = Client.staticInt166 * 1142679911;
-								var58 = Client.staticEncryptedStream3.method477(3);
+								var58 = Client.inBuffer.method477(3);
 								var78.method656(var58, (byte) 2);
-								var8 = Client.staticEncryptedStream3.method477(3);
+								var8 = Client.inBuffer.method477(3);
 								var78.method656(var8, (byte) 2);
-								var82 = Client.staticEncryptedStream3.method477(1);
+								var82 = Client.inBuffer.method477(1);
 								if (var82 == 1) {
 									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
@@ -18764,8 +18764,8 @@ public class Static {
 						}
 					}
 
-					while (Client.staticEncryptedStream3.method473(Client.staticInt190) >= 27) {
-						var45 = Client.staticEncryptedStream3.method477(15);
+					while (Client.inBuffer.method473(Client.staticInt190) >= 27) {
+						var45 = Client.inBuffer.method477(15);
 						if (var45 == 32767) {
 							break;
 						}
@@ -18779,28 +18779,28 @@ public class Static {
 						var93 = Client.staticNpcArray1[var45];
 						Client.staticIntArray121[++Client.staticInt186 - 1] = var45;
 						var93.anInt605 = Client.staticInt166 * 1142679911;
-						var48 = Client.staticEncryptedStream3.method477(5);
+						var48 = Client.inBuffer.method477(5);
 						if (var48 > 15) {
 							var48 -= 32;
 						}
 
-						var5 = Client.staticIntArray95[Client.staticEncryptedStream3.method477(3)];
+						var5 = Client.staticIntArray95[Client.inBuffer.method477(3)];
 						if (var49) {
 							var93.anInt630 = var93.anInt592 = var5;
 						}
 
-						var93.aNpcDef1 = staticMethod85(Client.staticEncryptedStream3.method477(14));
-						var6 = Client.staticEncryptedStream3.method477(5);
+						var93.aNpcDef1 = staticMethod85(Client.inBuffer.method477(14));
+						var6 = Client.inBuffer.method477(5);
 						if (var6 > 15) {
 							var6 -= 32;
 						}
 
-						var58 = Client.staticEncryptedStream3.method477(1);
+						var58 = Client.inBuffer.method477(1);
 						if (var58 == 1) {
 							Client.staticIntArray92[++Client.staticInt188 - 1] = var45;
 						}
 
-						var8 = Client.staticEncryptedStream3.method477(1);
+						var8 = Client.inBuffer.method477(1);
 						var93.anInt626 = var93.aNpcDef1.anInt538;
 						var93.anInt631 = var93.aNpcDef1.anInt549 * 494637525;
 						if (var93.anInt631 == 0) {
@@ -18818,7 +18818,7 @@ public class Static {
 								AbstractClass2Sub1.staticPlayer1.anIntArray122[0] + var6, var8 == 1);
 					}
 
-					Client.staticEncryptedStream3.method474();
+					Client.inBuffer.method474();
 					staticMethod391();
 
 					for (var45 = 0; var45 < Client.staticInt247; var45++) {
@@ -18829,9 +18829,9 @@ public class Static {
 						}
 					}
 
-					if (Client.staticInt190 != Client.staticEncryptedStream3.off) {
+					if (Client.staticInt190 != Client.inBuffer.position) {
 						throw new RuntimeException(
-								Client.staticEncryptedStream3.off + staticString11 + Client.staticInt190);
+								Client.inBuffer.position + staticString11 + Client.staticInt190);
 					}
 
 					for (var45 = 0; var45 < Client.staticInt186; var45++) {
@@ -18845,9 +18845,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 118) {
-					Client.staticEncryptedStream3.off += 28;
-					if (Client.staticEncryptedStream3.method363()) {
-						staticMethod336(Client.staticEncryptedStream3, Client.staticEncryptedStream3.off - 28);
+					Client.inBuffer.position += 28;
+					if (Client.inBuffer.method363()) {
+						staticMethod336(Client.inBuffer, Client.inBuffer.position - 28);
 					}
 
 					Client.staticInt191 = -1;
@@ -18855,22 +18855,22 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 14) {
-					Client.staticInt298 = Client.staticEncryptedStream3.method367();
+					Client.staticInt298 = Client.inBuffer.method367();
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 223) {
 					staticMethod250();
-					Client.staticInt232 = Client.staticEncryptedStream3.method364();
+					Client.staticInt232 = Client.inBuffer.method364();
 					Client.staticInt283 = Client.staticInt274 * 2073400987;
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 156) {
-					var45 = Client.staticEncryptedStream3.readInt();
-					var2 = Client.staticEncryptedStream3.method370();
+					var45 = Client.inBuffer.readInt();
+					var2 = Client.inBuffer.method370();
 					if (var45 < -70000) {
 						var2 += '\u8000';
 					}
@@ -18889,15 +18889,15 @@ public class Static {
 					}
 
 					staticMethod162(var2);
-					var48 = Client.staticEncryptedStream3.method370();
+					var48 = Client.inBuffer.method370();
 
 					for (var5 = 0; var5 < var48; var5++) {
-						var6 = Client.staticEncryptedStream3.method346();
+						var6 = Client.inBuffer.method346();
 						if (var6 == 255) {
-							var6 = Client.staticEncryptedStream3.readInt();
+							var6 = Client.inBuffer.readInt();
 						}
 
-						var58 = Client.staticEncryptedStream3.method353();
+						var58 = Client.inBuffer.method353();
 						if (var47 != null && var5 < var47.anIntArray76.length) {
 							var47.anIntArray76[var5] = var58;
 							var47.anIntArray77[var5] = var6;
@@ -18917,7 +18917,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 47) {
-					var45 = Client.staticEncryptedStream3.method355();
+					var45 = Client.inBuffer.method355();
 					staticMethod281(var45);
 					Client.staticIntArray86[++Client.staticInt276 - 1 & 0x1f] = var45 & 0x7fff;
 					Client.staticInt191 = -1;
@@ -18942,13 +18942,13 @@ public class Static {
 				long var16;
 				boolean var66;
 				if (Client.staticInt191 == 237) {
-					var1 = Client.staticEncryptedStream3.method365();
-					var12 = Client.staticEncryptedStream3.method370();
-					var14 = Client.staticEncryptedStream3.readTriByte();
+					var1 = Client.inBuffer.method365();
+					var12 = Client.inBuffer.method370();
+					var14 = Client.inBuffer.readTriByte();
 					Class48[] var611 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
 							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
 							Class48.staticClass48_3 };
-					Class48 var621 = (Class48) staticMethod233(var611, Client.staticEncryptedStream3.method367());
+					Class48 var621 = (Class48) staticMethod233(var611, Client.inBuffer.method367());
 					var16 = var14 + (var12 << 32);
 					var66 = false;
 
@@ -18966,7 +18966,7 @@ public class Static {
 					if (!var66 && Client.staticInt245 == 0) {
 						Client.staticLongArray3[Client.staticInt293] = var16;
 						Client.staticInt293 = (Client.staticInt293 + 1) % 100;
-						String var72 = staticMethod456(staticMethod265(staticMethod191(Client.staticEncryptedStream3)));
+						String var72 = staticMethod456(staticMethod265(staticMethod191(Client.inBuffer)));
 						byte var73;
 						if (var621.aBool15) {
 							var73 = 7;
@@ -18986,8 +18986,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 201) {
-					var45 = Client.staticEncryptedStream3.method370();
-					var2 = Client.staticEncryptedStream3.method378();
+					var45 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.method378();
 					var47 = staticMethod8(var2);
 					if (var47 != null && var47.anInt296 == 0) {
 						if (var45 > var47.anInt361 - var47.anInt351) {
@@ -19013,22 +19013,22 @@ public class Static {
 				boolean var54;
 				if (Client.staticInt191 == 221) {
 					Friend var821;
-					while (Client.staticEncryptedStream3.off < Client.staticInt190) {
-						var109 = Client.staticEncryptedStream3.method367() == 1;
-						var62 = Client.staticEncryptedStream3.method365();
-						var57 = Client.staticEncryptedStream3.method365();
-						var48 = Client.staticEncryptedStream3.method370();
-						var5 = Client.staticEncryptedStream3.method367();
-						var6 = Client.staticEncryptedStream3.method367();
+					while (Client.inBuffer.position < Client.staticInt190) {
+						var109 = Client.inBuffer.method367() == 1;
+						var62 = Client.inBuffer.method365();
+						var57 = Client.inBuffer.method365();
+						var48 = Client.inBuffer.method370();
+						var5 = Client.inBuffer.method367();
+						var6 = Client.inBuffer.method367();
 						boolean var661 = (var6 & 0x2) != 0;
 						var54 = (var6 & 0x1) != 0;
 						if (var48 > 0) {
-							Client.staticEncryptedStream3.method365();
-							Client.staticEncryptedStream3.method367();
-							Client.staticEncryptedStream3.readInt();
+							Client.inBuffer.method365();
+							Client.inBuffer.method367();
+							Client.inBuffer.readInt();
 						}
 
-						Client.staticEncryptedStream3.method365();
+						Client.inBuffer.method365();
 
 						for (var82 = 0; var82 < Client.staticInt308; var82++) {
 							var821 = Client.staticFriendArray1[var82];
@@ -19134,12 +19134,12 @@ public class Static {
 
 				if (Client.staticInt191 == 208) {
 					Class2 var65 = new Class2();
-					var65.aString1 = Client.staticEncryptedStream3.method365();
-					var65.anInt4 = Client.staticEncryptedStream3.method370();
-					var2 = Client.staticEncryptedStream3.readInt();
+					var65.aString1 = Client.inBuffer.method365();
+					var65.anInt4 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.readInt();
 					var65.anInt3 = var2;
 					staticMethod396(45);
-					Class56.gameConnection.method150();
+					Class56.gameConnection.shutdown();
 					Class56.gameConnection = null;
 					staticMethod59(var65);
 					Client.staticInt191 = -1;
@@ -19147,14 +19147,14 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 49) {
-					Client.staticInt160 = Client.staticEncryptedStream3.method367();
-					Client.staticInt291 = Client.staticEncryptedStream3.method367();
+					Client.staticInt160 = Client.inBuffer.method367();
+					Client.staticInt291 = Client.inBuffer.method367();
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 28) {
-					var45 = Client.staticEncryptedStream3.method370();
+					var45 = Client.inBuffer.method370();
 					Client.staticInt263 = var45;
 					staticMethod93(false);
 					staticMethod393(var45);
@@ -19180,7 +19180,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 92) {
-					var2 = Client.staticEncryptedStream3.method367();
+					var2 = Client.inBuffer.method367();
 					Class55[] var64 = new Class55[] { Class55.staticClass55_2, Class55.staticClass55_4,
 							Class55.staticClass55_3 };
 					Class55[] var68 = var64;
@@ -19208,7 +19208,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 195) {
-					var45 = Client.staticEncryptedStream3.method353();
+					var45 = Client.inBuffer.method353();
 					if (var45 == '\uffff') {
 						var45 = -1;
 					}
@@ -19236,8 +19236,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 60) {
-					var45 = Client.staticEncryptedStream3.method358();
-					var2 = Client.staticEncryptedStream3.method370();
+					var45 = Client.inBuffer.method358();
+					var2 = Client.inBuffer.method370();
 					if (var2 == '\uffff') {
 						var2 = -1;
 					}
@@ -19261,9 +19261,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 61) {
-					var45 = Client.staticEncryptedStream3.method377();
-					var62 = Client.staticEncryptedStream3.method365();
-					var3 = Client.staticEncryptedStream3.method367();
+					var45 = Client.inBuffer.method377();
+					var62 = Client.inBuffer.method365();
+					var3 = Client.inBuffer.method367();
 					if (var3 >= 1 && var3 <= 8) {
 						if (var62.equalsIgnoreCase("null")) {
 							var62 = null;
@@ -19279,11 +19279,11 @@ public class Static {
 
 				if (Client.staticInt191 == 129) {
 					Client.staticBool28 = true;
-					TaskManager.staticInt40 = Client.staticEncryptedStream3.method367();
-					staticInt137 = Client.staticEncryptedStream3.method367();
-					ObjectDefinition.staticInt322 = Client.staticEncryptedStream3.method370();
-					staticInt17 = Client.staticEncryptedStream3.method367();
-					staticInt150 = Client.staticEncryptedStream3.method367();
+					TaskManager.staticInt40 = Client.inBuffer.method367();
+					staticInt137 = Client.inBuffer.method367();
+					ObjectDefinition.staticInt322 = Client.inBuffer.method370();
+					staticInt17 = Client.inBuffer.method367();
+					staticInt150 = Client.inBuffer.method367();
 					if (staticInt150 >= 100) {
 						Class20.staticInt36 = 64 + TaskManager.staticInt40 * 128;
 						NodeSub3.staticInt153 = staticInt137 * 128 + 64;
@@ -19297,10 +19297,10 @@ public class Static {
 
 				Widget var70;
 				if (Client.staticInt191 == 217) {
-					var45 = Client.staticEncryptedStream3.method355();
-					var2 = Client.staticEncryptedStream3.method355();
-					var3 = Client.staticEncryptedStream3.method353();
-					var48 = Client.staticEncryptedStream3.method362();
+					var45 = Client.inBuffer.method355();
+					var2 = Client.inBuffer.method355();
+					var3 = Client.inBuffer.method353();
+					var48 = Client.inBuffer.method362();
 					var70 = staticMethod8(var48);
 					if (var70.anInt325 != var45 || var70.anInt332 != var2 || var70.anInt334 != var3) {
 						var70.anInt325 = var45;
@@ -19316,8 +19316,8 @@ public class Static {
 				if (Client.staticInt191 == 43) {
 					Client.staticInt247 = 0;
 					Client.staticInt188 = 0;
-					Client.staticEncryptedStream3.method475();
-					var45 = Client.staticEncryptedStream3.method477(8);
+					Client.inBuffer.method475();
+					var45 = Client.inBuffer.method477(8);
 					if (var45 < Client.staticInt186) {
 						for (var2 = var45; var2 < Client.staticInt186; var2++) {
 							Client.staticIntArray93[++Client.staticInt247 - 1] = Client.staticIntArray121[var2];
@@ -19333,12 +19333,12 @@ public class Static {
 					for (var2 = 0; var2 < var45; var2++) {
 						var3 = Client.staticIntArray121[var2];
 						var78 = Client.staticNpcArray1[var3];
-						var5 = Client.staticEncryptedStream3.method477(1);
+						var5 = Client.inBuffer.method477(1);
 						if (var5 == 0) {
 							Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 							var78.anInt605 = Client.staticInt166 * 1142679911;
 						} else {
-							var6 = Client.staticEncryptedStream3.method477(2);
+							var6 = Client.inBuffer.method477(2);
 							if (var6 == 0) {
 								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 								var78.anInt605 = Client.staticInt166 * 1142679911;
@@ -19346,20 +19346,20 @@ public class Static {
 							} else if (var6 == 1) {
 								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 								var78.anInt605 = Client.staticInt166 * 1142679911;
-								var58 = Client.staticEncryptedStream3.method477(3);
+								var58 = Client.inBuffer.method477(3);
 								var78.method656(var58, (byte) 1);
-								var8 = Client.staticEncryptedStream3.method477(1);
+								var8 = Client.inBuffer.method477(1);
 								if (var8 == 1) {
 									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
 							} else if (var6 == 2) {
 								Client.staticIntArray121[++Client.staticInt186 - 1] = var3;
 								var78.anInt605 = Client.staticInt166 * 1142679911;
-								var58 = Client.staticEncryptedStream3.method477(3);
+								var58 = Client.inBuffer.method477(3);
 								var78.method656(var58, (byte) 2);
-								var8 = Client.staticEncryptedStream3.method477(3);
+								var8 = Client.inBuffer.method477(3);
 								var78.method656(var8, (byte) 2);
-								var82 = Client.staticEncryptedStream3.method477(1);
+								var82 = Client.inBuffer.method477(1);
 								if (var82 == 1) {
 									Client.staticIntArray92[++Client.staticInt188 - 1] = var3;
 								}
@@ -19369,8 +19369,8 @@ public class Static {
 						}
 					}
 
-					while (Client.staticEncryptedStream3.method473(Client.staticInt190) >= 27) {
-						var45 = Client.staticEncryptedStream3.method477(15);
+					while (Client.inBuffer.method473(Client.staticInt190) >= 27) {
+						var45 = Client.inBuffer.method477(15);
 						if (var45 == 32767) {
 							break;
 						}
@@ -19384,28 +19384,28 @@ public class Static {
 						var93 = Client.staticNpcArray1[var45];
 						Client.staticIntArray121[++Client.staticInt186 - 1] = var45;
 						var93.anInt605 = Client.staticInt166 * 1142679911;
-						var48 = Client.staticEncryptedStream3.method477(8);
+						var48 = Client.inBuffer.method477(8);
 						if (var48 > 127) {
 							var48 -= 256;
 						}
 
-						var5 = Client.staticIntArray95[Client.staticEncryptedStream3.method477(3)];
+						var5 = Client.staticIntArray95[Client.inBuffer.method477(3)];
 						if (var49) {
 							var93.anInt630 = var93.anInt592 = var5;
 						}
 
-						var93.aNpcDef1 = staticMethod85(Client.staticEncryptedStream3.method477(14));
-						var6 = Client.staticEncryptedStream3.method477(8);
+						var93.aNpcDef1 = staticMethod85(Client.inBuffer.method477(14));
+						var6 = Client.inBuffer.method477(8);
 						if (var6 > 127) {
 							var6 -= 256;
 						}
 
-						var58 = Client.staticEncryptedStream3.method477(1);
+						var58 = Client.inBuffer.method477(1);
 						if (var58 == 1) {
 							Client.staticIntArray92[++Client.staticInt188 - 1] = var45;
 						}
 
-						var8 = Client.staticEncryptedStream3.method477(1);
+						var8 = Client.inBuffer.method477(1);
 						var93.anInt626 = var93.aNpcDef1.anInt538;
 						var93.anInt631 = var93.aNpcDef1.anInt549 * 494637525;
 						if (var93.anInt631 == 0) {
@@ -19423,7 +19423,7 @@ public class Static {
 								AbstractClass2Sub1.staticPlayer1.anIntArray122[0] + var6, var8 == 1);
 					}
 
-					Client.staticEncryptedStream3.method474();
+					Client.inBuffer.method474();
 					staticMethod391();
 
 					for (var45 = 0; var45 < Client.staticInt247; var45++) {
@@ -19434,9 +19434,9 @@ public class Static {
 						}
 					}
 
-					if (Client.staticEncryptedStream3.off != Client.staticInt190) {
+					if (Client.inBuffer.position != Client.staticInt190) {
 						throw new RuntimeException(
-								Client.staticEncryptedStream3.off + staticString11 + Client.staticInt190);
+								Client.inBuffer.position + staticString11 + Client.staticInt190);
 					}
 
 					for (var45 = 0; var45 < Client.staticInt186; var45++) {
@@ -19450,10 +19450,10 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 202) {
-					var45 = Client.staticEncryptedStream3.method367();
-					var2 = Client.staticEncryptedStream3.method367();
-					var3 = Client.staticEncryptedStream3.method367();
-					var48 = Client.staticEncryptedStream3.method367();
+					var45 = Client.inBuffer.method367();
+					var2 = Client.inBuffer.method367();
+					var3 = Client.inBuffer.method367();
+					var48 = Client.inBuffer.method367();
 					Client.staticBoolArray7[var45] = true;
 					Client.staticIntArray118[var45] = var2;
 					Client.staticIntArray119[var45] = var3;
@@ -19465,9 +19465,9 @@ public class Static {
 
 				byte var75;
 				if (Client.staticInt191 == 155) {
-					var1 = Client.staticEncryptedStream3.method365();
-					var2 = Client.staticEncryptedStream3.method370();
-					var75 = Client.staticEncryptedStream3.readByte();
+					var1 = Client.inBuffer.method365();
+					var2 = Client.inBuffer.method370();
+					var75 = Client.inBuffer.readByte();
 					var66 = false;
 					if (var75 == -128) {
 						var66 = true;
@@ -19497,7 +19497,7 @@ public class Static {
 							Class43.staticNodeSub1Array1[staticInt149] = null;
 						}
 					} else {
-						Client.staticEncryptedStream3.method365();
+						Client.inBuffer.method365();
 						NodeSub1 var74 = new NodeSub1();
 						var74.aString15 = var1;
 						var74.aString16 = staticMethod111(var74.aString15, staticClass53_1);
@@ -19555,8 +19555,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 170) {
-					staticInt122 = Client.staticEncryptedStream3.method367();
-					ChatMessage.staticInt331 = Client.staticEncryptedStream3.method367();
+					staticInt122 = Client.inBuffer.method367();
+					ChatMessage.staticInt331 = Client.inBuffer.method367();
 
 					for (var45 = staticInt122; var45 < 8 + staticInt122; var45++) {
 						for (var2 = ChatMessage.staticInt331; var2 < ChatMessage.staticInt331 + 8; var2++) {
@@ -19582,18 +19582,18 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 247) {
-					var1 = Client.staticEncryptedStream3.method365();
+					var1 = Client.inBuffer.method365();
 					Object[] var77 = new Object[var1.length() + 1];
 
 					for (var3 = var1.length() - 1; var3 >= 0; --var3) {
 						if (var1.charAt(var3) == 115) {
-							var77[1 + var3] = Client.staticEncryptedStream3.method365();
+							var77[1 + var3] = Client.inBuffer.method365();
 						} else {
-							var77[var3 + 1] = new Integer(Client.staticEncryptedStream3.readInt());
+							var77[var3 + 1] = new Integer(Client.inBuffer.readInt());
 						}
 					}
 
-					var77[0] = new Integer(Client.staticEncryptedStream3.readInt());
+					var77[0] = new Integer(Client.inBuffer.readInt());
 					NodeSub16 var89 = new NodeSub16();
 					var89.anObjectArray2 = var77;
 					staticMethod375(var89);
@@ -19602,8 +19602,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 122) {
-					var45 = Client.staticEncryptedStream3.method353();
-					var75 = Client.staticEncryptedStream3.method368();
+					var45 = Client.inBuffer.method353();
+					var75 = Client.inBuffer.method368();
 					staticIntArray63[var45] = var75;
 					if (var75 != staticIntArray64[var45]) {
 						staticIntArray64[var45] = var75;
@@ -19616,18 +19616,18 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 179) {
-					var45 = Client.staticEncryptedStream3.method379();
-					var49 = Client.staticEncryptedStream3.method367() == 1;
+					var45 = Client.inBuffer.method379();
+					var49 = Client.inBuffer.method367() == 1;
 					var57 = "";
 					var66 = false;
 					if (var49) {
-						var57 = Client.staticEncryptedStream3.method365();
+						var57 = Client.inBuffer.method365();
 						if (staticMethod141(var57)) {
 							var66 = true;
 						}
 					}
 
-					String var71 = Client.staticEncryptedStream3.method365();
+					String var71 = Client.inBuffer.method365();
 					if (!var66) {
 						staticMethod36(var45, var57, var71);
 					}
@@ -19637,16 +19637,16 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 72) {
-					var1 = Client.staticEncryptedStream3.method365();
-					var62 = staticMethod456(staticMethod265(staticMethod191(Client.staticEncryptedStream3)));
+					var1 = Client.inBuffer.method365();
+					var62 = staticMethod456(staticMethod265(staticMethod191(Client.inBuffer)));
 					staticMethod36(6, var1, var62);
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 242) {
-					var45 = Client.staticEncryptedStream3.method354();
-					var2 = Client.staticEncryptedStream3.method356();
+					var45 = Client.inBuffer.method354();
+					var2 = Client.inBuffer.method356();
 					var47 = staticMethod8(var45);
 					if (var47.anInt327 != var2 || var2 == -1) {
 						var47.anInt327 = var2;
@@ -19662,8 +19662,8 @@ public class Static {
 				long var23;
 				long var25;
 				if (Client.staticInt191 == 65) {
-					var45 = Client.staticEncryptedStream3.readInt();
-					var2 = Client.staticEncryptedStream3.readInt();
+					var45 = Client.inBuffer.readInt();
+					var2 = Client.inBuffer.readInt();
 					if (staticGarbageCollectorMXBean1 == null
 							|| !staticGarbageCollectorMXBean1.isValid()) {
 						try {
@@ -19698,11 +19698,11 @@ public class Static {
 						Client.staticLong14 = var86;
 					}
 
-					Client.staticEncryptedStream1.method471(178);
-					Client.staticEncryptedStream1.writeInt(var45);
-					Client.staticEncryptedStream1.method360(var2);
-					Client.staticEncryptedStream1.method373(GameShell.staticInt107);
-					Client.staticEncryptedStream1.method373(var5);
+					Client.outBuffer.method471(178);
+					Client.outBuffer.writeInt(var45);
+					Client.outBuffer.method360(var2);
+					Client.outBuffer.method373(GameShell.staticInt107);
+					Client.outBuffer.method373(var5);
 					Client.staticInt191 = -1;
 					return true;
 				}
@@ -19726,16 +19726,16 @@ public class Static {
 
 				if (Client.staticInt191 == 167) {
 					staticMethod294(false);
-					Client.staticEncryptedStream3.method472();
-					var45 = Client.staticEncryptedStream3.method370();
-					staticMethod313(Client.staticEncryptedStream3, var45);
+					Client.inBuffer.method472();
+					var45 = Client.inBuffer.method370();
+					staticMethod313(Client.inBuffer, var45);
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 119) {
-					var45 = Client.staticEncryptedStream3.readInt();
-					var2 = Client.staticEncryptedStream3.method378();
+					var45 = Client.inBuffer.readInt();
+					var2 = Client.inBuffer.method378();
 					KeyFocusListener var84 = (KeyFocusListener) Client.staticHashTable5.method149(var2);
 					var53 = (KeyFocusListener) Client.staticHashTable5.method149(var45);
 					if (var53 != null) {
@@ -19786,7 +19786,7 @@ public class Static {
 
 				Widget var61;
 				if (Client.staticInt191 == 133) {
-					var45 = Client.staticEncryptedStream3.readInt();
+					var45 = Client.inBuffer.readInt();
 					var61 = staticMethod8(var45);
 
 					for (var3 = 0; var3 < var61.anIntArray76.length; var3++) {
@@ -19800,13 +19800,13 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 86) {
-					var45 = Client.staticEncryptedStream3.method367();
-					if (Client.staticEncryptedStream3.method367() == 0) {
+					var45 = Client.inBuffer.method367();
+					if (Client.inBuffer.method367() == 0) {
 						Client.staticClass61Array1[var45] = new Class61();
-						Client.staticEncryptedStream3.off += 18;
+						Client.inBuffer.position += 18;
 					} else {
-						--Client.staticEncryptedStream3.off;
-						Client.staticClass61Array1[var45] = new Class61(Client.staticEncryptedStream3, false);
+						--Client.inBuffer.position;
+						Client.staticClass61Array1[var45] = new Class61(Client.inBuffer, false);
 					}
 
 					Client.staticInt295 = Client.staticInt274 * 2073400987;
@@ -19816,7 +19816,7 @@ public class Static {
 
 				if (Client.staticInt191 == 151) {
 					staticMethod250();
-					Client.staticInt267 = Client.staticEncryptedStream3.method367();
+					Client.staticInt267 = Client.inBuffer.method367();
 					Client.staticInt283 = Client.staticInt274 * 2073400987;
 					Client.staticInt191 = -1;
 					return true;
@@ -19829,18 +19829,18 @@ public class Static {
 						Client.staticPlayerArray1[var45] = null;
 					}
 
-					staticMethod48(Client.staticEncryptedStream3);
+					staticMethod48(Client.inBuffer);
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 166) {
-					while (Client.staticEncryptedStream3.off < Client.staticInt190) {
-						var45 = Client.staticEncryptedStream3.method367();
+					while (Client.inBuffer.position < Client.staticInt190) {
+						var45 = Client.inBuffer.method367();
 						var49 = (var45 & 0x1) == 1;
-						var57 = Client.staticEncryptedStream3.method365();
-						String var88 = Client.staticEncryptedStream3.method365();
-						Client.staticEncryptedStream3.method365();
+						var57 = Client.inBuffer.method365();
+						String var88 = Client.inBuffer.method365();
+						Client.inBuffer.method365();
 
 						Class7 var96;
 						for (var5 = 0; var5 < Client.staticInt310; var5++) {
@@ -19877,14 +19877,14 @@ public class Static {
 				int var27;
 				String var59;
 				if (Client.staticInt191 == 238) {
-					var1 = Client.staticEncryptedStream3.method365();
-					var12 = Client.staticEncryptedStream3.readLong();
-					var14 = Client.staticEncryptedStream3.method370();
-					var23 = Client.staticEncryptedStream3.readTriByte();
+					var1 = Client.inBuffer.method365();
+					var12 = Client.inBuffer.readLong();
+					var14 = Client.inBuffer.method370();
+					var23 = Client.inBuffer.readTriByte();
 					Class48[] var95 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
 							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
 							Class48.staticClass48_3 };
-					Class48 var91 = (Class48) staticMethod233(var95, Client.staticEncryptedStream3.method367());
+					Class48 var91 = (Class48) staticMethod233(var95, Client.inBuffer.method367());
 					var25 = (var14 << 32) + var23;
 					boolean var981 = false;
 
@@ -19902,7 +19902,7 @@ public class Static {
 					if (!var981 && Client.staticInt245 == 0) {
 						Client.staticLongArray3[Client.staticInt293] = var25;
 						Client.staticInt293 = (Client.staticInt293 + 1) % 100;
-						var59 = staticMethod456(staticMethod265(staticMethod191(Client.staticEncryptedStream3)));
+						var59 = staticMethod456(staticMethod265(staticMethod191(Client.inBuffer)));
 						if (var91.anInt192 != -1) {
 							staticMethod224(9, staticMethod123(var91.anInt192) + var1, var59, staticMethod182(var12));
 						} else {
@@ -19915,8 +19915,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 51) {
-					var45 = Client.staticEncryptedStream3.method354();
-					var62 = Client.staticEncryptedStream3.method365();
+					var45 = Client.inBuffer.method354();
+					var62 = Client.inBuffer.method365();
 					var47 = staticMethod8(var45);
 					if (!var62.equals(var47.aString20)) {
 						var47.aString20 = var62;
@@ -19928,7 +19928,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 204) {
-					var45 = Client.staticEncryptedStream3.method362();
+					var45 = Client.inBuffer.method362();
 					var61 = staticMethod8(var45);
 					var61.anInt348 = 3;
 					var61.anInt295 = AbstractClass2Sub1.staticPlayer1.aClass49_1.method250();
@@ -19938,14 +19938,14 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 140) {
-					var45 = Client.staticEncryptedStream3.method353();
+					var45 = Client.inBuffer.method353();
 					if (var45 == '\uffff') {
 						var45 = -1;
 					}
 
-					var2 = Client.staticEncryptedStream3.method362();
-					var3 = Client.staticEncryptedStream3.readInt();
-					var48 = Client.staticEncryptedStream3.method370();
+					var2 = Client.inBuffer.method362();
+					var3 = Client.inBuffer.readInt();
+					var48 = Client.inBuffer.method370();
 					if (var48 == '\uffff') {
 						var48 = -1;
 					}
@@ -19966,15 +19966,15 @@ public class Static {
 
 				if (Client.staticInt191 == 77) {
 					staticMethod294(true);
-					Client.staticEncryptedStream3.method472();
-					var45 = Client.staticEncryptedStream3.method370();
-					staticMethod313(Client.staticEncryptedStream3, var45);
+					Client.inBuffer.method472();
+					var45 = Client.inBuffer.method370();
+					staticMethod313(Client.inBuffer, var45);
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 176) {
-					var45 = Client.staticEncryptedStream3.readInt();
+					var45 = Client.inBuffer.readInt();
 					KeyFocusListener var931 = (KeyFocusListener) Client.staticHashTable5.method149(var45);
 					if (var931 != null) {
 						staticMethod266(var931, true);
@@ -19997,12 +19997,12 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 99) {
-					Client.staticInt296 = Client.staticEncryptedStream3.method367();
+					Client.staticInt296 = Client.inBuffer.method367();
 					if (Client.staticInt296 == 255) {
 						Client.staticInt296 = 0;
 					}
 
-					Client.staticInt240 = Client.staticEncryptedStream3.method367();
+					Client.staticInt240 = Client.inBuffer.method367();
 					if (Client.staticInt240 == 255) {
 						Client.staticInt240 = 0;
 					}
@@ -20013,9 +20013,9 @@ public class Static {
 
 				if (Client.staticInt191 == 190) {
 					staticMethod250();
-					var45 = Client.staticEncryptedStream3.method378();
-					var2 = Client.staticEncryptedStream3.method348();
-					var3 = Client.staticEncryptedStream3.method346();
+					var45 = Client.inBuffer.method378();
+					var2 = Client.inBuffer.method348();
+					var3 = Client.inBuffer.method346();
 					Client.staticIntArray108[var3] = var45;
 					Client.staticIntArray91[var3] = var2;
 					Client.staticIntArray96[var3] = 1;
@@ -20032,9 +20032,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 76) {
-					var45 = Client.staticEncryptedStream3.method370();
-					var2 = Client.staticEncryptedStream3.method367();
-					var3 = Client.staticEncryptedStream3.method354();
+					var45 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.method367();
+					var3 = Client.inBuffer.method354();
 					var53 = (KeyFocusListener) Client.staticHashTable5.method149(var3);
 					if (var53 != null) {
 						staticMethod266(var53, var53.anInt384 != var45);
@@ -20056,11 +20056,11 @@ public class Static {
 						return true;
 					}
 
-					Client.staticString29 = Client.staticEncryptedStream3.method365();
-					long var92 = Client.staticEncryptedStream3.readLong();
+					Client.staticString29 = Client.inBuffer.method365();
+					long var92 = Client.inBuffer.readLong();
 					Client.staticString34 = staticMethod5(var92);
-					staticByte1 = Client.staticEncryptedStream3.readByte();
-					var3 = Client.staticEncryptedStream3.method367();
+					staticByte1 = Client.inBuffer.readByte();
+					var3 = Client.inBuffer.method367();
 					if (var3 == 255) {
 						Client.staticInt191 = -1;
 						return true;
@@ -20071,11 +20071,11 @@ public class Static {
 
 					for (var5 = 0; var5 < staticInt149; var5++) {
 						var97[var5] = new NodeSub1();
-						var97[var5].aString15 = Client.staticEncryptedStream3.method365();
+						var97[var5].aString15 = Client.inBuffer.method365();
 						var97[var5].aString16 = staticMethod111(var97[var5].aString15, staticClass53_1);
-						var97[var5].anInt217 = Client.staticEncryptedStream3.method370();
-						var97[var5].aByte3 = Client.staticEncryptedStream3.readByte();
-						Client.staticEncryptedStream3.method365();
+						var97[var5].anInt217 = Client.inBuffer.method370();
+						var97[var5].aByte3 = Client.inBuffer.readByte();
+						Client.inBuffer.method365();
 						if (var97[var5].aString15.equals(AbstractClass2Sub1.staticPlayer1.aString40)) {
 							staticByte3 = var97[var5].aByte3;
 						}
@@ -20108,11 +20108,11 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 8) {
-					staticInt122 = Client.staticEncryptedStream3.method348();
-					ChatMessage.staticInt331 = Client.staticEncryptedStream3.method346();
+					staticInt122 = Client.inBuffer.method348();
+					ChatMessage.staticInt331 = Client.inBuffer.method346();
 
-					while (Client.staticEncryptedStream3.off < Client.staticInt190) {
-						Client.staticInt191 = Client.staticEncryptedStream3.method367();
+					while (Client.inBuffer.position < Client.staticInt190) {
+						Client.staticInt191 = Client.inBuffer.method367();
 						staticMethod345();
 					}
 
@@ -20121,14 +20121,14 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 89) {
-					staticMethod313(Client.staticEncryptedStream3, Client.staticInt190);
+					staticMethod313(Client.inBuffer, Client.staticInt190);
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 132) {
-					var45 = Client.staticEncryptedStream3.method372();
-					var2 = Client.staticEncryptedStream3.method362();
+					var45 = Client.inBuffer.method372();
+					var2 = Client.inBuffer.method362();
 					var47 = staticMethod8(var2);
 					if (var47.anInt348 != 2 || var47.anInt295 != var45) {
 						var47.anInt348 = 2;
@@ -20141,15 +20141,15 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 127) {
-					staticMethod476(Client.staticEncryptedStream3.method365());
+					staticMethod476(Client.inBuffer.method365());
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 161) {
-					Client.staticInt255 = Client.staticEncryptedStream3.method367();
+					Client.staticInt255 = Client.inBuffer.method367();
 					if (Client.staticInt255 == 1) {
-						Client.staticInt172 = Client.staticEncryptedStream3.method370();
+						Client.staticInt172 = Client.inBuffer.method370();
 					}
 
 					if (Client.staticInt255 >= 2 && Client.staticInt255 <= 6) {
@@ -20179,13 +20179,13 @@ public class Static {
 						}
 
 						Client.staticInt255 = 2;
-						Client.staticInt174 = Client.staticEncryptedStream3.method370();
-						Client.staticInt175 = Client.staticEncryptedStream3.method370();
-						Client.staticInt176 = Client.staticEncryptedStream3.method367();
+						Client.staticInt174 = Client.inBuffer.method370();
+						Client.staticInt175 = Client.inBuffer.method370();
+						Client.staticInt176 = Client.inBuffer.method367();
 					}
 
 					if (Client.staticInt255 == 10) {
-						Client.staticInt193 = Client.staticEncryptedStream3.method370();
+						Client.staticInt193 = Client.inBuffer.method370();
 					}
 
 					Client.staticInt191 = -1;
@@ -20193,20 +20193,20 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 178) {
-					var45 = Client.staticEncryptedStream3.method354();
+					var45 = Client.inBuffer.method354();
 					KeyboardHandler.staticTask2 = BufferedFile.staticTaskManager1.method95(var45);
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 2) {
-					var45 = Client.staticEncryptedStream3.method354();
-					var2 = Client.staticEncryptedStream3.method353();
+					var45 = Client.inBuffer.method354();
+					var2 = Client.inBuffer.method353();
 					if (var2 == '\uffff') {
 						var2 = -1;
 					}
 
-					var3 = Client.staticEncryptedStream3.method378();
+					var3 = Client.inBuffer.method378();
 					var4 = staticMethod8(var45);
 					ItemDefinition var891;
 					if (!var4.aBool42) {
@@ -20265,7 +20265,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 158) {
-					EncryptedStream var87 = Client.staticEncryptedStream3;
+					EncryptedStream var87 = Client.inBuffer;
 					var2 = Client.staticInt190;
 					NodeSub17 var50 = new NodeSub17();
 					var50.anInt367 = var87.method367();
@@ -20375,15 +20375,15 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 31) {
-					Client.staticInt170 = Client.staticEncryptedStream3.method370() * 30;
+					Client.staticInt170 = Client.inBuffer.method370() * 30;
 					Client.staticInt283 = Client.staticInt274 * 2073400987;
 					Client.staticInt191 = -1;
 					return true;
 				}
 
 				if (Client.staticInt191 == 194) {
-					var45 = Client.staticEncryptedStream3.method378();
-					var49 = Client.staticEncryptedStream3.method377() == 1;
+					var45 = Client.inBuffer.method378();
+					var49 = Client.inBuffer.method377() == 1;
 					var47 = staticMethod8(var45);
 					if (var49 != var47.aBool32) {
 						var47.aBool32 = var49;
@@ -20395,8 +20395,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 123) {
-					var45 = Client.staticEncryptedStream3.readInt();
-					var2 = Client.staticEncryptedStream3.method355();
+					var45 = Client.inBuffer.readInt();
+					var2 = Client.inBuffer.method355();
 					var3 = var2 >> 10 & 0x1f;
 					var48 = var2 >> 5 & 0x1f;
 					var5 = var2 & 0x1f;
@@ -20412,8 +20412,8 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 79) {
-					var45 = Client.staticEncryptedStream3.readInt();
-					var2 = Client.staticEncryptedStream3.method370();
+					var45 = Client.inBuffer.readInt();
+					var2 = Client.inBuffer.method370();
 					if (var45 < -70000) {
 						var2 += '\u8000';
 					}
@@ -20424,15 +20424,15 @@ public class Static {
 						var47 = null;
 					}
 
-					for (; Client.staticEncryptedStream3.off < Client.staticInt190; staticMethod104(var2, var48, var5 - 1,
+					for (; Client.inBuffer.position < Client.staticInt190; staticMethod104(var2, var48, var5 - 1,
 							var6)) {
-						var48 = Client.staticEncryptedStream3.method379();
-						var5 = Client.staticEncryptedStream3.method370();
+						var48 = Client.inBuffer.method379();
+						var5 = Client.inBuffer.method370();
 						var6 = 0;
 						if (var5 != 0) {
-							var6 = Client.staticEncryptedStream3.method367();
+							var6 = Client.inBuffer.method367();
 							if (var6 == 255) {
-								var6 = Client.staticEncryptedStream3.readInt();
+								var6 = Client.inBuffer.readInt();
 							}
 						}
 
@@ -20453,9 +20453,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 56) {
-					var45 = Client.staticEncryptedStream3.method354();
-					var2 = Client.staticEncryptedStream3.method364();
-					var3 = Client.staticEncryptedStream3.method364();
+					var45 = Client.inBuffer.method354();
+					var2 = Client.inBuffer.method364();
+					var3 = Client.inBuffer.method364();
 					var4 = staticMethod8(var45);
 					if (var4.anInt302 != var3 || var4.anInt303 != var2 || var4.anInt299 != 0 || var4.anInt300 != 0) {
 						var4.anInt302 = var3;
@@ -20487,7 +20487,7 @@ public class Static {
 						+ staticString11;
 
 				for (var2 = 0; var2 < Client.staticInt190 && var2 < 50; var2++) {
-					var1 = var1 + Client.staticEncryptedStream3.buf[var2] + staticString11;
+					var1 = var1 + Client.inBuffer.buf[var2] + staticString11;
 				}
 
 				staticMethod285(var1, var581);
@@ -20577,12 +20577,12 @@ public class Static {
 	}
 
 	static final void staticMethod313(EncryptedStream var0, int var1) {
-		int var2 = var0.off;
+		int var2 = var0.position;
 		staticInt22 = 0;
 		staticMethod263(var0);
 		staticMethod44(var0);
-		if (var1 != var0.off - var2) {
-			throw new RuntimeException(var0.off - var2 + " " + var1);
+		if (var1 != var0.position - var2) {
+			throw new RuntimeException(var0.position - var2 + " " + var1);
 		}
 	}
 
@@ -20656,9 +20656,9 @@ public class Static {
 
 	static final void staticMethod316(String var0) {
 		if (Class43.staticNodeSub1Array1 != null) {
-			Client.staticEncryptedStream1.method471(214);
-			Client.staticEncryptedStream1.writeByte(staticMethod378(var0));
-			Client.staticEncryptedStream1.method323(var0);
+			Client.outBuffer.method471(214);
+			Client.outBuffer.writeByte(staticMethod378(var0));
+			Client.outBuffer.method323(var0);
 		}
 
 	}
@@ -21120,9 +21120,9 @@ public class Static {
 
 	static final void staticMethod279(String var0) {
 		if (!var0.equals("")) {
-			Client.staticEncryptedStream1.method471(164);
-			Client.staticEncryptedStream1.writeByte(staticMethod378(var0));
-			Client.staticEncryptedStream1.method323(var0);
+			Client.outBuffer.method471(164);
+			Client.outBuffer.writeByte(staticMethod378(var0));
+			Client.outBuffer.method323(var0);
 		}
 
 	}
@@ -21182,21 +21182,21 @@ public class Static {
 			if (var3 != null && var3 != AbstractClass2Sub1.staticPlayer1 && var3.aString40 != null
 					&& var3.aString40.equalsIgnoreCase(var1)) {
 				if (var0 == 1) {
-					Client.staticEncryptedStream1.method471(197);
-					Client.staticEncryptedStream1.method351(var5[var4]);
-					Client.staticEncryptedStream1.method343(0);
+					Client.outBuffer.method471(197);
+					Client.outBuffer.method351(var5[var4]);
+					Client.outBuffer.method343(0);
 				} else if (var0 == 4) {
-					Client.staticEncryptedStream1.method471(98);
-					Client.staticEncryptedStream1.method343(0);
-					Client.staticEncryptedStream1.method369(var5[var4]);
+					Client.outBuffer.method471(98);
+					Client.outBuffer.method343(0);
+					Client.outBuffer.method369(var5[var4]);
 				} else if (var0 == 6) {
-					Client.staticEncryptedStream1.method471(240);
-					Client.staticEncryptedStream1.method343(0);
-					Client.staticEncryptedStream1.method351(var5[var4]);
+					Client.outBuffer.method471(240);
+					Client.outBuffer.method343(0);
+					Client.outBuffer.method351(var5[var4]);
 				} else if (var0 == 7) {
-					Client.staticEncryptedStream1.method471(101);
-					Client.staticEncryptedStream1.method351(var5[var4]);
-					Client.staticEncryptedStream1.writeByte(0);
+					Client.outBuffer.method471(101);
+					Client.outBuffer.method351(var5[var4]);
+					Client.outBuffer.writeByte(0);
 				}
 
 				var6 = true;
@@ -21241,18 +21241,18 @@ public class Static {
 		int var15;
 		int var18;
 		if (Client.staticInt191 == 97) {
-			var14 = Client.staticEncryptedStream3.method355();
-			var2 = Client.staticEncryptedStream3.method353();
-			var3 = Client.staticEncryptedStream3.method370();
-			byte var29 = Client.staticEncryptedStream3.method350();
-			var4 = Client.staticEncryptedStream3.method353();
-			byte var31 = Client.staticEncryptedStream3.method368();
-			byte var35 = Client.staticEncryptedStream3.method368();
-			byte var37 = Client.staticEncryptedStream3.method349();
-			var10 = Client.staticEncryptedStream3.method346();
+			var14 = Client.inBuffer.method355();
+			var2 = Client.inBuffer.method353();
+			var3 = Client.inBuffer.method370();
+			byte var29 = Client.inBuffer.method350();
+			var4 = Client.inBuffer.method353();
+			byte var31 = Client.inBuffer.method368();
+			byte var35 = Client.inBuffer.method368();
+			byte var37 = Client.inBuffer.method349();
+			var10 = Client.inBuffer.method346();
 			var15 = staticInt122 + (var10 >> 4 & 0x7);
 			var18 = (var10 & 0x7) + ChatMessage.staticInt331;
-			var8 = Client.staticEncryptedStream3.method377();
+			var8 = Client.inBuffer.method377();
 			var9 = var8 >> 2;
 			int var36 = var8 & 0x3;
 			int var34 = Client.staticIntArray84[var9];
@@ -21318,12 +21318,12 @@ public class Static {
 		int var311;
 		int var32;
 		if (Client.staticInt191 == 29) {
-			var14 = Client.staticEncryptedStream3.method353();
-			var2 = Client.staticEncryptedStream3.method367();
+			var14 = Client.inBuffer.method353();
+			var2 = Client.inBuffer.method367();
 			var3 = var2 >> 2;
 			var32 = var2 & 0x3;
 			var4 = Client.staticIntArray84[var3];
-			var311 = Client.staticEncryptedStream3.method367();
+			var311 = Client.inBuffer.method367();
 			var291 = (var311 >> 4 & 0x7) + staticInt122;
 			var30 = ChatMessage.staticInt331 + (var311 & 0x7);
 			if (var291 >= 0 && var30 >= 0 && var291 < 103 && var30 < 103) {
@@ -21388,12 +21388,12 @@ public class Static {
 				}
 			}
 		} else if (Client.staticInt191 == 23) {
-			var14 = Client.staticEncryptedStream3.method367();
+			var14 = Client.inBuffer.method367();
 			var2 = staticInt122 + (var14 >> 4 & 0x7);
 			var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-			var32 = Client.staticEncryptedStream3.method370();
-			var4 = Client.staticEncryptedStream3.method370();
-			var311 = Client.staticEncryptedStream3.method370();
+			var32 = Client.inBuffer.method370();
+			var4 = Client.inBuffer.method370();
+			var311 = Client.inBuffer.method370();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 				Class39 var38 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 				if (var38 != null) {
@@ -21408,19 +21408,19 @@ public class Static {
 				}
 			}
 		} else if (Client.staticInt191 == 73) {
-			var14 = Client.staticEncryptedStream3.method367();
+			var14 = Client.inBuffer.method367();
 			var2 = (var14 >> 4 & 0x7) + staticInt122;
 			var3 = (var14 & 0x7) + ChatMessage.staticInt331;
-			var32 = var2 + Client.staticEncryptedStream3.readByte();
-			var4 = var3 + Client.staticEncryptedStream3.readByte();
-			var311 = Client.staticEncryptedStream3.method364();
-			var291 = Client.staticEncryptedStream3.method370();
-			var30 = Client.staticEncryptedStream3.method367() * 4;
-			var10 = Client.staticEncryptedStream3.method367() * 4;
-			var15 = Client.staticEncryptedStream3.method370();
-			var18 = Client.staticEncryptedStream3.method370();
-			var8 = Client.staticEncryptedStream3.method367();
-			var9 = Client.staticEncryptedStream3.method367();
+			var32 = var2 + Client.inBuffer.readByte();
+			var4 = var3 + Client.inBuffer.readByte();
+			var311 = Client.inBuffer.method364();
+			var291 = Client.inBuffer.method370();
+			var30 = Client.inBuffer.method367() * 4;
+			var10 = Client.inBuffer.method367() * 4;
+			var15 = Client.inBuffer.method370();
+			var18 = Client.inBuffer.method370();
+			var8 = Client.inBuffer.method367();
+			var9 = Client.inBuffer.method367();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104 && var32 >= 0 && var4 >= 0 && var32 < 104
 					&& var4 < 104 && var291 != '\uffff') {
 				var2 = var2 * 128 + 64;
@@ -21437,9 +21437,9 @@ public class Static {
 		} else {
 			Item var41;
 			if (Client.staticInt191 == 143) {
-				var14 = Client.staticEncryptedStream3.method353();
-				var2 = Client.staticEncryptedStream3.method355();
-				var3 = Client.staticEncryptedStream3.method377();
+				var14 = Client.inBuffer.method353();
+				var2 = Client.inBuffer.method355();
+				var3 = Client.inBuffer.method377();
 				var32 = (var3 >> 4 & 0x7) + staticInt122;
 				var4 = (var3 & 0x7) + ChatMessage.staticInt331;
 				if (var32 >= 0 && var4 >= 0 && var32 < 104 && var4 < 104) {
@@ -21454,12 +21454,12 @@ public class Static {
 					staticMethod262(var32, var4);
 				}
 			} else if (Client.staticInt191 == 117) {
-				var14 = Client.staticEncryptedStream3.method377();
+				var14 = Client.inBuffer.method377();
 				var2 = var14 >> 2;
 				var3 = var14 & 0x3;
 				var32 = Client.staticIntArray84[var2];
-				var4 = Client.staticEncryptedStream3.method355();
-				var311 = Client.staticEncryptedStream3.method377();
+				var4 = Client.inBuffer.method355();
+				var311 = Client.inBuffer.method377();
 				var291 = (var311 >> 4 & 0x7) + staticInt122;
 				var30 = ChatMessage.staticInt331 + (var311 & 0x7);
 				if (var291 >= 0 && var30 >= 0 && var291 < 104 && var30 < 104) {
@@ -21467,14 +21467,14 @@ public class Static {
 				}
 			} else {
 				if (Client.staticInt191 == 168) {
-					var14 = Client.staticEncryptedStream3.method367();
+					var14 = Client.inBuffer.method367();
 					var2 = staticInt122 + (var14 >> 4 & 0x7);
 					var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-					var32 = Client.staticEncryptedStream3.method370();
-					var4 = Client.staticEncryptedStream3.method367();
+					var32 = Client.inBuffer.method370();
+					var4 = Client.inBuffer.method367();
 					var311 = var4 >> 4 & 0xf;
 					var291 = var4 & 0x7;
-					var30 = Client.staticEncryptedStream3.method367();
+					var30 = Client.inBuffer.method367();
 					if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 						var10 = 1 + var311;
 						if (AbstractClass2Sub1.staticPlayer1.anIntArray127[0] >= var2 - var10
@@ -21494,12 +21494,12 @@ public class Static {
 
 				if (Client.staticInt191 != 251) {
 					if (Client.staticInt191 == 232) {
-						var14 = Client.staticEncryptedStream3.method367();
+						var14 = Client.inBuffer.method367();
 						var2 = staticInt122 + (var14 >> 4 & 0x7);
 						var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-						var32 = Client.staticEncryptedStream3.method370();
-						var4 = Client.staticEncryptedStream3.method367();
-						var311 = Client.staticEncryptedStream3.method370();
+						var32 = Client.inBuffer.method370();
+						var4 = Client.inBuffer.method367();
+						var311 = Client.inBuffer.method370();
 						if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 							var2 = 64 + var2 * 128;
 							var3 = var3 * 128 + 64;
@@ -21509,10 +21509,10 @@ public class Static {
 							Client.staticClass39_6.method198(var40);
 						}
 					} else if (Client.staticInt191 == 186) {
-						var14 = Client.staticEncryptedStream3.method377();
+						var14 = Client.inBuffer.method377();
 						var2 = staticInt122 + (var14 >> 4 & 0x7);
 						var3 = (var14 & 0x7) + ChatMessage.staticInt331;
-						var32 = Client.staticEncryptedStream3.method377();
+						var32 = Client.inBuffer.method377();
 						var4 = var32 >> 2;
 						var311 = var32 & 0x3;
 						var291 = Client.staticIntArray84[var4];
@@ -21521,10 +21521,10 @@ public class Static {
 						}
 					}
 				} else {
-					var14 = Client.staticEncryptedStream3.method348();
+					var14 = Client.inBuffer.method348();
 					var2 = staticInt122 + (var14 >> 4 & 0x7);
 					var3 = (var14 & 0x7) + ChatMessage.staticInt331;
-					var32 = Client.staticEncryptedStream3.method353();
+					var32 = Client.inBuffer.method353();
 					if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 						Class39 var42 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 						if (var42 != null) {
@@ -21567,73 +21567,73 @@ public class Static {
 
 			if (var71 && staticMethod89(staticMethod192(var5), var0 - 1)) {
 				if (var0 == 1) {
-					Client.staticEncryptedStream1.method471(168);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(168);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 2) {
-					Client.staticEncryptedStream1.method471(34);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(34);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 3) {
-					Client.staticEncryptedStream1.method471(86);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(86);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 4) {
-					Client.staticEncryptedStream1.method471(186);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(186);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 5) {
-					Client.staticEncryptedStream1.method471(103);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(103);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 6) {
-					Client.staticEncryptedStream1.method471(76);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(76);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 7) {
-					Client.staticEncryptedStream1.method471(185);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(185);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 8) {
-					Client.staticEncryptedStream1.method471(63);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(63);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 9) {
-					Client.staticEncryptedStream1.method471(148);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(148);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 
 				if (var0 == 10) {
-					Client.staticEncryptedStream1.method471(204);
-					Client.staticEncryptedStream1.writeInt(var1);
-					Client.staticEncryptedStream1.writeShort(var2);
-					Client.staticEncryptedStream1.writeShort(var3);
+					Client.outBuffer.method471(204);
+					Client.outBuffer.writeInt(var1);
+					Client.outBuffer.writeShort(var2);
+					Client.outBuffer.writeShort(var3);
 				}
 			}
 		}
@@ -21700,8 +21700,8 @@ public class Static {
 			}
 
 			if (var1 == 326) {
-				Client.staticEncryptedStream1.method471(23);
-				Client.staticClass49_1.method251(Client.staticEncryptedStream1);
+				Client.outBuffer.method471(23);
+				Client.staticClass49_1.method251(Client.outBuffer);
 				return true;
 			} else {
 				return false;
@@ -21717,7 +21717,7 @@ public class Static {
 			}
 
 			byte[] var3 = new byte[var5];
-			var0.off += staticClass47_1.method240(var0.buf, var0.off, var3, 0, var5);
+			var0.position += staticClass47_1.method240(var0.buf, var0.position, var3, 0, var5);
 			String var4 = staticMethod227(var3, 0, var5);
 			return var4;
 		} catch (Exception var51) {
@@ -22161,7 +22161,7 @@ public class Static {
 	public static void staticMethod348(EncryptedStream var0) {
 		NodeSub17 var1 = (NodeSub17) staticClass36_1.method160();
 		if (var1 != null) {
-			int var2 = var0.off;
+			int var2 = var0.position;
 			var0.writeInt(var1.anInt366);
 
 			for (int var3 = 0; var3 < var1.anInt367; var3++) {
@@ -22264,7 +22264,7 @@ public class Static {
 				var3.method325(var1.getPath());
 			}
 
-			var4.method88(var3.buf, 0, var3.off);
+			var4.method88(var3.buf, 0, var3.position);
 			var4.method86();
 		} catch (IOException var41) {
 			var41.printStackTrace();
@@ -22423,11 +22423,11 @@ public class Static {
 		for (int var0 = 0; var0 < Client.staticInt188; var0++) {
 			int var3 = Client.staticIntArray92[var0];
 			Npc var1 = Client.staticNpcArray1[var3];
-			int var5 = Client.staticEncryptedStream3.method367();
+			int var5 = Client.inBuffer.method367();
 			int var6;
 			if ((var5 & 0x20) != 0) {
-				var1.anInt596 = Client.staticEncryptedStream3.method355();
-				var6 = Client.staticEncryptedStream3.method362();
+				var1.anInt596 = Client.inBuffer.method355();
+				var6 = Client.inBuffer.method362();
 				var1.anInt620 = var6 >> 16;
 				var1.anInt619 = Client.staticInt166 + (var6 & 0xffff);
 				var1.anInt616 = 0;
@@ -22445,7 +22445,7 @@ public class Static {
 			int var4;
 			int var8;
 			if ((var5 & 0x4) != 0) {
-				var6 = Client.staticEncryptedStream3.method348();
+				var6 = Client.inBuffer.method348();
 				int var7;
 				int var9;
 				int var10;
@@ -22454,32 +22454,32 @@ public class Static {
 						var4 = -1;
 						var9 = -1;
 						var10 = -1;
-						var2 = Client.staticEncryptedStream3.method379();
+						var2 = Client.inBuffer.method379();
 						if (var2 == 32767) {
-							var2 = Client.staticEncryptedStream3.method379();
-							var9 = Client.staticEncryptedStream3.method379();
-							var4 = Client.staticEncryptedStream3.method379();
-							var10 = Client.staticEncryptedStream3.method379();
+							var2 = Client.inBuffer.method379();
+							var9 = Client.inBuffer.method379();
+							var4 = Client.inBuffer.method379();
+							var10 = Client.inBuffer.method379();
 						} else if (var2 != 32766) {
-							var9 = Client.staticEncryptedStream3.method379();
+							var9 = Client.inBuffer.method379();
 						} else {
 							var2 = -1;
 						}
 
-						var7 = Client.staticEncryptedStream3.method379();
+						var7 = Client.inBuffer.method379();
 						var1.method566(var2, var9, var4, var10, Client.staticInt166, var7);
 					}
 				}
 
-				var8 = Client.staticEncryptedStream3.method348();
+				var8 = Client.inBuffer.method348();
 				if (var8 > 0) {
 					for (var2 = 0; var2 < var8; var2++) {
-						var4 = Client.staticEncryptedStream3.method379();
-						var9 = Client.staticEncryptedStream3.method379();
+						var4 = Client.inBuffer.method379();
+						var9 = Client.inBuffer.method379();
 						if (var9 != 32767) {
-							var10 = Client.staticEncryptedStream3.method379();
-							var7 = Client.staticEncryptedStream3.method367();
-							int var11 = var9 > 0 ? Client.staticEncryptedStream3.method346() : var7;
+							var10 = Client.inBuffer.method379();
+							var7 = Client.inBuffer.method367();
+							int var11 = var9 > 0 ? Client.inBuffer.method346() : var7;
 							var1.method564(var4, Client.staticInt166, var9, var10, var7, var11);
 						} else {
 							var1.method563(var4);
@@ -22489,7 +22489,7 @@ public class Static {
 			}
 
 			if ((var5 & 0x1) != 0) {
-				var1.aNpcDef1 = staticMethod85(Client.staticEncryptedStream3.method372());
+				var1.aNpcDef1 = staticMethod85(Client.inBuffer.method372());
 				var1.anInt626 = var1.aNpcDef1.anInt538;
 				var1.anInt631 = var1.aNpcDef1.anInt549 * 494637525;
 				var1.anInt621 = var1.aNpcDef1.anInt550;
@@ -22502,12 +22502,12 @@ public class Static {
 			}
 
 			if ((var5 & 0x40) != 0) {
-				var6 = Client.staticEncryptedStream3.method355();
+				var6 = Client.inBuffer.method355();
 				if (var6 == '\uffff') {
 					var6 = -1;
 				}
 
-				var8 = Client.staticEncryptedStream3.method377();
+				var8 = Client.inBuffer.method377();
 				if (var1.anInt612 == var6 && var6 != -1) {
 					var2 = staticMethod210(var6).anInt568;
 					if (var2 == 1) {
@@ -22532,8 +22532,8 @@ public class Static {
 			}
 
 			if ((var5 & 0x2) != 0) {
-				var6 = Client.staticEncryptedStream3.method355();
-				var8 = Client.staticEncryptedStream3.method355();
+				var6 = Client.inBuffer.method355();
+				var8 = Client.inBuffer.method355();
 				var2 = var1.anInt628 - (var6 - NodeSub3.staticInt154 - NodeSub3.staticInt154) * 64;
 				var4 = var1.anInt591 - (var8 - Class34.staticInt75 - Class34.staticInt75) * 64;
 				if (var2 != 0 || var4 != 0) {
@@ -22542,14 +22542,14 @@ public class Static {
 			}
 
 			if ((var5 & 0x10) != 0) {
-				var1.anInt600 = Client.staticEncryptedStream3.method370();
+				var1.anInt600 = Client.inBuffer.method370();
 				if (var1.anInt600 == '\uffff') {
 					var1.anInt600 = -1;
 				}
 			}
 
 			if ((var5 & 0x8) != 0) {
-				var1.aString39 = Client.staticEncryptedStream3.method365();
+				var1.aString39 = Client.inBuffer.method365();
 				var1.anInt601 = 100;
 			}
 		}
@@ -22773,20 +22773,20 @@ public class Static {
 								var19 = staticMethod388(var15);
 							}
 
-							Client.staticEncryptedStream1.method471(189);
-							Client.staticEncryptedStream1.writeInt(var19);
+							Client.outBuffer.method471(189);
+							Client.outBuffer.writeInt(var19);
 							var8 = 1;
 						} else if (var0 == 3105) {
 							var15 = staticStringArray1[--staticInt148];
-							Client.staticEncryptedStream1.method471(37);
-							Client.staticEncryptedStream1.writeByte(var15.length() + 1);
-							Client.staticEncryptedStream1.method323(var15);
+							Client.outBuffer.method471(37);
+							Client.outBuffer.writeByte(var15.length() + 1);
+							Client.outBuffer.method323(var15);
 							var8 = 1;
 						} else if (var0 == 3106) {
 							var15 = staticStringArray1[--staticInt148];
-							Client.staticEncryptedStream1.method471(128);
-							Client.staticEncryptedStream1.writeByte(var15.length() + 1);
-							Client.staticEncryptedStream1.method323(var15);
+							Client.outBuffer.method471(128);
+							Client.outBuffer.writeByte(var15.length() + 1);
+							Client.outBuffer.method323(var15);
 							var8 = 1;
 						} else if (var0 == 3107) {
 							var14 = staticIntArray16[--staticInt27];
@@ -22828,8 +22828,8 @@ public class Static {
 								var8 = 1;
 							} else if (var0 == 3115) {
 								var14 = staticIntArray16[--staticInt27];
-								Client.staticEncryptedStream1.method471(92);
-								Client.staticEncryptedStream1.writeShort(var14);
+								Client.outBuffer.method471(92);
+								Client.outBuffer.writeShort(var14);
 								var8 = 1;
 							} else if (var0 == 3116) {
 								var14 = staticIntArray16[--staticInt27];
@@ -22841,12 +22841,12 @@ public class Static {
 								} else if (var17.length() > 500) {
 									var8 = 1;
 								} else {
-									Client.staticEncryptedStream1.method471(136);
-									Client.staticEncryptedStream1
+									Client.outBuffer.method471(136);
+									Client.outBuffer
 											.writeShort(1 + staticMethod378(var23) + staticMethod378(var17));
-									Client.staticEncryptedStream1.method323(var17);
-									Client.staticEncryptedStream1.method343(var14);
-									Client.staticEncryptedStream1.method323(var23);
+									Client.outBuffer.method323(var17);
+									Client.outBuffer.method343(var14);
+									Client.outBuffer.method323(var23);
 									var8 = 1;
 								}
 							} else if (var0 == 3117) {
@@ -23156,21 +23156,21 @@ public class Static {
 									}
 
 									Client.staticInt291 = staticIntArray16[2 + staticInt27];
-									Client.staticEncryptedStream1.method471(2);
-									Client.staticEncryptedStream1.writeByte(Client.staticInt160);
-									Client.staticEncryptedStream1.writeByte(staticClass55_1.anInt207);
-									Client.staticEncryptedStream1.writeByte(Client.staticInt291);
+									Client.outBuffer.method471(2);
+									Client.outBuffer.writeByte(Client.staticInt160);
+									Client.outBuffer.writeByte(staticClass55_1.anInt207);
+									Client.outBuffer.writeByte(Client.staticInt291);
 									var8 = 1;
 								} else if (var0 == 5002) {
 									var15 = staticStringArray1[--staticInt148];
 									staticInt27 -= 2;
 									var19 = staticIntArray16[staticInt27];
 									var4 = staticIntArray16[staticInt27 + 1];
-									Client.staticEncryptedStream1.method471(195);
-									Client.staticEncryptedStream1.writeByte(staticMethod378(var15) + 2);
-									Client.staticEncryptedStream1.method323(var15);
-									Client.staticEncryptedStream1.writeByte(var19 - 1);
-									Client.staticEncryptedStream1.writeByte(var4);
+									Client.outBuffer.method471(195);
+									Client.outBuffer.writeByte(staticMethod378(var15) + 2);
+									Client.outBuffer.method323(var15);
+									Client.outBuffer.writeByte(var19 - 1);
+									Client.outBuffer.writeByte(var4);
 									var8 = 1;
 								} else {
 									ChatMessage var29;
@@ -23344,35 +23344,35 @@ public class Static {
 											}
 										}
 
-										Client.staticEncryptedStream1.method471(79);
-										Client.staticEncryptedStream1.writeByte(0);
-										var7 = Client.staticEncryptedStream1.off;
-										Client.staticEncryptedStream1.writeByte(var19);
-										Client.staticEncryptedStream1.writeByte(var301);
-										Client.staticEncryptedStream1.writeByte(var311);
-										EncryptedStream var10 = Client.staticEncryptedStream1;
-										var11 = var10.off;
+										Client.outBuffer.method471(79);
+										Client.outBuffer.writeByte(0);
+										var7 = Client.outBuffer.position;
+										Client.outBuffer.writeByte(var19);
+										Client.outBuffer.writeByte(var301);
+										Client.outBuffer.writeByte(var311);
+										EncryptedStream var10 = Client.outBuffer;
+										var11 = var10.position;
 										byte[] var12 = staticMethod340(var15);
 										var10.method328(var12.length);
-										var10.off += staticClass47_1.method239(var12, 0, var12.length, var10.buf,
-												var10.off);
-										Client.staticEncryptedStream1.method327(Client.staticEncryptedStream1.off - var7);
+										var10.position += staticClass47_1.method239(var12, 0, var12.length, var10.buf,
+												var10.position);
+										Client.outBuffer.method327(Client.outBuffer.position - var7);
 										var8 = 1;
 									} else if (var0 == 5009) {
 										staticInt148 -= 2;
 										var15 = staticStringArray1[staticInt148];
 										var23 = staticStringArray1[staticInt148 + 1];
-										Client.staticEncryptedStream1.method471(169);
-										Client.staticEncryptedStream1.writeShort(0);
-										var4 = Client.staticEncryptedStream1.off;
-										Client.staticEncryptedStream1.method323(var15);
-										EncryptedStream var38 = Client.staticEncryptedStream1;
-										var30 = var38.off;
+										Client.outBuffer.method471(169);
+										Client.outBuffer.writeShort(0);
+										var4 = Client.outBuffer.position;
+										Client.outBuffer.method323(var15);
+										EncryptedStream var38 = Client.outBuffer;
+										var30 = var38.position;
 										byte[] var35 = staticMethod340(var23);
 										var38.method328(var35.length);
-										var38.off += staticClass47_1.method239(var35, 0, var35.length, var38.buf,
-												var38.off);
-										Client.staticEncryptedStream1.method371(Client.staticEncryptedStream1.off - var4);
+										var38.position += staticClass47_1.method239(var35, 0, var35.length, var38.buf,
+												var38.position);
+										Client.outBuffer.method371(Client.outBuffer.position - var4);
 										var8 = 1;
 									} else if (var0 == 5015) {
 										if (AbstractClass2Sub1.staticPlayer1 != null
@@ -25455,7 +25455,7 @@ public class Static {
 
 	static void staticMethod373(Js5IndexImpl var0, int var1) {
 		if (Class55.staticStream4 != null) {
-			Class55.staticStream4.off = 5 + var1 * 8;
+			Class55.staticStream4.position = 5 + var1 * 8;
 			int var3 = Class55.staticStream4.readInt();
 			int var2 = Class55.staticStream4.readInt();
 			var0.method396(var3, var2);
@@ -25478,14 +25478,14 @@ public class Static {
 
 	static void staticMethod385(byte[] var0) {
 		Stream var1 = new Stream(var0);
-		var1.off = var0.length - 2;
+		var1.position = var0.length - 2;
 		staticInt143 = var1.method370();
 		NodeSub20.staticIntArray126 = new int[staticInt143];
 		staticIntArray69 = new int[staticInt143];
 		staticIntArray72 = new int[staticInt143];
 		staticIntArray71 = new int[staticInt143];
 		CanvasSub1.staticByteArrayArray2 = new byte[staticInt143][];
-		var1.off = var0.length - 7 - staticInt143 * 8;
+		var1.position = var0.length - 7 - staticInt143 * 8;
 		staticInt139 = var1.method370();
 		staticInt142 = var1.method370();
 		int var7 = (var1.method367() & 0xff) + 1;
@@ -25507,7 +25507,7 @@ public class Static {
 			staticIntArray71[var3] = var1.method370();
 		}
 
-		var1.off = var0.length - 7 - staticInt143 * 8 - (var7 - 1) * 3;
+		var1.position = var0.length - 7 - staticInt143 * 8 - (var7 - 1) * 3;
 		staticIntArray73 = new int[var7];
 
 		for (var3 = 1; var3 < var7; var3++) {
@@ -25517,7 +25517,7 @@ public class Static {
 			}
 		}
 
-		var1.off = 0;
+		var1.position = 0;
 
 		for (var3 = 0; var3 < staticInt143; var3++) {
 			int var5 = staticIntArray72[var3];
@@ -25563,7 +25563,7 @@ public class Static {
 			}
 
 			if (var0 != 20 && var0 != 40 && staticConnection1 != null) {
-				staticConnection1.method150();
+				staticConnection1.shutdown();
 				staticConnection1 = null;
 			}
 
@@ -30727,7 +30727,7 @@ public class Static {
 	static String staticString6;
 	static String staticString7;
 	static String staticString2;
-	static Class28 staticClass28_1;
+	static Class28 blockType;	
 	static int staticInt15;
 	static boolean staticBool3;
 	static String staticString8;
@@ -31071,7 +31071,7 @@ public class Static {
 		staticString6 = "";
 		staticString2 = "";
 		staticString7 = "";
-		staticClass28_1 = Class28.staticClass28_4;
+		blockType = Class28.staticClass28_4;
 		staticBool3 = true;
 		staticInt15 = 0;
 		staticString8 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:\'@#~,<.>/?\\| ";

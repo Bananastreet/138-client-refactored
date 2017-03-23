@@ -87,11 +87,11 @@ public class NodeSub11 extends Node {
 	}
 
 	NodeSub11(Stream var1) {
-		var1.off = var1.buf.length - 3;
+		var1.position = var1.buf.length - 3;
 		int var6 = var1.method367();
 		int var5 = var1.method370();
 		int var7 = 14 + var6 * 10;
-		var1.off = 0;
+		var1.position = 0;
 		int var8 = 0;
 		int var9 = 0;
 		int var10 = 0;
@@ -145,15 +145,15 @@ public class NodeSub11 extends Node {
 		var7 += var8 * 5;
 		var7 += (var10 + var18 + var9 + var27 + var14) * 2;
 		var7 += var23 + var15;
-		var12 = var1.off;
+		var12 = var1.position;
 		var13 = var6 + var8 + var9 + var10 + var18 + var27 + var23 + var14 + var15;
 
 		for (var16 = 0; var16 < var13; var16++) {
 			var1.method339();
 		}
 
-		var7 += var1.off - var12;
-		var16 = var1.off;
+		var7 += var1.position - var12;
+		var16 = var1.position;
 		int var22 = 0;
 		int var17 = 0;
 		int var29 = 0;
@@ -203,48 +203,48 @@ public class NodeSub11 extends Node {
 		}
 
 		var38 = 0;
-		int var43 = var1.off;
-		var1.off += var36;
-		int var46 = var1.off;
-		var1.off += var14;
-		int var44 = var1.off;
-		var1.off += var23;
-		int var49 = var1.off;
-		var1.off += var27;
-		int var66 = var1.off;
-		var1.off += var22;
-		int var50 = var1.off;
-		var1.off += var29;
-		int var51 = var1.off;
-		var1.off += var31;
-		int var59 = var1.off;
-		var1.off += var10 + var18 + var14;
-		int var52 = var1.off;
-		var1.off += var10;
-		int var20 = var1.off;
-		var1.off += var37;
-		int var34 = var1.off;
-		var1.off += var18;
-		int var53 = var1.off;
-		var1.off += var17;
-		int var54 = var1.off;
-		var1.off += var30;
-		int var58 = var1.off;
-		var1.off += var32;
-		int var55 = var1.off;
-		var1.off += var15;
-		int var39 = var1.off;
-		var1.off += var27;
-		int var48 = var1.off;
-		var1.off += var42;
-		int var56 = var1.off;
-		var1.off += var19;
-		int var28 = var1.off;
-		var1.off += var26;
-		int var57 = var1.off;
-		var1.off += var35;
-		int var3 = var1.off;
-		var1.off += var8 * 3;
+		int var43 = var1.position;
+		var1.position += var36;
+		int var46 = var1.position;
+		var1.position += var14;
+		int var44 = var1.position;
+		var1.position += var23;
+		int var49 = var1.position;
+		var1.position += var27;
+		int var66 = var1.position;
+		var1.position += var22;
+		int var50 = var1.position;
+		var1.position += var29;
+		int var51 = var1.position;
+		var1.position += var31;
+		int var59 = var1.position;
+		var1.position += var10 + var18 + var14;
+		int var52 = var1.position;
+		var1.position += var10;
+		int var20 = var1.position;
+		var1.position += var37;
+		int var34 = var1.position;
+		var1.position += var18;
+		int var53 = var1.position;
+		var1.position += var17;
+		int var54 = var1.position;
+		var1.position += var30;
+		int var58 = var1.position;
+		var1.position += var32;
+		int var55 = var1.position;
+		var1.position += var15;
+		int var39 = var1.position;
+		var1.position += var27;
+		int var48 = var1.position;
+		var1.position += var42;
+		int var56 = var1.position;
+		var1.position += var19;
+		int var28 = var1.position;
+		var1.position += var26;
+		int var57 = var1.position;
+		var1.position += var35;
+		int var3 = var1.position;
+		var1.position += var8 * 3;
 		aByteArray17 = new byte[var7];
 		Stream var2 = new Stream(aByteArray17);
 		var2.writeInt(1297377380);
@@ -252,7 +252,7 @@ public class NodeSub11 extends Node {
 		var2.writeShort(var6 > 1 ? 1 : 0);
 		var2.writeShort(var6);
 		var2.writeShort(var5);
-		var1.off = var12;
+		var1.position = var12;
 		int var24 = 0;
 		int var64 = 0;
 		int var61 = 0;
@@ -265,8 +265,8 @@ public class NodeSub11 extends Node {
 
 		label221: for (int var41 = 0; var41 < var6; var41++) {
 			var2.writeInt(1297379947);
-			var2.off += 4;
-			int var47 = var2.off;
+			var2.position += 4;
+			int var47 = var2.position;
 			int var11 = -1;
 
 			while (true) {
@@ -283,7 +283,7 @@ public class NodeSub11 extends Node {
 
 						var2.writeByte(47);
 						var2.writeByte(0);
-						var2.method375(var2.off - var47);
+						var2.method375(var2.position - var47);
 						continue label221;
 					}
 

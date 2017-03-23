@@ -92,7 +92,7 @@ public final class Connection implements Runnable {
 
 	}
 
-	public void method150() {
+	public void shutdown() {		
 		if (!aBool11) {
 			synchronized (this) {
 				aBool11 = true;
@@ -119,7 +119,7 @@ public final class Connection implements Runnable {
 	}
 
 	protected void finalize() {
-		method150();
+		shutdown();
 	}
 
 	public Connection(Socket var1, TaskManager var2) throws IOException {
@@ -137,7 +137,7 @@ public final class Connection implements Runnable {
 		return aBool11 ? 0 : anInputStream1.available();
 	}
 
-	public void method151(byte[] var1, int var2, int var3) throws IOException {
+	public void write(byte[] var1, int var2, int var3) throws IOException {		
 		if (!aBool11) {
 			if (aBool12) {
 				aBool12 = false;

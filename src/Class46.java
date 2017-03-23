@@ -29,7 +29,7 @@ public class Class46 {
 
 	void method223(byte[] var1) {
 		aStream1.buf = var1;
-		aStream1.off = 10;
+		aStream1.position = 10;
 		int var4 = aStream1.method370();
 		anInt190 = aStream1.method370();
 		anInt189 = 500000;
@@ -37,11 +37,11 @@ public class Class46 {
 
 		int var2;
 		int var3;
-		for (var3 = 0; var3 < var4; aStream1.off += var2) {
+		for (var3 = 0; var3 < var4; aStream1.position += var2) {
 			int var5 = aStream1.readInt();
 			var2 = aStream1.readInt();
 			if (var5 == 1297379947) {
-				anIntArray43[var3] = aStream1.off;
+				anIntArray43[var3] = aStream1.position;
 				++var3;
 			}
 		}
@@ -71,11 +71,11 @@ public class Class46 {
 	}
 
 	void method226(int var1) {
-		aStream1.off = anIntArray40[var1];
+		aStream1.position = anIntArray40[var1];
 	}
 
 	void method227(int var1) {
-		anIntArray40[var1] = aStream1.off;
+		anIntArray40[var1] = aStream1.position;
 	}
 
 	int method228(int var1) {
@@ -84,12 +84,12 @@ public class Class46 {
 	}
 
 	int method229(int var1) {
-		byte var2 = aStream1.buf[aStream1.off];
+		byte var2 = aStream1.buf[aStream1.position];
 		int var5;
 		if (var2 < 0) {
 			var5 = var2 & 0xff;
 			anIntArray42[var1] = var5;
-			++aStream1.off;
+			++aStream1.position;
 		} else {
 			var5 = anIntArray42[var1];
 		}
@@ -99,16 +99,16 @@ public class Class46 {
 		} else {
 			int var3 = aStream1.method339();
 			if (var5 == 247 && var3 > 0) {
-				int var4 = aStream1.buf[aStream1.off] & 0xff;
+				int var4 = aStream1.buf[aStream1.position] & 0xff;
 				if (var4 >= 241 && var4 <= 243 || var4 == 246 || var4 == 248 || var4 >= 250 && var4 <= 252
 						|| var4 == 254) {
-					++aStream1.off;
+					++aStream1.position;
 					anIntArray42[var1] = var4;
 					return method230(var1, var4);
 				}
 			}
 
-			aStream1.off += var3;
+			aStream1.position += var3;
 			return 0;
 		}
 	}
@@ -119,7 +119,7 @@ public class Class46 {
 			int var41 = aStream1.method367();
 			var3 = aStream1.method339();
 			if (var41 == 47) {
-				aStream1.off += var3;
+				aStream1.position += var3;
 				return 1;
 			} else if (var41 == 81) {
 				int var5 = aStream1.readTriByte();
@@ -127,10 +127,10 @@ public class Class46 {
 				int var6 = anIntArray41[var1];
 				aLong15 += (long) var6 * (long) (anInt189 - var5);
 				anInt189 = var5;
-				aStream1.off += var3;
+				aStream1.position += var3;
 				return 2;
 			} else {
-				aStream1.off += var3;
+				aStream1.position += var3;
 				return 3;
 			}
 		} else {
@@ -180,7 +180,7 @@ public class Class46 {
 	}
 
 	void method234() {
-		aStream1.off = -1;
+		aStream1.position = -1;
 	}
 
 	Class46() {
@@ -197,9 +197,9 @@ public class Class46 {
 		for (int var3 = 0; var3 < var4; var3++) {
 			anIntArray41[var3] = 0;
 			anIntArray42[var3] = 0;
-			aStream1.off = anIntArray43[var3];
+			aStream1.position = anIntArray43[var3];
 			method225(var3);
-			anIntArray40[var3] = aStream1.off;
+			anIntArray40[var3] = aStream1.position;
 		}
 
 	}
