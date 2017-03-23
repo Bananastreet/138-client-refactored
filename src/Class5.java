@@ -205,7 +205,7 @@ public class Class5 {
 						}
 
 						var9 = var231.method370();
-						String var10 = var231.method365();
+						String var10 = var231.readString();
 						if (aBoolArray2[var9]) {
 							aStringArray1[var9] = var10;
 						}

@@ -90,11 +90,12 @@ public class ItemDefinition extends Cacheable {
 		}
 	}
 
+	// TODO item def decode
 	void method488(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			anInt441 = var1.method370();
 		} else if (var2 == 2) {
-			aString31 = var1.method365();
+			aString31 = var1.readString();
 		} else if (var2 == 4) {
 			anInt444 = var1.method370();
 		} else if (var2 == 5) {
@@ -128,12 +129,12 @@ public class ItemDefinition extends Cacheable {
 		} else if (var2 == 26) {
 			anInt449 = var1.method370();
 		} else if (var2 >= 30 && var2 < 35) {
-			aStringArray7[var2 - 30] = var1.method365();
+			aStringArray7[var2 - 30] = var1.readString();
 			if (aStringArray7[var2 - 30].equalsIgnoreCase("Hidden")) {
 				aStringArray7[var2 - 30] = null;
 			}
 		} else if (var2 >= 35 && var2 < 40) {
-			aStringArray6[var2 - 35] = var1.method365();
+			aStringArray6[var2 - 35] = var1.readString();
 		} else {
 			int var3;
 			int var4;

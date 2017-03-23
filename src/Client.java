@@ -49,7 +49,7 @@ public final class Client extends GameShell {
 	static int loginStage;	
 	static int staticInt262;
 	static int staticInt302;
-	static int staticInt184;
+	static int transferTime;	
 	static byte[] staticByteArray6;
 	static Npc[] staticNpcArray1;
 	static int staticInt186;
@@ -134,7 +134,7 @@ public final class Client extends GameShell {
 	static int staticInt244;
 	static int staticInt245;
 	static Player[] staticPlayerArray1;
-	static int staticInt246;
+	static int myPlayerIndex;	
 	static int staticInt289;
 	static int staticInt247;
 	static int[] staticIntArray93;
@@ -180,7 +180,7 @@ public final class Client extends GameShell {
 	static Widget staticWidget6;
 	static int staticInt267;
 	static int staticInt232;
-	static int staticInt268;
+	static int myRights;	
 	static int staticInt269;
 	static boolean staticBool33;
 	static boolean staticBool40;
@@ -310,7 +310,7 @@ public final class Client extends GameShell {
 		loginStage = 0;
 		staticInt262 = 0;
 		staticInt302 = 0;
-		staticInt184 = 0;
+		transferTime = 0;
 		staticByteArray6 = null;
 		staticNpcArray1 = new Npc['\u8000'];
 		staticInt186 = 0;
@@ -395,7 +395,7 @@ public final class Client extends GameShell {
 		staticInt244 = 0;
 		staticInt245 = 0;
 		staticPlayerArray1 = new Player[2048];
-		staticInt246 = -1;
+		myPlayerIndex = -1;
 		staticInt289 = 0;
 		staticInt247 = 0;
 		staticIntArray93 = new int[1000];
@@ -441,7 +441,7 @@ public final class Client extends GameShell {
 		staticWidget6 = null;
 		staticInt267 = 0;
 		staticInt232 = 0;
-		staticInt268 = 0;
+		myRights = 0;
 		staticInt269 = 1;
 		staticBool33 = false;
 		staticBool40 = false;
@@ -1179,7 +1179,7 @@ public final class Client extends GameShell {
 									var8 = var23;
 								}
 
-								Static.staticConnection2.method153(Static.staticStream3.buf, Static.staticStream3.position,
+								Static.staticConnection2.read(Static.staticStream3.buf, Static.staticStream3.position,
 										var8);
 								if (Static.staticByte2 != 0) {
 									for (var9 = 0; var9 < var8; var9++) {
@@ -1238,7 +1238,7 @@ public final class Client extends GameShell {
 									var9 = var23;
 								}
 
-								Static.staticConnection2.method153(BufferedFile.staticStream2.buf,
+								Static.staticConnection2.read(BufferedFile.staticStream2.buf,
 										BufferedFile.staticStream2.position, var9);
 								if (Static.staticByte2 != 0) {
 									for (var10 = 0; var10 < var9; var10++) {
@@ -1413,7 +1413,7 @@ public final class Client extends GameShell {
 						staticInt309 = Integer.parseInt(var14);
 						break;
 					case 12:
-						NodeSub19.staticInt319 = Integer.parseInt(var14);
+						NodeSub19.sessionId = Integer.parseInt(var14);
 						break;
 					case 13:
 						staticInt201 = Integer.parseInt(var14);
@@ -1911,7 +1911,7 @@ public final class Client extends GameShell {
 								return;
 							}
 						} else {
-							int var3 = Item.staticConnection4.method152();
+							int var3 = Item.staticConnection4.read();
 							if (var3 != 0) {
 								method312(var3);
 								return;

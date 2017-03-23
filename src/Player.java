@@ -106,7 +106,7 @@ public final class Player extends Actor {
 			anInt607 = -1;
 		}
 
-		aString40 = var1.method365();
+		aString40 = var1.readString();
 		if (AbstractClass2Sub1.staticPlayer1 == this) {
 			RuntimeExceptionSub1.staticString22 = aString40;
 		}
@@ -114,7 +114,7 @@ public final class Player extends Actor {
 		anInt685 = var1.method367();
 		anInt691 = var1.method370();
 		aBool81 = var1.method367() == 1;
-		if (Client.staticInt207 == 0 && Client.staticInt268 >= 2) {
+		if (Client.staticInt207 == 0 && Client.myRights >= 2) {
 			aBool81 = false;
 		}
 

@@ -16,8 +16,8 @@ public class Class23 {
 	}
 
 	Class23(ByteBuf var1, byte var2, int var3) {
-		aString7 = var1.method365();
-		aString6 = var1.method365();
+		aString7 = var1.readString();
+		aString6 = var1.readString();
 		anInt66 = var1.method370();
 		aLong14 = var1.readLong();
 		int var4 = var1.readInt();

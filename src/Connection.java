@@ -167,11 +167,11 @@ public final class Connection implements Runnable {
 
 	}
 
-	public int method152() throws IOException {
+	public int read() throws IOException {		
 		return aBool11 ? 0 : anInputStream1.read();
 	}
 
-	public void method153(byte[] var1, int var2, int var3) throws IOException {
+	public void read(byte[] var1, int var2, int var3) throws IOException {		
 		if (!aBool11) {
 			while (var3 > 0) {
 				int var4 = anInputStream1.read(var1, var2, var3);

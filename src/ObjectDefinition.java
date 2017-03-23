@@ -52,6 +52,7 @@ public class ObjectDefinition extends Cacheable {
 	public int[] anIntArray109;
 	public int[] anIntArray111;
 
+	// TODO obj def decode
 	void method509(ByteBuf var1, int var2) {
 		int var3;
 		int var4;
@@ -71,7 +72,7 @@ public class ObjectDefinition extends Cacheable {
 				}
 			}
 		} else if (var2 == 2) {
-			aString33 = var1.method365();
+			aString33 = var1.readString();
 		} else if (var2 == 5) {
 			var4 = var1.method367();
 			if (var4 > 0) {
@@ -117,7 +118,7 @@ public class ObjectDefinition extends Cacheable {
 		} else if (var2 == 39) {
 			anInt484 = var1.readByte() * 25;
 		} else if (var2 >= 30 && var2 < 35) {
-			aStringArray8[var2 - 30] = var1.method365();
+			aStringArray8[var2 - 30] = var1.readString();
 			if (aStringArray8[var2 - 30].equalsIgnoreCase("Hidden")) {
 				aStringArray8[var2 - 30] = null;
 			}

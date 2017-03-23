@@ -27,7 +27,7 @@ public final class BitBuf extends ByteBuf {
 		anInt428 = position * 8;
 	}
 
-	public void method476(int[] var1) {
+	public void setRandom(int[] var1) {		
 		anIsaac1 = new Isaac(var1);
 	}
 

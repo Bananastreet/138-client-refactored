@@ -20,7 +20,7 @@ public class ClientScriptMap extends Cacheable {
 		} else if (var2 == 2) {
 			aChar2 = (char) var1.method367();
 		} else if (var2 == 3) {
-			aString34 = var1.method365();
+			aString34 = var1.readString();
 		} else if (var2 == 4) {
 			anInt523 = var1.readInt();
 		} else {
@@ -32,7 +32,7 @@ public class ClientScriptMap extends Cacheable {
 
 				for (var3 = 0; var3 < anInt524; var3++) {
 					anIntArray112[var3] = var1.readInt();
-					aStringArray9[var3] = var1.method365();
+					aStringArray9[var3] = var1.readString();
 				}
 			} else if (var2 == 6) {
 				anInt524 = var1.method370();

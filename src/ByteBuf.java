@@ -207,7 +207,7 @@ public class ByteBuf extends Node {
 			++position;
 			return null;
 		} else {
-			return method365();
+			return readString();
 		}
 	}
 
@@ -315,7 +315,7 @@ public class ByteBuf extends Node {
 		}
 	}
 
-	public void method341(int[] var1, int var2, int var3) {
+	public void encryptXTEA(int[] var1, int var2, int var3) {		
 		int var4 = position;
 		position = var2;
 		int var6 = (var3 - var2) / 8;
@@ -515,7 +515,7 @@ public class ByteBuf extends Node {
 		return var1;
 	}
 
-	public String method365() {
+	public String readString() {		
 		int var1 = position;
 
 		while (buf[position++] != 0) {

@@ -203,6 +203,7 @@ public class NpcDefinition extends Cacheable {
 	void method545() {
 	}
 
+	//TODO npc def decode
 	void method546(ByteBuf var1, int var2) {
 		int var3;
 		int var4;
@@ -214,7 +215,7 @@ public class NpcDefinition extends Cacheable {
 				anIntArray114[var4] = var1.method370();
 			}
 		} else if (var2 == 2) {
-			aString35 = var1.method365();
+			aString35 = var1.readString();
 		} else if (var2 == 12) {
 			anInt538 = var1.method367();
 		} else if (var2 == 13) {
@@ -231,7 +232,7 @@ public class NpcDefinition extends Cacheable {
 			anInt536 = var1.method370();
 			anInt542 = -var1.method370();
 		} else if (var2 >= 30 && var2 < 35) {
-			aStringArray10[var2 - 30] = var1.method365();
+			aStringArray10[var2 - 30] = var1.readString();
 			if (aStringArray10[var2 - 30].equalsIgnoreCase("Hidden")) {
 				aStringArray10[var2 - 30] = null;
 			}

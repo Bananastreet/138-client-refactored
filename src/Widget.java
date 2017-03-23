@@ -237,7 +237,7 @@ public class Widget extends Node {
 				if (var5 == 0) {
 					var4[var3] = new Integer(var1.readInt());
 				} else if (var5 == 1) {
-					var4[var3] = var1.method365();
+					var4[var3] = var1.readString();
 				}
 			}
 
@@ -593,7 +593,7 @@ public class Widget extends Node {
 			aStringArray3 = new String[5];
 
 			for (var7 = 0; var7 < 5; var7++) {
-				String var111 = var1.method365();
+				String var111 = var1.readString();
 				if (var111.length() > 0) {
 					aStringArray3[var7] = var111;
 					anInt343 |= 1 << 23 + var7;
@@ -618,8 +618,8 @@ public class Widget extends Node {
 		}
 
 		if (anInt296 == 4) {
-			aString20 = var1.method365();
-			aString19 = var1.method365();
+			aString20 = var1.readString();
+			aString19 = var1.readString();
 		}
 
 		if (anInt296 == 1 || anInt296 == 3 || anInt296 == 4) {
@@ -686,7 +686,7 @@ public class Widget extends Node {
 			aStringArray3 = new String[5];
 
 			for (var3 = 0; var3 < 5; var3++) {
-				String var101 = var1.method365();
+				String var101 = var1.readString();
 				if (var101.length() > 0) {
 					aStringArray3[var3] = var101;
 					anInt343 |= 1 << 23 + var3;
@@ -695,18 +695,18 @@ public class Widget extends Node {
 		}
 
 		if (anInt296 == 8) {
-			aString20 = var1.method365();
+			aString20 = var1.readString();
 		}
 
 		if (anInt331 == 2 || anInt296 == 2) {
-			aString22 = var1.method365();
-			aString23 = var1.method365();
+			aString22 = var1.readString();
+			aString23 = var1.readString();
 			var2 = var1.method370() & 0x3f;
 			anInt343 |= var2 << 11;
 		}
 
 		if (anInt331 == 1 || anInt331 == 4 || anInt331 == 5 || anInt331 == 6) {
-			aString18 = var1.method365();
+			aString18 = var1.readString();
 			if (aString18.length() == 0) {
 				if (anInt331 == 1) {
 					aString18 = "Ok";
@@ -814,7 +814,7 @@ public class Widget extends Node {
 				anInt347 = -1;
 			}
 
-			aString20 = var1.method365();
+			aString20 = var1.readString();
 			anInt338 = var1.method367();
 			anInt339 = var1.method367();
 			anInt340 = var1.method367();
@@ -835,20 +835,20 @@ public class Widget extends Node {
 		}
 
 		anInt343 = var1.readTriByte();
-		aString21 = var1.method365();
+		aString21 = var1.readString();
 		int var3 = var1.method367();
 		if (var3 > 0) {
 			aStringArray4 = new String[var3];
 
 			for (int var2 = 0; var2 < var3; var2++) {
-				aStringArray4[var2] = var1.method365();
+				aStringArray4[var2] = var1.readString();
 			}
 		}
 
 		anInt345 = var1.method367();
 		anInt316 = var1.method367();
 		aBool41 = var1.method367() == 1;
-		aString22 = var1.method365();
+		aString22 = var1.readString();
 		anObjectArray4 = method385(var1);
 		anObjectArray7 = method385(var1);
 		anObjectArray9 = method385(var1);
