@@ -9,7 +9,7 @@ import java.awt.image.ImageObserver;
 import java.awt.image.ImageProducer;
 import java.util.Hashtable;
 
-public final class GraphicsBufferSub1 extends GraphicsBuffer implements ImageProducer, ImageObserver {
+public final class ProducingGraphicsBuffer extends GraphicsBuffer implements ImageProducer, ImageObserver {
 
 	static int staticInt316;
 	ColorModel aColorModel1;

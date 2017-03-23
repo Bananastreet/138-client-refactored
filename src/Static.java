@@ -3079,7 +3079,7 @@ public class Static {
 									}
 
 									var51 = Client.staticInt206 + Client.staticInt221 & 0x7ff;
-									var41 = GraphicsBufferSub1.staticInt316;
+									var41 = ProducingGraphicsBuffer.staticInt316;
 									var11 = staticMethod240(AbstractClass2Sub1.staticPlayer1.anInt628,
 											AbstractClass2Sub1.staticPlayer1.anInt591, NodeSub4.staticInt155)
 											- Client.staticInt225;
@@ -10977,17 +10977,17 @@ public class Static {
 																	+ AbstractClass2Sub1.staticPlayer1.anInt628;
 															var3 = AbstractClass2Sub1.staticPlayer1.anInt591
 																	+ Client.staticInt233;
-															if (GraphicsBufferSub1.staticInt316 - var2 < -500
-																	|| GraphicsBufferSub1.staticInt316 - var2 > 500
+															if (ProducingGraphicsBuffer.staticInt316 - var2 < -500
+																	|| ProducingGraphicsBuffer.staticInt316 - var2 > 500
 																	|| Class4.staticInt21 - var3 < -500
 																	|| Class4.staticInt21 - var3 > 500) {
-																GraphicsBufferSub1.staticInt316 = var2;
+																ProducingGraphicsBuffer.staticInt316 = var2;
 																Class4.staticInt21 = var3;
 															}
 
-															if (var2 != GraphicsBufferSub1.staticInt316) {
-																GraphicsBufferSub1.staticInt316 += (var2
-																		- GraphicsBufferSub1.staticInt316) / 16;
+															if (var2 != ProducingGraphicsBuffer.staticInt316) {
+																ProducingGraphicsBuffer.staticInt316 += (var2
+																		- ProducingGraphicsBuffer.staticInt316) / 16;
 															}
 
 															if (Class4.staticInt21 != var3) {
@@ -11046,9 +11046,9 @@ public class Static {
 																Client.staticInt220 = 383;
 															}
 
-															var4 = GraphicsBufferSub1.staticInt316 >> 7;
+															var4 = ProducingGraphicsBuffer.staticInt316 >> 7;
 															var5 = Class4.staticInt21 >> 7;
-															var6 = staticMethod240(GraphicsBufferSub1.staticInt316,
+															var6 = staticMethod240(ProducingGraphicsBuffer.staticInt316,
 																	Class4.staticInt21, NodeSub4.staticInt155);
 															var7 = 0;
 															if (var4 > 3 && var5 > 3 && var4 < 100 && var5 < 100) {
@@ -22374,7 +22374,7 @@ public class Static {
 			var5.method278(var0, var1, var2);
 			return var5;
 		} catch (Throwable var51) {
-			GraphicsBufferSub1 var4 = new GraphicsBufferSub1();
+			ProducingGraphicsBuffer var4 = new ProducingGraphicsBuffer();
 			var4.method278(var0, var1, var2);
 			return var4;
 		}
