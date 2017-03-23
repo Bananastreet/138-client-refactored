@@ -21,7 +21,7 @@ public class NodeSub12 extends Node {
 	int anInt281;
 	NodeSub14 aNodeSub14_1;
 	NodeSub6Sub1 aNodeSub6Sub1_1;
-	Class43 aClass43_1;
+	DataClass8 aClass43_1;
 	NodeSub8Sub2 aNodeSub8Sub2_3;
 
 	void method317() {

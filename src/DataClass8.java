@@ -1,4 +1,4 @@
-public class Class43 {
+public class DataClass8 {
 
 	byte[] aByteArray12;
 	int anInt181;

@@ -369,7 +369,7 @@ public class Static {
 		int var13 = var0.anInt169;
 		int var3 = var0.anInt162;
 		int var12 = var0.anInt174;
-		int[] var4 = Class43.staticIntArray59;
+		int[] var4 = DataClass8.staticIntArray59;
 		int var5 = var0.anInt173;
 		byte[] var6 = var0.aByteArray7;
 		int var2 = var0.anInt175;
@@ -484,7 +484,7 @@ public class Static {
 		var0.anInt169 = var13;
 		var0.anInt162 = var3;
 		var0.anInt174 = var12;
-		Class43.staticIntArray59 = var4;
+		DataClass8.staticIntArray59 = var4;
 		var0.anInt173 = var5;
 		var0.aByteArray7 = var6;
 		var0.anInt175 = var2;
@@ -497,8 +497,8 @@ public class Static {
 		int[] var29 = null;
 		int[] var18 = null;
 		var0.anInt178 = 1;
-		if (Class43.staticIntArray59 == null) {
-			Class43.staticIntArray59 = new int[var0.anInt178 * 100000];
+		if (DataClass8.staticIntArray59 == null) {
+			DataClass8.staticIntArray59 = new int[var0.anInt178 * 100000];
 		}
 
 		boolean var22 = true;
@@ -743,7 +743,7 @@ public class Static {
 							}
 
 							++var0.anIntArray36[var0.aByteArray9[var20 & 0xff] & 0xff];
-							Class43.staticIntArray59[var43] = var0.aByteArray9[var20 & 0xff] & 0xff;
+							DataClass8.staticIntArray59[var43] = var0.aByteArray9[var20 & 0xff] & 0xff;
 							++var43;
 							if (var38 == 0) {
 								++var521;
@@ -803,7 +803,7 @@ public class Static {
 							var20 = var0.aByteArray9[var0.aByteArray8[var0.anIntArray37[0]] & 0xff];
 
 							for (var0.anIntArray36[var20 & 0xff] += var44; var44 > 0; --var44) {
-								Class43.staticIntArray59[var43] = var20 & 0xff;
+								DataClass8.staticIntArray59[var43] = var20 & 0xff;
 								++var43;
 							}
 						}
@@ -822,14 +822,14 @@ public class Static {
 					}
 
 					for (var35 = 0; var35 < var43; var35++) {
-						var20 = (byte) (Class43.staticIntArray59[var35] & 0xff);
-						Class43.staticIntArray59[var0.anIntArray38[var20 & 0xff]] |= var35 << 8;
+						var20 = (byte) (DataClass8.staticIntArray59[var35] & 0xff);
+						DataClass8.staticIntArray59[var0.anIntArray38[var20 & 0xff]] |= var35 << 8;
 						++var0.anIntArray38[var20 & 0xff];
 					}
 
-					var0.anInt173 = Class43.staticIntArray59[var0.anInt172] >> 8;
+					var0.anInt173 = DataClass8.staticIntArray59[var0.anInt172] >> 8;
 					var0.anInt162 = 0;
-					var0.anInt173 = Class43.staticIntArray59[var0.anInt173];
+					var0.anInt173 = DataClass8.staticIntArray59[var0.anInt173];
 					var0.anInt174 = (byte) (var0.anInt173 & 0xff);
 					var0.anInt173 >>= 8;
 					++var0.anInt162;
@@ -3313,7 +3313,7 @@ public class Static {
 
 														for (var26 = 0; var26 < staticInt149; var26++) {
 															if (var631.aString40.equals(
-																	Class43.staticNodeSub1Array1[var26].aString15)) {
+																	DataClass8.staticNodeSub1Array1[var26].aString15)) {
 																var67 = true;
 																break;
 															}
@@ -12104,7 +12104,7 @@ public class Static {
 		staticMethod34();
 		Client.staticString34 = null;
 		staticInt149 = 0;
-		Class43.staticNodeSub1Array1 = null;
+		DataClass8.staticNodeSub1Array1 = null;
 
 		for (var0 = 0; var0 < 8; var0++) {
 			Client.staticClass61Array1[var0] = new Class61();
@@ -13767,7 +13767,7 @@ public class Static {
 						var5 = staticIntArray16[--staticInt27];
 						if (Client.staticString34 != null && var5 < staticInt149) {
 							staticStringArray1[++staticInt148
-									- 1] = Class43.staticNodeSub1Array1[var5].aString15;
+									- 1] = DataClass8.staticNodeSub1Array1[var5].aString15;
 						} else {
 							staticStringArray1[++staticInt148 - 1] = "";
 						}
@@ -13777,7 +13777,7 @@ public class Static {
 						var5 = staticIntArray16[--staticInt27];
 						if (Client.staticString34 != null && var5 < staticInt149) {
 							staticIntArray16[++staticInt27
-									- 1] = Class43.staticNodeSub1Array1[var5].anInt217;
+									- 1] = DataClass8.staticNodeSub1Array1[var5].anInt217;
 						} else {
 							staticIntArray16[++staticInt27 - 1] = 0;
 						}
@@ -13787,7 +13787,7 @@ public class Static {
 						var5 = staticIntArray16[--staticInt27];
 						if (Client.staticString34 != null && var5 < staticInt149) {
 							staticIntArray16[++staticInt27
-									- 1] = Class43.staticNodeSub1Array1[var5].aByte3;
+									- 1] = DataClass8.staticNodeSub1Array1[var5].aByte3;
 						} else {
 							staticIntArray16[++staticInt27 - 1] = 0;
 						}
@@ -13855,8 +13855,8 @@ public class Static {
 						}
 					} else {
 						var5 = staticIntArray16[--staticInt27];
-						if (Class43.staticNodeSub1Array1 != null && var5 < staticInt149
-								&& Class43.staticNodeSub1Array1[var5].aString15
+						if (DataClass8.staticNodeSub1Array1 != null && var5 < staticInt149
+								&& DataClass8.staticNodeSub1Array1[var5].aString15
 										.equalsIgnoreCase(AbstractClass2Sub1.staticPlayer1.aString40)) {
 							staticIntArray16[++staticInt27 - 1] = 1;
 						} else {
@@ -19443,19 +19443,19 @@ public class Static {
 						var54 = false;
 
 						for (var5 = 0; var5 < staticInt149
-								&& (!Class43.staticNodeSub1Array1[var5].aString15.equals(var1)
-										|| Class43.staticNodeSub1Array1[var5].anInt217 != var2); var5++) {
+								&& (!DataClass8.staticNodeSub1Array1[var5].aString15.equals(var1)
+										|| DataClass8.staticNodeSub1Array1[var5].anInt217 != var2); var5++) {
 							;
 						}
 
 						if (var5 < staticInt149) {
 							while (var5 < staticInt149 - 1) {
-								Class43.staticNodeSub1Array1[var5] = Class43.staticNodeSub1Array1[1 + var5];
+								DataClass8.staticNodeSub1Array1[var5] = DataClass8.staticNodeSub1Array1[1 + var5];
 								++var5;
 							}
 
 							--staticInt149;
-							Class43.staticNodeSub1Array1[staticInt149] = null;
+							DataClass8.staticNodeSub1Array1[staticInt149] = null;
 						}
 					} else {
 						Client.inBuffer.readString();
@@ -19466,10 +19466,10 @@ public class Static {
 						var74.aByte3 = var75;
 
 						for (var6 = staticInt149 - 1; var6 >= 0; --var6) {
-							var58 = Class43.staticNodeSub1Array1[var6].aString16.compareTo(var74.aString16);
+							var58 = DataClass8.staticNodeSub1Array1[var6].aString16.compareTo(var74.aString16);
 							if (var58 == 0) {
-								Class43.staticNodeSub1Array1[var6].anInt217 = var2;
-								Class43.staticNodeSub1Array1[var6].aByte3 = var75;
+								DataClass8.staticNodeSub1Array1[var6].anInt217 = var2;
+								DataClass8.staticNodeSub1Array1[var6].aByte3 = var75;
 								if (var1.equals(AbstractClass2Sub1.staticPlayer1.aString40)) {
 									staticByte3 = var75;
 								}
@@ -19484,20 +19484,20 @@ public class Static {
 							}
 						}
 
-						if (staticInt149 >= Class43.staticNodeSub1Array1.length) {
+						if (staticInt149 >= DataClass8.staticNodeSub1Array1.length) {
 							Client.staticInt191 = -1;
 							return true;
 						}
 
 						for (var58 = staticInt149 - 1; var58 > var6; --var58) {
-							Class43.staticNodeSub1Array1[var58 + 1] = Class43.staticNodeSub1Array1[var58];
+							DataClass8.staticNodeSub1Array1[var58 + 1] = DataClass8.staticNodeSub1Array1[var58];
 						}
 
 						if (staticInt149 == 0) {
-							Class43.staticNodeSub1Array1 = new NodeSub1[100];
+							DataClass8.staticNodeSub1Array1 = new NodeSub1[100];
 						}
 
-						Class43.staticNodeSub1Array1[1 + var6] = var74;
+						DataClass8.staticNodeSub1Array1[1 + var6] = var74;
 						++staticInt149;
 						if (var1.equals(AbstractClass2Sub1.staticPlayer1.aString40)) {
 							staticByte3 = var75;
@@ -20012,7 +20012,7 @@ public class Static {
 						Client.staticString34 = null;
 						Client.staticString29 = null;
 						staticInt149 = 0;
-						Class43.staticNodeSub1Array1 = null;
+						DataClass8.staticNodeSub1Array1 = null;
 						Client.staticInt191 = -1;
 						return true;
 					}
@@ -20063,7 +20063,7 @@ public class Static {
 						}
 					}
 
-					Class43.staticNodeSub1Array1 = var97;
+					DataClass8.staticNodeSub1Array1 = var97;
 					Client.staticInt191 = -1;
 					return true;
 				}
@@ -20616,7 +20616,7 @@ public class Static {
 	}
 
 	static final void staticMethod316(String var0) {
-		if (Class43.staticNodeSub1Array1 != null) {
+		if (DataClass8.staticNodeSub1Array1 != null) {
 			Client.outBuffer.method471(214);
 			Client.outBuffer.writeByte(staticMethod378(var0));
 			Client.outBuffer.writeString(var0);

@@ -5,7 +5,7 @@ public class NodeSub14 extends Node {
 	short[] aShortArray1 = new short[128];
 	byte[] aByteArray21 = new byte[128];
 	byte[] aByteArray19 = new byte[128];
-	Class43[] aClass43Array1 = new Class43[128];
+	DataClass8[] aClass43Array1 = new DataClass8[128];
 	byte[] aByteArray20 = new byte[128];
 	int anInt282;
 
@@ -122,11 +122,11 @@ public class NodeSub14 extends Node {
 			var22 = var16;
 		}
 
-		Class43[] var43 = new Class43[var22];
+		DataClass8[] var43 = new DataClass8[var22];
 
-		Class43 var441;
+		DataClass8 var441;
 		for (var23 = 0; var23 < var43.length; var23++) {
-			var441 = var43[var23] = new Class43();
+			var441 = var43[var23] = new DataClass8();
 			int var39 = var5.method367();
 			if (var39 > 0) {
 				var441.aByteArray13 = new byte[var39 * 2];
@@ -239,7 +239,7 @@ public class NodeSub14 extends Node {
 
 		var15 = 0;
 		var28 = 0;
-		Class43 var461 = null;
+		DataClass8 var461 = null;
 
 		int var29;
 		for (var29 = 0; var29 < 128; var29++) {
@@ -283,7 +283,7 @@ public class NodeSub14 extends Node {
 		anInt282 = var5.method367() + 1;
 
 		int var2;
-		Class43 var7;
+		DataClass8 var7;
 		for (var17 = 0; var17 < var22; var17++) {
 			var7 = var43[var17];
 			if (var7.aByteArray13 != null) {

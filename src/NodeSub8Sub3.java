@@ -59,7 +59,7 @@ public class NodeSub8Sub3 extends NodeSub8 {
 	int method443(NodeSub12 var1) {
 		int var2 = var1.anInt271 + (var1.anInt272 * var1.anInt267 >> 12);
 		var2 += anIntArray92[var1.anInt266] * (anIntArray90[var1.anInt266] - 8192) >> 12;
-		Class43 var4 = var1.aClass43_1;
+		DataClass8 var4 = var1.aClass43_1;
 		int var5;
 		if (var4.anInt186 > 0 && (var4.anInt185 > 0 || anIntArray91[var1.anInt266] > 0)) {
 			var5 = var4.anInt185 << 2;
@@ -378,7 +378,7 @@ public class NodeSub8Sub3 extends NodeSub8 {
 	}
 
 	int method453(NodeSub12 var1) {
-		Class43 var2 = var1.aClass43_1;
+		DataClass8 var2 = var1.aClass43_1;
 		int var3 = 4096 + anIntArray97[var1.anInt266] * anIntArray87[var1.anInt266] >> 13;
 		var3 = 16384 + var3 * var3 >> 15;
 		var3 = var1.anInt270 * var3 + 16384 >> 15;
@@ -719,7 +719,7 @@ public class NodeSub8Sub3 extends NodeSub8 {
 			}
 
 			var1.aNodeSub8Sub2_3.method424(method443(var1));
-			Class43 var8 = var1.aClass43_1;
+			DataClass8 var8 = var1.aClass43_1;
 			boolean var9 = false;
 			++var1.anInt277;
 			var1.anInt265 += var8.anInt186 * -192559315;
