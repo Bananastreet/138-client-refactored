@@ -1,6 +1,6 @@
 public class SoundEffect {
 
-	Class17[] aClass17Array1 = new Class17[10];
+	SoundInstrument[] aClass17Array1 = new SoundInstrument[10];
 	int anInt20;
 	int anInt21;
 
@@ -14,7 +14,7 @@ public class SoundEffect {
 			int var3 = var1.method367();
 			if (var3 != 0) {
 				--var1.position;
-				aClass17Array1[var2] = new Class17();
+				aClass17Array1[var2] = new SoundInstrument();
 				aClass17Array1[var2].method60(var1);
 			}
 		}

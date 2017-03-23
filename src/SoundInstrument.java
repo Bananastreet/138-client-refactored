@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Class17 {
+public class SoundInstrument {
 
 	static int[] staticIntArray26 = new int['\u8000'];
 	static int[] staticIntArray27;
