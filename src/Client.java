@@ -260,7 +260,7 @@ public final class Client extends GameShell {
 	static int[] staticIntArray115;
 	static int[] staticIntArray116;
 	static int[] staticIntArray117;
-	static Class9[] staticClass9Array1;
+	static SoundEffect[] staticClass9Array1;
 	static boolean staticBool28;
 	static boolean[] staticBoolArray7;
 	static int[] staticIntArray118;
@@ -521,7 +521,7 @@ public final class Client extends GameShell {
 		staticIntArray115 = new int[50];
 		staticIntArray116 = new int[50];
 		staticIntArray117 = new int[50];
-		staticClass9Array1 = new Class9[50];
+		staticClass9Array1 = new SoundEffect[50];
 		staticBool28 = false;
 		staticBoolArray7 = new boolean[5];
 		staticIntArray118 = new int[5];

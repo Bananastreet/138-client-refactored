@@ -8334,9 +8334,9 @@ public class Static {
 		return var0.length() + 2;
 	}
 
-	public static Class9 staticMethod52(Js5Index var0, int var1, int var2) {
+	public static SoundEffect staticMethod52(Js5Index var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
-		return var3 == null ? null : new Class9(new ByteBuf(var3));
+		return var3 == null ? null : new SoundEffect(new ByteBuf(var3));
 	}
 
 	static final void staticMethod117(Widget var0, int var1, int var2, int var3) {
@@ -15738,7 +15738,7 @@ public class Static {
 		for (int var0 = 0; var0 < Client.staticInt236; var0++) {
 			--Client.staticIntArray116[var0];
 			if (Client.staticIntArray116[var0] >= -10) {
-				Class9 var91 = Client.staticClass9Array1[var0];
+				SoundEffect var91 = Client.staticClass9Array1[var0];
 				if (var91 == null) {
 					var91 = staticMethod52(Config19.staticJs5IndexImpl15, Client.staticIntArray114[var0], 0);
 					if (var91 == null) {
@@ -22304,7 +22304,7 @@ public class Static {
 					int var9 = Client.staticInt301 * (var4.anInt226 - var5) / var4.anInt226;
 					if (var4.aNodeSub8Sub2_1 == null) {
 						if (var4.anInt227 >= 0) {
-							Class9 var11 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anInt227, 0);
+							SoundEffect var11 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anInt227, 0);
 							if (var11 != null) {
 								NodeSub6Sub1 var12 = var11.method25().method433(Class16.staticClass20_1);
 								NodeSub8Sub2 var13 = staticMethod352(var12, 100, var9);
@@ -22320,7 +22320,7 @@ public class Static {
 					if (var4.aNodeSub8Sub2_2 == null) {
 						if (var4.anIntArray59 != null && (var4.anInt230 -= var3) <= 0) {
 							int var111 = (int) (Math.random() * var4.anIntArray59.length);
-							Class9 var121 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anIntArray59[var111], 0);
+							SoundEffect var121 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anIntArray59[var111], 0);
 							if (var121 != null) {
 								NodeSub6Sub1 var131 = var121.method25().method433(Class16.staticClass20_1);
 								NodeSub8Sub2 var6 = staticMethod352(var131, 100, var9);

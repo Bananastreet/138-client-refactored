@@ -1,4 +1,4 @@
-public class Class9 {
+public class SoundEffect {
 
 	Class17[] aClass17Array1 = new Class17[10];
 	int anInt20;
@@ -9,7 +9,7 @@ public class Class9 {
 		return new NodeSub6Sub1(22050, var1, anInt20 * 22050 / 1000, anInt21 * 22050 / 1000);
 	}
 
-	Class9(ByteBuf var1) {
+	SoundEffect(ByteBuf var1) {
 		for (int var2 = 0; var2 < 10; var2++) {
 			int var3 = var1.method367();
 			if (var3 != 0) {

@@ -15,7 +15,7 @@ public class Class10 {
 		} else if (var3 != null && var3[0] <= 0) {
 			return null;
 		} else {
-			Class9 var8 = Static.staticMethod52(aJs5Index2, var1, var2);
+			SoundEffect var8 = Static.staticMethod52(aJs5Index2, var1, var2);
 			if (var8 == null) {
 				return null;
 			} else {
