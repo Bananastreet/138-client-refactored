@@ -451,7 +451,7 @@ public class Scene {
 
 	public void method113(int var1, int var2, int var3, int var4, Renderable var5, int var6, Renderable var7,
 			Renderable var8) {
-		Class16 var9 = new Class16();
+		DataClass1 var9 = new DataClass1();
 		var9.aRenderable1 = var5;
 		var9.anInt39 = var2 * 128 + 64;
 		var9.anInt40 = var3 * 128 + 64;
@@ -1317,7 +1317,7 @@ public class Scene {
 															var34.anInt140);
 												}
 
-												Class16 var31 = var3.aClass16_1;
+												DataClass1 var31 = var3.aClass16_1;
 												if (var31 != null && var31.anInt43 == 0) {
 													if (var31.aRenderable3 != null) {
 														var31.aRenderable3.method435(0, staticInt68, staticInt60,
@@ -1556,7 +1556,7 @@ public class Scene {
 
 			var3.aBool28 = false;
 			--staticInt45;
-			Class16 var281 = var3.aClass16_1;
+			DataClass1 var281 = var3.aClass16_1;
 			if (var281 != null && var281.anInt43 != 0) {
 				if (var281.aRenderable3 != null) {
 					var281.aRenderable3.method435(0, staticInt68, staticInt60, staticInt61, staticInt49,

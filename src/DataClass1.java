@@ -1,4 +1,4 @@
-public final class Class16 {
+public final class DataClass1 {
 
 	int anInt39;
 	int anInt40;
