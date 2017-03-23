@@ -9,7 +9,7 @@ public class NodeSub10 extends Node {
 
 	NodeSub10(int var1, byte[] var2) {
 		anInt248 = var1;
-		Stream var4 = new Stream(var2);
+		ByteBuf var4 = new ByteBuf(var2);
 		anInt247 = var4.method367();
 		anIntArray65 = new int[anInt247];
 		anIntArrayArray11 = new int[anInt247][];

@@ -52,7 +52,7 @@ public class ObjectDefinition extends Cacheable {
 	public int[] anIntArray109;
 	public int[] anIntArray111;
 
-	void method509(Stream var1, int var2) {
+	void method509(ByteBuf var1, int var2) {
 		int var3;
 		int var4;
 		if (var2 == 1) {
@@ -527,7 +527,7 @@ public class ObjectDefinition extends Cacheable {
 		}
 	}
 
-	void method518(Stream var1) {
+	void method518(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {

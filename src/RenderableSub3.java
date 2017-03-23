@@ -61,13 +61,13 @@ public class RenderableSub3 extends Renderable {
 	}
 
 	void method570(byte[] var1) {
-		Stream var2 = new Stream(var1);
-		Stream var11 = new Stream(var1);
-		Stream var6 = new Stream(var1);
-		Stream var7 = new Stream(var1);
-		Stream var8 = new Stream(var1);
-		Stream var9 = new Stream(var1);
-		Stream var55 = new Stream(var1);
+		ByteBuf var2 = new ByteBuf(var1);
+		ByteBuf var11 = new ByteBuf(var1);
+		ByteBuf var6 = new ByteBuf(var1);
+		ByteBuf var7 = new ByteBuf(var1);
+		ByteBuf var8 = new ByteBuf(var1);
+		ByteBuf var9 = new ByteBuf(var1);
+		ByteBuf var55 = new ByteBuf(var1);
 		var2.position = var1.length - 23;
 		int var33 = var2.method370();
 		int var13 = var2.method370();
@@ -417,11 +417,11 @@ public class RenderableSub3 extends Renderable {
 	void method571(byte[] var1) {
 		boolean var2 = false;
 		boolean var27 = false;
-		Stream var5 = new Stream(var1);
-		Stream var6 = new Stream(var1);
-		Stream var7 = new Stream(var1);
-		Stream var11 = new Stream(var1);
-		Stream var9 = new Stream(var1);
+		ByteBuf var5 = new ByteBuf(var1);
+		ByteBuf var6 = new ByteBuf(var1);
+		ByteBuf var7 = new ByteBuf(var1);
+		ByteBuf var11 = new ByteBuf(var1);
+		ByteBuf var9 = new ByteBuf(var1);
 		var5.position = var1.length - 18;
 		int var16 = var5.method370();
 		int var12 = var5.method370();

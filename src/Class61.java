@@ -10,7 +10,7 @@ public class Class61 {
 	public int anInt215;
 	public int anInt216;
 
-	public Class61(Stream var1, boolean var2) {
+	public Class61(ByteBuf var1, boolean var2) {
 		aByte2 = var1.readByte();
 		anInt212 = var1.method370();
 		anInt213 = var1.readInt();

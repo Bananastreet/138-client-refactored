@@ -78,7 +78,7 @@ public class Class11 implements Interface2 {
 		aNodeSub9Array1 = new NodeSub9[var1.method263(0)];
 
 		for (int var9 = 0; var9 < var8; var9++) {
-			Stream var10 = new Stream(var1.getFile(0, var7[var9]));
+			ByteBuf var10 = new ByteBuf(var1.getFile(0, var7[var9]));
 			aNodeSub9Array1[var7[var9]] = new NodeSub9(var10);
 		}
 

@@ -9,7 +9,7 @@ public class GZipDecompressor {
 		this(-1, 1000000);
 	}
 
-	public void method238(Stream var1, byte[] var2) {
+	public void method238(ByteBuf var1, byte[] var2) {
 		if (var1.buf[var1.position] == 31 && var1.buf[var1.position + 1] == -117) {
 			if (anInflater1 == null) {
 				anInflater1 = new Inflater(true);

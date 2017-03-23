@@ -5,7 +5,7 @@ public class Config19 extends Cacheable {
 	public static Cache staticCache24 = new Cache(64);
 	public boolean aBool65 = false;
 
-	public void method532(Stream var1) {
+	public void method532(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -16,7 +16,7 @@ public class Config19 extends Cacheable {
 		}
 	}
 
-	void method533(Stream var1, int var2) {
+	void method533(ByteBuf var1, int var2) {
 		if (var2 == 2) {
 			aBool65 = true;
 		}

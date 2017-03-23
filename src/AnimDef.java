@@ -20,7 +20,7 @@ public class AnimDef extends Cacheable {
 	int[] anIntArray118;
 	public int[] anIntArray120;
 
-	void method550(Stream var1) {
+	void method550(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -87,7 +87,7 @@ public class AnimDef extends Cacheable {
 		}
 	}
 
-	void method554(Stream var1, int var2) {
+	void method554(ByteBuf var1, int var2) {
 		int var3;
 		int var4;
 		if (var2 == 1) {

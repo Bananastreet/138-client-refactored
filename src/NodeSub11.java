@@ -86,7 +86,7 @@ public class NodeSub11 extends Node {
 		aHashTable4 = null;
 	}
 
-	NodeSub11(Stream var1) {
+	NodeSub11(ByteBuf var1) {
 		var1.position = var1.buf.length - 3;
 		int var6 = var1.method367();
 		int var5 = var1.method370();
@@ -246,7 +246,7 @@ public class NodeSub11 extends Node {
 		int var3 = var1.position;
 		var1.position += var8 * 3;
 		aByteArray17 = new byte[var7];
-		Stream var2 = new Stream(aByteArray17);
+		ByteBuf var2 = new ByteBuf(aByteArray17);
 		var2.writeInt(1297377380);
 		var2.writeInt(6);
 		var2.writeShort(var6 > 1 ? 1 : 0);

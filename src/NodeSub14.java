@@ -47,7 +47,7 @@ public class NodeSub14 extends Node {
 	}
 
 	NodeSub14(byte[] var1) {
-		Stream var5 = new Stream(var1);
+		ByteBuf var5 = new ByteBuf(var1);
 
 		int var6;
 		for (var6 = 0; var5.buf[var5.position + var6] != 0; var6++) {

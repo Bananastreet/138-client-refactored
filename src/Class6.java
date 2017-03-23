@@ -13,7 +13,7 @@ public class Class6 {
 	boolean aBool3;
 	boolean aBool2;
 
-	Class6(Stream var1) {
+	Class6(ByteBuf var1) {
 		if (var1 != null && var1.buf != null) {
 			int var2 = var1.method367();
 			if (var2 >= 0 && var2 <= staticInt25) {
@@ -47,8 +47,8 @@ public class Class6 {
 
 	}
 
-	Stream method23() {
-		Stream var1 = new Stream(100);
+	ByteBuf method23() {
+		ByteBuf var1 = new ByteBuf(100);
 		var1.writeByte(staticInt25);
 		var1.writeByte(aBool3 ? 1 : 0);
 		var1.writeByte(aBool2 ? 1 : 0);

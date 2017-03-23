@@ -13,7 +13,7 @@ public class IdentityKit extends Cacheable {
 	short[] aShortArray3;
 	short[] aShortArray2;
 
-	void method480(Stream var1) {
+	void method480(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -86,7 +86,7 @@ public class IdentityKit extends Cacheable {
 		}
 	}
 
-	void method484(Stream var1, int var2) {
+	void method484(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			anInt433 = var1.method367();
 		} else {

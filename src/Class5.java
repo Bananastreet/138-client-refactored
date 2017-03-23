@@ -48,7 +48,7 @@ public class Class5 {
 				byte[] var3 = Config19.staticJs5Index26.getFile(19, var1);
 				var5 = new Config19();
 				if (var3 != null) {
-					var5.method532(new Stream(var3));
+					var5.method532(new ByteBuf(var3));
 				}
 
 				Config19.staticCache24.method170(var5, var1);
@@ -101,7 +101,7 @@ public class Class5 {
 				}
 			}
 
-			Stream var171 = new Stream(var2);
+			ByteBuf var171 = new ByteBuf(var2);
 			var171.writeByte(1);
 			var171.writeShort(var3);
 
@@ -118,7 +118,7 @@ public class Class5 {
 			for (var6 = 0; var6 < aStringArray1.length; var6++) {
 				if (aBoolArray2[var6] && aStringArray1[var6] != null) {
 					var171.writeShort(var6);
-					var171.method323(aStringArray1[var6]);
+					var171.writeString(aStringArray1[var6]);
 				}
 			}
 
@@ -176,7 +176,7 @@ public class Class5 {
 					}
 				}
 
-				Stream var231 = new Stream(var2);
+				ByteBuf var231 = new ByteBuf(var2);
 				if (var231.buf.length - var231.position < 1) {
 					return;
 				}

@@ -290,7 +290,7 @@ public class Class49 {
 				: 305419896 + Static.staticMethod85(anInt198).anInt537;
 	}
 
-	public void method251(Stream var1) {
+	public void method251(ByteBuf var1) {
 		var1.writeByte(aBool16 ? 1 : 0);
 
 		int var2;

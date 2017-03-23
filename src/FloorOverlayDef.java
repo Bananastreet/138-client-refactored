@@ -84,7 +84,7 @@ public class FloorOverlayDef extends Cacheable {
 
 	}
 
-	void method538(Stream var1, int var2, int var3) {
+	void method538(ByteBuf var1, int var2, int var3) {
 		if (var2 == 1) {
 			anInt527 = var1.readTriByte();
 		} else if (var2 == 2) {
@@ -99,7 +99,7 @@ public class FloorOverlayDef extends Cacheable {
 
 	}
 
-	void method539(Stream var1, int var2) {
+	void method539(ByteBuf var1, int var2) {
 		while (true) {
 			int var3 = var1.method367();
 			if (var3 == 0) {

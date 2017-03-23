@@ -4,7 +4,7 @@ import java.io.IOException;
 public class BufferedFile {
 
 	public static TaskManager staticTaskManager1;
-	public static Stream staticStream2;
+	public static ByteBuf staticStream2;
 	long aLong6;
 	long aLong3 = -1L;
 	long aLong4 = -1L;
@@ -22,7 +22,7 @@ public class BufferedFile {
 		aFileOnDisk1.method86();
 	}
 
-	public void method52(long var1) throws IOException {
+	public void seek(long var1) throws IOException {		
 		if (var1 < 0L) {
 			throw new IOException("");
 		} else {
@@ -30,7 +30,7 @@ public class BufferedFile {
 		}
 	}
 
-	public void method53(byte[] var1) throws IOException {
+	public void read(byte[] var1) throws IOException {		
 		method58(var1, 0, var1.length);
 	}
 

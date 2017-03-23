@@ -17,7 +17,7 @@ public class SpotAnim extends Cacheable {
 	short[] aShortArray20;
 	short[] aShortArray18;
 
-	void method547(Stream var1) {
+	void method547(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -84,7 +84,7 @@ public class SpotAnim extends Cacheable {
 		return var51;
 	}
 
-	void method549(Stream var1, int var2) {
+	void method549(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			anInt555 = var1.method370();
 		} else if (var2 == 2) {

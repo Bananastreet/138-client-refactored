@@ -187,7 +187,7 @@ public class NodeSub9 extends Node {
 
 	}
 
-	NodeSub9(Stream var1) {
+	NodeSub9(ByteBuf var1) {
 		anInt244 = var1.method370();
 		aBool26 = var1.method367() == 1;
 		int var2 = var1.method367();

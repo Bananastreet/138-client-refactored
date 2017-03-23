@@ -38,7 +38,7 @@ public class NpcDefinition extends Cacheable {
 	int[] anIntArray115;
 	public int[] anIntArray116;
 
-	void method540(Stream var1) {
+	void method540(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -203,7 +203,7 @@ public class NpcDefinition extends Cacheable {
 	void method545() {
 	}
 
-	void method546(Stream var1, int var2) {
+	void method546(ByteBuf var1, int var2) {
 		int var3;
 		int var4;
 		if (var2 == 1) {

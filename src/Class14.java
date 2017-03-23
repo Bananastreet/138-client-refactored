@@ -12,7 +12,7 @@ public class Class14 {
 	int anInt30;
 	int anInt28;
 
-	final void method47(Stream var1) {
+	final void method47(ByteBuf var1) {
 		anInt34 = var1.method367();
 		anIntArray20 = new int[anInt34];
 		anIntArray21 = new int[anInt34];
@@ -42,7 +42,7 @@ public class Class14 {
 		return anInt35 - anInt29 >> 15;
 	}
 
-	final void method49(Stream var1) {
+	final void method49(ByteBuf var1) {
 		anInt33 = var1.method367();
 		anInt30 = var1.readInt();
 		anInt28 = var1.readInt();

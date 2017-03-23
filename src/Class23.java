@@ -15,7 +15,7 @@ public class Class23 {
 		return aString6;
 	}
 
-	Class23(Stream var1, byte var2, int var3) {
+	Class23(ByteBuf var1, byte var2, int var3) {
 		aString7 = var1.method365();
 		aString6 = var1.method365();
 		anInt66 = var1.method370();

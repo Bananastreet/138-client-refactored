@@ -15,7 +15,7 @@ public class FloorUnderlayDef extends Cacheable {
 		method525(anInt508);
 	}
 
-	void method523(Stream var1, int var2) {
+	void method523(ByteBuf var1, int var2) {
 		while (true) {
 			int var3 = var1.method367();
 			if (var3 == 0) {
@@ -26,7 +26,7 @@ public class FloorUnderlayDef extends Cacheable {
 		}
 	}
 
-	void method524(Stream var1, int var2, int var3) {
+	void method524(ByteBuf var1, int var2, int var3) {
 		if (var2 == 1) {
 			anInt508 = var1.readTriByte();
 		}

@@ -258,7 +258,7 @@ public class Class17 {
 		}
 	}
 
-	final void method60(Stream var1) {
+	final void method60(ByteBuf var1) {
 		aClass14_4 = new Class14();
 		aClass14_4.method49(var1);
 		aClass14_1 = new Class14();

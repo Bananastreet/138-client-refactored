@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class Stream extends Node {
+public class ByteBuf extends Node {
 
 	static Class19 staticClass19_2;
 	static int[] staticIntArray124 = new int[256];
@@ -42,7 +42,7 @@ public class Stream extends Node {
 
 	}
 
-	public Stream(byte[] var1) {
+	public ByteBuf(byte[] var1) {
 		buf = var1;
 		position = 0;
 	}
@@ -96,7 +96,7 @@ public class Stream extends Node {
 
 	}
 
-	public void method323(String var1) {
+	public void writeString(String var1) {		
 		int var2 = var1.indexOf(0);
 		if (var2 >= 0) {
 			throw new IllegalArgumentException("");
@@ -484,7 +484,7 @@ public class Stream extends Node {
 				+ ((buf[position - 3] & 0xff) << 8);
 	}
 
-	public Stream(int var1) {
+	public ByteBuf(int var1) {
 		buf = Static.staticMethod151(var1);
 		position = 0;
 	}

@@ -15,7 +15,7 @@ public class CacheableSub6 extends Cacheable {
 	public int anInt521 = 0;
 	public int anInt517 = 1;
 
-	void method526(Stream var1) {
+	void method526(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -26,7 +26,7 @@ public class CacheableSub6 extends Cacheable {
 		}
 	}
 
-	void method527(Stream var1, int var2) {
+	void method527(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			var1.method370();
 		} else if (var2 == 2) {

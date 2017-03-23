@@ -608,7 +608,7 @@ public final class Client extends GameShell {
 				}
 			}
 
-			var6 = new Class6(new Stream(var13));
+			var6 = new Class6(new ByteBuf(var13));
 		} catch (Exception var11) {
 			;
 		}
@@ -922,7 +922,7 @@ public final class Client extends GameShell {
 														}
 													}
 
-													Stream var361 = new Stream(var14);
+													ByteBuf var361 = new ByteBuf(var14);
 
 													for (var21 = 0; var21 < 4; var21++) {
 														for (int var22 = 0; var22 < 64; var22++) {
@@ -1074,8 +1074,8 @@ public final class Client extends GameShell {
 		}
 
 		Class29.staticAbstractClass1_1 = null;
-		if (Stream.staticClass19_2 != null) {
-			Stream.staticClass19_2.method69();
+		if (ByteBuf.staticClass19_2 != null) {
+			ByteBuf.staticClass19_2.method69();
 		}
 
 		if (NodeSub12.staticClass19_1 != null) {
@@ -1096,7 +1096,7 @@ public final class Client extends GameShell {
 			}
 
 			Static.staticBufferedFile1.method51();
-			Static.staticBufferedFile2.method51();
+			Static.randomDat.method51();
 		} catch (Exception var4) {
 			;
 		}
@@ -1127,10 +1127,10 @@ public final class Client extends GameShell {
 						}
 
 						CacheableSub4 var21;
-						Stream var6;
+						ByteBuf var6;
 						while (Static.staticInt136 < 20 && Static.staticInt130 > 0) {
 							var21 = (CacheableSub4) Static.staticHashTable1.method146();
-							var6 = new Stream(4);
+							var6 = new ByteBuf(4);
 							var6.writeByte(1);
 							var6.writeTriByte((int) var21.id);
 							Static.staticConnection2.write(var6.buf, 0, 4);
@@ -1141,7 +1141,7 @@ public final class Client extends GameShell {
 
 						while (Static.staticInt133 < 20 && Static.staticInt132 > 0) {
 							var21 = (CacheableSub4) Static.staticQueue1.method186();
-							var6 = new Stream(4);
+							var6 = new ByteBuf(4);
 							var6.writeByte(0);
 							var6.writeTriByte((int) var21.id);
 							Static.staticConnection2.write(var6.buf, 0, 4);
@@ -1212,7 +1212,7 @@ public final class Client extends GameShell {
 
 									int var16 = var24 == 0 ? 5 : 9;
 									FloorUnderlayDef.staticCacheableSub4_1 = var15;
-									BufferedFile.staticStream2 = new Stream(
+									BufferedFile.staticStream2 = new ByteBuf(
 											var16 + var12 + FloorUnderlayDef.staticCacheableSub4_1.aByte4);
 									BufferedFile.staticStream2.writeByte(var24);
 									BufferedFile.staticStream2.writeInt(var12);
@@ -1527,14 +1527,14 @@ public final class Client extends GameShell {
 				try {
 					File var19 = new File(Class6.staticString18, "random.dat");
 					if (var19.exists()) {
-						Static.staticBufferedFile2 = new BufferedFile(new FileOnDisk(var19, "rw", 25L), 24, 0);
+						Static.randomDat = new BufferedFile(new FileOnDisk(var19, "rw", 25L), 24, 0);
 					} else {
 						label140: for (int var21 = 0; var21 < Static.staticStringArray4.length; var21++) {
 							for (var12 = 0; var12 < NodeSub10.staticStringArray6.length; var12++) {
 								var7 = new File(NodeSub10.staticStringArray6[var12] + Static.staticStringArray4[var21]
 										+ File.separatorChar + "random.dat");
 								if (var7.exists()) {
-									Static.staticBufferedFile2 = new BufferedFile(new FileOnDisk(var7, "rw", 25L), 24,
+									Static.randomDat = new BufferedFile(new FileOnDisk(var7, "rw", 25L), 24,
 											0);
 									break label140;
 								}
@@ -1542,14 +1542,14 @@ public final class Client extends GameShell {
 						}
 					}
 
-					if (Static.staticBufferedFile2 == null) {
+					if (Static.randomDat == null) {
 						RandomAccessFile var211 = new RandomAccessFile(var19, "rw");
 						var12 = var211.read();
 						var211.seek(0L);
 						var211.write(var12);
 						var211.seek(0L);
 						var211.close();
-						Static.staticBufferedFile2 = new BufferedFile(new FileOnDisk(var19, "rw", 25L), 24, 0);
+						Static.randomDat = new BufferedFile(new FileOnDisk(var19, "rw", 25L), 24, 0);
 					}
 				} catch (IOException var141) {
 					;
@@ -1578,8 +1578,8 @@ public final class Client extends GameShell {
 
 	protected final void method211() {
 		boolean var1 = Static.staticMethod426();
-		if (var1 && staticBool38 && Stream.staticClass19_2 != null) {
-			Stream.staticClass19_2.method68();
+		if (var1 && staticBool38 && ByteBuf.staticClass19_2 != null) {
+			ByteBuf.staticClass19_2.method68();
 		}
 
 		if (staticInt165 == 10 || staticInt165 == 20 || staticInt165 == 30) {
@@ -1896,7 +1896,7 @@ public final class Client extends GameShell {
 					if (staticInt271 == 2) {
 						Item.staticConnection4 = new Connection((Socket) FileOnDisk.staticTask1.anObject2,
 								BufferedFile.staticTaskManager1);
-						Stream var2 = new Stream(5);
+						ByteBuf var2 = new ByteBuf(5);
 						var2.writeByte(15);
 						var2.writeInt(138);
 						Item.staticConnection4.write(var2.buf, 0, 5);

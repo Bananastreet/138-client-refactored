@@ -6,7 +6,7 @@ public class Varbit extends Cacheable {
 	public int anInt431;
 	public int anInt432;
 
-	void method478(Stream var1) {
+	void method478(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {
@@ -17,7 +17,7 @@ public class Varbit extends Cacheable {
 		}
 	}
 
-	void method479(Stream var1, int var2) {
+	void method479(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			anInt430 = var1.method370();
 			anInt431 = var1.method367();

@@ -154,7 +154,7 @@ public abstract class Js5Index {
 					var191 = Static.staticMethod84(anObjectArray1[var1], false);
 				} else {
 					var191 = Static.staticMethod84(anObjectArray1[var1], true);
-					Stream var20 = new Stream(var191);
+					ByteBuf var20 = new ByteBuf(var191);
 					var20.method380(var2, 5, var20.buf.length);
 				}
 
@@ -178,7 +178,7 @@ public abstract class Js5Index {
 					--var9;
 					int var10 = var201[var9] & 0xff;
 					var9 -= var10 * var3 * 4;
-					Stream var11 = new Stream(var201);
+					ByteBuf var11 = new ByteBuf(var201);
 					int[] var12 = new int[var3];
 					var11.position = var9;
 
@@ -295,7 +295,7 @@ public abstract class Js5Index {
 
 	void method274(byte[] var1) {
 		anInt201 = Static.staticMethod23(var1, var1.length);
-		Stream var3 = new Stream(Static.staticMethod241(var1));
+		ByteBuf var3 = new ByteBuf(Static.staticMethod241(var1));
 		int var4 = var3.method367();
 		if (var4 >= 5 && var4 <= 7) {
 			if (var4 >= 6) {

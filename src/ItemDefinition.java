@@ -90,7 +90,7 @@ public class ItemDefinition extends Cacheable {
 		}
 	}
 
-	void method488(Stream var1, int var2) {
+	void method488(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			anInt441 = var1.method370();
 		} else if (var2 == 2) {
@@ -496,7 +496,7 @@ public class ItemDefinition extends Cacheable {
 		aBool56 = false;
 	}
 
-	void method498(Stream var1) {
+	void method498(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {

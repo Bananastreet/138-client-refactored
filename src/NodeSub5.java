@@ -293,7 +293,7 @@ public class NodeSub5 extends Node {
 	}
 
 	void method297(byte[] var1) {
-		Stream var2 = new Stream(var1);
+		ByteBuf var2 = new ByteBuf(var1);
 		anInt232 = var2.readInt();
 		anInt233 = var2.readInt();
 		anInt234 = var2.readInt();

@@ -14,8 +14,8 @@ public class Class24 {
 
 	Class24(byte[] var1, NodeSub10 var2) {
 		aNodeSub10_1 = var2;
-		Stream var5 = new Stream(var1);
-		Stream var6 = new Stream(var1);
+		ByteBuf var5 = new ByteBuf(var1);
+		ByteBuf var6 = new ByteBuf(var1);
 		var5.position = 2;
 		int var7 = var5.method367();
 		int var8 = -1;

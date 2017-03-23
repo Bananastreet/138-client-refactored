@@ -33,7 +33,7 @@ public class Class3 {
 			if (anInt12 == 1) {
 				anInt11 += aDataInputStream1.read(aByteArray2, anInt11, aByteArray2.length - anInt11);
 				if (anInt11 == 4) {
-					int var1 = new Stream(aByteArray2).readInt();
+					int var1 = new ByteBuf(aByteArray2).readInt();
 					aByteArray1 = new byte[var1];
 					anInt12 = 2;
 				}

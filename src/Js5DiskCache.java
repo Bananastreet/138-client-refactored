@@ -22,7 +22,7 @@ public final class Js5DiskCache {
 						return var100001;
 					}
 
-					aBufferedFile2.method52(var1 * 6);
+					aBufferedFile2.seek(var1 * 6);
 					aBufferedFile2.method58(staticByteArray3, 0, 6);
 					var15 = (staticByteArray3[5] & 0xff) + ((staticByteArray3[4] & 0xff) << 8)
 							+ ((staticByteArray3[3] & 0xff) << 16);
@@ -44,7 +44,7 @@ public final class Js5DiskCache {
 				staticByteArray3[3] = (byte) (var15 >> 16);
 				staticByteArray3[4] = (byte) (var15 >> 8);
 				staticByteArray3[5] = (byte) var15;
-				aBufferedFile2.method52(var1 * 6);
+				aBufferedFile2.seek(var1 * 6);
 				aBufferedFile2.method55(staticByteArray3, 0, 6);
 				int var7 = 0;
 				int var8 = 0;
@@ -55,7 +55,7 @@ public final class Js5DiskCache {
 							int var9 = 0;
 							int var10;
 							if (var4) {
-								aBufferedFile1.method52(var15 * 520);
+								aBufferedFile1.seek(var15 * 520);
 
 								try {
 									aBufferedFile1.method58(staticByteArray3, 0, 8);
@@ -105,7 +105,7 @@ public final class Js5DiskCache {
 							staticByteArray3[5] = (byte) (var9 >> 8);
 							staticByteArray3[6] = (byte) var9;
 							staticByteArray3[7] = (byte) anInt147;
-							aBufferedFile1.method52(var15 * 520);
+							aBufferedFile1.seek(var15 * 520);
 							aBufferedFile1.method55(staticByteArray3, 0, 8);
 							var10 = var3 - var7;
 							if (var10 > 512) {
@@ -141,7 +141,7 @@ public final class Js5DiskCache {
 					return var10000;
 				}
 
-				aBufferedFile2.method52(var1 * 6);
+				aBufferedFile2.seek(var1 * 6);
 				aBufferedFile2.method58(staticByteArray3, 0, 6);
 				int var31 = (staticByteArray3[2] & 0xff) + ((staticByteArray3[1] & 0xff) << 8)
 						+ ((staticByteArray3[0] & 0xff) << 16);
@@ -165,7 +165,7 @@ public final class Js5DiskCache {
 							return var10000;
 						}
 
-						aBufferedFile1.method52(var4 * 520);
+						aBufferedFile1.seek(var4 * 520);
 						int var17 = var31 - var6;
 						if (var17 > 512) {
 							var17 = 512;

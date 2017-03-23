@@ -14,7 +14,7 @@ public class ClientScriptMap extends Cacheable {
 	public String[] aStringArray9;
 	public int[] anIntArray113;
 
-	void method530(Stream var1, int var2) {
+	void method530(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			aChar1 = (char) var1.method367();
 		} else if (var2 == 2) {
@@ -48,7 +48,7 @@ public class ClientScriptMap extends Cacheable {
 
 	}
 
-	public void method531(Stream var1) {
+	public void method531(ByteBuf var1) {
 		while (true) {
 			int var2 = var1.method367();
 			if (var2 == 0) {

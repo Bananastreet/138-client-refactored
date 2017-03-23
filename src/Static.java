@@ -285,7 +285,7 @@ public class Static {
 			byte[] var2 = Config5.staticJs5Index34.getFile(5, var0);
 			var1 = new Config5();
 			if (var2 != null) {
-				var1.method558(new Stream(var2));
+				var1.method558(new ByteBuf(var2));
 			}
 
 			Config5.staticCache33.method170(var1, var0);
@@ -303,7 +303,7 @@ public class Static {
 				return null;
 			} else {
 				var1 = new CacheableSub1();
-				Stream var4 = new Stream(var3);
+				ByteBuf var4 = new ByteBuf(var3);
 				var4.position = var4.buf.length - 12;
 				int var6 = var4.readInt();
 				var1.anInt398 = var4.method370();
@@ -1138,7 +1138,7 @@ public class Static {
 
 		Client.outBuffer.method471(13);
 		Client.outBuffer.writeByte(var0.length() + 1);
-		Client.outBuffer.method323(var0);
+		Client.outBuffer.writeString(var0);
 	}
 
 	public static String staticMethod5(long var0) {
@@ -1170,7 +1170,7 @@ public class Static {
 	public static void staticMethod1(boolean var0) {
 		if (staticConnection2 != null) {
 			try {
-				Stream var4 = new Stream(4);
+				ByteBuf var4 = new ByteBuf(4);
 				var4.writeByte(var0 ? 2 : 3);
 				var4.writeTriByte(0);
 				staticConnection2.write(var4.buf, 0, 4);
@@ -1235,9 +1235,9 @@ public class Static {
 							Widget.staticWidgetArrayArray1[var0][var1] = new Widget();
 							Widget.staticWidgetArrayArray1[var0][var1].anInt294 = var1 + (var0 << 16);
 							if (var2[0] == -1) {
-								Widget.staticWidgetArrayArray1[var0][var1].method392(new Stream(var2));
+								Widget.staticWidgetArrayArray1[var0][var1].method392(new ByteBuf(var2));
 							} else {
-								Widget.staticWidgetArrayArray1[var0][var1].method391(new Stream(var2));
+								Widget.staticWidgetArrayArray1[var0][var1].method391(new ByteBuf(var2));
 							}
 						}
 					}
@@ -2764,7 +2764,7 @@ public class Static {
 			var1 = new NpcDefinition();
 			var1.anInt537 = var0;
 			if (var2 != null) {
-				var1.method540(new Stream(var2));
+				var1.method540(new ByteBuf(var2));
 			}
 
 			var1.method545();
@@ -5826,7 +5826,7 @@ public class Static {
 					if (var2 == null) {
 						if (staticByte2 != 0) {
 							try {
-								Stream var5 = new Stream(4);
+								ByteBuf var5 = new ByteBuf(4);
 								var5.writeByte(4);
 								var5.writeByte(staticByte2);
 								var5.writeShort(0);
@@ -6484,9 +6484,9 @@ public class Static {
 			try {
 				FileOnDisk var18 = new FileOnDisk(staticFile1, "rw", 10000L);
 
-				Stream var15;
+				ByteBuf var15;
 				int var23;
-				for (var15 = new Stream((int) var18.method87()); var15.position < var15.buf.length; var15.position += var23) {
+				for (var15 = new ByteBuf((int) var18.method87()); var15.position < var15.buf.length; var15.position += var23) {
 					var23 = var18.method84(var15.buf, var15.position, var15.buf.length - var15.position);
 					if (var23 == -1) {
 						throw new IOException();
@@ -6809,7 +6809,7 @@ public class Static {
 	}
 
 	static final byte[] staticMethod241(byte[] var0) {
-		Stream var1 = new Stream(var0);
+		ByteBuf var1 = new ByteBuf(var0);
 		int var3 = var1.method367();
 		int var2 = var1.readInt();
 		if (var2 < 0 || Js5Index.staticInt138 != 0 && var2 > Js5Index.staticInt138) {
@@ -6980,7 +6980,7 @@ public class Static {
 	}
 
 	static final void staticMethod244(byte[] var0, int var1, int var2, Scene var3, Class38[] var4) {
-		Stream var5 = new Stream(var0);
+		ByteBuf var5 = new ByteBuf(var0);
 		int var7 = -1;
 
 		while (true) {
@@ -7030,8 +7030,8 @@ public class Static {
 
 	static final int staticMethod252(long var0, String var2) {
 		Random var3 = new Random();
-		Stream var4 = new Stream(128);
-		Stream var5 = new Stream(128);
+		ByteBuf var4 = new ByteBuf(128);
+		ByteBuf var5 = new ByteBuf(128);
 		int[] var6 = new int[] { var3.nextInt(), var3.nextInt(), (int) (var0 >> 32), (int) var0 };
 		var4.writeByte(10);
 
@@ -7064,8 +7064,8 @@ public class Static {
 			byte[] var20 = new byte[24];
 
 			try {
-				staticBufferedFile2.method52(0L);
-				staticBufferedFile2.method53(var20);
+				randomDat.seek(0L);
+				randomDat.read(var20);
 
 				int var21;
 				for (var21 = 0; var21 < 24 && var20[var21] == 0; var21++) {
@@ -7091,11 +7091,11 @@ public class Static {
 			var7 += 8 - var7 % 8;
 		}
 
-		Stream var211 = new Stream(var7);
-		var211.method323(var2);
+		ByteBuf var211 = new ByteBuf(var7);
+		var211.writeString(var2);
 		var211.position = var7;
 		var211.method347(var6);
-		Stream var221 = new Stream(var211.position + var5.position + 5 + var4.position);
+		ByteBuf var221 = new ByteBuf(var211.position + var5.position + 5 + var4.position);
 		var221.writeByte(2);
 		var221.writeByte(var4.position);
 		var221.writeBytes(var4.buf, 0, var4.position);
@@ -7117,7 +7117,7 @@ public class Static {
 			var15.write("data2=" + staticMethod19(var12) + "&dest=" + staticMethod19("passwordchoice.ws"));
 			var15.flush();
 			InputStream var16 = var14.getInputStream();
-			var221 = new Stream(new byte[1000]);
+			var221 = new ByteBuf(new byte[1000]);
 
 			do {
 				int var17 = var16.read(var221.buf, var221.position, 1000 - var221.position);
@@ -8052,7 +8052,7 @@ public class Static {
 
 		try {
 			var0 = staticMethod70("", KeyFocusListener.staticGameType7.aString9, true);
-			Stream var1 = staticClass6_1.method23();
+			ByteBuf var1 = staticClass6_1.method23();
 			var0.method88(var1.buf, 0, var1.position);
 		} catch (Exception var3) {
 			;
@@ -8382,7 +8382,7 @@ public class Static {
 
 	public static Class9 staticMethod52(Js5Index var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
-		return var3 == null ? null : new Class9(new Stream(var3));
+		return var3 == null ? null : new Class9(new ByteBuf(var3));
 	}
 
 	static final void staticMethod117(Widget var0, int var1, int var2, int var3) {
@@ -9505,9 +9505,9 @@ public class Static {
 					Class19.staticInt35 = 2;
 					NodeSub8Sub3 var10 = new NodeSub8Sub3();
 					var10.method442(9, 128);
-					Stream.staticClass19_2 = staticMethod431(BufferedFile.staticTaskManager1, Class38.staticCanvas1, 0,
+					ByteBuf.staticClass19_2 = staticMethod431(BufferedFile.staticTaskManager1, Class38.staticCanvas1, 0,
 							22050);
-					Stream.staticClass19_2.method77(var10);
+					ByteBuf.staticClass19_2.method77(var10);
 					var211 = Client.staticJs5IndexImpl9;
 					Js5IndexImpl var15 = staticJs5IndexImpl1;
 					var22 = Config19.staticJs5IndexImpl15;
@@ -12180,7 +12180,7 @@ public class Static {
 
 	static final void staticMethod152(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7,
 			Scene var8, Class38[] var9) {
-		Stream var10 = new Stream(var0);
+		ByteBuf var10 = new ByteBuf(var0);
 		int var14 = -1;
 
 		while (true) {
@@ -12282,7 +12282,7 @@ public class Static {
 			var1 = new ItemDefinition();
 			var1.anInt437 = var0;
 			if (var2 != null) {
-				var1.method498(new Stream(var2));
+				var1.method498(new ByteBuf(var2));
 			}
 
 			var1.method486();
@@ -12314,7 +12314,7 @@ public class Static {
 
 	static final boolean staticMethod154(byte[] var0, int var1, int var2) {
 		boolean var3 = true;
-		Stream var6 = new Stream(var0);
+		ByteBuf var6 = new ByteBuf(var0);
 		int var5 = -1;
 
 		label56: while (true) {
@@ -12371,7 +12371,7 @@ public class Static {
 		if ((var3 & 0x80) != 0) {
 			var7 = var0.method367();
 			byte[] var15 = new byte[var7];
-			Stream var11 = new Stream(var15);
+			ByteBuf var11 = new ByteBuf(var15);
 			var0.readBytes(var15, 0, var7);
 			staticStreamArray1[var1] = var11;
 			var2.method658(var11);
@@ -12822,8 +12822,8 @@ public class Static {
 			NodeSub12.staticClass19_1.method66();
 		}
 
-		if (Stream.staticClass19_2 != null) {
-			Stream.staticClass19_2.method66();
+		if (ByteBuf.staticClass19_2 != null) {
+			ByteBuf.staticClass19_2.method66();
 		}
 
 	}
@@ -13055,8 +13055,8 @@ public class Static {
 
 			int var10;
 			if (Client.loginStage == 3) {
-				if (Stream.staticClass19_2 != null) {
-					Stream.staticClass19_2.method67();
+				if (ByteBuf.staticClass19_2 != null) {
+					ByteBuf.staticClass19_2.method67();
 				}
 
 				if (NodeSub12.staticClass19_1 != null) {
@@ -13064,8 +13064,8 @@ public class Static {
 				}
 
 				var10 = Class56.gameConnection.method152();
-				if (Stream.staticClass19_2 != null) {
-					Stream.staticClass19_2.method67();
+				if (ByteBuf.staticClass19_2 != null) {
+					ByteBuf.staticClass19_2.method67();
 				}
 
 				if (NodeSub12.staticClass19_1 != null) {
@@ -13129,7 +13129,7 @@ public class Static {
 					Client.outBuffer.position += 8;
 				}
 
-				Client.outBuffer.method323(staticString7);
+				Client.outBuffer.writeString(staticString7);
 				//TODO RSA
 				Client.outBuffer.encryptRSA(staticBigInteger3, staticBigInteger4);
 				Client.loginBuffer.position = 0;
@@ -13149,7 +13149,7 @@ public class Static {
 				Client.loginBuffer.writeBytes(Client.outBuffer.buf, 0,
 						Client.outBuffer.position);
 				xteaStart = Client.loginBuffer.position;
-				Client.loginBuffer.method323(staticString2);
+				Client.loginBuffer.writeString(staticString2);
 				Client.loginBuffer.writeByte((Client.resizable ? 1 : 0) << 1 | (Client.lowMemory ? 1 : 0));
 				Client.loginBuffer.writeShort(gameWidth);
 				Client.loginBuffer.writeShort(Class47.gameHeight);
@@ -13161,8 +13161,8 @@ public class Static {
 					byte[] var17 = new byte[24];
 
 					try {
-						staticBufferedFile2.method52(0L);
-						staticBufferedFile2.method53(var17);
+						randomDat.seek(0L);						
+						randomDat.read(var17);
 
 						for (var20 = 0; var20 < 24 && var17[var20] == 0; var20++) {
 							;
@@ -13180,9 +13180,9 @@ public class Static {
 					var16.writeBytes(var17, 0, var17.length);
 				}
 
-				Client.loginBuffer.method323(BuildType.staticString27);
+				Client.loginBuffer.writeString(BuildType.staticString27);
 				Client.loginBuffer.writeInt(Client.staticInt164);
-				Stream var161 = new Stream(Class57.staticComputerInfo1.method404());
+				ByteBuf var161 = new ByteBuf(Class57.staticComputerInfo1.method404());
 				Class57.staticComputerInfo1.method403(var161);
 				Client.loginBuffer.writeBytes(var161.buf, 0, var161.buf.length);
 				Client.loginBuffer.writeByte(NodeSub19.staticInt319);
@@ -13591,7 +13591,7 @@ public class Static {
 					Client.outBuffer.method471(22);
 					Client.outBuffer.writeByte(staticMethod378(var14) + 1);
 					Client.outBuffer.method345(var151);
-					Client.outBuffer.method323(var14);
+					Client.outBuffer.writeString(var14);
 					return 1;
 				} else {
 					String var8;
@@ -13636,7 +13636,7 @@ public class Static {
 											} else {
 												Client.outBuffer.method471(36);
 												Client.outBuffer.writeByte(staticMethod378(var14));
-												Client.outBuffer.method323(var14);
+												Client.outBuffer.writeString(var14);
 											}
 											break;
 										}
@@ -13696,7 +13696,7 @@ public class Static {
 										Client.staticInt280 = Client.staticInt274 * 2073400987;
 										Client.outBuffer.method471(196);
 										Client.outBuffer.writeByte(staticMethod378(var14));
-										Client.outBuffer.method323(var14);
+										Client.outBuffer.writeString(var14);
 										break;
 									}
 								}
@@ -13740,7 +13740,7 @@ public class Static {
 											} else {
 												Client.outBuffer.method471(190);
 												Client.outBuffer.writeByte(staticMethod378(var14));
-												Client.outBuffer.method323(var14);
+												Client.outBuffer.writeString(var14);
 											}
 											break;
 										}
@@ -14032,7 +14032,7 @@ public class Static {
 			byte[] var2 = Varbit.staticJs5Index11.getFile(14, var0);
 			var1 = new Varbit();
 			if (var2 != null) {
-				var1.method478(new Stream(var2));
+				var1.method478(new ByteBuf(var2));
 			}
 
 			Varbit.staticCache7.method170(var1, var0);
@@ -14233,7 +14233,7 @@ public class Static {
 		}
 	}
 
-	public static String staticMethod191(Stream var0) {
+	public static String staticMethod191(ByteBuf var0) {
 		return staticMethod283(var0, 32767);
 	}
 
@@ -14274,7 +14274,7 @@ public class Static {
 		}
 	}
 
-	static final void staticMethod194(Stream var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+	static final void staticMethod194(ByteBuf var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		int var7;
 		if (var2 >= 0 && var2 < 104 && var3 >= 0 && var3 < 104) {
 			staticByteArrayArrayArray4[var1][var2][var3] = 0;
@@ -14555,7 +14555,7 @@ public class Static {
 			byte[] var2 = CacheableSub5.staticJs5Index17.getFile(32, var0);
 			var1 = new CacheableSub5();
 			if (var2 != null) {
-				var1.method500(new Stream(var2));
+				var1.method500(new ByteBuf(var2));
 			}
 
 			CacheableSub5.staticCache12.method170(var1, var0);
@@ -14973,7 +14973,7 @@ public class Static {
 		int var2 = -1;
 
 		for (int var4 = 0; var4 < var1; var4++) {
-			var2 = var2 >>> 8 ^ Stream.staticIntArray124[(var2 ^ var0[var4]) & 0xff];
+			var2 = var2 >>> 8 ^ ByteBuf.staticIntArray124[(var2 ^ var0[var4]) & 0xff];
 		}
 
 		var2 = ~var2;
@@ -15398,7 +15398,7 @@ public class Static {
 			byte[] var2 = AnimDef.staticJs5Index33.getFile(12, var0);
 			var1 = new AnimDef();
 			if (var2 != null) {
-				var1.method550(new Stream(var2));
+				var1.method550(new ByteBuf(var2));
 			}
 
 			var1.method555();
@@ -15690,7 +15690,7 @@ public class Static {
 			var2.write("data1=req");
 			var2.flush();
 			InputStream var3 = var1.getInputStream();
-			Stream var4 = new Stream(new byte[1000]);
+			ByteBuf var4 = new ByteBuf(new byte[1000]);
 
 			do {
 				int var5 = var3.read(var4.buf, var4.position, 1000 - var4.position);
@@ -16401,7 +16401,7 @@ public class Static {
 			}
 		}
 
-		Stream var101 = new Stream(var0);
+		ByteBuf var101 = new ByteBuf(var0);
 
 		for (var8 = 0; var8 < 4; var8++) {
 			for (var7 = 0; var7 < 64; var7++) {
@@ -17246,7 +17246,7 @@ public class Static {
 			byte[] var2 = Varp.staticJs5Index27.getFile(16, var0);
 			var1 = new Varp();
 			if (var2 != null) {
-				var1.method534(new Stream(var2));
+				var1.method534(new ByteBuf(var2));
 			}
 
 			Varp.staticCache25.method170(var1, var0);
@@ -17278,7 +17278,7 @@ public class Static {
 			} else {
 				byte[] var4 = Class2.staticClass3_1.method11();
 				if (var4 != null) {
-					Stream var1 = new Stream(var4);
+					ByteBuf var1 = new ByteBuf(var4);
 					Class2.staticInt2 = var1.method370();
 					Class2.staticClass2Array1 = new Class2[Class2.staticInt2];
 
@@ -17390,12 +17390,12 @@ public class Static {
 		}
 	}
 
-	static void staticMethod336(Stream var0, int var1) {
+	static void staticMethod336(ByteBuf var0, int var1) {
 		staticMethod267(var0.buf, var1);
-		if (staticBufferedFile2 != null) {
+		if (randomDat != null) {
 			try {
-				staticBufferedFile2.method52(0L);
-				staticBufferedFile2.method55(var0.buf, var1, 24);
+				randomDat.seek(0L);
+				randomDat.method55(var0.buf, var1, 24);
 			} catch (Exception var3) {
 				;
 			}
@@ -17446,7 +17446,7 @@ public class Static {
 			byte[] var2 = FloorUnderlayDef.staticJs5Index22.getFile(1, var0);
 			var1 = new FloorUnderlayDef();
 			if (var2 != null) {
-				var1.method523(new Stream(var2), var0);
+				var1.method523(new ByteBuf(var2), var0);
 			}
 
 			var1.method522();
@@ -17869,7 +17869,7 @@ public class Static {
 						Client.staticInt280 = Client.staticInt274 * 2073400987;
 						Client.outBuffer.method471(237);
 						Client.outBuffer.writeByte(staticMethod378(var0));
-						Client.outBuffer.method323(var0);
+						Client.outBuffer.writeString(var0);
 						break;
 					}
 				}
@@ -18442,7 +18442,7 @@ public class Static {
 
 	static NodeSub11 staticMethod300(Js5Index var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
-		return var3 == null ? null : new NodeSub11(new Stream(var3));
+		return var3 == null ? null : new NodeSub11(new ByteBuf(var3));
 	}
 
 	public static void staticMethod301(Class47 var0) {
@@ -18476,7 +18476,7 @@ public class Static {
 			byte[] var2 = staticJs5Index8.getFile(4, var0);
 			var1 = new FloorOverlayDef();
 			if (var2 != null) {
-				var1.method539(new Stream(var2), var0);
+				var1.method539(new ByteBuf(var2), var0);
 			}
 
 			var1.method536();
@@ -20663,7 +20663,7 @@ public class Static {
 		if (Class43.staticNodeSub1Array1 != null) {
 			Client.outBuffer.method471(214);
 			Client.outBuffer.writeByte(staticMethod378(var0));
-			Client.outBuffer.method323(var0);
+			Client.outBuffer.writeString(var0);
 		}
 
 	}
@@ -21127,7 +21127,7 @@ public class Static {
 		if (!var0.equals("")) {
 			Client.outBuffer.method471(164);
 			Client.outBuffer.writeByte(staticMethod378(var0));
-			Client.outBuffer.method323(var0);
+			Client.outBuffer.writeString(var0);
 		}
 
 	}
@@ -21714,7 +21714,7 @@ public class Static {
 		}
 	}
 
-	static String staticMethod283(Stream var0, int var1) {
+	static String staticMethod283(ByteBuf var0, int var1) {
 		try {
 			int var5 = var0.method379();
 			if (var5 > var1) {
@@ -22155,7 +22155,7 @@ public class Static {
 			var1 = new SpotAnim();
 			var1.anInt554 = var0;
 			if (var2 != null) {
-				var1.method547(new Stream(var2));
+				var1.method547(new ByteBuf(var2));
 			}
 
 			SpotAnim.staticCache30.method170(var1, var0);
@@ -22219,7 +22219,7 @@ public class Static {
 								var0.method344(((Number) var241).longValue());
 							} else if (var241 instanceof String) {
 								var0.writeByte(2);
-								var0.method323((String) var241);
+								var0.writeString((String) var241);
 							} else {
 								var0.writeByte(4);
 							}
@@ -22261,7 +22261,7 @@ public class Static {
 	static void staticMethod349(File var0, File var1) {
 		try {
 			FileOnDisk var4 = new FileOnDisk(staticFile1, "rw", 10000L);
-			Stream var3 = new Stream(500);
+			ByteBuf var3 = new ByteBuf(500);
 			var3.writeByte(3);
 			var3.writeByte(var1 != null ? 1 : 0);
 			var3.method325(var0.getPath());
@@ -22314,7 +22314,7 @@ public class Static {
 			byte[] var2 = IdentityKit.staticJs5Index12.getFile(3, var0);
 			var1 = new IdentityKit();
 			if (var2 != null) {
-				var1.method480(new Stream(var2));
+				var1.method480(new ByteBuf(var2));
 			}
 
 			IdentityKit.staticCache8.method170(var1, var0);
@@ -22785,13 +22785,13 @@ public class Static {
 							var15 = staticStringArray1[--staticInt148];
 							Client.outBuffer.method471(37);
 							Client.outBuffer.writeByte(var15.length() + 1);
-							Client.outBuffer.method323(var15);
+							Client.outBuffer.writeString(var15);
 							var8 = 1;
 						} else if (var0 == 3106) {
 							var15 = staticStringArray1[--staticInt148];
 							Client.outBuffer.method471(128);
 							Client.outBuffer.writeByte(var15.length() + 1);
-							Client.outBuffer.method323(var15);
+							Client.outBuffer.writeString(var15);
 							var8 = 1;
 						} else if (var0 == 3107) {
 							var14 = staticIntArray16[--staticInt27];
@@ -22849,9 +22849,9 @@ public class Static {
 									Client.outBuffer.method471(136);
 									Client.outBuffer
 											.writeShort(1 + staticMethod378(var23) + staticMethod378(var17));
-									Client.outBuffer.method323(var17);
+									Client.outBuffer.writeString(var17);
 									Client.outBuffer.method343(var14);
-									Client.outBuffer.method323(var23);
+									Client.outBuffer.writeString(var23);
 									var8 = 1;
 								}
 							} else if (var0 == 3117) {
@@ -22884,7 +22884,7 @@ public class Static {
 									var28 = ClientScriptMap.staticJs5Index25.getFile(8, var14);
 									var261 = new ClientScriptMap();
 									if (var28 != null) {
-										var261.method531(new Stream(var28));
+										var261.method531(new ByteBuf(var28));
 									}
 
 									ClientScriptMap.staticCache23.method170(var261, var14);
@@ -22923,7 +22923,7 @@ public class Static {
 									var28 = ClientScriptMap.staticJs5Index25.getFile(8, var4);
 									var261 = new ClientScriptMap();
 									if (var28 != null) {
-										var261.method531(new Stream(var28));
+										var261.method531(new ByteBuf(var28));
 									}
 
 									ClientScriptMap.staticCache23.method170(var261, var4);
@@ -23173,7 +23173,7 @@ public class Static {
 									var4 = staticIntArray16[staticInt27 + 1];
 									Client.outBuffer.method471(195);
 									Client.outBuffer.writeByte(staticMethod378(var15) + 2);
-									Client.outBuffer.method323(var15);
+									Client.outBuffer.writeString(var15);
 									Client.outBuffer.writeByte(var19 - 1);
 									Client.outBuffer.writeByte(var4);
 									var8 = 1;
@@ -23370,7 +23370,7 @@ public class Static {
 										Client.outBuffer.method471(169);
 										Client.outBuffer.writeShort(0);
 										var4 = Client.outBuffer.position;
-										Client.outBuffer.method323(var15);
+										Client.outBuffer.writeString(var15);
 										BitBuf var38 = Client.outBuffer;
 										var30 = var38.position;
 										byte[] var35 = staticMethod340(var23);
@@ -23674,7 +23674,7 @@ public class Static {
 			var1 = new ObjectDefinition();
 			var1.anInt483 = var0;
 			if (var2 != null) {
-				var1.method518(new Stream(var2));
+				var1.method518(new ByteBuf(var2));
 			}
 
 			var1.method510();
@@ -23785,7 +23785,7 @@ public class Static {
 			byte[] var2 = Config15.staticJs5Index21.getFile(15, var0);
 			var1 = new Config15();
 			if (var2 != null) {
-				var1.method520(new Stream(var2));
+				var1.method520(new ByteBuf(var2));
 			}
 
 			Config15.staticCache19.method170(var1, var0);
@@ -23801,7 +23801,7 @@ public class Static {
 			byte[] var2 = CacheableSub6.staticJs5Index24.getFile(33, var0);
 			var1 = new CacheableSub6();
 			if (var2 != null) {
-				var1.method526(new Stream(var2));
+				var1.method526(new ByteBuf(var2));
 			}
 
 			CacheableSub6.staticCache21.method170(var1, var0);
@@ -25482,7 +25482,7 @@ public class Static {
 	}
 
 	static void staticMethod385(byte[] var0) {
-		Stream var1 = new Stream(var0);
+		ByteBuf var1 = new ByteBuf(var0);
 		var1.position = var0.length - 2;
 		staticInt143 = var1.method370();
 		NodeSub20.staticIntArray126 = new int[staticInt143];
@@ -30744,7 +30744,7 @@ public class Static {
 	public static BufferedFile[] staticBufferedFileArray1;
 	static int staticInt101;
 	static Class56 staticClass56_1;
-	public static BufferedFile staticBufferedFile2 = null;
+	public static BufferedFile randomDat = null;
 	public static BufferedFile staticBufferedFile3 = null;
 	public static BufferedFile staticBufferedFile1 = null;
 	static Applet staticApplet2 = null;
@@ -30893,7 +30893,7 @@ public class Static {
 	public static int staticInt132 = 0;
 	public static HashTable staticHashTable3 = new HashTable(4096);
 	public static int staticInt133 = 0;
-	public static Stream staticStream3 = new Stream(8);
+	public static ByteBuf staticStream3 = new ByteBuf(8);
 	public static int staticInt134 = 0;
 	public static CRC32 staticCRC32_1 = new CRC32();
 	public static Js5IndexImpl[] staticJs5IndexImplArray1 = new Js5IndexImpl[256];
@@ -30939,7 +30939,7 @@ public class Static {
 	public static Class47 staticClass47_1;
 	static byte[] staticByteArray1 = new byte[2048];
 	static byte[] staticByteArray2 = new byte[2048];
-	static Stream[] staticStreamArray1 = new Stream[2048];
+	static ByteBuf[] staticStreamArray1 = new ByteBuf[2048];
 	static int staticInt24 = 0;
 	static int[] staticIntArray7 = new int[2048];
 	static int staticInt23 = 0;
@@ -30949,7 +30949,7 @@ public class Static {
 	static int[] staticIntArray11 = new int[2048];
 	static int staticInt22 = 0;
 	static int[] staticIntArray12 = new int[2048];
-	static Stream staticStream1 = new Stream(new byte[5000]);
+	static ByteBuf staticStream1 = new ByteBuf(new byte[5000]);
 	static int[] staticIntArray71;
 	static int staticInt142;
 	static int[] staticIntArray72;

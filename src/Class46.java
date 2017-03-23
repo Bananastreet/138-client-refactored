@@ -14,7 +14,7 @@ public class Class46 {
 			(byte) 2, (byte) 2, (byte) 2, (byte) 2, (byte) 2, (byte) 2, (byte) 0, (byte) 1, (byte) 2, (byte) 1,
 			(byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0,
 			(byte) 0, (byte) 0 };
-	Stream aStream1 = new Stream((byte[]) null);
+	ByteBuf aStream1 = new ByteBuf((byte[]) null);
 	int anInt190;
 	int anInt189;
 	int[] anIntArray43;

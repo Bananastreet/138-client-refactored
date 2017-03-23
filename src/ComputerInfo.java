@@ -25,7 +25,7 @@ public class ComputerInfo extends Node {
 	int anInt378;
 	int anInt376;
 
-	public void method403(Stream var1) {
+	public void method403(ByteBuf var1) {
 		var1.writeByte(6);
 		var1.writeByte(anInt368);
 		var1.writeByte(aBool48 ? 1 : 0);

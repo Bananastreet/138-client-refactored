@@ -225,7 +225,7 @@ public class Widget extends Node {
 		}
 	}
 
-	Object[] method385(Stream var1) {
+	Object[] method385(ByteBuf var1) {
 		int var2 = var1.method367();
 		if (var2 == 0) {
 			return null;
@@ -470,7 +470,7 @@ public class Widget extends Node {
 		}
 	}
 
-	int[] method390(Stream var1) {
+	int[] method390(ByteBuf var1) {
 		int var2 = var1.method367();
 		if (var2 == 0) {
 			return null;
@@ -485,7 +485,7 @@ public class Widget extends Node {
 		}
 	}
 
-	void method391(Stream var1) {
+	void method391(ByteBuf var1) {
 		aBool42 = false;
 		anInt296 = var1.method367();
 		anInt331 = var1.method367();
@@ -736,7 +736,7 @@ public class Widget extends Node {
 
 	}
 
-	void method392(Stream var1) {
+	void method392(ByteBuf var1) {
 		var1.method367();
 		aBool42 = true;
 		anInt296 = var1.method367();
