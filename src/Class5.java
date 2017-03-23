@@ -73,7 +73,7 @@ public class Class5 {
 	}
 
 	FileOnDisk method17(boolean var1) {
-		return Static.staticMethod70("2", NodeSub18.staticGameType7.aString9, var1);
+		return Static.staticMethod70("2", KeyFocusListener.staticGameType7.aString9, var1);
 	}
 
 	void method18() {

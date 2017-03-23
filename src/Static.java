@@ -2779,9 +2779,9 @@ public class Static {
 	}
 
 	static final void staticMethod87() {
-		if (Class56.staticConnection3 != null) {
-			Class56.staticConnection3.method150();
-			Class56.staticConnection3 = null;
+		if (Class56.gameConnection != null) {
+			Class56.gameConnection.method150();
+			Class56.gameConnection = null;
 		}
 
 		staticMethod160();
@@ -3449,7 +3449,7 @@ public class Static {
 										var24 - var10.anInt335, var18 - var10.anInt312, var13);
 							}
 
-							NodeSub18 var14 = (NodeSub18) Client.staticHashTable5.method149(var10.anInt294);
+							KeyFocusListener var14 = (KeyFocusListener) Client.staticHashTable5.method149(var10.anInt294);
 							if (var14 != null) {
 								staticMethod226(var14.anInt384, var29, var22, var31, var32, var24, var18, var13);
 							}
@@ -4188,7 +4188,7 @@ public class Static {
 											var11 - var9.anInt335, var14 - var9.anInt312);
 								}
 
-								NodeSub18 var29 = (NodeSub18) Client.staticHashTable5.method149(var9.anInt294);
+								KeyFocusListener var29 = (KeyFocusListener) Client.staticHashTable5.method149(var9.anInt294);
 								if (var29 != null) {
 									if (var29.anInt383 == 0 && MouseHandler.staticInt94 >= var21
 											&& MouseHandler.staticInt88 >= var22 && MouseHandler.staticInt94 < var10
@@ -6457,11 +6457,11 @@ public class Static {
 		++Client.staticInt273;
 		if (Client.staticInt273 >= 50 || var0) {
 			Client.staticInt273 = 0;
-			if (!Client.staticBool43 && Class56.staticConnection3 != null) {
+			if (!Client.staticBool43 && Class56.gameConnection != null) {
 				Client.staticEncryptedStream1.method471(184);
 
 				try {
-					Class56.staticConnection3.method151(Client.staticEncryptedStream1.buf, 0,
+					Class56.gameConnection.method151(Client.staticEncryptedStream1.buf, 0,
 							Client.staticEncryptedStream1.off);
 					Client.staticEncryptedStream1.off = 0;
 				} catch (IOException var2) {
@@ -7678,7 +7678,7 @@ public class Static {
 						staticMethod261(var3.aWidgetArray1, var3.anInt294);
 					}
 
-					NodeSub18 var5 = (NodeSub18) Client.staticHashTable5.method149(var3.anInt294);
+					KeyFocusListener var5 = (KeyFocusListener) Client.staticHashTable5.method149(var3.anInt294);
 					if (var5 != null) {
 						staticMethod14(var5.anInt384);
 					}
@@ -7938,7 +7938,7 @@ public class Static {
 		return new String(var3);
 	}
 
-	static final void staticMethod266(NodeSub18 var0, boolean var1) {
+	static final void staticMethod266(KeyFocusListener var0, boolean var1) {
 		int var2 = var0.anInt384;
 		int var4 = (int) var0.id;
 		var0.method174();
@@ -8051,7 +8051,7 @@ public class Static {
 		FileOnDisk var0 = null;
 
 		try {
-			var0 = staticMethod70("", NodeSub18.staticGameType7.aString9, true);
+			var0 = staticMethod70("", KeyFocusListener.staticGameType7.aString9, true);
 			Stream var1 = staticClass6_1.method23();
 			var0.method88(var1.buf, 0, var1.off);
 		} catch (Exception var3) {
@@ -9230,8 +9230,8 @@ public class Static {
 		} else {
 			staticInt13 = var4;
 			staticMethod419();
-			byte[] var6 = var1.method269("title.jpg", "");
-			staticSprite2 = new Sprite(var6, var0);
+			byte[] titleData = var1.method269("title.jpg", "");			
+			staticSprite2 = new Sprite(titleData, var0);			
 			staticSprite1 = staticSprite2.method650();
 			if ((Client.staticInt201 & 0x20000000) != 0) {
 				Config5.staticRasterizer2DSub3_6 = staticMethod25(var2, "logo_deadman_mode", "");
@@ -9317,6 +9317,7 @@ public class Static {
 			staticBool1 = false;
 			if (!staticClass6_1.aBool2) {
 				Js5IndexImpl var9 = Class34.staticJs5IndexImpl3;
+				// TODO play startup song
 				int var7 = var9.method267("scape main");
 				int var8 = var9.method268(var7, "");
 				staticInt118 = 1;
@@ -11242,9 +11243,9 @@ public class Static {
 															}
 
 															try {
-																if (Class56.staticConnection3 != null
+																if (Class56.gameConnection != null
 																		&& Client.staticEncryptedStream1.off > 0) {
-																	Class56.staticConnection3.method151(
+																	Class56.gameConnection.method151(
 																			Client.staticEncryptedStream1.buf, 0,
 																			Client.staticEncryptedStream1.off);
 																	Client.staticEncryptedStream1.off = 0;
@@ -11956,7 +11957,7 @@ public class Static {
 			staticMethod215(var1.aWidgetArray1, var1.anInt294, var5, var6, var2);
 		}
 
-		NodeSub18 var3 = (NodeSub18) Client.staticHashTable5.method149(var1.anInt294);
+		KeyFocusListener var3 = (KeyFocusListener) Client.staticHashTable5.method149(var1.anInt294);
 		if (var3 != null) {
 			int var4 = var3.anInt384;
 			if (staticMethod4(var4)) {
@@ -12121,8 +12122,8 @@ public class Static {
 			}
 		}
 
-		for (NodeSub18 var5 = (NodeSub18) Client.staticHashTable5
-				.method146(); var5 != null; var5 = (NodeSub18) Client.staticHashTable5.method147()) {
+		for (KeyFocusListener var5 = (KeyFocusListener) Client.staticHashTable5
+				.method146(); var5 != null; var5 = (KeyFocusListener) Client.staticHashTable5.method147()) {
 			staticMethod266(var5, true);
 		}
 
@@ -13011,48 +13012,49 @@ public class Static {
 
 	}
 
-	static final void staticMethod21() {
+	//TODO process login
+	static final void processLogin() {		
 		try {
-			if (Client.staticInt303 == 0) {
-				if (Class56.staticConnection3 != null) {
-					Class56.staticConnection3.method150();
-					Class56.staticConnection3 = null;
+			if (Client.loginStage == 0) {
+				if (Class56.gameConnection != null) {
+					Class56.gameConnection.method150();
+					Class56.gameConnection = null;
 				}
 
-				NodeSub18.staticTask3 = null;
+				KeyFocusListener.staticTask3 = null;
 				Client.staticBool43 = false;
 				Client.staticInt262 = 0;
-				Client.staticInt303 = 1;
+				Client.loginStage = 1;
 			}
 
-			if (Client.staticInt303 == 1) {
-				if (NodeSub18.staticTask3 == null) {
-					NodeSub18.staticTask3 = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
+			if (Client.loginStage == 1) {
+				if (KeyFocusListener.staticTask3 == null) {
+					KeyFocusListener.staticTask3 = BufferedFile.staticTaskManager1.method93(Class31.staticString21,
 							Class32.staticInt73 * 462737933);
 				}
 
-				if (NodeSub18.staticTask3.anInt86 == 2) {
+				if (KeyFocusListener.staticTask3.anInt86 == 2) {
 					throw new IOException();
 				}
 
-				if (NodeSub18.staticTask3.anInt86 == 1) {
-					Class56.staticConnection3 = new Connection((Socket) NodeSub18.staticTask3.anObject2,
+				if (KeyFocusListener.staticTask3.anInt86 == 1) {
+					Class56.gameConnection = new Connection((Socket) KeyFocusListener.staticTask3.anObject2,
 							BufferedFile.staticTaskManager1);
-					NodeSub18.staticTask3 = null;
-					Client.staticInt303 = 2;
+					KeyFocusListener.staticTask3 = null;
+					Client.loginStage = 2;
 				}
 			}
 
-			if (Client.staticInt303 == 2) {
+			if (Client.loginStage == 2) {
 				Client.staticEncryptedStream1.off = 0;
 				Client.staticEncryptedStream1.writeByte(14);
-				Class56.staticConnection3.method151(Client.staticEncryptedStream1.buf, 0, 1);
+				Class56.gameConnection.method151(Client.staticEncryptedStream1.buf, 0, 1);
 				Client.staticEncryptedStream3.off = 0;
-				Client.staticInt303 = 3;
+				Client.loginStage = 3;
 			}
 
 			int var10;
-			if (Client.staticInt303 == 3) {
+			if (Client.loginStage == 3) {
 				if (Stream.staticClass19_2 != null) {
 					Stream.staticClass19_2.method67();
 				}
@@ -13061,7 +13063,7 @@ public class Static {
 					NodeSub12.staticClass19_1.method67();
 				}
 
-				var10 = Class56.staticConnection3.method152();
+				var10 = Class56.gameConnection.method152();
 				if (Stream.staticClass19_2 != null) {
 					Stream.staticClass19_2.method67();
 				}
@@ -13076,18 +13078,18 @@ public class Static {
 				}
 
 				Client.staticEncryptedStream3.off = 0;
-				Client.staticInt303 = 4;
+				Client.loginStage = 4;
 			}
 
-			if (Client.staticInt303 == 4) {
+			if (Client.loginStage == 4) {
 				if (Client.staticEncryptedStream3.off < 8) {
-					var10 = Class56.staticConnection3.available();
+					var10 = Class56.gameConnection.available();
 					if (var10 > 8 - Client.staticEncryptedStream3.off) {
 						var10 = 8 - Client.staticEncryptedStream3.off;
 					}
 
 					if (var10 > 0) {
-						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf,
+						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf,
 								Client.staticEncryptedStream3.off, var10);
 						Client.staticEncryptedStream3.off += var10;
 					}
@@ -13095,16 +13097,16 @@ public class Static {
 
 				if (Client.staticEncryptedStream3.off == 8) {
 					Client.staticEncryptedStream3.off = 0;
-					NodeSub18.staticLong15 = Client.staticEncryptedStream3.readLong();
-					Client.staticInt303 = 5;
+					KeyFocusListener.staticLong15 = Client.staticEncryptedStream3.readLong();
+					Client.loginStage = 5;
 				}
 			}
 
 			int var1;
 			int var2;
-			if (Client.staticInt303 == 5) {
+			if (Client.loginStage == 5) {
 				int[] var19 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D),
-						(int) (NodeSub18.staticLong15 >> 32), (int) (NodeSub18.staticLong15 & 0xffffffffffffffffL) };
+						(int) (KeyFocusListener.staticLong15 >> 32), (int) (KeyFocusListener.staticLong15 & 0xffffffffffffffffL) };
 				Client.staticEncryptedStream1.off = 0;
 				Client.staticEncryptedStream1.writeByte(1);
 				Client.staticEncryptedStream1.writeByte(staticClass28_1.method12());
@@ -13198,7 +13200,7 @@ public class Static {
 				Client.staticEncryptedStream2.writeInt(Client.staticJs5IndexImpl9.anInt201);
 				Client.staticEncryptedStream2.method341(var19, var2, Client.staticEncryptedStream2.off);
 				Client.staticEncryptedStream2.method371(Client.staticEncryptedStream2.off - var1);
-				Class56.staticConnection3.method151(Client.staticEncryptedStream2.buf, 0,
+				Class56.gameConnection.method151(Client.staticEncryptedStream2.buf, 0,
 						Client.staticEncryptedStream2.off);
 				Client.staticEncryptedStream1.method476(var19);
 
@@ -13207,47 +13209,47 @@ public class Static {
 				}
 
 				Client.staticEncryptedStream3.method476(var19);
-				Client.staticInt303 = 6;
+				Client.loginStage = 6;
 			}
 
-			if (Client.staticInt303 == 6 && Class56.staticConnection3.available() > 0) {
-				var10 = Class56.staticConnection3.method152();
+			if (Client.loginStage == 6 && Class56.gameConnection.available() > 0) {
+				var10 = Class56.gameConnection.method152();
 				if (var10 == 21 && Client.staticInt165 == 20) {
-					Client.staticInt303 = 7;
+					Client.loginStage = 7;
 				} else if (var10 == 2) {
-					Client.staticInt303 = 9;
+					Client.loginStage = 9;
 				} else if (var10 == 15 && Client.staticInt165 == 40) {
 					Client.staticInt190 = -1;
-					Client.staticInt303 = 13;
+					Client.loginStage = 13;
 				} else if (var10 == 23 && Client.staticInt302 < 1) {
 					++Client.staticInt302;
-					Client.staticInt303 = 0;
+					Client.loginStage = 0;
 				} else {
 					if (var10 != 29) {
 						staticMethod220(var10);
 						return;
 					}
 
-					Client.staticInt303 = 11;
+					Client.loginStage = 11;
 				}
 			}
 
-			if (Client.staticInt303 == 7 && Class56.staticConnection3.available() > 0) {
-				Client.staticInt184 = (Class56.staticConnection3.method152() + 3) * 60;
-				Client.staticInt303 = 8;
+			if (Client.loginStage == 7 && Class56.gameConnection.available() > 0) {
+				Client.staticInt184 = (Class56.gameConnection.method152() + 3) * 60;
+				Client.loginStage = 8;
 			}
 
-			if (Client.staticInt303 == 8) {
+			if (Client.loginStage == 8) {
 				Client.staticInt262 = 0;
 				staticMethod231("You have only just left another world.", "Your profile will be transferred in:",
 						Client.staticInt184 / 60 + " seconds.");
 				if (--Client.staticInt184 <= 0) {
-					Client.staticInt303 = 0;
+					Client.loginStage = 0;
 				}
 			} else {
-				if (Client.staticInt303 == 9 && Class56.staticConnection3.available() >= 13) {
-					boolean var11 = Class56.staticConnection3.method152() == 1;
-					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 4);
+				if (Client.loginStage == 9 && Class56.gameConnection.available() >= 13) {
+					boolean var11 = Class56.gameConnection.method152() == 1;
+					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 4);
 					Client.staticEncryptedStream3.off = 0;
 					if (var11) {
 						var1 = Client.staticEncryptedStream3.method472() << 24;
@@ -13266,16 +13268,16 @@ public class Static {
 						staticMethod270();
 					}
 
-					Client.staticInt268 = Class56.staticConnection3.method152();
-					Client.staticBool33 = Class56.staticConnection3.method152() == 1;
-					Client.staticInt246 = Class56.staticConnection3.method152();
+					Client.staticInt268 = Class56.gameConnection.method152();
+					Client.staticBool33 = Class56.gameConnection.method152() == 1;
+					Client.staticInt246 = Class56.gameConnection.method152();
 					Client.staticInt246 <<= 8;
-					Client.staticInt246 += Class56.staticConnection3.method152();
-					Client.staticInt289 = Class56.staticConnection3.method152();
-					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 1);
+					Client.staticInt246 += Class56.gameConnection.method152();
+					Client.staticInt289 = Class56.gameConnection.method152();
+					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 1);
 					Client.staticEncryptedStream3.off = 0;
 					Client.staticInt191 = Client.staticEncryptedStream3.method472();
-					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
 					Client.staticEncryptedStream3.off = 0;
 					Client.staticInt190 = Client.staticEncryptedStream3.method370();
 
@@ -13286,13 +13288,13 @@ public class Static {
 						;
 					}
 
-					Client.staticInt303 = 10;
+					Client.loginStage = 10;
 				}
 
-				if (Client.staticInt303 == 10) {
-					if (Class56.staticConnection3.available() >= Client.staticInt190) {
+				if (Client.loginStage == 10) {
+					if (Class56.gameConnection.available() >= Client.staticInt190) {
 						Client.staticEncryptedStream3.off = 0;
-						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
 						staticMethod150();
 						staticMethod48(Client.staticEncryptedStream3);
 						FileOnDisk.staticInt39 = -1;
@@ -13300,17 +13302,17 @@ public class Static {
 						Client.staticInt191 = -1;
 					}
 				} else {
-					if (Client.staticInt303 == 11 && Class56.staticConnection3.available() >= 2) {
+					if (Client.loginStage == 11 && Class56.gameConnection.available() >= 2) {
 						Client.staticEncryptedStream3.off = 0;
-						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
 						Client.staticEncryptedStream3.off = 0;
 						FileOnDisk.staticInt37 = Client.staticEncryptedStream3.method370();
-						Client.staticInt303 = 12;
+						Client.loginStage = 12;
 					}
 
-					if (Client.staticInt303 == 12 && Class56.staticConnection3.available() >= FileOnDisk.staticInt37) {
+					if (Client.loginStage == 12 && Class56.gameConnection.available() >= FileOnDisk.staticInt37) {
 						Client.staticEncryptedStream3.off = 0;
-						Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, FileOnDisk.staticInt37);
+						Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, FileOnDisk.staticInt37);
 						Client.staticEncryptedStream3.off = 0;
 						String var12 = Client.staticEncryptedStream3.method365();
 						String var15 = Client.staticEncryptedStream3.method365();
@@ -13319,7 +13321,7 @@ public class Static {
 						staticMethod396(10);
 					}
 
-					if (Client.staticInt303 != 13) {
+					if (Client.loginStage != 13) {
 						++Client.staticInt262;
 						if (Client.staticInt262 > 2000) {
 							if (Client.staticInt302 < 1) {
@@ -13330,24 +13332,24 @@ public class Static {
 								}
 
 								++Client.staticInt302;
-								Client.staticInt303 = 0;
+								Client.loginStage = 0;
 							} else {
 								staticMethod220(-3);
 							}
 						}
 					} else {
 						if (Client.staticInt190 == -1) {
-							if (Class56.staticConnection3.available() < 2) {
+							if (Class56.gameConnection.available() < 2) {
 								return;
 							}
 
-							Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+							Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
 							Client.staticEncryptedStream3.off = 0;
 							Client.staticInt190 = Client.staticEncryptedStream3.method370();
 						}
 
-						if (Class56.staticConnection3.available() >= Client.staticInt190) {
-							Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+						if (Class56.gameConnection.available() >= Client.staticInt190) {
+							Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
 							Client.staticEncryptedStream3.off = 0;
 							var10 = Client.staticInt190;
 							Client.staticEncryptedStream1.off = 0;
@@ -13404,7 +13406,7 @@ public class Static {
 				}
 
 				++Client.staticInt302;
-				Client.staticInt303 = 0;
+				Client.loginStage = 0;
 			} else {
 				staticMethod220(-2);
 			}
@@ -16348,8 +16350,8 @@ public class Static {
 	}
 
 	static void staticMethod250() {
-		for (NodeSub18 var0 = (NodeSub18) Client.staticHashTable5
-				.method146(); var0 != null; var0 = (NodeSub18) Client.staticHashTable5.method147()) {
+		for (KeyFocusListener var0 = (KeyFocusListener) Client.staticHashTable5
+				.method146(); var0 != null; var0 = (KeyFocusListener) Client.staticHashTable5.method147()) {
 			int var2 = var0.anInt384;
 			if (staticMethod4(var2)) {
 				boolean var1 = true;
@@ -17250,8 +17252,8 @@ public class Static {
 	static final void staticMethod120() {
 		Client.staticEncryptedStream1.method471(66);
 
-		for (NodeSub18 var0 = (NodeSub18) Client.staticHashTable5
-				.method146(); var0 != null; var0 = (NodeSub18) Client.staticHashTable5.method147()) {
+		for (KeyFocusListener var0 = (KeyFocusListener) Client.staticHashTable5
+				.method146(); var0 != null; var0 = (KeyFocusListener) Client.staticHashTable5.method147()) {
 			if (var0.anInt383 == 0 || var0.anInt383 == 3) {
 				staticMethod266(var0, true);
 			}
@@ -17705,8 +17707,8 @@ public class Static {
 			staticMethod87();
 		} else {
 			staticMethod396(40);
-			staticConnection1 = Class56.staticConnection3;
-			Class56.staticConnection3 = null;
+			staticConnection1 = Class56.gameConnection;
+			Class56.gameConnection = null;
 		}
 
 	}
@@ -18485,19 +18487,19 @@ public class Static {
 	}
 
 	static final boolean staticMethod310() {
-		if (Class56.staticConnection3 == null) {
+		if (Class56.gameConnection == null) {
 			return false;
 		} else {
 			String var1;
 			int var2;
 			try {
-				int var44 = Class56.staticConnection3.available();
+				int var44 = Class56.gameConnection.available();
 				if (var44 == 0) {
 					return false;
 				}
 
 				if (Client.staticInt191 == -1) {
-					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 1);
+					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 1);
 					Client.staticEncryptedStream3.off = 0;
 					Client.staticInt191 = Client.staticEncryptedStream3.method472();
 					Client.staticInt190 = staticIntArray70[Client.staticInt191];
@@ -18509,7 +18511,7 @@ public class Static {
 						return false;
 					}
 
-					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 1);
+					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 1);
 					Client.staticInt190 = Client.staticEncryptedStream3.buf[0] & 0xff;
 					--var44;
 				}
@@ -18519,7 +18521,7 @@ public class Static {
 						return false;
 					}
 
-					Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, 2);
+					Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, 2);
 					Client.staticEncryptedStream3.off = 0;
 					Client.staticInt190 = Client.staticEncryptedStream3.method370();
 					var44 -= 2;
@@ -18530,7 +18532,7 @@ public class Static {
 				}
 
 				Client.staticEncryptedStream3.off = 0;
-				Class56.staticConnection3.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
+				Class56.gameConnection.method153(Client.staticEncryptedStream3.buf, 0, Client.staticInt190);
 				Client.staticInt192 = 0;
 				Client.staticInt195 = Client.staticInt194;
 				Client.staticInt194 = Client.staticInt270;
@@ -18643,7 +18645,7 @@ public class Static {
 				}
 
 				int var8;
-				NodeSub18 var53;
+				KeyFocusListener var53;
 				if (Client.staticInt191 == 24) {
 					var45 = Client.staticInt190 + Client.staticEncryptedStream3.off;
 					var2 = Client.staticEncryptedStream3.method370();
@@ -18659,12 +18661,12 @@ public class Static {
 						}
 					}
 
-					NodeSub18 var60;
+					KeyFocusListener var60;
 					for (; var3-- > 0; var60.aBool50 = true) {
 						var48 = Client.staticEncryptedStream3.readInt();
 						var5 = Client.staticEncryptedStream3.method370();
 						var6 = Client.staticEncryptedStream3.method367();
-						var60 = (NodeSub18) Client.staticHashTable5.method149(var48);
+						var60 = (KeyFocusListener) Client.staticHashTable5.method149(var48);
 						if (var60 != null && var60.anInt384 != var5) {
 							staticMethod266(var60, true);
 							var60 = null;
@@ -18675,8 +18677,8 @@ public class Static {
 						}
 					}
 
-					for (var53 = (NodeSub18) Client.staticHashTable5
-							.method146(); var53 != null; var53 = (NodeSub18) Client.staticHashTable5.method147()) {
+					for (var53 = (KeyFocusListener) Client.staticHashTable5
+							.method146(); var53 != null; var53 = (KeyFocusListener) Client.staticHashTable5.method147()) {
 						if (var53.aBool50) {
 							var53.aBool50 = false;
 						} else {
@@ -19137,8 +19139,8 @@ public class Static {
 					var2 = Client.staticEncryptedStream3.readInt();
 					var65.anInt3 = var2;
 					staticMethod396(45);
-					Class56.staticConnection3.method150();
-					Class56.staticConnection3 = null;
+					Class56.gameConnection.method150();
+					Class56.gameConnection = null;
 					staticMethod59(var65);
 					Client.staticInt191 = -1;
 					return false;
@@ -19734,8 +19736,8 @@ public class Static {
 				if (Client.staticInt191 == 119) {
 					var45 = Client.staticEncryptedStream3.readInt();
 					var2 = Client.staticEncryptedStream3.method378();
-					NodeSub18 var84 = (NodeSub18) Client.staticHashTable5.method149(var2);
-					var53 = (NodeSub18) Client.staticHashTable5.method149(var45);
+					KeyFocusListener var84 = (KeyFocusListener) Client.staticHashTable5.method149(var2);
+					var53 = (KeyFocusListener) Client.staticHashTable5.method149(var45);
 					if (var53 != null) {
 						staticMethod266(var53, var84 == null || var53.anInt384 != var84.anInt384);
 					}
@@ -19973,7 +19975,7 @@ public class Static {
 
 				if (Client.staticInt191 == 176) {
 					var45 = Client.staticEncryptedStream3.readInt();
-					NodeSub18 var931 = (NodeSub18) Client.staticHashTable5.method149(var45);
+					KeyFocusListener var931 = (KeyFocusListener) Client.staticHashTable5.method149(var45);
 					if (var931 != null) {
 						staticMethod266(var931, true);
 					}
@@ -20033,7 +20035,7 @@ public class Static {
 					var45 = Client.staticEncryptedStream3.method370();
 					var2 = Client.staticEncryptedStream3.method367();
 					var3 = Client.staticEncryptedStream3.method354();
-					var53 = (NodeSub18) Client.staticHashTable5.method149(var3);
+					var53 = (KeyFocusListener) Client.staticHashTable5.method149(var3);
 					if (var53 != null) {
 						staticMethod266(var53, var53.anInt384 != var45);
 					}
@@ -20626,8 +20628,8 @@ public class Static {
 
 	}
 
-	static final NodeSub18 staticMethod315(int var0, int var1, int var2) {
-		NodeSub18 var3 = new NodeSub18();
+	static final KeyFocusListener staticMethod315(int var0, int var1, int var2) {
+		KeyFocusListener var3 = new KeyFocusListener();
 		var3.anInt384 = var1;
 		var3.anInt383 = var2;
 		Client.staticHashTable5.method148(var3, var0);
@@ -21134,7 +21136,7 @@ public class Static {
 						staticMethod280(var3.aWidgetArray1, var1);
 					}
 
-					NodeSub18 var6 = (NodeSub18) Client.staticHashTable5.method149(var3.anInt294);
+					KeyFocusListener var6 = (KeyFocusListener) Client.staticHashTable5.method149(var3.anInt294);
 					if (var6 != null) {
 						int var7 = var6.anInt384;
 						if (staticMethod4(var7)) {
@@ -22694,7 +22696,7 @@ public class Static {
 						var8 = 1;
 					} else if (var0 == 2702) {
 						var14 = staticIntArray16[--staticInt27];
-						NodeSub18 var37 = (NodeSub18) Client.staticHashTable5.method149(var14);
+						KeyFocusListener var37 = (KeyFocusListener) Client.staticHashTable5.method149(var14);
 						if (var37 != null) {
 							staticIntArray16[++staticInt27 - 1] = 1;
 						} else {
@@ -25555,7 +25557,7 @@ public class Static {
 			}
 
 			if (var0 == 20 || var0 == 40 || var0 == 45) {
-				Client.staticInt303 = 0;
+				Client.loginStage = 0;
 				Client.staticInt262 = 0;
 				Client.staticInt302 = 0;
 			}

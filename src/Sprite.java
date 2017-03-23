@@ -17,6 +17,7 @@ public final class Sprite extends Rasterizer2D {
 	public Sprite(byte[] var1, Component var2) {
 		try {
 			Image var3 = Toolkit.getDefaultToolkit().createImage(var1);
+		
 			MediaTracker var4 = new MediaTracker(var2);
 			var4.addImage(var3, 0);
 			var4.waitForAll();

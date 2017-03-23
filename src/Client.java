@@ -46,7 +46,7 @@ public final class Client extends GameShell {
 	static int staticInt271;
 	static int staticInt181;
 	static int staticInt182;
-	static int staticInt303;
+	static int loginStage;	
 	static int staticInt262;
 	static int staticInt302;
 	static int staticInt184;
@@ -307,7 +307,7 @@ public final class Client extends GameShell {
 		staticInt271 = 0;
 		staticInt181 = 0;
 		staticInt182 = 0;
-		staticInt303 = 0;
+		loginStage = 0;
 		staticInt262 = 0;
 		staticInt302 = 0;
 		staticInt184 = 0;
@@ -597,7 +597,7 @@ public final class Client extends GameShell {
 		Class6 var6 = new Class6();
 
 		try {
-			var5 = Static.staticMethod70("", NodeSub18.staticGameType7.aString9, false);
+			var5 = Static.staticMethod70("", KeyFocusListener.staticGameType7.aString9, false);
 			byte[] var13 = new byte[(int) var5.method87()];
 
 			int var9;
@@ -710,7 +710,7 @@ public final class Client extends GameShell {
 		} else if (staticInt165 != 10 && staticInt165 != 11) {
 			if (staticInt165 == 20) {
 				Static.staticMethod139(this);
-				Static.staticMethod21();
+				Static.processLogin();
 			} else if (staticInt165 == 25) {
 				Static.staticMethod33(false);
 				staticInt215 = 0;
@@ -1046,7 +1046,7 @@ public final class Client extends GameShell {
 		if (staticInt165 == 30) {
 			Static.staticMethod130();
 		} else if (staticInt165 == 40 || staticInt165 == 45) {
-			Static.staticMethod21();
+			Static.processLogin();
 		}
 
 	}
@@ -1061,9 +1061,9 @@ public final class Client extends GameShell {
 		}
 
 		staticMouseCapturer1 = null;
-		if (Class56.staticConnection3 != null) {
-			Class56.staticConnection3.method150();
-			Class56.staticConnection3 = null;
+		if (Class56.gameConnection != null) {
+			Class56.gameConnection.method150();
+			Class56.gameConnection = null;
 		}
 
 		Static.staticMethod55();
@@ -1419,9 +1419,9 @@ public final class Client extends GameShell {
 						staticInt201 = Integer.parseInt(var14);
 						break;
 					case 14:
-						NodeSub18.staticGameType7 = (GameType) Static.staticMethod233(Static.staticMethod228(),
+						KeyFocusListener.staticGameType7 = (GameType) Static.staticMethod233(Static.staticMethod228(),
 								Integer.parseInt(var14));
-						if (NodeSub18.staticGameType7 == GameType.staticGameType6) {
+						if (KeyFocusListener.staticGameType7 == GameType.staticGameType6) {
 							Static.staticClass53_1 = Class53.staticClass53_5;
 						} else {
 							Static.staticClass53_1 = Class53.staticClass53_7;

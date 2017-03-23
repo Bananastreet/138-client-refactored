@@ -6,7 +6,7 @@ import java.util.List;
 public class Class56 {
 
 	static Js5IndexImpl staticJs5IndexImpl6;
-	static Connection staticConnection3;
+	static Connection gameConnection;	
 	static Widget staticWidget4;
 	public static Comparator staticComparator1 = new Class57();
 	public static Comparator staticComparator4;
