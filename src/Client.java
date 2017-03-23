@@ -285,7 +285,7 @@ public final class Client extends GameShell {
 	static Friend[] staticFriendArray1;
 	static Class41 staticClass41_1;
 	static int staticInt310;
-	static Class7[] staticClass7Array1;
+	static DataClass10[] staticClass7Array1;
 	static Class49 staticClass49_1;
 	static int staticInt197;
 	static int staticInt312;
@@ -546,7 +546,7 @@ public final class Client extends GameShell {
 		staticFriendArray1 = new Friend[400];
 		staticClass41_1 = new Class41();
 		staticInt310 = 0;
-		staticClass7Array1 = new Class7[400];
+		staticClass7Array1 = new DataClass10[400];
 		staticClass49_1 = new Class49();
 		staticInt197 = -1;
 		staticInt312 = 1073985099;
@@ -562,9 +562,9 @@ public final class Client extends GameShell {
 	}
 
 	protected final void method208() {
-		Class7.staticInt30 = 1568197829 * (staticInt207 == 0 ? '\uaa4a' : '\u9c40' + staticInt309);
+		DataClass10.staticInt30 = 1568197829 * (staticInt207 == 0 ? '\uaa4a' : '\u9c40' + staticInt309);
 		staticInt250 = (staticInt207 == 0 ? 443 : '\uc350' + staticInt309) * 922916997;
-		DataClass7.staticInt73 = Class7.staticInt30;
+		DataClass7.staticInt73 = DataClass10.staticInt30;
 		CacheableSub3.staticShortArray5 = Static.staticShortArray2;
 		Class60.staticShortArrayArray4 = Static.staticShortArrayArray2;
 		DataClass9.staticShortArray4 = Static.staticShortArray3;
@@ -717,12 +717,12 @@ public final class Client extends GameShell {
 				boolean var34 = true;
 
 				int var2;
-				for (var2 = 0; var2 < Class7.staticByteArrayArray1.length; var2++) {
+				for (var2 = 0; var2 < DataClass10.staticByteArrayArray1.length; var2++) {
 					if (AbstractClass2Sub1.staticIntArray125[var2] != -1
-							&& Class7.staticByteArrayArray1[var2] == null) {
-						Class7.staticByteArrayArray1[var2] = RenderableSub2.staticJs5IndexImpl16
+							&& DataClass10.staticByteArrayArray1[var2] == null) {
+						DataClass10.staticByteArrayArray1[var2] = RenderableSub2.staticJs5IndexImpl16
 								.getFile(AbstractClass2Sub1.staticIntArray125[var2], 0);
-						if (Class7.staticByteArrayArray1[var2] == null) {
+						if (DataClass10.staticByteArrayArray1[var2] == null) {
 							var34 = false;
 							++staticInt215;
 						}
@@ -746,7 +746,7 @@ public final class Client extends GameShell {
 
 					int var4;
 					int var5;
-					for (var2 = 0; var2 < Class7.staticByteArrayArray1.length; var2++) {
+					for (var2 = 0; var2 < DataClass10.staticByteArrayArray1.length; var2++) {
 						byte[] var33 = Class47.staticByteArrayArray6[var2];
 						if (var33 != null) {
 							var4 = (Class6.staticIntArray13[var2] >> 8) * 64 - NodeSub3.staticInt154;
@@ -790,7 +790,7 @@ public final class Client extends GameShell {
 
 						Static.staticMethod17();
 						Static.staticMethod212();
-						var2 = Class7.staticByteArrayArray1.length;
+						var2 = DataClass10.staticByteArrayArray1.length;
 						Static.staticMethod7();
 						Static.staticMethod33(true);
 						int var36;
@@ -799,7 +799,7 @@ public final class Client extends GameShell {
 							for (var32 = 0; var32 < var2; var32++) {
 								var4 = (Class6.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
 								var5 = (Class6.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
-								var7 = Class7.staticByteArrayArray1[var32];
+								var7 = DataClass10.staticByteArrayArray1[var32];
 								if (var7 != null) {
 									Static.staticMethod17();
 									Static.staticMethod40(var7, var4, var5, FileOnDisk.staticInt39 * 8 - 48,
@@ -810,7 +810,7 @@ public final class Client extends GameShell {
 							for (var32 = 0; var32 < var2; var32++) {
 								var4 = (Class6.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
 								var5 = (Class6.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
-								var7 = Class7.staticByteArrayArray1[var32];
+								var7 = DataClass10.staticByteArrayArray1[var32];
 								if (var7 == null && DataClass2.staticInt70 < 800) {
 									Static.staticMethod17();
 									Static.staticMethod333(var4, var5, 64, 64);
@@ -903,8 +903,8 @@ public final class Client extends GameShell {
 
 											for (int var13 = 0; var13 < Class6.staticIntArray13.length; var13++) {
 												if (var12 == Class6.staticIntArray13[var13]
-														&& Class7.staticByteArrayArray1[var13] != null) {
-													byte[] var14 = Class7.staticByteArrayArray1[var13];
+														&& DataClass10.staticByteArrayArray1[var13] != null) {
+													byte[] var14 = DataClass10.staticByteArrayArray1[var13];
 													int var15 = var4 * 8;
 													int var16 = var5 * 8;
 													int var17 = (var38 & 0x7) * 8;
@@ -1335,10 +1335,10 @@ public final class Client extends GameShell {
 		FileOnDisk.staticTask1 = null;
 		Item.staticConnection4 = null;
 		staticInt271 = 0;
-		if (DataClass7.staticInt73 * 462737933 == Class7.staticInt30 * 462737933) {
+		if (DataClass7.staticInt73 * 462737933 == DataClass10.staticInt30 * 462737933) {
 			DataClass7.staticInt73 = staticInt250 * 1584772929;
 		} else {
-			DataClass7.staticInt73 = Class7.staticInt30;
+			DataClass7.staticInt73 = DataClass10.staticInt30;
 		}
 
 		++staticInt182;

@@ -1,4 +1,4 @@
-public class Class7 {
+public class DataClass10 {
 
 	static int staticInt30;
 	String aString4;

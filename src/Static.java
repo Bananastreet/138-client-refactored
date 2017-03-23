@@ -1378,9 +1378,9 @@ public class Static {
 		DataClass5.staticString21 = var0.aString1;
 		Client.staticInt309 = var0.anInt4;
 		Client.staticInt201 = var0.anInt3;
-		Class7.staticInt30 = 1568197829 * (Client.staticInt207 == 0 ? '\uaa4a' : var0.anInt4 + '\u9c40');
+		DataClass10.staticInt30 = 1568197829 * (Client.staticInt207 == 0 ? '\uaa4a' : var0.anInt4 + '\u9c40');
 		Client.staticInt250 = (Client.staticInt207 == 0 ? 443 : var0.anInt4 + '\uc350') * 922916997;
-		DataClass7.staticInt73 = Class7.staticInt30;
+		DataClass7.staticInt73 = DataClass10.staticInt30;
 	}
 
 	static int staticMethod60(int var0, CacheableSub1 var1, boolean var2) {
@@ -5472,7 +5472,7 @@ public class Static {
 		staticJs5Index3 = null;
 		staticInt119 = -1;
 		staticInt127 = -1;
-		Class7.staticInt32 = 0;
+		DataClass10.staticInt32 = 0;
 		staticBool16 = false;
 		NodeSub1.staticInt151 = var0;
 	}
@@ -5712,7 +5712,7 @@ public class Static {
 		staticJs5Index3 = var0;
 		staticInt119 = var1;
 		staticInt127 = var2;
-		Class7.staticInt32 = var3;
+		DataClass10.staticInt32 = var3;
 		staticBool16 = var4;
 		NodeSub1.staticInt151 = 10000;
 	}
@@ -7892,7 +7892,7 @@ public class Static {
 
 	public static void staticMethod264(int var0) {
 		if (staticInt118 != 0) {
-			Class7.staticInt32 = var0;
+			DataClass10.staticInt32 = var0;
 		} else {
 			staticNodeSub8Sub3_1.method457(var0);
 		}
@@ -8030,7 +8030,7 @@ public class Static {
 					staticJs5Index3 = var4;
 					staticInt119 = var3;
 					staticInt127 = 0;
-					Class7.staticInt32 = var5;
+					DataClass10.staticInt32 = var5;
 					staticBool16 = false;
 					NodeSub1.staticInt151 = 2;
 				}
@@ -9134,7 +9134,7 @@ public class Static {
 			String var3 = staticMethod111(var0, staticClass53_1);
 
 			for (int var1 = 0; var1 < Client.staticInt310; var1++) {
-				Class7 var2 = Client.staticClass7Array1[var1];
+				DataClass10 var2 = Client.staticClass7Array1[var1];
 				if (var3.equalsIgnoreCase(staticMethod111(var2.aString5, staticClass53_1))) {
 					return true;
 				}
@@ -9278,7 +9278,7 @@ public class Static {
 				staticJs5Index3 = var9;
 				staticInt119 = var7;
 				staticInt127 = var8;
-				Class7.staticInt32 = 255;
+				DataClass10.staticInt32 = 255;
 				staticBool16 = false;
 				NodeSub1.staticInt151 = 2;
 			} else {
@@ -13286,10 +13286,10 @@ public class Static {
 						++Client.staticInt262;
 						if (Client.staticInt262 > 2000) {
 							if (Client.staticInt302 < 1) {
-								if (DataClass7.staticInt73 * 462737933 == Class7.staticInt30 * 462737933) {
+								if (DataClass7.staticInt73 * 462737933 == DataClass10.staticInt30 * 462737933) {
 									DataClass7.staticInt73 = Client.staticInt250 * 1584772929;
 								} else {
-									DataClass7.staticInt73 = Class7.staticInt30;
+									DataClass7.staticInt73 = DataClass10.staticInt30;
 								}
 
 								++Client.staticInt302;
@@ -13360,10 +13360,10 @@ public class Static {
 			}
 		} catch (IOException var101) {
 			if (Client.staticInt302 < 1) {
-				if (Class7.staticInt30 * 462737933 == DataClass7.staticInt73 * 462737933) {
+				if (DataClass10.staticInt30 * 462737933 == DataClass7.staticInt73 * 462737933) {
 					DataClass7.staticInt73 = Client.staticInt250 * 1584772929;
 				} else {
-					DataClass7.staticInt73 = Class7.staticInt30;
+					DataClass7.staticInt73 = DataClass10.staticInt30;
 				}
 
 				++Client.staticInt302;
@@ -13553,7 +13553,7 @@ public class Static {
 					String var8;
 					int var11;
 					String var12;
-					Class7 var15;
+					DataClass10 var15;
 					Friend var16;
 					String var17;
 					if (var0 == 3605) {
@@ -16751,7 +16751,7 @@ public class Static {
 
 		var0 = staticInt101 * 128 + 64;
 		var1 = DataClass3.staticInt72 * 128 + 64;
-		var2 = staticMethod240(var0, var1, NodeSub4.staticInt155) - Class7.staticInt31;
+		var2 = staticMethod240(var0, var1, NodeSub4.staticInt155) - DataClass10.staticInt31;
 		int var8 = var0 - Class20.staticInt36;
 		int var4 = var2 - staticInt125;
 		int var9 = var1 - NodeSub3.staticInt153;
@@ -17801,7 +17801,7 @@ public class Static {
 			String var1 = staticMethod111(var0, staticClass53_1);
 			if (var1 != null) {
 				for (int var3 = 0; var3 < Client.staticInt310; var3++) {
-					Class7 var4 = Client.staticClass7Array1[var3];
+					DataClass10 var4 = Client.staticClass7Array1[var3];
 					String var5 = var4.aString5;
 					String var6 = staticMethod111(var5, staticClass53_1);
 					boolean var2;
@@ -18283,7 +18283,7 @@ public class Static {
 			Class6.staticIntArray13 = new int[var2];
 			AbstractClass2Sub1.staticIntArray125 = new int[var2];
 			Class60.staticIntArray75 = new int[var2];
-			Class7.staticByteArrayArray1 = new byte[var2][];
+			DataClass10.staticByteArrayArray1 = new byte[var2][];
 			Class47.staticByteArrayArray6 = new byte[var2][];
 			boolean var11 = false;
 			if ((var5 / 8 == 48 || var5 / 8 == 49) && var3 / 8 == 48) {
@@ -18344,7 +18344,7 @@ public class Static {
 			Class6.staticIntArray13 = new int[var2];
 			AbstractClass2Sub1.staticIntArray125 = new int[var2];
 			Class60.staticIntArray75 = new int[var2];
-			Class7.staticByteArrayArray1 = new byte[var2][];
+			DataClass10.staticByteArrayArray1 = new byte[var2][];
 			Class47.staticByteArrayArray6 = new byte[var2][];
 			var2 = 0;
 
@@ -18530,13 +18530,13 @@ public class Static {
 					Client.staticBool28 = true;
 					staticInt101 = Client.inBuffer.method367();
 					DataClass3.staticInt72 = Client.inBuffer.method367();
-					Class7.staticInt31 = Client.inBuffer.method370();
+					DataClass10.staticInt31 = Client.inBuffer.method370();
 					Class28.staticInt71 = Client.inBuffer.method367();
 					Class61.staticInt146 = Client.inBuffer.method367();
 					if (Class61.staticInt146 >= 100) {
 						var45 = 64 + staticInt101 * 128;
 						var2 = DataClass3.staticInt72 * 128 + 64;
-						var3 = staticMethod240(var45, var2, NodeSub4.staticInt155) - Class7.staticInt31;
+						var3 = staticMethod240(var45, var2, NodeSub4.staticInt155) - DataClass10.staticInt31;
 						var48 = var45 - Class20.staticInt36;
 						var5 = var3 - staticInt125;
 						var6 = var2 - NodeSub3.staticInt153;
@@ -19186,7 +19186,7 @@ public class Static {
 						staticJs5Index3 = var63;
 						staticInt119 = var45;
 						staticInt127 = 0;
-						Class7.staticInt32 = var3;
+						DataClass10.staticInt32 = var3;
 						staticBool16 = false;
 						NodeSub1.staticInt151 = 2;
 					}
@@ -19803,7 +19803,7 @@ public class Static {
 						String var88 = Client.inBuffer.readString();
 						Client.inBuffer.readString();
 
-						Class7 var96;
+						DataClass10 var96;
 						for (var5 = 0; var5 < Client.staticInt310; var5++) {
 							var96 = Client.staticClass7Array1[var5];
 							if (var49) {
@@ -19822,7 +19822,7 @@ public class Static {
 						}
 
 						if (var57 != null && Client.staticInt310 < 400) {
-							var96 = new Class7();
+							var96 = new DataClass10();
 							Client.staticClass7Array1[Client.staticInt310] = var96;
 							var96.aString5 = var57;
 							var96.aString4 = var88;
@@ -25656,7 +25656,7 @@ public class Static {
 				if (staticNodeSub8Sub3_1.method460(GameType.staticNodeSub11_1, staticJs5Index6,
 						Class6.staticClass10_1, 22050)) {
 					staticNodeSub8Sub3_1.method439();
-					staticNodeSub8Sub3_1.method457(Class7.staticInt32);
+					staticNodeSub8Sub3_1.method457(DataClass10.staticInt32);
 					staticNodeSub8Sub3_1.method450(GameType.staticNodeSub11_1, staticBool16);
 					staticInt118 = 0;
 					GameType.staticNodeSub11_1 = null;
