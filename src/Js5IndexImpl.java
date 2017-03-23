@@ -9,11 +9,11 @@ public class Js5IndexImpl extends Js5Index {
 	volatile boolean[] aBoolArray5;
 	int anInt365 = -1;
 	boolean aBool47 = false;
-	Js5DiskCache aJs5DiskCache3;
-	Js5DiskCache aJs5DiskCache2;
+	IndexedFileSystem aJs5DiskCache3;
+	IndexedFileSystem aJs5DiskCache2;
 	int anInt363;
 
-	void method394(Js5DiskCache var1, int var2, byte[] var3, boolean var4) {
+	void method394(IndexedFileSystem var1, int var2, byte[] var3, boolean var4) {
 		int var8;
 		if (var1 == aJs5DiskCache2) {
 			if (aBool46) {
@@ -212,7 +212,7 @@ public class Js5IndexImpl extends Js5Index {
 
 			for (var1 = 0; var1 < aBoolArray5.length; var1++) {
 				if (anIntArray53[var1] > 0) {
-					Js5DiskCache var2 = aJs5DiskCache3;
+					IndexedFileSystem var2 = aJs5DiskCache3;
 					Js5CacheWriteRequest var4 = new Js5CacheWriteRequest();
 					var4.anInt290 = 1;
 					var4.id = var1;
@@ -234,7 +234,7 @@ public class Js5IndexImpl extends Js5Index {
 
 	}
 
-	public Js5IndexImpl(Js5DiskCache var1, Js5DiskCache var2, int var3, boolean var4, boolean var5, boolean var6) {
+	public Js5IndexImpl(IndexedFileSystem var1, IndexedFileSystem var2, int var3, boolean var4, boolean var5, boolean var6) {
 		super(var4, var5);
 		aJs5DiskCache3 = var1;
 		aJs5DiskCache2 = var2;

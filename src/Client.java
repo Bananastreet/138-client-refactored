@@ -591,7 +591,7 @@ public final class Client extends GameShell {
 			DataClass3.staticAbstractClass1_1.method166(Class38.staticCanvas1);
 		}
 
-		DataClass9.staticJs5DiskCache1 = new Js5DiskCache(255, Static.staticBufferedFile3, Static.staticBufferedFile1,
+		DataClass9.staticJs5DiskCache1 = new IndexedFileSystem(255, Static.staticBufferedFile3, Static.staticBufferedFile1,
 				500000);
 		FileOnDisk var5 = null;
 		Class6 var6 = new Class6();

@@ -12536,7 +12536,7 @@ public class Static {
 
 	}
 
-	static void staticMethod156(int var0, Js5DiskCache var1, Js5IndexImpl var2) {
+	static void staticMethod156(int var0, IndexedFileSystem var1, Js5IndexImpl var2) {
 		byte[] var3 = null;
 		synchronized (FileRequestTask.staticClass39_3) {
 			for (Js5CacheWriteRequest var5 = (Js5CacheWriteRequest) FileRequestTask.staticClass39_3
@@ -14576,9 +14576,9 @@ public class Static {
 	}
 
 	static Js5IndexImpl staticMethod202(int var0, boolean var1, boolean var2, boolean var3) {
-		Js5DiskCache var4 = null;
+		IndexedFileSystem var4 = null;
 		if (staticBufferedFile3 != null) {
-			var4 = new Js5DiskCache(var0, staticBufferedFile3, staticBufferedFileArray1[var0], 1000000);
+			var4 = new IndexedFileSystem(var0, staticBufferedFile3, staticBufferedFileArray1[var0], 1000000);
 		}
 
 		return new Js5IndexImpl(var4, DataClass9.staticJs5DiskCache1, var0, var1, var2, var3);
@@ -17834,7 +17834,7 @@ public class Static {
 
 	}
 
-	static void staticMethod275(int var0, byte[] var1, Js5DiskCache var2) {
+	static void staticMethod275(int var0, byte[] var1, IndexedFileSystem var2) {
 		Js5CacheWriteRequest var3 = new Js5CacheWriteRequest();
 		var3.anInt290 = 0;
 		var3.id = var0;

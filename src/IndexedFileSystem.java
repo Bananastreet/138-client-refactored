@@ -1,7 +1,7 @@
 import java.io.EOFException;
 import java.io.IOException;
 
-public final class Js5DiskCache {
+public final class IndexedFileSystem {
 
 	static byte[] staticByteArray3 = new byte[520];
 	BufferedFile aBufferedFile1 = null;
@@ -227,7 +227,7 @@ public final class Js5DiskCache {
 		}
 	}
 
-	public Js5DiskCache(int var1, BufferedFile var2, BufferedFile var3, int var4) {
+	public IndexedFileSystem(int var1, BufferedFile var2, BufferedFile var3, int var4) {
 		anInt147 = var1;
 		aBufferedFile1 = var2;
 		aBufferedFile2 = var3;
