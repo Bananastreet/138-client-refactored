@@ -567,7 +567,7 @@ public final class Client extends GameShell {
 		DataClass7.staticInt73 = Class7.staticInt30;
 		CacheableSub3.staticShortArray5 = Static.staticShortArray2;
 		Class60.staticShortArrayArray4 = Static.staticShortArrayArray2;
-		Class59.staticShortArray4 = Static.staticShortArray3;
+		DataClass9.staticShortArray4 = Static.staticShortArray3;
 		Static.staticShortArrayArray1 = Static.staticShortArrayArray3;
 		Static.staticMethod372();
 		Canvas var1 = Class38.staticCanvas1;
@@ -591,7 +591,7 @@ public final class Client extends GameShell {
 			DataClass3.staticAbstractClass1_1.method166(Class38.staticCanvas1);
 		}
 
-		Class59.staticJs5DiskCache1 = new Js5DiskCache(255, Static.staticBufferedFile3, Static.staticBufferedFile1,
+		DataClass9.staticJs5DiskCache1 = new Js5DiskCache(255, Static.staticBufferedFile3, Static.staticBufferedFile1,
 				500000);
 		FileOnDisk var5 = null;
 		Class6 var6 = new Class6();
@@ -1685,11 +1685,11 @@ public final class Client extends GameShell {
 			}
 		} else if (staticInt165 == 5) {
 			Static.staticMethod134(GraphicsBuffer.staticRasterizer2DSub2Sub1_1, NodeSub4.staticRasterizer2DSub2Sub1_3,
-					Class59.staticRasterizer2DSub2Sub1_2, var3);
+					DataClass9.staticRasterizer2DSub2Sub1_2, var3);
 		} else if (staticInt165 != 10 && staticInt165 != 11) {
 			if (staticInt165 == 20) {
 				Static.staticMethod134(GraphicsBuffer.staticRasterizer2DSub2Sub1_1,
-						NodeSub4.staticRasterizer2DSub2Sub1_3, Class59.staticRasterizer2DSub2Sub1_2, var3);
+						NodeSub4.staticRasterizer2DSub2Sub1_3, DataClass9.staticRasterizer2DSub2Sub1_2, var3);
 			} else if (staticInt165 == 25) {
 				if (staticInt200 == 1) {
 					if (staticInt215 > staticInt198) {
@@ -1825,7 +1825,7 @@ public final class Client extends GameShell {
 			}
 		} else {
 			Static.staticMethod134(GraphicsBuffer.staticRasterizer2DSub2Sub1_1, NodeSub4.staticRasterizer2DSub2Sub1_3,
-					Class59.staticRasterizer2DSub2Sub1_2, var3);
+					DataClass9.staticRasterizer2DSub2Sub1_2, var3);
 		}
 
 		Graphics var22;

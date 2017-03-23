@@ -193,7 +193,7 @@ public class Class49 {
 						}
 
 						if (anIntArray48[var11] < Static.staticShortArrayArray1[var11].length) {
-							var181.method585(Class59.staticShortArray4[var11],
+							var181.method585(DataClass9.staticShortArray4[var11],
 									Static.staticShortArrayArray1[var11][anIntArray48[var11]]);
 						}
 					}
@@ -273,7 +273,7 @@ public class Class49 {
 					}
 
 					if (anIntArray48[var2] < Static.staticShortArrayArray1[var2].length) {
-						var81.method585(Class59.staticShortArray4[var2],
+						var81.method585(DataClass9.staticShortArray4[var2],
 								Static.staticShortArrayArray1[var2][anIntArray48[var2]]);
 					}
 				}

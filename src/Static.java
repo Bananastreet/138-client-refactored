@@ -3010,7 +3010,7 @@ public class Static {
 							if (var10.anInt298 == 1336) {
 								if (Client.staticBool23) {
 									var18 += 15;
-									Class59.staticRasterizer2DSub2Sub1_2.method618("Fps:" + GameShell.staticInt107,
+									DataClass9.staticRasterizer2DSub2Sub1_2.method618("Fps:" + GameShell.staticInt107,
 											var10.anInt307 + var24, var18, 16776960, -1);
 									var18 += 15;
 									Runtime var511 = Runtime.getRuntime();
@@ -3024,7 +3024,7 @@ public class Static {
 										var16 = 16711680;
 									}
 
-									Class59.staticRasterizer2DSub2Sub1_2.method618("Mem:" + var23 + "k",
+									DataClass9.staticRasterizer2DSub2Sub1_2.method618("Mem:" + var23 + "k",
 											var24 + var10.anInt307, var18, var16, -1);
 									var18 += 15;
 								}
@@ -3038,7 +3038,7 @@ public class Static {
 								var16 = var10.anInt307;
 								var25 = var10.anInt351;
 								++Client.staticInt292;
-								staticMethod312(Class59.staticClass59_1);
+								staticMethod312(DataClass9.staticClass59_1);
 								var45 = false;
 								if (Client.staticInt229 >= 0) {
 									var42 = staticInt24;
@@ -3053,11 +3053,11 @@ public class Static {
 								}
 
 								if (var45) {
-									staticMethod312(Class59.staticClass59_3);
+									staticMethod312(DataClass9.staticClass59_3);
 								}
 
 								staticMethod35(true);
-								staticMethod312(var45 ? Class59.staticClass59_4 : Class59.staticClass59_2);
+								staticMethod312(var45 ? DataClass9.staticClass59_4 : DataClass9.staticClass59_2);
 								staticMethod35(false);
 								staticMethod12();
 								staticMethod22();
@@ -3211,7 +3211,7 @@ public class Static {
 											Client.staticInt178 + (Client.staticInt175 - Class34.staticInt75 << 7),
 											Client.staticInt176 * 2);
 									if (Client.staticInt189 > -1 && Client.staticInt166 % 20 < 10) {
-										Class59.staticSpriteArray6[0].method637(Client.staticInt189 + var20 - 12,
+										DataClass9.staticSpriteArray6[0].method637(Client.staticInt189 + var20 - 12,
 												Client.staticInt180 + var23 - 28);
 									}
 								}
@@ -3926,7 +3926,7 @@ public class Static {
 													&& Client.staticInt257 == Client.staticInt185) {
 												var20 = 0;
 												var23 = 0;
-												Rasterizer2DSub2Sub1 var58 = Class59.staticRasterizer2DSub2Sub1_2;
+												Rasterizer2DSub2Sub1 var58 = DataClass9.staticRasterizer2DSub2Sub1_2;
 												var63 = var10.aString20;
 
 												for (var63 = staticMethod158(var63, var10); var63
@@ -5986,7 +5986,7 @@ public class Static {
 					staticMethod186(var0, var0.anInt609 + 15);
 					if (Client.staticInt189 > -1) {
 						if (var781.anInt683 != -1) {
-							Class59.staticSpriteArray7[var781.anInt683].method637(Client.staticInt189 + var2 - 12,
+							DataClass9.staticSpriteArray7[var781.anInt683].method637(Client.staticInt189 + var2 - 12,
 									var3 + Client.staticInt180 - var15);
 							var15 += 25;
 						}
@@ -6002,7 +6002,7 @@ public class Static {
 				if (var1 >= 0 && Client.staticInt255 == 10 && Client.staticInt193 == var14[var1]) {
 					staticMethod186(var0, var0.anInt609 + 15);
 					if (Client.staticInt189 > -1) {
-						Class59.staticSpriteArray6[1].method637(var2 + Client.staticInt189 - 12,
+						DataClass9.staticSpriteArray6[1].method637(var2 + Client.staticInt189 - 12,
 								Client.staticInt180 + var3 - var15);
 					}
 				}
@@ -6024,7 +6024,7 @@ public class Static {
 						&& Client.staticInt166 % 20 < 10) {
 					staticMethod186(var0, var0.anInt609 + 15);
 					if (Client.staticInt189 > -1) {
-						Class59.staticSpriteArray6[0].method637(var2 + Client.staticInt189 - 12,
+						DataClass9.staticSpriteArray6[0].method637(var2 + Client.staticInt189 - 12,
 								Client.staticInt180 + var3 - 28);
 					}
 				}
@@ -8343,7 +8343,7 @@ public class Static {
 		CacheableSub3 var4 = var0.method389(false);
 		if (var4 != null) {
 			if (Client.staticInt298 < 3) {
-				Class59.staticSprite3.method642(var1, var2, var4.anInt426, var4.anInt427, 25, 25, Client.staticInt221,
+				DataClass9.staticSprite3.method642(var1, var2, var4.anInt426, var4.anInt427, 25, 25, Client.staticInt221,
 						256, var4.anIntArray101, var4.anIntArray102);
 			} else {
 				staticMethod421(var1, var2, 0, var4.anIntArray101, var4.anIntArray102);
@@ -9486,8 +9486,8 @@ public class Static {
 						++var1;
 					}
 
-					if (Class59.staticRasterizer2DSub2Sub1_2 == null) {
-						Class59.staticRasterizer2DSub2Sub1_2 = staticMethod386(Class62.staticJs5IndexImpl7,
+					if (DataClass9.staticRasterizer2DSub2Sub1_2 == null) {
+						DataClass9.staticRasterizer2DSub2Sub1_2 = staticMethod386(Class62.staticJs5IndexImpl7,
 								NodeSub12.staticJs5IndexImpl11, "p12_full", "");
 					} else {
 						++var1;
@@ -9632,12 +9632,12 @@ public class Static {
 				} else {
 					var1 = 0;
 					Sprite var27;
-					if (Class59.staticSprite3 == null) {
+					if (DataClass9.staticSprite3 == null) {
 						var211 = Class62.staticJs5IndexImpl7;
 						var0 = var211.method267("compass");
 						var5 = var211.method268(var0, "");
 						var27 = staticMethod296(var211, var0, var5);
-						Class59.staticSprite3 = var27;
+						DataClass9.staticSprite3 = var27;
 					} else {
 						++var1;
 					}
@@ -9665,8 +9665,8 @@ public class Static {
 						++var1;
 					}
 
-					if (Class59.staticSpriteArray7 == null) {
-						Class59.staticSpriteArray7 = staticMethod309(Class62.staticJs5IndexImpl7, "headicons_pk", "");
+					if (DataClass9.staticSpriteArray7 == null) {
+						DataClass9.staticSpriteArray7 = staticMethod309(Class62.staticJs5IndexImpl7, "headicons_pk", "");
 					} else {
 						++var1;
 					}
@@ -9678,8 +9678,8 @@ public class Static {
 						++var1;
 					}
 
-					if (Class59.staticSpriteArray6 == null) {
-						Class59.staticSpriteArray6 = staticMethod309(Class62.staticJs5IndexImpl7, "headicons_hint", "");
+					if (DataClass9.staticSpriteArray6 == null) {
+						DataClass9.staticSpriteArray6 = staticMethod309(Class62.staticJs5IndexImpl7, "headicons_hint", "");
 					} else {
 						++var1;
 					}
@@ -14581,7 +14581,7 @@ public class Static {
 			var4 = new Js5DiskCache(var0, staticBufferedFile3, staticBufferedFileArray1[var0], 1000000);
 		}
 
-		return new Js5IndexImpl(var4, Class59.staticJs5DiskCache1, var0, var1, var2, var3);
+		return new Js5IndexImpl(var4, DataClass9.staticJs5DiskCache1, var0, var1, var2, var3);
 	}
 
 	static final void staticMethod203() {
@@ -17363,11 +17363,11 @@ public class Static {
 		byte var2 = 4;
 		int var3 = 6 + var2;
 		int var4 = var2 + 6;
-		int var5 = Class59.staticRasterizer2DSub2Sub1_2.method628(var0, 250);
-		int var6 = Class59.staticRasterizer2DSub2Sub1_2.method615(var0, 250) * 13;
+		int var5 = DataClass9.staticRasterizer2DSub2Sub1_2.method628(var0, 250);
+		int var6 = DataClass9.staticRasterizer2DSub2Sub1_2.method615(var0, 250) * 13;
 		staticMethod418(var3 - var2, var4 - var2, var2 + var5 + var2, var2 + var2 + var6, 0);
 		staticMethod411(var3 - var2, var4 - var2, var2 + var5 + var2, var2 + var2 + var6, 16777215);
-		Class59.staticRasterizer2DSub2Sub1_2.method624(var0, var3, var4, var5, var6, 16777215, -1, 1, 1, 0);
+		DataClass9.staticRasterizer2DSub2Sub1_2.method624(var0, var3, var4, var5, var6, 16777215, -1, 1, 1, 0);
 		staticMethod327(var3 - var2, var4 - var2, var2 + var5 + var2, var6 + var2 + var2);
 		if (var1) {
 			try {
@@ -20471,7 +20471,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod312(Class59 var0) {
+	static final void staticMethod312(DataClass9 var0) {
 		if (Client.staticInt296 == AbstractClass2Sub1.staticPlayer1.anInt628 >> 7
 				&& Client.staticInt240 == AbstractClass2Sub1.staticPlayer1.anInt591 >> 7) {
 			Client.staticInt296 = 0;
@@ -20480,30 +20480,30 @@ public class Static {
 		int var4 = staticInt24;
 		int[] var1 = staticIntArray7;
 		int var5 = var4;
-		if (var0 == Class59.staticClass59_1 || var0 == Class59.staticClass59_3) {
+		if (var0 == DataClass9.staticClass59_1 || var0 == DataClass9.staticClass59_3) {
 			var5 = 1;
 		}
 
 		for (int var2 = 0; var2 < var5; var2++) {
 			int var3;
 			Player var6;
-			if (Class59.staticClass59_1 == var0) {
+			if (DataClass9.staticClass59_1 == var0) {
 				var6 = AbstractClass2Sub1.staticPlayer1;
 				var3 = AbstractClass2Sub1.staticPlayer1.anInt686 << 14;
-			} else if (Class59.staticClass59_3 == var0) {
+			} else if (DataClass9.staticClass59_3 == var0) {
 				var6 = Client.staticPlayerArray1[Client.staticInt229];
 				var3 = Client.staticInt229 << 14;
 			} else {
 				var6 = Client.staticPlayerArray1[var1[var2]];
 				var3 = var1[var2] << 14;
-				if (var0 == Class59.staticClass59_4 && Client.staticInt229 == var1[var2]) {
+				if (var0 == DataClass9.staticClass59_4 && Client.staticInt229 == var1[var2]) {
 					continue;
 				}
 			}
 
 			if (var6 != null && var6.method565() && !var6.aBool81) {
 				var6.aBool83 = false;
-				if ((Client.lowMemory && var4 > 50 || var4 > 200) && Class59.staticClass59_1 != var0
+				if ((Client.lowMemory && var4 > 50 || var4 > 200) && DataClass9.staticClass59_1 != var0
 						&& var6.anInt594 == var6.anInt590) {
 					var6.aBool83 = true;
 				}
