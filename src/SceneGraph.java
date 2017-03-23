@@ -231,7 +231,7 @@ public class SceneGraph {
 
 			aTileArrayArrayArray1[var1][var2][var3].aClass26_1 = var22;
 		} else if (var4 != 1) {
-			Class8 var23 = new Class8(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14,
+			DataClass11 var23 = new DataClass11(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14,
 					var15, var16, var17, var18, var19, var20);
 
 			for (var21 = var1; var21 >= 0; --var21) {
@@ -507,7 +507,7 @@ public class SceneGraph {
 		aTileArrayArrayArray1[3][var1][var2] = null;
 	}
 
-	void method115(Class8 var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+	void method115(DataClass11 var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		int var8 = var1.anIntArray4.length;
 
 		int var12;
@@ -529,14 +529,14 @@ public class SceneGraph {
 			}
 
 			if (var1.anIntArray8 != null) {
-				Class8.staticIntArray19[var15] = var16;
-				Class8.staticIntArray18[var15] = var12;
-				Class8.staticIntArray17[var15] = var18;
+				DataClass11.staticIntArray19[var15] = var16;
+				DataClass11.staticIntArray18[var15] = var12;
+				DataClass11.staticIntArray17[var15] = var18;
 			}
 
-			Class8.staticIntArray20[var15] = Rasterizer2DSub1.staticInt344
+			DataClass11.staticIntArray20[var15] = Rasterizer2DSub1.staticInt344
 					+ var16 * Rasterizer2DSub1.staticInt342 / var18;
-			Class8.staticIntArray21[var15] = Rasterizer2DSub1.staticInt349
+			DataClass11.staticIntArray21[var15] = Rasterizer2DSub1.staticInt349
 					+ var12 * Rasterizer2DSub1.staticInt342 / var18;
 		}
 
@@ -547,12 +547,12 @@ public class SceneGraph {
 			var16 = var1.anIntArray6[var15];
 			var17 = var1.anIntArray9[var15];
 			var18 = var1.anIntArray7[var15];
-			var12 = Class8.staticIntArray20[var16];
-			int var13 = Class8.staticIntArray20[var17];
-			int var14 = Class8.staticIntArray20[var18];
-			int var9 = Class8.staticIntArray21[var16];
-			int var10 = Class8.staticIntArray21[var17];
-			int var11 = Class8.staticIntArray21[var18];
+			var12 = DataClass11.staticIntArray20[var16];
+			int var13 = DataClass11.staticIntArray20[var17];
+			int var14 = DataClass11.staticIntArray20[var18];
+			int var9 = DataClass11.staticIntArray21[var16];
+			int var10 = DataClass11.staticIntArray21[var17];
+			int var11 = DataClass11.staticIntArray21[var18];
 			if ((var12 - var13) * (var11 - var10) - (var9 - var10) * (var14 - var13) > 0) {
 				Rasterizer2DSub1.staticBool51 = false;
 				if (var12 < 0 || var13 < 0 || var14 < 0 || var12 > Rasterizer2DSub1.staticInt343
@@ -569,17 +569,17 @@ public class SceneGraph {
 					if (!staticBool6) {
 						if (var1.aBool4) {
 							Static.staticMethod450(var9, var10, var11, var12, var13, var14, var1.anIntArray3[var15],
-									var1.anIntArray11[var15], var1.anIntArray5[var15], Class8.staticIntArray19[0],
-									Class8.staticIntArray19[1], Class8.staticIntArray19[3], Class8.staticIntArray18[0],
-									Class8.staticIntArray18[1], Class8.staticIntArray18[3], Class8.staticIntArray17[0],
-									Class8.staticIntArray17[1], Class8.staticIntArray17[3], var1.anIntArray8[var15]);
+									var1.anIntArray11[var15], var1.anIntArray5[var15], DataClass11.staticIntArray19[0],
+									DataClass11.staticIntArray19[1], DataClass11.staticIntArray19[3], DataClass11.staticIntArray18[0],
+									DataClass11.staticIntArray18[1], DataClass11.staticIntArray18[3], DataClass11.staticIntArray17[0],
+									DataClass11.staticIntArray17[1], DataClass11.staticIntArray17[3], var1.anIntArray8[var15]);
 						} else {
 							Static.staticMethod450(var9, var10, var11, var12, var13, var14, var1.anIntArray3[var15],
-									var1.anIntArray11[var15], var1.anIntArray5[var15], Class8.staticIntArray19[var16],
-									Class8.staticIntArray19[var17], Class8.staticIntArray19[var18],
-									Class8.staticIntArray18[var16], Class8.staticIntArray18[var17],
-									Class8.staticIntArray18[var18], Class8.staticIntArray17[var16],
-									Class8.staticIntArray17[var17], Class8.staticIntArray17[var18],
+									var1.anIntArray11[var15], var1.anIntArray5[var15], DataClass11.staticIntArray19[var16],
+									DataClass11.staticIntArray19[var17], DataClass11.staticIntArray19[var18],
+									DataClass11.staticIntArray18[var16], DataClass11.staticIntArray18[var17],
+									DataClass11.staticIntArray18[var18], DataClass11.staticIntArray17[var16],
+									DataClass11.staticIntArray17[var17], DataClass11.staticIntArray17[var18],
 									var1.anIntArray8[var15]);
 						}
 					} else {
@@ -2003,7 +2003,7 @@ public class SceneGraph {
 					}
 				}
 			} else {
-				Class8 var18 = var7.aClass8_1;
+				DataClass11 var18 = var7.aClass8_1;
 				if (var18 != null) {
 					var12 = var18.anInt16;
 					int var16 = var18.anInt17;

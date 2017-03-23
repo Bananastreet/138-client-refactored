@@ -1,4 +1,4 @@
-public final class Class8 {
+public final class DataClass11 {
 
 	static int[] staticIntArray20 = new int[6];
 	static int[] staticIntArray21 = new int[6];
@@ -33,7 +33,7 @@ public final class Class8 {
 	int[] anIntArray5;
 	int[] anIntArray8;
 
-	Class8(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10,
+	DataClass11(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10,
 			int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19) {
 		if (var6 != var7 || var6 != var8 || var6 != var9) {
 			aBool4 = false;
