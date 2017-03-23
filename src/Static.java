@@ -1380,7 +1380,7 @@ public class Static {
 		Client.staticInt201 = var0.anInt3;
 		Class7.staticInt30 = 1568197829 * (Client.staticInt207 == 0 ? '\uaa4a' : var0.anInt4 + '\u9c40');
 		Client.staticInt250 = (Client.staticInt207 == 0 ? 443 : var0.anInt4 + '\uc350') * 922916997;
-		Class32.staticInt73 = Class7.staticInt30;
+		DataClass7.staticInt73 = Class7.staticInt30;
 	}
 
 	static int staticMethod60(int var0, CacheableSub1 var1, boolean var2) {
@@ -12986,7 +12986,7 @@ public class Static {
 			if (Client.loginStage == 1) {
 				if (KeyFocusListener.socket == null) {
 					KeyFocusListener.socket = BufferedFile.staticTaskManager1.method93(DataClass5.staticString21,
-							Class32.staticInt73 * 462737933);
+							DataClass7.staticInt73 * 462737933);
 				}
 
 				if (KeyFocusListener.socket.anInt86 == 2) {
@@ -13286,10 +13286,10 @@ public class Static {
 						++Client.staticInt262;
 						if (Client.staticInt262 > 2000) {
 							if (Client.staticInt302 < 1) {
-								if (Class32.staticInt73 * 462737933 == Class7.staticInt30 * 462737933) {
-									Class32.staticInt73 = Client.staticInt250 * 1584772929;
+								if (DataClass7.staticInt73 * 462737933 == Class7.staticInt30 * 462737933) {
+									DataClass7.staticInt73 = Client.staticInt250 * 1584772929;
 								} else {
-									Class32.staticInt73 = Class7.staticInt30;
+									DataClass7.staticInt73 = Class7.staticInt30;
 								}
 
 								++Client.staticInt302;
@@ -13360,10 +13360,10 @@ public class Static {
 			}
 		} catch (IOException var101) {
 			if (Client.staticInt302 < 1) {
-				if (Class7.staticInt30 * 462737933 == Class32.staticInt73 * 462737933) {
-					Class32.staticInt73 = Client.staticInt250 * 1584772929;
+				if (Class7.staticInt30 * 462737933 == DataClass7.staticInt73 * 462737933) {
+					DataClass7.staticInt73 = Client.staticInt250 * 1584772929;
 				} else {
-					Class32.staticInt73 = Class7.staticInt30;
+					DataClass7.staticInt73 = Class7.staticInt30;
 				}
 
 				++Client.staticInt302;
@@ -21329,7 +21329,7 @@ public class Static {
 				}
 
 				if (var4 == 2) {
-					Class32 var351 = Friend.staticScene1.method111(NodeSub4.staticInt155, var291, var30);
+					DataClass7 var351 = Friend.staticScene1.method111(NodeSub4.staticInt155, var291, var30);
 					if (var3 == 11) {
 						var3 = 10;
 					}

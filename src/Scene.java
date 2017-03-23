@@ -16,7 +16,7 @@ public class Scene {
 	static int staticInt46 = 0;
 	static int staticInt45 = 0;
 	public static boolean staticBool6 = true;
-	static Class32[] staticClass32Array1 = new Class32[100];
+	static DataClass7[] staticClass32Array1 = new DataClass7[100];
 	static int staticInt41 = 4;
 	static int[] staticIntArray40;
 	static DataClass4[][] staticClass30ArrayArray1;
@@ -33,7 +33,7 @@ public class Scene {
 	static boolean[][][][] staticBoolArrayArrayArrayArray1;
 	int anInt72 = 0;
 	int anInt69 = 0;
-	Class32[] aClass32Array1 = new Class32[5000];
+	DataClass7[] aClass32Array1 = new DataClass7[5000];
 	int[][] anIntArrayArray4 = new int[][] { new int[16], { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
 			{ 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 },
 			{ 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1 }, { 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
@@ -336,7 +336,7 @@ public class Scene {
 
 	public void method104() {
 		for (int var1 = 0; var1 < anInt72; var1++) {
-			Class32 var2 = aClass32Array1[var1];
+			DataClass7 var2 = aClass32Array1[var1];
 			method105(var2);
 			aClass32Array1[var1] = null;
 		}
@@ -344,7 +344,7 @@ public class Scene {
 		anInt72 = 0;
 	}
 
-	void method105(Class32 var1) {
+	void method105(DataClass7 var1) {
 		for (int var2 = var1.anInt120; var2 <= var1.anInt128; var2++) {
 			for (int var5 = var1.anInt123; var5 <= var1.anInt124; var5++) {
 				Tile var4 = aTileArrayArrayArray1[var1.anInt121][var2][var5];
@@ -395,7 +395,7 @@ public class Scene {
 		Tile var4 = aTileArrayArrayArray1[var1][var2][var3];
 		if (var4 != null) {
 			for (int var5 = 0; var5 < var4.anInt254; var5++) {
-				Class32 var6 = var4.aClass32Array2[var5];
+				DataClass7 var6 = var4.aClass32Array2[var5];
 				if ((var6.anInt127 >> 29 & 0x3) == 2 && var6.anInt120 == var2 && var6.anInt123 == var3) {
 					method105(var6);
 					return;
@@ -428,13 +428,13 @@ public class Scene {
 		return var4 == null ? null : var4.aWallObject1;
 	}
 
-	public Class32 method111(int var1, int var2, int var3) {
+	public DataClass7 method111(int var1, int var2, int var3) {
 		Tile var4 = aTileArrayArrayArray1[var1][var2][var3];
 		if (var4 == null) {
 			return null;
 		} else {
 			for (int var5 = 0; var5 < var4.anInt254; var5++) {
-				Class32 var6 = var4.aClass32Array2[var5];
+				DataClass7 var6 = var4.aClass32Array2[var5];
 				if ((var6.anInt127 >> 29 & 0x3) == 2 && var6.anInt120 == var2 && var6.anInt123 == var3) {
 					return var6;
 				}
@@ -491,7 +491,7 @@ public class Scene {
 				--var6.anInt257;
 
 				for (int var7 = 0; var7 < var6.anInt254; var7++) {
-					Class32 var4 = var6.aClass32Array2[var7];
+					DataClass7 var4 = var6.aClass32Array2[var7];
 					if ((var4.anInt127 >> 29 & 0x3) == 2 && var4.anInt120 == var1 && var4.anInt123 == var2) {
 						--var4.anInt121;
 					}
@@ -638,7 +638,7 @@ public class Scene {
 			return 0;
 		} else {
 			for (int var5 = 0; var5 < var4.anInt254; var5++) {
-				Class32 var6 = var4.aClass32Array2[var5];
+				DataClass7 var6 = var4.aClass32Array2[var5];
 				if ((var6.anInt127 >> 29 & 0x3) == 2 && var6.anInt120 == var2 && var6.anInt123 == var3) {
 					return var6.anInt127;
 				}
@@ -689,7 +689,7 @@ public class Scene {
 									}
 
 									for (int var231 = 0; var231 < var8.anInt254; var231++) {
-										Class32 var10 = var8.aClass32Array2[var231];
+										DataClass7 var10 = var8.aClass32Array2[var231];
 										if (var10 != null && var10.aRenderable6 instanceof RenderableSub3) {
 											RenderableSub3 var21 = (RenderableSub3) var10.aRenderable6;
 											int var22 = var10.anInt128 - var10.anInt120 + 1;
@@ -1093,7 +1093,7 @@ public class Scene {
 								do {
 									while (true) {
 										DataClass5 var29;
-										Class32 var32;
+										DataClass7 var32;
 										int var28;
 										int var18;
 										int var21;
@@ -1468,7 +1468,7 @@ public class Scene {
 												var11 = -50;
 												var24 = -1;
 
-												Class32 var331;
+												DataClass7 var331;
 												for (var26 = 0; var26 < var21; var26++) {
 													var331 = staticClass32Array1[var26];
 													if (var331.anInt126 != staticInt53) {
@@ -1687,7 +1687,7 @@ public class Scene {
 						}
 
 						for (int var13 = 0; var13 < var6.anInt254; var13++) {
-							Class32 var12 = var6.aClass32Array2[var13];
+							DataClass7 var12 = var6.aClass32Array2[var13];
 							if (var12 != null && var12.aRenderable6 instanceof RenderableSub3) {
 								RenderableSub3 var9 = (RenderableSub3) var12.aRenderable6;
 								method120(var9, var4, var7, var8, var12.anInt128 - var12.anInt120 + 1,
@@ -2244,7 +2244,7 @@ public class Scene {
 			}
 		}
 
-		Class32 var19 = new Class32();
+		DataClass7 var19 = new DataClass7();
 		var19.anInt127 = var12;
 		var19.anInt117 = var13;
 		var19.anInt121 = var1;
