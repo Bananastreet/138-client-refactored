@@ -4633,8 +4633,8 @@ public class Static {
 	static void staticMethod95() {
 		staticMethod344(Class38.staticCanvas1);
 		staticMethod302(Class38.staticCanvas1);
-		if (Class29.staticAbstractClass1_1 != null) {
-			Class29.staticAbstractClass1_1.method167(Class38.staticCanvas1);
+		if (DataClass3.staticAbstractClass1_1 != null) {
+			DataClass3.staticAbstractClass1_1.method167(Class38.staticCanvas1);
 		}
 
 		Client.staticGame1.method201();
@@ -4647,8 +4647,8 @@ public class Static {
 		var1.addMouseListener(MouseHandler.staticMouseHandler1);
 		var1.addMouseMotionListener(MouseHandler.staticMouseHandler1);
 		var1.addFocusListener(MouseHandler.staticMouseHandler1);
-		if (Class29.staticAbstractClass1_1 != null) {
-			Class29.staticAbstractClass1_1.method166(Class38.staticCanvas1);
+		if (DataClass3.staticAbstractClass1_1 != null) {
+			DataClass3.staticAbstractClass1_1.method166(Class38.staticCanvas1);
 		}
 
 		if (Client.staticInt263 != -1) {
@@ -9551,7 +9551,7 @@ public class Static {
 						Widget.staticJs5Index10 = var22;
 						staticJs5Index7 = var26;
 						Widget.staticJs5Index9 = var2;
-						Class29.staticJs5Index2 = var11;
+						DataClass3.staticJs5Index2 = var11;
 						Widget.staticWidgetArrayArray1 = new Widget[Widget.staticJs5Index10.method264()][];
 						Npc.staticBoolArray12 = new boolean[Widget.staticJs5Index10.method264()];
 						staticMethod205(Class23.staticJs5IndexImpl2);
@@ -16750,7 +16750,7 @@ public class Static {
 		}
 
 		var0 = staticInt101 * 128 + 64;
-		var1 = Class29.staticInt72 * 128 + 64;
+		var1 = DataClass3.staticInt72 * 128 + 64;
 		var2 = staticMethod240(var0, var1, NodeSub4.staticInt155) - Class7.staticInt31;
 		int var8 = var0 - Class20.staticInt36;
 		int var4 = var2 - staticInt125;
@@ -18529,13 +18529,13 @@ public class Static {
 				if (Client.staticInt191 == 25) {
 					Client.staticBool28 = true;
 					staticInt101 = Client.inBuffer.method367();
-					Class29.staticInt72 = Client.inBuffer.method367();
+					DataClass3.staticInt72 = Client.inBuffer.method367();
 					Class7.staticInt31 = Client.inBuffer.method370();
 					Class28.staticInt71 = Client.inBuffer.method367();
 					Class61.staticInt146 = Client.inBuffer.method367();
 					if (Class61.staticInt146 >= 100) {
 						var45 = 64 + staticInt101 * 128;
-						var2 = Class29.staticInt72 * 128 + 64;
+						var2 = DataClass3.staticInt72 * 128 + 64;
 						var3 = staticMethod240(var45, var2, NodeSub4.staticInt155) - Class7.staticInt31;
 						var48 = var45 - Class20.staticInt36;
 						var5 = var3 - staticInt125;

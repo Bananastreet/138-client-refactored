@@ -586,9 +586,9 @@ public final class Client extends GameShell {
 			var3 = null;
 		}
 
-		Class29.staticAbstractClass1_1 = var3;
-		if (Class29.staticAbstractClass1_1 != null) {
-			Class29.staticAbstractClass1_1.method166(Class38.staticCanvas1);
+		DataClass3.staticAbstractClass1_1 = var3;
+		if (DataClass3.staticAbstractClass1_1 != null) {
+			DataClass3.staticAbstractClass1_1.method166(Class38.staticCanvas1);
 		}
 
 		Class59.staticJs5DiskCache1 = new Js5DiskCache(255, Static.staticBufferedFile3, Static.staticBufferedFile1,
@@ -685,8 +685,8 @@ public final class Client extends GameShell {
 		Static.staticMethod17();
 		Static.staticMethod83();
 		Static.staticMethod258();
-		if (Class29.staticAbstractClass1_1 != null) {
-			var1 = Class29.staticAbstractClass1_1.method168();
+		if (DataClass3.staticAbstractClass1_1 != null) {
+			var1 = DataClass3.staticAbstractClass1_1.method168();
 			staticInt284 = var1;
 		}
 
@@ -1073,7 +1073,7 @@ public final class Client extends GameShell {
 			}
 		}
 
-		Class29.staticAbstractClass1_1 = null;
+		DataClass3.staticAbstractClass1_1 = null;
 		if (ByteBuf.staticClass19_2 != null) {
 			ByteBuf.staticClass19_2.method69();
 		}

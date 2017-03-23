@@ -7,7 +7,7 @@ public class RenderableSub3 extends Renderable {
 	static int[] staticIntArray134;
 	DataClass2[] aClass27Array2;
 	DataClass2[] aClass27Array1;
-	Class29[] aClass29Array1;
+	DataClass3[] aClass29Array1;
 	boolean aBool79 = false;
 	byte[] aByteArray30;
 	int anInt651 = 0;
@@ -1362,7 +1362,7 @@ public class RenderableSub3 extends Renderable {
 
 			DataClass2 var12;
 			int var13;
-			Class29 var19;
+			DataClass3 var19;
 			if (var15 == -1) {
 				if (var181 != 0) {
 					if (var181 == 1) {
@@ -1573,10 +1573,10 @@ public class RenderableSub3 extends Renderable {
 					++var17.anInt82;
 				} else if (var16 == 1) {
 					if (aClass29Array1 == null) {
-						aClass29Array1 = new Class29[anInt653];
+						aClass29Array1 = new DataClass3[anInt653];
 					}
 
-					Class29 var171 = aClass29Array1[var1] = new Class29();
+					DataClass3 var171 = aClass29Array1[var1] = new DataClass3();
 					var171.anInt90 = var8;
 					var171.anInt88 = var6;
 					var171.anInt89 = var14;

@@ -1,4 +1,4 @@
-public class Class29 {
+public class DataClass3 {
 
 	int anInt88;
 	int anInt89;

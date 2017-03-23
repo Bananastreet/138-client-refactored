@@ -264,7 +264,7 @@ public class Widget extends Node {
 			if (var1 != null) {
 				return var1;
 			} else {
-				var1 = Static.staticMethod54(staticJs5Index9, Class29.staticJs5Index2, anInt347, 0);
+				var1 = Static.staticMethod54(staticJs5Index9, DataClass3.staticJs5Index2, anInt347, 0);
 				if (var1 != null) {
 					staticCache3.method170(var1, anInt347);
 				} else {
