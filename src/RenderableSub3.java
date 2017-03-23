@@ -5,8 +5,8 @@ public class RenderableSub3 extends Renderable {
 	static int staticInt333 = 0;
 	static int[] staticIntArray131;
 	static int[] staticIntArray134;
-	Class27[] aClass27Array2;
-	Class27[] aClass27Array1;
+	DataClass2[] aClass27Array2;
+	DataClass2[] aClass27Array1;
 	Class29[] aClass29Array1;
 	boolean aBool79 = false;
 	byte[] aByteArray30;
@@ -1360,7 +1360,7 @@ public class RenderableSub3 extends Renderable {
 				var181 = 2;
 			}
 
-			Class27 var12;
+			DataClass2 var12;
 			int var13;
 			Class29 var19;
 			if (var15 == -1) {
@@ -1513,11 +1513,11 @@ public class RenderableSub3 extends Renderable {
 
 	public void method586() {
 		if (aClass27Array2 == null) {
-			aClass27Array2 = new Class27[anInt651];
+			aClass27Array2 = new DataClass2[anInt651];
 
 			int var1;
 			for (var1 = 0; var1 < anInt651; var1++) {
-				aClass27Array2[var1] = new Class27();
+				aClass27Array2[var1] = new DataClass2();
 			}
 
 			for (var1 = 0; var1 < anInt653; var1++) {
@@ -1556,7 +1556,7 @@ public class RenderableSub3 extends Renderable {
 				}
 
 				if (var16 == 0) {
-					Class27 var17 = aClass27Array2[var7];
+					DataClass2 var17 = aClass27Array2[var7];
 					var17.anInt79 += var8;
 					var17.anInt80 += var6;
 					var17.anInt81 += var14;

@@ -14294,9 +14294,9 @@ public class Static {
 	}
 
 	static final void staticMethod195(int var0, int var1) {
-		if (var0 != FileOnDisk.staticInt39 || Class27.staticInt70 != var1) {
+		if (var0 != FileOnDisk.staticInt39 || DataClass2.staticInt70 != var1) {
 			FileOnDisk.staticInt39 = var0;
-			Class27.staticInt70 = var1;
+			DataClass2.staticInt70 = var1;
 			staticMethod396(25);
 			staticMethod337("Loading - please wait.", true);
 			int var6 = NodeSub3.staticInt154;
@@ -29505,7 +29505,7 @@ public class Static {
 
 		int var12;
 		for (var12 = 0; var12 < var0.anInt651; var12++) {
-			Class27 var11 = var0.aClass27Array2[var12];
+			DataClass2 var11 = var0.aClass27Array2[var12];
 			if (var11.anInt82 != 0) {
 				int var13 = var0.anIntArray129[var12] - var3;
 				if (var13 <= var1.anInt655) {
@@ -29514,25 +29514,25 @@ public class Static {
 						int var15 = var0.anIntArray136[var12] - var4;
 						if (var15 >= var1.anInt658 && var15 <= var1.anInt657) {
 							for (int var16 = 0; var16 < var10; var16++) {
-								Class27 var7 = var1.aClass27Array2[var16];
+								DataClass2 var7 = var1.aClass27Array2[var16];
 								if (var14 == var9[var16] && var15 == var1.anIntArray136[var16]
 										&& var13 == var1.anIntArray129[var16] && var7.anInt82 != 0) {
 									if (var0.aClass27Array1 == null) {
-										var0.aClass27Array1 = new Class27[var0.anInt651];
+										var0.aClass27Array1 = new DataClass2[var0.anInt651];
 									}
 
 									if (var1.aClass27Array1 == null) {
-										var1.aClass27Array1 = new Class27[var10];
+										var1.aClass27Array1 = new DataClass2[var10];
 									}
 
-									Class27 var6 = var0.aClass27Array1[var12];
+									DataClass2 var6 = var0.aClass27Array1[var12];
 									if (var6 == null) {
-										var6 = var0.aClass27Array1[var12] = new Class27(var11);
+										var6 = var0.aClass27Array1[var12] = new DataClass2(var11);
 									}
 
-									Class27 var17 = var1.aClass27Array1[var16];
+									DataClass2 var17 = var1.aClass27Array1[var16];
 									if (var17 == null) {
-										var17 = var1.aClass27Array1[var16] = new Class27(var7);
+										var17 = var1.aClass27Array1[var16] = new DataClass2(var7);
 									}
 
 									var6.anInt79 += var7.anInt79 * 1;

@@ -803,7 +803,7 @@ public final class Client extends GameShell {
 								if (var7 != null) {
 									Static.staticMethod17();
 									Static.staticMethod40(var7, var4, var5, FileOnDisk.staticInt39 * 8 - 48,
-											Class27.staticInt70 * 8 - 48, staticClass38Array1);
+											DataClass2.staticInt70 * 8 - 48, staticClass38Array1);
 								}
 							}
 
@@ -811,7 +811,7 @@ public final class Client extends GameShell {
 								var4 = (Class6.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
 								var5 = (Class6.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
 								var7 = Class7.staticByteArrayArray1[var32];
-								if (var7 == null && Class27.staticInt70 < 800) {
+								if (var7 == null && DataClass2.staticInt70 < 800) {
 									Static.staticMethod17();
 									Static.staticMethod333(var4, var5, 64, 64);
 								}
@@ -1018,8 +1018,8 @@ public final class Client extends GameShell {
 						if (!staticBool37) {
 							var4 = (FileOnDisk.staticInt39 - 6) / 8;
 							var5 = (6 + FileOnDisk.staticInt39) / 8;
-							var36 = (Class27.staticInt70 - 6) / 8;
-							var331 = (Class27.staticInt70 + 6) / 8;
+							var36 = (DataClass2.staticInt70 - 6) / 8;
+							var331 = (DataClass2.staticInt70 + 6) / 8;
 
 							for (var341 = var4 - 1; var341 <= 1 + var5; var341++) {
 								for (var9 = var36 - 1; var9 <= var331 + 1; var9++) {
