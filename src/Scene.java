@@ -19,9 +19,9 @@ public class Scene {
 	static Class32[] staticClass32Array1 = new Class32[100];
 	static int staticInt41 = 4;
 	static int[] staticIntArray40;
-	static Class30[][] staticClass30ArrayArray1;
+	static DataClass4[][] staticClass30ArrayArray1;
 	static int staticInt59;
-	static Class30[] staticClass30Array1;
+	static DataClass4[] staticClass30Array1;
 	static Class39 staticClass39_1;
 	static final int[] staticIntArray42;
 	static final int[] staticIntArray43;
@@ -69,9 +69,9 @@ public class Scene {
 
 	static {
 		staticIntArray40 = new int[staticInt41];
-		staticClass30ArrayArray1 = new Class30[staticInt41][500];
+		staticClass30ArrayArray1 = new DataClass4[staticInt41][500];
 		staticInt59 = 0;
-		staticClass30Array1 = new Class30[500];
+		staticClass30Array1 = new DataClass4[500];
 		staticClass39_1 = new Class39();
 		staticIntArray42 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
 		staticIntArray43 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
@@ -1728,11 +1728,11 @@ public class Scene {
 
 	void method128() {
 		int var1 = staticIntArray40[staticInt46];
-		Class30[] var11 = staticClass30ArrayArray1[staticInt46];
+		DataClass4[] var11 = staticClass30ArrayArray1[staticInt46];
 		staticInt59 = 0;
 
 		for (int var4 = 0; var4 < var1; var4++) {
-			Class30 var2 = var11[var4];
+			DataClass4 var2 = var11[var4];
 			int var3;
 			int var5;
 			int var6;
@@ -2099,7 +2099,7 @@ public class Scene {
 
 	boolean method137(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < staticInt59; var4++) {
-			Class30 var5 = staticClass30Array1[var4];
+			DataClass4 var5 = staticClass30Array1[var4];
 			int var6;
 			int var7;
 			int var8;

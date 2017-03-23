@@ -9970,7 +9970,7 @@ public class Static {
 	}
 
 	public static void staticMethod75(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-		Class30 var8 = new Class30();
+		DataClass4 var8 = new DataClass4();
 		var8.anInt92 = var2 / 128;
 		var8.anInt103 = var3 / 128;
 		var8.anInt93 = var4 / 128;
