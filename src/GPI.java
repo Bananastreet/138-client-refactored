@@ -26,8 +26,8 @@ public class GPI {
 		var6.anIntArray122[0] = var7 - Class34.staticInt75;
 		var6.anInt591 = (var6.anIntArray122[0] << 7) + (var6.method659() << 6);
 		NodeSub4.staticInt155 = var6.anInt698 = var3;
-		if (Static.staticStreamArray1[var5] != null) {
-			var6.method658(Static.staticStreamArray1[var5]);
+		if (Static.cachedAppearances[var5] != null) {
+			var6.decodeAppearance(Static.cachedAppearances[var5]);
 		}
 
 		Static.staticInt24 = 0;

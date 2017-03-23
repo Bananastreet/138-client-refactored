@@ -91,121 +91,121 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	// TODO item def decode
-	void method488(ByteBuf var1, int var2) {
-		if (var2 == 1) {
-			anInt441 = var1.method370();
-		} else if (var2 == 2) {
-			aString31 = var1.readString();
-		} else if (var2 == 4) {
-			anInt444 = var1.method370();
-		} else if (var2 == 5) {
-			anInt456 = var1.method370();
-		} else if (var2 == 6) {
-			anInt466 = var1.method370();
-		} else if (var2 == 7) {
-			anInt436 = var1.method370();
+	void decode(ByteBuf buffer, int opcode) {		
+		if (opcode == 1) {
+			anInt441 = buffer.method370();
+		} else if (opcode == 2) {
+			aString31 = buffer.readString();
+		} else if (opcode == 4) {
+			anInt444 = buffer.method370();
+		} else if (opcode == 5) {
+			anInt456 = buffer.method370();
+		} else if (opcode == 6) {
+			anInt466 = buffer.method370();
+		} else if (opcode == 7) {
+			anInt436 = buffer.method370();
 			if (anInt436 > 32767) {
 				anInt436 -= 65536;
 			}
-		} else if (var2 == 8) {
-			anInt452 = var1.method370();
+		} else if (opcode == 8) {
+			anInt452 = buffer.method370();
 			if (anInt452 > 32767) {
 				anInt452 -= 65536;
 			}
-		} else if (var2 == 11) {
+		} else if (opcode == 11) {
 			anInt442 = 1;
-		} else if (var2 == 12) {
-			anInt460 = var1.readInt();
-		} else if (var2 == 16) {
+		} else if (opcode == 12) {
+			anInt460 = buffer.readInt();
+		} else if (opcode == 16) {
 			aBool55 = true;
-		} else if (var2 == 23) {
-			anInt446 = var1.method370();
-			anInt447 = var1.method367();
-		} else if (var2 == 24) {
-			anInt438 = var1.method370();
-		} else if (var2 == 25) {
-			anInt448 = var1.method370();
-			anInt450 = var1.method367();
-		} else if (var2 == 26) {
-			anInt449 = var1.method370();
-		} else if (var2 >= 30 && var2 < 35) {
-			aStringArray7[var2 - 30] = var1.readString();
-			if (aStringArray7[var2 - 30].equalsIgnoreCase("Hidden")) {
-				aStringArray7[var2 - 30] = null;
+		} else if (opcode == 23) {
+			anInt446 = buffer.method370();
+			anInt447 = buffer.method367();
+		} else if (opcode == 24) {
+			anInt438 = buffer.method370();
+		} else if (opcode == 25) {
+			anInt448 = buffer.method370();
+			anInt450 = buffer.method367();
+		} else if (opcode == 26) {
+			anInt449 = buffer.method370();
+		} else if (opcode >= 30 && opcode < 35) {
+			aStringArray7[opcode - 30] = buffer.readString();
+			if (aStringArray7[opcode - 30].equalsIgnoreCase("Hidden")) {
+				aStringArray7[opcode - 30] = null;
 			}
-		} else if (var2 >= 35 && var2 < 40) {
-			aStringArray6[var2 - 35] = var1.readString();
+		} else if (opcode >= 35 && opcode < 40) {
+			aStringArray6[opcode - 35] = buffer.readString();
 		} else {
 			int var3;
 			int var4;
-			if (var2 == 40) {
-				var3 = var1.method367();
+			if (opcode == 40) {
+				var3 = buffer.method367();
 				aShortArray9 = new short[var3];
 				aShortArray6 = new short[var3];
 
 				for (var4 = 0; var4 < var3; var4++) {
-					aShortArray9[var4] = (short) var1.method370();
-					aShortArray6[var4] = (short) var1.method370();
+					aShortArray9[var4] = (short) buffer.method370();
+					aShortArray6[var4] = (short) buffer.method370();
 				}
-			} else if (var2 == 41) {
-				var3 = var1.method367();
+			} else if (opcode == 41) {
+				var3 = buffer.method367();
 				aShortArray7 = new short[var3];
 				aShortArray8 = new short[var3];
 
 				for (var4 = 0; var4 < var3; var4++) {
-					aShortArray7[var4] = (short) var1.method370();
-					aShortArray8[var4] = (short) var1.method370();
+					aShortArray7[var4] = (short) buffer.method370();
+					aShortArray8[var4] = (short) buffer.method370();
 				}
-			} else if (var2 == 42) {
-				anInt443 = var1.readByte();
-			} else if (var2 == 65) {
+			} else if (opcode == 42) {
+				anInt443 = buffer.readByte();
+			} else if (opcode == 65) {
 				aBool56 = true;
-			} else if (var2 == 78) {
-				anInt451 = var1.method370();
-			} else if (var2 == 79) {
-				anInt434 = var1.method370();
-			} else if (var2 == 90) {
-				anInt440 = var1.method370();
-			} else if (var2 == 91) {
-				anInt454 = var1.method370();
-			} else if (var2 == 92) {
-				anInt453 = var1.method370();
-			} else if (var2 == 93) {
-				anInt455 = var1.method370();
-			} else if (var2 == 95) {
-				anInt468 = var1.method370();
-			} else if (var2 == 97) {
-				anInt435 = var1.method370();
-			} else if (var2 == 98) {
-				anInt457 = var1.method370();
-			} else if (var2 >= 100 && var2 < 110) {
+			} else if (opcode == 78) {
+				anInt451 = buffer.method370();
+			} else if (opcode == 79) {
+				anInt434 = buffer.method370();
+			} else if (opcode == 90) {
+				anInt440 = buffer.method370();
+			} else if (opcode == 91) {
+				anInt454 = buffer.method370();
+			} else if (opcode == 92) {
+				anInt453 = buffer.method370();
+			} else if (opcode == 93) {
+				anInt455 = buffer.method370();
+			} else if (opcode == 95) {
+				anInt468 = buffer.method370();
+			} else if (opcode == 97) {
+				anInt435 = buffer.method370();
+			} else if (opcode == 98) {
+				anInt457 = buffer.method370();
+			} else if (opcode >= 100 && opcode < 110) {
 				if (anIntArray105 == null) {
 					anIntArray105 = new int[10];
 					anIntArray106 = new int[10];
 				}
 
-				anIntArray105[var2 - 100] = var1.method370();
-				anIntArray106[var2 - 100] = var1.method370();
-			} else if (var2 == 110) {
-				anInt458 = var1.method370();
-			} else if (var2 == 111) {
-				anInt459 = var1.method370();
-			} else if (var2 == 112) {
-				anInt439 = var1.method370();
-			} else if (var2 == 113) {
-				anInt461 = var1.readByte();
-			} else if (var2 == 114) {
-				anInt462 = var1.readByte() * 5;
-			} else if (var2 == 115) {
-				anInt463 = var1.method367();
-			} else if (var2 == 139) {
-				anInt464 = var1.method370();
-			} else if (var2 == 140) {
-				anInt465 = var1.method370();
-			} else if (var2 == 148) {
-				anInt445 = var1.method370();
-			} else if (var2 == 149) {
-				anInt467 = var1.method370();
+				anIntArray105[opcode - 100] = buffer.method370();
+				anIntArray106[opcode - 100] = buffer.method370();
+			} else if (opcode == 110) {
+				anInt458 = buffer.method370();
+			} else if (opcode == 111) {
+				anInt459 = buffer.method370();
+			} else if (opcode == 112) {
+				anInt439 = buffer.method370();
+			} else if (opcode == 113) {
+				anInt461 = buffer.readByte();
+			} else if (opcode == 114) {
+				anInt462 = buffer.readByte() * 5;
+			} else if (opcode == 115) {
+				anInt463 = buffer.method367();
+			} else if (opcode == 139) {
+				anInt464 = buffer.method370();
+			} else if (opcode == 140) {
+				anInt465 = buffer.method370();
+			} else if (opcode == 148) {
+				anInt445 = buffer.method370();
+			} else if (opcode == 149) {
+				anInt467 = buffer.method370();
 			}
 		}
 
@@ -504,7 +504,7 @@ public class ItemDefinition extends Cacheable {
 				return;
 			}
 
-			method488(var1, var2);
+			decode(var1, var2);
 		}
 	}
 

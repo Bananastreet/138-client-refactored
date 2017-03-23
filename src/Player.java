@@ -27,11 +27,11 @@ public final class Player extends Actor {
 	boolean aBool83;
 	boolean aBool82;
 
-	final void method658(ByteBuf var1) {
-		var1.position = 0;
-		int var8 = var1.method367();
-		anInt683 = var1.readByte();
-		anInt684 = var1.readByte();
+	final void decodeAppearance(ByteBuf buffer) {		
+		buffer.position = 0;
+		int var8 = buffer.method367();
+		anInt683 = buffer.readByte();
+		anInt684 = buffer.readByte();
 		int var2 = -1;
 		anInt697 = 0;
 		int[] var3 = new int[12];
@@ -39,14 +39,14 @@ public final class Player extends Actor {
 		int var5;
 		int var6;
 		for (int var9 = 0; var9 < 12; var9++) {
-			var5 = var1.method367();
+			var5 = buffer.method367();
 			if (var5 == 0) {
 				var3[var9] = 0;
 			} else {
-				var6 = var1.method367();
+				var6 = buffer.method367();
 				var3[var9] = (var5 << 8) + var6;
 				if (var9 == 0 && var3[0] == '\uffff') {
-					var2 = var1.method370();
+					var2 = buffer.method370();
 					break;
 				}
 
@@ -62,7 +62,7 @@ public final class Player extends Actor {
 		int[] var91 = new int[5];
 
 		for (var5 = 0; var5 < 5; var5++) {
-			var6 = var1.method367();
+			var6 = buffer.method367();
 			if (var6 < 0 || var6 >= Class60.staticShortArrayArray4[var5].length) {
 				var6 = 0;
 			}
@@ -70,50 +70,50 @@ public final class Player extends Actor {
 			var91[var5] = var6;
 		}
 
-		anInt594 = var1.method370();
+		anInt594 = buffer.method370();
 		if (anInt594 == '\uffff') {
 			anInt594 = -1;
 		}
 
-		anInt634 = var1.method370();
+		anInt634 = buffer.method370();
 		if (anInt634 == '\uffff') {
 			anInt634 = -1;
 		}
 
 		anInt595 = -anInt634;
-		anInt621 = var1.method370();
+		anInt621 = buffer.method370();
 		if (anInt621 == '\uffff') {
 			anInt621 = -1;
 		}
 
-		anInt597 = var1.method370();
+		anInt597 = buffer.method370();
 		if (anInt597 == '\uffff') {
 			anInt597 = -1;
 		}
 
-		anInt598 = var1.method370();
+		anInt598 = buffer.method370();
 		if (anInt598 == '\uffff') {
 			anInt598 = -1;
 		}
 
-		anInt622 = var1.method370();
+		anInt622 = buffer.method370();
 		if (anInt622 == '\uffff') {
 			anInt622 = -1;
 		}
 
-		anInt607 = var1.method370();
+		anInt607 = buffer.method370();
 		if (anInt607 == '\uffff') {
 			anInt607 = -1;
 		}
 
-		aString40 = var1.readString();
+		aString40 = buffer.readString();
 		if (AbstractClass2Sub1.staticPlayer1 == this) {
 			RuntimeExceptionSub1.staticString22 = aString40;
 		}
 
-		anInt685 = var1.method367();
-		anInt691 = var1.method370();
-		aBool81 = var1.method367() == 1;
+		anInt685 = buffer.method367();
+		anInt691 = buffer.method370();
+		aBool81 = buffer.method367() == 1;
 		if (Client.staticInt207 == 0 && Client.myRights >= 2) {
 			aBool81 = false;
 		}

@@ -7223,8 +7223,8 @@ public class Static {
 			} else {
 				Player var12 = Client.staticPlayerArray1[var1] = new Player();
 				var12.anInt686 = var1;
-				if (staticStreamArray1[var1] != null) {
-					var12.method658(staticStreamArray1[var1]);
+				if (cachedAppearances[var1] != null) {
+					var12.decodeAppearance(cachedAppearances[var1]);
 				}
 
 				var12.anInt630 = staticIntArray10[var1];
@@ -12319,8 +12319,8 @@ public class Static {
 		}
 	}
 
-	// TODO updating?
-	static final void staticMethod155(BitBuf var0, int var1, Player var2, int var3) {
+	// TODO player updating?
+	static final void staticMethod155(BitBuf var0, int var1, Player player, int var3) {		
 		byte var4 = -1;
 		int var7;
 		if ((var3 & 0x80) != 0) {
@@ -12328,8 +12328,8 @@ public class Static {
 			byte[] var15 = new byte[var7];
 			ByteBuf var11 = new ByteBuf(var15);
 			var0.readBytes(var15, 0, var7);
-			staticStreamArray1[var1] = var11;
-			var2.method658(var11);
+			cachedAppearances[var1] = var11;
+			player.decodeAppearance(var11);
 		}
 
 		int var151;
@@ -12340,29 +12340,29 @@ public class Static {
 			}
 
 			var151 = var0.method367();
-			staticMethod94(var2, var7, var151);
+			staticMethod94(player, var7, var151);
 		}
 
 		if ((var3 & 0x10) != 0) {
-			var2.anInt600 = var0.method370();
-			if (var2.anInt600 == '\uffff') {
-				var2.anInt600 = -1;
+			player.anInt600 = var0.method370();
+			if (player.anInt600 == '\uffff') {
+				player.anInt600 = -1;
 			}
 		}
 
 		if ((var3 & 0x2) != 0) {
-			var2.aString39 = var0.readString();
-			if (var2.aString39.charAt(0) == 126) {
-				var2.aString39 = var2.aString39.substring(1);
-				staticMethod36(2, var2.aString40, var2.aString39);
-			} else if (var2 == AbstractClass2Sub1.staticPlayer1) {
-				staticMethod36(2, var2.aString40, var2.aString39);
+			player.aString39 = var0.readString();
+			if (player.aString39.charAt(0) == 126) {
+				player.aString39 = player.aString39.substring(1);
+				staticMethod36(2, player.aString40, player.aString39);
+			} else if (player == AbstractClass2Sub1.staticPlayer1) {
+				staticMethod36(2, player.aString40, player.aString39);
 			}
 
-			var2.aBool75 = false;
-			var2.anInt602 = 0;
-			var2.anInt603 = 0;
-			var2.anInt601 = 150;
+			player.aBool75 = false;
+			player.anInt602 = 0;
+			player.anInt603 = 0;
+			player.anInt601 = 150;
 		}
 
 		int var12;
@@ -12390,7 +12390,7 @@ public class Static {
 					}
 
 					var19 = var0.method379();
-					var2.method566(var20, var161, var16, var12, Client.staticInt166, var19);
+					player.method566(var20, var161, var16, var12, Client.staticInt166, var19);
 				}
 			}
 
@@ -12403,19 +12403,19 @@ public class Static {
 						var12 = var0.method379();
 						var19 = var0.method367();
 						int var18 = var161 > 0 ? var0.method367() : var19;
-						var2.method564(var16, Client.staticInt166, var161, var12, var19, var18);
+						player.method564(var16, Client.staticInt166, var161, var12, var19, var18);
 					} else {
-						var2.method563(var16);
+						player.method563(var16);
 					}
 				}
 			}
 		}
 
 		if ((var3 & 0x1) != 0) {
-			var2.anInt608 = var0.method370();
-			if (var2.anInt632 == 0) {
-				var2.anInt630 = var2.anInt608;
-				var2.anInt608 = -1;
+			player.anInt608 = var0.method370();
+			if (player.anInt632 == 0) {
+				player.anInt630 = player.anInt608;
+				player.anInt608 = -1;
 			}
 		}
 
@@ -12427,23 +12427,23 @@ public class Static {
 			boolean var211 = var0.method367() == 1;
 			var161 = var0.method367();
 			var12 = var0.position;
-			if (var2.aString40 != null && var2.aClass49_1 != null) {
+			if (player.aString40 != null && player.aClass49_1 != null) {
 				boolean var201 = false;
-				if (var191.aBool14 && staticMethod141(var2.aString40)) {
+				if (var191.aBool14 && staticMethod141(player.aString40)) {
 					var201 = true;
 				}
 
-				if (!var201 && Client.staticInt245 == 0 && !var2.aBool81) {
+				if (!var201 && Client.staticInt245 == 0 && !player.aBool81) {
 					staticStream1.position = 0;
 					var0.readBytes(staticStream1.buf, 0, var161);
 					staticStream1.position = 0;
 					String var21 = staticMethod456(staticMethod265(staticMethod191(staticStream1)));
-					var2.aString39 = var21.trim();
-					var2.anInt602 = var7 >> 8;
-					var2.anInt603 = var7 & 0xff;
-					var2.anInt601 = 150;
-					var2.aBool75 = var211;
-					var2.aBool77 = AbstractClass2Sub1.staticPlayer1 != var2 && var191.aBool14
+					player.aString39 = var21.trim();
+					player.anInt602 = var7 >> 8;
+					player.anInt603 = var7 & 0xff;
+					player.anInt601 = 150;
+					player.aBool75 = var211;
+					player.aBool77 = AbstractClass2Sub1.staticPlayer1 != player && var191.aBool14
 							&& Client.staticString33 != "" && var21.toLowerCase().indexOf(Client.staticString33) == -1;
 					int var9;
 					if (var191.aBool15) {
@@ -12453,9 +12453,9 @@ public class Static {
 					}
 
 					if (var191.anInt192 != -1) {
-						staticMethod36(var9, staticMethod123(var191.anInt192) + var2.aString40, var21);
+						staticMethod36(var9, staticMethod123(var191.anInt192) + player.aString40, var21);
 					} else {
-						staticMethod36(var9, var2.aString40, var21);
+						staticMethod36(var9, player.aString40, var21);
 					}
 				}
 			}
@@ -12464,44 +12464,45 @@ public class Static {
 		}
 
 		if ((var3 & 0x200) != 0) {
-			var2.anInt596 = var0.method370();
+			player.anInt596 = var0.method370();
 			var7 = var0.readInt();
-			var2.anInt620 = var7 >> 16;
-			var2.anInt619 = Client.staticInt166 + (var7 & 0xffff);
-			var2.anInt616 = 0;
-			var2.anInt618 = 0;
-			if (var2.anInt619 > Client.staticInt166) {
-				var2.anInt616 = -1;
+			player.anInt620 = var7 >> 16;
+			player.anInt619 = Client.staticInt166 + (var7 & 0xffff);
+			player.anInt616 = 0;
+			player.anInt618 = 0;
+			if (player.anInt619 > Client.staticInt166) {
+				player.anInt616 = -1;
 			}
 
-			if (var2.anInt596 == '\uffff') {
-				var2.anInt596 = -1;
+			if (player.anInt596 == '\uffff') {
+				player.anInt596 = -1;
 			}
 		}
-
+		
+		//gfx
 		if ((var3 & 0x400) != 0) {
-			var2.anInt606 = var0.readByte();
-			var2.anInt623 = var0.readByte();
-			var2.anInt617 = var0.readByte();
-			var2.anInt624 = var0.readByte();
-			var2.anInt625 = var0.method370() + Client.staticInt166;
-			var2.anInt604 = var0.method370() + Client.staticInt166;
-			var2.anInt627 = var0.method370() * -1576115929;
-			if (var2.aBool82) {
-				var2.anInt606 += var2.anInt700;
-				var2.anInt623 += var2.anInt692;
-				var2.anInt617 += var2.anInt700;
-				var2.anInt624 += var2.anInt692;
-				var2.anInt632 = 0;
+			player.anInt606 = var0.readByte();
+			player.anInt623 = var0.readByte();
+			player.anInt617 = var0.readByte();
+			player.anInt624 = var0.readByte();
+			player.anInt625 = var0.method370() + Client.staticInt166;
+			player.anInt604 = var0.method370() + Client.staticInt166;
+			player.anInt627 = var0.method370() * -1576115929;
+			if (player.aBool82) {
+				player.anInt606 += player.anInt700;
+				player.anInt623 += player.anInt692;
+				player.anInt617 += player.anInt700;
+				player.anInt624 += player.anInt692;
+				player.anInt632 = 0;
 			} else {
-				var2.anInt606 += var2.anIntArray127[0];
-				var2.anInt623 += var2.anIntArray122[0];
-				var2.anInt617 += var2.anIntArray127[0];
-				var2.anInt624 += var2.anIntArray122[0];
-				var2.anInt632 = 1;
+				player.anInt606 += player.anIntArray127[0];
+				player.anInt623 += player.anIntArray122[0];
+				player.anInt617 += player.anIntArray127[0];
+				player.anInt624 += player.anIntArray122[0];
+				player.anInt632 = 1;
 			}
 
-			var2.anInt599 = 0;
+			player.anInt599 = 0;
 		}
 
 		if ((var3 & 0x1000) != 0) {
@@ -12514,13 +12515,13 @@ public class Static {
 
 		if ((var3 & 0x800) != 0) {
 			for (var7 = 0; var7 < 3; var7++) {
-				var2.aStringArray11[var7] = var0.readString();
+				player.aStringArray11[var7] = var0.readString();
 			}
 		}
 
-		if (var2.aBool82) {
+		if (player.aBool82) {
 			if (var4 == 127) {
-				var2.method661(var2.anInt700, var2.anInt692);
+				player.method661(player.anInt700, player.anInt692);
 			} else {
 				byte var181;
 				if (var4 != -1) {
@@ -12529,7 +12530,7 @@ public class Static {
 					var181 = staticByteArray2[var1];
 				}
 
-				var2.method660(var2.anInt700, var2.anInt692, var181);
+				player.method660(player.anInt700, player.anInt692, var181);
 			}
 		}
 
@@ -22405,6 +22406,8 @@ public class Static {
 			int var2;
 			int var4;
 			int var8;
+			
+			// overhead text
 			if ((var5 & 0x4) != 0) {
 				var6 = Client.inBuffer.method348();
 				int var7;
@@ -25431,7 +25434,7 @@ public class Static {
 		staticInt24 = 0;
 
 		for (int var0 = 0; var0 < 2048; var0++) {
-			staticStreamArray1[var0] = null;
+			cachedAppearances[var0] = null;
 			staticByteArray2[var0] = 1;
 		}
 
@@ -30895,7 +30898,7 @@ public class Static {
 	public static Class47 staticClass47_1;
 	static byte[] staticByteArray1 = new byte[2048];
 	static byte[] staticByteArray2 = new byte[2048];
-	static ByteBuf[] staticStreamArray1 = new ByteBuf[2048];
+	static ByteBuf[] cachedAppearances = new ByteBuf[2048];	
 	static int staticInt24 = 0;
 	static int[] staticIntArray7 = new int[2048];
 	static int staticInt23 = 0;
