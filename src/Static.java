@@ -8237,7 +8237,7 @@ public class Static {
 				var9.anInt677 = staticIntArray72[var8];
 				var9.anInt678 = staticIntArray71[var8];
 				var9.anIntArray155 = staticIntArray73;
-				var9.aByteArray35 = CanvasSub1.staticByteArrayArray2[var8];
+				var9.aByteArray35 = GameCanvas.staticByteArrayArray2[var8];
 			}
 
 			NodeSub20.staticIntArray126 = null;
@@ -8245,7 +8245,7 @@ public class Static {
 			staticIntArray72 = null;
 			staticIntArray71 = null;
 			staticIntArray73 = null;
-			CanvasSub1.staticByteArrayArray2 = null;
+			GameCanvas.staticByteArrayArray2 = null;
 			var7 = var4;
 		}
 
@@ -9404,7 +9404,7 @@ public class Static {
 				Client.staticJs5IndexImpl8 = staticMethod202(0, false, true, true);
 				FloorUnderlayDef.staticJs5IndexImpl13 = staticMethod202(1, false, true, true);
 				Class23.staticJs5IndexImpl2 = staticMethod202(2, true, false, true);
-				CanvasSub1.staticJs5IndexImpl5 = staticMethod202(3, false, true, true);
+				GameCanvas.staticJs5IndexImpl5 = staticMethod202(3, false, true, true);
 				Config19.staticJs5IndexImpl15 = staticMethod202(4, false, true, true);
 				RenderableSub2.staticJs5IndexImpl16 = staticMethod202(5, true, true, true);
 				Class34.staticJs5IndexImpl3 = staticMethod202(6, true, true, false);
@@ -9425,7 +9425,7 @@ public class Static {
 				var1 = var20 + Client.staticJs5IndexImpl8.method395() * 4 / 100;
 				var1 += FloorUnderlayDef.staticJs5IndexImpl13.method395() * 4 / 100;
 				var1 += Class23.staticJs5IndexImpl2.method395() * 2 / 100;
-				var1 += CanvasSub1.staticJs5IndexImpl5.method395() * 2 / 100;
+				var1 += GameCanvas.staticJs5IndexImpl5.method395() * 2 / 100;
 				var1 += Config19.staticJs5IndexImpl15.method395() * 6 / 100;
 				var1 += RenderableSub2.staticJs5IndexImpl16.method395() * 4 / 100;
 				var1 += Class34.staticJs5IndexImpl3.method395() * 2 / 100;
@@ -9544,7 +9544,7 @@ public class Static {
 						staticMethod397(Class23.staticJs5IndexImpl2, ClientScriptMap.staticJs5IndexImpl14);
 						staticMethod299(Class23.staticJs5IndexImpl2);
 						staticMethod236(Class23.staticJs5IndexImpl2);
-						var22 = CanvasSub1.staticJs5IndexImpl5;
+						var22 = GameCanvas.staticJs5IndexImpl5;
 						Js5IndexImpl var26 = ClientScriptMap.staticJs5IndexImpl14;
 						Js5IndexImpl var2 = Class62.staticJs5IndexImpl7;
 						Js5IndexImpl var11 = NodeSub12.staticJs5IndexImpl11;
@@ -9609,9 +9609,9 @@ public class Static {
 							Client.staticInt179 = 130;
 						}
 					} else if (Client.staticInt179 == 130) {
-						if (!CanvasSub1.staticJs5IndexImpl5.method259()) {
+						if (!GameCanvas.staticJs5IndexImpl5.method259()) {
 							staticString3 = "Loading interfaces - "
-									+ CanvasSub1.staticJs5IndexImpl5.method399() * 4 / 5 + "%";
+									+ GameCanvas.staticJs5IndexImpl5.method399() * 4 / 5 + "%";
 							staticInt14 = 300;
 						} else if (!Connection.staticJs5IndexImpl4.method259()) {
 							staticString3 = "Loading interfaces - "
@@ -9958,13 +9958,13 @@ public class Static {
 		} else {
 			Rasterizer2DSub2Sub1 var1 = new Rasterizer2DSub2Sub1(var0, NodeSub20.staticIntArray126,
 					staticIntArray69, staticIntArray72, staticIntArray71, staticIntArray73,
-					CanvasSub1.staticByteArrayArray2);
+					GameCanvas.staticByteArrayArray2);
 			NodeSub20.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
 			staticIntArray73 = null;
-			CanvasSub1.staticByteArrayArray2 = null;
+			GameCanvas.staticByteArrayArray2 = null;
 			return var1;
 		}
 	}
@@ -12652,7 +12652,7 @@ public class Static {
 		CacheableSub1.staticCache6.method171();
 		Client.staticJs5IndexImpl8.method272();
 		FloorUnderlayDef.staticJs5IndexImpl13.method272();
-		CanvasSub1.staticJs5IndexImpl5.method272();
+		GameCanvas.staticJs5IndexImpl5.method272();
 		Config19.staticJs5IndexImpl15.method272();
 		RenderableSub2.staticJs5IndexImpl16.method272();
 		Class34.staticJs5IndexImpl3.method272();
@@ -13146,7 +13146,7 @@ public class Static {
 				Client.loginBuffer.writeInt(Client.staticJs5IndexImpl8.anInt201);
 				Client.loginBuffer.writeInt(FloorUnderlayDef.staticJs5IndexImpl13.anInt201);
 				Client.loginBuffer.writeInt(Class23.staticJs5IndexImpl2.anInt201);
-				Client.loginBuffer.writeInt(CanvasSub1.staticJs5IndexImpl5.anInt201);
+				Client.loginBuffer.writeInt(GameCanvas.staticJs5IndexImpl5.anInt201);
 				Client.loginBuffer.writeInt(Config19.staticJs5IndexImpl15.anInt201);
 				Client.loginBuffer.writeInt(RenderableSub2.staticJs5IndexImpl16.anInt201);
 				Client.loginBuffer.writeInt(Class34.staticJs5IndexImpl3.anInt201);
@@ -13947,7 +13947,7 @@ public class Static {
 				var4.anInt672 = staticIntArray72[var3];
 				var4.anInt671 = staticIntArray71[var3];
 				int var5 = var4.anInt672 * var4.anInt671;
-				byte[] var6 = CanvasSub1.staticByteArrayArray2[var3];
+				byte[] var6 = GameCanvas.staticByteArrayArray2[var3];
 				var4.anIntArray154 = new int[var5];
 
 				for (int var8 = 0; var8 < var5; var8++) {
@@ -13960,7 +13960,7 @@ public class Static {
 			staticIntArray72 = null;
 			staticIntArray71 = null;
 			staticIntArray73 = null;
-			CanvasSub1.staticByteArrayArray2 = null;
+			GameCanvas.staticByteArrayArray2 = null;
 			return var7;
 		}
 	}
@@ -14219,13 +14219,13 @@ public class Static {
 			var3.anInt677 = staticIntArray72[0];
 			var3.anInt678 = staticIntArray71[0];
 			var3.anIntArray155 = staticIntArray73;
-			var3.aByteArray35 = CanvasSub1.staticByteArrayArray2[0];
+			var3.aByteArray35 = GameCanvas.staticByteArrayArray2[0];
 			NodeSub20.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
 			staticIntArray73 = null;
-			CanvasSub1.staticByteArrayArray2 = null;
+			GameCanvas.staticByteArrayArray2 = null;
 			return var3;
 		}
 	}
@@ -21613,13 +21613,13 @@ public class Static {
 			var3.anInt677 = staticIntArray72[0];
 			var3.anInt678 = staticIntArray71[0];
 			var3.anIntArray155 = staticIntArray73;
-			var3.aByteArray35 = CanvasSub1.staticByteArrayArray2[0];
+			var3.aByteArray35 = GameCanvas.staticByteArrayArray2[0];
 			NodeSub20.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
 			staticIntArray73 = null;
-			CanvasSub1.staticByteArrayArray2 = null;
+			GameCanvas.staticByteArrayArray2 = null;
 			return var3;
 		}
 	}
@@ -25448,7 +25448,7 @@ public class Static {
 		staticIntArray69 = new int[staticInt143];
 		staticIntArray72 = new int[staticInt143];
 		staticIntArray71 = new int[staticInt143];
-		CanvasSub1.staticByteArrayArray2 = new byte[staticInt143][];
+		GameCanvas.staticByteArrayArray2 = new byte[staticInt143][];
 		var1.position = var0.length - 7 - staticInt143 * 8;
 		staticInt139 = var1.method370();
 		staticInt142 = var1.method370();
@@ -25488,7 +25488,7 @@ public class Static {
 			int var8 = staticIntArray71[var3];
 			int var9 = var8 * var5;
 			byte[] var6 = new byte[var9];
-			CanvasSub1.staticByteArrayArray2[var3] = var6;
+			GameCanvas.staticByteArrayArray2[var3] = var6;
 			int var10 = var1.method367();
 			int var4;
 			if (var10 == 0) {
@@ -25568,7 +25568,7 @@ public class Static {
 		var0.anInt672 = staticIntArray72[0];
 		var0.anInt671 = staticIntArray71[0];
 		int var1 = var0.anInt671 * var0.anInt672;
-		byte[] var2 = CanvasSub1.staticByteArrayArray2[0];
+		byte[] var2 = GameCanvas.staticByteArrayArray2[0];
 		var0.anIntArray154 = new int[var1];
 
 		for (int var3 = 0; var3 < var1; var3++) {
@@ -25580,7 +25580,7 @@ public class Static {
 		staticIntArray72 = null;
 		staticIntArray71 = null;
 		staticIntArray73 = null;
-		CanvasSub1.staticByteArrayArray2 = null;
+		GameCanvas.staticByteArrayArray2 = null;
 		return var0;
 	}
 

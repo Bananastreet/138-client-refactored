@@ -79,7 +79,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Class47.gameHeight -= var2.top + var2.bottom;
 		}
 
-		Class38.staticCanvas1 = new CanvasSub1(this);
+		Class38.staticCanvas1 = new GameCanvas(this);
 		var1.add(Class38.staticCanvas1);
 		Class38.staticCanvas1.setSize(Static.gameWidth, Class47.gameHeight);
 		Class38.staticCanvas1.setVisible(true);
