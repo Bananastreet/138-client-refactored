@@ -9,7 +9,7 @@ import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.util.Hashtable;
 
-public final class GraphicsBufferSub2 extends GraphicsBuffer {
+public final class ShapedGraphicsBuffer extends GraphicsBuffer {
 
 	Component aComponent2;
 

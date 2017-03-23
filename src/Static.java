@@ -22370,7 +22370,7 @@ public class Static {
 
 	public static GraphicsBuffer staticMethod390(int var0, int var1, Component var2) {
 		try {
-			GraphicsBufferSub2 var5 = new GraphicsBufferSub2();
+			ShapedGraphicsBuffer var5 = new ShapedGraphicsBuffer();
 			var5.method278(var0, var1, var2);
 			return var5;
 		} catch (Throwable var51) {
