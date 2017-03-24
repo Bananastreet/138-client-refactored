@@ -8674,7 +8674,7 @@ public class Static {
 			staticIntArray6 = new int['\u8000'];
 			staticIntArray5 = new int['\u8000'];
 			staticMethod38((Rasterizer2DSub3) null);
-			Class61.staticIntArray77 = new int['\u8000'];
+			ExchangeOffer.staticIntArray77 = new int['\u8000'];
 			staticIntArray62 = new int['\u8000'];
 			if (var3) {
 				staticString2 = "";
@@ -11174,14 +11174,14 @@ public class Static {
 				var31 = (var341 - var25) * 128;
 
 				for (var33 = 0; var33 < var31; var33++) {
-					var35 = Class61.staticIntArray77[var34 + var28] - var25
+					var35 = ExchangeOffer.staticIntArray77[var34 + var28] - var25
 							* staticIntArray6[staticInt10 + var34 & staticIntArray6.length - 1]
 							/ 6;
 					if (var35 < 0) {
 						var35 = 0;
 					}
 
-					Class61.staticIntArray77[var34++] = var35;
+					ExchangeOffer.staticIntArray77[var34++] = var35;
 				}
 
 				var33 = var341 - var25;
@@ -11224,7 +11224,7 @@ public class Static {
 							for (var35 = 0; var35 < staticInt16 * 100; var35++) {
 								var11 = (int) (Math.random() * 124.0D) + 2;
 								var38 = (int) (Math.random() * 128.0D) + 128;
-								Class61.staticIntArray77[var11 + (var38 << 7)] = 192;
+								ExchangeOffer.staticIntArray77[var11 + (var38 << 7)] = 192;
 							}
 
 							staticInt16 = 0;
@@ -11235,11 +11235,11 @@ public class Static {
 
 								for (var39 = -var33; var39 < 128; var39++) {
 									if (var39 + var33 < 128) {
-										var11 += Class61.staticIntArray77[var39 + var38 + var33];
+										var11 += ExchangeOffer.staticIntArray77[var39 + var38 + var33];
 									}
 
 									if (var39 - (var33 + 1) >= 0) {
-										var11 -= Class61.staticIntArray77[var39 + var38 - (1 + var33)];
+										var11 -= ExchangeOffer.staticIntArray77[var39 + var38 - (1 + var33)];
 									}
 
 									if (var39 >= 0) {
@@ -11262,7 +11262,7 @@ public class Static {
 									}
 
 									if (var38 >= 0) {
-										Class61.staticIntArray77[var35 + var39] = var11 / (var33 * 2 + 1);
+										ExchangeOffer.staticIntArray77[var35 + var39] = var11 / (var33 * 2 + 1);
 									}
 								}
 							}
@@ -11277,9 +11277,9 @@ public class Static {
 					for (var11 = 0; var11 < 128; var11++) {
 						var38 = (int) (Math.random() * 100.0D);
 						if (var38 < 50 && var11 > 10 && var11 < 118) {
-							Class61.staticIntArray77[var11 + var35] = 255;
+							ExchangeOffer.staticIntArray77[var11 + var35] = 255;
 						} else {
-							Class61.staticIntArray77[var35 + var11] = 0;
+							ExchangeOffer.staticIntArray77[var35 + var11] = 0;
 						}
 					}
 
@@ -11523,7 +11523,7 @@ public class Static {
 		DataClass8.staticNodeSub1Array1 = null;
 
 		for (var0 = 0; var0 < 8; var0++) {
-			Client.staticClass61Array1[var0] = new Class61();
+			Client.staticClass61Array1[var0] = new ExchangeOffer();
 		}
 
 		staticClass56_1 = null;
@@ -13870,7 +13870,7 @@ public class Static {
 			var2 += var1;
 
 			for (var8 = var1; var8 < 128; var8++) {
-				var3 = Class61.staticIntArray77[var2++];
+				var3 = ExchangeOffer.staticIntArray77[var2++];
 				if (var3 != 0) {
 					var5 = var3;
 					var6 = 256 - var3;
@@ -13899,7 +13899,7 @@ public class Static {
 			var4 += var10;
 
 			for (var8 = 0; var8 < var1; var8++) {
-				var3 = Class61.staticIntArray77[var2++];
+				var3 = ExchangeOffer.staticIntArray77[var2++];
 				if (var3 != 0) {
 					var5 = var3;
 					var6 = 256 - var3;
@@ -15972,23 +15972,23 @@ public class Static {
 			return 1;
 		} else if (var0 == 3904) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt212;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].itemId;
 			return 1;
 		} else if (var0 == 3905) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt213;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].price;
 			return 1;
 		} else if (var0 == 3906) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt214;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].itemQuantity;
 			return 1;
 		} else if (var0 == 3907) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt215;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].transferred;
 			return 1;
 		} else if (var0 == 3908) {
 			var3 = staticIntArray16[--staticInt27];
-			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].anInt216;
+			staticIntArray16[++staticInt27 - 1] = Client.staticClass61Array1[var3].spent;
 			return 1;
 		} else {
 			int var13;
@@ -16085,17 +16085,17 @@ public class Static {
 					} else if (var0 == 3924) {
 						var3 = staticIntArray16[--staticInt27];
 						var4 = (Class23) staticClass56_1.aList1.get(var3);
-						staticIntArray16[++staticInt27 - 1] = var4.aClass61_1.anInt214;
+						staticIntArray16[++staticInt27 - 1] = var4.aClass61_1.itemQuantity;
 						return 1;
 					} else if (var0 == 3925) {
 						var3 = staticIntArray16[--staticInt27];
 						var4 = (Class23) staticClass56_1.aList1.get(var3);
-						staticIntArray16[++staticInt27 - 1] = var4.aClass61_1.anInt213;
+						staticIntArray16[++staticInt27 - 1] = var4.aClass61_1.price;
 						return 1;
 					} else if (var0 == 3926) {
 						var3 = staticIntArray16[--staticInt27];
 						var4 = (Class23) staticClass56_1.aList1.get(var3);
-						staticIntArray16[++staticInt27 - 1] = var4.aClass61_1.anInt212;
+						staticIntArray16[++staticInt27 - 1] = var4.aClass61_1.itemId;
 						return 1;
 					} else {
 						return 2;
@@ -16183,7 +16183,7 @@ public class Static {
 		}
 
 		if (NodeSub19.staticInt318 < var6) {
-			NodeSub19.staticInt318 += (var6 - NodeSub19.staticInt318) * Class61.staticInt146 / 1000
+			NodeSub19.staticInt318 += (var6 - NodeSub19.staticInt318) * ExchangeOffer.staticInt146 / 1000
 					+ Class28.staticInt71;
 			if (NodeSub19.staticInt318 > var6) {
 				NodeSub19.staticInt318 = var6;
@@ -16192,7 +16192,7 @@ public class Static {
 
 		if (NodeSub19.staticInt318 > var6) {
 			NodeSub19.staticInt318 -= Class28.staticInt71
-					+ (NodeSub19.staticInt318 - var6) * Class61.staticInt146 / 1000;
+					+ (NodeSub19.staticInt318 - var6) * ExchangeOffer.staticInt146 / 1000;
 			if (NodeSub19.staticInt318 < var6) {
 				NodeSub19.staticInt318 = var6;
 			}
@@ -16208,12 +16208,12 @@ public class Static {
 		}
 
 		if (var3 > 0) {
-			staticInt87 += var3 * Class61.staticInt146 / 1000 + Class28.staticInt71;
+			staticInt87 += var3 * ExchangeOffer.staticInt146 / 1000 + Class28.staticInt71;
 			staticInt87 &= 2047;
 		}
 
 		if (var3 < 0) {
-			staticInt87 -= -var3 * Class61.staticInt146 / 1000 + Class28.staticInt71;
+			staticInt87 -= -var3 * ExchangeOffer.staticInt146 / 1000 + Class28.staticInt71;
 			staticInt87 &= 2047;
 		}
 
@@ -17688,11 +17688,11 @@ public class Static {
 			var3 = Client.inBuffer.method372();
 			var5 = Client.inBuffer.method355();
 			var2 = Client.inBuffer.readUShort();
-			Class61.staticIntArrayArray8 = new int[var2][4];
+			ExchangeOffer.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
 				for (var4 = 0; var4 < 4; var4++) {
-					Class61.staticIntArrayArray8[var1][var4] = Client.inBuffer.readInt();
+					ExchangeOffer.staticIntArrayArray8[var1][var4] = Client.inBuffer.readInt();
 				}
 			}
 
@@ -17749,11 +17749,11 @@ public class Static {
 			}
 
 			Client.inBuffer.method474();
-			Class61.staticIntArrayArray8 = new int[var2][4];
+			ExchangeOffer.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
 				for (var4 = 0; var4 < 4; var4++) {
-					Class61.staticIntArrayArray8[var1][var4] = Client.inBuffer.readInt();
+					ExchangeOffer.staticIntArrayArray8[var1][var4] = Client.inBuffer.readInt();
 				}
 			}
 
@@ -17948,8 +17948,8 @@ public class Static {
 					DataClass3.staticInt72 = Client.inBuffer.readUByte();
 					DataClass10.staticInt31 = Client.inBuffer.readUShort();
 					Class28.staticInt71 = Client.inBuffer.readUByte();
-					Class61.staticInt146 = Client.inBuffer.readUByte();
-					if (Class61.staticInt146 >= 100) {
+					ExchangeOffer.staticInt146 = Client.inBuffer.readUByte();
+					if (ExchangeOffer.staticInt146 >= 100) {
 						var45 = 64 + staticInt101 * 128;
 						var2 = DataClass3.staticInt72 * 128 + 64;
 						var3 = staticMethod240(var45, var2, NodeSub4.staticInt155) - DataClass10.staticInt31;
@@ -19179,11 +19179,11 @@ public class Static {
 				if (Client.staticInt191 == 86) {
 					var45 = Client.inBuffer.readUByte();
 					if (Client.inBuffer.readUByte() == 0) {
-						Client.staticClass61Array1[var45] = new Class61();
+						Client.staticClass61Array1[var45] = new ExchangeOffer();
 						Client.inBuffer.position += 18;
 					} else {
 						--Client.inBuffer.position;
-						Client.staticClass61Array1[var45] = new Class61(Client.inBuffer, false);
+						Client.staticClass61Array1[var45] = new ExchangeOffer(Client.inBuffer, false);
 					}
 
 					Client.staticInt295 = Client.staticInt274 * 2073400987;
@@ -20062,7 +20062,7 @@ public class Static {
 			Class57.staticIntArray74 = null;
 			staticIntArray6 = null;
 			staticIntArray5 = null;
-			Class61.staticIntArray77 = null;
+			ExchangeOffer.staticIntArray77 = null;
 			staticIntArray62 = null;
 			staticMethod108(2);
 			staticMethod1(true);

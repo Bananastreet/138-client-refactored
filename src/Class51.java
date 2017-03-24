@@ -13,8 +13,8 @@ final class Class51 implements Comparator {
 	}
 
 	int method277(Class23 var1, Class23 var2) {
-		return var1.aClass61_1.anInt213 < var2.aClass61_1.anInt213 ? -1
-				: var2.aClass61_1.anInt213 == var1.aClass61_1.anInt213 ? 0 : 1;
+		return var1.aClass61_1.price < var2.aClass61_1.price ? -1
+				: var2.aClass61_1.price == var1.aClass61_1.price ? 0 : 1;
 	}
 
 }

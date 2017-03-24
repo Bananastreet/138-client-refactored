@@ -5,7 +5,7 @@ public class Class23 {
 	String aString6;
 	public final int anInt66;
 	public final long aLong14;
-	public final Class61 aClass61_1;
+	public final ExchangeOffer aClass61_1;
 
 	public String method89() {
 		return aString7;
@@ -22,14 +22,14 @@ public class Class23 {
 		aLong14 = var1.readLong();
 		int var4 = var1.readInt();
 		int var5 = var1.readInt();
-		aClass61_1 = new Class61();
+		aClass61_1 = new ExchangeOffer();
 		aClass61_1.method287(2);
 		aClass61_1.method288(var2);
-		aClass61_1.anInt213 = var4;
-		aClass61_1.anInt214 = var5;
-		aClass61_1.anInt215 = 0;
-		aClass61_1.anInt216 = 0;
-		aClass61_1.anInt212 = var3;
+		aClass61_1.price = var4;
+		aClass61_1.itemQuantity = var5;
+		aClass61_1.transferred = 0;
+		aClass61_1.spent = 0;
+		aClass61_1.itemId = var3;
 	}
 
 }

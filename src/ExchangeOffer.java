@@ -1,22 +1,22 @@
-public class Class61 {
+public class ExchangeOffer {
 
 	static int staticInt146;
 	static int[] staticIntArray77;
 	static int[][] staticIntArrayArray8;
-	byte aByte2;
-	public int anInt212;
-	public int anInt213;
-	public int anInt214;
-	public int anInt215;
-	public int anInt216;
+	byte status;
+	public int itemId;
+	public int price;
+	public int itemQuantity;	
+	public int transferred;
+	public int spent;
 
-	public Class61(ByteBuf var1, boolean var2) {
-		aByte2 = var1.readByte();
-		anInt212 = var1.readUShort();
-		anInt213 = var1.readInt();
-		anInt214 = var1.readInt();
-		anInt215 = var1.readInt();
-		anInt216 = var1.readInt();
+	public ExchangeOffer(ByteBuf var1, boolean var2) {
+		status = var1.readByte();		
+		itemId = var1.readUShort();		
+		price = var1.readInt();		
+		itemQuantity = var1.readInt();
+		transferred = var1.readInt();		
+		spent = var1.readInt();		
 		if (var2) {
 			int var3 = 0;
 			boolean var5 = false;
@@ -59,28 +59,28 @@ public class Class61 {
 	void method285(Integer var1) {
 	}
 
-	public Class61() {
+	public ExchangeOffer() {
 	}
 
 	public int method286() {
-		return (aByte2 & 0x8) == 8 ? 1 : 0;
+		return (status & 0x8) == 8 ? 1 : 0;
 	}
 
 	void method287(int var1) {
-		aByte2 &= -8;
-		aByte2 = (byte) (aByte2 | var1 & 0x7);
+		status &= -8;
+		status = (byte) (status | var1 & 0x7);
 	}
 
 	void method288(int var1) {
-		aByte2 &= -9;
+		status &= -9;
 		if (var1 == 1) {
-			aByte2 = (byte) (aByte2 | 8);
+			status = (byte) (status | 8);
 		}
 
 	}
 
 	public int method289() {
-		return aByte2 & 0x7;
+		return status & 0x7;
 	}
 
 }

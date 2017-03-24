@@ -289,7 +289,7 @@ public final class Client extends GameShell {
 	static Class49 staticClass49_1;
 	static int staticInt197;
 	static int staticInt312;
-	static Class61[] staticClass61Array1;
+	static ExchangeOffer[] staticClass61Array1;
 	static long staticLong12;
 	static long staticLong14;
 	static final AbstractClass2Sub1 staticAbstractClass2Sub1_1;
@@ -550,7 +550,7 @@ public final class Client extends GameShell {
 		staticClass49_1 = new Class49();
 		staticInt197 = -1;
 		staticInt312 = 1073985099;
-		staticClass61Array1 = new Class61[8];
+		staticClass61Array1 = new ExchangeOffer[8];
 		staticLong12 = -1L;
 		staticLong14 = -1L;
 		staticAbstractClass2Sub1_1 = new AbstractClass2Sub1();
@@ -730,7 +730,7 @@ public final class Client extends GameShell {
 
 					if (Class60.staticIntArray75[var2] != -1 && Class47.staticByteArrayArray6[var2] == null) {
 						Class47.staticByteArrayArray6[var2] = RenderableSub2.staticJs5IndexImpl16
-								.method256(Class60.staticIntArray75[var2], 0, Class61.staticIntArrayArray8[var2]);
+								.method256(Class60.staticIntArray75[var2], 0, ExchangeOffer.staticIntArrayArray8[var2]);
 						if (Class47.staticByteArrayArray6[var2] == null) {
 							var34 = false;
 							++staticInt215;

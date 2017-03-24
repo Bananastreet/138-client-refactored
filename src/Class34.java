@@ -16,8 +16,8 @@ final class Class34 implements Comparator {
 	}
 
 	int method144(Class23 var1, Class23 var2) {
-		return var1.aClass61_1.anInt214 < var2.aClass61_1.anInt214 ? -1
-				: var2.aClass61_1.anInt214 == var1.aClass61_1.anInt214 ? 0 : 1;
+		return var1.aClass61_1.itemQuantity < var2.aClass61_1.itemQuantity ? -1
+				: var2.aClass61_1.itemQuantity == var1.aClass61_1.itemQuantity ? 0 : 1;
 	}
 
 }
