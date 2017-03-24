@@ -8822,7 +8822,7 @@ public class Static {
 				Class23.staticJs5IndexImpl2 = staticMethod202(2, true, false, true);
 				GameCanvas.staticJs5IndexImpl5 = staticMethod202(3, false, true, true);
 				Config19.staticJs5IndexImpl15 = staticMethod202(4, false, true, true);
-				RenderableSub2.staticJs5IndexImpl16 = staticMethod202(5, true, true, true);
+				EntitySub2.staticJs5IndexImpl16 = staticMethod202(5, true, true, true);
 				Class34.staticJs5IndexImpl3 = staticMethod202(6, true, true, false);
 				ClientScriptMap.staticJs5IndexImpl14 = staticMethod202(7, false, true, true);
 				Class62.staticJs5IndexImpl7 = staticMethod202(8, false, true, true);
@@ -8843,7 +8843,7 @@ public class Static {
 				var1 += Class23.staticJs5IndexImpl2.method395() * 2 / 100;
 				var1 += GameCanvas.staticJs5IndexImpl5.method395() * 2 / 100;
 				var1 += Config19.staticJs5IndexImpl15.method395() * 6 / 100;
-				var1 += RenderableSub2.staticJs5IndexImpl16.method395() * 4 / 100;
+				var1 += EntitySub2.staticJs5IndexImpl16.method395() * 4 / 100;
 				var1 += Class34.staticJs5IndexImpl3.method395() * 2 / 100;
 				var1 += ClientScriptMap.staticJs5IndexImpl14.method395() * 60 / 100;
 				var1 += Class62.staticJs5IndexImpl7.method395() * 2 / 100;
@@ -10718,8 +10718,8 @@ public class Static {
 						"sl_arrows", "");
 			}
 
-			if (RenderableSub2.staticRasterizer2DSub3Array8 == null) {
-				RenderableSub2.staticRasterizer2DSub3Array8 = staticMethod274(Class62.staticJs5IndexImpl7, "sl_stars",
+			if (EntitySub2.staticRasterizer2DSub3Array8 == null) {
+				EntitySub2.staticRasterizer2DSub3Array8 = staticMethod274(Class62.staticJs5IndexImpl7, "sl_stars",
 						"");
 			}
 
@@ -10727,10 +10727,10 @@ public class Static {
 			staticMethod410(staticInt6, 0, 125, 23, 12425273, 9135624);
 			staticMethod410(staticInt6 + 125, 0, 640, 23, 5197647, 2697513);
 			var0.method630("Select a world", 62 + staticInt6, 15, 0, -1);
-			if (RenderableSub2.staticRasterizer2DSub3Array8 != null) {
-				RenderableSub2.staticRasterizer2DSub3Array8[1].method655(staticInt6 + 140, 1);
+			if (EntitySub2.staticRasterizer2DSub3Array8 != null) {
+				EntitySub2.staticRasterizer2DSub3Array8[1].method655(staticInt6 + 140, 1);
 				var1.method616("Members only world", staticInt6 + 152, 10, 16777215, -1);
-				RenderableSub2.staticRasterizer2DSub3Array8[0].method655(140 + staticInt6, 12);
+				EntitySub2.staticRasterizer2DSub3Array8[0].method655(140 + staticInt6, 12);
 				var1.method616("Free world", 152 + staticInt6, 21, 16777215, -1);
 			}
 
@@ -12070,7 +12070,7 @@ public class Static {
 		FloorUnderlayDef.staticJs5IndexImpl13.method272();
 		GameCanvas.staticJs5IndexImpl5.method272();
 		Config19.staticJs5IndexImpl15.method272();
-		RenderableSub2.staticJs5IndexImpl16.method272();
+		EntitySub2.staticJs5IndexImpl16.method272();
 		Class34.staticJs5IndexImpl3.method272();
 		ClientScriptMap.staticJs5IndexImpl14.method272();
 		Class62.staticJs5IndexImpl7.method272();
@@ -12564,7 +12564,7 @@ public class Static {
 				Client.loginBuffer.writeInt(Class23.staticJs5IndexImpl2.anInt201);
 				Client.loginBuffer.writeInt(GameCanvas.staticJs5IndexImpl5.anInt201);
 				Client.loginBuffer.writeInt(Config19.staticJs5IndexImpl15.anInt201);
-				Client.loginBuffer.writeInt(RenderableSub2.staticJs5IndexImpl16.anInt201);
+				Client.loginBuffer.writeInt(EntitySub2.staticJs5IndexImpl16.anInt201);
 				Client.loginBuffer.writeInt(Class34.staticJs5IndexImpl3.anInt201);
 				Client.loginBuffer.writeInt(ClientScriptMap.staticJs5IndexImpl14.anInt201);
 				Client.loginBuffer.writeInt(Class62.staticJs5IndexImpl7.anInt201);
@@ -12792,8 +12792,8 @@ public class Static {
 	}
 
 	static final void staticMethod22() {
-		for (RenderableSub2 var0 = (RenderableSub2) Client.staticClass39_6
-				.method195(); var0 != null; var0 = (RenderableSub2) Client.staticClass39_6.method193()) {
+		for (EntitySub2 var0 = (EntitySub2) Client.staticClass39_6
+				.method195(); var0 != null; var0 = (EntitySub2) Client.staticClass39_6.method193()) {
 			if (var0.anInt637 == NodeSub4.staticInt155 && !var0.aBool78) {
 				if (Client.staticInt166 >= var0.anInt636) {
 					var0.method568(Client.staticInt171);
@@ -17718,9 +17718,9 @@ public class Static {
 					if (!var11
 							|| var6 != 49 && var6 != 149 && var6 != 147 && var4 != 50 && (var4 != 49 || var6 != 47)) {
 						Class6.staticIntArray13[var2] = var8;
-						AbstractClass2Sub1.staticIntArray125[var2] = RenderableSub2.staticJs5IndexImpl16
+						AbstractClass2Sub1.staticIntArray125[var2] = EntitySub2.staticJs5IndexImpl16
 								.method267("m" + var4 + "_" + var6);
-						Class60.staticIntArray75[var2] = RenderableSub2.staticJs5IndexImpl16
+						Class60.staticIntArray75[var2] = EntitySub2.staticJs5IndexImpl16
 								.method267("l" + var4 + "_" + var6);
 						++var2;
 					}
@@ -17785,9 +17785,9 @@ public class Static {
 								Class6.staticIntArray13[var2] = var7;
 								var9 = var7 >> 8 & 0xff;
 								int var10 = var7 & 0xff;
-								AbstractClass2Sub1.staticIntArray125[var2] = RenderableSub2.staticJs5IndexImpl16
+								AbstractClass2Sub1.staticIntArray125[var2] = EntitySub2.staticJs5IndexImpl16
 										.method267("m" + var9 + "_" + var10);
-								Class60.staticIntArray75[var2] = RenderableSub2.staticJs5IndexImpl16
+								Class60.staticIntArray75[var2] = EntitySub2.staticJs5IndexImpl16
 										.method267("l" + var9 + "_" + var10);
 								++var2;
 							}
@@ -20054,7 +20054,7 @@ public class Static {
 			staticSpriteArray5 = null;
 			staticRasterizer2DSub3Array4 = null;
 			AbstractClass3Sub1.staticRasterizer2DSub3Array6 = null;
-			RenderableSub2.staticRasterizer2DSub3Array8 = null;
+			EntitySub2.staticRasterizer2DSub3Array8 = null;
 			Client.staticRasterizer2DSub3_5 = null;
 			staticIntArray67 = null;
 			staticIntArray61 = null;
@@ -20880,7 +20880,7 @@ public class Static {
 						if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 							var2 = 64 + var2 * 128;
 							var3 = var3 * 128 + 64;
-							RenderableSub2 var40 = new RenderableSub2(var32, NodeSub4.staticInt155, var2, var3,
+							EntitySub2 var40 = new EntitySub2(var32, NodeSub4.staticInt155, var2, var3,
 									staticMethod240(var2, var3, NodeSub4.staticInt155) - var4, var311,
 									Client.staticInt166);
 							Client.staticClass39_6.method198(var40);

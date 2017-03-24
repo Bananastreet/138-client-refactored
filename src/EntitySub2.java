@@ -1,4 +1,4 @@
-public final class RenderableSub2 extends Entity {
+public final class EntitySub2 extends Entity {
 
 	static Rasterizer2DSub3[] staticRasterizer2DSub3Array8;
 	protected static String staticString35;
@@ -42,7 +42,7 @@ public final class RenderableSub2 extends Entity {
 		return var2 == null ? null : var2;
 	}
 
-	RenderableSub2(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+	EntitySub2(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		anInt640 = var1;
 		anInt637 = var2;
 		anInt638 = var3;

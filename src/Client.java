@@ -623,7 +623,7 @@ public final class Client extends GameShell {
 
 		Static.staticClass6_1 = var6;
 		NodeSub19.staticClipboard1 = getToolkit().getSystemClipboard();
-		Static.staticMethod142(this, RenderableSub2.staticString35);
+		Static.staticMethod142(this, EntitySub2.staticString35);
 		if (staticInt207 != 0) {
 			staticBool23 = true;
 		}
@@ -720,7 +720,7 @@ public final class Client extends GameShell {
 				for (var2 = 0; var2 < DataClass10.staticByteArrayArray1.length; var2++) {
 					if (AbstractClass2Sub1.staticIntArray125[var2] != -1
 							&& DataClass10.staticByteArrayArray1[var2] == null) {
-						DataClass10.staticByteArrayArray1[var2] = RenderableSub2.staticJs5IndexImpl16
+						DataClass10.staticByteArrayArray1[var2] = EntitySub2.staticJs5IndexImpl16
 								.getFile(AbstractClass2Sub1.staticIntArray125[var2], 0);
 						if (DataClass10.staticByteArrayArray1[var2] == null) {
 							var34 = false;
@@ -729,7 +729,7 @@ public final class Client extends GameShell {
 					}
 
 					if (Class60.staticIntArray75[var2] != -1 && Class47.staticByteArrayArray6[var2] == null) {
-						Class47.staticByteArrayArray6[var2] = RenderableSub2.staticJs5IndexImpl16
+						Class47.staticByteArrayArray6[var2] = EntitySub2.staticJs5IndexImpl16
 								.method256(Class60.staticIntArray75[var2], 0, ExchangeOffer.staticIntArrayArray8[var2]);
 						if (Class47.staticByteArrayArray6[var2] == null) {
 							var34 = false;
@@ -1024,8 +1024,8 @@ public final class Client extends GameShell {
 							for (var341 = var4 - 1; var341 <= 1 + var5; var341++) {
 								for (var9 = var36 - 1; var9 <= var331 + 1; var9++) {
 									if (var341 < var4 || var341 > var5 || var9 < var36 || var9 > var331) {
-										RenderableSub2.staticJs5IndexImpl16.method255("m" + var341 + "_" + var9);
-										RenderableSub2.staticJs5IndexImpl16.method255("l" + var341 + "_" + var9);
+										EntitySub2.staticJs5IndexImpl16.method255("m" + var341 + "_" + var9);
+										EntitySub2.staticJs5IndexImpl16.method255("l" + var341 + "_" + var9);
 									}
 								}
 							}
