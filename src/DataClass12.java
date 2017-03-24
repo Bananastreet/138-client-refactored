@@ -1,4 +1,4 @@
-public class Class58 {
+public class DataClass12 {
 
 	int[] anIntArray56;
 	CacheableSub1 aCacheableSub1_1;

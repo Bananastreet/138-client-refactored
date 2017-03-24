@@ -30416,7 +30416,7 @@ public class Static {
 
 																																																					staticInt27 -= var26.anInt401;
 																																																					staticInt148 -= var26.anInt400;
-																																																					Class58 var31 = new Class58();
+																																																					DataClass12 var31 = new DataClass12();
 																																																					var31.aCacheableSub1_1 = var4;
 																																																					var31.anInt208 = var5;
 																																																					var31.anIntArray56 = staticIntArray14;
@@ -30506,7 +30506,7 @@ public class Static {
 																																										return;
 																																									}
 
-																																									Class58 var23 = staticClass58Array1[--staticInt28];
+																																									DataClass12 var23 = staticClass58Array1[--staticInt28];
 																																									var4 = var23.aCacheableSub1_1;
 																																									var6 = var4.anIntArray84;
 																																									var7 = var4.anIntArray85;
@@ -30934,7 +30934,7 @@ public class Static {
 	static int[] staticIntArray16 = new int[1000];
 	static String[] staticStringArray1 = new String[1000];
 	static int staticInt28 = 0;
-	static Class58[] staticClass58Array1 = new Class58[50];
+	static DataClass12[] staticClass58Array1 = new DataClass12[50];
 	static Calendar staticCalendar1 = Calendar.getInstance();
 	static final String[] staticStringArray2 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
 			"Sep", "Oct", "Nov", "Dec" };
