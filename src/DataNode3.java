@@ -1,6 +1,6 @@
 import java.awt.datatransfer.Clipboard;
 
-public final class NodeSub19 extends Node {
+public final class DataNode3 extends Node {
 
 	int anInt387;
 	int anInt388;

@@ -622,7 +622,7 @@ public final class Client extends GameShell {
 		}
 
 		Static.staticClass6_1 = var6;
-		NodeSub19.staticClipboard1 = getToolkit().getSystemClipboard();
+		DataNode3.staticClipboard1 = getToolkit().getSystemClipboard();
 		Static.staticMethod142(this, EntitySub2.staticString35);
 		if (staticInt207 != 0) {
 			staticBool23 = true;
@@ -999,8 +999,8 @@ public final class Client extends GameShell {
 
 						Static.staticMethod17();
 
-						for (NodeSub19 var35 = (NodeSub19) staticClass39_7
-								.method195(); var35 != null; var35 = (NodeSub19) staticClass39_7.method193()) {
+						for (DataNode3 var35 = (DataNode3) staticClass39_7
+								.method195(); var35 != null; var35 = (DataNode3) staticClass39_7.method193()) {
 							if (var35.anInt386 == -1) {
 								var35.anInt396 = 0;
 								Static.staticMethod284(var35);
@@ -1413,7 +1413,7 @@ public final class Client extends GameShell {
 						staticInt309 = Integer.parseInt(var14);
 						break;
 					case 12:
-						NodeSub19.sessionId = Integer.parseInt(var14);
+						DataNode3.sessionId = Integer.parseInt(var14);
 						break;
 					case 13:
 						staticInt201 = Integer.parseInt(var14);

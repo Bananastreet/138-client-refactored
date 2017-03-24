@@ -626,7 +626,7 @@ public class Static {
 		ItemDefinition.staticJs5Index14 = var1;
 		staticBool4 = var2;
 		KeyboardHandler.staticInt85 = ItemDefinition.staticJs5Index15.method263(10);
-		NodeSub19.staticRasterizer2DSub2Sub1_4 = var3;
+		DataNode3.staticRasterizer2DSub2Sub1_4 = var3;
 	}
 
 	public static boolean staticMethod4(int var0) {
@@ -2527,7 +2527,7 @@ public class Static {
 									Class20.staticInt36 = var41 - var34;
 									staticInt125 = var11 - var19;
 									NodeSub3.staticInt153 = var39 - var35;
-									NodeSub19.staticInt318 = var42;
+									DataNode3.staticInt318 = var42;
 									staticInt87 = var51;
 								}
 
@@ -2554,7 +2554,7 @@ public class Static {
 								var51 = Class20.staticInt36;
 								var41 = staticInt125;
 								var11 = NodeSub3.staticInt153;
-								var39 = NodeSub19.staticInt318;
+								var39 = DataNode3.staticInt318;
 								var33 = staticInt87;
 
 								for (var28 = 0; var28 < 5; var28++) {
@@ -2581,13 +2581,13 @@ public class Static {
 										}
 
 										if (var28 == 4) {
-											NodeSub19.staticInt318 += var26;
-											if (NodeSub19.staticInt318 < 128) {
-												NodeSub19.staticInt318 = 128;
+											DataNode3.staticInt318 += var26;
+											if (DataNode3.staticInt318 < 128) {
+												DataNode3.staticInt318 = 128;
 											}
 
-											if (NodeSub19.staticInt318 > 383) {
-												NodeSub19.staticInt318 = 383;
+											if (DataNode3.staticInt318 > 383) {
+												DataNode3.staticInt318 = 383;
 											}
 										}
 									}
@@ -2617,7 +2617,7 @@ public class Static {
 								var34 = Rasterizer2DSub1.staticInt342;
 								Rasterizer2DSub1.staticInt342 = Client.staticInt307;
 								Friend.staticScene1.method124(Class20.staticInt36, staticInt125,
-										NodeSub3.staticInt153, NodeSub19.staticInt318, staticInt87, var42);
+										NodeSub3.staticInt153, DataNode3.staticInt318, staticInt87, var42);
 								Rasterizer2DSub1.staticInt342 = var34;
 								staticMethod17();
 								Friend.staticScene1.method104();
@@ -2647,7 +2647,7 @@ public class Static {
 								Class20.staticInt36 = var51;
 								staticInt125 = var41;
 								NodeSub3.staticInt153 = var11;
-								NodeSub19.staticInt318 = var39;
+								DataNode3.staticInt318 = var39;
 								staticInt87 = var33;
 								if (Client.staticBool21 && staticMethod213(true, false) == 0) {
 									Client.staticBool21 = false;
@@ -4918,10 +4918,10 @@ public class Static {
 
 	static final void staticMethod110(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7,
 			int var8) {
-		NodeSub19 var9 = null;
+		DataNode3 var9 = null;
 
-		for (NodeSub19 var10 = (NodeSub19) Client.staticClass39_7
-				.method195(); var10 != null; var10 = (NodeSub19) Client.staticClass39_7.method193()) {
+		for (DataNode3 var10 = (DataNode3) Client.staticClass39_7
+				.method195(); var10 != null; var10 = (DataNode3) Client.staticClass39_7.method193()) {
 			if (var0 == var10.anInt389 && var10.anInt388 == var1 && var2 == var10.anInt390 && var10.anInt387 == var3) {
 				var9 = var10;
 				break;
@@ -4929,7 +4929,7 @@ public class Static {
 		}
 
 		if (var9 == null) {
-			var9 = new NodeSub19();
+			var9 = new DataNode3();
 			var9.anInt389 = var0;
 			var9.anInt387 = var3;
 			var9.anInt388 = var1;
@@ -6029,7 +6029,7 @@ public class Static {
 			return NodeSub4.staticInt155;
 		} else {
 			int var1 = 3;
-			if (NodeSub19.staticInt318 < 310) {
+			if (DataNode3.staticInt318 < 310) {
 				int var0 = Class20.staticInt36 >> 7;
 				int var3 = NodeSub3.staticInt153 >> 7;
 				int var2 = AbstractClass2Sub1.staticPlayer1.anInt628 >> 7;
@@ -8528,7 +8528,7 @@ public class Static {
 			}
 
 			if (var4 == 1 || var4 == 2 && var10.anInt442 == 1) {
-				NodeSub19.staticRasterizer2DSub2Sub1_4.method616(staticMethod97(var1), 0, 9, 16776960, 1);
+				DataNode3.staticRasterizer2DSub2Sub1_4.method616(staticMethod97(var1), 0, 9, 16776960, 1);
 			}
 
 			if (!var5) {
@@ -8761,8 +8761,8 @@ public class Static {
 			var0 -= Class20.staticInt36;
 			var5 -= staticInt125;
 			var1 -= NodeSub3.staticInt153;
-			int var8 = Rasterizer2DSub1.staticIntArray154[NodeSub19.staticInt318];
-			int var7 = Rasterizer2DSub1.staticIntArray159[NodeSub19.staticInt318];
+			int var8 = Rasterizer2DSub1.staticIntArray154[DataNode3.staticInt318];
+			int var7 = Rasterizer2DSub1.staticIntArray159[DataNode3.staticInt318];
 			int var4 = Rasterizer2DSub1.staticIntArray154[staticInt87];
 			int var3 = Rasterizer2DSub1.staticIntArray159[staticInt87];
 			int var6 = var3 * var0 + var1 * var4 >> 16;
@@ -9882,8 +9882,8 @@ public class Static {
 							return;
 						}
 
-						for (NodeSub19 var29 = (NodeSub19) Client.staticClass39_7
-								.method195(); var29 != null; var29 = (NodeSub19) Client.staticClass39_7.method193()) {
+						for (DataNode3 var29 = (DataNode3) Client.staticClass39_7
+								.method195(); var29 != null; var29 = (DataNode3) Client.staticClass39_7.method193()) {
 							if (var29.anInt386 > 0) {
 								--var29.anInt386;
 							}
@@ -9961,7 +9961,7 @@ public class Static {
 									var34 = (ChatMessage) var38.next();
 								}
 
-								NodeSub19.staticClipboard1.setContents(new StringSelection(var321),
+								DataNode3.staticClipboard1.setContents(new StringSelection(var321),
 										(ClipboardOwner) null);
 							} else {
 								Client.staticIntArray111[Client.staticInt264] = FileOnDisk.staticInt38;
@@ -12557,7 +12557,7 @@ public class Static {
 				ByteBuf var161 = new ByteBuf(Class57.staticComputerInfo1.method404());
 				Class57.staticComputerInfo1.method403(var161);
 				Client.loginBuffer.writeBytes(var161.buf, 0, var161.buf.length);
-				Client.loginBuffer.writeByte(NodeSub19.sessionId);
+				Client.loginBuffer.writeByte(DataNode3.sessionId);
 				Client.loginBuffer.writeInt(0);
 				Client.loginBuffer.writeInt(Client.staticJs5IndexImpl8.anInt201);
 				Client.loginBuffer.writeInt(FloorUnderlayDef.staticJs5IndexImpl13.anInt201);
@@ -13786,8 +13786,8 @@ public class Static {
 				}
 			}
 
-			for (NodeSub19 var211 = (NodeSub19) Client.staticClass39_7
-					.method195(); var211 != null; var211 = (NodeSub19) Client.staticClass39_7.method193()) {
+			for (DataNode3 var211 = (DataNode3) Client.staticClass39_7
+					.method195(); var211 != null; var211 = (DataNode3) Client.staticClass39_7.method193()) {
 				var211.anInt388 -= var11;
 				var211.anInt390 -= var9;
 				if (var211.anInt388 < 0 || var211.anInt390 < 0 || var211.anInt388 >= 104 || var211.anInt390 >= 104) {
@@ -16182,19 +16182,19 @@ public class Static {
 			var6 = 383;
 		}
 
-		if (NodeSub19.staticInt318 < var6) {
-			NodeSub19.staticInt318 += (var6 - NodeSub19.staticInt318) * ExchangeOffer.staticInt146 / 1000
+		if (DataNode3.staticInt318 < var6) {
+			DataNode3.staticInt318 += (var6 - DataNode3.staticInt318) * ExchangeOffer.staticInt146 / 1000
 					+ Class28.staticInt71;
-			if (NodeSub19.staticInt318 > var6) {
-				NodeSub19.staticInt318 = var6;
+			if (DataNode3.staticInt318 > var6) {
+				DataNode3.staticInt318 = var6;
 			}
 		}
 
-		if (NodeSub19.staticInt318 > var6) {
-			NodeSub19.staticInt318 -= Class28.staticInt71
-					+ (NodeSub19.staticInt318 - var6) * ExchangeOffer.staticInt146 / 1000;
-			if (NodeSub19.staticInt318 < var6) {
-				NodeSub19.staticInt318 = var6;
+		if (DataNode3.staticInt318 > var6) {
+			DataNode3.staticInt318 -= Class28.staticInt71
+					+ (DataNode3.staticInt318 - var6) * ExchangeOffer.staticInt146 / 1000;
+			if (DataNode3.staticInt318 < var6) {
+				DataNode3.staticInt318 = var6;
 			}
 		}
 
@@ -17957,14 +17957,14 @@ public class Static {
 						var5 = var3 - staticInt125;
 						var6 = var2 - NodeSub3.staticInt153;
 						var58 = (int) Math.sqrt(var48 * var48 + var6 * var6);
-						NodeSub19.staticInt318 = (int) (Math.atan2(var5, var58) * 325.949D) & 0x7ff;
+						DataNode3.staticInt318 = (int) (Math.atan2(var5, var58) * 325.949D) & 0x7ff;
 						staticInt87 = (int) (Math.atan2(var48, var6) * -325.949D) & 0x7ff;
-						if (NodeSub19.staticInt318 < 128) {
-							NodeSub19.staticInt318 = 128;
+						if (DataNode3.staticInt318 < 128) {
+							DataNode3.staticInt318 = 128;
 						}
 
-						if (NodeSub19.staticInt318 > 383) {
-							NodeSub19.staticInt318 = 383;
+						if (DataNode3.staticInt318 > 383) {
+							DataNode3.staticInt318 = 383;
 						}
 					}
 
@@ -18944,8 +18944,8 @@ public class Static {
 						}
 					}
 
-					for (NodeSub19 var79 = (NodeSub19) Client.staticClass39_7
-							.method195(); var79 != null; var79 = (NodeSub19) Client.staticClass39_7.method193()) {
+					for (DataNode3 var79 = (DataNode3) Client.staticClass39_7
+							.method195(); var79 != null; var79 = (DataNode3) Client.staticClass39_7.method193()) {
 						if (var79.anInt388 >= staticInt122 && var79.anInt388 < 8 + staticInt122
 								&& var79.anInt390 >= ChatMessage.staticInt331
 								&& var79.anInt390 < 8 + ChatMessage.staticInt331
@@ -21102,7 +21102,7 @@ public class Static {
 		}
 	}
 
-	static final void staticMethod284(NodeSub19 var0) {
+	static final void staticMethod284(DataNode3 var0) {
 		int var1 = 0;
 		int var3 = -1;
 		int var2 = 0;
