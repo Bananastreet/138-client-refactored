@@ -1,4 +1,4 @@
-public class Class54 implements Interface3 {
+public class Class54 implements Identifiable {
 
 	public static final Class54 staticClass54_5 = new Class54(0, 0);
 	public static final Class54 staticClass54_1 = new Class54(1, 1);

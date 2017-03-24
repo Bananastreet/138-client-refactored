@@ -1,4 +1,4 @@
-public class Class4 implements Interface3 {
+public class Class4 implements Identifiable {
 
 	static int staticInt21;
 	static short[] staticShortArray1;

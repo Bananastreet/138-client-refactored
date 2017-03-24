@@ -1,4 +1,4 @@
-public class Class48 implements Interface3 {
+public class Class48 implements Identifiable {
 
 	static long staticLong7;
 	public static final Class48 staticClass48_1 = new Class48(0, -1, true, false, true);
