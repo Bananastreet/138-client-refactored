@@ -1,4 +1,4 @@
-public final class RenderableSub1 extends Entity {
+public final class EntitySub1 extends Entity {
 
 	boolean aBool73 = false;
 	double aDouble9;
@@ -56,7 +56,7 @@ public final class RenderableSub1 extends Entity {
 		}
 	}
 
-	RenderableSub1(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10,
+	EntitySub1(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10,
 			int var11) {
 		anInt586 = var1;
 		anInt575 = var2;

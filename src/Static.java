@@ -9525,8 +9525,8 @@ public class Static {
 	}
 
 	static final void staticMethod12() {
-		for (RenderableSub1 var0 = (RenderableSub1) Client.staticClass39_5
-				.method195(); var0 != null; var0 = (RenderableSub1) Client.staticClass39_5.method193()) {
+		for (EntitySub1 var0 = (EntitySub1) Client.staticClass39_5
+				.method195(); var0 != null; var0 = (EntitySub1) Client.staticClass39_5.method193()) {
 			if (var0.anInt575 == NodeSub4.staticInt155 && Client.staticInt166 <= var0.anInt580) {
 				if (Client.staticInt166 >= var0.anInt578) {
 					if (var0.anInt583 > 0) {
@@ -20804,7 +20804,7 @@ public class Static {
 				var3 = var3 * 128 + 64;
 				var32 = var32 * 128 + 64;
 				var4 = 64 + var4 * 128;
-				RenderableSub1 var39 = new RenderableSub1(var291, NodeSub4.staticInt155, var2, var3,
+				EntitySub1 var39 = new EntitySub1(var291, NodeSub4.staticInt155, var2, var3,
 						staticMethod240(var2, var3, NodeSub4.staticInt155) - var30, Client.staticInt166 + var15,
 						var18 + Client.staticInt166, var8, var9, var311, var10);
 				var39.method562(var32, var4, staticMethod240(var32, var4, NodeSub4.staticInt155) - var10,
