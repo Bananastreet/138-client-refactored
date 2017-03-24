@@ -1,7 +1,7 @@
 public class IdentityKit extends Cacheable {
 
-	static Js5Index staticJs5Index12;
-	static Js5Index staticJs5Index13;
+	static FileStore staticJs5Index12;
+	static FileStore staticJs5Index13;
 	static Js5IndexImpl staticJs5IndexImpl12;
 	static Cache staticCache8 = new Cache(64);
 	public int anInt433 = -1;

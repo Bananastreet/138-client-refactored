@@ -568,7 +568,7 @@ public class NodeSub8Sub3 extends NodeSub8 {
 
 	}
 
-	synchronized boolean method460(NodeSub11 var1, Js5Index var2, Class10 var3, int var4) {
+	synchronized boolean method460(NodeSub11 var1, FileStore var2, Class10 var3, int var4) {
 		var1.method315();
 		boolean var9 = true;
 		int[] var7 = null;

@@ -1,5 +1,5 @@
 public class Class25 {
 
-	static Js5Index staticJs5Index1;
+	static FileStore staticJs5Index1;
 
 }

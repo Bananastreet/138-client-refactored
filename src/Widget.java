@@ -1,8 +1,8 @@
 public class Widget extends Node {
 
 	public static Widget[][] staticWidgetArrayArray1;
-	public static Js5Index staticJs5Index9;
-	public static Js5Index staticJs5Index10;
+	public static FileStore staticJs5Index9;
+	public static FileStore staticJs5Index10;
 	public Object[] anObjectArray18;
 	public Object[] anObjectArray19;
 	public Object[] anObjectArray20;

@@ -1043,7 +1043,7 @@ public class Static {
 
 	}
 
-	public static CacheableSub2 staticMethod216(Js5Index var0, Js5Index var1, int var2, boolean var3) {
+	public static CacheableSub2 staticMethod216(FileStore var0, FileStore var1, int var2, boolean var3) {
 		boolean var4 = true;
 		int[] var5 = var0.method262(var2);
 
@@ -1205,7 +1205,7 @@ public class Static {
 
 	}
 
-	public static void staticMethod3(Js5Index var0, Js5Index var1, boolean var2, Rasterizer2DSub2Sub1 var3) {
+	public static void staticMethod3(FileStore var0, FileStore var1, boolean var2, Rasterizer2DSub2Sub1 var3) {
 		ItemDefinition.staticJs5Index15 = var0;
 		ItemDefinition.staticJs5Index14 = var1;
 		staticBool4 = var2;
@@ -1289,7 +1289,7 @@ public class Static {
 
 	}
 
-	public static Rasterizer2DSub2Sub1 staticMethod54(Js5Index var0, Js5Index var1, int var2, int var3) {
+	public static Rasterizer2DSub2Sub1 staticMethod54(FileStore var0, FileStore var1, int var2, int var3) {
 		return !staticMethod65(var0, var2, var3) ? null : staticMethod105(var1.getFile(var2, var3));
 	}
 
@@ -1513,7 +1513,7 @@ public class Static {
 		return Widget.staticWidgetArrayArray1[var1][var2];
 	}
 
-	public static void staticMethod9(Js5Index var0, Js5Index var1) {
+	public static void staticMethod9(FileStore var0, FileStore var1) {
 		IdentityKit.staticJs5Index12 = var0;
 		IdentityKit.staticJs5Index13 = var1;
 		Class1.staticInt1 = IdentityKit.staticJs5Index12.method263(3);
@@ -1534,7 +1534,7 @@ public class Static {
 		}
 	}
 
-	static boolean staticMethod65(Js5Index var0, int var1, int var2) {
+	static boolean staticMethod65(FileStore var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
 		if (var3 == null) {
 			return false;
@@ -2773,7 +2773,7 @@ public class Static {
 		}
 	}
 
-	static NodeSub14 staticMethod86(Js5Index var0, int var1) {
+	static NodeSub14 staticMethod86(FileStore var0, int var1) {
 		byte[] var2 = var0.method260(var1);
 		return var2 == null ? null : new NodeSub14(var2);
 	}
@@ -2799,7 +2799,7 @@ public class Static {
 		staticMethod396(10);
 	}
 
-	public static void staticMethod88(Js5Index var0, Js5Index var1, Js5Index var2) {
+	public static void staticMethod88(FileStore var0, FileStore var1, FileStore var2) {
 		AnimationDefintion.staticJs5Index33 = var0;
 		AnimationDefintion.staticJs5Index32 = var1;
 		AnimationDefintion.staticJs5Index31 = var2;
@@ -4047,7 +4047,7 @@ public class Static {
 
 	}
 
-	public static Rasterizer2DSub3 staticMethod25(Js5Index var0, String var1, String var2) {
+	public static Rasterizer2DSub3 staticMethod25(FileStore var0, String var1, String var2) {
 		int var3 = var0.method267(var1);
 		int var4 = var0.method268(var3, var2);
 		return staticMethod347(var0, var3, var4);
@@ -5707,7 +5707,7 @@ public class Static {
 		var0.next.prev = var0;
 	}
 
-	public static void staticMethod30(Js5Index var0, int var1, int var2, int var3, boolean var4) {
+	public static void staticMethod30(FileStore var0, int var1, int var2, int var3, boolean var4) {
 		staticInt118 = 1;
 		staticJs5Index3 = var0;
 		staticInt119 = var1;
@@ -5861,7 +5861,7 @@ public class Static {
 		}
 	}
 
-	public static void staticMethod164(Js5Index var0) {
+	public static void staticMethod164(FileStore var0) {
 		staticJs5Index8 = var0;
 	}
 
@@ -6806,7 +6806,7 @@ public class Static {
 		ByteBuf var1 = new ByteBuf(var0);
 		int var3 = var1.method367();
 		int var2 = var1.readInt();
-		if (var2 < 0 || Js5Index.staticInt138 != 0 && var2 > Js5Index.staticInt138) {
+		if (var2 < 0 || FileStore.staticInt138 != 0 && var2 > FileStore.staticInt138) {
 			throw new RuntimeException();
 		} else if (var3 == 0) {
 			byte[] var41 = new byte[var2];
@@ -6814,14 +6814,14 @@ public class Static {
 			return var41;
 		} else {
 			int var4 = var1.readInt();
-			if (var4 < 0 || Js5Index.staticInt138 != 0 && var4 > Js5Index.staticInt138) {
+			if (var4 < 0 || FileStore.staticInt138 != 0 && var4 > FileStore.staticInt138) {
 				throw new RuntimeException();
 			} else {
 				byte[] var5 = new byte[var4];
 				if (var3 == 1) {
 					staticMethod166(var5, var4, var0, var2, 9);
 				} else {
-					Js5Index.staticGZipDecompressor1.method238(var1, var5);
+					FileStore.staticGZipDecompressor1.method238(var1, var5);
 				}
 
 				return var5;
@@ -8219,7 +8219,7 @@ public class Static {
 		return var3 >> 19 & 0xff;
 	}
 
-	public static Rasterizer2DSub3[] staticMethod274(Js5Index var0, String var1, String var2) {
+	public static Rasterizer2DSub3[] staticMethod274(FileStore var0, String var1, String var2) {
 		int var3 = var0.method267(var1);
 		int var6 = var0.method268(var3, var2);
 		Rasterizer2DSub3[] var7;
@@ -8334,7 +8334,7 @@ public class Static {
 		return var0.length() + 2;
 	}
 
-	public static SoundEffect staticMethod52(Js5Index var0, int var1, int var2) {
+	public static SoundEffect staticMethod52(FileStore var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
 		return var3 == null ? null : new SoundEffect(new ByteBuf(var3));
 	}
@@ -9176,7 +9176,7 @@ public class Static {
 
 	}
 
-	static void staticMethod114(Component var0, Js5Index var1, Js5Index var2, boolean var3, int var4) {
+	static void staticMethod114(Component var0, FileStore var1, FileStore var2, boolean var3, int var4) {
 		if (staticBool2) {
 			if (var4 == 4) {
 				staticInt13 = 4;
@@ -13932,7 +13932,7 @@ public class Static {
 		}
 	}
 
-	static Sprite[] staticMethod179(Js5Index var0, int var1, int var2) {
+	static Sprite[] staticMethod179(FileStore var0, int var1, int var2) {
 		if (!staticMethod65(var0, var1, var2)) {
 			return null;
 		} else {
@@ -14198,7 +14198,7 @@ public class Static {
 		return var1 != null ? var1.anInt283 : var0.anInt343;
 	}
 
-	public static Rasterizer2DSub3 staticMethod193(Js5Index var0, int var1) {
+	public static Rasterizer2DSub3 staticMethod193(FileStore var0, int var1) {
 		byte[] var2 = var0.method260(var1);
 		boolean var4;
 		if (var2 == null) {
@@ -14921,7 +14921,7 @@ public class Static {
 		}
 	}
 
-	public static void staticMethod205(Js5Index var0) {
+	public static void staticMethod205(FileStore var0) {
 		Config5.staticJs5Index34 = var0;
 	}
 
@@ -15940,7 +15940,7 @@ public class Static {
 		return var2;
 	}
 
-	public static void staticMethod236(Js5Index var0) {
+	public static void staticMethod236(FileStore var0) {
 		Varp.staticJs5Index27 = var0;
 		Varp.staticInt323 = Varp.staticJs5Index27.method263(16);
 	}
@@ -17512,7 +17512,7 @@ public class Static {
 		staticMethod235(var0, var1, var2, var3, var4, var5, false);
 	}
 
-	public static Sprite staticMethod296(Js5Index var0, int var1, int var2) {
+	public static Sprite staticMethod296(FileStore var0, int var1, int var2) {
 		return !staticMethod65(var0, var1, var2) ? null : staticMethod429();
 	}
 
@@ -17536,7 +17536,7 @@ public class Static {
 		}
 	}
 
-	public static void staticMethod299(Js5Index var0) {
+	public static void staticMethod299(FileStore var0) {
 		Varbit.staticJs5Index11 = var0;
 	}
 
@@ -17787,11 +17787,11 @@ public class Static {
 		return false;
 	}
 
-	public static void staticMethod320(Js5Index var0) {
+	public static void staticMethod320(FileStore var0) {
 		Config15.staticJs5Index21 = var0;
 	}
 
-	public static void staticMethod321(Js5Index var0, Js5Index var1) {
+	public static void staticMethod321(FileStore var0, FileStore var1) {
 		NpcDefinition.staticJs5Index28 = var0;
 		NpcDefinition.staticJs5Index29 = var1;
 	}
@@ -18396,7 +18396,7 @@ public class Static {
 		return var3;
 	}
 
-	static NodeSub11 staticMethod300(Js5Index var0, int var1, int var2) {
+	static NodeSub11 staticMethod300(FileStore var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
 		return var3 == null ? null : new NodeSub11(new ByteBuf(var3));
 	}
@@ -18441,7 +18441,7 @@ public class Static {
 		}
 	}
 
-	public static Sprite[] staticMethod309(Js5Index var0, String var1, String var2) {
+	public static Sprite[] staticMethod309(FileStore var0, String var1, String var2) {
 		int var3 = var0.method267(var1);
 		int var4 = var0.method268(var3, var2);
 		return staticMethod179(var0, var3, var4);
@@ -21601,7 +21601,7 @@ public class Static {
 
 	}
 
-	static Rasterizer2DSub3 staticMethod347(Js5Index var0, int var1, int var2) {
+	static Rasterizer2DSub3 staticMethod347(FileStore var0, int var1, int var2) {
 		if (!staticMethod65(var0, var1, var2)) {
 			return null;
 		} else {
@@ -21974,7 +21974,7 @@ public class Static {
 
 	}
 
-	static boolean staticMethod290(Js5Index var0) {
+	static boolean staticMethod290(FileStore var0) {
 		if (!NodeSub5.staticBool19) {
 			byte[] var1 = var0.getFile(0, 0);
 			if (var1 == null) {
@@ -21988,7 +21988,7 @@ public class Static {
 		return true;
 	}
 
-	static NodeSub5 staticMethod291(Js5Index var0, int var1, int var2) {
+	static NodeSub5 staticMethod291(FileStore var0, int var1, int var2) {
 		if (!staticMethod290(var0)) {
 			var0.method276(var1, var2);
 			return null;
@@ -23647,7 +23647,7 @@ public class Static {
 		}
 	}
 
-	static int staticMethod389(Js5Index var0, Js5Index var1) {
+	static int staticMethod389(FileStore var0, FileStore var1) {
 		int var2 = 0;
 		if (var0.method270("title.jpg", "")) {
 			++var2;
@@ -24673,7 +24673,7 @@ public class Static {
 																				: Class.forName(var0);
 	}
 
-	public static void staticMethod397(Js5Index var0, Js5Index var1) {
+	public static void staticMethod397(FileStore var0, FileStore var1) {
 		Class25.staticJs5Index1 = var0;
 		SpotAnim.staticJs5Index30 = var1;
 	}
@@ -25506,7 +25506,7 @@ public class Static {
 
 	}
 
-	public static Rasterizer2DSub2Sub1 staticMethod386(Js5Index var0, Js5Index var1, String var2, String var3) {
+	public static Rasterizer2DSub2Sub1 staticMethod386(FileStore var0, FileStore var1, String var2, String var3) {
 		int var4 = var0.method267(var2);
 		int var5 = var0.method268(var4, var3);
 		return staticMethod54(var0, var1, var4, var5);
@@ -29477,7 +29477,7 @@ public class Static {
 
 	}
 
-	public static RenderableSub3 staticMethod434(Js5Index var0, int var1, int var2) {
+	public static RenderableSub3 staticMethod434(FileStore var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
 		return var3 == null ? null : new RenderableSub3(var3);
 	}
@@ -30746,14 +30746,14 @@ public class Static {
 	static byte[][] staticByteArrayArray3 = new byte[1000][];
 	static byte[][] staticByteArrayArray5 = new byte[250][];
 	static byte[][] staticByteArrayArray4 = new byte[50][];
-	public static Js5Index staticJs5Index3;
-	public static Js5Index staticJs5Index4;
-	public static Js5Index staticJs5Index5;
+	public static FileStore staticJs5Index3;
+	public static FileStore staticJs5Index4;
+	public static FileStore staticJs5Index5;
 	public static NodeSub8Sub3 staticNodeSub8Sub3_1;
 	public static short[][] staticShortArrayArray1;
 	public static int staticInt119;
 	public static boolean staticBool16;
-	public static Js5Index staticJs5Index6;
+	public static FileStore staticJs5Index6;
 	public static int staticInt118 = 0;
 	public static int staticInt120;
 	static Sprite[] staticSpriteArray3;
@@ -30835,7 +30835,7 @@ public class Static {
 	static Class6 staticClass6_1;
 	public static int staticInt127;
 	static Connection staticConnection1;
-	public static Js5Index staticJs5Index7;
+	public static FileStore staticJs5Index7;
 	public static String[] staticStringArray4;
 	static char[] staticCharArray3 = new char[64];
 	static char[] staticCharArray2;
@@ -30915,7 +30915,7 @@ public class Static {
 	static int staticInt143;
 	static int[] staticIntArray73;
 	public static File staticFile3;
-	static Js5Index staticJs5Index8;
+	static FileStore staticJs5Index8;
 	static int staticInt148;
 	static int staticInt149;
 	static int staticInt150;

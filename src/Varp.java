@@ -1,7 +1,7 @@
 public class Varp extends Cacheable {
 
 	public static int staticInt323;
-	static Js5Index staticJs5Index27;
+	static FileStore staticJs5Index27;
 	public static Cache staticCache25 = new Cache(64);
 	public int anInt525 = 0;
 

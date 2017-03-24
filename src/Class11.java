@@ -5,7 +5,7 @@ public class Class11 implements Interface2 {
 	double aDouble1 = 1.0D;
 	Class39 aClass39_1 = new Class39();
 	int anInt24 = 128;
-	Js5Index aJs5Index3;
+	FileStore aJs5Index3;
 	int anInt22;
 	NodeSub9[] aNodeSub9Array1;
 
@@ -67,7 +67,7 @@ public class Class11 implements Interface2 {
 
 	}
 
-	public Class11(Js5Index var1, Js5Index var2, int var3, double var4, int var6) {
+	public Class11(FileStore var1, FileStore var2, int var3, double var4, int var6) {
 		aJs5Index3 = var2;
 		anInt22 = var3 * -734461651;
 		anInt23 = anInt22 * -79300955;

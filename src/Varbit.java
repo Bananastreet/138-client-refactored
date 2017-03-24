@@ -1,6 +1,6 @@
 public class Varbit extends Cacheable {
 
-	static Js5Index staticJs5Index11;
+	static FileStore staticJs5Index11;
 	public static Cache staticCache7 = new Cache(64);
 	public int anInt430;
 	public int anInt431;

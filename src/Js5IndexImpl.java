@@ -1,6 +1,6 @@
 import java.util.zip.CRC32;
 
-public class Js5IndexImpl extends Js5Index {
+public class Js5IndexImpl extends FileStore {
 
 	static CRC32 staticCRC32_2 = new CRC32();
 	volatile boolean aBool46 = false;

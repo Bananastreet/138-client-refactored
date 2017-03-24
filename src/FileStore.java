@@ -1,4 +1,4 @@
-public abstract class Js5Index {
+public abstract class FileStore {
 
 	static GZipDecompressor staticGZipDecompressor1 = new GZipDecompressor();
 	static int staticInt138 = 0;
@@ -263,7 +263,7 @@ public abstract class Js5Index {
 		return var2 != -1 ? method270("", var1) : method270(var1, "");
 	}
 
-	Js5Index(boolean var1, boolean var2) {
+	FileStore(boolean var1, boolean var2) {
 		aBool17 = var1;
 		aBool18 = var2;
 	}

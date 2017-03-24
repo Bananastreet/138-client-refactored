@@ -1,8 +1,8 @@
 public class AnimationDefintion extends Cacheable {
 
-	static Js5Index staticJs5Index31;
-	static Js5Index staticJs5Index32;
-	static Js5Index staticJs5Index33;
+	static FileStore staticJs5Index31;
+	static FileStore staticJs5Index32;
+	static FileStore staticJs5Index33;
 	static Cache staticCache32 = new Cache(64);
 	static Cache staticCache31 = new Cache(100);
 	public int anInt562 = -1;

@@ -1,6 +1,6 @@
 public class Config19 extends Cacheable {
 
-	public static Js5Index staticJs5Index26;
+	public static FileStore staticJs5Index26;
 	static Js5IndexImpl staticJs5IndexImpl15;
 	public static Cache staticCache24 = new Cache(64);
 	public boolean aBool65 = false;

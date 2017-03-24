@@ -12,7 +12,7 @@ public class NodeSub9 extends Node {
 	int anInt245;
 	int anInt246;
 
-	boolean method308(double var1, int var3, Js5Index var4) {
+	boolean method308(double var1, int var3, FileStore var4) {
 		int var5;
 		for (var5 = 0; var5 < anIntArray60.length; var5++) {
 			if (var4.method273(anIntArray60[var5]) == null) {

@@ -1,8 +1,8 @@
 public class ObjectDefinition extends Cacheable {
 
-	public static Js5Index staticJs5Index19;
+	public static FileStore staticJs5Index19;
 	public int anInt483;
-	public static Js5Index staticJs5Index20;
+	public static FileStore staticJs5Index20;
 	static int staticInt322;
 	public static boolean staticBool46 = false;
 	static Cache staticCache18 = new Cache(64);

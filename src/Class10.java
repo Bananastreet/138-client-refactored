@@ -2,8 +2,8 @@ public class Class10 {
 
 	HashTable aHashTable1 = new HashTable(256);
 	HashTable aHashTable2 = new HashTable(256);
-	Js5Index aJs5Index2;
-	Js5Index aJs5Index1;
+	FileStore aJs5Index2;
+	FileStore aJs5Index1;
 
 	NodeSub6Sub1 method28(int var1, int var2, int[] var3) {
 		int var4 = var2 ^ (var1 << 4 & 0xffff | var1 >>> 12);
@@ -81,7 +81,7 @@ public class Class10 {
 		}
 	}
 
-	public Class10(Js5Index var1, Js5Index var2) {
+	public Class10(FileStore var1, FileStore var2) {
 		aJs5Index2 = var1;
 		aJs5Index1 = var2;
 	}
