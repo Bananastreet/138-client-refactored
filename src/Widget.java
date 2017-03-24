@@ -489,20 +489,20 @@ public class Widget extends Node {
 		aBool42 = false;
 		anInt296 = var1.readUByte();
 		anInt331 = var1.readUByte();
-		anInt298 = var1.method370();
+		anInt298 = var1.readUShort();
 		anInt302 = var1.method364();
 		anInt303 = var1.method364();
-		anInt304 = var1.method370();
-		anInt305 = var1.method370();
+		anInt304 = var1.readUShort();
+		anInt305 = var1.readUShort();
 		anInt317 = var1.readUByte();
-		anInt342 = var1.method370();
+		anInt342 = var1.readUShort();
 		if (anInt342 == '\uffff') {
 			anInt342 = -1;
 		} else {
 			anInt342 += anInt294 & 0xffff0000;
 		}
 
-		anInt310 = var1.method370();
+		anInt310 = var1.readUShort();
 		if (anInt310 == '\uffff') {
 			anInt310 = -1;
 		}
@@ -515,7 +515,7 @@ public class Widget extends Node {
 
 			for (var4 = 0; var4 < var6; var4++) {
 				anIntArray73[var4] = var1.readUByte();
-				anIntArray70[var4] = var1.method370();
+				anIntArray70[var4] = var1.readUShort();
 			}
 		}
 
@@ -527,11 +527,11 @@ public class Widget extends Node {
 			anIntArrayArray12 = new int[var4][];
 
 			for (var2 = 0; var2 < var4; var2++) {
-				var3 = var1.method370();
+				var3 = var1.readUShort();
 				anIntArrayArray12[var2] = new int[var3];
 
 				for (var8 = 0; var8 < var3; var8++) {
-					anIntArrayArray12[var2][var8] = var1.method370();
+					anIntArrayArray12[var2][var8] = var1.readUShort();
 					if (anIntArrayArray12[var2][var8] == '\uffff') {
 						anIntArrayArray12[var2][var8] = -1;
 					}
@@ -540,12 +540,12 @@ public class Widget extends Node {
 		}
 
 		if (anInt296 == 0) {
-			anInt361 = var1.method370();
+			anInt361 = var1.readUShort();
 			aBool32 = var1.readUByte() == 1;
 		}
 
 		if (anInt296 == 1) {
-			var1.method370();
+			var1.readUShort();
 			var1.readUByte();
 		}
 
@@ -609,7 +609,7 @@ public class Widget extends Node {
 			anInt339 = var1.readUByte();
 			anInt340 = var1.readUByte();
 			anInt338 = var1.readUByte();
-			anInt347 = var1.method370();
+			anInt347 = var1.readUShort();
 			if (anInt347 == '\uffff') {
 				anInt347 = -1;
 			}
@@ -639,37 +639,37 @@ public class Widget extends Node {
 
 		if (anInt296 == 6) {
 			anInt348 = 1;
-			anInt295 = var1.method370();
+			anInt295 = var1.readUShort();
 			if (anInt295 == '\uffff') {
 				anInt295 = -1;
 			}
 
 			anInt301 = 1;
-			anInt326 = var1.method370();
+			anInt326 = var1.readUShort();
 			if (anInt326 == '\uffff') {
 				anInt326 = -1;
 			}
 
-			anInt327 = var1.method370();
+			anInt327 = var1.readUShort();
 			if (anInt327 == '\uffff') {
 				anInt327 = -1;
 			}
 
-			anInt328 = var1.method370();
+			anInt328 = var1.readUShort();
 			if (anInt328 == '\uffff') {
 				anInt328 = -1;
 			}
 
-			anInt334 = var1.method370();
-			anInt325 = var1.method370();
-			anInt332 = var1.method370();
+			anInt334 = var1.readUShort();
+			anInt325 = var1.readUShort();
+			anInt332 = var1.readUShort();
 		}
 
 		if (anInt296 == 7) {
 			anIntArray76 = new int[anInt304 * anInt305];
 			anIntArray77 = new int[anInt305 * anInt304];
 			anInt339 = var1.readUByte();
-			anInt347 = var1.method370();
+			anInt347 = var1.readUShort();
 			if (anInt347 == '\uffff') {
 				anInt347 = -1;
 			}
@@ -701,7 +701,7 @@ public class Widget extends Node {
 		if (anInt331 == 2 || anInt296 == 2) {
 			aString22 = var1.readString();
 			aString23 = var1.readString();
-			var2 = var1.method370() & 0x3f;
+			var2 = var1.readUShort() & 0x3f;
 			anInt343 |= var2 << 11;
 		}
 
@@ -740,21 +740,21 @@ public class Widget extends Node {
 		var1.readUByte();
 		aBool42 = true;
 		anInt296 = var1.readUByte();
-		anInt298 = var1.method370();
+		anInt298 = var1.readUShort();
 		anInt302 = var1.method364();
 		anInt303 = var1.method364();
-		anInt304 = var1.method370();
+		anInt304 = var1.readUShort();
 		if (anInt296 == 9) {
 			anInt305 = var1.method364();
 		} else {
-			anInt305 = var1.method370();
+			anInt305 = var1.readUShort();
 		}
 
 		anInt293 = var1.readByte();
 		anInt311 = var1.readByte();
 		anInt299 = var1.readByte();
 		anInt300 = var1.readByte();
-		anInt342 = var1.method370();
+		anInt342 = var1.readUShort();
 		if (anInt342 == '\uffff') {
 			anInt342 = -1;
 		} else {
@@ -763,14 +763,14 @@ public class Widget extends Node {
 
 		aBool32 = var1.readUByte() == 1;
 		if (anInt296 == 0) {
-			anInt344 = var1.method370();
-			anInt361 = var1.method370();
+			anInt344 = var1.readUShort();
+			anInt361 = var1.readUShort();
 			aBool43 = var1.readUByte() == 1;
 		}
 
 		if (anInt296 == 5) {
 			anInt320 = var1.readInt();
-			anInt350 = var1.method370();
+			anInt350 = var1.readUShort();
 			aBool35 = var1.readUByte() == 1;
 			anInt317 = var1.readUByte();
 			anInt322 = var1.readUByte();
@@ -781,35 +781,35 @@ public class Widget extends Node {
 
 		if (anInt296 == 6) {
 			anInt348 = 1;
-			anInt295 = var1.method370();
+			anInt295 = var1.readUShort();
 			if (anInt295 == '\uffff') {
 				anInt295 = -1;
 			}
 
 			anInt329 = var1.method364();
 			anInt330 = var1.method364();
-			anInt325 = var1.method370();
-			anInt332 = var1.method370();
-			anInt324 = var1.method370();
-			anInt334 = var1.method370();
-			anInt327 = var1.method370();
+			anInt325 = var1.readUShort();
+			anInt332 = var1.readUShort();
+			anInt324 = var1.readUShort();
+			anInt334 = var1.readUShort();
+			anInt327 = var1.readUShort();
 			if (anInt327 == '\uffff') {
 				anInt327 = -1;
 			}
 
 			aBool39 = var1.readUByte() == 1;
-			var1.method370();
+			var1.readUShort();
 			if (anInt293 != 0) {
-				anInt291 = var1.method370();
+				anInt291 = var1.readUShort();
 			}
 
 			if (anInt311 != 0) {
-				var1.method370();
+				var1.readUShort();
 			}
 		}
 
 		if (anInt296 == 4) {
-			anInt347 = var1.method370();
+			anInt347 = var1.readUShort();
 			if (anInt347 == '\uffff') {
 				anInt347 = -1;
 			}

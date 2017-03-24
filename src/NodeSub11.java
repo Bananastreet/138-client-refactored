@@ -89,7 +89,7 @@ public class NodeSub11 extends Node {
 	NodeSub11(ByteBuf var1) {
 		var1.position = var1.buf.length - 3;
 		int var6 = var1.readUByte();
-		int var5 = var1.method370();
+		int var5 = var1.readUShort();
 		int var7 = 14 + var6 * 10;
 		var1.position = 0;
 		int var8 = 0;

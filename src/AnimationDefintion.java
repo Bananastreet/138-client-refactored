@@ -91,24 +91,24 @@ public class AnimationDefintion extends Cacheable {
 		int var3;
 		int var4;
 		if (var2 == 1) {
-			var4 = var1.method370();
+			var4 = var1.readUShort();
 			anIntArray119 = new int[var4];
 
 			for (var3 = 0; var3 < var4; var3++) {
-				anIntArray119[var3] = var1.method370();
+				anIntArray119[var3] = var1.readUShort();
 			}
 
 			anIntArray121 = new int[var4];
 
 			for (var3 = 0; var3 < var4; var3++) {
-				anIntArray121[var3] = var1.method370();
+				anIntArray121[var3] = var1.readUShort();
 			}
 
 			for (var3 = 0; var3 < var4; var3++) {
-				anIntArray121[var3] += var1.method370() << 16;
+				anIntArray121[var3] += var1.readUShort() << 16;
 			}
 		} else if (var2 == 2) {
-			anInt562 = var1.method370();
+			anInt562 = var1.readUShort();
 		} else if (var2 == 3) {
 			var4 = var1.readUByte();
 			anIntArray117 = new int[1 + var4];
@@ -123,9 +123,9 @@ public class AnimationDefintion extends Cacheable {
 		} else if (var2 == 5) {
 			anInt563 = var1.readUByte();
 		} else if (var2 == 6) {
-			anInt564 = var1.method370();
+			anInt564 = var1.readUShort();
 		} else if (var2 == 7) {
-			anInt565 = var1.method370();
+			anInt565 = var1.readUShort();
 		} else if (var2 == 8) {
 			anInt561 = var1.readUByte();
 		} else if (var2 == 9) {
@@ -139,11 +139,11 @@ public class AnimationDefintion extends Cacheable {
 			anIntArray118 = new int[var4];
 
 			for (var3 = 0; var3 < var4; var3++) {
-				anIntArray118[var3] = var1.method370();
+				anIntArray118[var3] = var1.readUShort();
 			}
 
 			for (var3 = 0; var3 < var4; var3++) {
-				anIntArray118[var3] += var1.method370() << 16;
+				anIntArray118[var3] += var1.readUShort() << 16;
 			}
 		} else if (var2 == 13) {
 			var4 = var1.readUByte();

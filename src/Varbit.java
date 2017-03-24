@@ -19,7 +19,7 @@ public class Varbit extends Cacheable {
 
 	void method479(ByteBuf var1, int var2) {
 		if (var2 == 1) {
-			anInt430 = var1.method370();
+			anInt430 = var1.readUShort();
 			anInt431 = var1.readUByte();
 			anInt432 = var1.readUByte();
 		}

@@ -31,7 +31,7 @@ public class Class56 {
 	}
 
 	public Class56(ByteBuf var1, boolean var2) {
-		int var7 = var1.method370();
+		int var7 = var1.readUShort();
 		boolean var4 = var1.readUByte() == 1;
 		byte var6;
 		if (var4) {
@@ -40,7 +40,7 @@ public class Class56 {
 			var6 = 0;
 		}
 
-		int var3 = var1.method370();
+		int var3 = var1.readUShort();
 		aList1 = new ArrayList(var3);
 
 		for (int var5 = 0; var5 < var3; var5++) {

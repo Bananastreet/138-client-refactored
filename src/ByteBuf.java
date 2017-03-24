@@ -223,14 +223,14 @@ public class ByteBuf extends Node {
 	}
 
 	public int method337() {
-		return buf[position] < 0 ? readInt() & 0x7fffffff : method370();
+		return buf[position] < 0 ? readInt() & 0x7fffffff : readUShort();
 	}
 
 	public int method338() {
 		if (buf[position] < 0) {
 			return readInt() & 0x7fffffff;
 		} else {
-			int var1 = method370();
+			int var1 = readUShort();
 			return var1 == 32767 ? -1 : var1;
 		}
 	}
@@ -528,7 +528,7 @@ public class ByteBuf extends Node {
 
 	public int method366() {
 		int var1 = buf[position] & 0xff;
-		return var1 < 128 ? readUByte() - 64 : method370() - '\uc000';
+		return var1 < 128 ? readUByte() - 64 : readUShort() - '\uc000';
 	}
 
 	public int readUByte() {		
@@ -544,7 +544,7 @@ public class ByteBuf extends Node {
 		buf[position++] = (byte) (var1 >> 8);
 	}
 
-	public int method370() {
+	public int readUShort() {		
 		position += 2;
 		return ((buf[position - 2] & 0xff) << 8) + (buf[position - 1] & 0xff);
 	}
@@ -612,7 +612,7 @@ public class ByteBuf extends Node {
 
 	public int method379() {
 		int var1 = buf[position] & 0xff;
-		return var1 < 128 ? readUByte() : method370() - '\u8000';
+		return var1 < 128 ? readUByte() : readUShort() - '\u8000';
 	}
 
 	public void method380(int[] var1, int var2, int var3) {

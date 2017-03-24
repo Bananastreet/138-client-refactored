@@ -18,7 +18,7 @@ public class Varp extends Cacheable {
 
 	void method535(ByteBuf var1, int var2) {
 		if (var2 == 5) {
-			anInt525 = var1.method370();
+			anInt525 = var1.readUShort();
 		}
 
 	}

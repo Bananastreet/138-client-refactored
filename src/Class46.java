@@ -30,8 +30,8 @@ public class Class46 {
 	void method223(byte[] var1) {
 		aStream1.buf = var1;
 		aStream1.position = 10;
-		int var4 = aStream1.method370();
-		anInt190 = aStream1.method370();
+		int var4 = aStream1.readUShort();
+		anInt190 = aStream1.readUShort();
 		anInt189 = 500000;
 		anIntArray43 = new int[var4];
 

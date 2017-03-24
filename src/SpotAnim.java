@@ -86,15 +86,15 @@ public class SpotAnim extends Cacheable {
 
 	void method549(ByteBuf var1, int var2) {
 		if (var2 == 1) {
-			anInt555 = var1.method370();
+			anInt555 = var1.readUShort();
 		} else if (var2 == 2) {
-			anInt556 = var1.method370();
+			anInt556 = var1.readUShort();
 		} else if (var2 == 4) {
-			anInt553 = var1.method370();
+			anInt553 = var1.readUShort();
 		} else if (var2 == 5) {
-			anInt558 = var1.method370();
+			anInt558 = var1.readUShort();
 		} else if (var2 == 6) {
-			anInt559 = var1.method370();
+			anInt559 = var1.readUShort();
 		} else if (var2 == 7) {
 			anInt560 = var1.readUByte();
 		} else if (var2 == 8) {
@@ -108,8 +108,8 @@ public class SpotAnim extends Cacheable {
 				aShortArray21 = new short[var4];
 
 				for (var3 = 0; var3 < var4; var3++) {
-					aShortArray19[var3] = (short) var1.method370();
-					aShortArray21[var3] = (short) var1.method370();
+					aShortArray19[var3] = (short) var1.readUShort();
+					aShortArray21[var3] = (short) var1.readUShort();
 				}
 			} else if (var2 == 41) {
 				var4 = var1.readUByte();
@@ -117,8 +117,8 @@ public class SpotAnim extends Cacheable {
 				aShortArray18 = new short[var4];
 
 				for (var3 = 0; var3 < var4; var3++) {
-					aShortArray20[var3] = (short) var1.method370();
-					aShortArray18[var3] = (short) var1.method370();
+					aShortArray20[var3] = (short) var1.readUShort();
+					aShortArray18[var3] = (short) var1.readUShort();
 				}
 			}
 		}

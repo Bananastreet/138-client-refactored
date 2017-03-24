@@ -173,7 +173,7 @@ public class CacheableSub5 extends Cacheable {
 		} else if (var2 == 8) {
 			aString32 = var1.method374();
 		} else if (var2 == 9) {
-			anInt473 = var1.method370();
+			anInt473 = var1.readUShort();
 		} else if (var2 == 10) {
 			anInt478 = var1.method364();
 		} else if (var2 == 11) {
@@ -183,21 +183,21 @@ public class CacheableSub5 extends Cacheable {
 		} else if (var2 == 13) {
 			anInt480 = var1.method364();
 		} else if (var2 == 14) {
-			anInt471 = var1.method370();
+			anInt471 = var1.readUShort();
 		} else if (var2 == 17 || var2 == 18) {
-			anInt481 = var1.method370();
+			anInt481 = var1.readUShort();
 			if (anInt481 == '\uffff') {
 				anInt481 = -1;
 			}
 
-			anInt482 = var1.method370();
+			anInt482 = var1.readUShort();
 			if (anInt482 == '\uffff') {
 				anInt482 = -1;
 			}
 
 			int var4 = -1;
 			if (var2 == 18) {
-				var4 = var1.method370();
+				var4 = var1.readUShort();
 				if (var4 == '\uffff') {
 					var4 = -1;
 				}
@@ -207,7 +207,7 @@ public class CacheableSub5 extends Cacheable {
 			anIntArray107 = new int[2 + var3];
 
 			for (int var5 = 0; var5 <= var3; var5++) {
-				anIntArray107[var5] = var1.method370();
+				anIntArray107[var5] = var1.readUShort();
 				if (anIntArray107[var5] == '\uffff') {
 					anIntArray107[var5] = -1;
 				}

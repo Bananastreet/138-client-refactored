@@ -18,7 +18,7 @@ public class Config5 extends Cacheable {
 
 	void method559(ByteBuf var1, int var2) {
 		if (var2 == 2) {
-			anInt569 = var1.method370();
+			anInt569 = var1.readUShort();
 		}
 
 	}

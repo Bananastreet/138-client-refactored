@@ -46,7 +46,7 @@ public final class Player extends Actor {
 				var6 = buffer.readUByte();
 				var3[var9] = (var5 << 8) + var6;
 				if (var9 == 0 && var3[0] == '\uffff') {
-					var2 = buffer.method370();
+					var2 = buffer.readUShort();
 					break;
 				}
 
@@ -70,38 +70,38 @@ public final class Player extends Actor {
 			var91[var5] = var6;
 		}
 
-		anInt594 = buffer.method370();
+		anInt594 = buffer.readUShort();
 		if (anInt594 == '\uffff') {
 			anInt594 = -1;
 		}
 
-		anInt634 = buffer.method370();
+		anInt634 = buffer.readUShort();
 		if (anInt634 == '\uffff') {
 			anInt634 = -1;
 		}
 
 		anInt595 = -anInt634;
-		anInt621 = buffer.method370();
+		anInt621 = buffer.readUShort();
 		if (anInt621 == '\uffff') {
 			anInt621 = -1;
 		}
 
-		anInt597 = buffer.method370();
+		anInt597 = buffer.readUShort();
 		if (anInt597 == '\uffff') {
 			anInt597 = -1;
 		}
 
-		anInt598 = buffer.method370();
+		anInt598 = buffer.readUShort();
 		if (anInt598 == '\uffff') {
 			anInt598 = -1;
 		}
 
-		anInt622 = buffer.method370();
+		anInt622 = buffer.readUShort();
 		if (anInt622 == '\uffff') {
 			anInt622 = -1;
 		}
 
-		anInt607 = buffer.method370();
+		anInt607 = buffer.readUShort();
 		if (anInt607 == '\uffff') {
 			anInt607 = -1;
 		}
@@ -112,7 +112,7 @@ public final class Player extends Actor {
 		}
 
 		anInt685 = buffer.readUByte();
-		anInt691 = buffer.method370();
+		anInt691 = buffer.readUShort();
 		aBool81 = buffer.readUByte() == 1;
 		if (Client.staticInt207 == 0 && Client.myRights >= 2) {
 			aBool81 = false;

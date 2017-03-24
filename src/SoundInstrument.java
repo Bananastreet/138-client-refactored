@@ -303,8 +303,8 @@ public class SoundInstrument {
 
 		anInt44 = var1.method379();
 		anInt45 = var1.method379();
-		anInt47 = var1.method370();
-		anInt46 = var1.method370();
+		anInt47 = var1.readUShort();
+		anInt46 = var1.readUShort();
 		aClass18_1 = new Class18();
 		aClass14_7 = new Class14();
 		aClass18_1.method65(var1, aClass14_7);

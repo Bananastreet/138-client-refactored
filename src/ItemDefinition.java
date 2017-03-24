@@ -93,22 +93,22 @@ public class ItemDefinition extends Cacheable {
 	// TODO item def decode
 	void decode(ByteBuf buffer, int opcode) {		
 		if (opcode == 1) {
-			anInt441 = buffer.method370();
+			anInt441 = buffer.readUShort();
 		} else if (opcode == 2) {
 			aString31 = buffer.readString();
 		} else if (opcode == 4) {
-			anInt444 = buffer.method370();
+			anInt444 = buffer.readUShort();
 		} else if (opcode == 5) {
-			anInt456 = buffer.method370();
+			anInt456 = buffer.readUShort();
 		} else if (opcode == 6) {
-			anInt466 = buffer.method370();
+			anInt466 = buffer.readUShort();
 		} else if (opcode == 7) {
-			anInt436 = buffer.method370();
+			anInt436 = buffer.readUShort();
 			if (anInt436 > 32767) {
 				anInt436 -= 65536;
 			}
 		} else if (opcode == 8) {
-			anInt452 = buffer.method370();
+			anInt452 = buffer.readUShort();
 			if (anInt452 > 32767) {
 				anInt452 -= 65536;
 			}
@@ -119,15 +119,15 @@ public class ItemDefinition extends Cacheable {
 		} else if (opcode == 16) {
 			aBool55 = true;
 		} else if (opcode == 23) {
-			anInt446 = buffer.method370();
+			anInt446 = buffer.readUShort();
 			anInt447 = buffer.readUByte();
 		} else if (opcode == 24) {
-			anInt438 = buffer.method370();
+			anInt438 = buffer.readUShort();
 		} else if (opcode == 25) {
-			anInt448 = buffer.method370();
+			anInt448 = buffer.readUShort();
 			anInt450 = buffer.readUByte();
 		} else if (opcode == 26) {
-			anInt449 = buffer.method370();
+			anInt449 = buffer.readUShort();
 		} else if (opcode >= 30 && opcode < 35) {
 			aStringArray7[opcode - 30] = buffer.readString();
 			if (aStringArray7[opcode - 30].equalsIgnoreCase("Hidden")) {
@@ -144,8 +144,8 @@ public class ItemDefinition extends Cacheable {
 				aShortArray6 = new short[var3];
 
 				for (var4 = 0; var4 < var3; var4++) {
-					aShortArray9[var4] = (short) buffer.method370();
-					aShortArray6[var4] = (short) buffer.method370();
+					aShortArray9[var4] = (short) buffer.readUShort();
+					aShortArray6[var4] = (short) buffer.readUShort();
 				}
 			} else if (opcode == 41) {
 				var3 = buffer.readUByte();
@@ -153,45 +153,45 @@ public class ItemDefinition extends Cacheable {
 				aShortArray8 = new short[var3];
 
 				for (var4 = 0; var4 < var3; var4++) {
-					aShortArray7[var4] = (short) buffer.method370();
-					aShortArray8[var4] = (short) buffer.method370();
+					aShortArray7[var4] = (short) buffer.readUShort();
+					aShortArray8[var4] = (short) buffer.readUShort();
 				}
 			} else if (opcode == 42) {
 				anInt443 = buffer.readByte();
 			} else if (opcode == 65) {
 				aBool56 = true;
 			} else if (opcode == 78) {
-				anInt451 = buffer.method370();
+				anInt451 = buffer.readUShort();
 			} else if (opcode == 79) {
-				anInt434 = buffer.method370();
+				anInt434 = buffer.readUShort();
 			} else if (opcode == 90) {
-				anInt440 = buffer.method370();
+				anInt440 = buffer.readUShort();
 			} else if (opcode == 91) {
-				anInt454 = buffer.method370();
+				anInt454 = buffer.readUShort();
 			} else if (opcode == 92) {
-				anInt453 = buffer.method370();
+				anInt453 = buffer.readUShort();
 			} else if (opcode == 93) {
-				anInt455 = buffer.method370();
+				anInt455 = buffer.readUShort();
 			} else if (opcode == 95) {
-				anInt468 = buffer.method370();
+				anInt468 = buffer.readUShort();
 			} else if (opcode == 97) {
-				anInt435 = buffer.method370();
+				anInt435 = buffer.readUShort();
 			} else if (opcode == 98) {
-				anInt457 = buffer.method370();
+				anInt457 = buffer.readUShort();
 			} else if (opcode >= 100 && opcode < 110) {
 				if (anIntArray105 == null) {
 					anIntArray105 = new int[10];
 					anIntArray106 = new int[10];
 				}
 
-				anIntArray105[opcode - 100] = buffer.method370();
-				anIntArray106[opcode - 100] = buffer.method370();
+				anIntArray105[opcode - 100] = buffer.readUShort();
+				anIntArray106[opcode - 100] = buffer.readUShort();
 			} else if (opcode == 110) {
-				anInt458 = buffer.method370();
+				anInt458 = buffer.readUShort();
 			} else if (opcode == 111) {
-				anInt459 = buffer.method370();
+				anInt459 = buffer.readUShort();
 			} else if (opcode == 112) {
-				anInt439 = buffer.method370();
+				anInt439 = buffer.readUShort();
 			} else if (opcode == 113) {
 				anInt461 = buffer.readByte();
 			} else if (opcode == 114) {
@@ -199,13 +199,13 @@ public class ItemDefinition extends Cacheable {
 			} else if (opcode == 115) {
 				anInt463 = buffer.readUByte();
 			} else if (opcode == 139) {
-				anInt464 = buffer.method370();
+				anInt464 = buffer.readUShort();
 			} else if (opcode == 140) {
-				anInt465 = buffer.method370();
+				anInt465 = buffer.readUShort();
 			} else if (opcode == 148) {
-				anInt445 = buffer.method370();
+				anInt445 = buffer.readUShort();
 			} else if (opcode == 149) {
-				anInt467 = buffer.method370();
+				anInt467 = buffer.readUShort();
 			}
 		}
 

@@ -19,8 +19,8 @@ public class SoundEffect {
 			}
 		}
 
-		anInt20 = var1.method370();
-		anInt21 = var1.method370();
+		anInt20 = var1.readUShort();
+		anInt21 = var1.readUShort();
 	}
 
 	public final int method26() {

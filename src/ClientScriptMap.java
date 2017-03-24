@@ -5,11 +5,11 @@ public class ClientScriptMap extends Cacheable {
 	static int[] staticIntArray129;
 	static NodeSub8Sub1 staticNodeSub8Sub1_1;
 	public static Cache staticCache23 = new Cache(64);
-	public String aString34 = "null";
+	public String defaultString = "null";
 	public int anInt524 = 0;
 	public char keyType;
-	public char aChar2;
-	public int anInt523;
+	public char valType;
+	public int defaultInt;
 	public int[] anIntArray112;
 	public String[] aStringArray9;
 	public int[] anIntArray113;
@@ -18,15 +18,15 @@ public class ClientScriptMap extends Cacheable {
 		if (opcode == 1) {
 			keyType = (char) buffer.readUByte();			
 		} else if (opcode == 2) {
-			aChar2 = (char) buffer.readUByte();
+			valType = (char) buffer.readUByte();			
 		} else if (opcode == 3) {
-			aString34 = buffer.readString();
+			defaultString = buffer.readString();			
 		} else if (opcode == 4) {
-			anInt523 = buffer.readInt();
+			defaultInt = buffer.readInt();			
 		} else {
 			int var3;
 			if (opcode == 5) {
-				anInt524 = buffer.method370();
+				anInt524 = buffer.readUShort();
 				anIntArray112 = new int[anInt524];
 				aStringArray9 = new String[anInt524];
 
@@ -35,7 +35,7 @@ public class ClientScriptMap extends Cacheable {
 					aStringArray9[var3] = buffer.readString();
 				}
 			} else if (opcode == 6) {
-				anInt524 = buffer.method370();
+				anInt524 = buffer.readUShort();
 				anIntArray112 = new int[anInt524];
 				anIntArray113 = new int[anInt524];
 

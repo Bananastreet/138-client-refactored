@@ -183,20 +183,20 @@ public class Class5 {
 
 				int var5 = var231.readUByte();
 				if (var5 >= 0 && var5 <= 1) {
-					int var6 = var231.method370();
+					int var6 = var231.readUShort();
 
 					int var7;
 					int var8;
 					int var9;
 					for (var7 = 0; var7 < var6; var7++) {
-						var8 = var231.method370();
+						var8 = var231.readUShort();
 						var9 = var231.readInt();
 						if (aBoolArray1[var8]) {
 							anIntArray1[var8] = var9;
 						}
 					}
 
-					var7 = var231.method370();
+					var7 = var231.readUShort();
 					var8 = 0;
 
 					while (true) {
@@ -204,7 +204,7 @@ public class Class5 {
 							break label182;
 						}
 
-						var9 = var231.method370();
+						var9 = var231.readUShort();
 						String var10 = var231.readString();
 						if (aBoolArray2[var9]) {
 							aStringArray1[var9] = var10;

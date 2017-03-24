@@ -1195,7 +1195,7 @@ public final class Client extends GameShell {
 								if (FloorUnderlayDef.staticCacheableSub4_1 == null) {
 									Static.staticStream3.position = 0;
 									var9 = Static.staticStream3.readUByte();
-									var10 = Static.staticStream3.method370();
+									var10 = Static.staticStream3.readUShort();
 									int var24 = Static.staticStream3.readUByte();
 									var12 = Static.staticStream3.readInt();
 									long var17 = (var9 << 16) + var10;

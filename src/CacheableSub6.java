@@ -28,7 +28,7 @@ public class CacheableSub6 extends Cacheable {
 
 	void method527(ByteBuf var1, int var2) {
 		if (var2 == 1) {
-			var1.method370();
+			var1.readUShort();
 		} else if (var2 == 2) {
 			anInt514 = var1.readUByte();
 		} else if (var2 == 3) {
@@ -36,7 +36,7 @@ public class CacheableSub6 extends Cacheable {
 		} else if (var2 == 4) {
 			anInt516 = 0;
 		} else if (var2 == 5) {
-			anInt513 = var1.method370();
+			anInt513 = var1.readUShort();
 		} else if (var2 == 6) {
 			var1.readUByte();
 		} else if (var2 == 7) {
@@ -44,7 +44,7 @@ public class CacheableSub6 extends Cacheable {
 		} else if (var2 == 8) {
 			anInt520 = var1.method338();
 		} else if (var2 == 11) {
-			anInt516 = var1.method370();
+			anInt516 = var1.readUShort();
 		} else if (var2 == 14) {
 			anInt522 = var1.readUByte();
 		} else if (var2 == 15) {

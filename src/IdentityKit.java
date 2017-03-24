@@ -97,7 +97,7 @@ public class IdentityKit extends Cacheable {
 				anIntArray103 = new int[var4];
 
 				for (var3 = 0; var3 < var4; var3++) {
-					anIntArray103[var3] = var1.method370();
+					anIntArray103[var3] = var1.readUShort();
 				}
 			} else if (var2 == 3) {
 				aBool54 = true;
@@ -107,8 +107,8 @@ public class IdentityKit extends Cacheable {
 				aShortArray5 = new short[var4];
 
 				for (var3 = 0; var3 < var4; var3++) {
-					aShortArray4[var3] = (short) var1.method370();
-					aShortArray5[var3] = (short) var1.method370();
+					aShortArray4[var3] = (short) var1.readUShort();
+					aShortArray5[var3] = (short) var1.readUShort();
 				}
 			} else if (var2 == 41) {
 				var4 = var1.readUByte();
@@ -116,11 +116,11 @@ public class IdentityKit extends Cacheable {
 				aShortArray2 = new short[var4];
 
 				for (var3 = 0; var3 < var4; var3++) {
-					aShortArray3[var3] = (short) var1.method370();
-					aShortArray2[var3] = (short) var1.method370();
+					aShortArray3[var3] = (short) var1.readUShort();
+					aShortArray2[var3] = (short) var1.readUShort();
 				}
 			} else if (var2 >= 60 && var2 < 70) {
-				anIntArray104[var2 - 60] = var1.method370();
+				anIntArray104[var2 - 60] = var1.readUShort();
 			}
 		}
 

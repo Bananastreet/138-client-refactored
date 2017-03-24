@@ -12,7 +12,7 @@ public class Class61 {
 
 	public Class61(ByteBuf var1, boolean var2) {
 		aByte2 = var1.readByte();
-		anInt212 = var1.method370();
+		anInt212 = var1.readUShort();
 		anInt213 = var1.readInt();
 		anInt214 = var1.readInt();
 		anInt215 = var1.readInt();
@@ -40,7 +40,7 @@ public class Class61 {
 					}
 
 					--var1.position;
-					if (var1.method370() != 0) {
+					if (var1.readUShort() != 0) {
 						throw new IllegalStateException("");
 					}
 

@@ -212,25 +212,25 @@ public class NpcDefinition extends Cacheable {
 			anIntArray114 = new int[var3];
 
 			for (var4 = 0; var4 < var3; var4++) {
-				anIntArray114[var4] = buffer.method370();
+				anIntArray114[var4] = buffer.readUShort();
 			}
 		} else if (opcode == 2) {
 			aString35 = buffer.readString();
 		} else if (opcode == 12) {
 			anInt538 = buffer.readUByte();
 		} else if (opcode == 13) {
-			anInt539 = -buffer.method370();
+			anInt539 = -buffer.readUShort();
 		} else if (opcode == 14) {
-			anInt550 = buffer.method370();
+			anInt550 = buffer.readUShort();
 		} else if (opcode == 15) {
-			anInt552 = buffer.method370();
+			anInt552 = buffer.readUShort();
 		} else if (opcode == 16) {
-			anInt543 = -buffer.method370();
+			anInt543 = -buffer.readUShort();
 		} else if (opcode == 17) {
-			anInt550 = buffer.method370();
-			anInt540 = buffer.method370();
-			anInt536 = buffer.method370();
-			anInt542 = -buffer.method370();
+			anInt550 = buffer.readUShort();
+			anInt540 = buffer.readUShort();
+			anInt536 = buffer.readUShort();
+			anInt542 = -buffer.readUShort();
 		} else if (opcode >= 30 && opcode < 35) {
 			aStringArray10[opcode - 30] = buffer.readString();
 			if (aStringArray10[opcode - 30].equalsIgnoreCase("Hidden")) {
@@ -242,8 +242,8 @@ public class NpcDefinition extends Cacheable {
 			aShortArray14 = new short[var3];
 
 			for (var4 = 0; var4 < var3; var4++) {
-				aShortArray15[var4] = (short) buffer.method370();
-				aShortArray14[var4] = (short) buffer.method370();
+				aShortArray15[var4] = (short) buffer.readUShort();
+				aShortArray14[var4] = (short) buffer.readUShort();
 			}
 		} else if (opcode == 41) {
 			var3 = buffer.readUByte();
@@ -251,24 +251,24 @@ public class NpcDefinition extends Cacheable {
 			aShortArray17 = new short[var3];
 
 			for (var4 = 0; var4 < var3; var4++) {
-				aShortArray16[var4] = (short) buffer.method370();
-				aShortArray17[var4] = (short) buffer.method370();
+				aShortArray16[var4] = (short) buffer.readUShort();
+				aShortArray17[var4] = (short) buffer.readUShort();
 			}
 		} else if (opcode == 60) {
 			var3 = buffer.readUByte();
 			anIntArray115 = new int[var3];
 
 			for (var4 = 0; var4 < var3; var4++) {
-				anIntArray115[var4] = buffer.method370();
+				anIntArray115[var4] = buffer.readUShort();
 			}
 		} else if (opcode == 93) {
 			aBool67 = false;
 		} else if (opcode == 95) {
-			anInt544 = buffer.method370();
+			anInt544 = buffer.readUShort();
 		} else if (opcode == 97) {
-			anInt535 = buffer.method370();
+			anInt535 = buffer.readUShort();
 		} else if (opcode == 98) {
-			anInt541 = buffer.method370();
+			anInt541 = buffer.readUShort();
 		} else if (opcode == 99) {
 			aBool68 = true;
 		} else if (opcode == 100) {
@@ -276,9 +276,9 @@ public class NpcDefinition extends Cacheable {
 		} else if (opcode == 101) {
 			anInt547 = buffer.readByte();
 		} else if (opcode == 102) {
-			anInt548 = buffer.method370();
+			anInt548 = buffer.readUShort();
 		} else if (opcode == 103) {
-			anInt549 = buffer.method370() * 863838077;
+			anInt549 = buffer.readUShort() * 863838077;
 		} else if (opcode != 106 && opcode != 118) {
 			if (opcode == 107) {
 				aBool69 = false;
@@ -288,19 +288,19 @@ public class NpcDefinition extends Cacheable {
 				aBool71 = true;
 			}
 		} else {
-			anInt545 = buffer.method370();
+			anInt545 = buffer.readUShort();
 			if (anInt545 == '\uffff') {
 				anInt545 = -1;
 			}
 
-			anInt551 = buffer.method370();
+			anInt551 = buffer.readUShort();
 			if (anInt551 == '\uffff') {
 				anInt551 = -1;
 			}
 
 			var3 = -1;
 			if (opcode == 118) {
-				var3 = buffer.method370();
+				var3 = buffer.readUShort();
 				if (var3 == '\uffff') {
 					var3 = -1;
 				}
@@ -310,7 +310,7 @@ public class NpcDefinition extends Cacheable {
 			anIntArray116 = new int[2 + var4];
 
 			for (int var5 = 0; var5 <= var4; var5++) {
-				anIntArray116[var5] = buffer.method370();
+				anIntArray116[var5] = buffer.readUShort();
 				if (anIntArray116[var5] == '\uffff') {
 					anIntArray116[var5] = -1;
 				}

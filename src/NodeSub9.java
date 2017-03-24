@@ -188,7 +188,7 @@ public class NodeSub9 extends Node {
 	}
 
 	NodeSub9(ByteBuf var1) {
-		anInt244 = var1.method370();
+		anInt244 = var1.readUShort();
 		aBool26 = var1.readUByte() == 1;
 		int var2 = var1.readUByte();
 		if (var2 >= 1 && var2 <= 4) {
@@ -196,7 +196,7 @@ public class NodeSub9 extends Node {
 
 			int var3;
 			for (var3 = 0; var3 < var2; var3++) {
-				anIntArray60[var3] = var1.method370();
+				anIntArray60[var3] = var1.readUShort();
 			}
 
 			if (var2 > 1) {

@@ -306,7 +306,7 @@ public abstract class FileStore {
 			if (var4 >= 7) {
 				anInt200 = var3.method337();
 			} else {
-				anInt200 = var3.method370();
+				anInt200 = var3.readUShort();
 			}
 
 			int var7 = 0;
@@ -322,7 +322,7 @@ public abstract class FileStore {
 				}
 			} else {
 				for (var2 = 0; var2 < anInt200; var2++) {
-					anIntArray50[var2] = var7 += var3.method370();
+					anIntArray50[var2] = var7 += var3.readUShort();
 					if (anIntArray50[var2] > var5) {
 						var5 = anIntArray50[var2];
 					}
@@ -354,7 +354,7 @@ public abstract class FileStore {
 			}
 
 			for (var2 = 0; var2 < anInt200; var2++) {
-				anIntArray53[anIntArray50[var2]] = var3.method370();
+				anIntArray53[anIntArray50[var2]] = var3.readUShort();
 			}
 
 			int var8;
@@ -388,7 +388,7 @@ public abstract class FileStore {
 					anIntArrayArray9[var10] = new int[var11];
 
 					for (var8 = 0; var8 < var11; var8++) {
-						var12 = anIntArrayArray9[var10][var8] = var7 += var3.method370();
+						var12 = anIntArrayArray9[var10][var8] = var7 += var3.readUShort();
 						if (var12 > var9) {
 							var9 = var12;
 						}

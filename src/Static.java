@@ -306,10 +306,10 @@ public class Static {
 				ByteBuf var4 = new ByteBuf(var3);
 				var4.position = var4.buf.length - 12;
 				int var6 = var4.readInt();
-				var1.anInt398 = var4.method370();
-				var1.anInt399 = var4.method370();
-				var1.anInt401 = var4.method370();
-				var1.anInt400 = var4.method370();
+				var1.anInt398 = var4.readUShort();
+				var1.anInt399 = var4.readUShort();
+				var1.anInt401 = var4.readUShort();
+				var1.anInt400 = var4.readUShort();
 				var4.position = 0;
 				var4.method334();
 				var1.anIntArray84 = new int[var6];
@@ -318,7 +318,7 @@ public class Static {
 
 				int var2;
 				for (int var5 = 0; var4.position < var4.buf.length - 12; var1.anIntArray84[var5++] = var2) {
-					var2 = var4.method370();
+					var2 = var4.readUShort();
 					if (var2 == 3) {
 						var1.aStringArray5[var5] = var4.readString();
 					} else if (var2 < 100 && var2 != 21 && var2 != 38 && var2 != 39) {
@@ -11750,7 +11750,7 @@ public class Static {
 
 		int var151;
 		if ((var3 & 0x8) != 0) {
-			var7 = var0.method370();
+			var7 = var0.readUShort();
 			if (var7 == '\uffff') {
 				var7 = -1;
 			}
@@ -11760,7 +11760,7 @@ public class Static {
 		}
 
 		if ((var3 & 0x10) != 0) {
-			player.anInt600 = var0.method370();
+			player.anInt600 = var0.readUShort();
 			if (player.anInt600 == '\uffff') {
 				player.anInt600 = -1;
 			}
@@ -11828,7 +11828,7 @@ public class Static {
 		}
 
 		if ((var3 & 0x1) != 0) {
-			player.anInt608 = var0.method370();
+			player.anInt608 = var0.readUShort();
 			if (player.anInt632 == 0) {
 				player.anInt630 = player.anInt608;
 				player.anInt608 = -1;
@@ -11836,7 +11836,7 @@ public class Static {
 		}
 
 		if ((var3 & 0x4) != 0) {
-			var7 = var0.method370();
+			var7 = var0.readUShort();
 			Class48[] var17 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6, Class48.staticClass48_2,
 					Class48.staticClass48_1, Class48.staticClass48_5, Class48.staticClass48_3 };
 			Class48 var191 = (Class48) staticMethod233(var17, var0.readUByte());
@@ -11880,7 +11880,7 @@ public class Static {
 		}
 
 		if ((var3 & 0x200) != 0) {
-			player.anInt596 = var0.method370();
+			player.anInt596 = var0.readUShort();
 			var7 = var0.readInt();
 			player.anInt620 = var7 >> 16;
 			player.anInt619 = Client.staticInt166 + (var7 & 0xffff);
@@ -11901,9 +11901,9 @@ public class Static {
 			player.anInt623 = var0.readByte();
 			player.anInt617 = var0.readByte();
 			player.anInt624 = var0.readByte();
-			player.anInt625 = var0.method370() + Client.staticInt166;
-			player.anInt604 = var0.method370() + Client.staticInt166;
-			player.anInt627 = var0.method370() * -1576115929;
+			player.anInt625 = var0.readUShort() + Client.staticInt166;
+			player.anInt604 = var0.readUShort() + Client.staticInt166;
+			player.anInt627 = var0.readUShort() * -1576115929;
 			if (player.aBool82) {
 				player.anInt606 += player.anInt700;
 				player.anInt623 += player.anInt692;
@@ -12656,7 +12656,7 @@ public class Static {
 					Client.staticInt191 = Client.inBuffer.method472();
 					Class56.gameConnection.read(Client.inBuffer.buf, 0, 2);
 					Client.inBuffer.position = 0;
-					Client.staticInt190 = Client.inBuffer.method370();
+					Client.staticInt190 = Client.inBuffer.readUShort();
 
 					try {
 						Client var18 = Client.staticGame1;
@@ -12683,7 +12683,7 @@ public class Static {
 						Client.inBuffer.position = 0;
 						Class56.gameConnection.read(Client.inBuffer.buf, 0, 2);
 						Client.inBuffer.position = 0;
-						FileOnDisk.staticInt37 = Client.inBuffer.method370();
+						FileOnDisk.staticInt37 = Client.inBuffer.readUShort();
 						Client.loginStage = 12;
 					}
 
@@ -12722,7 +12722,7 @@ public class Static {
 
 							Class56.gameConnection.read(Client.inBuffer.buf, 0, 2);
 							Client.inBuffer.position = 0;
-							Client.staticInt190 = Client.inBuffer.method370();
+							Client.staticInt190 = Client.inBuffer.readUShort();
 						}
 
 						if (Class56.gameConnection.available() >= Client.staticInt190) {
@@ -16651,13 +16651,13 @@ public class Static {
 				byte[] var4 = Class2.staticClass3_1.method11();
 				if (var4 != null) {
 					ByteBuf var1 = new ByteBuf(var4);
-					Class2.staticInt2 = var1.method370();
+					Class2.staticInt2 = var1.readUShort();
 					Class2.staticClass2Array1 = new Class2[Class2.staticInt2];
 
 					Class2 var3;
 					for (int var2 = 0; var2 < Class2.staticInt2; var3.anInt2 = var2++) {
 						var3 = Class2.staticClass2Array1[var2] = new Class2();
-						var3.anInt4 = var1.method370();
+						var3.anInt4 = var1.readUShort();
 						var3.anInt3 = var1.readInt();
 						var3.aString1 = var1.readString();
 						var3.aString2 = var1.readString();
@@ -17687,7 +17687,7 @@ public class Static {
 		if (!Client.staticBool37) {
 			var3 = Client.inBuffer.method372();
 			var5 = Client.inBuffer.method355();
-			var2 = Client.inBuffer.method370();
+			var2 = Client.inBuffer.readUShort();
 			Class61.staticIntArrayArray8 = new int[var2][4];
 
 			for (var1 = 0; var1 < var2; var1++) {
@@ -17730,8 +17730,8 @@ public class Static {
 			staticMethod195(var5, var3);
 		} else {
 			var3 = Client.inBuffer.method355();
-			var5 = Client.inBuffer.method370();
-			var2 = Client.inBuffer.method370();
+			var5 = Client.inBuffer.readUShort();
+			var2 = Client.inBuffer.readUShort();
 			Client.inBuffer.method475();
 
 			for (var1 = 0; var1 < 4; var1++) {
@@ -17900,7 +17900,7 @@ public class Static {
 
 					Class56.gameConnection.read(Client.inBuffer.buf, 0, 2);
 					Client.inBuffer.position = 0;
-					Client.staticInt190 = Client.inBuffer.method370();
+					Client.staticInt190 = Client.inBuffer.readUShort();
 					var44 -= 2;
 				}
 
@@ -17946,7 +17946,7 @@ public class Static {
 					Client.staticBool28 = true;
 					staticInt101 = Client.inBuffer.readUByte();
 					DataClass3.staticInt72 = Client.inBuffer.readUByte();
-					DataClass10.staticInt31 = Client.inBuffer.method370();
+					DataClass10.staticInt31 = Client.inBuffer.readUShort();
 					Class28.staticInt71 = Client.inBuffer.readUByte();
 					Class61.staticInt146 = Client.inBuffer.readUByte();
 					if (Class61.staticInt146 >= 100) {
@@ -17973,9 +17973,9 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 88) {
-					var45 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
 					var2 = Client.inBuffer.readUByte();
-					var3 = Client.inBuffer.method370();
+					var3 = Client.inBuffer.readUShort();
 					staticMethod311(var45, var2, var3);
 					Client.staticInt191 = -1;
 					return true;
@@ -18012,8 +18012,8 @@ public class Static {
 
 				Widget var4;
 				if (Client.staticInt191 == 68) {
-					var45 = Client.inBuffer.method370();
-					var2 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
+					var2 = Client.inBuffer.readUShort();
 					var3 = Client.inBuffer.method378();
 					var4 = staticMethod8(var3);
 					var4.anInt336 = var45 + (var2 << 16);
@@ -18025,8 +18025,8 @@ public class Static {
 				KeyFocusListener var53;
 				if (Client.staticInt191 == 24) {
 					var45 = Client.staticInt190 + Client.inBuffer.position;
-					var2 = Client.inBuffer.method370();
-					var3 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.readUShort();
+					var3 = Client.inBuffer.readUShort();
 					if (var2 != Client.staticInt263) {
 						Client.staticInt263 = var2;
 						staticMethod93(false);
@@ -18041,7 +18041,7 @@ public class Static {
 					KeyFocusListener var60;
 					for (; var3-- > 0; var60.aBool50 = true) {
 						var48 = Client.inBuffer.readInt();
-						var5 = Client.inBuffer.method370();
+						var5 = Client.inBuffer.readUShort();
 						var6 = Client.inBuffer.readUByte();
 						var60 = (KeyFocusListener) Client.staticHashTable5.method149(var48);
 						if (var60 != null && var60.anInt384 != var5) {
@@ -18067,8 +18067,8 @@ public class Static {
 
 					while (Client.inBuffer.position < var45) {
 						var48 = Client.inBuffer.readInt();
-						var5 = Client.inBuffer.method370();
-						var6 = Client.inBuffer.method370();
+						var5 = Client.inBuffer.readUShort();
+						var6 = Client.inBuffer.readUShort();
 						var58 = Client.inBuffer.readInt();
 
 						for (var8 = var5; var8 <= var6; var8++) {
@@ -18247,7 +18247,7 @@ public class Static {
 
 				if (Client.staticInt191 == 156) {
 					var45 = Client.inBuffer.readInt();
-					var2 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.readUShort();
 					if (var45 < -70000) {
 						var2 += '\u8000';
 					}
@@ -18266,7 +18266,7 @@ public class Static {
 					}
 
 					staticMethod162(var2);
-					var48 = Client.inBuffer.method370();
+					var48 = Client.inBuffer.readUShort();
 
 					for (var5 = 0; var5 < var48; var5++) {
 						var6 = Client.inBuffer.method346();
@@ -18320,7 +18320,7 @@ public class Static {
 				boolean var66;
 				if (Client.staticInt191 == 237) {
 					var1 = Client.inBuffer.readString();
-					var12 = Client.inBuffer.method370();
+					var12 = Client.inBuffer.readUShort();
 					var14 = Client.inBuffer.readTriByte();
 					Class48[] var611 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
 							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
@@ -18363,7 +18363,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 201) {
-					var45 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
 					var2 = Client.inBuffer.method378();
 					var47 = staticMethod8(var2);
 					if (var47 != null && var47.anInt296 == 0) {
@@ -18394,7 +18394,7 @@ public class Static {
 						var109 = Client.inBuffer.readUByte() == 1;
 						var62 = Client.inBuffer.readString();
 						var57 = Client.inBuffer.readString();
-						var48 = Client.inBuffer.method370();
+						var48 = Client.inBuffer.readUShort();
 						var5 = Client.inBuffer.readUByte();
 						var6 = Client.inBuffer.readUByte();
 						boolean var661 = (var6 & 0x2) != 0;
@@ -18512,7 +18512,7 @@ public class Static {
 				if (Client.staticInt191 == 208) {
 					Class2 var65 = new Class2();
 					var65.aString1 = Client.inBuffer.readString();
-					var65.anInt4 = Client.inBuffer.method370();
+					var65.anInt4 = Client.inBuffer.readUShort();
 					var2 = Client.inBuffer.readInt();
 					var65.anInt3 = var2;
 					staticMethod396(45);
@@ -18531,7 +18531,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 28) {
-					var45 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
 					Client.staticInt263 = var45;
 					staticMethod93(false);
 					staticMethod393(var45);
@@ -18614,7 +18614,7 @@ public class Static {
 
 				if (Client.staticInt191 == 60) {
 					var45 = Client.inBuffer.method358();
-					var2 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.readUShort();
 					if (var2 == '\uffff') {
 						var2 = -1;
 					}
@@ -18658,7 +18658,7 @@ public class Static {
 					Client.staticBool28 = true;
 					TaskManager.staticInt40 = Client.inBuffer.readUByte();
 					staticInt137 = Client.inBuffer.readUByte();
-					ObjectDefinition.staticInt322 = Client.inBuffer.method370();
+					ObjectDefinition.staticInt322 = Client.inBuffer.readUShort();
 					staticInt17 = Client.inBuffer.readUByte();
 					staticInt150 = Client.inBuffer.readUByte();
 					if (staticInt150 >= 100) {
@@ -18843,7 +18843,7 @@ public class Static {
 				byte var75;
 				if (Client.staticInt191 == 155) {
 					var1 = Client.inBuffer.readString();
-					var2 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.readUShort();
 					var75 = Client.inBuffer.readByte();
 					var66 = false;
 					if (var75 == -128) {
@@ -19104,7 +19104,7 @@ public class Static {
 				if (Client.staticInt191 == 167) {
 					decodeMapRegion(false);
 					Client.inBuffer.method472();
-					var45 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
 					staticMethod313(Client.inBuffer, var45);
 					Client.staticInt191 = -1;
 					return true;
@@ -19256,7 +19256,7 @@ public class Static {
 				if (Client.staticInt191 == 238) {
 					var1 = Client.inBuffer.readString();
 					var12 = Client.inBuffer.readLong();
-					var14 = Client.inBuffer.method370();
+					var14 = Client.inBuffer.readUShort();
 					var23 = Client.inBuffer.readTriByte();
 					Class48[] var95 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
 							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
@@ -19322,7 +19322,7 @@ public class Static {
 
 					var2 = Client.inBuffer.method362();
 					var3 = Client.inBuffer.readInt();
-					var48 = Client.inBuffer.method370();
+					var48 = Client.inBuffer.readUShort();
 					if (var48 == '\uffff') {
 						var48 = -1;
 					}
@@ -19344,7 +19344,7 @@ public class Static {
 				if (Client.staticInt191 == 77) {
 					decodeMapRegion(true);
 					Client.inBuffer.method472();
-					var45 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
 					staticMethod313(Client.inBuffer, var45);
 					Client.staticInt191 = -1;
 					return true;
@@ -19409,7 +19409,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 76) {
-					var45 = Client.inBuffer.method370();
+					var45 = Client.inBuffer.readUShort();
 					var2 = Client.inBuffer.readUByte();
 					var3 = Client.inBuffer.method354();
 					var53 = (KeyFocusListener) Client.staticHashTable5.method149(var3);
@@ -19450,7 +19450,7 @@ public class Static {
 						var97[var5] = new NodeSub1();
 						var97[var5].aString15 = Client.inBuffer.readString();
 						var97[var5].aString16 = staticMethod111(var97[var5].aString15, staticClass53_1);
-						var97[var5].anInt217 = Client.inBuffer.method370();
+						var97[var5].anInt217 = Client.inBuffer.readUShort();
 						var97[var5].aByte3 = Client.inBuffer.readByte();
 						Client.inBuffer.readString();
 						if (var97[var5].aString15.equals(AbstractClass2Sub1.staticPlayer1.aString40)) {
@@ -19526,7 +19526,7 @@ public class Static {
 				if (Client.staticInt191 == 161) {
 					Client.staticInt255 = Client.inBuffer.readUByte();
 					if (Client.staticInt255 == 1) {
-						Client.staticInt172 = Client.inBuffer.method370();
+						Client.staticInt172 = Client.inBuffer.readUShort();
 					}
 
 					if (Client.staticInt255 >= 2 && Client.staticInt255 <= 6) {
@@ -19556,13 +19556,13 @@ public class Static {
 						}
 
 						Client.staticInt255 = 2;
-						Client.staticInt174 = Client.inBuffer.method370();
-						Client.staticInt175 = Client.inBuffer.method370();
+						Client.staticInt174 = Client.inBuffer.readUShort();
+						Client.staticInt175 = Client.inBuffer.readUShort();
 						Client.staticInt176 = Client.inBuffer.readUByte();
 					}
 
 					if (Client.staticInt255 == 10) {
-						Client.staticInt193 = Client.inBuffer.method370();
+						Client.staticInt193 = Client.inBuffer.readUShort();
 					}
 
 					Client.staticInt191 = -1;
@@ -19752,7 +19752,7 @@ public class Static {
 				}
 
 				if (Client.staticInt191 == 31) {
-					Client.staticInt170 = Client.inBuffer.method370() * 30;
+					Client.staticInt170 = Client.inBuffer.readUShort() * 30;
 					Client.staticInt283 = Client.staticInt274 * 2073400987;
 					Client.staticInt191 = -1;
 					return true;
@@ -19790,7 +19790,7 @@ public class Static {
 
 				if (Client.staticInt191 == 79) {
 					var45 = Client.inBuffer.readInt();
-					var2 = Client.inBuffer.method370();
+					var2 = Client.inBuffer.readUShort();
 					if (var45 < -70000) {
 						var2 += '\u8000';
 					}
@@ -19804,7 +19804,7 @@ public class Static {
 					for (; Client.inBuffer.position < Client.staticInt190; staticMethod104(var2, var48, var5 - 1,
 							var6)) {
 						var48 = Client.inBuffer.method379();
-						var5 = Client.inBuffer.method370();
+						var5 = Client.inBuffer.readUShort();
 						var6 = 0;
 						if (var5 != 0) {
 							var6 = Client.inBuffer.readUByte();
@@ -20620,7 +20620,7 @@ public class Static {
 		if (Client.staticInt191 == 97) {
 			var14 = Client.inBuffer.method355();
 			var2 = Client.inBuffer.method353();
-			var3 = Client.inBuffer.method370();
+			var3 = Client.inBuffer.readUShort();
 			byte var29 = Client.inBuffer.method350();
 			var4 = Client.inBuffer.method353();
 			byte var31 = Client.inBuffer.method368();
@@ -20768,9 +20768,9 @@ public class Static {
 			var14 = Client.inBuffer.readUByte();
 			var2 = staticInt122 + (var14 >> 4 & 0x7);
 			var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-			var32 = Client.inBuffer.method370();
-			var4 = Client.inBuffer.method370();
-			var311 = Client.inBuffer.method370();
+			var32 = Client.inBuffer.readUShort();
+			var4 = Client.inBuffer.readUShort();
+			var311 = Client.inBuffer.readUShort();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 				Class39 var38 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 				if (var38 != null) {
@@ -20791,11 +20791,11 @@ public class Static {
 			var32 = var2 + Client.inBuffer.readByte();
 			var4 = var3 + Client.inBuffer.readByte();
 			var311 = Client.inBuffer.method364();
-			var291 = Client.inBuffer.method370();
+			var291 = Client.inBuffer.readUShort();
 			var30 = Client.inBuffer.readUByte() * 4;
 			var10 = Client.inBuffer.readUByte() * 4;
-			var15 = Client.inBuffer.method370();
-			var18 = Client.inBuffer.method370();
+			var15 = Client.inBuffer.readUShort();
+			var18 = Client.inBuffer.readUShort();
 			var8 = Client.inBuffer.readUByte();
 			var9 = Client.inBuffer.readUByte();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104 && var32 >= 0 && var4 >= 0 && var32 < 104
@@ -20847,7 +20847,7 @@ public class Static {
 					var14 = Client.inBuffer.readUByte();
 					var2 = staticInt122 + (var14 >> 4 & 0x7);
 					var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-					var32 = Client.inBuffer.method370();
+					var32 = Client.inBuffer.readUShort();
 					var4 = Client.inBuffer.readUByte();
 					var311 = var4 >> 4 & 0xf;
 					var291 = var4 & 0x7;
@@ -20874,9 +20874,9 @@ public class Static {
 						var14 = Client.inBuffer.readUByte();
 						var2 = staticInt122 + (var14 >> 4 & 0x7);
 						var3 = ChatMessage.staticInt331 + (var14 & 0x7);
-						var32 = Client.inBuffer.method370();
+						var32 = Client.inBuffer.readUShort();
 						var4 = Client.inBuffer.readUByte();
-						var311 = Client.inBuffer.method370();
+						var311 = Client.inBuffer.readUShort();
 						if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
 							var2 = 64 + var2 * 128;
 							var3 = var3 * 128 + 64;
@@ -21922,7 +21922,7 @@ public class Static {
 			}
 
 			if ((var5 & 0x10) != 0) {
-				var1.anInt600 = Client.inBuffer.method370();
+				var1.anInt600 = Client.inBuffer.readUShort();
 				if (var1.anInt600 == '\uffff') {
 					var1.anInt600 = -1;
 				}
@@ -22267,7 +22267,7 @@ public class Static {
 								}
 
 								var261 = var27;
-								if (var27.aChar2 != 115) {
+								if (var27.valType != 115) {
 									;
 								}
 
@@ -22281,7 +22281,7 @@ public class Static {
 								}
 
 								if (var261 != null) {
-									staticStringArray1[++staticInt148 - 1] = var261.aString34;
+									staticStringArray1[++staticInt148 - 1] = var261.defaultString;
 								}
 
 								var8 = 1;
@@ -22306,7 +22306,7 @@ public class Static {
 								}
 
 								var261 = var27;
-								if (var27.keyType == var14 && var19 == var27.aChar2) {
+								if (var27.keyType == var14 && var19 == var27.valType) {
 									for (var31 = 0; var31 < var261.anInt524; var31++) {
 										if (var261.anIntArray112[var31] == var43) {
 											if (var19 == 115) {
@@ -22324,9 +22324,9 @@ public class Static {
 
 									if (var261 != null) {
 										if (var19 == 115) {
-											staticStringArray1[++staticInt148 - 1] = var261.aString34;
+											staticStringArray1[++staticInt148 - 1] = var261.defaultString;
 										} else {
-											staticIntArray16[++staticInt27 - 1] = var261.anInt523;
+											staticIntArray16[++staticInt27 - 1] = var261.defaultInt;
 										}
 									}
 
@@ -24859,32 +24859,32 @@ public class Static {
 	static void staticMethod385(byte[] var0) {
 		ByteBuf var1 = new ByteBuf(var0);
 		var1.position = var0.length - 2;
-		staticInt143 = var1.method370();
+		staticInt143 = var1.readUShort();
 		NodeSub20.staticIntArray126 = new int[staticInt143];
 		staticIntArray69 = new int[staticInt143];
 		staticIntArray72 = new int[staticInt143];
 		staticIntArray71 = new int[staticInt143];
 		GameCanvas.staticByteArrayArray2 = new byte[staticInt143][];
 		var1.position = var0.length - 7 - staticInt143 * 8;
-		staticInt139 = var1.method370();
-		staticInt142 = var1.method370();
+		staticInt139 = var1.readUShort();
+		staticInt142 = var1.readUShort();
 		int var7 = (var1.readUByte() & 0xff) + 1;
 
 		int var3;
 		for (var3 = 0; var3 < staticInt143; var3++) {
-			NodeSub20.staticIntArray126[var3] = var1.method370();
+			NodeSub20.staticIntArray126[var3] = var1.readUShort();
 		}
 
 		for (var3 = 0; var3 < staticInt143; var3++) {
-			staticIntArray69[var3] = var1.method370();
+			staticIntArray69[var3] = var1.readUShort();
 		}
 
 		for (var3 = 0; var3 < staticInt143; var3++) {
-			staticIntArray72[var3] = var1.method370();
+			staticIntArray72[var3] = var1.readUShort();
 		}
 
 		for (var3 = 0; var3 < staticInt143; var3++) {
-			staticIntArray71[var3] = var1.method370();
+			staticIntArray71[var3] = var1.readUShort();
 		}
 
 		var1.position = var0.length - 7 - staticInt143 * 8 - (var7 - 1) * 3;

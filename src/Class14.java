@@ -18,8 +18,8 @@ public class Class14 {
 		anIntArray21 = new int[anInt34];
 
 		for (int var2 = 0; var2 < anInt34; var2++) {
-			anIntArray20[var2] = var1.method370();
-			anIntArray21[var2] = var1.method370();
+			anIntArray20[var2] = var1.readUShort();
+			anIntArray21[var2] = var1.readUShort();
 		}
 
 	}

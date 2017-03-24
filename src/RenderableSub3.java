@@ -69,8 +69,8 @@ public class RenderableSub3 extends Renderable {
 		ByteBuf var9 = new ByteBuf(var1);
 		ByteBuf var55 = new ByteBuf(var1);
 		var2.position = var1.length - 23;
-		int var33 = var2.method370();
-		int var13 = var2.method370();
+		int var33 = var2.readUShort();
+		int var13 = var2.readUShort();
 		int var14 = var2.readUByte();
 		int var12 = var2.readUByte();
 		int var49 = var2.readUByte();
@@ -78,11 +78,11 @@ public class RenderableSub3 extends Renderable {
 		int var51 = var2.readUByte();
 		int var15 = var2.readUByte();
 		int var18 = var2.readUByte();
-		int var19 = var2.method370();
-		int var20 = var2.method370();
-		int var21 = var2.method370();
-		int var23 = var2.method370();
-		int var38 = var2.method370();
+		int var19 = var2.readUShort();
+		int var20 = var2.readUShort();
+		int var21 = var2.readUShort();
+		int var23 = var2.readUShort();
+		int var38 = var2.readUShort();
 		int var24 = 0;
 		int var25 = 0;
 		int var26 = 0;
@@ -273,7 +273,7 @@ public class RenderableSub3 extends Renderable {
 		var55.position = var52;
 
 		for (var3 = 0; var3 < var13; var3++) {
-			aShortArray22[var3] = (short) var2.method370();
+			aShortArray22[var3] = (short) var2.readUShort();
 			if (var12 == 1) {
 				aByteArray26[var3] = var11.readByte();
 			}
@@ -291,7 +291,7 @@ public class RenderableSub3 extends Renderable {
 			}
 
 			if (var15 == 1) {
-				aShortArray24[var3] = (short) (var9.method370() - 1);
+				aShortArray24[var3] = (short) (var9.readUShort() - 1);
 			}
 
 			if (aByteArray28 != null && aShortArray24[var3] != -1) {
@@ -359,46 +359,46 @@ public class RenderableSub3 extends Renderable {
 		for (var10 = 0; var10 < var14; var10++) {
 			var29 = aByteArray30[var10] & 0xff;
 			if (var29 == 0) {
-				aShortArray25[var10] = (short) var2.method370();
-				aShortArray31[var10] = (short) var2.method370();
-				aShortArray23[var10] = (short) var2.method370();
+				aShortArray25[var10] = (short) var2.readUShort();
+				aShortArray31[var10] = (short) var2.readUShort();
+				aShortArray23[var10] = (short) var2.readUShort();
 			}
 
 			if (var29 == 1) {
-				aShortArray25[var10] = (short) var11.method370();
-				aShortArray31[var10] = (short) var11.method370();
-				aShortArray23[var10] = (short) var11.method370();
-				aShortArray26[var10] = (short) var6.method370();
-				aShortArray27[var10] = (short) var6.method370();
-				aShortArray28[var10] = (short) var6.method370();
-				aShortArray32[var10] = (short) var7.method370();
+				aShortArray25[var10] = (short) var11.readUShort();
+				aShortArray31[var10] = (short) var11.readUShort();
+				aShortArray23[var10] = (short) var11.readUShort();
+				aShortArray26[var10] = (short) var6.readUShort();
+				aShortArray27[var10] = (short) var6.readUShort();
+				aShortArray28[var10] = (short) var6.readUShort();
+				aShortArray32[var10] = (short) var7.readUShort();
 				aByteArray29[var10] = var8.readByte();
-				aShortArray29[var10] = (short) var9.method370();
+				aShortArray29[var10] = (short) var9.readUShort();
 			}
 
 			if (var29 == 2) {
-				aShortArray25[var10] = (short) var11.method370();
-				aShortArray31[var10] = (short) var11.method370();
-				aShortArray23[var10] = (short) var11.method370();
-				aShortArray26[var10] = (short) var6.method370();
-				aShortArray27[var10] = (short) var6.method370();
-				aShortArray28[var10] = (short) var6.method370();
-				aShortArray32[var10] = (short) var7.method370();
+				aShortArray25[var10] = (short) var11.readUShort();
+				aShortArray31[var10] = (short) var11.readUShort();
+				aShortArray23[var10] = (short) var11.readUShort();
+				aShortArray26[var10] = (short) var6.readUShort();
+				aShortArray27[var10] = (short) var6.readUShort();
+				aShortArray28[var10] = (short) var6.readUShort();
+				aShortArray32[var10] = (short) var7.readUShort();
 				aByteArray29[var10] = var8.readByte();
-				aShortArray29[var10] = (short) var9.method370();
-				aShortArray30[var10] = (short) var9.method370();
+				aShortArray29[var10] = (short) var9.readUShort();
+				aShortArray30[var10] = (short) var9.readUShort();
 			}
 
 			if (var29 == 3) {
-				aShortArray25[var10] = (short) var11.method370();
-				aShortArray31[var10] = (short) var11.method370();
-				aShortArray23[var10] = (short) var11.method370();
-				aShortArray26[var10] = (short) var6.method370();
-				aShortArray27[var10] = (short) var6.method370();
-				aShortArray28[var10] = (short) var6.method370();
-				aShortArray32[var10] = (short) var7.method370();
+				aShortArray25[var10] = (short) var11.readUShort();
+				aShortArray31[var10] = (short) var11.readUShort();
+				aShortArray23[var10] = (short) var11.readUShort();
+				aShortArray26[var10] = (short) var6.readUShort();
+				aShortArray27[var10] = (short) var6.readUShort();
+				aShortArray28[var10] = (short) var6.readUShort();
+				aShortArray32[var10] = (short) var7.readUShort();
 				aByteArray29[var10] = var8.readByte();
-				aShortArray29[var10] = (short) var9.method370();
+				aShortArray29[var10] = (short) var9.readUShort();
 			}
 		}
 
@@ -406,9 +406,9 @@ public class RenderableSub3 extends Renderable {
 		var10 = var2.readUByte();
 		if (var10 != 0) {
 			new Class25();
-			var2.method370();
-			var2.method370();
-			var2.method370();
+			var2.readUShort();
+			var2.readUShort();
+			var2.readUShort();
 			var2.readInt();
 		}
 
@@ -423,18 +423,18 @@ public class RenderableSub3 extends Renderable {
 		ByteBuf var11 = new ByteBuf(var1);
 		ByteBuf var9 = new ByteBuf(var1);
 		var5.position = var1.length - 18;
-		int var16 = var5.method370();
-		int var12 = var5.method370();
+		int var16 = var5.readUShort();
+		int var12 = var5.readUShort();
 		int var29 = var5.readUByte();
 		int var23 = var5.readUByte();
 		int var14 = var5.readUByte();
 		int var10 = var5.readUByte();
 		int var15 = var5.readUByte();
 		int var36 = var5.readUByte();
-		int var8 = var5.method370();
-		int var31 = var5.method370();
-		int var33 = var5.method370();
-		int var13 = var5.method370();
+		int var8 = var5.readUShort();
+		int var31 = var5.readUShort();
+		int var33 = var5.readUShort();
+		int var13 = var5.readUShort();
 		byte var3 = 0;
 		int var45 = var3 + var16;
 		int var20 = var45;
@@ -564,7 +564,7 @@ public class RenderableSub3 extends Renderable {
 		var9.position = var22;
 
 		for (var34 = 0; var34 < var12; var34++) {
-			aShortArray22[var34] = (short) var5.method370();
+			aShortArray22[var34] = (short) var5.readUShort();
 			if (var23 == 1) {
 				var37 = var6.readUByte();
 				if ((var37 & 0x1) == 1) {
@@ -655,9 +655,9 @@ public class RenderableSub3 extends Renderable {
 
 		for (var21 = 0; var21 < var29; var21++) {
 			aByteArray30[var21] = 0;
-			aShortArray25[var21] = (short) var5.method370();
-			aShortArray31[var21] = (short) var5.method370();
-			aShortArray23[var21] = (short) var5.method370();
+			aShortArray25[var21] = (short) var5.readUShort();
+			aShortArray31[var21] = (short) var5.readUShort();
+			aShortArray23[var21] = (short) var5.readUShort();
 		}
 
 		if (aByteArray28 != null) {
