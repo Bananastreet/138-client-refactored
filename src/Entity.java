@@ -1,4 +1,4 @@
-public abstract class Renderable extends Cacheable {
+public abstract class Entity extends Cacheable {
 
 	public int anInt421 = 1000;
 

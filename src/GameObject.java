@@ -1,4 +1,4 @@
-public class GameObject extends Renderable {
+public class GameObject extends Entity {
 
 	static int staticInt332;
 	int anInt648;
@@ -68,7 +68,7 @@ public class GameObject extends Renderable {
 		}
 	}
 
-	GameObject(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8, Renderable var9) {
+	GameObject(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8, Entity var9) {
 		anInt643 = var1;
 		anInt647 = var2;
 		anInt650 = var3;

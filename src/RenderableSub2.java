@@ -1,4 +1,4 @@
-public final class RenderableSub2 extends Renderable {
+public final class RenderableSub2 extends Entity {
 
 	static Rasterizer2DSub3[] staticRasterizer2DSub3Array8;
 	protected static String staticString35;

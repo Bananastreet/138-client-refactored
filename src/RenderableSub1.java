@@ -1,4 +1,4 @@
-public final class RenderableSub1 extends Renderable {
+public final class RenderableSub1 extends Entity {
 
 	boolean aBool73 = false;
 	double aDouble9;

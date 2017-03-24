@@ -260,7 +260,7 @@ public class SceneGraph {
 		return var4 == null ? null : var4.aClass31_1;
 	}
 
-	public void method101(int var1, int var2, int var3, int var4, Renderable var5, Renderable var6, int var7, int var8,
+	public void method101(int var1, int var2, int var3, int var4, Entity var5, Entity var6, int var7, int var8,
 			int var9, int var10) {
 		if (var5 != null || var6 != null) {
 			DataClass5 var11 = new DataClass5();
@@ -285,7 +285,7 @@ public class SceneGraph {
 
 	}
 
-	public boolean method102(int var1, int var2, int var3, int var4, int var5, Renderable var6, int var7, int var8,
+	public boolean method102(int var1, int var2, int var3, int var4, int var5, Entity var6, int var7, int var8,
 			boolean var9) {
 		if (var6 == null) {
 			return true;
@@ -449,8 +449,8 @@ public class SceneGraph {
 		return var4 != null && var4.aClass33_1 != null ? var4.aClass33_1 : null;
 	}
 
-	public void method113(int var1, int var2, int var3, int var4, Renderable var5, int var6, Renderable var7,
-			Renderable var8) {
+	public void method113(int var1, int var2, int var3, int var4, Entity var5, int var6, Entity var7,
+			Entity var8) {
 		DataClass1 var9 = new DataClass1();
 		var9.aRenderable1 = var5;
 		var9.anInt39 = var2 * 128 + 64;
@@ -1941,7 +1941,7 @@ public class SceneGraph {
 		}
 	}
 
-	public boolean method131(int var1, int var2, int var3, int var4, int var5, int var6, Renderable var7, int var8,
+	public boolean method131(int var1, int var2, int var3, int var4, int var5, int var6, Entity var7, int var8,
 			int var9, int var10) {
 		if (var7 == null) {
 			return true;
@@ -1952,7 +1952,7 @@ public class SceneGraph {
 		}
 	}
 
-	public void method132(int var1, int var2, int var3, int var4, Renderable var5, Renderable var6, int var7, int var8,
+	public void method132(int var1, int var2, int var3, int var4, Entity var5, Entity var6, int var7, int var8,
 			int var9, int var10, int var11, int var12) {
 		if (var5 != null) {
 			WallObject var14 = new WallObject();
@@ -1979,7 +1979,7 @@ public class SceneGraph {
 
 	}
 
-	public boolean method133(int var1, int var2, int var3, int var4, int var5, Renderable var6, int var7, int var8,
+	public boolean method133(int var1, int var2, int var3, int var4, int var5, Entity var6, int var7, int var8,
 			int var9, int var10, int var11, int var12) {
 		return var6 == null ? true
 				: method141(var1, var9, var10, var11 - var9 + 1, var12 - var10 + 1, var2, var3, var4, var6, var7, true,
@@ -2210,7 +2210,7 @@ public class SceneGraph {
 
 	}
 
-	public void method140(int var1, int var2, int var3, int var4, Renderable var5, int var6, int var7) {
+	public void method140(int var1, int var2, int var3, int var4, Entity var5, int var6, int var7) {
 		if (var5 != null) {
 			DataClass6 var8 = new DataClass6();
 			var8.aRenderable9 = var5;
@@ -2228,7 +2228,7 @@ public class SceneGraph {
 
 	}
 
-	boolean method141(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Renderable var9,
+	boolean method141(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Entity var9,
 			int var10, boolean var11, int var12, int var13) {
 		int var15;
 		for (int var20 = var2; var20 < var2 + var4; var20++) {

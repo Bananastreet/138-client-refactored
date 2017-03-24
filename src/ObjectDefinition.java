@@ -314,7 +314,7 @@ public class ObjectDefinition extends Cacheable {
 		}
 	}
 
-	public final Renderable method514(int var1, int var2, int[][] var3, int var4, int var5, int var6) {
+	public final Entity method514(int var1, int var2, int[][] var3, int var4, int var5, int var6) {
 		long var8;
 		if (anIntArray108 == null) {
 			var8 = (anInt483 << 10) + var2;
@@ -353,7 +353,7 @@ public class ObjectDefinition extends Cacheable {
 			}
 		}
 
-		return (Renderable) var7;
+		return (Entity) var7;
 	}
 
 	final RenderableSub3 method515(int var1, int var2) {

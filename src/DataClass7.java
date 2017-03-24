@@ -3,7 +3,7 @@ public final class DataClass7 {
 	int anInt116;
 	int anInt118;
 	int anInt119;
-	public Renderable aRenderable6;
+	public Entity aRenderable6;
 	int anInt120;
 	int anInt121;
 	int anInt122;

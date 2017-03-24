@@ -1,4 +1,4 @@
-public abstract class Mob extends Renderable {
+public abstract class Mob extends Entity {
 
 	int anInt591;
 	int anInt592;

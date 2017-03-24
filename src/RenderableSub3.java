@@ -1,4 +1,4 @@
-public class RenderableSub3 extends Renderable {
+public class RenderableSub3 extends Entity {
 
 	static int[] staticIntArray132 = new int[10000];
 	static int[] staticIntArray133 = new int[10000];

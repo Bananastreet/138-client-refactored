@@ -4,9 +4,9 @@ public final class WallObject {
 	int anInt130;
 	int anInt131;
 	int anInt132;
-	public Renderable aRenderable7;
+	public Entity aRenderable7;
 	int anInt133;
-	public Renderable aRenderable8;
+	public Entity aRenderable8;
 	int anInt134;
 	int anInt137;
 	public int anInt135 = 0;

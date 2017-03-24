@@ -1,4 +1,4 @@
-public final class Item extends Renderable {
+public final class Item extends Entity {
 
 	static Connection staticConnection4;
 	int anInt573;

@@ -1,4 +1,4 @@
-public class Model extends Renderable {
+public class Model extends Entity {
 
 	public static int staticInt339 = 0;
 	static byte[] staticByteArray8 = new byte[1];
