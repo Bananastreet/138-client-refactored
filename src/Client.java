@@ -1761,7 +1761,7 @@ public final class Client extends GameShell {
 					}
 				} else {
 					var4 = Class62.staticInt147;
-					var21 = NodeSub20.staticInt320;
+					var21 = DataNode4.staticInt320;
 					var211 = KeyboardHandler.staticInt84;
 					int var23 = NpcDefinition.staticInt324;
 					int var241 = 6116423;
@@ -1788,7 +1788,7 @@ public final class Client extends GameShell {
 					}
 
 					var261 = Class62.staticInt147;
-					var12 = NodeSub20.staticInt320;
+					var12 = DataNode4.staticInt320;
 					var13 = KeyboardHandler.staticInt84;
 					int var14 = NpcDefinition.staticInt324;
 

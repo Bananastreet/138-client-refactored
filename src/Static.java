@@ -6152,7 +6152,7 @@ public class Static {
 	}
 
 	static int staticMethod238(int var0, int var1) {
-		NodeSub20 var2 = (NodeSub20) NodeSub20.staticHashTable7.method149(var0);
+		DataNode4 var2 = (DataNode4) DataNode4.staticHashTable7.method149(var0);
 		if (var2 == null) {
 			return 0;
 		} else if (var1 == -1) {
@@ -6764,7 +6764,7 @@ public class Static {
 		Friend.staticScene1.method121(NodeSub4.staticInt155, var0, var1, false);
 		Client.staticBool30 = true;
 		Class62.staticInt147 = var5;
-		NodeSub20.staticInt320 = var3;
+		DataNode4.staticInt320 = var3;
 		KeyboardHandler.staticInt84 = var2;
 		NpcDefinition.staticInt324 = Client.staticInt252 * 15 + 22;
 	}
@@ -7648,7 +7648,7 @@ public class Static {
 				Rasterizer2DSub3 var9 = var4[var8] = new Rasterizer2DSub3();
 				var9.anInt676 = staticInt139;
 				var9.anInt679 = staticInt142;
-				var9.anInt681 = NodeSub20.staticIntArray126[var8];
+				var9.anInt681 = DataNode4.staticIntArray126[var8];
 				var9.anInt680 = staticIntArray69[var8];
 				var9.anInt677 = staticIntArray72[var8];
 				var9.anInt678 = staticIntArray71[var8];
@@ -7656,7 +7656,7 @@ public class Static {
 				var9.aByteArray35 = GameCanvas.staticByteArrayArray2[var8];
 			}
 
-			NodeSub20.staticIntArray126 = null;
+			DataNode4.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
@@ -9339,10 +9339,10 @@ public class Static {
 	}
 
 	static void staticMethod104(int var0, int var1, int var2, int var3) {
-		NodeSub20 var4 = (NodeSub20) NodeSub20.staticHashTable7.method149(var0);
+		DataNode4 var4 = (DataNode4) DataNode4.staticHashTable7.method149(var0);
 		if (var4 == null) {
-			var4 = new NodeSub20();
-			NodeSub20.staticHashTable7.method148(var4, var0);
+			var4 = new DataNode4();
+			DataNode4.staticHashTable7.method148(var4, var0);
 		}
 
 		if (var4.anIntArray82.length <= var1) {
@@ -9372,10 +9372,10 @@ public class Static {
 		if (var0 == null) {
 			return null;
 		} else {
-			Rasterizer2DSub2Sub1 var1 = new Rasterizer2DSub2Sub1(var0, NodeSub20.staticIntArray126,
+			Rasterizer2DSub2Sub1 var1 = new Rasterizer2DSub2Sub1(var0, DataNode4.staticIntArray126,
 					staticIntArray69, staticIntArray72, staticIntArray71, staticIntArray73,
 					GameCanvas.staticByteArrayArray2);
-			NodeSub20.staticIntArray126 = null;
+			DataNode4.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
@@ -10058,12 +10058,12 @@ public class Static {
 																				|| var3 > Class62.staticInt147
 																						+ KeyboardHandler.staticInt84
 																						+ 10
-																				|| var4 < NodeSub20.staticInt320 - 10
+																				|| var4 < DataNode4.staticInt320 - 10
 																				|| var4 > 10 + NpcDefinition.staticInt324
-																						+ NodeSub20.staticInt320) {
+																						+ DataNode4.staticInt320) {
 																			Client.staticBool30 = false;
 																			staticMethod327(Class62.staticInt147,
-																					NodeSub20.staticInt320,
+																					DataNode4.staticInt320,
 																					KeyboardHandler.staticInt84,
 																					NpcDefinition.staticInt324);
 																		}
@@ -10072,7 +10072,7 @@ public class Static {
 																	if (var2 == 1
 																			|| !staticBool18 && var2 == 4) {
 																		var3 = Class62.staticInt147;
-																		var4 = NodeSub20.staticInt320;
+																		var4 = DataNode4.staticInt320;
 																		var5 = KeyboardHandler.staticInt84;
 																		var6 = MouseHandler.staticInt99;
 																		var7 = MouseHandler.staticInt100;
@@ -10103,7 +10103,7 @@ public class Static {
 
 																		Client.staticBool30 = false;
 																		staticMethod327(Class62.staticInt147,
-																				NodeSub20.staticInt320,
+																				DataNode4.staticInt320,
 																				KeyboardHandler.staticInt84,
 																				NpcDefinition.staticInt324);
 																	}
@@ -11369,7 +11369,7 @@ public class Static {
 	}
 
 	static void staticMethod145() {
-		NodeSub20.staticHashTable7 = new HashTable(32);
+		DataNode4.staticHashTable7 = new HashTable(32);
 	}
 
 	static final boolean staticMethod146(int var0, int var1) {
@@ -12179,7 +12179,7 @@ public class Static {
 	}
 
 	static void staticMethod162(int var0) {
-		NodeSub20 var1 = (NodeSub20) NodeSub20.staticHashTable7.method149(var0);
+		DataNode4 var1 = (DataNode4) DataNode4.staticHashTable7.method149(var0);
 		if (var1 != null) {
 			for (int var2 = 0; var2 < var1.anIntArray82.length; var2++) {
 				var1.anIntArray82[var2] = -1;
@@ -13358,7 +13358,7 @@ public class Static {
 				Sprite var4 = var7[var3] = new Sprite();
 				var4.anInt673 = staticInt139;
 				var4.anInt674 = staticInt142;
-				var4.anInt675 = NodeSub20.staticIntArray126[var3];
+				var4.anInt675 = DataNode4.staticIntArray126[var3];
 				var4.anInt670 = staticIntArray69[var3];
 				var4.anInt672 = staticIntArray72[var3];
 				var4.anInt671 = staticIntArray71[var3];
@@ -13371,7 +13371,7 @@ public class Static {
 				}
 			}
 
-			NodeSub20.staticIntArray126 = null;
+			DataNode4.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
@@ -13630,13 +13630,13 @@ public class Static {
 			Rasterizer2DSub3 var3 = new Rasterizer2DSub3();
 			var3.anInt676 = staticInt139;
 			var3.anInt679 = staticInt142;
-			var3.anInt681 = NodeSub20.staticIntArray126[0];
+			var3.anInt681 = DataNode4.staticIntArray126[0];
 			var3.anInt680 = staticIntArray69[0];
 			var3.anInt677 = staticIntArray72[0];
 			var3.anInt678 = staticIntArray71[0];
 			var3.anIntArray155 = staticIntArray73;
 			var3.aByteArray35 = GameCanvas.staticByteArrayArray2[0];
-			NodeSub20.staticIntArray126 = null;
+			DataNode4.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
@@ -14359,7 +14359,7 @@ public class Static {
 		} else {
 			int var3;
 			int[] var4;
-			NodeSub20 var5;
+			DataNode4 var5;
 			int var6;
 			int var7;
 			int var8;
@@ -14369,7 +14369,7 @@ public class Static {
 				var6 = staticIntArray16[staticInt27 + 1];
 				var4 = staticIntArray16;
 				var7 = ++staticInt27 - 1;
-				var5 = (NodeSub20) NodeSub20.staticHashTable7.method149(var3);
+				var5 = (DataNode4) DataNode4.staticHashTable7.method149(var3);
 				if (var5 == null) {
 					var8 = -1;
 				} else if (var6 >= 0 && var6 < var5.anIntArray82.length) {
@@ -14386,7 +14386,7 @@ public class Static {
 				var6 = staticIntArray16[staticInt27 + 1];
 				var4 = staticIntArray16;
 				var7 = ++staticInt27 - 1;
-				var5 = (NodeSub20) NodeSub20.staticHashTable7.method149(var3);
+				var5 = (DataNode4) DataNode4.staticHashTable7.method149(var3);
 				if (var5 == null) {
 					var8 = 0;
 				} else if (var6 >= 0 && var6 < var5.anIntArray83.length) {
@@ -14446,7 +14446,7 @@ public class Static {
 				var6 = staticIntArray16[staticInt27 + 1];
 				var4 = staticIntArray16;
 				var7 = ++staticInt27 - 1;
-				var5 = (NodeSub20) NodeSub20.staticHashTable7.method149(var3);
+				var5 = (DataNode4) DataNode4.staticHashTable7.method149(var3);
 				if (var5 == null) {
 					var8 = -1;
 				} else if (var6 >= 0 && var6 < var5.anIntArray82.length) {
@@ -14504,7 +14504,7 @@ public class Static {
 				var6 = staticIntArray16[staticInt27 + 1];
 				var4 = staticIntArray16;
 				var7 = ++staticInt27 - 1;
-				var5 = (NodeSub20) NodeSub20.staticHashTable7.method149(var3);
+				var5 = (DataNode4) DataNode4.staticHashTable7.method149(var3);
 				if (var5 == null) {
 					var8 = 0;
 				} else if (var6 >= 0 && var6 < var5.anIntArray83.length) {
@@ -21024,13 +21024,13 @@ public class Static {
 			Rasterizer2DSub3 var3 = new Rasterizer2DSub3();
 			var3.anInt676 = staticInt139;
 			var3.anInt679 = staticInt142;
-			var3.anInt681 = NodeSub20.staticIntArray126[0];
+			var3.anInt681 = DataNode4.staticIntArray126[0];
 			var3.anInt680 = staticIntArray69[0];
 			var3.anInt677 = staticIntArray72[0];
 			var3.anInt678 = staticIntArray71[0];
 			var3.anIntArray155 = staticIntArray73;
 			var3.aByteArray35 = GameCanvas.staticByteArrayArray2[0];
-			NodeSub20.staticIntArray126 = null;
+			DataNode4.staticIntArray126 = null;
 			staticIntArray69 = null;
 			staticIntArray72 = null;
 			staticIntArray71 = null;
@@ -21041,7 +21041,7 @@ public class Static {
 	}
 
 	static void staticMethod281(int var0) {
-		NodeSub20 var1 = (NodeSub20) NodeSub20.staticHashTable7.method149(var0);
+		DataNode4 var1 = (DataNode4) DataNode4.staticHashTable7.method149(var0);
 		if (var1 != null) {
 			var1.method174();
 		}
@@ -24860,7 +24860,7 @@ public class Static {
 		ByteBuf var1 = new ByteBuf(var0);
 		var1.position = var0.length - 2;
 		staticInt143 = var1.readUShort();
-		NodeSub20.staticIntArray126 = new int[staticInt143];
+		DataNode4.staticIntArray126 = new int[staticInt143];
 		staticIntArray69 = new int[staticInt143];
 		staticIntArray72 = new int[staticInt143];
 		staticIntArray71 = new int[staticInt143];
@@ -24872,7 +24872,7 @@ public class Static {
 
 		int var3;
 		for (var3 = 0; var3 < staticInt143; var3++) {
-			NodeSub20.staticIntArray126[var3] = var1.readUShort();
+			DataNode4.staticIntArray126[var3] = var1.readUShort();
 		}
 
 		for (var3 = 0; var3 < staticInt143; var3++) {
@@ -24979,7 +24979,7 @@ public class Static {
 		Sprite var0 = new Sprite();
 		var0.anInt673 = staticInt139;
 		var0.anInt674 = staticInt142;
-		var0.anInt675 = NodeSub20.staticIntArray126[0];
+		var0.anInt675 = DataNode4.staticIntArray126[0];
 		var0.anInt670 = staticIntArray69[0];
 		var0.anInt672 = staticIntArray72[0];
 		var0.anInt671 = staticIntArray71[0];
@@ -24991,7 +24991,7 @@ public class Static {
 			var0.anIntArray154[var3] = staticIntArray73[var2[var3] & 0xff];
 		}
 
-		NodeSub20.staticIntArray126 = null;
+		DataNode4.staticIntArray126 = null;
 		staticIntArray69 = null;
 		staticIntArray72 = null;
 		staticIntArray71 = null;

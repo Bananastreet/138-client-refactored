@@ -1,4 +1,4 @@
-public class NodeSub20 extends Node {
+public class DataNode4 extends Node {
 
 	static int[] staticIntArray126;
 	static int staticInt320;
