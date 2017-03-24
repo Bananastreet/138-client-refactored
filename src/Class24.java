@@ -17,14 +17,14 @@ public class Class24 {
 		ByteBuf var5 = new ByteBuf(var1);
 		ByteBuf var6 = new ByteBuf(var1);
 		var5.position = 2;
-		int var7 = var5.method367();
+		int var7 = var5.readUByte();
 		int var8 = -1;
 		int var9 = 0;
 		var6.position = var5.position + var7;
 
 		int var3;
 		for (var3 = 0; var3 < var7; var3++) {
-			int var10 = var5.method367();
+			int var10 = var5.readUByte();
 			if (var10 > 0) {
 				if (aNodeSub10_1.anIntArray65[var3] != 0) {
 					for (int var11 = var3 - 1; var11 > var8; --var11) {

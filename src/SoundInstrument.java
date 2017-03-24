@@ -263,7 +263,7 @@ public class SoundInstrument {
 		aClass14_4.method49(var1);
 		aClass14_1 = new Class14();
 		aClass14_1.method49(var1);
-		int var2 = var1.method367();
+		int var2 = var1.readUByte();
 		if (var2 != 0) {
 			--var1.position;
 			aClass14_3 = new Class14();
@@ -272,7 +272,7 @@ public class SoundInstrument {
 			aClass14_2.method49(var1);
 		}
 
-		var2 = var1.method367();
+		var2 = var1.readUByte();
 		if (var2 != 0) {
 			--var1.position;
 			aClass14_5 = new Class14();
@@ -281,7 +281,7 @@ public class SoundInstrument {
 			aClass14_8.method49(var1);
 		}
 
-		var2 = var1.method367();
+		var2 = var1.readUByte();
 		if (var2 != 0) {
 			--var1.position;
 			aClass14_6 = new Class14();

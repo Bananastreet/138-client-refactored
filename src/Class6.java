@@ -15,22 +15,22 @@ public class Class6 {
 
 	Class6(ByteBuf var1) {
 		if (var1 != null && var1.buf != null) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 >= 0 && var2 <= staticInt25) {
-				if (var1.method367() == 1) {
+				if (var1.readUByte() == 1) {
 					aBool3 = true;
 				}
 
 				if (var2 > 1) {
-					aBool2 = var1.method367() == 1;
+					aBool2 = var1.readUByte() == 1;
 				}
 
 				if (var2 > 3) {
-					anInt15 = var1.method367();
+					anInt15 = var1.readUByte();
 				}
 
 				if (var2 > 2) {
-					int var3 = var1.method367();
+					int var3 = var1.readUByte();
 
 					for (int var5 = 0; var5 < var3; var5++) {
 						int var4 = var1.readInt();

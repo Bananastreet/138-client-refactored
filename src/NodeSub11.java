@@ -88,7 +88,7 @@ public class NodeSub11 extends Node {
 
 	NodeSub11(ByteBuf var1) {
 		var1.position = var1.buf.length - 3;
-		int var6 = var1.method367();
+		int var6 = var1.readUByte();
 		int var5 = var1.method370();
 		int var7 = 14 + var6 * 10;
 		var1.position = 0;
@@ -108,7 +108,7 @@ public class NodeSub11 extends Node {
 			var13 = -1;
 
 			while (true) {
-				var16 = var1.method367();
+				var16 = var1.readUByte();
 				if (var16 != var13) {
 					++var7;
 				}
@@ -170,7 +170,7 @@ public class NodeSub11 extends Node {
 
 		int var38;
 		for (var38 = 0; var38 < var9; var38++) {
-			var4 = var4 + var1.method367() & 0x7f;
+			var4 = var4 + var1.readUByte() & 0x7f;
 			if (var4 != 0 && var4 != 32) {
 				if (var4 == 1) {
 					++var22;

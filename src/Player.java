@@ -29,7 +29,7 @@ public final class Player extends Actor {
 
 	final void decodeAppearance(ByteBuf buffer) {		
 		buffer.position = 0;
-		int var8 = buffer.method367();
+		int var8 = buffer.readUByte();
 		anInt683 = buffer.readByte();
 		anInt684 = buffer.readByte();
 		int var2 = -1;
@@ -39,11 +39,11 @@ public final class Player extends Actor {
 		int var5;
 		int var6;
 		for (int var9 = 0; var9 < 12; var9++) {
-			var5 = buffer.method367();
+			var5 = buffer.readUByte();
 			if (var5 == 0) {
 				var3[var9] = 0;
 			} else {
-				var6 = buffer.method367();
+				var6 = buffer.readUByte();
 				var3[var9] = (var5 << 8) + var6;
 				if (var9 == 0 && var3[0] == '\uffff') {
 					var2 = buffer.method370();
@@ -62,7 +62,7 @@ public final class Player extends Actor {
 		int[] var91 = new int[5];
 
 		for (var5 = 0; var5 < 5; var5++) {
-			var6 = buffer.method367();
+			var6 = buffer.readUByte();
 			if (var6 < 0 || var6 >= Class60.staticShortArrayArray4[var5].length) {
 				var6 = 0;
 			}
@@ -111,9 +111,9 @@ public final class Player extends Actor {
 			RuntimeExceptionSub1.staticString22 = aString40;
 		}
 
-		anInt685 = buffer.method367();
+		anInt685 = buffer.readUByte();
 		anInt691 = buffer.method370();
-		aBool81 = buffer.method367() == 1;
+		aBool81 = buffer.readUByte() == 1;
 		if (Client.staticInt207 == 0 && Client.myRights >= 2) {
 			aBool81 = false;
 		}

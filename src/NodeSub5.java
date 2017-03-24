@@ -311,7 +311,7 @@ public class NodeSub5 extends Node {
 
 			int var5;
 			do {
-				var5 = var2.method367();
+				var5 = var2.readUByte();
 				var6 += var5;
 			} while (var5 >= 255);
 

@@ -22,7 +22,7 @@ public class Class61 {
 			boolean var5 = false;
 
 			while (true) {
-				int var6 = var1.method367();
+				int var6 = var1.readUByte();
 				if (var6 == 255) {
 					Integer var71 = var5 ? Integer.valueOf(var3) : null;
 					method285(var71);
@@ -34,7 +34,7 @@ public class Class61 {
 				}
 
 				while (true) {
-					int var7 = var1.method367();
+					int var7 = var1.readUByte();
 					if (var7 == 255) {
 						break;
 					}

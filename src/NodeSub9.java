@@ -189,8 +189,8 @@ public class NodeSub9 extends Node {
 
 	NodeSub9(ByteBuf var1) {
 		anInt244 = var1.method370();
-		aBool26 = var1.method367() == 1;
-		int var2 = var1.method367();
+		aBool26 = var1.readUByte() == 1;
+		int var2 = var1.readUByte();
 		if (var2 >= 1 && var2 <= 4) {
 			anIntArray60 = new int[var2];
 
@@ -203,7 +203,7 @@ public class NodeSub9 extends Node {
 				anIntArray62 = new int[var2 - 1];
 
 				for (var3 = 0; var3 < var2 - 1; var3++) {
-					anIntArray62[var3] = var1.method367();
+					anIntArray62[var3] = var1.readUByte();
 				}
 			}
 
@@ -211,7 +211,7 @@ public class NodeSub9 extends Node {
 				anIntArray64 = new int[var2 - 1];
 
 				for (var3 = 0; var3 < var2 - 1; var3++) {
-					anIntArray64[var3] = var1.method367();
+					anIntArray64[var3] = var1.readUByte();
 				}
 			}
 
@@ -221,8 +221,8 @@ public class NodeSub9 extends Node {
 				anIntArray63[var3] = var1.readInt();
 			}
 
-			anInt245 = var1.method367();
-			anInt246 = var1.method367();
+			anInt245 = var1.readUByte();
+			anInt246 = var1.readUByte();
 			anIntArray61 = null;
 		} else {
 			throw new RuntimeException();

@@ -7,7 +7,7 @@ public class Varp extends Cacheable {
 
 	void method534(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}

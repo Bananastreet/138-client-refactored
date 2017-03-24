@@ -296,13 +296,13 @@ public abstract class FileStore {
 	void method274(byte[] var1) {
 		anInt201 = Static.staticMethod23(var1, var1.length);
 		ByteBuf var3 = new ByteBuf(Static.staticMethod241(var1));
-		int var4 = var3.method367();
+		int var4 = var3.readUByte();
 		if (var4 >= 5 && var4 <= 7) {
 			if (var4 >= 6) {
 				var3.readInt();
 			}
 
-			int var6 = var3.method367();
+			int var6 = var3.readUByte();
 			if (var4 >= 7) {
 				anInt200 = var3.method337();
 			} else {

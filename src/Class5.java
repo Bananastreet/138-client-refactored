@@ -181,7 +181,7 @@ public class Class5 {
 					return;
 				}
 
-				int var5 = var231.method367();
+				int var5 = var231.readUByte();
 				if (var5 >= 0 && var5 <= 1) {
 					int var6 = var231.method370();
 

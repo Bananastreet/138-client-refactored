@@ -17,7 +17,7 @@ public class FloorUnderlayDef extends Cacheable {
 
 	void method523(ByteBuf var1, int var2) {
 		while (true) {
-			int var3 = var1.method367();
+			int var3 = var1.readUByte();
 			if (var3 == 0) {
 				return;
 			}

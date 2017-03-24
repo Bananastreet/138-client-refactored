@@ -13,7 +13,7 @@ public class Class14 {
 	int anInt28;
 
 	final void method47(ByteBuf var1) {
-		anInt34 = var1.method367();
+		anInt34 = var1.readUByte();
 		anIntArray20 = new int[anInt34];
 		anIntArray21 = new int[anInt34];
 
@@ -43,7 +43,7 @@ public class Class14 {
 	}
 
 	final void method49(ByteBuf var1) {
-		anInt33 = var1.method367();
+		anInt33 = var1.readUByte();
 		anInt30 = var1.readInt();
 		anInt28 = var1.readInt();
 		method47(var1);

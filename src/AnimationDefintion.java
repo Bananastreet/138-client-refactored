@@ -22,7 +22,7 @@ public class AnimationDefintion extends Cacheable {
 
 	void method550(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}
@@ -110,32 +110,32 @@ public class AnimationDefintion extends Cacheable {
 		} else if (var2 == 2) {
 			anInt562 = var1.method370();
 		} else if (var2 == 3) {
-			var4 = var1.method367();
+			var4 = var1.readUByte();
 			anIntArray117 = new int[1 + var4];
 
 			for (var3 = 0; var3 < var4; var3++) {
-				anIntArray117[var3] = var1.method367();
+				anIntArray117[var3] = var1.readUByte();
 			}
 
 			anIntArray117[var4] = 9999999;
 		} else if (var2 == 4) {
 			aBool72 = true;
 		} else if (var2 == 5) {
-			anInt563 = var1.method367();
+			anInt563 = var1.readUByte();
 		} else if (var2 == 6) {
 			anInt564 = var1.method370();
 		} else if (var2 == 7) {
 			anInt565 = var1.method370();
 		} else if (var2 == 8) {
-			anInt561 = var1.method367();
+			anInt561 = var1.readUByte();
 		} else if (var2 == 9) {
-			anInt566 = var1.method367();
+			anInt566 = var1.readUByte();
 		} else if (var2 == 10) {
-			anInt567 = var1.method367();
+			anInt567 = var1.readUByte();
 		} else if (var2 == 11) {
-			anInt568 = var1.method367();
+			anInt568 = var1.readUByte();
 		} else if (var2 == 12) {
-			var4 = var1.method367();
+			var4 = var1.readUByte();
 			anIntArray118 = new int[var4];
 
 			for (var3 = 0; var3 < var4; var3++) {
@@ -146,7 +146,7 @@ public class AnimationDefintion extends Cacheable {
 				anIntArray118[var3] += var1.method370() << 16;
 			}
 		} else if (var2 == 13) {
-			var4 = var1.method367();
+			var4 = var1.readUByte();
 			anIntArray120 = new int[var4];
 
 			for (var3 = 0; var3 < var4; var3++) {

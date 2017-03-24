@@ -40,7 +40,7 @@ public class NpcDefinition extends Cacheable {
 
 	void method540(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}
@@ -208,7 +208,7 @@ public class NpcDefinition extends Cacheable {
 		int var3;
 		int var4;
 		if (opcode == 1) {
-			var3 = buffer.method367();
+			var3 = buffer.readUByte();
 			anIntArray114 = new int[var3];
 
 			for (var4 = 0; var4 < var3; var4++) {
@@ -217,7 +217,7 @@ public class NpcDefinition extends Cacheable {
 		} else if (opcode == 2) {
 			aString35 = buffer.readString();
 		} else if (opcode == 12) {
-			anInt538 = buffer.method367();
+			anInt538 = buffer.readUByte();
 		} else if (opcode == 13) {
 			anInt539 = -buffer.method370();
 		} else if (opcode == 14) {
@@ -237,7 +237,7 @@ public class NpcDefinition extends Cacheable {
 				aStringArray10[opcode - 30] = null;
 			}
 		} else if (opcode == 40) {
-			var3 = buffer.method367();
+			var3 = buffer.readUByte();
 			aShortArray15 = new short[var3];
 			aShortArray14 = new short[var3];
 
@@ -246,7 +246,7 @@ public class NpcDefinition extends Cacheable {
 				aShortArray14[var4] = (short) buffer.method370();
 			}
 		} else if (opcode == 41) {
-			var3 = buffer.method367();
+			var3 = buffer.readUByte();
 			aShortArray16 = new short[var3];
 			aShortArray17 = new short[var3];
 
@@ -255,7 +255,7 @@ public class NpcDefinition extends Cacheable {
 				aShortArray17[var4] = (short) buffer.method370();
 			}
 		} else if (opcode == 60) {
-			var3 = buffer.method367();
+			var3 = buffer.readUByte();
 			anIntArray115 = new int[var3];
 
 			for (var4 = 0; var4 < var3; var4++) {
@@ -306,7 +306,7 @@ public class NpcDefinition extends Cacheable {
 				}
 			}
 
-			var4 = buffer.method367();
+			var4 = buffer.readUByte();
 			anIntArray116 = new int[2 + var4];
 
 			for (int var5 = 0; var5 <= var4; var5++) {

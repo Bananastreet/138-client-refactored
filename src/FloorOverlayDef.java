@@ -88,7 +88,7 @@ public class FloorOverlayDef extends Cacheable {
 		if (var2 == 1) {
 			anInt527 = var1.readTriByte();
 		} else if (var2 == 2) {
-			anInt528 = var1.method367();
+			anInt528 = var1.readUByte();
 		} else if (var2 == 5) {
 			aBool66 = false;
 		} else if (var2 == 7) {
@@ -101,7 +101,7 @@ public class FloorOverlayDef extends Cacheable {
 
 	void method539(ByteBuf var1, int var2) {
 		while (true) {
-			int var3 = var1.method367();
+			int var3 = var1.readUByte();
 			if (var3 == 0) {
 				return;
 			}

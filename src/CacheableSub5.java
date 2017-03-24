@@ -25,7 +25,7 @@ public class CacheableSub5 extends Cacheable {
 
 	void method500(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}
@@ -179,7 +179,7 @@ public class CacheableSub5 extends Cacheable {
 		} else if (var2 == 11) {
 			anInt471 = 0;
 		} else if (var2 == 12) {
-			anInt479 = var1.method367();
+			anInt479 = var1.readUByte();
 		} else if (var2 == 13) {
 			anInt480 = var1.method364();
 		} else if (var2 == 14) {
@@ -203,7 +203,7 @@ public class CacheableSub5 extends Cacheable {
 				}
 			}
 
-			int var3 = var1.method367();
+			int var3 = var1.readUByte();
 			anIntArray107 = new int[2 + var3];
 
 			for (int var5 = 0; var5 <= var3; var5++) {

@@ -72,13 +72,13 @@ public class Class18 {
 	}
 
 	final void method65(ByteBuf var1, Class14 var2) {
-		int var3 = var1.method367();
+		int var3 = var1.readUByte();
 		anIntArray26[0] = var3 >> 4;
 		anIntArray26[1] = var3 & 0xf;
 		if (var3 != 0) {
 			anIntArray25[0] = var1.method370();
 			anIntArray25[1] = var1.method370();
-			int var7 = var1.method367();
+			int var7 = var1.readUByte();
 
 			int var4;
 			int var5;

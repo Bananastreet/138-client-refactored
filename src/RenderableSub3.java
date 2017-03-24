@@ -71,13 +71,13 @@ public class RenderableSub3 extends Renderable {
 		var2.position = var1.length - 23;
 		int var33 = var2.method370();
 		int var13 = var2.method370();
-		int var14 = var2.method367();
-		int var12 = var2.method367();
-		int var49 = var2.method367();
-		int var17 = var2.method367();
-		int var51 = var2.method367();
-		int var15 = var2.method367();
-		int var18 = var2.method367();
+		int var14 = var2.readUByte();
+		int var12 = var2.readUByte();
+		int var49 = var2.readUByte();
+		int var17 = var2.readUByte();
+		int var51 = var2.readUByte();
+		int var15 = var2.readUByte();
+		int var18 = var2.readUByte();
 		int var19 = var2.method370();
 		int var20 = var2.method370();
 		int var21 = var2.method370();
@@ -237,7 +237,7 @@ public class RenderableSub3 extends Renderable {
 		int var22;
 		int var40;
 		for (var3 = 0; var3 < var33; var3++) {
-			var22 = var2.method367();
+			var22 = var2.readUByte();
 			var5 = 0;
 			if ((var22 & 0x1) != 0) {
 				var5 = var11.method366();
@@ -260,7 +260,7 @@ public class RenderableSub3 extends Renderable {
 			var54 = anIntArray129[var3];
 			var56 = anIntArray136[var3];
 			if (var18 == 1) {
-				anIntArray130[var3] = var8.method367();
+				anIntArray130[var3] = var8.readUByte();
 			}
 		}
 
@@ -287,7 +287,7 @@ public class RenderableSub3 extends Renderable {
 			}
 
 			if (var51 == 1) {
-				anIntArray134[var3] = var8.method367();
+				anIntArray134[var3] = var8.readUByte();
 			}
 
 			if (var15 == 1) {
@@ -295,7 +295,7 @@ public class RenderableSub3 extends Renderable {
 			}
 
 			if (aByteArray28 != null && aShortArray24[var3] != -1) {
-				aByteArray28[var3] = (byte) (var55.method367() - 1);
+				aByteArray28[var3] = (byte) (var55.readUByte() - 1);
 			}
 		}
 
@@ -308,7 +308,7 @@ public class RenderableSub3 extends Renderable {
 
 		int var29;
 		for (var10 = 0; var10 < var13; var10++) {
-			var29 = var11.method367();
+			var29 = var11.readUByte();
 			if (var29 == 1) {
 				var3 = var2.method366() + var40;
 				var22 = var2.method366() + var3;
@@ -403,7 +403,7 @@ public class RenderableSub3 extends Renderable {
 		}
 
 		var2.position = var27;
-		var10 = var2.method367();
+		var10 = var2.readUByte();
 		if (var10 != 0) {
 			new Class25();
 			var2.method370();
@@ -425,12 +425,12 @@ public class RenderableSub3 extends Renderable {
 		var5.position = var1.length - 18;
 		int var16 = var5.method370();
 		int var12 = var5.method370();
-		int var29 = var5.method367();
-		int var23 = var5.method367();
-		int var14 = var5.method367();
-		int var10 = var5.method367();
-		int var15 = var5.method367();
-		int var36 = var5.method367();
+		int var29 = var5.readUByte();
+		int var23 = var5.readUByte();
+		int var14 = var5.readUByte();
+		int var10 = var5.readUByte();
+		int var15 = var5.readUByte();
+		int var36 = var5.readUByte();
 		int var8 = var5.method370();
 		int var31 = var5.method370();
 		int var33 = var5.method370();
@@ -530,7 +530,7 @@ public class RenderableSub3 extends Renderable {
 		int var35;
 		int var37;
 		for (var34 = 0; var34 < var16; var34++) {
-			var37 = var5.method367();
+			var37 = var5.readUByte();
 			var17 = 0;
 			if ((var37 & 0x1) != 0) {
 				var17 = var6.method366();
@@ -553,7 +553,7 @@ public class RenderableSub3 extends Renderable {
 			var40 = anIntArray129[var34];
 			var42 = anIntArray136[var34];
 			if (var36 == 1) {
-				anIntArray130[var34] = var9.method367();
+				anIntArray130[var34] = var9.readUByte();
 			}
 		}
 
@@ -566,7 +566,7 @@ public class RenderableSub3 extends Renderable {
 		for (var34 = 0; var34 < var12; var34++) {
 			aShortArray22[var34] = (short) var5.method370();
 			if (var23 == 1) {
-				var37 = var6.method367();
+				var37 = var6.readUByte();
 				if ((var37 & 0x1) == 1) {
 					aByteArray26[var34] = 1;
 					var2 = true;
@@ -596,7 +596,7 @@ public class RenderableSub3 extends Renderable {
 			}
 
 			if (var15 == 1) {
-				anIntArray134[var34] = var9.method367();
+				anIntArray134[var34] = var9.readUByte();
 			}
 		}
 
@@ -610,7 +610,7 @@ public class RenderableSub3 extends Renderable {
 		int var18;
 		int var43;
 		for (var21 = 0; var21 < var12; var21++) {
-			var18 = var6.method367();
+			var18 = var6.readUByte();
 			if (var18 == 1) {
 				var34 = var5.method366() + var35;
 				var37 = var5.method366() + var34;

@@ -105,7 +105,7 @@ public class NodeSub14 extends Node {
 			var22 = 2;
 
 			for (var23 = 2; var23 < var16; var23++) {
-				int var38 = var5.method367();
+				int var38 = var5.readUByte();
 				if (var38 == 0) {
 					var47 = var22++;
 				} else {
@@ -127,21 +127,21 @@ public class NodeSub14 extends Node {
 		DataClass8 var441;
 		for (var23 = 0; var23 < var43.length; var23++) {
 			var441 = var43[var23] = new DataClass8();
-			int var39 = var5.method367();
+			int var39 = var5.readUByte();
 			if (var39 > 0) {
 				var441.aByteArray13 = new byte[var39 * 2];
 			}
 
-			var39 = var5.method367();
+			var39 = var5.readUByte();
 			if (var39 > 0) {
 				var441.aByteArray12 = new byte[2 + var39 * 2];
 				var441.aByteArray12[1] = 64;
 			}
 		}
 
-		var23 = var5.method367();
+		var23 = var5.readUByte();
 		byte[] var451 = var23 > 0 ? new byte[var23 * 2] : null;
-		var23 = var5.method367();
+		var23 = var5.readUByte();
 		byte[] var42 = var23 > 0 ? new byte[var23 * 2] : null;
 
 		int var31;
@@ -162,14 +162,14 @@ public class NodeSub14 extends Node {
 
 		int var15;
 		for (var15 = 0; var15 < 128; var15++) {
-			var30 += var5.method367();
+			var30 += var5.readUByte();
 			aShortArray1[var15] = (short) var30;
 		}
 
 		var30 = 0;
 
 		for (var15 = 0; var15 < 128; var15++) {
-			var30 += var5.method367();
+			var30 += var5.readUByte();
 			aShortArray1[var15] = (short) (aShortArray1[var15] + (var30 << 8));
 		}
 
@@ -272,7 +272,7 @@ public class NodeSub14 extends Node {
 				}
 
 				if (anIntArray67[var17] > 0) {
-					var29 = var5.method367() + 1;
+					var29 = var5.readUByte() + 1;
 				}
 			}
 
@@ -280,7 +280,7 @@ public class NodeSub14 extends Node {
 			--var15;
 		}
 
-		anInt282 = var5.method367() + 1;
+		anInt282 = var5.readUByte() + 1;
 
 		int var2;
 		DataClass8 var7;
@@ -317,7 +317,7 @@ public class NodeSub14 extends Node {
 				var30 = 0;
 
 				for (var2 = 2; var2 < var7.aByteArray12.length; var2 += 2) {
-					var30 = var30 + 1 + var5.method367();
+					var30 = var30 + 1 + var5.readUByte();
 					var7.aByteArray12[var2] = (byte) var30;
 				}
 			}
@@ -329,7 +329,7 @@ public class NodeSub14 extends Node {
 				var30 = 0;
 
 				for (var2 = 2; var2 < var7.aByteArray13.length; var2 += 2) {
-					var30 = 1 + var30 + var5.method367();
+					var30 = 1 + var30 + var5.readUByte();
 					var7.aByteArray13[var2] = (byte) var30;
 				}
 			}
@@ -344,11 +344,11 @@ public class NodeSub14 extends Node {
 		int var44;
 		byte var46;
 		if (var451 != null) {
-			var30 = var5.method367();
+			var30 = var5.readUByte();
 			var451[0] = (byte) var30;
 
 			for (var17 = 2; var17 < var451.length; var17 += 2) {
-				var30 = var30 + 1 + var5.method367();
+				var30 = var30 + 1 + var5.readUByte();
 				var451[var17] = (byte) var30;
 			}
 
@@ -384,11 +384,11 @@ public class NodeSub14 extends Node {
 		}
 
 		if (var42 != null) {
-			var30 = var5.method367();
+			var30 = var5.readUByte();
 			var42[0] = (byte) var30;
 
 			for (var17 = 2; var17 < var42.length; var17 += 2) {
-				var30 = var30 + 1 + var5.method367();
+				var30 = var30 + 1 + var5.readUByte();
 				var42[var17] = (byte) var30;
 			}
 
@@ -450,39 +450,39 @@ public class NodeSub14 extends Node {
 		}
 
 		for (var17 = 0; var17 < var22; var17++) {
-			var43[var17].anInt181 = var5.method367();
+			var43[var17].anInt181 = var5.readUByte();
 		}
 
 		for (var17 = 0; var17 < var22; var17++) {
 			var7 = var43[var17];
 			if (var7.aByteArray13 != null) {
-				var7.anInt187 = var5.method367();
+				var7.anInt187 = var5.readUByte();
 			}
 
 			if (var7.aByteArray12 != null) {
-				var7.anInt183 = var5.method367();
+				var7.anInt183 = var5.readUByte();
 			}
 
 			if (var7.anInt181 > 0) {
-				var7.anInt184 = var5.method367();
+				var7.anInt184 = var5.readUByte();
 			}
 		}
 
 		for (var17 = 0; var17 < var22; var17++) {
-			var43[var17].anInt186 = var5.method367();
+			var43[var17].anInt186 = var5.readUByte();
 		}
 
 		for (var17 = 0; var17 < var22; var17++) {
 			var7 = var43[var17];
 			if (var7.anInt186 > 0) {
-				var7.anInt185 = var5.method367();
+				var7.anInt185 = var5.readUByte();
 			}
 		}
 
 		for (var17 = 0; var17 < var22; var17++) {
 			var7 = var43[var17];
 			if (var7.anInt185 > 0) {
-				var7.anInt182 = var5.method367();
+				var7.anInt182 = var5.readUByte();
 			}
 		}
 

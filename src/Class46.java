@@ -116,7 +116,7 @@ public class Class46 {
 	int method230(int var1, int var2) {
 		int var3;
 		if (var2 == 255) {
-			int var41 = aStream1.method367();
+			int var41 = aStream1.readUByte();
 			var3 = aStream1.method339();
 			if (var41 == 47) {
 				aStream1.position += var3;
@@ -137,11 +137,11 @@ public class Class46 {
 			byte var4 = staticByteArray4[var2 - 128];
 			var3 = var2;
 			if (var4 >= 1) {
-				var3 = var2 | aStream1.method367() << 8;
+				var3 = var2 | aStream1.readUByte() << 8;
 			}
 
 			if (var4 >= 2) {
-				var3 |= aStream1.method367() << 16;
+				var3 |= aStream1.readUByte() << 16;
 			}
 
 			return var3;

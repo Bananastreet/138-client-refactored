@@ -11,7 +11,7 @@ public class SoundEffect {
 
 	SoundEffect(ByteBuf var1) {
 		for (int var2 = 0; var2 < 10; var2++) {
-			int var3 = var1.method367();
+			int var3 = var1.readUByte();
 			if (var3 != 0) {
 				--var1.position;
 				aClass17Array1[var2] = new SoundInstrument();

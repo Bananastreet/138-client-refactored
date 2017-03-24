@@ -32,7 +32,7 @@ public class Class56 {
 
 	public Class56(ByteBuf var1, boolean var2) {
 		int var7 = var1.method370();
-		boolean var4 = var1.method367() == 1;
+		boolean var4 = var1.readUByte() == 1;
 		byte var6;
 		if (var4) {
 			var6 = 1;

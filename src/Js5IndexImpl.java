@@ -25,7 +25,7 @@ public class Js5IndexImpl extends FileStore {
 				staticCRC32_2.update(var3, 0, var3.length);
 				var8 = (int) staticCRC32_2.getValue();
 				ByteBuf var91 = new ByteBuf(Static.staticMethod241(var3));
-				int var7 = var91.method367();
+				int var7 = var91.readUByte();
 				if (var7 != 5 && var7 != 6) {
 					throw new RuntimeException(var7 + "," + anInt363 + "," + var2);
 				} else {

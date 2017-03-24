@@ -15,7 +15,7 @@ public class IdentityKit extends Cacheable {
 
 	void method480(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}
@@ -88,12 +88,12 @@ public class IdentityKit extends Cacheable {
 
 	void method484(ByteBuf var1, int var2) {
 		if (var2 == 1) {
-			anInt433 = var1.method367();
+			anInt433 = var1.readUByte();
 		} else {
 			int var3;
 			int var4;
 			if (var2 == 2) {
-				var4 = var1.method367();
+				var4 = var1.readUByte();
 				anIntArray103 = new int[var4];
 
 				for (var3 = 0; var3 < var4; var3++) {
@@ -102,7 +102,7 @@ public class IdentityKit extends Cacheable {
 			} else if (var2 == 3) {
 				aBool54 = true;
 			} else if (var2 == 40) {
-				var4 = var1.method367();
+				var4 = var1.readUByte();
 				aShortArray4 = new short[var4];
 				aShortArray5 = new short[var4];
 
@@ -111,7 +111,7 @@ public class IdentityKit extends Cacheable {
 					aShortArray5[var3] = (short) var1.method370();
 				}
 			} else if (var2 == 41) {
-				var4 = var1.method367();
+				var4 = var1.readUByte();
 				aShortArray3 = new short[var4];
 				aShortArray2 = new short[var4];
 

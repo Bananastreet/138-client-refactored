@@ -8,7 +8,7 @@ public class Varbit extends Cacheable {
 
 	void method478(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}
@@ -20,8 +20,8 @@ public class Varbit extends Cacheable {
 	void method479(ByteBuf var1, int var2) {
 		if (var2 == 1) {
 			anInt430 = var1.method370();
-			anInt431 = var1.method367();
-			anInt432 = var1.method367();
+			anInt431 = var1.readUByte();
+			anInt432 = var1.readUByte();
 		}
 
 	}

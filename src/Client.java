@@ -1194,9 +1194,9 @@ public final class Client extends GameShell {
 
 								if (FloorUnderlayDef.staticCacheableSub4_1 == null) {
 									Static.staticStream3.position = 0;
-									var9 = Static.staticStream3.method367();
+									var9 = Static.staticStream3.readUByte();
 									var10 = Static.staticStream3.method370();
-									int var24 = Static.staticStream3.method367();
+									int var24 = Static.staticStream3.readUByte();
 									var12 = Static.staticStream3.readInt();
 									long var17 = (var9 << 16) + var10;
 									CacheableSub4 var15 = (CacheableSub4) Static.staticHashTable2.method149(var17);

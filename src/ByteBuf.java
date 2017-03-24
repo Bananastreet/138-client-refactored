@@ -528,10 +528,10 @@ public class ByteBuf extends Node {
 
 	public int method366() {
 		int var1 = buf[position] & 0xff;
-		return var1 < 128 ? method367() - 64 : method370() - '\uc000';
+		return var1 < 128 ? readUByte() - 64 : method370() - '\uc000';
 	}
 
-	public int method367() {
+	public int readUByte() {		
 		return buf[position++] & 0xff;
 	}
 
@@ -612,7 +612,7 @@ public class ByteBuf extends Node {
 
 	public int method379() {
 		int var1 = buf[position] & 0xff;
-		return var1 < 128 ? method367() : method370() - '\u8000';
+		return var1 < 128 ? readUByte() : method370() - '\u8000';
 	}
 
 	public void method380(int[] var1, int var2, int var3) {

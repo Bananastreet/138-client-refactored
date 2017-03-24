@@ -120,12 +120,12 @@ public class ItemDefinition extends Cacheable {
 			aBool55 = true;
 		} else if (opcode == 23) {
 			anInt446 = buffer.method370();
-			anInt447 = buffer.method367();
+			anInt447 = buffer.readUByte();
 		} else if (opcode == 24) {
 			anInt438 = buffer.method370();
 		} else if (opcode == 25) {
 			anInt448 = buffer.method370();
-			anInt450 = buffer.method367();
+			anInt450 = buffer.readUByte();
 		} else if (opcode == 26) {
 			anInt449 = buffer.method370();
 		} else if (opcode >= 30 && opcode < 35) {
@@ -139,7 +139,7 @@ public class ItemDefinition extends Cacheable {
 			int var3;
 			int var4;
 			if (opcode == 40) {
-				var3 = buffer.method367();
+				var3 = buffer.readUByte();
 				aShortArray9 = new short[var3];
 				aShortArray6 = new short[var3];
 
@@ -148,7 +148,7 @@ public class ItemDefinition extends Cacheable {
 					aShortArray6[var4] = (short) buffer.method370();
 				}
 			} else if (opcode == 41) {
-				var3 = buffer.method367();
+				var3 = buffer.readUByte();
 				aShortArray7 = new short[var3];
 				aShortArray8 = new short[var3];
 
@@ -197,7 +197,7 @@ public class ItemDefinition extends Cacheable {
 			} else if (opcode == 114) {
 				anInt462 = buffer.readByte() * 5;
 			} else if (opcode == 115) {
-				anInt463 = buffer.method367();
+				anInt463 = buffer.readUByte();
 			} else if (opcode == 139) {
 				anInt464 = buffer.method370();
 			} else if (opcode == 140) {
@@ -499,7 +499,7 @@ public class ItemDefinition extends Cacheable {
 
 	void method498(ByteBuf var1) {
 		while (true) {
-			int var2 = var1.method367();
+			int var2 = var1.readUByte();
 			if (var2 == 0) {
 				return;
 			}
