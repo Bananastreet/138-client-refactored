@@ -1,4 +1,4 @@
-public final class Player extends Actor {
+public final class Player extends Mob {
 
 	int anInt682;
 	int anInt686;

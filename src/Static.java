@@ -124,7 +124,7 @@ public class Static {
 				var18 = Client.staticNpcArray1[Client.staticIntArray121[var10 - var8]];
 			}
 
-			staticMethod209((Actor) var18, var10, var0, var1, var2, var3);
+			staticMethod209((Mob) var18, var10, var0, var1, var2, var3);
 		}
 
 		if (var12) {
@@ -497,7 +497,7 @@ public class Static {
 		staticMethod198(var0, var1, "openjs", var2);
 	}
 
-	static final void staticMethod126(Actor var0) {
+	static final void staticMethod126(Mob var0) {
 		if (Client.staticInt166 == var0.anInt604 || var0.anInt612 == -1 || var0.anInt615 != 0
 				|| 1 + var0.anInt614 > staticMethod210(var0.anInt612).anIntArray119[var0.anInt613]) {
 			int var3 = var0.anInt604 - var0.anInt625;
@@ -2101,7 +2101,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod81(Actor var0) {
+	static final void staticMethod81(Mob var0) {
 		int var1 = var0.anInt625 - Client.staticInt166;
 		int var3 = var0.anInt626 * 64 + var0.anInt606 * 128;
 		int var2 = var0.anInt623 * 128 + var0.anInt626 * 64;
@@ -2672,7 +2672,7 @@ public class Static {
 										var23 = Client.staticInt209 + Client.staticInt221 & 0x7ff;
 										var16 = AbstractClass2Sub1.staticPlayer1.anInt628 / 32 + 48;
 										var25 = 464 - AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
-										Actor.staticSprite5.method642(var24, var18, var47.anInt426, var47.anInt427,
+										Mob.staticSprite5.method642(var24, var18, var47.anInt426, var47.anInt427,
 												var16, var25, var23, Client.staticInt211 + 256, var47.anIntArray101,
 												var47.anIntArray102);
 
@@ -5287,7 +5287,7 @@ public class Static {
 						? Client.staticInt217 : Client.staticInt252 - 1;
 	}
 
-	static final void staticMethod209(Actor var0, int var1, int var2, int var3, int var4, int var5) {
+	static final void staticMethod209(Mob var0, int var1, int var2, int var3, int var4, int var5) {
 		if (var0 != null && var0.method565()) {
 			if (var0 instanceof Npc) {
 				NpcDefinition var79 = ((Npc) var0).aNpcDef1;
@@ -7496,7 +7496,7 @@ public class Static {
 				var6 = var4;
 			}
 
-			int[] var17 = Actor.staticSprite5.anIntArray154;
+			int[] var17 = Mob.staticSprite5.anIntArray154;
 			var12 = var1 * 4 + 24624 + (103 - var2) * 2048;
 			var10 = var5 >> 14 & 0x7fff;
 			ObjectDefinition var23 = staticMethod394(var10);
@@ -7592,7 +7592,7 @@ public class Static {
 					var12 = 15597568;
 				}
 
-				int[] var191 = Actor.staticSprite5.anIntArray154;
+				int[] var191 = Mob.staticSprite5.anIntArray154;
 				var231 = (103 - var2) * 2048 + 24624 + var1 * 4;
 				if (var8 != 0 && var8 != 2) {
 					var191[var231] = var12;
@@ -7775,7 +7775,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod15(Actor var0) {
+	static final void staticMethod15(Mob var0) {
 		var0.aBool74 = false;
 		AnimationDefintion var1;
 		if (var0.anInt590 != -1) {
@@ -8573,7 +8573,7 @@ public class Static {
 		return var0 != 4 || var1 < 8;
 	}
 
-	static final void staticMethod186(Actor var0, int var1) {
+	static final void staticMethod186(Mob var0, int var1) {
 		rasterize(var0.anInt628, var0.anInt591, var1);
 	}
 
@@ -8793,7 +8793,7 @@ public class Static {
 				Client.staticClass38Array1[var1] = new Class38(104, 104);
 			}
 
-			Actor.staticSprite5 = new Sprite(512, 512);
+			Mob.staticSprite5 = new Sprite(512, 512);
 			staticString3 = "Starting game engine...";
 			staticInt14 = 15;
 			Client.staticInt179 = 20;
@@ -9784,7 +9784,7 @@ public class Static {
 						if (NodeSub4.staticInt155 != -Client.staticInt294) {
 							Client.staticInt294 = -NodeSub4.staticInt155;
 							var0 = NodeSub4.staticInt155;
-							int[] var281 = Actor.staticSprite5.anIntArray154;
+							int[] var281 = Mob.staticSprite5.anIntArray154;
 							var2 = var281.length;
 
 							for (var3 = 0; var3 < var2; var3++) {
@@ -9812,7 +9812,7 @@ public class Static {
 									+ (238 + (int) (Math.random() * 20.0D) - 10 << 8) + 238
 									+ (int) (Math.random() * 20.0D) - 10;
 							var4 = 238 + (int) (Math.random() * 20.0D) - 10 << 16;
-							Actor.staticSprite5.method633();
+							Mob.staticSprite5.method633();
 
 							for (var5 = 1; var5 < 103; var5++) {
 								for (var6 = 1; var6 < 103; var6++) {
@@ -20164,7 +20164,7 @@ public class Static {
 		return var1;
 	}
 
-	static final void staticMethod324(Actor var0, int var1) {
+	static final void staticMethod324(Mob var0, int var1) {
 		if (var0.anInt625 > Client.staticInt166) {
 			staticMethod81(var0);
 		} else if (var0.anInt604 >= Client.staticInt166) {
@@ -20204,8 +20204,8 @@ public class Static {
 				}
 
 				if (var5 != null) {
-					int var6 = var0.anInt628 - ((Actor) var5).anInt628;
-					int var4 = var0.anInt591 - ((Actor) var5).anInt591;
+					int var6 = var0.anInt628 - ((Mob) var5).anInt628;
+					int var4 = var0.anInt591 - ((Mob) var5).anInt591;
 					if (var6 != 0 || var4 != 0) {
 						var0.anInt630 = (int) (Math.atan2(var6, var4) * 325.949D) & 0x7ff;
 					}
@@ -29435,7 +29435,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod472(Actor var0) {
+	static final void staticMethod472(Mob var0) {
 		var0.anInt590 = var0.anInt594;
 		if (var0.anInt632 == 0) {
 			var0.anInt633 = 0;

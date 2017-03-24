@@ -1,4 +1,4 @@
-public final class Npc extends Actor {
+public final class Npc extends Mob {
 
 	public static boolean[] staticBoolArray12;
 	NpcDefinition aNpcDef1;

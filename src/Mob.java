@@ -1,4 +1,4 @@
-public abstract class Actor extends Renderable {
+public abstract class Mob extends Renderable {
 
 	int anInt591;
 	int anInt592;
