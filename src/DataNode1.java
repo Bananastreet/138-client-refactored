@@ -1,4 +1,4 @@
-public class NodeSub16 extends Node {
+public class DataNode1 extends Node {
 
 	int anInt284;
 	Widget aWidget1;
