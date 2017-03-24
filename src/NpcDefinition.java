@@ -68,18 +68,18 @@ public class NpcDefinition extends Cacheable {
 					return null;
 				}
 
-				RenderableSub3[] var121 = new RenderableSub3[anIntArray114.length];
+				EntitySub3[] var121 = new EntitySub3[anIntArray114.length];
 
 				int var8;
 				for (var8 = 0; var8 < anIntArray114.length; var8++) {
 					var121[var8] = Static.staticMethod434(staticJs5Index29, anIntArray114[var8], 0);
 				}
 
-				RenderableSub3 var12;
+				EntitySub3 var12;
 				if (var121.length == 1) {
 					var12 = var121[0];
 				} else {
-					var12 = new RenderableSub3(var121, var121.length);
+					var12 = new EntitySub3(var121, var121.length);
 				}
 
 				if (aShortArray15 != null) {
@@ -117,7 +117,7 @@ public class NpcDefinition extends Cacheable {
 		}
 	}
 
-	public final RenderableSub3 method542() {
+	public final EntitySub3 method542() {
 		if (anIntArray116 != null) {
 			NpcDefinition var5 = method544();
 			return var5 == null ? null : var5.method542();
@@ -135,17 +135,17 @@ public class NpcDefinition extends Cacheable {
 			if (var2) {
 				return null;
 			} else {
-				RenderableSub3[] var61 = new RenderableSub3[anIntArray115.length];
+				EntitySub3[] var61 = new EntitySub3[anIntArray115.length];
 
 				for (int var7 = 0; var7 < anIntArray115.length; var7++) {
 					var61[var7] = Static.staticMethod434(staticJs5Index29, anIntArray115[var7], 0);
 				}
 
-				RenderableSub3 var71;
+				EntitySub3 var71;
 				if (var61.length == 1) {
 					var71 = var61[0];
 				} else {
-					var71 = new RenderableSub3(var61, var61.length);
+					var71 = new EntitySub3(var61, var61.length);
 				}
 
 				int var1;

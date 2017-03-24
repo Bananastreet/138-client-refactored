@@ -52,21 +52,21 @@ public class IdentityKit extends Cacheable {
 		}
 	}
 
-	public RenderableSub3 method483() {
+	public EntitySub3 method483() {
 		if (anIntArray103 == null) {
 			return null;
 		} else {
-			RenderableSub3[] var3 = new RenderableSub3[anIntArray103.length];
+			EntitySub3[] var3 = new EntitySub3[anIntArray103.length];
 
 			for (int var4 = 0; var4 < anIntArray103.length; var4++) {
 				var3[var4] = Static.staticMethod434(staticJs5Index13, anIntArray103[var4], 0);
 			}
 
-			RenderableSub3 var41;
+			EntitySub3 var41;
 			if (var3.length == 1) {
 				var41 = var3[0];
 			} else {
-				var41 = new RenderableSub3(var3, var3.length);
+				var41 = new EntitySub3(var3, var3.length);
 			}
 
 			int var2;
@@ -126,8 +126,8 @@ public class IdentityKit extends Cacheable {
 
 	}
 
-	public RenderableSub3 method485() {
-		RenderableSub3[] var1 = new RenderableSub3[5];
+	public EntitySub3 method485() {
+		EntitySub3[] var1 = new EntitySub3[5];
 		int var2 = 0;
 
 		for (int var5 = 0; var5 < 5; var5++) {
@@ -136,7 +136,7 @@ public class IdentityKit extends Cacheable {
 			}
 		}
 
-		RenderableSub3 var51 = new RenderableSub3(var1, var2);
+		EntitySub3 var51 = new EntitySub3(var1, var2);
 		int var4;
 		if (aShortArray4 != null) {
 			for (var4 = 0; var4 < aShortArray4.length; var4++) {

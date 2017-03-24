@@ -9,7 +9,7 @@ public class ObjectDefinition extends Cacheable {
 	public static Cache staticCache15 = new Cache(500);
 	static Cache staticCache16 = new Cache(30);
 	static Cache staticCache17 = new Cache(30);
-	static RenderableSub3[] staticRenderableSub3Array1 = new RenderableSub3[4];
+	static EntitySub3[] staticRenderableSub3Array1 = new EntitySub3[4];
 	public String aString33 = "null";
 	public int anInt485 = 1;
 	public int anInt486 = 1;
@@ -274,7 +274,7 @@ public class ObjectDefinition extends Cacheable {
 
 		Model var11 = (Model) staticCache17.get(var9);
 		if (var11 == null) {
-			RenderableSub3 var12 = method515(var1, var2);
+			EntitySub3 var12 = method515(var1, var2);
 			if (var12 == null) {
 				return null;
 			}
@@ -324,7 +324,7 @@ public class ObjectDefinition extends Cacheable {
 
 		Object var7 = staticCache16.get(var8);
 		if (var7 == null) {
-			RenderableSub3 var10 = method515(var1, var2);
+			EntitySub3 var10 = method515(var1, var2);
 			if (var10 == null) {
 				return null;
 			}
@@ -342,22 +342,22 @@ public class ObjectDefinition extends Cacheable {
 		}
 
 		if (aBool58) {
-			var7 = ((RenderableSub3) var7).method581();
+			var7 = ((EntitySub3) var7).method581();
 		}
 
 		if (anInt490 >= 0) {
 			if (var7 instanceof Model) {
 				var7 = ((Model) var7).method588(var3, var4, var5, var6, true, anInt490);
-			} else if (var7 instanceof RenderableSub3) {
-				var7 = ((RenderableSub3) var7).method572(var3, var4, var5, var6, true, anInt490);
+			} else if (var7 instanceof EntitySub3) {
+				var7 = ((EntitySub3) var7).method572(var3, var4, var5, var6, true, anInt490);
 			}
 		}
 
 		return (Entity) var7;
 	}
 
-	final RenderableSub3 method515(int var1, int var2) {
-		RenderableSub3 var3 = null;
+	final EntitySub3 method515(int var1, int var2) {
+		EntitySub3 var3 = null;
 		int var4;
 		boolean var6;
 		int var7;
@@ -384,7 +384,7 @@ public class ObjectDefinition extends Cacheable {
 					var7 += 65536;
 				}
 
-				var3 = (RenderableSub3) staticCache15.get(var7);
+				var3 = (EntitySub3) staticCache15.get(var7);
 				if (var3 == null) {
 					var3 = Static.staticMethod434(staticJs5Index19, var7 & 0xffff, 0);
 					if (var3 == null) {
@@ -404,7 +404,7 @@ public class ObjectDefinition extends Cacheable {
 			}
 
 			if (var4 > 1) {
-				var3 = new RenderableSub3(staticRenderableSub3Array1, var4);
+				var3 = new EntitySub3(staticRenderableSub3Array1, var4);
 			}
 		} else {
 			var9 = -1;
@@ -426,7 +426,7 @@ public class ObjectDefinition extends Cacheable {
 				var4 += 65536;
 			}
 
-			var3 = (RenderableSub3) staticCache15.get(var4);
+			var3 = (EntitySub3) staticCache15.get(var4);
 			if (var3 == null) {
 				var3 = Static.staticMethod434(staticJs5Index19, var4 & 0xffff, 0);
 				if (var3 == null) {
@@ -454,7 +454,7 @@ public class ObjectDefinition extends Cacheable {
 			var101 = true;
 		}
 
-		RenderableSub3 var91 = new RenderableSub3(var3, var2 == 0 && !var6 && !var101, aShortArray10 == null,
+		EntitySub3 var91 = new EntitySub3(var3, var2 == 0 && !var6 && !var101, aShortArray10 == null,
 				aShortArray12 == null, true);
 		if (var1 == 4 && var2 > 3) {
 			var91.method577(256);
@@ -549,7 +549,7 @@ public class ObjectDefinition extends Cacheable {
 
 		Model var7 = (Model) staticCache17.get(var8);
 		if (var7 == null) {
-			RenderableSub3 var10 = method515(var1, var2);
+			EntitySub3 var10 = method515(var1, var2);
 			if (var10 == null) {
 				return null;
 			}

@@ -31,7 +31,7 @@ public class SpotAnim extends Cacheable {
 	public final Model method548(int var1) {
 		Model var2 = (Model) staticCache29.get(anInt554);
 		if (var2 == null) {
-			RenderableSub3 var5 = Static.staticMethod434(staticJs5Index30, anInt555, 0);
+			EntitySub3 var5 = Static.staticMethod434(staticJs5Index30, anInt555, 0);
 			if (var5 == null) {
 				return null;
 			}

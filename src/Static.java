@@ -28893,9 +28893,9 @@ public class Static {
 
 	}
 
-	public static RenderableSub3 staticMethod434(FileStore var0, int var1, int var2) {
+	public static EntitySub3 staticMethod434(FileStore var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
-		return var3 == null ? null : new RenderableSub3(var3);
+		return var3 == null ? null : new EntitySub3(var3);
 	}
 
 	static final int staticMethod435(int var0, int var1) {
@@ -28909,12 +28909,12 @@ public class Static {
 		return (var0 & 0xff80) + var1;
 	}
 
-	static void staticMethod436(RenderableSub3 var0, RenderableSub3 var1, int var2, int var3, int var4, boolean var5) {
+	static void staticMethod436(EntitySub3 var0, EntitySub3 var1, int var2, int var3, int var4, boolean var5) {
 		var0.method582();
 		var0.method586();
 		var1.method582();
 		var1.method586();
-		++RenderableSub3.staticInt333;
+		++EntitySub3.staticInt333;
 		int var8 = 0;
 		int[] var9 = var1.anIntArray133;
 		int var10 = var1.anInt651;
@@ -28960,8 +28960,8 @@ public class Static {
 									var17.anInt81 += var11.anInt81 * 1;
 									var17.anInt82 += var11.anInt82 * 1;
 									++var8;
-									RenderableSub3.staticIntArray132[var12] = RenderableSub3.staticInt333;
-									RenderableSub3.staticIntArray133[var16] = RenderableSub3.staticInt333;
+									EntitySub3.staticIntArray132[var12] = EntitySub3.staticInt333;
+									EntitySub3.staticIntArray133[var16] = EntitySub3.staticInt333;
 								}
 							}
 						}
@@ -28972,9 +28972,9 @@ public class Static {
 
 		if (var8 >= 3 && var5) {
 			for (var12 = 0; var12 < var0.anInt653; var12++) {
-				if (RenderableSub3.staticIntArray132[var0.anIntArray135[var12]] == RenderableSub3.staticInt333
-						&& RenderableSub3.staticIntArray132[var0.anIntArray131[var12]] == RenderableSub3.staticInt333
-						&& RenderableSub3.staticIntArray132[var0.anIntArray132[var12]] == RenderableSub3.staticInt333) {
+				if (EntitySub3.staticIntArray132[var0.anIntArray135[var12]] == EntitySub3.staticInt333
+						&& EntitySub3.staticIntArray132[var0.anIntArray131[var12]] == EntitySub3.staticInt333
+						&& EntitySub3.staticIntArray132[var0.anIntArray132[var12]] == EntitySub3.staticInt333) {
 					if (var0.aByteArray26 == null) {
 						var0.aByteArray26 = new byte[var0.anInt653];
 					}
@@ -28984,9 +28984,9 @@ public class Static {
 			}
 
 			for (var12 = 0; var12 < var1.anInt653; var12++) {
-				if (RenderableSub3.staticIntArray133[var1.anIntArray135[var12]] == RenderableSub3.staticInt333
-						&& RenderableSub3.staticIntArray133[var1.anIntArray131[var12]] == RenderableSub3.staticInt333
-						&& RenderableSub3.staticIntArray133[var1.anIntArray132[var12]] == RenderableSub3.staticInt333) {
+				if (EntitySub3.staticIntArray133[var1.anIntArray135[var12]] == EntitySub3.staticInt333
+						&& EntitySub3.staticIntArray133[var1.anIntArray131[var12]] == EntitySub3.staticInt333
+						&& EntitySub3.staticIntArray133[var1.anIntArray132[var12]] == EntitySub3.staticInt333) {
 					if (var1.aByteArray26 == null) {
 						var1.aByteArray26 = new byte[var1.anInt653];
 					}

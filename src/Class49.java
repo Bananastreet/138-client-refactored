@@ -162,13 +162,13 @@ public class Class49 {
 				}
 
 				if (var151 == null) {
-					RenderableSub3[] var171 = new RenderableSub3[12];
+					EntitySub3[] var171 = new EntitySub3[12];
 					var13 = 0;
 
 					int var11;
 					for (int var17 = 0; var17 < 12; var17++) {
 						var11 = var9[var17];
-						RenderableSub3 var14;
+						EntitySub3 var14;
 						if (var11 >= 256 && var11 < 512) {
 							var14 = Static.staticMethod382(var11 - 256).method483();
 							if (var14 != null) {
@@ -184,7 +184,7 @@ public class Class49 {
 						}
 					}
 
-					RenderableSub3 var181 = new RenderableSub3(var171, var13);
+					EntitySub3 var181 = new EntitySub3(var171, var13);
 
 					for (var11 = 0; var11 < 5; var11++) {
 						if (anIntArray48[var11] < Class60.staticShortArrayArray4[var11].length) {
@@ -221,7 +221,7 @@ public class Class49 {
 		}
 	}
 
-	RenderableSub3 method249() {
+	EntitySub3 method249() {
 		if (anInt198 != -1) {
 			return Static.staticMethod85(anInt198).method542();
 		} else {
@@ -242,13 +242,13 @@ public class Class49 {
 			if (var5) {
 				return null;
 			} else {
-				RenderableSub3[] var71 = new RenderableSub3[12];
+				EntitySub3[] var71 = new EntitySub3[12];
 				var4 = 0;
 
 				int var2;
 				for (int var8 = 0; var8 < 12; var8++) {
 					var2 = anIntArray49[var8];
-					RenderableSub3 var1;
+					EntitySub3 var1;
 					if (var2 >= 256 && var2 < 512) {
 						var1 = Static.staticMethod382(var2 - 256).method485();
 						if (var1 != null) {
@@ -264,7 +264,7 @@ public class Class49 {
 					}
 				}
 
-				RenderableSub3 var81 = new RenderableSub3(var71, var4);
+				EntitySub3 var81 = new EntitySub3(var71, var4);
 
 				for (var2 = 0; var2 < 5; var2++) {
 					if (anIntArray48[var2] < Class60.staticShortArrayArray4[var2].length) {

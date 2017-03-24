@@ -648,7 +648,7 @@ public class SceneGraph {
 		}
 	}
 
-	void method120(RenderableSub3 var1, int var2, int var3, int var4, int var5, int var6) {
+	void method120(EntitySub3 var1, int var2, int var3, int var4, int var5, int var6) {
 		boolean var7 = true;
 		int var11 = var3;
 		int var17 = var3 + var5;
@@ -674,15 +674,15 @@ public class SceneGraph {
 													+ anIntArrayArrayArray3[var2][var3 + 1][var4 + 1]) / 4;
 									DataClass5 var20 = var8.aClass31_1;
 									if (var20 != null) {
-										RenderableSub3 var23;
-										if (var20.aRenderable5 instanceof RenderableSub3) {
-											var23 = (RenderableSub3) var20.aRenderable5;
+										EntitySub3 var23;
+										if (var20.aRenderable5 instanceof EntitySub3) {
+											var23 = (EntitySub3) var20.aRenderable5;
 											Static.staticMethod436(var1, var23, (var12 - var3) * 128 + (1 - var5) * 64,
 													var13, (var14 - var4) * 128 + (1 - var6) * 64, var7);
 										}
 
-										if (var20.aRenderable4 instanceof RenderableSub3) {
-											var23 = (RenderableSub3) var20.aRenderable4;
+										if (var20.aRenderable4 instanceof EntitySub3) {
+											var23 = (EntitySub3) var20.aRenderable4;
 											Static.staticMethod436(var1, var23, (var12 - var3) * 128 + (1 - var5) * 64,
 													var13, (var14 - var4) * 128 + (1 - var6) * 64, var7);
 										}
@@ -690,8 +690,8 @@ public class SceneGraph {
 
 									for (int var231 = 0; var231 < var8.anInt254; var231++) {
 										DataClass7 var10 = var8.aClass32Array2[var231];
-										if (var10 != null && var10.aRenderable6 instanceof RenderableSub3) {
-											RenderableSub3 var21 = (RenderableSub3) var10.aRenderable6;
+										if (var10 != null && var10.aRenderable6 instanceof EntitySub3) {
+											EntitySub3 var21 = (EntitySub3) var10.aRenderable6;
 											int var22 = var10.anInt128 - var10.anInt120 + 1;
 											int var19 = var10.anInt124 - var10.anInt123 + 1;
 											Static.staticMethod436(var1, var21,
@@ -1672,12 +1672,12 @@ public class SceneGraph {
 					Tile var6 = aTileArrayArrayArray1[var4][var7][var8];
 					if (var6 != null) {
 						DataClass5 var5 = var6.aClass31_1;
-						RenderableSub3 var10;
-						if (var5 != null && var5.aRenderable5 instanceof RenderableSub3) {
-							RenderableSub3 var14 = (RenderableSub3) var5.aRenderable5;
+						EntitySub3 var10;
+						if (var5 != null && var5.aRenderable5 instanceof EntitySub3) {
+							EntitySub3 var14 = (EntitySub3) var5.aRenderable5;
 							method120(var14, var4, var7, var8, 1, 1);
-							if (var5.aRenderable4 instanceof RenderableSub3) {
-								var10 = (RenderableSub3) var5.aRenderable4;
+							if (var5.aRenderable4 instanceof EntitySub3) {
+								var10 = (EntitySub3) var5.aRenderable4;
 								method120(var10, var4, var7, var8, 1, 1);
 								Static.staticMethod436(var14, var10, 0, 0, 0, false);
 								var5.aRenderable4 = var10.method583(var10.aShort2, var10.aShort3, var1, var2, var3);
@@ -1688,8 +1688,8 @@ public class SceneGraph {
 
 						for (int var13 = 0; var13 < var6.anInt254; var13++) {
 							DataClass7 var12 = var6.aClass32Array2[var13];
-							if (var12 != null && var12.aRenderable6 instanceof RenderableSub3) {
-								RenderableSub3 var9 = (RenderableSub3) var12.aRenderable6;
+							if (var12 != null && var12.aRenderable6 instanceof EntitySub3) {
+								EntitySub3 var9 = (EntitySub3) var12.aRenderable6;
 								method120(var9, var4, var7, var8, var12.anInt128 - var12.anInt120 + 1,
 										var12.anInt124 - var12.anInt123 + 1);
 								var12.aRenderable6 = var9.method583(var9.aShort2, var9.aShort3, var1, var2, var3);
@@ -1697,8 +1697,8 @@ public class SceneGraph {
 						}
 
 						DataClass6 var141 = var6.aClass33_1;
-						if (var141 != null && var141.aRenderable9 instanceof RenderableSub3) {
-							var10 = (RenderableSub3) var141.aRenderable9;
+						if (var141 != null && var141.aRenderable9 instanceof EntitySub3) {
+							var10 = (EntitySub3) var141.aRenderable9;
 							method136(var10, var4, var7, var8);
 							var141.aRenderable9 = var10.method583(var10.aShort2, var10.aShort3, var1, var2, var3);
 						}
@@ -2060,37 +2060,37 @@ public class SceneGraph {
 
 	}
 
-	void method136(RenderableSub3 var1, int var2, int var3, int var4) {
+	void method136(EntitySub3 var1, int var2, int var3, int var4) {
 		Tile var5;
-		RenderableSub3 var6;
+		EntitySub3 var6;
 		if (var3 < anInt70) {
 			var5 = aTileArrayArrayArray1[var2][var3 + 1][var4];
-			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof RenderableSub3) {
-				var6 = (RenderableSub3) var5.aClass33_1.aRenderable9;
+			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof EntitySub3) {
+				var6 = (EntitySub3) var5.aClass33_1.aRenderable9;
 				Static.staticMethod436(var1, var6, 128, 0, 0, true);
 			}
 		}
 
 		if (var4 < anInt70) {
 			var5 = aTileArrayArrayArray1[var2][var3][var4 + 1];
-			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof RenderableSub3) {
-				var6 = (RenderableSub3) var5.aClass33_1.aRenderable9;
+			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof EntitySub3) {
+				var6 = (EntitySub3) var5.aClass33_1.aRenderable9;
 				Static.staticMethod436(var1, var6, 0, 0, 128, true);
 			}
 		}
 
 		if (var3 < anInt70 && var4 < anInt68) {
 			var5 = aTileArrayArrayArray1[var2][var3 + 1][var4 + 1];
-			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof RenderableSub3) {
-				var6 = (RenderableSub3) var5.aClass33_1.aRenderable9;
+			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof EntitySub3) {
+				var6 = (EntitySub3) var5.aClass33_1.aRenderable9;
 				Static.staticMethod436(var1, var6, 128, 0, 128, true);
 			}
 		}
 
 		if (var3 < anInt70 && var4 > 0) {
 			var5 = aTileArrayArrayArray1[var2][var3 + 1][var4 - 1];
-			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof RenderableSub3) {
-				var6 = (RenderableSub3) var5.aClass33_1.aRenderable9;
+			if (var5 != null && var5.aClass33_1 != null && var5.aClass33_1.aRenderable9 instanceof EntitySub3) {
+				var6 = (EntitySub3) var5.aClass33_1.aRenderable9;
 				Static.staticMethod436(var1, var6, 128, 0, -128, true);
 			}
 		}

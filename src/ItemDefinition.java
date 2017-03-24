@@ -55,7 +55,7 @@ public class ItemDefinition extends Cacheable {
 	void method486() {
 	}
 
-	public final RenderableSub3 method487(boolean var1) {
+	public final EntitySub3 method487(boolean var1) {
 		int var2 = anInt440;
 		int var4 = anInt453;
 		if (var1) {
@@ -66,11 +66,11 @@ public class ItemDefinition extends Cacheable {
 		if (var2 == -1) {
 			return null;
 		} else {
-			RenderableSub3 var3 = Static.staticMethod434(staticJs5Index14, var2, 0);
+			EntitySub3 var3 = Static.staticMethod434(staticJs5Index14, var2, 0);
 			if (var4 != -1) {
-				RenderableSub3 var7 = Static.staticMethod434(staticJs5Index14, var4, 0);
-				RenderableSub3[] var6 = new RenderableSub3[] { var3, var7 };
-				var3 = new RenderableSub3(var6, 2);
+				EntitySub3 var7 = Static.staticMethod434(staticJs5Index14, var4, 0);
+				EntitySub3[] var6 = new EntitySub3[] { var3, var7 };
+				var3 = new EntitySub3(var6, 2);
 			}
 
 			int var71;
@@ -285,7 +285,7 @@ public class ItemDefinition extends Cacheable {
 		return this;
 	}
 
-	public final RenderableSub3 method492(boolean var1) {
+	public final EntitySub3 method492(boolean var1) {
 		int var2 = anInt446;
 		int var5 = anInt438;
 		int var6 = anInt451;
@@ -298,16 +298,16 @@ public class ItemDefinition extends Cacheable {
 		if (var2 == -1) {
 			return null;
 		} else {
-			RenderableSub3 var3 = Static.staticMethod434(staticJs5Index14, var2, 0);
+			EntitySub3 var3 = Static.staticMethod434(staticJs5Index14, var2, 0);
 			if (var5 != -1) {
-				RenderableSub3 var9 = Static.staticMethod434(staticJs5Index14, var5, 0);
+				EntitySub3 var9 = Static.staticMethod434(staticJs5Index14, var5, 0);
 				if (var6 != -1) {
-					RenderableSub3 var10 = Static.staticMethod434(staticJs5Index14, var6, 0);
-					RenderableSub3[] var8 = new RenderableSub3[] { var3, var9, var10 };
-					var3 = new RenderableSub3(var8, 3);
+					EntitySub3 var10 = Static.staticMethod434(staticJs5Index14, var6, 0);
+					EntitySub3[] var8 = new EntitySub3[] { var3, var9, var10 };
+					var3 = new EntitySub3(var8, 3);
 				} else {
-					RenderableSub3[] var101 = new RenderableSub3[] { var3, var9 };
-					var3 = new RenderableSub3(var101, 2);
+					EntitySub3[] var101 = new EntitySub3[] { var3, var9 };
+					var3 = new EntitySub3(var101, 2);
 				}
 			}
 
@@ -379,7 +379,7 @@ public class ItemDefinition extends Cacheable {
 		if (var51 != null) {
 			return var51;
 		} else {
-			RenderableSub3 var61 = Static.staticMethod434(staticJs5Index14, anInt441, 0);
+			EntitySub3 var61 = Static.staticMethod434(staticJs5Index14, anInt441, 0);
 			if (var61 == null) {
 				return null;
 			} else {
@@ -438,7 +438,7 @@ public class ItemDefinition extends Cacheable {
 		}
 	}
 
-	public final RenderableSub3 method496(int var1) {
+	public final EntitySub3 method496(int var1) {
 		int var2;
 		if (anIntArray105 != null && var1 > 1) {
 			int var4 = -1;
@@ -454,7 +454,7 @@ public class ItemDefinition extends Cacheable {
 			}
 		}
 
-		RenderableSub3 var41 = Static.staticMethod434(staticJs5Index14, anInt441, 0);
+		EntitySub3 var41 = Static.staticMethod434(staticJs5Index14, anInt441, 0);
 		if (var41 == null) {
 			return null;
 		} else {

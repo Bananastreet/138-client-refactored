@@ -1,4 +1,4 @@
-public class RenderableSub3 extends Entity {
+public class EntitySub3 extends Entity {
 
 	static int[] staticIntArray132 = new int[10000];
 	static int[] staticIntArray133 = new int[10000];
@@ -691,7 +691,7 @@ public class RenderableSub3 extends Entity {
 
 	}
 
-	public RenderableSub3(RenderableSub3[] var1, int var2) {
+	public EntitySub3(EntitySub3[] var1, int var2) {
 		boolean var5 = false;
 		boolean var10 = false;
 		boolean var4 = false;
@@ -703,7 +703,7 @@ public class RenderableSub3 extends Entity {
 		anInt652 = 0;
 		aByte6 = -1;
 
-		RenderableSub3 var7;
+		EntitySub3 var7;
 		int var9;
 		for (var9 = 0; var9 < var2; var9++) {
 			var7 = var1[var9];
@@ -860,7 +860,7 @@ public class RenderableSub3 extends Entity {
 
 	}
 
-	public RenderableSub3 method572(int[][] var1, int var2, int var3, int var4, boolean var5, int var6) {
+	public EntitySub3 method572(int[][] var1, int var2, int var3, int var4, boolean var5, int var6) {
 		method582();
 		int var11 = var2 + anInt656;
 		int var13 = var2 + anInt654;
@@ -875,9 +875,9 @@ public class RenderableSub3 extends Entity {
 					&& var1[var13][var10] == var3) {
 				return this;
 			} else {
-				RenderableSub3 var7;
+				EntitySub3 var7;
 				if (var5) {
-					var7 = new RenderableSub3();
+					var7 = new EntitySub3();
 					var7.anInt651 = anInt651;
 					var7.anInt653 = anInt653;
 					var7.anInt652 = anInt652;
@@ -1075,7 +1075,7 @@ public class RenderableSub3 extends Entity {
 		method569();
 	}
 
-	public RenderableSub3(RenderableSub3 var1, boolean var2, boolean var3, boolean var4, boolean var5) {
+	public EntitySub3(EntitySub3 var1, boolean var2, boolean var3, boolean var4, boolean var5) {
 		anInt651 = var1.anInt651;
 		anInt653 = var1.anInt653;
 		anInt652 = var1.anInt652;
@@ -1186,8 +1186,8 @@ public class RenderableSub3 extends Entity {
 		method569();
 	}
 
-	public RenderableSub3 method581() {
-		RenderableSub3 var1 = new RenderableSub3();
+	public EntitySub3 method581() {
+		EntitySub3 var1 = new EntitySub3();
 		if (aByteArray26 != null) {
 			var1.aByteArray26 = new byte[anInt653];
 
@@ -1466,7 +1466,7 @@ public class RenderableSub3 extends Entity {
 		return var6;
 	}
 
-	final int method584(RenderableSub3 var1, int var2) {
+	final int method584(EntitySub3 var1, int var2) {
 		int var3 = -1;
 		int var6 = var1.anIntArray133[var2];
 		int var5 = var1.anIntArray129[var2];
@@ -1502,7 +1502,7 @@ public class RenderableSub3 extends Entity {
 
 	}
 
-	RenderableSub3(byte[] var1) {
+	EntitySub3(byte[] var1) {
 		if (var1[var1.length - 1] == -1 && var1[var1.length - 2] == -1) {
 			method570(var1);
 		} else {
@@ -1596,7 +1596,7 @@ public class RenderableSub3 extends Entity {
 		method569();
 	}
 
-	RenderableSub3() {
+	EntitySub3() {
 	}
 
 }

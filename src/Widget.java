@@ -359,7 +359,7 @@ public class Widget extends Node {
 		} else {
 			Model var9 = (Model) staticCache5.get((var7 << 16) + var8);
 			if (var9 == null) {
-				RenderableSub3 var6;
+				EntitySub3 var6;
 				if (var7 == 1) {
 					var6 = Static.staticMethod434(Static.staticJs5Index7, var8, 0);
 					if (var6 == null) {
