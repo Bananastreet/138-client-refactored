@@ -2167,7 +2167,7 @@ public class Static {
 			return var1 ? staticMethod13(var21) : var21;
 		} else if (var0 instanceof AbstractByteBuffer) {
 			AbstractByteBuffer var2 = (AbstractByteBuffer) var0;
-			return var2.method254();
+			return var2.toByteArray();
 		} else {
 			throw new IllegalArgumentException();
 		}
@@ -7881,7 +7881,7 @@ public class Static {
 			if (var0.length > 136 && !AbstractByteBuffer.staticBool17) {
 				try {
 					DirectByteBuffer var3 = new DirectByteBuffer();
-					var3.method253(var0);
+					var3.put(var0);
 					return var3;
 				} catch (Throwable var31) {
 					AbstractByteBuffer.staticBool17 = true;

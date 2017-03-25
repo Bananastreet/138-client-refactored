@@ -2,18 +2,18 @@ import java.nio.ByteBuffer;
 
 public class DirectByteBuffer extends AbstractByteBuffer {
 
-	ByteBuffer aByteBuffer1;
+	ByteBuffer buffer;	
 
-	void method253(byte[] var1) {
-		aByteBuffer1 = ByteBuffer.allocateDirect(var1.length);
-		aByteBuffer1.position(0);
-		aByteBuffer1.put(var1);
+	void put(byte[] data) {		
+		buffer = ByteBuffer.allocateDirect(data.length);
+		buffer.position(0);
+		buffer.put(data);
 	}
 
-	byte[] method254() {
-		byte[] var1 = new byte[aByteBuffer1.capacity()];
-		aByteBuffer1.position(0);
-		aByteBuffer1.get(var1);
+	byte[] toByteArray() {
+		byte[] var1 = new byte[buffer.capacity()];
+		buffer.position(0);
+		buffer.get(var1);
 		return var1;
 	}
 
