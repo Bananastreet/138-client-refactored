@@ -22,7 +22,7 @@ public class SceneGraph {
 	static DataClass4[][] staticClass30ArrayArray1;
 	static int staticInt59;
 	static DataClass4[] staticClass30Array1;
-	static Class39 staticClass39_1;
+	static Deque staticClass39_1;
 	static final int[] staticIntArray42;
 	static final int[] staticIntArray43;
 	static final int[] staticIntArray39;
@@ -72,7 +72,7 @@ public class SceneGraph {
 		staticClass30ArrayArray1 = new DataClass4[staticInt41][500];
 		staticInt59 = 0;
 		staticClass30Array1 = new DataClass4[500];
-		staticClass39_1 = new Class39();
+		staticClass39_1 = new Deque();
 		staticIntArray42 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
 		staticIntArray43 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 		staticIntArray39 = new int[] { 76, 8, 137, 4, 0, 1, 38, 2, 19 };

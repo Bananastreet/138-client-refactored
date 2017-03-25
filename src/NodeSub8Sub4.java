@@ -1,6 +1,6 @@
 public class NodeSub8Sub4 extends NodeSub8 {
 
-	Class39 aClass39_4 = new Class39();
+	Deque aClass39_4 = new Deque();
 	NodeSub8Sub1 aNodeSub8Sub1_1 = new NodeSub8Sub1();
 	NodeSub8Sub3 aNodeSub8Sub3_1;
 

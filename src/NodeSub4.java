@@ -10,7 +10,7 @@ public final class NodeSub4 extends Node {
 	int anInt231;
 	static int staticInt155;
 	ObjectDefinition anObjectDef1;
-	static Class39 staticClass39_4 = new Class39();
+	static Deque staticClass39_4 = new Deque();
 	int anInt227;
 	int anInt226;
 	int anInt228;

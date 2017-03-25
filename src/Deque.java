@@ -1,4 +1,4 @@
-public class Class39 {
+public class Deque {
 
 	Node aNode8;
 	public Node aNode9 = new Node();
@@ -101,7 +101,7 @@ public class Class39 {
 		}
 	}
 
-	public Class39() {
+	public Deque() {
 		aNode9.next = aNode9;
 		aNode9.prev = aNode9;
 	}

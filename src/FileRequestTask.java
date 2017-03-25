@@ -1,8 +1,8 @@
 public class FileRequestTask implements Runnable {
 
 	static int staticInt128 = 0;
-	static Class39 staticClass39_3 = new Class39();
-	static Class39 staticClass39_2 = new Class39();
+	static Deque staticClass39_3 = new Deque();
+	static Deque staticClass39_2 = new Deque();
 	static Object staticObject1 = new Object();
 
 	public void run() {

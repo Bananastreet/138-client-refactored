@@ -3,7 +3,7 @@ public class Class11 implements Interface2 {
 	static Widget[] staticWidgetArray1;
 	int anInt23 = 0;
 	double aDouble1 = 1.0D;
-	Class39 aClass39_1 = new Class39();
+	Deque aClass39_1 = new Deque();
 	int anInt24 = 128;
 	AbstractFileStore aJs5Index3;
 	int anInt22;
@@ -52,7 +52,7 @@ public class Class11 implements Interface2 {
 			}
 		}
 
-		aClass39_1 = new Class39();
+		aClass39_1 = new Deque();
 		anInt23 = anInt22 * -79300955;
 	}
 

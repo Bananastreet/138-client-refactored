@@ -2814,7 +2814,7 @@ public class Static {
 											}
 
 											for (var42 = 0; var42 < 104; var42++) {
-												Class39 var521 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var46][var42];
+												Deque var521 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var46][var42];
 												if (var521 != null) {
 													var41 = var46 * 4 + 2
 															- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
@@ -7141,7 +7141,7 @@ public class Static {
 	}
 
 	static final void staticMethod262(int var0, int var1) {
-		Class39 var2 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var0][var1];
+		Deque var2 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var0][var1];
 		if (var2 == null) {
 			Friend.staticScene1.method109(NodeSub4.staticInt155, var0, var1);
 		} else {
@@ -11455,7 +11455,7 @@ public class Static {
 			}
 		}
 
-		Client.staticClass39_7 = new Class39();
+		Client.staticClass39_7 = new Deque();
 		Client.staticInt202 = 0;
 		Client.staticInt308 = 0;
 		Client.staticInt310 = 0;
@@ -15659,7 +15659,7 @@ public class Static {
 				}
 
 				if (var15 == 3) {
-					Class39 var291 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var26][var10];
+					Deque var291 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var26][var10];
 					if (var291 != null) {
 						for (Item var22 = (Item) var291.method196(); var22 != null; var22 = (Item) var291.method197()) {
 							ItemDefinition var23 = staticMethod153(var22.anInt573);
@@ -20620,7 +20620,7 @@ public class Static {
 			var4 = Client.inBuffer.readUShort();
 			var311 = Client.inBuffer.readUShort();
 			if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
-				Class39 var38 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
+				Deque var38 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 				if (var38 != null) {
 					for (Item var361 = (Item) var38.method195(); var361 != null; var361 = (Item) var38.method193()) {
 						if ((var32 & 0x7fff) == var361.anInt573 && var4 == var361.anInt574) {
@@ -20672,7 +20672,7 @@ public class Static {
 					var41.anInt573 = var14;
 					var41.anInt574 = var2;
 					if (Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] == null) {
-						Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] = new Class39();
+						Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4] = new Deque();
 					}
 
 					Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var32][var4].method198(var41);
@@ -20751,7 +20751,7 @@ public class Static {
 					var3 = (var14 & 0x7) + ChatMessage.staticInt331;
 					var32 = Client.inBuffer.method353();
 					if (var2 >= 0 && var3 >= 0 && var2 < 104 && var3 < 104) {
-						Class39 var42 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
+						Deque var42 = Client.staticClass39ArrayArrayArray1[NodeSub4.staticInt155][var2][var3];
 						if (var42 != null) {
 							for (var41 = (Item) var42.method195(); var41 != null; var41 = (Item) var42.method193()) {
 								if ((var32 & 0x7fff) == var41.anInt573) {

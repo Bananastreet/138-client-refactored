@@ -2,8 +2,8 @@ public class NodeSub8Sub1 extends NodeSub8 {
 
 	int anInt403 = -1;
 	int anInt402 = 0;
-	Class39 aClass39_2 = new Class39();
-	Class39 aClass39_3 = new Class39();
+	Deque aClass39_2 = new Deque();
+	Deque aClass39_3 = new Deque();
 
 	public final synchronized void method406(NodeSub8 var1) {
 		var1.method174();

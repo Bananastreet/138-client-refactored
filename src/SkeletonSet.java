@@ -10,7 +10,7 @@ public class SkeletonSet extends Cacheable {
 	}
 
 	SkeletonSet(AbstractFileStore var1, AbstractFileStore var2, int var3, boolean var4) {
-		Class39 var13 = new Class39();
+		Deque var13 = new Deque();
 		int var9 = var1.method263(var3);
 		aClass24Array1 = new AnimationSkeleton[var9];
 		int[] var5 = var1.method262(var3);
