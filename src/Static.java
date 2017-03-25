@@ -6236,6 +6236,8 @@ public class Static {
 				throw new RuntimeException();
 			} else {
 				byte[] var5 = new byte[var4];
+				
+				// index 1 (archives)
 				if (var3 == 1) {
 					BZip2Decompressor.staticMethod166(var5, var4, var0, var2, 9);
 				} else {

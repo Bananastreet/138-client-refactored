@@ -17,16 +17,16 @@ public class SoundInstrument {
 	int[] anIntArray22 = new int[5];
 	int[] anIntArray23 = new int[5];
 	int[] anIntArray24 = new int[5];
-	Class14 aClass14_4;
-	Class14 aClass14_1;
-	Class14 aClass14_3;
-	Class14 aClass14_2;
-	Class14 aClass14_5;
-	Class14 aClass14_8;
-	Class14 aClass14_6;
-	Class14 aClass14_9;
+	MidiSequence aClass14_4;
+	MidiSequence aClass14_1;
+	MidiSequence aClass14_3;
+	MidiSequence aClass14_2;
+	MidiSequence aClass14_5;
+	MidiSequence aClass14_8;
+	MidiSequence aClass14_6;
+	MidiSequence aClass14_9;
 	Class18 aClass18_1;
-	Class14 aClass14_7;
+	MidiSequence aClass14_7;
 
 	static {
 		Random var1 = new Random(0L);
@@ -259,34 +259,34 @@ public class SoundInstrument {
 	}
 
 	final void method60(ByteBuf var1) {
-		aClass14_4 = new Class14();
+		aClass14_4 = new MidiSequence();
 		aClass14_4.method49(var1);
-		aClass14_1 = new Class14();
+		aClass14_1 = new MidiSequence();
 		aClass14_1.method49(var1);
 		int var2 = var1.readUByte();
 		if (var2 != 0) {
 			--var1.position;
-			aClass14_3 = new Class14();
+			aClass14_3 = new MidiSequence();
 			aClass14_3.method49(var1);
-			aClass14_2 = new Class14();
+			aClass14_2 = new MidiSequence();
 			aClass14_2.method49(var1);
 		}
 
 		var2 = var1.readUByte();
 		if (var2 != 0) {
 			--var1.position;
-			aClass14_5 = new Class14();
+			aClass14_5 = new MidiSequence();
 			aClass14_5.method49(var1);
-			aClass14_8 = new Class14();
+			aClass14_8 = new MidiSequence();
 			aClass14_8.method49(var1);
 		}
 
 		var2 = var1.readUByte();
 		if (var2 != 0) {
 			--var1.position;
-			aClass14_6 = new Class14();
+			aClass14_6 = new MidiSequence();
 			aClass14_6.method49(var1);
-			aClass14_9 = new Class14();
+			aClass14_9 = new MidiSequence();
 			aClass14_9.method49(var1);
 		}
 
@@ -306,7 +306,7 @@ public class SoundInstrument {
 		anInt47 = var1.readUShort();
 		anInt46 = var1.readUShort();
 		aClass18_1 = new Class18();
-		aClass14_7 = new Class14();
+		aClass14_7 = new MidiSequence();
 		aClass18_1.method65(var1, aClass14_7);
 	}
 

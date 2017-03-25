@@ -71,7 +71,7 @@ public class Class18 {
 		}
 	}
 
-	final void method65(ByteBuf var1, Class14 var2) {
+	final void method65(ByteBuf var1, MidiSequence var2) {
 		int var3 = var1.readUByte();
 		anIntArray26[0] = var3 >> 4;
 		anIntArray26[1] = var3 & 0xf;

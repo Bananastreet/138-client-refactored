@@ -1,4 +1,4 @@
-public class Class14 {
+public class MidiSequence {
 
 	int anInt34 = 2;
 	int[] anIntArray20 = new int[2];
@@ -57,7 +57,7 @@ public class Class14 {
 		anInt36 = 0;
 	}
 
-	Class14() {
+	MidiSequence() {
 		anIntArray20[0] = 0;
 		anIntArray20[1] = '\uffff';
 		anIntArray21[0] = 0;
