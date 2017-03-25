@@ -1,7 +1,7 @@
 
 public class BZip2Decompressor {
 	
-	static BZip2DState staticBZip2DState1 = new BZip2DState();
+	static BZip2DecompressionState staticBZip2DState1 = new BZip2DecompressionState();
 	
 	public static int staticMethod166(byte[] var0, int var1, byte[] var2, int var3, int var4) {
 		synchronized (staticBZip2DState1) {
@@ -22,7 +22,7 @@ public class BZip2Decompressor {
 		}
 	}
 	
-	static void staticMethod168(BZip2DState var0) {
+	static void staticMethod168(BZip2DecompressionState var0) {
 		int var19 = 0;
 		int[] var16 = null;
 		int[] var29 = null;
@@ -380,7 +380,7 @@ public class BZip2Decompressor {
 		}
 	}
 	
-	static void staticMethod167(BZip2DState var0) {
+	static void staticMethod167(BZip2DecompressionState var0) {
 		byte var1 = var0.aByte1;
 		int var13 = var0.anInt169;
 		int var3 = var0.anInt162;
@@ -551,7 +551,7 @@ public class BZip2Decompressor {
 
 	}
 	
-	static void staticMethod170(BZip2DState var0) {
+	static void staticMethod170(BZip2DecompressionState var0) {
 		var0.anInt179 = 0;
 
 		for (int var1 = 0; var1 < 256; var1++) {
@@ -563,15 +563,15 @@ public class BZip2Decompressor {
 
 	}
 	
-	static byte staticMethod171(BZip2DState var0) {
+	static byte staticMethod171(BZip2DecompressionState var0) {
 		return (byte) staticMethod173(8, var0);
 	}
 	
-	static byte staticMethod169(BZip2DState var0) {
+	static byte staticMethod169(BZip2DecompressionState var0) {
 		return (byte) staticMethod173(1, var0);
 	}
 	
-	static int staticMethod173(int var0, BZip2DState var1) {
+	static int staticMethod173(int var0, BZip2DecompressionState var1) {
 		while (var1.anInt171 < var0) {
 			var1.anInt170 = var1.anInt170 << 8 | var1.aByteArray6[var1.anInt166] & 0xff;
 			var1.anInt171 += 8;

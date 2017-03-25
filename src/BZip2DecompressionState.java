@@ -1,4 +1,4 @@
-public final class BZip2DState {
+public final class BZip2DecompressionState {
 
 	int anInt160;
 	int anInt162;
