@@ -1,4 +1,4 @@
-public class Class24 {
+public class AnimationSkeleton {
 
 	static int[] staticIntArray36 = new int[500];
 	static int[] staticIntArray34 = new int[500];
@@ -12,7 +12,7 @@ public class Class24 {
 	int[] anIntArray33;
 	int[] anIntArray34;
 
-	Class24(byte[] var1, NodeSub10 var2) {
+	AnimationSkeleton(byte[] var1, NodeSub10 var2) {
 		aNodeSub10_1 = var2;
 		ByteBuf var5 = new ByteBuf(var1);
 		ByteBuf var6 = new ByteBuf(var1);

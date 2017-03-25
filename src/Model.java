@@ -419,8 +419,8 @@ public class Model extends Entity {
 	public void method595(CacheableSub2 var1, int var2, CacheableSub2 var3, int var4, int[] var5) {
 		if (var2 != -1) {
 			if (var5 != null && var4 != -1) {
-				Class24 var9 = var1.aClass24Array1[var2];
-				Class24 var8 = var3.aClass24Array1[var4];
+				AnimationSkeleton var9 = var1.aClass24Array1[var2];
+				AnimationSkeleton var8 = var3.aClass24Array1[var4];
 				NodeSub10 var10 = var9.aNodeSub10_1;
 				staticInt335 = 0;
 				staticInt334 = 0;
@@ -718,7 +718,7 @@ public class Model extends Entity {
 
 	public void method602(CacheableSub2 var1, int var2) {
 		if (anIntArrayArray15 != null && var2 != -1) {
-			Class24 var3 = var1.aClass24Array1[var2];
+			AnimationSkeleton var3 = var1.aClass24Array1[var2];
 			NodeSub10 var4 = var3.aNodeSub10_1;
 			staticInt335 = 0;
 			staticInt334 = 0;

@@ -3,7 +3,7 @@ public class CacheableSub2 extends Cacheable {
 	public static GraphicsBuffer staticGraphicsBuffer1;
 	static int[] staticIntArray127;
 	static Sprite staticSprite4;
-	Class24[] aClass24Array1;
+	AnimationSkeleton[] aClass24Array1;
 
 	public boolean method436(int var1) {
 		return aClass24Array1[var1].aBool9;
@@ -12,7 +12,7 @@ public class CacheableSub2 extends Cacheable {
 	CacheableSub2(FileStore var1, FileStore var2, int var3, boolean var4) {
 		Class39 var13 = new Class39();
 		int var9 = var1.method263(var3);
-		aClass24Array1 = new Class24[var9];
+		aClass24Array1 = new AnimationSkeleton[var9];
 		int[] var5 = var1.method262(var3);
 
 		for (int var6 = 0; var6 < var5.length; var6++) {
@@ -40,7 +40,7 @@ public class CacheableSub2 extends Cacheable {
 				var13.method198(var8);
 			}
 
-			aClass24Array1[var5[var6]] = new Class24(var7, var8);
+			aClass24Array1[var5[var6]] = new AnimationSkeleton(var7, var8);
 		}
 
 	}
