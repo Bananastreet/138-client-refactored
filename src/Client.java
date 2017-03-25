@@ -40,8 +40,8 @@ public final class Client extends GameShell {
 	static int staticInt176 = 0;
 	static int staticInt177 = 0;
 	static int staticInt178 = 0;
-	static Class4 staticClass4_5;
-	static Class4 staticClass4_6;
+	static EnumerableSub1 staticClass4_5;
+	static EnumerableSub1 staticClass4_6;
 	static int staticInt179;
 	static int staticInt271;
 	static int staticInt181;
@@ -301,8 +301,8 @@ public final class Client extends GameShell {
 	static Client staticGame1;
 
 	static {
-		staticClass4_5 = Class4.staticClass4_2;
-		staticClass4_6 = Class4.staticClass4_2;
+		staticClass4_5 = EnumerableSub1.staticClass4_2;
+		staticClass4_6 = EnumerableSub1.staticClass4_2;
 		staticInt179 = 0;
 		staticInt271 = 0;
 		staticInt181 = 0;

@@ -2501,7 +2501,7 @@ public class Static {
 									var11 = staticMethod240(AbstractClass2Sub1.staticPlayer1.anInt628,
 											AbstractClass2Sub1.staticPlayer1.anInt591, NodeSub4.staticInt155)
 											- Client.staticInt225;
-									var39 = Class4.staticInt21;
+									var39 = EnumerableSub1.staticInt21;
 									var33 = var42 * 3 + 600;
 									var28 = 2048 - var42 & 0x7ff;
 									var26 = 2048 - var51 & 0x7ff;
@@ -6355,12 +6355,12 @@ public class Static {
 					if (Client.staticStringArray7[var4] != null) {
 						short var5 = 0;
 						if (Client.staticStringArray7[var4].equalsIgnoreCase("Attack")) {
-							if (Class4.staticClass4_2 == Client.staticClass4_5) {
+							if (EnumerableSub1.staticClass4_2 == Client.staticClass4_5) {
 								continue;
 							}
 
-							if (Class4.staticClass4_1 == Client.staticClass4_5
-									|| Class4.staticClass4_4 == Client.staticClass4_5
+							if (EnumerableSub1.staticClass4_1 == Client.staticClass4_5
+									|| EnumerableSub1.staticClass4_4 == Client.staticClass4_5
 											&& var0.anInt685 > AbstractClass2Sub1.staticPlayer1.anInt685) {
 								var5 = 2000;
 							}
@@ -10399,10 +10399,10 @@ public class Static {
 																	+ Client.staticInt233;
 															if (ProducingGraphicsBuffer.staticInt316 - var2 < -500
 																	|| ProducingGraphicsBuffer.staticInt316 - var2 > 500
-																	|| Class4.staticInt21 - var3 < -500
-																	|| Class4.staticInt21 - var3 > 500) {
+																	|| EnumerableSub1.staticInt21 - var3 < -500
+																	|| EnumerableSub1.staticInt21 - var3 > 500) {
 																ProducingGraphicsBuffer.staticInt316 = var2;
-																Class4.staticInt21 = var3;
+																EnumerableSub1.staticInt21 = var3;
 															}
 
 															if (var2 != ProducingGraphicsBuffer.staticInt316) {
@@ -10410,8 +10410,8 @@ public class Static {
 																		- ProducingGraphicsBuffer.staticInt316) / 16;
 															}
 
-															if (Class4.staticInt21 != var3) {
-																Class4.staticInt21 += (var3 - Class4.staticInt21) / 16;
+															if (EnumerableSub1.staticInt21 != var3) {
+																EnumerableSub1.staticInt21 += (var3 - EnumerableSub1.staticInt21) / 16;
 															}
 
 															if (MouseHandler.staticInt93 == 4 && staticBool18) {
@@ -10467,9 +10467,9 @@ public class Static {
 															}
 
 															var4 = ProducingGraphicsBuffer.staticInt316 >> 7;
-															var5 = Class4.staticInt21 >> 7;
+															var5 = EnumerableSub1.staticInt21 >> 7;
 															var6 = staticMethod240(ProducingGraphicsBuffer.staticInt316,
-																	Class4.staticInt21, NodeSub4.staticInt155);
+																	EnumerableSub1.staticInt21, NodeSub4.staticInt155);
 															var7 = 0;
 															if (var4 > 3 && var5 > 3 && var4 < 100 && var5 < 100) {
 																for (var8 = var4 - 4; var8 <= 4 + var4; var8++) {
@@ -11428,8 +11428,8 @@ public class Static {
 		Client.staticInt294 = 1;
 		Client.staticInt296 = 0;
 		Client.staticInt240 = 0;
-		Client.staticClass4_5 = Class4.staticClass4_2;
-		Client.staticClass4_6 = Class4.staticClass4_2;
+		Client.staticClass4_5 = EnumerableSub1.staticClass4_2;
+		Client.staticClass4_6 = EnumerableSub1.staticClass4_2;
 		Client.staticInt186 = 0;
 		staticMethod398();
 
@@ -15302,9 +15302,9 @@ public class Static {
 						for (var5 = 4; var5 >= 0; --var5) {
 							if (var4[var5] != null && var4[var5].equalsIgnoreCase("Attack")) {
 								short var9 = 0;
-								if (Client.staticClass4_6 != Class4.staticClass4_2) {
-									if (Class4.staticClass4_1 == Client.staticClass4_6
-											|| Class4.staticClass4_4 == Client.staticClass4_6
+								if (Client.staticClass4_6 != EnumerableSub1.staticClass4_2) {
+									if (EnumerableSub1.staticClass4_1 == Client.staticClass4_6
+											|| EnumerableSub1.staticClass4_4 == Client.staticClass4_6
 													&& var0.anInt544 > AbstractClass2Sub1.staticPlayer1.anInt685) {
 										var9 = 2000;
 									}
@@ -22308,7 +22308,7 @@ public class Static {
 											while (true) {
 												short[] var39;
 												if (var31 >= KeyboardHandler.staticInt85) {
-													Class4.staticShortArray1 = var32;
+													EnumerableSub1.staticShortArray1 = var32;
 													staticInt20 = 0;
 													staticInt114 = var7;
 													String[] var34 = new String[staticInt114];
@@ -22317,7 +22317,7 @@ public class Static {
 														var34[var11] = staticMethod153(var32[var11]).aString31;
 													}
 
-													var39 = Class4.staticShortArray1;
+													var39 = EnumerableSub1.staticShortArray1;
 													staticMethod61(var34, var39, 0, var34.length - 1);
 													break;
 												}
@@ -22327,7 +22327,7 @@ public class Static {
 														&& var33.aString31.toLowerCase().indexOf(var17) != -1) {
 													if (var7 >= 250) {
 														staticInt114 = -1;
-														Class4.staticShortArray1 = null;
+														EnumerableSub1.staticShortArray1 = null;
 														break;
 													}
 
@@ -22350,10 +22350,10 @@ public class Static {
 											staticIntArray16[++staticInt27 - 1] = staticInt114;
 											var8 = 1;
 										} else if (var0 == 4211) {
-											if (Class4.staticShortArray1 != null
+											if (EnumerableSub1.staticShortArray1 != null
 													&& staticInt20 < staticInt114) {
 												staticIntArray16[++staticInt27
-														- 1] = Class4.staticShortArray1[++staticInt20 - 1]
+														- 1] = EnumerableSub1.staticShortArray1[++staticInt20 - 1]
 																& 0xffff;
 											} else {
 												staticIntArray16[++staticInt27 - 1] = -1;
@@ -29253,13 +29253,13 @@ public class Static {
 				Client.staticInt269 = -(var1 & 0xffff);
 			}
 
-			Class4[] var51;
+			EnumerableSub1[] var51;
 			if (var41 == 18) {
-				var51 = new Class4[] { Class4.staticClass4_4, Class4.staticClass4_3, Class4.staticClass4_1,
-						Class4.staticClass4_2 };
-				Client.staticClass4_5 = (Class4) staticMethod233(var51, var1);
+				var51 = new EnumerableSub1[] { EnumerableSub1.staticClass4_4, EnumerableSub1.staticClass4_3, EnumerableSub1.staticClass4_1,
+						EnumerableSub1.staticClass4_2 };
+				Client.staticClass4_5 = (EnumerableSub1) staticMethod233(var51, var1);
 				if (Client.staticClass4_5 == null) {
-					Client.staticClass4_5 = Class4.staticClass4_4;
+					Client.staticClass4_5 = EnumerableSub1.staticClass4_4;
 				}
 			}
 
@@ -29272,11 +29272,11 @@ public class Static {
 			}
 
 			if (var41 == 22) {
-				var51 = new Class4[] { Class4.staticClass4_4, Class4.staticClass4_3, Class4.staticClass4_1,
-						Class4.staticClass4_2 };
-				Client.staticClass4_6 = (Class4) staticMethod233(var51, var1);
+				var51 = new EnumerableSub1[] { EnumerableSub1.staticClass4_4, EnumerableSub1.staticClass4_3, EnumerableSub1.staticClass4_1,
+						EnumerableSub1.staticClass4_2 };
+				Client.staticClass4_6 = (EnumerableSub1) staticMethod233(var51, var1);
 				if (Client.staticClass4_6 == null) {
-					Client.staticClass4_6 = Class4.staticClass4_4;
+					Client.staticClass4_6 = EnumerableSub1.staticClass4_4;
 				}
 			}
 		}
