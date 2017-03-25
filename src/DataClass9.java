@@ -1,6 +1,6 @@
 public class DataClass9 {
 
-	static Rasterizer2DSub2Sub1 staticRasterizer2DSub2Sub1_2;
+	static GameFontSub1 staticRasterizer2DSub2Sub1_2;
 	public static short[] staticShortArray4;
 	static Sprite[] staticSpriteArray6;
 	static IndexedFileSystem staticJs5DiskCache1;

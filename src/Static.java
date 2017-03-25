@@ -621,7 +621,7 @@ public class Static {
 
 	}
 
-	public static void staticMethod3(FileStore var0, FileStore var1, boolean var2, Rasterizer2DSub2Sub1 var3) {
+	public static void staticMethod3(FileStore var0, FileStore var1, boolean var2, GameFontSub1 var3) {
 		ItemDefinition.staticJs5Index15 = var0;
 		ItemDefinition.staticJs5Index14 = var1;
 		staticBool4 = var2;
@@ -705,7 +705,7 @@ public class Static {
 
 	}
 
-	public static Rasterizer2DSub2Sub1 staticMethod54(FileStore var0, FileStore var1, int var2, int var3) {
+	public static GameFontSub1 staticMethod54(FileStore var0, FileStore var1, int var2, int var3) {
 		return !staticMethod65(var0, var2, var3) ? null : staticMethod105(var1.getFile(var2, var3));
 	}
 
@@ -3047,7 +3047,7 @@ public class Static {
 								} else {
 									String var15;
 									String var43;
-									Rasterizer2DSub2Sub1 var52;
+									GameFontSub1 var52;
 									String var441;
 									if (var10.anInt296 == 4) {
 										var52 = var10.method387();
@@ -3342,7 +3342,7 @@ public class Static {
 													&& Client.staticInt257 == Client.staticInt185) {
 												var20 = 0;
 												var23 = 0;
-												Rasterizer2DSub2Sub1 var58 = DataClass9.staticRasterizer2DSub2Sub1_2;
+												GameFontSub1 var58 = DataClass9.staticRasterizer2DSub2Sub1_2;
 												var63 = var10.aString20;
 
 												for (var63 = staticMethod158(var63, var10); var63
@@ -5632,12 +5632,12 @@ public class Static {
 								}
 							}
 
-							Rasterizer2DSub2Sub1 var89 = var811.method506();
+							GameFontSub1 var89 = var811.method506();
 							if (var89 == null) {
 								var89 = NodeSub4.staticRasterizer2DSub2Sub1_3;
 							}
 
-							Rasterizer2DSub2Sub1 var65;
+							GameFontSub1 var65;
 							if (var831 != null) {
 								var65 = var831.method506();
 								if (var65 == null) {
@@ -9368,11 +9368,11 @@ public class Static {
 		var4.anIntArray83[var1] = var3;
 	}
 
-	static Rasterizer2DSub2Sub1 staticMethod105(byte[] var0) {
+	static GameFontSub1 staticMethod105(byte[] var0) {
 		if (var0 == null) {
 			return null;
 		} else {
-			Rasterizer2DSub2Sub1 var1 = new Rasterizer2DSub2Sub1(var0, DataNode4.staticIntArray126,
+			GameFontSub1 var1 = new GameFontSub1(var0, DataNode4.staticIntArray126,
 					staticIntArray69, staticIntArray72, staticIntArray71, staticIntArray73,
 					GameCanvas.staticByteArrayArray2);
 			DataNode4.staticIntArray126 = null;
@@ -10685,7 +10685,7 @@ public class Static {
 		return (ChatMessage) staticClass35_1.method159(var0);
 	}
 
-	static void staticMethod134(Rasterizer2DSub2Sub1 var0, Rasterizer2DSub2Sub1 var1, Rasterizer2DSub2Sub1 var2,
+	static void staticMethod134(GameFontSub1 var0, GameFontSub1 var1, GameFontSub1 var2,
 			boolean var3) {
 		if (var3) {
 			staticInt6 = (gameWidth - Client.staticInt288) / 2;
@@ -14200,14 +14200,14 @@ public class Static {
 				} else {
 					int var21;
 					byte[] var32;
-					Rasterizer2DSub2Sub1 var34;
+					GameFontSub1 var34;
 					if (var0 == 4108) {
 						var26 = staticStringArray1[--staticInt148];
 						staticInt27 -= 2;
 						var24 = staticIntArray16[staticInt27];
 						var21 = staticIntArray16[staticInt27 + 1];
 						var32 = NodeSub12.staticJs5IndexImpl11.getFile(var21, 0);
-						var34 = new Rasterizer2DSub2Sub1(var32);
+						var34 = new GameFontSub1(var32);
 						staticIntArray16[++staticInt27 - 1] = var34.method615(var26, var24);
 						return 1;
 					} else if (var0 == 4109) {
@@ -14216,7 +14216,7 @@ public class Static {
 						var24 = staticIntArray16[staticInt27];
 						var21 = staticIntArray16[1 + staticInt27];
 						var32 = NodeSub12.staticJs5IndexImpl11.getFile(var21, 0);
-						var34 = new Rasterizer2DSub2Sub1(var32);
+						var34 = new GameFontSub1(var32);
 						staticIntArray16[++staticInt27 - 1] = var34.method628(var26, var24);
 						return 1;
 					} else if (var0 == 4110) {
@@ -24922,7 +24922,7 @@ public class Static {
 
 	}
 
-	public static Rasterizer2DSub2Sub1 staticMethod386(FileStore var0, FileStore var1, String var2, String var3) {
+	public static GameFontSub1 staticMethod386(FileStore var0, FileStore var1, String var2, String var3) {
 		int var4 = var0.method267(var2);
 		int var5 = var0.method268(var4, var3);
 		return staticMethod54(var0, var1, var4, var5);

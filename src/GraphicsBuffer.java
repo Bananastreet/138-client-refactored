@@ -8,7 +8,7 @@ public abstract class GraphicsBuffer {
 	public int[] anIntArray55;
 	int anInt204;
 	public Image anImage1;
-	static Rasterizer2DSub2Sub1 staticRasterizer2DSub2Sub1_1;
+	static GameFontSub1 staticRasterizer2DSub2Sub1_1;
 
 	abstract void method278(int var1, int var2, Component var3);
 

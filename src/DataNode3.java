@@ -13,7 +13,7 @@ public final class DataNode3 extends Node {
 	int anInt395;
 	static Clipboard staticClipboard1;
 	static int staticInt318;
-	static Rasterizer2DSub2Sub1 staticRasterizer2DSub2Sub1_4;
+	static GameFontSub1 staticRasterizer2DSub2Sub1_4;
 	static int sessionId;	
 	int anInt397;
 	int anInt396 = 0;

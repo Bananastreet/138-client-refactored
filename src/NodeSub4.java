@@ -1,6 +1,6 @@
 public final class NodeSub4 extends Node {
 
-	static Rasterizer2DSub2Sub1 staticRasterizer2DSub2Sub1_3;
+	static GameFontSub1 staticRasterizer2DSub2Sub1_3;
 	int anInt222;
 	int anInt223;
 	int anInt224;

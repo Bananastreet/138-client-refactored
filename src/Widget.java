@@ -255,12 +255,12 @@ public class Widget extends Node {
 		anIntArray77[var1] = var3;
 	}
 
-	public Rasterizer2DSub2Sub1 method387() {
+	public GameFontSub1 method387() {
 		staticBool44 = false;
 		if (anInt347 == -1) {
 			return null;
 		} else {
-			Rasterizer2DSub2Sub1 var1 = (Rasterizer2DSub2Sub1) staticCache3.get(anInt347);
+			GameFontSub1 var1 = (GameFontSub1) staticCache3.get(anInt347);
 			if (var1 != null) {
 				return var1;
 			} else {

@@ -119,11 +119,11 @@ public class CacheableSub5 extends Cacheable {
 		}
 	}
 
-	public Rasterizer2DSub2Sub1 method506() {
+	public GameFontSub1 method506() {
 		if (anInt470 == -1) {
 			return null;
 		} else {
-			Rasterizer2DSub2Sub1 var1 = (Rasterizer2DSub2Sub1) staticCache13.get(anInt470);
+			GameFontSub1 var1 = (GameFontSub1) staticCache13.get(anInt470);
 			if (var1 != null) {
 				return var1;
 			} else {
