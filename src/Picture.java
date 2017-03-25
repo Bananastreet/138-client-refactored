@@ -4,7 +4,7 @@ import java.awt.MediaTracker;
 import java.awt.Toolkit;
 import java.awt.image.PixelGrabber;
 
-public final class Sprite extends Rasterizer2D {
+public final class Picture extends Rasterizer2D {
 
 	public int anInt672;
 	public int anInt671;
@@ -14,7 +14,7 @@ public final class Sprite extends Rasterizer2D {
 	int anInt670;
 	public int[] anIntArray154;
 
-	public Sprite(byte[] var1, Component var2) {
+	public Picture(byte[] var1, Component var2) {
 		try {
 			Image var3 = Toolkit.getDefaultToolkit().createImage(var1);
 		
@@ -36,7 +36,7 @@ public final class Sprite extends Rasterizer2D {
 
 	}
 
-	public Sprite(int var1, int var2) {
+	public Picture(int var1, int var2) {
 		anIntArray154 = new int[var1 * var2];
 		anInt672 = anInt673 = var1;
 		anInt671 = anInt674 = var2;
@@ -44,8 +44,8 @@ public final class Sprite extends Rasterizer2D {
 		anInt675 = 0;
 	}
 
-	public Sprite method632() {
-		Sprite var1 = new Sprite(anInt673, anInt674);
+	public Picture method632() {
+		Picture var1 = new Picture(anInt673, anInt674);
 
 		for (int var2 = 0; var2 < anInt671; var2++) {
 			for (int var3 = 0; var3 < anInt672; var3++) {
@@ -977,7 +977,7 @@ public final class Sprite extends Rasterizer2D {
 
 	}
 
-	Sprite() {
+	Picture() {
 	}
 
 	public void method646(int var1, int var2, int var3) {
@@ -1071,8 +1071,8 @@ public final class Sprite extends Rasterizer2D {
 		anInt675 = anInt673 - anInt672 - anInt675;
 	}
 
-	public Sprite method650() {
-		Sprite var1 = new Sprite(anInt672, anInt671);
+	public Picture method650() {
+		Picture var1 = new Picture(anInt672, anInt671);
 		var1.anInt673 = anInt673;
 		var1.anInt674 = anInt674;
 		var1.anInt675 = anInt673 - anInt672 - anInt675;

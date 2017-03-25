@@ -53,11 +53,11 @@ public class CacheableSub6 extends Cacheable {
 
 	}
 
-	public Sprite method528() {
+	public Picture method528() {
 		if (anInt519 < 0) {
 			return null;
 		} else {
-			Sprite var1 = (Sprite) staticCache22.get(anInt519);
+			Picture var1 = (Picture) staticCache22.get(anInt519);
 			if (var1 != null) {
 				return var1;
 			} else {
@@ -71,11 +71,11 @@ public class CacheableSub6 extends Cacheable {
 		}
 	}
 
-	public Sprite method529() {
+	public Picture method529() {
 		if (anInt520 < 0) {
 			return null;
 		} else {
-			Sprite var1 = (Sprite) staticCache22.get(anInt520);
+			Picture var1 = (Picture) staticCache22.get(anInt520);
 			if (var1 != null) {
 				return var1;
 			} else {

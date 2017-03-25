@@ -2,7 +2,7 @@ public class SkeletonSet extends Cacheable {
 
 	public static AbstractGraphicsBuffer staticGraphicsBuffer1;
 	static int[] staticIntArray127;
-	static Sprite staticSprite4;
+	static Picture staticSprite4;
 	AnimationSkeleton[] aClass24Array1;
 
 	public boolean method436(int var1) {

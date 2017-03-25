@@ -12,7 +12,7 @@ import java.net.Socket;
 public final class Client extends GameShell {
 
 	static Js5IndexImpl staticJs5IndexImpl8;
-	static Sprite[] staticSpriteArray8;
+	static Picture[] staticSpriteArray8;
 	static Js5IndexImpl staticJs5IndexImpl9;
 	static Rasterizer2DSub3 staticRasterizer2DSub3_5;
 	static boolean staticBool23 = false;
@@ -246,7 +246,7 @@ public final class Client extends GameShell {
 	static int staticInt311;
 	static int[] staticIntArray113;
 	static int[] staticIntArray103;
-	static Sprite[] staticSpriteArray9;
+	static Picture[] staticSpriteArray9;
 	static int staticInt296;
 	static int staticInt240;
 	static int staticInt298;
@@ -507,7 +507,7 @@ public final class Client extends GameShell {
 		staticInt311 = 0;
 		staticIntArray113 = new int[1000];
 		staticIntArray103 = new int[1000];
-		staticSpriteArray9 = new Sprite[1000];
+		staticSpriteArray9 = new Picture[1000];
 		staticInt296 = 0;
 		staticInt240 = 0;
 		staticInt298 = 0;

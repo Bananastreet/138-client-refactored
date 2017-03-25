@@ -14,7 +14,7 @@ public abstract class Mob extends Entity {
 	int anInt627;
 	int anInt628;
 	int anInt630;
-	static Sprite staticSprite5;
+	static Picture staticSprite5;
 	byte aByte5 = 0;
 	boolean aBool74 = false;
 	int anInt626 = 1;

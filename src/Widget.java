@@ -145,7 +145,7 @@ public class Widget extends Node {
 	public int[] anIntArray69;
 	public int[] anIntArray71;
 
-	public Sprite method383(boolean var1) {
+	public Picture method383(boolean var1) {
 		staticBool44 = false;
 		int var2;
 		if (var1) {
@@ -159,7 +159,7 @@ public class Widget extends Node {
 		} else {
 			long var4 = ((aBool37 ? 1L : 0L) << 39) + ((long) anInt322 << 36) + var2 + ((aBool36 ? 1L : 0L) << 38)
 					+ ((long) anInt323 << 40);
-			Sprite var3 = (Sprite) staticCache2.get(var4);
+			Picture var3 = (Picture) staticCache2.get(var4);
 			if (var3 != null) {
 				return var3;
 			} else {
@@ -199,14 +199,14 @@ public class Widget extends Node {
 		}
 	}
 
-	public Sprite method384(int var1) {
+	public Picture method384(int var1) {
 		staticBool44 = false;
 		if (var1 >= 0 && var1 < anIntArray68.length) {
 			int var3 = anIntArray68[var1];
 			if (var3 == -1) {
 				return null;
 			} else {
-				Sprite var2 = (Sprite) staticCache2.get(var3);
+				Picture var2 = (Picture) staticCache2.get(var3);
 				if (var2 != null) {
 					return var2;
 				} else {
@@ -431,11 +431,11 @@ public class Widget extends Node {
 			if (var7 != null) {
 				return var7;
 			} else {
-				Sprite var8 = method383(var1);
+				Picture var8 = method383(var1);
 				if (var8 == null) {
 					return null;
 				} else {
-					Sprite var9 = var8.method632();
+					Picture var9 = var8.method632();
 					int[] var13 = new int[var9.anInt671];
 					int[] var10 = new int[var9.anInt671];
 

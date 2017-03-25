@@ -65,11 +65,11 @@ public class CacheableSub5 extends Cacheable {
 		}
 	}
 
-	public Sprite method503() {
+	public Picture method503() {
 		if (anInt474 < 0) {
 			return null;
 		} else {
-			Sprite var1 = (Sprite) staticCache14.get(anInt474);
+			Picture var1 = (Picture) staticCache14.get(anInt474);
 			if (var1 != null) {
 				return var1;
 			} else {
@@ -83,11 +83,11 @@ public class CacheableSub5 extends Cacheable {
 		}
 	}
 
-	public Sprite method504() {
+	public Picture method504() {
 		if (anInt475 < 0) {
 			return null;
 		} else {
-			Sprite var1 = (Sprite) staticCache14.get(anInt475);
+			Picture var1 = (Picture) staticCache14.get(anInt475);
 			if (var1 != null) {
 				return var1;
 			} else {
@@ -101,11 +101,11 @@ public class CacheableSub5 extends Cacheable {
 		}
 	}
 
-	public Sprite method505() {
+	public Picture method505() {
 		if (anInt476 < 0) {
 			return null;
 		} else {
-			Sprite var1 = (Sprite) staticCache14.get(anInt476);
+			Picture var1 = (Picture) staticCache14.get(anInt476);
 			if (var1 != null) {
 				return var1;
 			} else {
@@ -137,11 +137,11 @@ public class CacheableSub5 extends Cacheable {
 		}
 	}
 
-	public Sprite method507() {
+	public Picture method507() {
 		if (anInt469 < 0) {
 			return null;
 		} else {
-			Sprite var1 = (Sprite) staticCache14.get(anInt469);
+			Picture var1 = (Picture) staticCache14.get(anInt469);
 			if (var1 != null) {
 				return var1;
 			} else {
