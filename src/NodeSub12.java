@@ -17,7 +17,7 @@ public class NodeSub12 extends Node {
 	int anInt278;
 	int anInt279;
 	int anInt280;
-	static Class19 staticClass19_1;
+	static SoundSystem staticClass19_1;
 	int anInt281;
 	NodeSub14 aNodeSub14_1;
 	NodeSub6Sub1 aNodeSub6Sub1_1;

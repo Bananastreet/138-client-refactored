@@ -490,14 +490,14 @@ public class NodeSub8Sub2 extends NodeSub8 {
 
 				anInt414 += var2;
 				if (anInt405 == 256 && (anInt410 & 0xff) == 0) {
-					if (Class19.staticBool5) {
+					if (SoundSystem.staticBool5) {
 						var2 = Static.staticMethod359(0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410,
 								var2, anInt406, anInt404, anInt416, anInt417, 0, var6, var3, this);
 					} else {
 						var2 = Static.staticMethod369(((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 								anInt408, anInt409, 0, var6, var3, this);
 					}
-				} else if (Class19.staticBool5) {
+				} else if (SoundSystem.staticBool5) {
 					var2 = Static.staticMethod363(0, 0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 							anInt406, anInt404, anInt416, anInt417, 0, var6, var3, this, anInt405, var5);
 				} else {
@@ -518,7 +518,7 @@ public class NodeSub8Sub2 extends NodeSub8 {
 			}
 
 			if (anInt405 == 256 && (anInt410 & 0xff) == 0) {
-				if (Class19.staticBool5) {
+				if (SoundSystem.staticBool5) {
 					return Static.staticMethod354(0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 							anInt406, anInt404, 0, var4, var3, this);
 				}
@@ -527,7 +527,7 @@ public class NodeSub8Sub2 extends NodeSub8 {
 						0, var4, var3, this);
 			}
 
-			if (Class19.staticBool5) {
+			if (SoundSystem.staticBool5) {
 				return Static.staticMethod356(0, 0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 						anInt406, anInt404, 0, var4, var3, this, anInt405, var5);
 			}
@@ -547,14 +547,14 @@ public class NodeSub8Sub2 extends NodeSub8 {
 
 				anInt414 += var2;
 				if (anInt405 == -256 && (anInt410 & 0xff) == 0) {
-					if (Class19.staticBool5) {
+					if (SoundSystem.staticBool5) {
 						var2 = Static.staticMethod361(0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410,
 								var2, anInt406, anInt404, anInt416, anInt417, 0, var6, var3, this);
 					} else {
 						var2 = Static.staticMethod360(((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 								anInt408, anInt409, 0, var6, var3, this);
 					}
-				} else if (Class19.staticBool5) {
+				} else if (SoundSystem.staticBool5) {
 					var2 = Static.staticMethod365(0, 0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 							anInt406, anInt404, anInt416, anInt417, 0, var6, var3, this, anInt405, var5);
 				} else {
@@ -575,7 +575,7 @@ public class NodeSub8Sub2 extends NodeSub8 {
 			}
 
 			if (anInt405 == -256 && (anInt410 & 0xff) == 0) {
-				if (Class19.staticBool5) {
+				if (SoundSystem.staticBool5) {
 					return Static.staticMethod358(0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 							anInt406, anInt404, 0, var4, var3, this);
 				}
@@ -584,7 +584,7 @@ public class NodeSub8Sub2 extends NodeSub8 {
 						0, var4, var3, this);
 			}
 
-			if (Class19.staticBool5) {
+			if (SoundSystem.staticBool5) {
 				return Static.staticMethod357(0, 0, ((NodeSub6Sub1) aNodeSub6_1).aByteArray23, var1, anInt410, var2,
 						anInt406, anInt404, 0, var4, var3, this, anInt405, var5);
 			}

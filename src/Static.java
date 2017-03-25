@@ -8873,8 +8873,8 @@ public class Static {
 				if (Client.staticInt179 == 45) {
 					boolean var3 = !Client.lowMemory;
 					staticInt120 = 22050;
-					Class19.staticBool5 = var3;
-					Class19.staticInt35 = 2;
+					SoundSystem.staticBool5 = var3;
+					SoundSystem.staticInt35 = 2;
 					NodeSub8Sub3 var10 = new NodeSub8Sub3();
 					var10.method442(9, 128);
 					ByteBuf.staticClass19_2 = staticMethod431(BufferedFile.staticTaskManager1, Class38.staticCanvas1, 0,
@@ -28844,7 +28844,7 @@ public class Static {
 		return var0 >= 48 && var0 <= 57 || var0 >= 65 && var0 <= 90 || var0 >= 97 && var0 <= 122;
 	}
 
-	public static final Class19 staticMethod431(TaskManager var0, Component var1, int var2, int var3) {
+	public static final SoundSystem staticMethod431(TaskManager var0, Component var1, int var2, int var3) {
 		if (staticInt120 == 0) {
 			throw new IllegalStateException();
 		} else if (var2 >= 0 && var2 < 2) {
@@ -28854,7 +28854,7 @@ public class Static {
 
 			try {
 				SourceDataSoundSystem var5 = new SourceDataSoundSystem();
-				var5.anIntArray27 = new int[(Class19.staticBool5 ? 2 : 1) * 256];
+				var5.anIntArray27 = new int[(SoundSystem.staticBool5 ? 2 : 1) * 256];
 				var5.anInt51 = var3;
 				var5.method71(var1);
 				var5.anInt50 = 1024 + (var3 & 0xfffffc00);
@@ -28863,23 +28863,23 @@ public class Static {
 				}
 
 				var5.method79(var5.anInt50);
-				if (Class19.staticInt35 > 0 && Class19.staticClass15_1 == null) {
-					Class19.staticClass15_1 = new Class15();
-					Class19.staticClass15_1.aTaskManager1 = var0;
-					var0.method94(Class19.staticClass15_1, Class19.staticInt35);
+				if (SoundSystem.staticInt35 > 0 && SoundSystem.staticClass15_1 == null) {
+					SoundSystem.staticClass15_1 = new Class15();
+					SoundSystem.staticClass15_1.aTaskManager1 = var0;
+					var0.method94(SoundSystem.staticClass15_1, SoundSystem.staticInt35);
 				}
 
-				if (Class19.staticClass15_1 != null) {
-					if (Class19.staticClass15_1.aClass19Array1[var2] != null) {
+				if (SoundSystem.staticClass15_1 != null) {
+					if (SoundSystem.staticClass15_1.aClass19Array1[var2] != null) {
 						throw new IllegalArgumentException();
 					}
 
-					Class19.staticClass15_1.aClass19Array1[var2] = var5;
+					SoundSystem.staticClass15_1.aClass19Array1[var2] = var5;
 				}
 
 				return var5;
 			} catch (Throwable var51) {
-				return new Class19();
+				return new SoundSystem();
 			}
 		} else {
 			throw new IllegalArgumentException();

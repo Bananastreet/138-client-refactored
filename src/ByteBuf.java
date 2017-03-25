@@ -2,7 +2,7 @@ import java.math.BigInteger;
 
 public class ByteBuf extends Node {
 
-	static Class19 staticClass19_2;
+	static SoundSystem staticClass19_2;
 	static int[] staticIntArray124 = new int[256];
 	static long[] staticLongArray4;
 	public byte[] buf;

@@ -4,7 +4,7 @@ public class Class15 implements Runnable {
 
 	TaskManager aTaskManager1;
 	volatile boolean aBool6 = false;
-	volatile Class19[] aClass19Array1 = new Class19[2];
+	volatile SoundSystem[] aClass19Array1 = new SoundSystem[2];
 	volatile boolean aBool5 = false;
 
 	public void run() {
@@ -12,7 +12,7 @@ public class Class15 implements Runnable {
 
 		try {
 			while (!aBool5) {
-				Class19 var7;
+				SoundSystem var7;
 				for (int var9 = 0; var9 < 2; var9++) {
 					var7 = aClass19Array1[var9];
 					if (var7 != null) {

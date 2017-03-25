@@ -1,6 +1,6 @@
 import java.awt.Component;
 
-public class Class19 {
+public class SoundSystem {
 
 	public static int staticInt35;
 	public static boolean staticBool5;

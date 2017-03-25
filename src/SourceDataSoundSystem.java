@@ -5,7 +5,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.DataLine.Info;
 
-public class SourceDataSoundSystem extends Class19 {
+public class SourceDataSoundSystem extends SoundSystem {
 
 	AudioFormat anAudioFormat1;
 	byte[] aByteArray16;
