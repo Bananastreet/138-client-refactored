@@ -9606,7 +9606,7 @@ public class Static {
 
 			if (Client.staticInt165 == 30) {
 				while (true) {
-					DataNode2 var1 = (DataNode2) staticClass36_1.method160();
+					ClassVerifier var1 = (ClassVerifier) staticClass36_1.method160();
 					boolean var24;
 					if (var1 == null) {
 						var24 = false;
@@ -19490,7 +19490,7 @@ public class Static {
 				if (Client.staticInt191 == 158) {
 					BitBuf var87 = Client.inBuffer;
 					var2 = Client.staticInt190;
-					DataNode2 var50 = new DataNode2();
+					ClassVerifier var50 = new ClassVerifier();
 					var50.anInt367 = var87.readUByte();
 					var50.anInt366 = var87.readInt();
 					var50.anIntArray78 = new int[var50.anInt367];
@@ -21382,7 +21382,7 @@ public class Static {
 	}
 
 	public static void staticMethod348(BitBuf var0) {
-		DataNode2 var1 = (DataNode2) staticClass36_1.method160();
+		ClassVerifier var1 = (ClassVerifier) staticClass36_1.method160();
 		if (var1 != null) {
 			int var2 = var0.position;
 			var0.writeInt(var1.anInt366);

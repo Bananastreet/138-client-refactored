@@ -1,7 +1,7 @@
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class DataNode2 extends Node {
+public class ClassVerifier extends Node {
 
 	public int anInt366;
 	public int[] anIntArray78;
