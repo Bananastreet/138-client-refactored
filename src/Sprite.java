@@ -1,4 +1,4 @@
-public final class Rasterizer2DSub3 extends Rasterizer2D {
+public final class Sprite extends Rasterizer2D {
 
 	public int anInt676;
 	public int[] anIntArray155;

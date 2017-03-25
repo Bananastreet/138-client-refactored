@@ -3465,7 +3465,7 @@ public class Static {
 
 	}
 
-	public static Rasterizer2DSub3 staticMethod25(AbstractFileStore var0, String var1, String var2) {
+	public static Sprite staticMethod25(AbstractFileStore var0, String var1, String var2) {
 		int var3 = var0.method267(var1);
 		int var4 = var0.method268(var3, var2);
 		return staticMethod347(var0, var3, var4);
@@ -6773,7 +6773,7 @@ public class Static {
 		NpcDefinition.staticInt324 = Client.staticInt252 * 15 + 22;
 	}
 
-	static final void staticMethod38(Rasterizer2DSub3 var0) {
+	static final void staticMethod38(Sprite var0) {
 		short var1 = 256;
 
 		int var4;
@@ -7490,7 +7490,7 @@ public class Static {
 		int var10;
 		int var12;
 		int var15;
-		Rasterizer2DSub3 var19;
+		Sprite var19;
 		if (var5 != 0) {
 			var7 = Friend.staticScene1.method117(var0, var1, var2, var5);
 			var8 = var7 >> 6 & 0x3;
@@ -7617,7 +7617,7 @@ public class Static {
 			var7 = var5 >> 14 & 0x7fff;
 			var171 = staticMethod394(var7);
 			if (var171.anInt507 != -1) {
-				Rasterizer2DSub3 var232 = Class20.staticRasterizer2DSub3Array1[var171.anInt507];
+				Sprite var232 = Class20.staticRasterizer2DSub3Array1[var171.anInt507];
 				if (var232 != null) {
 					var6 = (var171.anInt485 * 4 - var232.anInt677) / 2;
 					int var192 = (var171.anInt486 * 4 - var232.anInt678) / 2;
@@ -7639,17 +7639,17 @@ public class Static {
 		return var3 >> 19 & 0xff;
 	}
 
-	public static Rasterizer2DSub3[] staticMethod274(AbstractFileStore var0, String var1, String var2) {
+	public static Sprite[] staticMethod274(AbstractFileStore var0, String var1, String var2) {
 		int var3 = var0.method267(var1);
 		int var6 = var0.method268(var3, var2);
-		Rasterizer2DSub3[] var7;
+		Sprite[] var7;
 		if (!staticMethod65(var0, var3, var6)) {
 			var7 = null;
 		} else {
-			Rasterizer2DSub3[] var4 = new Rasterizer2DSub3[staticInt143];
+			Sprite[] var4 = new Sprite[staticInt143];
 
 			for (int var8 = 0; var8 < staticInt143; var8++) {
-				Rasterizer2DSub3 var9 = var4[var8] = new Rasterizer2DSub3();
+				Sprite var9 = var4[var8] = new Sprite();
 				var9.anInt676 = staticInt139;
 				var9.anInt679 = staticInt142;
 				var9.anInt681 = DataNode4.staticIntArray126[var8];
@@ -8677,7 +8677,7 @@ public class Static {
 			Class57.staticIntArray74 = new int[256];
 			staticIntArray6 = new int['\u8000'];
 			staticIntArray5 = new int['\u8000'];
-			staticMethod38((Rasterizer2DSub3) null);
+			staticMethod38((Sprite) null);
 			ExchangeOffer.staticIntArray77 = new int['\u8000'];
 			staticIntArray62 = new int['\u8000'];
 			if (var3) {
@@ -11098,7 +11098,7 @@ public class Static {
 						var0.method616("for 30 days: ", 180 + staticInt8 - 9, var25, 16776960, 0);
 						var33 = staticInt8 + 180 - 9 + var0.method613("for 30 days: ") + 15;
 						var35 = var25 - var0.anInt669;
-						Rasterizer2DSub3 var40;
+						Sprite var40;
 						if (staticBool3) {
 							var40 = staticRasterizer2DSub3_3;
 						} else {
@@ -13618,7 +13618,7 @@ public class Static {
 		return var1 != null ? var1.anInt283 : var0.anInt343;
 	}
 
-	public static Rasterizer2DSub3 staticMethod193(AbstractFileStore var0, int var1) {
+	public static Sprite staticMethod193(AbstractFileStore var0, int var1) {
 		byte[] var2 = var0.method260(var1);
 		boolean var4;
 		if (var2 == null) {
@@ -13631,7 +13631,7 @@ public class Static {
 		if (!var4) {
 			return null;
 		} else {
-			Rasterizer2DSub3 var3 = new Rasterizer2DSub3();
+			Sprite var3 = new Sprite();
 			var3.anInt676 = staticInt139;
 			var3.anInt679 = staticInt142;
 			var3.anInt681 = DataNode4.staticIntArray126[0];
@@ -20865,11 +20865,11 @@ public class Static {
 
 	}
 
-	static Rasterizer2DSub3 staticMethod347(AbstractFileStore var0, int var1, int var2) {
+	static Sprite staticMethod347(AbstractFileStore var0, int var1, int var2) {
 		if (!staticMethod65(var0, var1, var2)) {
 			return null;
 		} else {
-			Rasterizer2DSub3 var3 = new Rasterizer2DSub3();
+			Sprite var3 = new Sprite();
 			var3.anInt676 = staticInt139;
 			var3.anInt679 = staticInt142;
 			var3.anInt681 = DataNode4.staticIntArray126[0];
@@ -29927,16 +29927,16 @@ public class Static {
 
 	static int staticInt87;
 	public static int gameWidth;	
-	static Rasterizer2DSub3 staticRasterizer2DSub3_1;
+	static Sprite staticRasterizer2DSub3_1;
 	static Picture staticSprite1;
-	static Rasterizer2DSub3 staticRasterizer2DSub3_2;
-	static Rasterizer2DSub3 staticRasterizer2DSub3_3;
+	static Sprite staticRasterizer2DSub3_2;
+	static Sprite staticRasterizer2DSub3_3;
 	static int[] staticIntArray5;
 	static int[] staticIntArray3;
 	static boolean staticBool2;
 	static Picture staticSprite2;
 	static int staticInt6 = 0;
-	static Rasterizer2DSub3 staticRasterizer2DSub3_4;
+	static Sprite staticRasterizer2DSub3_4;
 	static int staticInt8;
 	static int[] staticIntArray4;
 	static int staticInt9;
@@ -29980,7 +29980,7 @@ public class Static {
 	static int staticInt110;
 	static int[] staticIntArray49 = new int[4096];
 	static int[] staticIntArray50 = new int[4096];
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array4;
+	static Sprite[] staticRasterizer2DSub3Array4;
 	static int[][] staticIntArrayArray6 = new int[128][128];
 	static int[][] staticIntArrayArray5 = new int[128][128];
 	static int[] staticIntArray51;
@@ -30137,7 +30137,7 @@ public class Static {
 			"80782894952180643741752986186714059433953886149239752893425047584684715842049");
 	static final BigInteger staticBigInteger2 = new BigInteger(
 			"7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array5;
+	static Sprite[] staticRasterizer2DSub3Array5;
 	static final char[] staticCharArray6 = new char[] { '_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 			'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6',
 			'7', '8', '9' };

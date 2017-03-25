@@ -14,7 +14,7 @@ public final class Client extends GameShell {
 	static Js5IndexImpl staticJs5IndexImpl8;
 	static Picture[] staticSpriteArray8;
 	static Js5IndexImpl staticJs5IndexImpl9;
-	static Rasterizer2DSub3 staticRasterizer2DSub3_5;
+	static Sprite staticRasterizer2DSub3_5;
 	static boolean staticBool23 = false;
 	static int staticInt166 = 0;
 	static int staticInt165 = 0;

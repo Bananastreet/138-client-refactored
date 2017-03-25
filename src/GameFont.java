@@ -2,7 +2,7 @@ import java.util.Random;
 
 public abstract class GameFont extends Rasterizer2D {
 
-	public static Rasterizer2DSub3[] staticRasterizer2DSub3Array9;
+	public static Sprite[] staticRasterizer2DSub3Array9;
 	static int staticInt358 = 0;
 	static int staticInt356 = 256;
 	static int staticInt350 = 0;
@@ -119,7 +119,7 @@ public abstract class GameFont extends Rasterizer2D {
 								if (var12.startsWith("img=")) {
 									try {
 										var9 = Static.staticMethod388(var12.substring(4));
-										Rasterizer2DSub3 var13 = staticRasterizer2DSub3Array9[var9];
+										Sprite var13 = staticRasterizer2DSub3Array9[var9];
 										var13.method655(var2, var3 + anInt669 - var13.anInt679);
 										var2 += var13.anInt676;
 										var5 = -1;
@@ -683,7 +683,7 @@ public abstract class GameFont extends Rasterizer2D {
 
 										++var8;
 										var14 = Static.staticMethod388(var17.substring(4));
-										Rasterizer2DSub3 var18 = staticRasterizer2DSub3Array9[var14];
+										Sprite var18 = staticRasterizer2DSub3Array9[var14];
 										var18.method655(var2 + var12, var3 + anInt669 - var18.anInt679 + var13);
 										var2 += var18.anInt676;
 										var7 = -1;

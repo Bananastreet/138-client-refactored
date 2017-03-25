@@ -1,7 +1,7 @@
 public class AbstractClass3Sub1 extends AbstractClass3 {
 
 	static Js5IndexImpl staticJs5IndexImpl10;
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array6;
+	static Sprite[] staticRasterizer2DSub3Array6;
 	int anInt249 = 256;
 	int anInt250 = 1;
 	long aLong18 = Static.staticMethod297();

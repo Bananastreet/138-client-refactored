@@ -5,8 +5,8 @@ public final class DataClass6 {
 	public Entity aRenderable9;
 	public int anInt140;
 	int anInt141;
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array2;
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array3;
+	static Sprite[] staticRasterizer2DSub3Array2;
+	static Sprite[] staticRasterizer2DSub3Array3;
 	int anInt142;
 
 }

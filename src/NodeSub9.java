@@ -24,7 +24,7 @@ public class NodeSub9 extends Node {
 		anIntArray61 = new int[var5];
 
 		for (int var6 = 0; var6 < anIntArray60.length; var6++) {
-			Rasterizer2DSub3 var12 = Static.staticMethod193(var4, anIntArray60[var6]);
+			Sprite var12 = Static.staticMethod193(var4, anIntArray60[var6]);
 			var12.method653();
 			byte[] var10 = var12.aByteArray35;
 			int[] var9 = var12.anIntArray155;

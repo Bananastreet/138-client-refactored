@@ -2,7 +2,7 @@ public class Class20 {
 
 	static int staticInt36;
 	static ContextMenuItem staticContextMenuItem1;
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array1;
+	static Sprite[] staticRasterizer2DSub3Array1;
 	int anInt56;
 	int anInt57;
 	int[][] anIntArrayArray2;

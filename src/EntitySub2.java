@@ -1,6 +1,6 @@
 public final class EntitySub2 extends Entity {
 
-	static Rasterizer2DSub3[] staticRasterizer2DSub3Array8;
+	static Sprite[] staticRasterizer2DSub3Array8;
 	protected static String staticString35;
 	static Js5IndexImpl staticJs5IndexImpl16;
 	int anInt641 = 0;
