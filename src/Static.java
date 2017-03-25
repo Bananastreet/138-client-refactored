@@ -28853,7 +28853,7 @@ public class Static {
 			}
 
 			try {
-				Class19Sub1 var5 = new Class19Sub1();
+				SourceDataSoundSystem var5 = new SourceDataSoundSystem();
 				var5.anIntArray27 = new int[(Class19.staticBool5 ? 2 : 1) * 256];
 				var5.anInt51 = var3;
 				var5.method71(var1);
