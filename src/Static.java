@@ -49,6 +49,8 @@ import java.util.zip.CRC32;
 import netscape.javascript.JSObject;
 
 public class Static {
+	
+	static FileStore staticJs5Index1;
 
 	static String staticMethod123(int var0) {
 		return "<img=" + var0 + ">";
@@ -21523,7 +21525,7 @@ public class Static {
 		if (var1 != null) {
 			return var1;
 		} else {
-			byte[] var2 = Class25.staticJs5Index1.getFile(13, var0);
+			byte[] var2 = Static.staticJs5Index1.getFile(13, var0);
 			var1 = new SpotAnim();
 			var1.anInt554 = var0;
 			if (var2 != null) {
@@ -24090,7 +24092,7 @@ public class Static {
 	}
 
 	public static void staticMethod397(FileStore var0, FileStore var1) {
-		Class25.staticJs5Index1 = var0;
+		Static.staticJs5Index1 = var0;
 		SpotAnim.staticJs5Index30 = var1;
 	}
 

@@ -405,7 +405,6 @@ public class EntitySub3 extends Entity {
 		var2.position = var27;
 		var10 = var2.readUByte();
 		if (var10 != 0) {
-			new Class25();
 			var2.readUShort();
 			var2.readUShort();
 			var2.readUShort();
