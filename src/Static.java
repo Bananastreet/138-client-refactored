@@ -11841,8 +11841,8 @@ public class Static {
 
 		if ((var3 & 0x4) != 0) {
 			var7 = var0.readUShort();
-			Permission[] var17 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6, Permission.staticClass48_2,
-					Permission.staticClass48_1, Permission.staticClass48_5, Permission.staticClass48_3 };
+			Permission[] var17 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD, Permission.JAGEX_MOD,
+					Permission.PLAYER, Permission.staticClass48_5, Permission.IRONMAN };
 			Permission var191 = (Permission) staticMethod233(var17, var0.readUByte());
 			boolean var211 = var0.readUByte() == 1;
 			var161 = var0.readUByte();
@@ -11872,8 +11872,8 @@ public class Static {
 						var9 = var211 ? 90 : 2;
 					}
 
-					if (var191.anInt192 != -1) {
-						staticMethod36(var9, staticMethod123(var191.anInt192) + player.aString40, var21);
+					if (var191.sprite != -1) {
+						staticMethod36(var9, staticMethod123(var191.sprite) + player.aString40, var21);
 					} else {
 						staticMethod36(var9, player.aString40, var21);
 					}
@@ -13152,15 +13152,15 @@ public class Static {
 						return 1;
 					} else if (var0 == 3609) {
 						var14 = staticStringArray1[--staticInt148];
-						Permission[] var4 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6,
-								Permission.staticClass48_2, Permission.staticClass48_1, Permission.staticClass48_5,
-								Permission.staticClass48_3 };
+						Permission[] var4 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD,
+								Permission.JAGEX_MOD, Permission.PLAYER, Permission.staticClass48_5,
+								Permission.IRONMAN };
 						Permission[] var3 = var4;
 
 						for (int var6 = 0; var6 < var3.length; var6++) {
 							Permission var7 = var3[var6];
-							if (var7.anInt192 != -1 && var14.startsWith(staticMethod123(var7.anInt192))) {
-								var14 = var14.substring(6 + Integer.toString(var7.anInt192).length());
+							if (var7.sprite != -1 && var14.startsWith(staticMethod123(var7.sprite))) {
+								var14 = var14.substring(6 + Integer.toString(var7.sprite).length());
 								break;
 							}
 						}
@@ -18170,9 +18170,9 @@ public class Static {
 					var1 = Client.inBuffer.readString();
 					var12 = Client.inBuffer.readUShort();
 					var14 = Client.inBuffer.readTriByte();
-					Permission[] var611 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6,
-							Permission.staticClass48_2, Permission.staticClass48_1, Permission.staticClass48_5,
-							Permission.staticClass48_3 };
+					Permission[] var611 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD,
+							Permission.JAGEX_MOD, Permission.PLAYER, Permission.staticClass48_5,
+							Permission.IRONMAN };
 					Permission var621 = (Permission) staticMethod233(var611, Client.inBuffer.readUByte());
 					var16 = var14 + (var12 << 32);
 					var66 = false;
@@ -18199,8 +18199,8 @@ public class Static {
 							var73 = 3;
 						}
 
-						if (var621.anInt192 != -1) {
-							staticMethod36(var73, staticMethod123(var621.anInt192) + var1, var72);
+						if (var621.sprite != -1) {
+							staticMethod36(var73, staticMethod123(var621.sprite) + var1, var72);
 						} else {
 							staticMethod36(var73, var1, var72);
 						}
@@ -19106,9 +19106,9 @@ public class Static {
 					var12 = Client.inBuffer.readLong();
 					var14 = Client.inBuffer.readUShort();
 					var23 = Client.inBuffer.readTriByte();
-					Permission[] var95 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6,
-							Permission.staticClass48_2, Permission.staticClass48_1, Permission.staticClass48_5,
-							Permission.staticClass48_3 };
+					Permission[] var95 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD,
+							Permission.JAGEX_MOD, Permission.PLAYER, Permission.staticClass48_5,
+							Permission.IRONMAN };
 					Permission var91 = (Permission) staticMethod233(var95, Client.inBuffer.readUByte());
 					var25 = (var14 << 32) + var23;
 					boolean var981 = false;
@@ -19128,8 +19128,8 @@ public class Static {
 						Client.staticLongArray3[Client.staticInt293] = var25;
 						Client.staticInt293 = (Client.staticInt293 + 1) % 100;
 						var59 = staticMethod456(staticMethod265(staticMethod191(Client.inBuffer)));
-						if (var91.anInt192 != -1) {
-							staticMethod224(9, staticMethod123(var91.anInt192) + var1, var59, staticMethod182(var12));
+						if (var91.sprite != -1) {
+							staticMethod224(9, staticMethod123(var91.sprite) + var1, var59, staticMethod182(var12));
 						} else {
 							staticMethod224(9, var1, var59, staticMethod182(var12));
 						}
