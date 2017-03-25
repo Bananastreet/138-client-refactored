@@ -1957,9 +1957,9 @@ public class Static {
 				return 1;
 			} else if (var0 == 1125) {
 				var5 = staticIntArray16[--staticInt27];
-				Class54[] var6 = new Class54[] { Class54.staticClass54_4, Class54.staticClass54_1,
-						Class54.staticClass54_2, Class54.staticClass54_3, Class54.staticClass54_5 };
-				Class54 var7 = (Class54) staticMethod233(var6, var5);
+				EnumerableSub2[] var6 = new EnumerableSub2[] { EnumerableSub2.staticClass54_4, EnumerableSub2.staticClass54_1,
+						EnumerableSub2.staticClass54_2, EnumerableSub2.staticClass54_3, EnumerableSub2.staticClass54_5 };
+				EnumerableSub2 var7 = (EnumerableSub2) staticMethod233(var6, var5);
 				if (var7 != null) {
 					var4.aClass54_1 = var7;
 					staticMethod73(var4);

@@ -50,7 +50,7 @@ public class Widget extends Node {
 	public int anInt321 = 0;
 	public int anInt315 = 0;
 	public boolean aBool33 = false;
-	public Class54 aClass54_1;
+	public EnumerableSub2 aClass54_1;
 	public int anInt317;
 	public int anInt318;
 	public int anInt308;
@@ -277,7 +277,7 @@ public class Widget extends Node {
 	}
 
 	public Widget() {
-		aClass54_1 = Class54.staticClass54_5;
+		aClass54_1 = EnumerableSub2.staticClass54_5;
 		anInt317 = 0;
 		anInt318 = 0;
 		anInt308 = 1;
