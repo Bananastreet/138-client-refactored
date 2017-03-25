@@ -2228,7 +2228,7 @@ public class Static {
 	}
 
 	static final void staticMethod90() {
-		SceneGraph.staticBool6 = false;
+		Scene.staticBool6 = false;
 		Client.lowMemory = false;
 	}
 
@@ -4363,7 +4363,7 @@ public class Static {
 		}
 	}
 
-	static final void staticMethod99(SceneGraph var0, Class38[] var1) {
+	static final void staticMethod99(Scene var0, Class38[] var1) {
 		int var2;
 		int var6;
 		int var7;
@@ -6393,7 +6393,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod244(byte[] var0, int var1, int var2, SceneGraph var3, Class38[] var4) {
+	static final void staticMethod244(byte[] var0, int var1, int var2, Scene var3, Class38[] var4) {
 		ByteBuf var5 = new ByteBuf(var0);
 		int var7 = -1;
 
@@ -8791,7 +8791,7 @@ public class Static {
 	static void staticMethod128() {
 		int var1;
 		if (Client.staticInt179 == 0) {
-			Friend.staticScene1 = new SceneGraph(4, 104, 104, staticIntArrayArrayArray1);
+			Friend.staticScene1 = new Scene(4, 104, 104, staticIntArrayArrayArray1);
 
 			for (var1 = 0; var1 < 4; var1++) {
 				Client.staticClass38Array1[var1] = new Class38(104, 104);
@@ -9402,31 +9402,31 @@ public class Static {
 		var8.anInt91 = var5;
 		var8.anInt100 = var6;
 		var8.anInt101 = var7;
-		SceneGraph.staticClass30ArrayArray1[var0][SceneGraph.staticIntArray40[var0]++] = var8;
+		Scene.staticClass30ArrayArray1[var0][Scene.staticIntArray40[var0]++] = var8;
 	}
 
 	static boolean staticMethod76(int var0, int var1, int var2) {
-		int var3 = var2 * SceneGraph.staticInt61 + var0 * SceneGraph.staticInt49 >> 16;
-		int var5 = var2 * SceneGraph.staticInt49 - var0 * SceneGraph.staticInt61 >> 16;
-		int var4 = var1 * SceneGraph.staticInt68 + var5 * SceneGraph.staticInt60 >> 16;
-		int var7 = var1 * SceneGraph.staticInt60 - var5 * SceneGraph.staticInt68 >> 16;
+		int var3 = var2 * Scene.staticInt61 + var0 * Scene.staticInt49 >> 16;
+		int var5 = var2 * Scene.staticInt49 - var0 * Scene.staticInt61 >> 16;
+		int var4 = var1 * Scene.staticInt68 + var5 * Scene.staticInt60 >> 16;
+		int var7 = var1 * Scene.staticInt60 - var5 * Scene.staticInt68 >> 16;
 		if (var4 >= 50 && var4 <= 3500) {
-			int var6 = SceneGraph.staticInt64 + var3 * Rasterizer2DSub1.staticInt342 / var4;
-			int var8 = SceneGraph.staticInt65 + var7 * Rasterizer2DSub1.staticInt342 / var4;
-			return var6 >= SceneGraph.staticInt66 && var6 <= SceneGraph.staticInt51 && var8 >= SceneGraph.staticInt67
-					&& var8 <= SceneGraph.staticInt69;
+			int var6 = Scene.staticInt64 + var3 * Rasterizer2DSub1.staticInt342 / var4;
+			int var8 = Scene.staticInt65 + var7 * Rasterizer2DSub1.staticInt342 / var4;
+			return var6 >= Scene.staticInt66 && var6 <= Scene.staticInt51 && var8 >= Scene.staticInt67
+					&& var8 <= Scene.staticInt69;
 		} else {
 			return false;
 		}
 	}
 
 	public static void staticMethod77(int[] var0, int var1, int var2, int var3, int var4) {
-		SceneGraph.staticInt66 = 0;
-		SceneGraph.staticInt67 = 0;
-		SceneGraph.staticInt51 = var3;
-		SceneGraph.staticInt69 = var4;
-		SceneGraph.staticInt64 = var3 / 2;
-		SceneGraph.staticInt65 = var4 / 2;
+		Scene.staticInt66 = 0;
+		Scene.staticInt67 = 0;
+		Scene.staticInt51 = var3;
+		Scene.staticInt69 = var4;
+		Scene.staticInt64 = var3 / 2;
+		Scene.staticInt65 = var4 / 2;
 		boolean[][][][] var7 = new boolean[9][32][53][53];
 
 		int var6;
@@ -9437,10 +9437,10 @@ public class Static {
 		int var12;
 		for (var8 = 128; var8 <= 384; var8 += 32) {
 			for (var6 = 0; var6 < 2048; var6 += 64) {
-				SceneGraph.staticInt68 = Rasterizer2DSub1.staticIntArray154[var8];
-				SceneGraph.staticInt60 = Rasterizer2DSub1.staticIntArray159[var8];
-				SceneGraph.staticInt61 = Rasterizer2DSub1.staticIntArray154[var6];
-				SceneGraph.staticInt49 = Rasterizer2DSub1.staticIntArray159[var6];
+				Scene.staticInt68 = Rasterizer2DSub1.staticIntArray154[var8];
+				Scene.staticInt60 = Rasterizer2DSub1.staticIntArray159[var8];
+				Scene.staticInt61 = Rasterizer2DSub1.staticIntArray154[var6];
+				Scene.staticInt49 = Rasterizer2DSub1.staticIntArray159[var6];
 				var9 = (var8 - 128) / 32;
 				var11 = var6 / 64;
 
@@ -9493,7 +9493,7 @@ public class Static {
 							}
 						}
 
-						SceneGraph.staticBoolArrayArrayArrayArray1[var8][var6][var9 + 25][var11 + 25] = var161;
+						Scene.staticBoolArrayArrayArrayArray1[var8][var6][var9 + 25][var11 + 25] = var161;
 					}
 				}
 			}
@@ -9502,8 +9502,8 @@ public class Static {
 	}
 
 	public static void staticMethod78() {
-		SceneGraph.staticInt57 = -1;
-		SceneGraph.staticBool8 = false;
+		Scene.staticInt57 = -1;
+		Scene.staticBool8 = false;
 	}
 
 	static final int staticMethod79(int var0, int var1) {
@@ -9518,7 +9518,7 @@ public class Static {
 	}
 
 	public static boolean staticMethod80() {
-		return SceneGraph.staticBool8 && SceneGraph.staticInt57 != -1;
+		return Scene.staticBool8 && Scene.staticInt57 != -1;
 	}
 
 	public static void staticMethod11() {
@@ -10339,8 +10339,8 @@ public class Static {
 															}
 
 															if (staticMethod80()) {
-																var2 = SceneGraph.staticInt57;
-																var3 = SceneGraph.staticInt58;
+																var2 = Scene.staticInt57;
+																var3 = Scene.staticInt58;
 																Client.outBuffer.method471(147);
 																Client.outBuffer.writeByte(5);
 																Client.outBuffer
@@ -11553,7 +11553,7 @@ public class Static {
 	}
 
 	static final void staticMethod152(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7,
-			SceneGraph var8, Class38[] var9) {
+			Scene var8, Class38[] var9) {
 		ByteBuf var10 = new ByteBuf(var0);
 		int var14 = -1;
 
@@ -16080,7 +16080,7 @@ public class Static {
 
 	}
 
-	static final void staticMethod46(int var0, int var1, int var2, int var3, int var4, int var5, SceneGraph var6,
+	static final void staticMethod46(int var0, int var1, int var2, int var3, int var4, int var5, Scene var6,
 			Class38 var7) {
 		if (!Client.lowMemory || (staticByteArrayArrayArray4[0][var1][var2] & 0x2) != 0
 				|| (staticByteArrayArrayArray4[var0][var1][var2] & 0x10) == 0) {
@@ -17182,7 +17182,7 @@ public class Static {
 					var15 = var0 + 1;
 				}
 
-				SceneGraph var371 = Friend.staticScene1;
+				Scene var371 = Friend.staticScene1;
 				Class38 var71 = Client.staticClass38Array1[var0];
 				ObjectDefinition var101 = staticMethod394(var4);
 				int var9;

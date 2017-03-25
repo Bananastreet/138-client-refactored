@@ -1,4 +1,4 @@
-public class SceneGraph {
+public class Scene {
 
 	static int staticInt51;
 	static int staticInt64;
@@ -405,7 +405,7 @@ public class SceneGraph {
 
 	}
 
-	public SceneGraph(int var1, int var2, int var3, int[][][] var4) {
+	public Scene(int var1, int var2, int var3, int[][][] var4) {
 		anInt71 = var1;
 		anInt70 = var2;
 		anInt68 = var3;
