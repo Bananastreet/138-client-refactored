@@ -1,4 +1,4 @@
-public abstract class AbstractClass4 {
+public abstract class AbstractByteBuffer {
 
 	static boolean staticBool17 = false;
 

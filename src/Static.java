@@ -2165,8 +2165,8 @@ public class Static {
 		} else if (var0 instanceof byte[]) {
 			byte[] var21 = (byte[]) var0;
 			return var1 ? staticMethod13(var21) : var21;
-		} else if (var0 instanceof AbstractClass4) {
-			AbstractClass4 var2 = (AbstractClass4) var0;
+		} else if (var0 instanceof AbstractByteBuffer) {
+			AbstractByteBuffer var2 = (AbstractByteBuffer) var0;
 			return var2.method254();
 		} else {
 			throw new IllegalArgumentException();
@@ -7878,13 +7878,13 @@ public class Static {
 		if (var0 == null) {
 			return null;
 		} else {
-			if (var0.length > 136 && !AbstractClass4.staticBool17) {
+			if (var0.length > 136 && !AbstractByteBuffer.staticBool17) {
 				try {
 					AbstractClass4Sub1 var3 = new AbstractClass4Sub1();
 					var3.method253(var0);
 					return var3;
 				} catch (Throwable var31) {
-					AbstractClass4.staticBool17 = true;
+					AbstractByteBuffer.staticBool17 = true;
 				}
 			}
 

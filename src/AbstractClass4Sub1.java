@@ -1,6 +1,6 @@
 import java.nio.ByteBuffer;
 
-public class AbstractClass4Sub1 extends AbstractClass4 {
+public class AbstractClass4Sub1 extends AbstractByteBuffer {
 
 	ByteBuffer aByteBuffer1;
 
