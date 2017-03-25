@@ -4,7 +4,7 @@ public class AnimationSkeleton {
 	static int[] staticIntArray34 = new int[500];
 	static int[] staticIntArray33 = new int[500];
 	static int[] staticIntArray35 = new int[500];
-	NodeSub10 aNodeSub10_1 = null;
+	AnimationSkin aNodeSub10_1 = null;
 	int anInt67 = -1;
 	boolean aBool9 = false;
 	int[] anIntArray31;
@@ -12,7 +12,7 @@ public class AnimationSkeleton {
 	int[] anIntArray33;
 	int[] anIntArray34;
 
-	AnimationSkeleton(byte[] var1, NodeSub10 var2) {
+	AnimationSkeleton(byte[] var1, AnimationSkin var2) {
 		aNodeSub10_1 = var2;
 		ByteBuf var5 = new ByteBuf(var1);
 		ByteBuf var6 = new ByteBuf(var1);

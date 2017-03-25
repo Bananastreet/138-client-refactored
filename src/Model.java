@@ -421,7 +421,7 @@ public class Model extends Entity {
 			if (var5 != null && var4 != -1) {
 				AnimationSkeleton var9 = var1.aClass24Array1[var2];
 				AnimationSkeleton var8 = var3.aClass24Array1[var4];
-				NodeSub10 var10 = var9.aNodeSub10_1;
+				AnimationSkin var10 = var9.aNodeSub10_1;
 				staticInt335 = 0;
 				staticInt334 = 0;
 				staticInt336 = 0;
@@ -719,7 +719,7 @@ public class Model extends Entity {
 	public void method602(CacheableSub2 var1, int var2) {
 		if (anIntArrayArray15 != null && var2 != -1) {
 			AnimationSkeleton var3 = var1.aClass24Array1[var2];
-			NodeSub10 var4 = var3.aNodeSub10_1;
+			AnimationSkin var4 = var3.aNodeSub10_1;
 			staticInt335 = 0;
 			staticInt334 = 0;
 			staticInt336 = 0;

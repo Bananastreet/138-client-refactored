@@ -5956,8 +5956,8 @@ public class Static {
 
 		if (var4 == null && var2 == 0) {
 			label103: for (int var17 = 0; var17 < staticStringArray4.length; var17++) {
-				for (int var191 = 0; var191 < NodeSub10.staticStringArray6.length; var191++) {
-					File var21 = new File(NodeSub10.staticStringArray6[var191] + staticStringArray4[var17]
+				for (int var191 = 0; var191 < AnimationSkin.staticStringArray6.length; var191++) {
+					File var21 = new File(AnimationSkin.staticStringArray6[var191] + staticStringArray4[var17]
 							+ File.separatorChar + var0 + File.separatorChar);
 					if (var21.exists() && staticMethod278(new File(var21, "test.dat"), true)) {
 						var4 = var21.toString();

@@ -1443,12 +1443,12 @@ public final class Client extends GameShell {
 				DataNode1.staticInt314 = var17;
 
 				try {
-					NodeSub10.staticString28 = System.getProperty("os.name");
+					AnimationSkin.staticString28 = System.getProperty("os.name");
 				} catch (Exception var131) {
-					NodeSub10.staticString28 = "Unknown";
+					AnimationSkin.staticString28 = "Unknown";
 				}
 
-				Static.staticString24 = NodeSub10.staticString28.toLowerCase();
+				Static.staticString24 = AnimationSkin.staticString28.toLowerCase();
 
 				try {
 					Class6.staticString18 = System.getProperty("user.home");
@@ -1479,7 +1479,7 @@ public final class Client extends GameShell {
 					Class6.staticString18 = "~/";
 				}
 
-				NodeSub10.staticStringArray6 = new String[] { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/",
+				AnimationSkin.staticStringArray6 = new String[] { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/",
 						"c:/", Class6.staticString18, "/tmp/", "" };
 				Static.staticStringArray4 = new String[] { ".jagex_cache_" + DataNode1.staticInt314,
 						".file_store_" + DataNode1.staticInt314 };
@@ -1530,8 +1530,8 @@ public final class Client extends GameShell {
 						Static.randomDat = new BufferedFile(new FileOnDisk(var19, "rw", 25L), 24, 0);
 					} else {
 						label140: for (int var21 = 0; var21 < Static.staticStringArray4.length; var21++) {
-							for (var12 = 0; var12 < NodeSub10.staticStringArray6.length; var12++) {
-								var7 = new File(NodeSub10.staticStringArray6[var12] + Static.staticStringArray4[var21]
+							for (var12 = 0; var12 < AnimationSkin.staticStringArray6.length; var12++) {
+								var7 = new File(AnimationSkin.staticStringArray6[var12] + Static.staticStringArray4[var21]
 										+ File.separatorChar + "random.dat");
 								if (var7.exists()) {
 									Static.randomDat = new BufferedFile(new FileOnDisk(var7, "rw", 25L), 24,

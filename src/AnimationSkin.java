@@ -1,4 +1,4 @@
-public class NodeSub10 extends Node {
+public class AnimationSkin extends Node {
 
 	public static String[] staticStringArray6;
 	public static String staticString28;
@@ -7,7 +7,7 @@ public class NodeSub10 extends Node {
 	int[] anIntArray65;
 	int[][] anIntArrayArray11;
 
-	NodeSub10(int var1, byte[] var2) {
+	AnimationSkin(int var1, byte[] var2) {
 		anInt248 = var1;
 		ByteBuf var4 = new ByteBuf(var2);
 		anInt247 = var4.readUByte();
