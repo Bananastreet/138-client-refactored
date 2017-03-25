@@ -17660,9 +17660,9 @@ public class Static {
 		return var3;
 	}
 
-	static NodeSub11 staticMethod300(AbstractFileStore var0, int var1, int var2) {
+	static MusicFile staticMethod300(AbstractFileStore var0, int var1, int var2) {
 		byte[] var3 = var0.getFile(var1, var2);
-		return var3 == null ? null : new NodeSub11(new ByteBuf(var3));
+		return var3 == null ? null : new MusicFile(new ByteBuf(var3));
 	}
 
 	public static void staticMethod301(Class47 var0) {

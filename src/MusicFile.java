@@ -1,4 +1,4 @@
-public class NodeSub11 extends Node {
+public class MusicFile extends Node {
 
 	HashTable aHashTable4;
 	byte[] aByteArray17;
@@ -86,7 +86,7 @@ public class NodeSub11 extends Node {
 		aHashTable4 = null;
 	}
 
-	NodeSub11(ByteBuf var1) {
+	MusicFile(ByteBuf var1) {
 		var1.position = var1.buf.length - 3;
 		int var6 = var1.readUByte();
 		int var5 = var1.readUShort();

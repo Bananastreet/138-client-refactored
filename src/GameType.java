@@ -1,6 +1,6 @@
 public class GameType implements Identifiable {
 
-	public static NodeSub11 staticNodeSub11_1;
+	public static MusicFile staticNodeSub11_1;
 	static final GameType staticGameType3 = new GameType("runescape", "RuneScape", 0);
 	static final GameType staticGameType2 = new GameType("stellardawn", "Stellar Dawn", 1);
 	static final GameType staticGameType4 = new GameType("game3", "Game 3", 2);

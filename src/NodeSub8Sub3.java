@@ -173,7 +173,7 @@ public class NodeSub8Sub3 extends NodeSub8 {
 
 	}
 
-	synchronized void method450(NodeSub11 var1, boolean var2) {
+	synchronized void method450(MusicFile var1, boolean var2) {
 		method440();
 		aClass46_1.method223(var1.aByteArray17);
 		aBool53 = var2;
@@ -568,7 +568,7 @@ public class NodeSub8Sub3 extends NodeSub8 {
 
 	}
 
-	synchronized boolean method460(NodeSub11 var1, AbstractFileStore var2, Class10 var3, int var4) {
+	synchronized boolean method460(MusicFile var1, AbstractFileStore var2, Class10 var3, int var4) {
 		var1.method315();
 		boolean var9 = true;
 		int[] var7 = null;
