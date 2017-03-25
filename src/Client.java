@@ -706,7 +706,7 @@ public final class Client extends GameShell {
 				staticLongArray2[var1] = 0L;
 			}
 
-			DataClass1.staticInt33 = 0;
+			ItemPile.staticInt33 = 0;
 		} else if (staticInt165 != 10 && staticInt165 != 11) {
 			if (staticInt165 == 20) {
 				Static.staticMethod139(this);

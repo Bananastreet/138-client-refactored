@@ -334,9 +334,9 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 						break label80;
 					}
 
-					DataClass1.staticInt33 = Static.staticAbstractClass3_1.method215(staticInt104, staticInt105);
+					ItemPile.staticInt33 = Static.staticAbstractClass3_1.method215(staticInt104, staticInt105);
 
-					for (int var10 = 0; var10 < DataClass1.staticInt33; var10++) {
+					for (int var10 = 0; var10 < ItemPile.staticInt33; var10++) {
 						method210();
 					}
 

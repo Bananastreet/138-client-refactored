@@ -2705,7 +2705,7 @@ public class Static {
 															var11 = var54.anInt591 / 32
 																	- AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
 															staticMethod116(var24, var18, var41, var11,
-																	DataClass1.staticSpriteArray1[1], var47);
+																	ItemPile.staticSpriteArray1[1], var47);
 														}
 													}
 												}
@@ -2746,16 +2746,16 @@ public class Static {
 
 														if (var50) {
 															staticMethod116(var24, var18, var11, var39,
-																	DataClass1.staticSpriteArray1[3], var47);
+																	ItemPile.staticSpriteArray1[3], var47);
 														} else if (var60) {
 															staticMethod116(var24, var18, var11, var39,
-																	DataClass1.staticSpriteArray1[4], var47);
+																	ItemPile.staticSpriteArray1[4], var47);
 														} else if (var67) {
 															staticMethod116(var24, var18, var11, var39,
-																	DataClass1.staticSpriteArray1[5], var47);
+																	ItemPile.staticSpriteArray1[5], var47);
 														} else {
 															staticMethod116(var24, var18, var11, var39,
-																	DataClass1.staticSpriteArray1[2], var47);
+																	ItemPile.staticSpriteArray1[2], var47);
 														}
 													}
 												}
@@ -2821,7 +2821,7 @@ public class Static {
 													var11 = 2 + var42 * 4
 															- AbstractClass2Sub1.staticPlayer1.anInt591 / 32;
 													staticMethod116(var24, var18, var41, var11,
-															DataClass1.staticSpriteArray1[0], var47);
+															ItemPile.staticSpriteArray1[0], var47);
 												}
 											}
 
@@ -8893,7 +8893,7 @@ public class Static {
 							1, 2048);
 					ClientScriptMap.staticNodeSub8Sub1_1 = new NodeSub8Sub1();
 					NodeSub12.staticClass19_1.method77(ClientScriptMap.staticNodeSub8Sub1_1);
-					DataClass1.staticClass20_1 = new Class20(22050, staticInt120);
+					ItemPile.staticClass20_1 = new Class20(22050, staticInt120);
 					staticString3 = "Prepared sound engine";
 					staticInt14 = 105;
 					Client.staticInt179 = 50;
@@ -9116,8 +9116,8 @@ public class Static {
 						++var1;
 					}
 
-					if (DataClass1.staticSpriteArray1 == null) {
-						DataClass1.staticSpriteArray1 = staticMethod309(Class62.staticJs5IndexImpl7, "mapdots", "");
+					if (ItemPile.staticSpriteArray1 == null) {
+						ItemPile.staticSpriteArray1 = staticMethod309(Class62.staticJs5IndexImpl7, "mapdots", "");
 					} else {
 						++var1;
 					}
@@ -15201,7 +15201,7 @@ public class Static {
 					}
 
 					if (var10 > 0) {
-						NodeSub6Sub1 var111 = var91.method25().method433(DataClass1.staticClass20_1);
+						NodeSub6Sub1 var111 = var91.method25().method433(ItemPile.staticClass20_1);
 						NodeSub8Sub2 var12 = staticMethod352(var111, 100, var10);
 						var12.method430(Client.staticIntArray115[var0] - 1);
 						ClientScriptMap.staticNodeSub8Sub1_1.method408(var12);
@@ -16539,7 +16539,7 @@ public class Static {
 			GameShell.staticLongArray2[var0] = 0L;
 		}
 
-		DataClass1.staticInt33 = 0;
+		ItemPile.staticInt33 = 0;
 	}
 
 	public static int staticMethod101(int var0, int var1) {
@@ -21570,7 +21570,7 @@ public class Static {
 						if (var4.anInt227 >= 0) {
 							SoundEffect var11 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anInt227, 0);
 							if (var11 != null) {
-								NodeSub6Sub1 var12 = var11.method25().method433(DataClass1.staticClass20_1);
+								NodeSub6Sub1 var12 = var11.method25().method433(ItemPile.staticClass20_1);
 								NodeSub8Sub2 var13 = staticMethod352(var12, 100, var9);
 								var13.method430(-1);
 								ClientScriptMap.staticNodeSub8Sub1_1.method408(var13);
@@ -21586,7 +21586,7 @@ public class Static {
 							int var111 = (int) (Math.random() * var4.anIntArray59.length);
 							SoundEffect var121 = staticMethod52(Config19.staticJs5IndexImpl15, var4.anIntArray59[var111], 0);
 							if (var121 != null) {
-								NodeSub6Sub1 var131 = var121.method25().method433(DataClass1.staticClass20_1);
+								NodeSub6Sub1 var131 = var121.method25().method433(ItemPile.staticClass20_1);
 								NodeSub8Sub2 var6 = staticMethod352(var131, 100, var9);
 								var6.method430(0);
 								ClientScriptMap.staticNodeSub8Sub1_1.method408(var6);

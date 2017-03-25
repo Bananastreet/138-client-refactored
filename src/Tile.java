@@ -6,7 +6,7 @@ public final class Tile extends Node {
 	Tile aTile1;
 	WallObject aWallObject1;
 	DataClass6 aClass33_1;
-	DataClass1 aClass16_1;
+	ItemPile aClass16_1;
 	int anInt254;
 	int anInt256;
 	boolean aBool27;

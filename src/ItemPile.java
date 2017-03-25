@@ -1,4 +1,4 @@
-public final class DataClass1 {
+public final class ItemPile {
 
 	int anInt39;
 	int anInt40;
