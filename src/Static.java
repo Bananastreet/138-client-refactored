@@ -6604,12 +6604,12 @@ public class Static {
 		return new String(var2);
 	}
 
-	public static Class55 staticMethod255(int var0) {
-		Class55[] var1 = new Class55[] { Class55.staticClass55_2, Class55.staticClass55_4, Class55.staticClass55_3 };
-		Class55[] var2 = var1;
+	public static IntegerWrapper staticMethod255(int var0) {
+		IntegerWrapper[] var1 = new IntegerWrapper[] { IntegerWrapper.staticClass55_2, IntegerWrapper.staticClass55_4, IntegerWrapper.staticClass55_3 };
+		IntegerWrapper[] var2 = var1;
 
 		for (int var3 = 0; var3 < var2.length; var3++) {
-			Class55 var4 = var2[var3];
+			IntegerWrapper var4 = var2[var3];
 			if (var0 == var4.anInt207) {
 				return var4;
 			}
@@ -18406,19 +18406,19 @@ public class Static {
 
 				if (Client.staticInt191 == 92) {
 					var2 = Client.inBuffer.readUByte();
-					Class55[] var64 = new Class55[] { Class55.staticClass55_2, Class55.staticClass55_4,
-							Class55.staticClass55_3 };
-					Class55[] var68 = var64;
+					IntegerWrapper[] var64 = new IntegerWrapper[] { IntegerWrapper.staticClass55_2, IntegerWrapper.staticClass55_4,
+							IntegerWrapper.staticClass55_3 };
+					IntegerWrapper[] var68 = var64;
 					var5 = 0;
 
-					Class55 var81;
+					IntegerWrapper var81;
 					while (true) {
 						if (var5 >= var68.length) {
 							var81 = null;
 							break;
 						}
 
-						Class55 var76 = var68[var5];
+						IntegerWrapper var76 = var68[var5];
 						if (var2 == var76.anInt207) {
 							var81 = var76;
 							break;
@@ -22380,7 +22380,7 @@ public class Static {
 									staticClass55_1 = staticMethod255(
 											staticIntArray16[staticInt27 + 1]);
 									if (staticClass55_1 == null) {
-										staticClass55_1 = Class55.staticClass55_2;
+										staticClass55_1 = IntegerWrapper.staticClass55_2;
 									}
 
 									Client.staticInt291 = staticIntArray16[2 + staticInt27];
@@ -24682,10 +24682,10 @@ public class Static {
 	}
 
 	static void staticMethod373(Js5IndexImpl var0, int var1) {
-		if (Class55.staticStream4 != null) {
-			Class55.staticStream4.position = 5 + var1 * 8;
-			int var3 = Class55.staticStream4.readInt();
-			int var2 = Class55.staticStream4.readInt();
+		if (IntegerWrapper.staticStream4 != null) {
+			IntegerWrapper.staticStream4.position = 5 + var1 * 8;
+			int var3 = IntegerWrapper.staticStream4.readInt();
+			int var2 = IntegerWrapper.staticStream4.readInt();
 			var0.method396(var3, var2);
 		} else {
 			staticMethod286((Js5IndexImpl) null, 255, 255, 0, (byte) 0, true);
@@ -29971,7 +29971,7 @@ public class Static {
 	public static BufferedFile staticBufferedFile1 = null;
 	static Applet staticApplet2 = null;
 	static String staticString25 = null;
-	static Class55 staticClass55_1;
+	static IntegerWrapper staticClass55_1;
 	public static File staticFile2;
 	static int staticInt102;
 	static byte staticByte1;

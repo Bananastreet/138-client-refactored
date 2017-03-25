@@ -1251,14 +1251,14 @@ public final class Client extends GameShell {
 								Static.staticInt134 += var9;
 								if (var8 == BufferedFile.staticStream2.position) {
 									if (FloorUnderlayDef.staticCacheableSub4_1.id == 16711935L) {
-										Class55.staticStream4 = BufferedFile.staticStream2;
+										IntegerWrapper.staticStream4 = BufferedFile.staticStream2;
 
 										for (var10 = 0; var10 < 256; var10++) {
 											Js5IndexImpl var221 = Static.staticJs5IndexImplArray1[var10];
 											if (var221 != null) {
-												Class55.staticStream4.position = var10 * 8 + 5;
-												var12 = Class55.staticStream4.readInt();
-												int var231 = Class55.staticStream4.readInt();
+												IntegerWrapper.staticStream4.position = var10 * 8 + 5;
+												var12 = IntegerWrapper.staticStream4.readInt();
+												int var231 = IntegerWrapper.staticStream4.readInt();
 												var221.method396(var12, var231);
 											}
 										}
