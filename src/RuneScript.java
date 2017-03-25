@@ -1,4 +1,4 @@
-public class CacheableSub1 extends Cacheable {
+public class RuneScript extends Cacheable {
 
 	int anInt398;
 	int[] anIntArray84;

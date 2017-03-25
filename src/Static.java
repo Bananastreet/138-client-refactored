@@ -295,8 +295,8 @@ public class Static {
 		}
 	}
 
-	static CacheableSub1 staticMethod148(int var0) {
-		CacheableSub1 var1 = (CacheableSub1) CacheableSub1.staticCache6.get(var0);
+	static RuneScript staticMethod148(int var0) {
+		RuneScript var1 = (RuneScript) RuneScript.staticCache6.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {
@@ -304,7 +304,7 @@ public class Static {
 			if (var3 == null) {
 				return null;
 			} else {
-				var1 = new CacheableSub1();
+				var1 = new RuneScript();
 				ByteBuf var4 = new ByteBuf(var3);
 				var4.position = var4.buf.length - 12;
 				int var6 = var4.readInt();
@@ -330,7 +330,7 @@ public class Static {
 					}
 				}
 
-				CacheableSub1.staticCache6.method170(var1, var0);
+				RuneScript.staticCache6.method170(var1, var0);
 				return var1;
 			}
 		}
@@ -801,7 +801,7 @@ public class Static {
 		DataClass7.staticInt73 = DataClass10.staticInt30;
 	}
 
-	static int staticMethod60(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod60(int var0, RuneScript var1, boolean var2) {
 		int var4;
 		if (var0 == 5504) {
 			staticInt27 -= 2;
@@ -1793,7 +1793,7 @@ public class Static {
 
 	}
 
-	static int staticMethod68(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod68(int var0, RuneScript var1, boolean var2) {
 		int var3 = -1;
 		Widget var4;
 		if (var0 >= 2000) {
@@ -7414,7 +7414,7 @@ public class Static {
 		return var2;
 	}
 
-	static int staticMethod269(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod269(int var0, RuneScript var1, boolean var2) {
 		if (var0 == 3200) {
 			staticInt27 -= 3;
 			staticMethod311(staticIntArray16[staticInt27],
@@ -11343,7 +11343,7 @@ public class Static {
 
 	}
 
-	static int staticMethod144(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod144(int var0, RuneScript var1, boolean var2) {
 		Widget var3;
 		if (var0 >= 2000) {
 			var0 -= 1000;
@@ -12067,7 +12067,7 @@ public class Static {
 		Widget.staticCache3.method171();
 		Widget.staticCache4.method171();
 		((Class11) Rasterizer2DSub1.staticInterface2_1).method35();
-		CacheableSub1.staticCache6.method171();
+		RuneScript.staticCache6.method171();
 		Client.staticJs5IndexImpl8.method272();
 		FloorUnderlayDef.staticJs5IndexImpl13.method272();
 		GameCanvas.staticJs5IndexImpl5.method272();
@@ -12082,7 +12082,7 @@ public class Static {
 		Connection.staticJs5IndexImpl4.method272();
 	}
 
-	static int staticMethod161(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod161(int var0, RuneScript var1, boolean var2) {
 		int var5;
 		int var6;
 		Widget var7;
@@ -12915,7 +12915,7 @@ public class Static {
 				+ var6 % 10 + ":" + var8 / 10 + var8 % 10 + " GMT";
 	}
 
-	static int staticMethod177(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod177(int var0, RuneScript var1, boolean var2) {
 		if (var0 == 3600) {
 			if (Client.staticInt202 == 0) {
 				staticIntArray16[++staticInt27 - 1] = -2;
@@ -13529,7 +13529,7 @@ public class Static {
 		CacheableSub6.staticCache22.method171();
 	}
 
-	static int staticMethod190(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod190(int var0, RuneScript var1, boolean var2) {
 		if (var0 == 6200) {
 			staticInt27 -= 2;
 			Client.staticShort3 = (short) staticIntArray16[staticInt27];
@@ -14015,7 +14015,7 @@ public class Static {
 
 	}
 
-	static int staticMethod204(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod204(int var0, RuneScript var1, boolean var2) {
 		int var24;
 		String var26;
 		if (var0 == 4100) {
@@ -14354,7 +14354,7 @@ public class Static {
 		return var2;
 	}
 
-	static int staticMethod24(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod24(int var0, RuneScript var1, boolean var2) {
 		if (var0 == 3300) {
 			staticIntArray16[++staticInt27 - 1] = Client.staticInt166;
 			return 1;
@@ -14859,7 +14859,7 @@ public class Static {
 
 	}
 
-	static int staticMethod219(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod219(int var0, RuneScript var1, boolean var2) {
 		Widget var3 = staticMethod8(staticIntArray16[--staticInt27]);
 		if (var0 == 2600) {
 			staticIntArray16[++staticInt27 - 1] = var3.anInt335;
@@ -14999,7 +14999,7 @@ public class Static {
 		staticMethod396(10);
 	}
 
-	static int staticMethod221(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod221(int var0, RuneScript var1, boolean var2) {
 		Widget var3;
 		if (var0 >= 2000) {
 			var0 -= 1000;
@@ -15405,7 +15405,7 @@ public class Static {
 
 	}
 
-	static int staticMethod245(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod245(int var0, RuneScript var1, boolean var2) {
 		int var3 = -1;
 		Widget var4;
 		if (var0 >= 2000) {
@@ -15787,7 +15787,7 @@ public class Static {
 
 	}
 
-	static int staticMethod41(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod41(int var0, RuneScript var1, boolean var2) {
 		Widget var3 = var2 ? Class3.staticWidget1 : staticWidget2;
 		if (var0 == 1700) {
 			staticIntArray16[++staticInt27 - 1] = var3.anInt352;
@@ -15966,7 +15966,7 @@ public class Static {
 		}
 	}
 
-	static int staticMethod43(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod43(int var0, RuneScript var1, boolean var2) {
 		int var3;
 		if (var0 == 3903) {
 			var3 = staticIntArray16[--staticInt27];
@@ -16829,7 +16829,7 @@ public class Static {
 		}
 	}
 
-	static int staticMethod339(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod339(int var0, RuneScript var1, boolean var2) {
 		Widget var3 = var2 ? Class3.staticWidget1 : staticWidget2;
 		if (var0 == 1500) {
 			staticIntArray16[++staticInt27 - 1] = var3.anInt341;
@@ -16958,7 +16958,7 @@ public class Static {
 		Varbit.staticJs5Index11 = var0;
 	}
 
-	static int staticMethod328(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod328(int var0, RuneScript var1, boolean var2) {
 		int var3;
 		int var4;
 		if (var0 == 4000) {
@@ -20272,7 +20272,7 @@ public class Static {
 		staticMethod15(var0);
 	}
 
-	static int staticMethod325(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod325(int var0, RuneScript var1, boolean var2) {
 		Widget var3;
 		if (var0 >= 2000) {
 			var0 -= 1000;
@@ -20406,7 +20406,7 @@ public class Static {
 
 	}
 
-	static int staticMethod331(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod331(int var0, RuneScript var1, boolean var2) {
 		Widget var4;
 		if (var0 >= 2000) {
 			var0 -= 1000;
@@ -21961,7 +21961,7 @@ public class Static {
 		}
 	}
 
-	static int staticMethod423(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod423(int var0, RuneScript var1, boolean var2) {
 		if (var0 < 1000) {
 			return staticMethod161(var0, var1, var2);
 		} else if (var0 < 1100) {
@@ -29222,7 +29222,7 @@ public class Static {
 
 	}
 
-	static int staticMethod470(int var0, CacheableSub1 var1, boolean var2) {
+	static int staticMethod470(int var0, RuneScript var1, boolean var2) {
 		Widget var3 = var2 ? Class3.staticWidget1 : staticWidget2;
 		if (var0 == 1600) {
 			staticIntArray16[++staticInt27 - 1] = var3.anInt335;
@@ -29602,7 +29602,7 @@ public class Static {
 	static void staticMethod474(ScriptEvent var0, int var1) {
 		Object[] var2 = var0.anObjectArray2;
 		int var3 = ((Integer) var2[0]).intValue();
-		CacheableSub1 var4 = staticMethod148(var3);
+		RuneScript var4 = staticMethod148(var3);
 		if (var4 != null) {
 			staticInt27 = 0;
 			staticInt148 = 0;
@@ -29815,7 +29815,7 @@ public class Static {
 																																																					}
 																																																				} else {
 																																																					var12 = var7[var5];
-																																																					CacheableSub1 var26 = staticMethod148(
+																																																					RuneScript var26 = staticMethod148(
 																																																							var12);
 																																																					int[] var28 = new int[var26.anInt398];
 																																																					String[] var301 = new String[var26.anInt399];
