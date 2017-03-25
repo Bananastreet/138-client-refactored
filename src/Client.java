@@ -594,7 +594,7 @@ public final class Client extends GameShell {
 		DataClass9.staticJs5DiskCache1 = new IndexedFileSystem(255, Static.staticBufferedFile3, Static.staticBufferedFile1,
 				500000);
 		FileOnDisk var5 = null;
-		Class6 var6 = new Class6();
+		Settings var6 = new Settings();
 
 		try {
 			var5 = Static.staticMethod70("", KeyFocusListener.staticGameType7.aString9, false);
@@ -608,7 +608,7 @@ public final class Client extends GameShell {
 				}
 			}
 
-			var6 = new Class6(new ByteBuf(var13));
+			var6 = new Settings(new ByteBuf(var13));
 		} catch (Exception var11) {
 			;
 		}
@@ -628,7 +628,7 @@ public final class Client extends GameShell {
 			staticBool23 = true;
 		}
 
-		int var131 = Static.staticClass6_1.anInt15;
+		int var131 = Static.staticClass6_1.screenType;
 		staticLong11 = 0L;
 		if (var131 >= 2) {
 			resizable = true;
@@ -670,7 +670,7 @@ public final class Client extends GameShell {
 					}
 
 					GameType.staticNodeSub11_1 = null;
-					Class6.staticClass10_1 = null;
+					Settings.staticClass10_1 = null;
 				}
 			}
 		} catch (Exception var311) {
@@ -678,7 +678,7 @@ public final class Client extends GameShell {
 			Static.staticNodeSub8Sub3_1.method440();
 			Static.staticInt118 = 0;
 			GameType.staticNodeSub11_1 = null;
-			Class6.staticClass10_1 = null;
+			Settings.staticClass10_1 = null;
 			Static.staticJs5Index3 = null;
 		}
 
@@ -749,8 +749,8 @@ public final class Client extends GameShell {
 					for (var2 = 0; var2 < DataClass10.staticByteArrayArray1.length; var2++) {
 						byte[] var33 = Class47.staticByteArrayArray6[var2];
 						if (var33 != null) {
-							var4 = (Class6.staticIntArray13[var2] >> 8) * 64 - NodeSub3.staticInt154;
-							var5 = (Class6.staticIntArray13[var2] & 0xff) * 64 - Class34.staticInt75;
+							var4 = (Settings.staticIntArray13[var2] >> 8) * 64 - NodeSub3.staticInt154;
+							var5 = (Settings.staticIntArray13[var2] & 0xff) * 64 - Class34.staticInt75;
 							if (staticBool37) {
 								var4 = 10;
 								var5 = 10;
@@ -797,8 +797,8 @@ public final class Client extends GameShell {
 						if (!staticBool37) {
 							byte[] var7;
 							for (var32 = 0; var32 < var2; var32++) {
-								var4 = (Class6.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
-								var5 = (Class6.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
+								var4 = (Settings.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
+								var5 = (Settings.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
 								var7 = DataClass10.staticByteArrayArray1[var32];
 								if (var7 != null) {
 									Static.staticMethod17();
@@ -808,8 +808,8 @@ public final class Client extends GameShell {
 							}
 
 							for (var32 = 0; var32 < var2; var32++) {
-								var4 = (Class6.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
-								var5 = (Class6.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
+								var4 = (Settings.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
+								var5 = (Settings.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
 								var7 = DataClass10.staticByteArrayArray1[var32];
 								if (var7 == null && DataClass2.staticInt70 < 800) {
 									Static.staticMethod17();
@@ -822,8 +822,8 @@ public final class Client extends GameShell {
 							for (var32 = 0; var32 < var2; var32++) {
 								byte[] var8 = Class47.staticByteArrayArray6[var32];
 								if (var8 != null) {
-									var5 = (Class6.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
-									var36 = (Class6.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
+									var5 = (Settings.staticIntArray13[var32] >> 8) * 64 - NodeSub3.staticInt154;
+									var36 = (Settings.staticIntArray13[var32] & 0xff) * 64 - Class34.staticInt75;
 									Static.staticMethod17();
 									Static.staticMethod244(var8, var5, var36, Friend.staticScene1, staticClass38Array1);
 								}
@@ -870,8 +870,8 @@ public final class Client extends GameShell {
 													var38 = var36 >> 3 & 0x7ff;
 													var11 = var38 / 8 + (var9 / 8 << 8);
 
-													for (var12 = 0; var12 < Class6.staticIntArray13.length; var12++) {
-														if (Class6.staticIntArray13[var12] == var11
+													for (var12 = 0; var12 < Settings.staticIntArray13.length; var12++) {
+														if (Settings.staticIntArray13[var12] == var11
 																&& Class47.staticByteArrayArray6[var12] != null) {
 															Static.staticMethod152(Class47.staticByteArrayArray6[var12],
 																	var32, var4 * 8, var5 * 8, var331, (var9 & 0x7) * 8,
@@ -901,8 +901,8 @@ public final class Client extends GameShell {
 											var11 = var331 >> 3 & 0x7ff;
 											var12 = (var38 / 8 << 8) + var11 / 8;
 
-											for (int var13 = 0; var13 < Class6.staticIntArray13.length; var13++) {
-												if (var12 == Class6.staticIntArray13[var13]
+											for (int var13 = 0; var13 < Settings.staticIntArray13.length; var13++) {
+												if (var12 == Settings.staticIntArray13[var13]
 														&& DataClass10.staticByteArrayArray1[var13] != null) {
 													byte[] var14 = DataClass10.staticByteArrayArray1[var13];
 													int var15 = var4 * 8;
@@ -1451,9 +1451,9 @@ public final class Client extends GameShell {
 				Static.staticString24 = AnimationSkin.staticString28.toLowerCase();
 
 				try {
-					Class6.staticString18 = System.getProperty("user.home");
-					if (Class6.staticString18 != null) {
-						Class6.staticString18 = Class6.staticString18 + "/";
+					Settings.staticString18 = System.getProperty("user.home");
+					if (Settings.staticString18 != null) {
+						Settings.staticString18 = Settings.staticString18 + "/";
 					}
 				} catch (Exception var121) {
 					;
@@ -1461,26 +1461,26 @@ public final class Client extends GameShell {
 
 				try {
 					if (Static.staticString24.startsWith("win")) {
-						if (Class6.staticString18 == null) {
-							Class6.staticString18 = System.getenv("USERPROFILE");
+						if (Settings.staticString18 == null) {
+							Settings.staticString18 = System.getenv("USERPROFILE");
 						}
-					} else if (Class6.staticString18 == null) {
-						Class6.staticString18 = System.getenv("HOME");
+					} else if (Settings.staticString18 == null) {
+						Settings.staticString18 = System.getenv("HOME");
 					}
 
-					if (Class6.staticString18 != null) {
-						Class6.staticString18 = Class6.staticString18 + "/";
+					if (Settings.staticString18 != null) {
+						Settings.staticString18 = Settings.staticString18 + "/";
 					}
 				} catch (Exception var11) {
 					;
 				}
 
-				if (Class6.staticString18 == null) {
-					Class6.staticString18 = "~/";
+				if (Settings.staticString18 == null) {
+					Settings.staticString18 = "~/";
 				}
 
 				AnimationSkin.staticStringArray6 = new String[] { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/",
-						"c:/", Class6.staticString18, "/tmp/", "" };
+						"c:/", Settings.staticString18, "/tmp/", "" };
 				Static.staticStringArray4 = new String[] { ".jagex_cache_" + ScriptEvent.staticInt314,
 						".file_store_" + ScriptEvent.staticInt314 };
 				var3 = 0;
@@ -1525,7 +1525,7 @@ public final class Client extends GameShell {
 				Static.staticBool10 = true;
 
 				try {
-					File var19 = new File(Class6.staticString18, "random.dat");
+					File var19 = new File(Settings.staticString18, "random.dat");
 					if (var19.exists()) {
 						Static.randomDat = new BufferedFile(new FileOnDisk(var19, "rw", 25L), 24, 0);
 					} else {

@@ -519,9 +519,9 @@ public class Static {
 
 	static final void staticMethod127(String var0) {
 		if (var0.equalsIgnoreCase("toggleroof")) {
-			staticClass6_1.aBool3 = !staticClass6_1.aBool3;
+			staticClass6_1.hideRoofs = !staticClass6_1.hideRoofs;
 			staticMethod270();
-			if (staticClass6_1.aBool3) {
+			if (staticClass6_1.hideRoofs) {
 				staticMethod36(99, "", "Roofs are now all hidden");
 			} else {
 				staticMethod36(99, "", "Roofs will only be removed selectively");
@@ -2011,7 +2011,7 @@ public class Static {
 			var4 = "_wip";
 		}
 
-		File var5 = new File(Class6.staticString18, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
+		File var5 = new File(Settings.staticString18, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
 		FileOnDisk var6;
 		if (!var2 && var5.exists()) {
 			try {
@@ -2536,7 +2536,7 @@ public class Static {
 								if (!Client.staticBool28) {
 									var42 = staticMethod234();
 								} else {
-									if (staticClass6_1.aBool3) {
+									if (staticClass6_1.hideRoofs) {
 										var51 = NodeSub4.staticInt155;
 									} else {
 										var41 = staticMethod240(Class20.staticInt36, NodeSub3.staticInt153,
@@ -5892,7 +5892,7 @@ public class Static {
 
 	public static File staticMethod225(String var0, String var1, int var2) {
 		String var3 = var2 == 0 ? "" : "" + var2;
-		staticFile1 = new File(Class6.staticString18, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
+		staticFile1 = new File(Settings.staticString18, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
 		String var4 = null;
 		String var5 = null;
 		boolean var6 = false;
@@ -5969,7 +5969,7 @@ public class Static {
 		}
 
 		if (var4 == null) {
-			var4 = Class6.staticString18 + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0
+			var4 = Settings.staticString18 + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0
 					+ File.separatorChar + var1 + File.separatorChar;
 			var6 = true;
 		}
@@ -6027,7 +6027,7 @@ public class Static {
 	}
 
 	static final int staticMethod234() {
-		if (staticClass6_1.aBool3) {
+		if (staticClass6_1.hideRoofs) {
 			return NodeSub4.staticInt155;
 		} else {
 			int var1 = 3;
@@ -7963,9 +7963,9 @@ public class Static {
 		} else {
 			if ((MouseHandler.staticInt98 == 1 || !staticBool18 && MouseHandler.staticInt98 == 4)
 					&& MouseHandler.staticInt99 >= 765 + staticInt6 - 50 && MouseHandler.staticInt100 >= 453) {
-				staticClass6_1.aBool2 = !staticClass6_1.aBool2;
+				staticClass6_1.muted = !staticClass6_1.muted;
 				staticMethod270();
-				if (!staticClass6_1.aBool2) {
+				if (!staticClass6_1.muted) {
 					Js5IndexImpl var111 = Class34.staticJs5IndexImpl3;
 					var1 = var111.method267("scape main");
 					var5 = var111.method268(var1, "");
@@ -8689,7 +8689,7 @@ public class Static {
 			GZipDecompressor.staticString26 = "";
 			staticBool3 = true;
 			staticBool1 = false;
-			if (!staticClass6_1.aBool2) {
+			if (!staticClass6_1.muted) {
 				Js5IndexImpl var9 = Class34.staticJs5IndexImpl3;
 				// TODO play startup song
 				int var7 = var9.method267("scape main");
@@ -11292,7 +11292,7 @@ public class Static {
 			}
 
 			staticMethod196();
-			DataClass6.staticRasterizer2DSub3Array3[staticClass6_1.aBool2 ? 1 : 0]
+			DataClass6.staticRasterizer2DSub3Array3[staticClass6_1.muted ? 1 : 0]
 					.method655(staticInt6 + 765 - 40, 463);
 			if (Client.staticInt165 > 5 && Client.staticInt231 == 0) {
 				if (Client.staticRasterizer2DSub3_5 != null) {
@@ -17544,7 +17544,7 @@ public class Static {
 				}
 			}
 
-			Class6.staticIntArray13 = new int[var2];
+			Settings.staticIntArray13 = new int[var2];
 			AbstractClass2Sub1.staticIntArray125 = new int[var2];
 			Class60.staticIntArray75 = new int[var2];
 			DataClass10.staticByteArrayArray1 = new byte[var2][];
@@ -17565,7 +17565,7 @@ public class Static {
 					var8 = var6 + (var4 << 8);
 					if (!var11
 							|| var6 != 49 && var6 != 149 && var6 != 147 && var4 != 50 && (var4 != 49 || var6 != 47)) {
-						Class6.staticIntArray13[var2] = var8;
+						Settings.staticIntArray13[var2] = var8;
 						AbstractClass2Sub1.staticIntArray125[var2] = EntitySub2.staticJs5IndexImpl16
 								.method267("m" + var4 + "_" + var6);
 						Class60.staticIntArray75[var2] = EntitySub2.staticJs5IndexImpl16
@@ -17605,7 +17605,7 @@ public class Static {
 				}
 			}
 
-			Class6.staticIntArray13 = new int[var2];
+			Settings.staticIntArray13 = new int[var2];
 			AbstractClass2Sub1.staticIntArray125 = new int[var2];
 			Class60.staticIntArray75 = new int[var2];
 			DataClass10.staticByteArrayArray1 = new byte[var2][];
@@ -17623,14 +17623,14 @@ public class Static {
 
 							int var9;
 							for (var9 = 0; var9 < var2; var9++) {
-								if (Class6.staticIntArray13[var9] == var7) {
+								if (Settings.staticIntArray13[var9] == var7) {
 									var7 = -1;
 									break;
 								}
 							}
 
 							if (var7 != -1) {
-								Class6.staticIntArray13[var2] = var7;
+								Settings.staticIntArray13[var2] = var7;
 								var9 = var7 >> 8 & 0xff;
 								int var10 = var7 & 0xff;
 								AbstractClass2Sub1.staticIntArray125[var2] = EntitySub2.staticJs5IndexImpl16
@@ -22042,11 +22042,11 @@ public class Static {
 								staticBool18 = staticIntArray16[--staticInt27] == 1;
 								var8 = 1;
 							} else if (var0 == 3111) {
-								staticIntArray16[++staticInt27 - 1] = staticClass6_1.aBool3 ? 1
+								staticIntArray16[++staticInt27 - 1] = staticClass6_1.hideRoofs ? 1
 										: 0;
 								var8 = 1;
 							} else if (var0 == 3112) {
-								staticClass6_1.aBool3 = staticIntArray16[--staticInt27] == 1;
+								staticClass6_1.hideRoofs = staticIntArray16[--staticInt27] == 1;
 								staticMethod270();
 								var8 = 1;
 							} else if (var0 == 3113) {
@@ -22690,12 +22690,12 @@ public class Static {
 
 									var8 = 1;
 								} else if (var0 == 5308) {
-									staticIntArray16[++staticInt27 - 1] = staticClass6_1.anInt15;
+									staticIntArray16[++staticInt27 - 1] = staticClass6_1.screenType;
 									var8 = 1;
 								} else if (var0 == 5309) {
 									var14 = staticIntArray16[--staticInt27];
 									if (var14 == 1 || var14 == 2) {
-										staticClass6_1.anInt15 = var14;
+										staticClass6_1.screenType = var14;
 										staticMethod270();
 									}
 
@@ -24913,18 +24913,18 @@ public class Static {
 					}
 				}
 
-				if (Class6.staticClass10_1 == null) {
-					Class6.staticClass10_1 = new Class10(staticJs5Index5, staticJs5Index4);
+				if (Settings.staticClass10_1 == null) {
+					Settings.staticClass10_1 = new Class10(staticJs5Index5, staticJs5Index4);
 				}
 
 				if (staticNodeSub8Sub3_1.method460(GameType.staticNodeSub11_1, staticJs5Index6,
-						Class6.staticClass10_1, 22050)) {
+						Settings.staticClass10_1, 22050)) {
 					staticNodeSub8Sub3_1.method439();
 					staticNodeSub8Sub3_1.method457(DataClass10.staticInt32);
 					staticNodeSub8Sub3_1.method450(GameType.staticNodeSub11_1, staticBool16);
 					staticInt118 = 0;
 					GameType.staticNodeSub11_1 = null;
-					Class6.staticClass10_1 = null;
+					Settings.staticClass10_1 = null;
 					staticJs5Index3 = null;
 					return true;
 				}
@@ -24934,7 +24934,7 @@ public class Static {
 			staticNodeSub8Sub3_1.method440();
 			staticInt118 = 0;
 			GameType.staticNodeSub11_1 = null;
-			Class6.staticClass10_1 = null;
+			Settings.staticClass10_1 = null;
 			staticJs5Index3 = null;
 		}
 
@@ -30095,7 +30095,7 @@ public class Static {
 	static int staticInt125;
 	static int staticInt126;
 	static int[] staticIntArray67;
-	static Class6 staticClass6_1;
+	static Settings staticClass6_1;
 	public static int staticInt127;
 	static Connection staticConnection1;
 	public static AbstractFileStore staticJs5Index7;

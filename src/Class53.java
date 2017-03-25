@@ -1,3 +1,4 @@
+// some unordered collection
 public class Class53 {
 
 	public static final Class53 staticClass53_5 = new Class53(7, 0, "", "");
