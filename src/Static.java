@@ -28710,7 +28710,7 @@ public class Static {
 
 				var5.method79(var5.anInt50);
 				if (SoundSystem.staticInt35 > 0 && SoundSystem.staticClass15_1 == null) {
-					SoundSystem.staticClass15_1 = new Class15();
+					SoundSystem.staticClass15_1 = new SoundTask();
 					SoundSystem.staticClass15_1.aTaskManager1 = var0;
 					var0.method94(SoundSystem.staticClass15_1, SoundSystem.staticInt35);
 				}

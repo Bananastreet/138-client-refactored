@@ -19,7 +19,7 @@ public class SoundSystem {
 	int anInt50;
 	int anInt52;
 	int[] anIntArray27;
-	static Class15 staticClass15_1;
+	static SoundTask staticClass15_1;
 	NodeSub8 aNodeSub8_1;
 
 	public final synchronized void method66() {

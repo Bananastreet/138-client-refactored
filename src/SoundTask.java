@@ -1,6 +1,6 @@
 import java.awt.event.ActionEvent;
 
-public class Class15 implements Runnable {
+public class SoundTask implements Runnable {
 
 	TaskManager aTaskManager1;
 	volatile boolean aBool6 = false;
