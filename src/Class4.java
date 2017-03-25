@@ -1,4 +1,4 @@
-public class Class4 implements Identifiable {
+public class Class4 implements Enumerable {
 
 	static int staticInt21;
 	static short[] staticShortArray1;

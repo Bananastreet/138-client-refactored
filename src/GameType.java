@@ -1,4 +1,4 @@
-public class GameType implements Identifiable {
+public class GameType implements Enumerable {
 
 	public static MusicFile staticNodeSub11_1;
 	static final GameType staticGameType3 = new GameType("runescape", "RuneScape", 0);

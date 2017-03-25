@@ -1,6 +1,6 @@
 import java.awt.Font;
 
-public class Class28 implements Identifiable {
+public class Class28 implements Enumerable {
 
 	protected static Font staticFont1;
 	static int staticInt71;

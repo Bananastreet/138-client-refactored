@@ -1,4 +1,4 @@
-public class Permission implements Identifiable {
+public class Permission implements Enumerable {
 
 	static long staticLong7;
 	public static final Permission PLAYER = new Permission(0, -1, true, false, true);

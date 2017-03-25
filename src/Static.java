@@ -6013,11 +6013,11 @@ public class Static {
 		return var2 / 16 + var3 / 8 + var4 / 4;
 	}
 
-	public static Identifiable staticMethod233(Identifiable[] var0, int var1) {
-		Identifiable[] var2 = var0;
+	public static Enumerable staticMethod233(Enumerable[] var0, int var1) {
+		Enumerable[] var2 = var0;
 
 		for (int var3 = 0; var3 < var2.length; var3++) {
-			Identifiable var4 = var2[var3];
+			Enumerable var4 = var2[var3];
 			if (var1 == var4.method12()) {
 				return var4;
 			}
