@@ -1,6 +1,6 @@
 public class CacheableSub2 extends Cacheable {
 
-	public static GraphicsBuffer staticGraphicsBuffer1;
+	public static AbstractGraphicsBuffer staticGraphicsBuffer1;
 	static int[] staticIntArray127;
 	static Sprite staticSprite4;
 	AnimationSkeleton[] aClass24Array1;

@@ -1684,11 +1684,11 @@ public final class Client extends GameShell {
 				Class38.staticCanvas1.repaint();
 			}
 		} else if (staticInt165 == 5) {
-			Static.staticMethod134(GraphicsBuffer.staticRasterizer2DSub2Sub1_1, NodeSub4.staticRasterizer2DSub2Sub1_3,
+			Static.staticMethod134(AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1, NodeSub4.staticRasterizer2DSub2Sub1_3,
 					DataClass9.staticRasterizer2DSub2Sub1_2, var3);
 		} else if (staticInt165 != 10 && staticInt165 != 11) {
 			if (staticInt165 == 20) {
-				Static.staticMethod134(GraphicsBuffer.staticRasterizer2DSub2Sub1_1,
+				Static.staticMethod134(AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1,
 						NodeSub4.staticRasterizer2DSub2Sub1_3, DataClass9.staticRasterizer2DSub2Sub1_2, var3);
 			} else if (staticInt165 == 25) {
 				if (staticInt200 == 1) {
@@ -1755,7 +1755,7 @@ public final class Client extends GameShell {
 										+ " more options";
 							}
 
-							GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method621(var25, var4 + 4, 15 + var21, 16777215,
+							AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method621(var25, var4 + 4, 15 + var21, 16777215,
 									0, staticInt166 / 1000);
 						}
 					}
@@ -1768,7 +1768,7 @@ public final class Client extends GameShell {
 					Static.staticMethod418(var4, var21, var211, var23, var241);
 					Static.staticMethod418(1 + var4, 1 + var21, var211 - 2, 16, 0);
 					Static.staticMethod411(1 + var4, 18 + var21, var211 - 2, var23 - 19, 0);
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616("Choose Option", 3 + var4, var21 + 14, var241,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616("Choose Option", 3 + var4, var21 + 14, var241,
 							-1);
 					var9 = MouseHandler.staticInt94;
 					var10 = MouseHandler.staticInt88;
@@ -1783,7 +1783,7 @@ public final class Client extends GameShell {
 							var13 = 16776960;
 						}
 
-						GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616(Static.staticMethod473(var261), var4 + 3,
+						AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616(Static.staticMethod473(var261), var4 + 3,
 								var12, var13, 0);
 					}
 
@@ -1824,7 +1824,7 @@ public final class Client extends GameShell {
 				Static.staticMethod337("Please wait...", false);
 			}
 		} else {
-			Static.staticMethod134(GraphicsBuffer.staticRasterizer2DSub2Sub1_1, NodeSub4.staticRasterizer2DSub2Sub1_3,
+			Static.staticMethod134(AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1, NodeSub4.staticRasterizer2DSub2Sub1_3,
 					DataClass9.staticRasterizer2DSub2Sub1_2, var3);
 		}
 

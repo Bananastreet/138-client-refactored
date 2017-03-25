@@ -211,30 +211,30 @@ public class Static {
 				}
 
 				if (Client.staticIntArray90[var10] == 0) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Client.staticInt189,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Client.staticInt189,
 							Client.staticInt180 + var1, var14, 0);
 				}
 
 				if (Client.staticIntArray90[var10] == 1) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method626(var191, var0 + Client.staticInt189,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method626(var191, var0 + Client.staticInt189,
 							Client.staticInt180 + var1, var14, 0, Client.staticInt292);
 				}
 
 				if (Client.staticIntArray90[var10] == 2) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method619(var191, Client.staticInt189 + var0,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method619(var191, Client.staticInt189 + var0,
 							var1 + Client.staticInt180, var14, 0, Client.staticInt292);
 				}
 
 				if (Client.staticIntArray90[var10] == 3) {
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method620(var191, Client.staticInt189 + var0,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method620(var191, Client.staticInt189 + var0,
 							Client.staticInt180 + var1, var14, 0, Client.staticInt292, 150 - Client.staticIntArray99[var10]);
 				}
 
 				if (Client.staticIntArray90[var10] == 4) {
 					var13 = (150 - Client.staticIntArray99[var10])
-							* (GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613(var191) + 100) / 150;
+							* (AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613(var191) + 100) / 150;
 					staticMethod402(var0 + Client.staticInt189 - 50, var1, 50 + Client.staticInt189 + var0, var3 + var1);
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616(var191, 50 + Client.staticInt189 + var0 - var13,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method616(var191, 50 + Client.staticInt189 + var0 - var13,
 							var1 + Client.staticInt180, var14, 0);
 					staticMethod416(var0, var1, var2 + var0, var3 + var1);
 				}
@@ -249,14 +249,14 @@ public class Static {
 					}
 
 					staticMethod402(var0,
-							var1 + Client.staticInt180 - GraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669 - 1,
+							var1 + Client.staticInt180 - AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669 - 1,
 							var2 + var0, 5 + var1 + Client.staticInt180);
-					GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Client.staticInt189,
+					AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, var0 + Client.staticInt189,
 							var17 + var1 + Client.staticInt180, var14, 0);
 					staticMethod416(var0, var1, var0 + var2, var3 + var1);
 				}
 			} else {
-				GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, Client.staticInt189 + var0,
+				AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method630(var191, Client.staticInt189 + var0,
 						var1 + Client.staticInt180, 16776960, 0);
 			}
 		}
@@ -5453,9 +5453,9 @@ public class Static {
 							|| Client.staticInt160 == 1 && staticMethod422(((Player) var0).aString40, false))))) {
 				staticMethod186(var0, var0.anInt609);
 				if (Client.staticInt189 > -1 && Client.staticInt187 < Client.staticInt169) {
-					Client.staticIntArray85[Client.staticInt187] = GraphicsBuffer.staticRasterizer2DSub2Sub1_1
+					Client.staticIntArray85[Client.staticInt187] = AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1
 							.method613(var0.aString39) / 2;
-					Client.staticIntArray87[Client.staticInt187] = GraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669;
+					Client.staticIntArray87[Client.staticInt187] = AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.anInt669;
 					Client.staticIntArray101[Client.staticInt187] = Client.staticInt189;
 					Client.staticIntArray102[Client.staticInt187] = Client.staticInt180;
 					Client.staticIntArray89[Client.staticInt187] = var0.anInt602;
@@ -6732,12 +6732,12 @@ public class Static {
 	}
 
 	static final void staticMethod37(int var0, int var1) {
-		int var2 = GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613("Choose Option");
+		int var2 = AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613("Choose Option");
 
 		int var4;
 		int var5;
 		for (var4 = 0; var4 < Client.staticInt252; var4++) {
-			var5 = GraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613(staticMethod473(var4));
+			var5 = AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1.method613(staticMethod473(var4));
 			if (var5 > var2) {
 				var2 = var5;
 			}
@@ -8911,8 +8911,8 @@ public class Static {
 						++var1;
 					}
 
-					if (GraphicsBuffer.staticRasterizer2DSub2Sub1_1 == null) {
-						GraphicsBuffer.staticRasterizer2DSub2Sub1_1 = staticMethod386(Class62.staticJs5IndexImpl7,
+					if (AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1 == null) {
+						AbstractGraphicsBuffer.staticRasterizer2DSub2Sub1_1 = staticMethod386(Class62.staticJs5IndexImpl7,
 								NodeSub12.staticJs5IndexImpl11, "b12_full", "");
 					} else {
 						++var1;
@@ -21786,7 +21786,7 @@ public class Static {
 		return staticMethod188(var0, 10, true);
 	}
 
-	public static GraphicsBuffer staticMethod390(int var0, int var1, Component var2) {
+	public static AbstractGraphicsBuffer staticMethod390(int var0, int var1, Component var2) {
 		try {
 			ShapedGraphicsBuffer var5 = new ShapedGraphicsBuffer();
 			var5.method278(var0, var1, var2);

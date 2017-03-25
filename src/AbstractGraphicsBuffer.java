@@ -2,7 +2,7 @@ import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Image;
 
-public abstract class GraphicsBuffer {
+public abstract class AbstractGraphicsBuffer {
 
 	public int anInt203;
 	public int[] anIntArray55;
