@@ -416,7 +416,7 @@ public class Model extends Entity {
 		return anInt661;
 	}
 
-	public void method595(CacheableSub2 var1, int var2, CacheableSub2 var3, int var4, int[] var5) {
+	public void method595(SkeletonSet var1, int var2, SkeletonSet var3, int var4, int[] var5) {
 		if (var2 != -1) {
 			if (var5 != null && var4 != -1) {
 				AnimationSkeleton var9 = var1.aClass24Array1[var2];
@@ -716,7 +716,7 @@ public class Model extends Entity {
 		anInt659 = 0;
 	}
 
-	public void method602(CacheableSub2 var1, int var2) {
+	public void method602(SkeletonSet var1, int var2) {
 		if (anIntArrayArray15 != null && var2 != -1) {
 			AnimationSkeleton var3 = var1.aClass24Array1[var2];
 			AnimationSkin var4 = var3.aNodeSub10_1;

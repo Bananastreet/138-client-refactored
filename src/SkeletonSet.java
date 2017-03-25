@@ -1,4 +1,4 @@
-public class CacheableSub2 extends Cacheable {
+public class SkeletonSet extends Cacheable {
 
 	public static AbstractGraphicsBuffer staticGraphicsBuffer1;
 	static int[] staticIntArray127;
@@ -9,7 +9,7 @@ public class CacheableSub2 extends Cacheable {
 		return aClass24Array1[var1].aBool9;
 	}
 
-	CacheableSub2(AbstractFileStore var1, AbstractFileStore var2, int var3, boolean var4) {
+	SkeletonSet(AbstractFileStore var1, AbstractFileStore var2, int var3, boolean var4) {
 		Class39 var13 = new Class39();
 		int var9 = var1.method263(var3);
 		aClass24Array1 = new AnimationSkeleton[var9];

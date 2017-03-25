@@ -33,7 +33,7 @@ public class AnimationDefintion extends Cacheable {
 
 	public Model method551(Model var1, int var2) {
 		var2 = anIntArray121[var2];
-		CacheableSub2 var3 = Static.staticMethod343(var2 >> 16);
+		SkeletonSet var3 = Static.staticMethod343(var2 >> 16);
 		var2 &= '\uffff';
 		if (var3 == null) {
 			return var1.method589(true);
@@ -46,7 +46,7 @@ public class AnimationDefintion extends Cacheable {
 
 	Model method552(Model var1, int var2) {
 		var2 = anIntArray121[var2];
-		CacheableSub2 var4 = Static.staticMethod343(var2 >> 16);
+		SkeletonSet var4 = Static.staticMethod343(var2 >> 16);
 		var2 &= '\uffff';
 		if (var4 == null) {
 			return var1.method590(true);
@@ -59,7 +59,7 @@ public class AnimationDefintion extends Cacheable {
 
 	Model method553(Model var1, int var2, int var3) {
 		var2 = anIntArray121[var2];
-		CacheableSub2 var5 = Static.staticMethod343(var2 >> 16);
+		SkeletonSet var5 = Static.staticMethod343(var2 >> 16);
 		var2 &= '\uffff';
 		if (var5 == null) {
 			return var1.method589(true);
@@ -177,13 +177,13 @@ public class AnimationDefintion extends Cacheable {
 
 	public Model method556(Model var1, int var2, AnimationDefintion var3, int var4) {
 		var2 = anIntArray121[var2];
-		CacheableSub2 var6 = Static.staticMethod343(var2 >> 16);
+		SkeletonSet var6 = Static.staticMethod343(var2 >> 16);
 		var2 &= '\uffff';
 		if (var6 == null) {
 			return var3.method551(var1, var4);
 		} else {
 			var4 = var3.anIntArray121[var4];
-			CacheableSub2 var7 = Static.staticMethod343(var4 >> 16);
+			SkeletonSet var7 = Static.staticMethod343(var4 >> 16);
 			var4 &= '\uffff';
 			Model var5;
 			if (var7 == null) {
@@ -200,12 +200,12 @@ public class AnimationDefintion extends Cacheable {
 
 	public Model method557(Model var1, int var2) {
 		int var3 = anIntArray121[var2];
-		CacheableSub2 var5 = Static.staticMethod343(var3 >> 16);
+		SkeletonSet var5 = Static.staticMethod343(var3 >> 16);
 		var3 &= '\uffff';
 		if (var5 == null) {
 			return var1.method589(true);
 		} else {
-			CacheableSub2 var6 = null;
+			SkeletonSet var6 = null;
 			int var4 = 0;
 			if (anIntArray118 != null && var2 < anIntArray118.length) {
 				var4 = anIntArray118[var2];

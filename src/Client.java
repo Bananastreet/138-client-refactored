@@ -1835,7 +1835,7 @@ public final class Client extends GameShell {
 
 				for (var21 = 0; var21 < staticInt162; var21++) {
 					if (staticBoolArray6[var21]) {
-						CacheableSub2.staticGraphicsBuffer1.method280(var22, staticIntArray82[var21],
+						SkeletonSet.staticGraphicsBuffer1.method280(var22, staticIntArray82[var21],
 								staticIntArray88[var21], staticIntArray107[var21], staticIntArray106[var21]);
 						staticBoolArray6[var21] = false;
 					}
@@ -1846,7 +1846,7 @@ public final class Client extends GameShell {
 		} else if (staticInt165 > 0) {
 			try {
 				var22 = Class38.staticCanvas1.getGraphics();
-				CacheableSub2.staticGraphicsBuffer1.method279(var22, 0, 0);
+				SkeletonSet.staticGraphicsBuffer1.method279(var22, 0, 0);
 
 				for (var21 = 0; var21 < staticInt162; var21++) {
 					staticBoolArray6[var21] = false;

@@ -274,7 +274,7 @@ public class Static {
 		staticIntArrayArray7 = new int[105][105];
 		staticIntArray55 = new int[104];
 		ClientScriptMap.staticIntArray129 = new int[104];
-		CacheableSub2.staticIntArray127 = new int[104];
+		SkeletonSet.staticIntArray127 = new int[104];
 		Class60.staticIntArray76 = new int[104];
 		staticIntArray51 = new int[104];
 	}
@@ -461,7 +461,7 @@ public class Static {
 
 	}
 
-	public static CacheableSub2 staticMethod216(AbstractFileStore var0, AbstractFileStore var1, int var2, boolean var3) {
+	public static SkeletonSet staticMethod216(AbstractFileStore var0, AbstractFileStore var1, int var2, boolean var3) {
 		boolean var4 = true;
 		int[] var5 = var0.method262(var2);
 
@@ -488,7 +488,7 @@ public class Static {
 			return null;
 		} else {
 			try {
-				return new CacheableSub2(var0, var1, var2, var3);
+				return new SkeletonSet(var0, var1, var2, var3);
 			} catch (Exception var101) {
 				return null;
 			}
@@ -1985,7 +1985,7 @@ public class Static {
 			double var9 = Math.atan2(var14, var15);
 			int var7 = (int) (Math.sin(var9) * 63.0D);
 			int var8 = (int) (Math.cos(var9) * 57.0D);
-			CacheableSub2.staticSprite4.method643(4 + var7 + 94 + var0 - 10, var1 + 83 - var8 - 20, 20, 20, 15, 15,
+			SkeletonSet.staticSprite4.method643(4 + var7 + 94 + var0 - 10, var1 + 83 - var8 - 20, 20, 20, 15, 15,
 					var9, 256);
 		} else {
 			staticMethod116(var0, var1, var2, var3, var4, var5);
@@ -4440,7 +4440,7 @@ public class Static {
 			for (var3 = 0; var3 < 104; var3++) {
 				staticIntArray55[var3] = 0;
 				ClientScriptMap.staticIntArray129[var3] = 0;
-				CacheableSub2.staticIntArray127[var3] = 0;
+				SkeletonSet.staticIntArray127[var3] = 0;
 				Class60.staticIntArray76[var3] = 0;
 				staticIntArray51[var3] = 0;
 			}
@@ -4455,7 +4455,7 @@ public class Static {
 							var46 = staticMethod338(var20 - 1);
 							staticIntArray55[var16] += var46.anInt512;
 							ClientScriptMap.staticIntArray129[var16] += var46.anInt510;
-							CacheableSub2.staticIntArray127[var16] += var46.anInt509;
+							SkeletonSet.staticIntArray127[var16] += var46.anInt509;
 							Class60.staticIntArray76[var16] += var46.anInt511;
 							++staticIntArray51[var16];
 						}
@@ -4468,7 +4468,7 @@ public class Static {
 							var46 = staticMethod338(var15 - 1);
 							staticIntArray55[var16] -= var46.anInt512;
 							ClientScriptMap.staticIntArray129[var16] -= var46.anInt510;
-							CacheableSub2.staticIntArray127[var16] -= var46.anInt509;
+							SkeletonSet.staticIntArray127[var16] -= var46.anInt509;
 							Class60.staticIntArray76[var16] -= var46.anInt511;
 							--staticIntArray51[var16];
 						}
@@ -4487,7 +4487,7 @@ public class Static {
 						if (var22 >= 0 && var22 < 104) {
 							var16 += staticIntArray55[var22];
 							var4 += ClientScriptMap.staticIntArray129[var22];
-							var20 += CacheableSub2.staticIntArray127[var22];
+							var20 += SkeletonSet.staticIntArray127[var22];
 							var15 += Class60.staticIntArray76[var22];
 							var18 += staticIntArray51[var22];
 						}
@@ -4496,7 +4496,7 @@ public class Static {
 						if (var11 >= 0 && var11 < 104) {
 							var16 -= staticIntArray55[var11];
 							var4 -= ClientScriptMap.staticIntArray129[var11];
-							var20 -= CacheableSub2.staticIntArray127[var11];
+							var20 -= SkeletonSet.staticIntArray127[var11];
 							var15 -= Class60.staticIntArray76[var11];
 							var18 -= staticIntArray51[var11];
 						}
@@ -9062,12 +9062,12 @@ public class Static {
 						++var1;
 					}
 
-					if (CacheableSub2.staticSprite4 == null) {
+					if (SkeletonSet.staticSprite4 == null) {
 						var211 = Class62.staticJs5IndexImpl7;
 						var0 = var211.method267("mapedge");
 						var5 = var211.method268(var0, "");
 						var27 = staticMethod296(var211, var0, var5);
-						CacheableSub2.staticSprite4 = var27;
+						SkeletonSet.staticSprite4 = var27;
 					} else {
 						++var1;
 					}
@@ -9141,7 +9141,7 @@ public class Static {
 						staticInt14 = 210;
 					} else {
 						GameFont.staticRasterizer2DSub3Array9 = SpotAnim.staticRasterizer2DSub3Array7;
-						CacheableSub2.staticSprite4.method648();
+						SkeletonSet.staticSprite4.method648();
 						var17 = (int) (Math.random() * 21.0D) - 10;
 						var21 = (int) (Math.random() * 21.0D) - 10;
 						var0 = (int) (Math.random() * 21.0D) - 10;
@@ -9879,7 +9879,7 @@ public class Static {
 								}
 							}
 
-							CacheableSub2.staticGraphicsBuffer1.method281();
+							SkeletonSet.staticGraphicsBuffer1.method281();
 						}
 
 						if (Client.staticInt165 != 30) {
@@ -10922,7 +10922,7 @@ public class Static {
 
 			try {
 				var41 = Class38.staticCanvas1.getGraphics();
-				CacheableSub2.staticGraphicsBuffer1.method279(var41, 0, 0);
+				SkeletonSet.staticGraphicsBuffer1.method279(var41, 0, 0);
 			} catch (Exception var27) {
 				Class38.staticCanvas1.repaint();
 			}
@@ -11315,7 +11315,7 @@ public class Static {
 
 			try {
 				var41 = Class38.staticCanvas1.getGraphics();
-				CacheableSub2.staticGraphicsBuffer1.method279(var41, 0, 0);
+				SkeletonSet.staticGraphicsBuffer1.method279(var41, 0, 0);
 			} catch (Exception var261) {
 				Class38.staticCanvas1.repaint();
 			}
@@ -13395,7 +13395,7 @@ public class Static {
 		staticIntArrayArray7 = null;
 		staticIntArray55 = null;
 		ClientScriptMap.staticIntArray129 = null;
-		CacheableSub2.staticIntArray127 = null;
+		SkeletonSet.staticIntArray127 = null;
 		Class60.staticIntArray76 = null;
 		staticIntArray51 = null;
 	}
@@ -13854,7 +13854,7 @@ public class Static {
 		staticSprite2.method636(staticInt6, 0);
 		staticMethod401();
 		var2 = 0;
-		int var4 = CacheableSub2.staticGraphicsBuffer1.anInt203 * 9 + staticInt6;
+		int var4 = SkeletonSet.staticGraphicsBuffer1.anInt203 * 9 + staticInt6;
 
 		int var1;
 		int var3;
@@ -13879,8 +13879,8 @@ public class Static {
 					var5 = var3;
 					var6 = 256 - var3;
 					var3 = Class57.staticIntArray74[var3];
-					var7 = CacheableSub2.staticGraphicsBuffer1.anIntArray55[var4];
-					CacheableSub2.staticGraphicsBuffer1.anIntArray55[var4++] = ((var7 & 0xff00ff) * var6
+					var7 = SkeletonSet.staticGraphicsBuffer1.anIntArray55[var4];
+					SkeletonSet.staticGraphicsBuffer1.anIntArray55[var4++] = ((var7 & 0xff00ff) * var6
 							+ var5 * (var3 & 0xff00ff) & 0xff00ff00)
 							+ ((var7 & 0xff00) * var6 + (var3 & 0xff00) * var5 & 0xff0000) >> 8;
 				} else {
@@ -13888,14 +13888,14 @@ public class Static {
 				}
 			}
 
-			var4 += var1 + CacheableSub2.staticGraphicsBuffer1.anInt203 - 128;
+			var4 += var1 + SkeletonSet.staticGraphicsBuffer1.anInt203 - 128;
 		}
 
 		staticMethod416(765 + staticInt6 - 128, 9, 765 + staticInt6, 7 + var0);
 		staticSprite1.method636(staticInt6 + 382, 0);
 		staticMethod401();
 		var2 = 0;
-		var4 = 661 + CacheableSub2.staticGraphicsBuffer1.anInt203 * 9 + staticInt6;
+		var4 = 661 + SkeletonSet.staticGraphicsBuffer1.anInt203 * 9 + staticInt6;
 
 		for (var9 = 1; var9 < var0 - 1; var9++) {
 			var10 = (var0 - var9) * staticIntArray4[var9] / var0;
@@ -13908,8 +13908,8 @@ public class Static {
 					var5 = var3;
 					var6 = 256 - var3;
 					var3 = Class57.staticIntArray74[var3];
-					var7 = CacheableSub2.staticGraphicsBuffer1.anIntArray55[var4];
-					CacheableSub2.staticGraphicsBuffer1.anIntArray55[var4++] = (var5 * (var3 & 0xff00ff)
+					var7 = SkeletonSet.staticGraphicsBuffer1.anIntArray55[var4];
+					SkeletonSet.staticGraphicsBuffer1.anIntArray55[var4++] = (var5 * (var3 & 0xff00ff)
 							+ var6 * (var7 & 0xff00ff) & 0xff00ff00)
 							+ (var5 * (var3 & 0xff00) + var6 * (var7 & 0xff00) & 0xff0000) >> 8;
 				} else {
@@ -13918,7 +13918,7 @@ public class Static {
 			}
 
 			var2 += 128 - var1;
-			var4 += CacheableSub2.staticGraphicsBuffer1.anInt203 - var1 - var10;
+			var4 += SkeletonSet.staticGraphicsBuffer1.anInt203 - var1 - var10;
 		}
 
 	}
@@ -16589,7 +16589,7 @@ public class Static {
 				GameShell.staticInt106 = (Class40Sub1.staticInt317 - gameWidth) / 2;
 				GameShell.staticInt109 = 0;
 				Class38.staticCanvas1.setSize(gameWidth, Class47.gameHeight);
-				CacheableSub2.staticGraphicsBuffer1 = staticMethod390(gameWidth, Class47.gameHeight,
+				SkeletonSet.staticGraphicsBuffer1 = staticMethod390(gameWidth, Class47.gameHeight,
 						Class38.staticCanvas1);
 				if (Class40Sub1.staticFrame1 == var11) {
 					var2 = Class40Sub1.staticFrame1.getInsets();
@@ -16636,7 +16636,7 @@ public class Static {
 		if (var1) {
 			try {
 				Graphics var13 = Class38.staticCanvas1.getGraphics();
-				CacheableSub2.staticGraphicsBuffer1.method279(var13, 0, 0);
+				SkeletonSet.staticGraphicsBuffer1.method279(var13, 0, 0);
 			} catch (Exception var12) {
 				Class38.staticCanvas1.repaint();
 			}
@@ -20435,8 +20435,8 @@ public class Static {
 
 	}
 
-	static CacheableSub2 staticMethod343(int var0) {
-		CacheableSub2 var1 = (CacheableSub2) AnimationDefintion.staticCache31.get(var0);
+	static SkeletonSet staticMethod343(int var0) {
+		SkeletonSet var1 = (SkeletonSet) AnimationDefintion.staticCache31.get(var0);
 		if (var1 != null) {
 			return var1;
 		} else {

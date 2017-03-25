@@ -94,11 +94,11 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		Class38.staticCanvas1.requestFocus();
 		staticBool14 = true;
 		AbstractGraphicsBuffer var3 = Static.staticMethod390(Static.gameWidth, Class47.gameHeight, Class38.staticCanvas1);
-		if (CacheableSub2.staticGraphicsBuffer1 != null) {
-			CacheableSub2.staticGraphicsBuffer1.method279(var3.anImage1.getGraphics(), 0, 0);
+		if (SkeletonSet.staticGraphicsBuffer1 != null) {
+			SkeletonSet.staticGraphicsBuffer1.method279(var3.anImage1.getGraphics(), 0, 0);
 		}
 
-		CacheableSub2.staticGraphicsBuffer1 = var3;
+		SkeletonSet.staticGraphicsBuffer1 = var3;
 		staticBool11 = false;
 		staticLong4 = Static.staticMethod297();
 	}
