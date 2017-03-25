@@ -6605,7 +6605,7 @@ public class Static {
 	}
 
 	public static IntegerWrapper staticMethod255(int var0) {
-		IntegerWrapper[] var1 = new IntegerWrapper[] { IntegerWrapper.staticClass55_2, IntegerWrapper.staticClass55_4, IntegerWrapper.staticClass55_3 };
+		IntegerWrapper[] var1 = new IntegerWrapper[] { IntegerWrapper.one, IntegerWrapper.zero, IntegerWrapper.two };
 		IntegerWrapper[] var2 = var1;
 
 		for (int var3 = 0; var3 < var2.length; var3++) {
@@ -18406,8 +18406,8 @@ public class Static {
 
 				if (Client.staticInt191 == 92) {
 					var2 = Client.inBuffer.readUByte();
-					IntegerWrapper[] var64 = new IntegerWrapper[] { IntegerWrapper.staticClass55_2, IntegerWrapper.staticClass55_4,
-							IntegerWrapper.staticClass55_3 };
+					IntegerWrapper[] var64 = new IntegerWrapper[] { IntegerWrapper.one, IntegerWrapper.zero,
+							IntegerWrapper.two };
 					IntegerWrapper[] var68 = var64;
 					var5 = 0;
 
@@ -22380,7 +22380,7 @@ public class Static {
 									staticClass55_1 = staticMethod255(
 											staticIntArray16[staticInt27 + 1]);
 									if (staticClass55_1 == null) {
-										staticClass55_1 = IntegerWrapper.staticClass55_2;
+										staticClass55_1 = IntegerWrapper.one;
 									}
 
 									Client.staticInt291 = staticIntArray16[2 + staticInt27];
