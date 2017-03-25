@@ -2,7 +2,7 @@ public final class Tile extends Node {
 
 	DataClass11 aClass8_1;
 	DataClass5 aClass31_1;
-	Class26 aClass26_1;
+	DataClass13 aClass26_1;
 	Tile aTile1;
 	WallObject aWallObject1;
 	DataClass6 aClass33_1;

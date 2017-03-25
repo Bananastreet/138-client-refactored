@@ -1,6 +1,6 @@
 import java.awt.FontMetrics;
 
-public final class Class26 {
+public final class DataClass13 {
 
 	protected static FontMetrics staticFontMetrics1;
 	boolean aBool10 = true;
@@ -11,7 +11,7 @@ public final class Class26 {
 	int anInt76;
 	int anInt77;
 
-	Class26(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+	DataClass13(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
 		anInt75 = var1;
 		anInt74 = var2;
 		anInt78 = var3;

@@ -24933,7 +24933,7 @@ public class Static {
 			if (Client.staticInt165 == 0) {
 				staticImage1 = null;
 				Class28.staticFont1 = null;
-				Class26.staticFontMetrics1 = null;
+				DataClass13.staticFontMetrics1 = null;
 			}
 
 			if (var0 == 20 || var0 == 40 || var0 == 45) {

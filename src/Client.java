@@ -1637,7 +1637,7 @@ public final class Client extends GameShell {
 				Graphics var26 = Class38.staticCanvas1.getGraphics();
 				if (Class28.staticFont1 == null) {
 					Class28.staticFont1 = new Font("Helvetica", 1, 13);
-					Class26.staticFontMetrics1 = Class38.staticCanvas1.getFontMetrics(Class28.staticFont1);
+					DataClass13.staticFontMetrics1 = Class38.staticCanvas1.getFontMetrics(Class28.staticFont1);
 				}
 
 				if (var3) {
@@ -1663,7 +1663,7 @@ public final class Client extends GameShell {
 					var11.fillRect(2 + var4 * 3, 2, 300 - var4 * 3, 30);
 					var11.setFont(Class28.staticFont1);
 					var11.setColor(Color.white);
-					var11.drawString(var24, (304 - Class26.staticFontMetrics1.stringWidth(var24)) / 2, 22);
+					var11.drawString(var24, (304 - DataClass13.staticFontMetrics1.stringWidth(var24)) / 2, 22);
 					var26.drawImage(Static.staticImage1, Static.gameWidth / 2 - 152, Class47.gameHeight / 2 - 18,
 							(ImageObserver) null);
 				} catch (Exception var16) {
@@ -1677,7 +1677,7 @@ public final class Client extends GameShell {
 					var26.fillRect(2 + var9 + var4 * 3, 2 + var10, 300 - var4 * 3, 30);
 					var26.setFont(Class28.staticFont1);
 					var26.setColor(Color.white);
-					var26.drawString(var24, var9 + (304 - Class26.staticFontMetrics1.stringWidth(var24)) / 2,
+					var26.drawString(var24, var9 + (304 - DataClass13.staticFontMetrics1.stringWidth(var24)) / 2,
 							var10 + 22);
 				}
 			} catch (Exception var17) {

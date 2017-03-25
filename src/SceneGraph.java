@@ -83,7 +83,7 @@ public class SceneGraph {
 		staticBoolArrayArrayArrayArray1 = new boolean[8][32][51][51];
 	}
 
-	void method97(Class26 var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+	void method97(DataClass13 var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		int var9;
 		int var10 = var9 = (var7 << 7) - staticInt52;
 		int var28;
@@ -219,9 +219,9 @@ public class SceneGraph {
 			int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18,
 			int var19, int var20) {
 		int var21;
-		Class26 var22;
+		DataClass13 var22;
 		if (var4 == 0) {
-			var22 = new Class26(var11, var12, var13, var14, -1, var19, false);
+			var22 = new DataClass13(var11, var12, var13, var14, -1, var19, false);
 
 			for (var21 = var1; var21 >= 0; --var21) {
 				if (aTileArrayArrayArray1[var21][var2][var3] == null) {
@@ -242,7 +242,7 @@ public class SceneGraph {
 
 			aTileArrayArrayArray1[var1][var2][var3].aClass8_1 = var23;
 		} else {
-			var22 = new Class26(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
+			var22 = new DataClass13(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
 
 			for (var21 = var1; var21 >= 0; --var21) {
 				if (aTileArrayArrayArray1[var21][var2][var3] == null) {
@@ -1989,7 +1989,7 @@ public class SceneGraph {
 	public void method134(int[] var1, int var2, int var3, int var4, int var5, int var6) {
 		Tile var7 = aTileArrayArrayArray1[var4][var5][var6];
 		if (var7 != null) {
-			Class26 var9 = var7.aClass26_1;
+			DataClass13 var9 = var7.aClass26_1;
 			int var12;
 			if (var9 != null) {
 				int var10 = var9.anInt77;
