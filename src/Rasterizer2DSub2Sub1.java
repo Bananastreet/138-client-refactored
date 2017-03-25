@@ -1,4 +1,4 @@
-public final class Rasterizer2DSub2Sub1 extends Rasterizer2DSub2 {
+public final class Rasterizer2DSub2Sub1 extends GameFont {
 
 	public Rasterizer2DSub2Sub1(byte[] var1) {
 		super(var1);

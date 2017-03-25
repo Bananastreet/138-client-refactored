@@ -9136,7 +9136,7 @@ public class Static {
 						staticString3 = "Loading sprites - " + var1 * 100 / 12 + "%";
 						staticInt14 = 210;
 					} else {
-						Rasterizer2DSub2.staticRasterizer2DSub3Array9 = SpotAnim.staticRasterizer2DSub3Array7;
+						GameFont.staticRasterizer2DSub3Array9 = SpotAnim.staticRasterizer2DSub3Array7;
 						CacheableSub2.staticSprite4.method648();
 						var17 = (int) (Math.random() * 21.0D) - 10;
 						var21 = (int) (Math.random() * 21.0D) - 10;

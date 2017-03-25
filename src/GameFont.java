@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class Rasterizer2DSub2 extends Rasterizer2D {
+public abstract class GameFont extends Rasterizer2D {
 
 	public static Rasterizer2DSub3[] staticRasterizer2DSub3Array9;
 	static int staticInt358 = 0;
@@ -597,11 +597,11 @@ public abstract class Rasterizer2DSub2 extends Rasterizer2D {
 		return var5;
 	}
 
-	Rasterizer2DSub2(byte[] var1) {
+	GameFont(byte[] var1) {
 		method610(var1);
 	}
 
-	Rasterizer2DSub2(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
+	GameFont(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
 		anIntArray150 = var2;
 		anIntArray152 = var3;
 		anIntArray151 = var4;
