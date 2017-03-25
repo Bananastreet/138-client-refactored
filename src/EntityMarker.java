@@ -1,4 +1,4 @@
-public final class DataClass7 {
+public final class EntityMarker {
 
 	int anInt116;
 	int anInt118;

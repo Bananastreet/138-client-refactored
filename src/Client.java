@@ -564,7 +564,7 @@ public final class Client extends GameShell {
 	protected final void method208() {
 		DataClass10.staticInt30 = 1568197829 * (staticInt207 == 0 ? '\uaa4a' : '\u9c40' + staticInt309);
 		staticInt250 = (staticInt207 == 0 ? 443 : '\uc350' + staticInt309) * 922916997;
-		DataClass7.staticInt73 = DataClass10.staticInt30;
+		EntityMarker.staticInt73 = DataClass10.staticInt30;
 		CacheableSub3.staticShortArray5 = Static.staticShortArray2;
 		Class60.staticShortArrayArray4 = Static.staticShortArrayArray2;
 		DataClass9.staticShortArray4 = Static.staticShortArray3;
@@ -1335,10 +1335,10 @@ public final class Client extends GameShell {
 		FileOnDisk.staticTask1 = null;
 		Item.staticConnection4 = null;
 		staticInt271 = 0;
-		if (DataClass7.staticInt73 * 462737933 == DataClass10.staticInt30 * 462737933) {
-			DataClass7.staticInt73 = staticInt250 * 1584772929;
+		if (EntityMarker.staticInt73 * 462737933 == DataClass10.staticInt30 * 462737933) {
+			EntityMarker.staticInt73 = staticInt250 * 1584772929;
 		} else {
-			DataClass7.staticInt73 = DataClass10.staticInt30;
+			EntityMarker.staticInt73 = DataClass10.staticInt30;
 		}
 
 		++staticInt182;
@@ -1878,7 +1878,7 @@ public final class Client extends GameShell {
 				try {
 					if (staticInt271 == 0) {
 						FileOnDisk.staticTask1 = BufferedFile.staticTaskManager1.method93(DataClass5.staticString21,
-								DataClass7.staticInt73 * 462737933);
+								EntityMarker.staticInt73 * 462737933);
 						++staticInt271;
 					}
 

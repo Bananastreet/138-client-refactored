@@ -17,7 +17,7 @@ public final class Tile extends Node {
 	int anInt260;
 	int anInt263;
 	static Widget staticWidget11;
-	DataClass7[] aClass32Array2 = new DataClass7[5];
+	EntityMarker[] aClass32Array2 = new EntityMarker[5];
 	int[] anIntArray66 = new int[5];
 	int anInt255 = 0;
 	int anInt257;
