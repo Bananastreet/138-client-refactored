@@ -1,4 +1,4 @@
-public class Class22 {
+public class Residue {
 
 	int anInt63 = Static.staticMethod288(16);
 	int anInt61 = Static.staticMethod288(24);
@@ -80,7 +80,7 @@ public class Class22 {
 
 	}
 
-	Class22() {
+	Residue() {
 		int[] var1 = new int[anInt64];
 
 		int var2;

@@ -21212,10 +21212,10 @@ public class Static {
 		}
 
 		var7 = staticMethod288(6) + 1;
-		NodeSub5.staticClass22Array1 = new Class22[var7];
+		NodeSub5.staticClass22Array1 = new Residue[var7];
 
 		for (var6 = 0; var6 < var7; var6++) {
-			NodeSub5.staticClass22Array1[var6] = new Class22();
+			NodeSub5.staticClass22Array1[var6] = new Residue();
 		}
 
 		var6 = staticMethod288(6) + 1;

@@ -1,6 +1,6 @@
 public class NodeSub5 extends Node {
 
-	static Class22[] staticClass22Array1;
+	static Residue[] staticClass22Array1;
 	static byte[] staticByteArray5;
 	static int staticInt156;
 	static int[] staticIntArray78;
@@ -82,7 +82,7 @@ public class NodeSub5 extends Node {
 		boolean var54 = var32;
 
 		for (var20 = 0; var20 < var19.anInt59; var20++) {
-			Class22 var44 = staticClass22Array1[var19.anIntArray29[var20]];
+			Residue var44 = staticClass22Array1[var19.anIntArray29[var20]];
 			float[] var53 = staticFloatArray2;
 			var44.method83(var53, var15 >> 1, var54);
 		}
