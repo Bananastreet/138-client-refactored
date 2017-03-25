@@ -6610,7 +6610,7 @@ public class Static {
 
 		for (int var3 = 0; var3 < var2.length; var3++) {
 			IntegerWrapper var4 = var2[var3];
-			if (var0 == var4.anInt207) {
+			if (var0 == var4.value) {
 				return var4;
 			}
 		}
@@ -18419,7 +18419,7 @@ public class Static {
 						}
 
 						IntegerWrapper var76 = var68[var5];
-						if (var2 == var76.anInt207) {
+						if (var2 == var76.value) {
 							var81 = var76;
 							break;
 						}
@@ -22386,7 +22386,7 @@ public class Static {
 									Client.staticInt291 = staticIntArray16[2 + staticInt27];
 									Client.outBuffer.method471(2);
 									Client.outBuffer.writeByte(Client.staticInt160);
-									Client.outBuffer.writeByte(staticClass55_1.anInt207);
+									Client.outBuffer.writeByte(staticClass55_1.value);
 									Client.outBuffer.writeByte(Client.staticInt291);
 									var8 = 1;
 								} else if (var0 == 5002) {
@@ -22451,7 +22451,7 @@ public class Static {
 											staticIntArray16[++staticInt27 - 1] = -1;
 										} else {
 											staticIntArray16[++staticInt27
-													- 1] = staticClass55_1.anInt207;
+													- 1] = staticClass55_1.value;
 										}
 
 										var8 = 1;
