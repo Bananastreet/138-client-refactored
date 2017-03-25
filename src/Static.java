@@ -8111,7 +8111,7 @@ public class Static {
 									GPI.staticMethod231("", "Connecting to server...", "");
 									blockType = staticClass6_1.aLinkedHashMap1
 											.containsKey(Integer.valueOf(staticMethod149(staticString2)))
-													? Class28.staticClass28_2 : Class28.staticClass28_4;
+													? EnumerableSub3.staticClass28_2 : EnumerableSub3.staticClass28_4;
 									staticMethod396(20);
 									return;
 								}
@@ -8185,8 +8185,8 @@ public class Static {
 												blockType = staticClass6_1.aLinkedHashMap1
 														.containsKey(
 																Integer.valueOf(staticMethod149(staticString2)))
-																		? Class28.staticClass28_2
-																		: Class28.staticClass28_4;
+																		? EnumerableSub3.staticClass28_2
+																		: EnumerableSub3.staticClass28_4;
 												staticMethod396(20);
 												return;
 											}
@@ -8239,8 +8239,8 @@ public class Static {
 
 										NodeSub3.staticInt152 = Integer.parseInt(GZipDecompressor.staticString26);
 										GZipDecompressor.staticString26 = "";
-										blockType = staticBool3 ? Class28.staticClass28_3
-												: Class28.staticClass28_5;
+										blockType = staticBool3 ? EnumerableSub3.staticClass28_3
+												: EnumerableSub3.staticClass28_5;
 										GPI.staticMethod231("", "Connecting to server...", "");
 										staticMethod396(20);
 										return;
@@ -8300,8 +8300,8 @@ public class Static {
 												NodeSub3.staticInt152 = Integer
 														.parseInt(GZipDecompressor.staticString26);
 												GZipDecompressor.staticString26 = "";
-												blockType = staticBool3 ? Class28.staticClass28_3
-														: Class28.staticClass28_5;
+												blockType = staticBool3 ? EnumerableSub3.staticClass28_3
+														: EnumerableSub3.staticClass28_5;
 												GPI.staticMethod231("", "Connecting to server...", "");
 												staticMethod396(20);
 												return;
@@ -16032,14 +16032,14 @@ public class Static {
 
 		if (DataNode3.staticInt318 < var6) {
 			DataNode3.staticInt318 += (var6 - DataNode3.staticInt318) * ExchangeOffer.staticInt146 / 1000
-					+ Class28.staticInt71;
+					+ EnumerableSub3.staticInt71;
 			if (DataNode3.staticInt318 > var6) {
 				DataNode3.staticInt318 = var6;
 			}
 		}
 
 		if (DataNode3.staticInt318 > var6) {
-			DataNode3.staticInt318 -= Class28.staticInt71
+			DataNode3.staticInt318 -= EnumerableSub3.staticInt71
 					+ (DataNode3.staticInt318 - var6) * ExchangeOffer.staticInt146 / 1000;
 			if (DataNode3.staticInt318 < var6) {
 				DataNode3.staticInt318 = var6;
@@ -16056,12 +16056,12 @@ public class Static {
 		}
 
 		if (var3 > 0) {
-			staticInt87 += var3 * ExchangeOffer.staticInt146 / 1000 + Class28.staticInt71;
+			staticInt87 += var3 * ExchangeOffer.staticInt146 / 1000 + EnumerableSub3.staticInt71;
 			staticInt87 &= 2047;
 		}
 
 		if (var3 < 0) {
-			staticInt87 -= -var3 * ExchangeOffer.staticInt146 / 1000 + Class28.staticInt71;
+			staticInt87 -= -var3 * ExchangeOffer.staticInt146 / 1000 + EnumerableSub3.staticInt71;
 			staticInt87 &= 2047;
 		}
 
@@ -17795,7 +17795,7 @@ public class Static {
 					staticInt101 = Client.inBuffer.readUByte();
 					DataClass3.staticInt72 = Client.inBuffer.readUByte();
 					DataClass10.staticInt31 = Client.inBuffer.readUShort();
-					Class28.staticInt71 = Client.inBuffer.readUByte();
+					EnumerableSub3.staticInt71 = Client.inBuffer.readUByte();
 					ExchangeOffer.staticInt146 = Client.inBuffer.readUByte();
 					if (ExchangeOffer.staticInt146 >= 100) {
 						var45 = 64 + staticInt101 * 128;
@@ -24780,7 +24780,7 @@ public class Static {
 		if (var0 != Client.staticInt165) {
 			if (Client.staticInt165 == 0) {
 				staticImage1 = null;
-				Class28.staticFont1 = null;
+				EnumerableSub3.staticFont1 = null;
 				DataClass13.staticFontMetrics1 = null;
 			}
 
@@ -29954,7 +29954,7 @@ public class Static {
 	
 	static String staticString7;
 	static String staticString2;
-	static Class28 blockType;	
+	static EnumerableSub3 blockType;	
 	static int staticInt15;
 	static boolean staticBool3;
 	static String staticString8;
@@ -30298,7 +30298,7 @@ public class Static {
 		GPI.staticString6 = "";
 		staticString2 = "";
 		staticString7 = "";
-		blockType = Class28.staticClass28_4;
+		blockType = EnumerableSub3.staticClass28_4;
 		staticBool3 = true;
 		staticInt15 = 0;
 		staticString8 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:\'@#~,<.>/?\\| ";

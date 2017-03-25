@@ -1635,9 +1635,9 @@ public final class Client extends GameShell {
 
 			try {
 				Graphics var26 = Class38.staticCanvas1.getGraphics();
-				if (Class28.staticFont1 == null) {
-					Class28.staticFont1 = new Font("Helvetica", 1, 13);
-					DataClass13.staticFontMetrics1 = Class38.staticCanvas1.getFontMetrics(Class28.staticFont1);
+				if (EnumerableSub3.staticFont1 == null) {
+					EnumerableSub3.staticFont1 = new Font("Helvetica", 1, 13);
+					DataClass13.staticFontMetrics1 = Class38.staticCanvas1.getFontMetrics(EnumerableSub3.staticFont1);
 				}
 
 				if (var3) {
@@ -1661,7 +1661,7 @@ public final class Client extends GameShell {
 					var11.setColor(Color.black);
 					var11.drawRect(1, 1, 301, 31);
 					var11.fillRect(2 + var4 * 3, 2, 300 - var4 * 3, 30);
-					var11.setFont(Class28.staticFont1);
+					var11.setFont(EnumerableSub3.staticFont1);
 					var11.setColor(Color.white);
 					var11.drawString(var24, (304 - DataClass13.staticFontMetrics1.stringWidth(var24)) / 2, 22);
 					var26.drawImage(Static.staticImage1, Static.gameWidth / 2 - 152, Class47.gameHeight / 2 - 18,
@@ -1675,7 +1675,7 @@ public final class Client extends GameShell {
 					var26.setColor(Color.black);
 					var26.drawRect(var9 + 1, var10 + 1, 301, 31);
 					var26.fillRect(2 + var9 + var4 * 3, 2 + var10, 300 - var4 * 3, 30);
-					var26.setFont(Class28.staticFont1);
+					var26.setFont(EnumerableSub3.staticFont1);
 					var26.setColor(Color.white);
 					var26.drawString(var24, var9 + (304 - DataClass13.staticFontMetrics1.stringWidth(var24)) / 2,
 							var10 + 22);
