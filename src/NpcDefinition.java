@@ -1,7 +1,7 @@
 public class NpcDefinition extends Cacheable {
 
-	static FileStore staticJs5Index28;
-	static FileStore staticJs5Index29;
+	static AbstractFileStore staticJs5Index28;
+	static AbstractFileStore staticJs5Index29;
 	public int anInt537;
 	static int staticInt324;
 	static Cache staticCache28 = new Cache(64);

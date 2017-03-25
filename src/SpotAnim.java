@@ -1,7 +1,7 @@
 public class SpotAnim extends Cacheable {
 
 	int anInt554;
-	static FileStore staticJs5Index30;
+	static AbstractFileStore staticJs5Index30;
 	static Rasterizer2DSub3[] staticRasterizer2DSub3Array7;
 	public static Cache staticCache30 = new Cache(64);
 	public static Cache staticCache29 = new Cache(30);

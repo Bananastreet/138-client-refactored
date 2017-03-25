@@ -1,7 +1,6 @@
 
 public class GPI {
 	
-	
 	static String staticString4;
 	static String staticString1;
 	static String staticString6;

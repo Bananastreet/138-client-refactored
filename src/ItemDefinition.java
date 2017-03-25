@@ -1,8 +1,8 @@
 public class ItemDefinition extends Cacheable {
 
-	static FileStore staticJs5Index14;
+	static AbstractFileStore staticJs5Index14;
 	public int anInt437;
-	static FileStore staticJs5Index15;
+	static AbstractFileStore staticJs5Index15;
 	static Cache staticCache10 = new Cache(64);
 	static Cache staticCache11 = new Cache(50);
 	public static Cache staticCache9 = new Cache(200);

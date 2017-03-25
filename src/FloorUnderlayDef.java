@@ -1,6 +1,6 @@
 public class FloorUnderlayDef extends Cacheable {
 
-	public static FileStore staticJs5Index22;
+	public static AbstractFileStore staticJs5Index22;
 	public static CacheableSub4 staticCacheableSub4_1;
 	static Widget staticWidget12;
 	static Js5IndexImpl staticJs5IndexImpl13;

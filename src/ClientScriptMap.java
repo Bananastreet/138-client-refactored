@@ -1,6 +1,6 @@
 public class ClientScriptMap extends Cacheable {
 
-	public static FileStore staticJs5Index25;
+	public static AbstractFileStore staticJs5Index25;
 	static Js5IndexImpl staticJs5IndexImpl14;
 	static int[] staticIntArray129;
 	static NodeSub8Sub1 staticNodeSub8Sub1_1;

@@ -1,8 +1,8 @@
 public class CacheableSub5 extends Cacheable {
 
-	public static FileStore staticJs5Index16;
-	public static FileStore staticJs5Index17;
-	public static FileStore staticJs5Index18;
+	public static AbstractFileStore staticJs5Index16;
+	public static AbstractFileStore staticJs5Index17;
+	public static AbstractFileStore staticJs5Index18;
 	public static Cache staticCache12 = new Cache(64);
 	public static Cache staticCache14 = new Cache(64);
 	public static Cache staticCache13 = new Cache(20);

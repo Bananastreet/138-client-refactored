@@ -1,6 +1,6 @@
 public class Config5 extends Cacheable {
 
-	static FileStore staticJs5Index34;
+	static AbstractFileStore staticJs5Index34;
 	static Rasterizer2DSub3 staticRasterizer2DSub3_6;
 	static Cache staticCache33 = new Cache(64);
 	public int anInt569 = 0;
