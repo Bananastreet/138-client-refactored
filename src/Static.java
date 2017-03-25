@@ -7880,7 +7880,7 @@ public class Static {
 		} else {
 			if (var0.length > 136 && !AbstractByteBuffer.staticBool17) {
 				try {
-					AbstractClass4Sub1 var3 = new AbstractClass4Sub1();
+					DirectByteBuffer var3 = new DirectByteBuffer();
 					var3.method253(var0);
 					return var3;
 				} catch (Throwable var31) {
