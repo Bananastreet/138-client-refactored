@@ -6018,7 +6018,7 @@ public class Static {
 
 		for (int var3 = 0; var3 < var2.length; var3++) {
 			Enumerable var4 = var2[var3];
-			if (var1 == var4.method12()) {
+			if (var1 == var4.ordinal()) {
 				return var4;
 			}
 		}
@@ -11841,9 +11841,9 @@ public class Static {
 
 		if ((var3 & 0x4) != 0) {
 			var7 = var0.readUShort();
-			Permission[] var17 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD, Permission.JAGEX_MOD,
-					Permission.PLAYER, Permission.staticClass48_5, Permission.IRONMAN };
-			Permission var191 = (Permission) staticMethod233(var17, var0.readUByte());
+			PlayerRights[] var17 = new PlayerRights[] { PlayerRights.staticClass48_4, PlayerRights.PLAYER_MOD, PlayerRights.JAGEX_MOD,
+					PlayerRights.PLAYER, PlayerRights.staticClass48_5, PlayerRights.IRONMAN };
+			PlayerRights var191 = (PlayerRights) staticMethod233(var17, var0.readUByte());
 			boolean var211 = var0.readUByte() == 1;
 			var161 = var0.readUByte();
 			var12 = var0.position;
@@ -12485,7 +12485,7 @@ public class Static {
 						(int) (KeyFocusListener.staticLong15 >> 32), (int) (KeyFocusListener.staticLong15 & 0xffffffffffffffffL) };
 				Client.outBuffer.position = 0;
 				Client.outBuffer.writeByte(1);
-				Client.outBuffer.writeByte(blockType.method12());
+				Client.outBuffer.writeByte(blockType.ordinal());
 				Client.outBuffer.writeInt(var19[0]);
 				Client.outBuffer.writeInt(var19[1]);
 				Client.outBuffer.writeInt(var19[2]);
@@ -13152,13 +13152,13 @@ public class Static {
 						return 1;
 					} else if (var0 == 3609) {
 						var14 = staticStringArray1[--staticInt148];
-						Permission[] var4 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD,
-								Permission.JAGEX_MOD, Permission.PLAYER, Permission.staticClass48_5,
-								Permission.IRONMAN };
-						Permission[] var3 = var4;
+						PlayerRights[] var4 = new PlayerRights[] { PlayerRights.staticClass48_4, PlayerRights.PLAYER_MOD,
+								PlayerRights.JAGEX_MOD, PlayerRights.PLAYER, PlayerRights.staticClass48_5,
+								PlayerRights.IRONMAN };
+						PlayerRights[] var3 = var4;
 
 						for (int var6 = 0; var6 < var3.length; var6++) {
-							Permission var7 = var3[var6];
+							PlayerRights var7 = var3[var6];
 							if (var7.sprite != -1 && var14.startsWith(staticMethod123(var7.sprite))) {
 								var14 = var14.substring(6 + Integer.toString(var7.sprite).length());
 								break;
@@ -14903,7 +14903,7 @@ public class Static {
 			staticIntArray16[++staticInt27 - 1] = var3.anInt313;
 			return 1;
 		} else if (var0 == 2613) {
-			staticIntArray16[++staticInt27 - 1] = var3.aClass54_1.method12();
+			staticIntArray16[++staticInt27 - 1] = var3.aClass54_1.ordinal();
 			return 1;
 		} else {
 			return 2;
@@ -15923,7 +15923,7 @@ public class Static {
 					} else if (var0 == 3923) {
 						var3 = staticIntArray16[--staticInt27];
 						var4 = (Class23) staticClass56_1.aList1.get(var3);
-						long var5 = staticMethod297() - Permission.staticLong7 - var4.aLong14;
+						long var5 = staticMethod297() - PlayerRights.staticLong7 - var4.aLong14;
 						int var7 = (int) (var5 / 3600000L);
 						int var8 = (int) ((var5 - var7 * 3600000) / 60000L);
 						int var9 = (int) ((var5 - var7 * 3600000 - var8 * '\uea60') / 1000L);
@@ -17833,7 +17833,7 @@ public class Static {
 				if (Client.staticInt191 == 80) {
 					var109 = Client.inBuffer.readUByte() == 1;
 					if (var109) {
-						Permission.staticLong7 = staticMethod297() - Client.inBuffer.readLong();
+						PlayerRights.staticLong7 = staticMethod297() - Client.inBuffer.readLong();
 						staticClass56_1 = new Class56(Client.inBuffer, true);
 					} else {
 						staticClass56_1 = null;
@@ -18170,10 +18170,10 @@ public class Static {
 					var1 = Client.inBuffer.readString();
 					var12 = Client.inBuffer.readUShort();
 					var14 = Client.inBuffer.readTriByte();
-					Permission[] var611 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD,
-							Permission.JAGEX_MOD, Permission.PLAYER, Permission.staticClass48_5,
-							Permission.IRONMAN };
-					Permission var621 = (Permission) staticMethod233(var611, Client.inBuffer.readUByte());
+					PlayerRights[] var611 = new PlayerRights[] { PlayerRights.staticClass48_4, PlayerRights.PLAYER_MOD,
+							PlayerRights.JAGEX_MOD, PlayerRights.PLAYER, PlayerRights.staticClass48_5,
+							PlayerRights.IRONMAN };
+					PlayerRights var621 = (PlayerRights) staticMethod233(var611, Client.inBuffer.readUByte());
 					var16 = var14 + (var12 << 32);
 					var66 = false;
 
@@ -19106,10 +19106,10 @@ public class Static {
 					var12 = Client.inBuffer.readLong();
 					var14 = Client.inBuffer.readUShort();
 					var23 = Client.inBuffer.readTriByte();
-					Permission[] var95 = new Permission[] { Permission.staticClass48_4, Permission.PLAYER_MOD,
-							Permission.JAGEX_MOD, Permission.PLAYER, Permission.staticClass48_5,
-							Permission.IRONMAN };
-					Permission var91 = (Permission) staticMethod233(var95, Client.inBuffer.readUByte());
+					PlayerRights[] var95 = new PlayerRights[] { PlayerRights.staticClass48_4, PlayerRights.PLAYER_MOD,
+							PlayerRights.JAGEX_MOD, PlayerRights.PLAYER, PlayerRights.staticClass48_5,
+							PlayerRights.IRONMAN };
+					PlayerRights var91 = (PlayerRights) staticMethod233(var95, Client.inBuffer.readUByte());
 					var25 = (var14 << 32) + var23;
 					boolean var981 = false;
 
@@ -29110,7 +29110,7 @@ public class Static {
 			staticIntArray16[++staticInt27 - 1] = var3.anInt313;
 			return 1;
 		} else if (var0 == 1613) {
-			staticIntArray16[++staticInt27 - 1] = var3.aClass54_1.method12();
+			staticIntArray16[++staticInt27 - 1] = var3.aClass54_1.ordinal();
 			return 1;
 		} else {
 			return 2;

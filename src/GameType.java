@@ -15,7 +15,7 @@ public class GameType implements Enumerable {
 		anInt197 = var3;
 	}
 
-	public int method12() {
+	public int ordinal() {
 		return anInt197;
 	}
 

@@ -1,3 +1,4 @@
+//TODO this is an enumerated type
 public class Class54 implements Enumerable {
 
 	public static final Class54 staticClass54_5 = new Class54(0, 0);
@@ -13,7 +14,7 @@ public class Class54 implements Enumerable {
 		anInt205 = var2;
 	}
 
-	public int method12() {
+	public int ordinal() {
 		return anInt205;
 	}
 

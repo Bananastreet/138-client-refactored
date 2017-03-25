@@ -1,5 +1,6 @@
 import java.awt.Font;
 
+//TODO this is an enumerated type
 public class Class28 implements Enumerable {
 
 	protected static Font staticFont1;
@@ -11,7 +12,7 @@ public class Class28 implements Enumerable {
 	public final int type;	
 	final int anInt83;
 
-	public int method12() {
+	public int ordinal() {
 		return anInt83;
 	}
 
