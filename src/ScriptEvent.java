@@ -1,4 +1,4 @@
-public class DataNode1 extends Node {
+public class ScriptEvent extends Node {
 
 	int anInt284;
 	Widget aWidget1;

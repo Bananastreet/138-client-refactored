@@ -613,7 +613,7 @@ public class Static {
 			for (int var1 = 0; var1 < var4.length; var1++) {
 				Widget var3 = var4[var1];
 				if (var3.anObjectArray4 != null) {
-					DataNode1 var2 = new DataNode1();
+					ScriptEvent var2 = new ScriptEvent();
 					var2.aWidget1 = var3;
 					var2.anObjectArray2 = var3.anObjectArray4;
 					staticMethod474(var2, 2000000);
@@ -1303,7 +1303,7 @@ public class Static {
 				if (Client.staticBool32) {
 					Widget var221 = staticMethod32(Class3.staticInt19, Client.staticInt260);
 					if (var221 != null && var221.anObjectArray12 != null) {
-						DataNode1 var15 = new DataNode1();
+						ScriptEvent var15 = new ScriptEvent();
 						var15.aWidget1 = var221;
 						var15.anObjectArray2 = var221.anObjectArray12;
 						staticMethod375(var15);
@@ -1318,7 +1318,7 @@ public class Static {
 				int var151 = var17.anInt352;
 				Widget var11 = staticMethod32(var1, var0);
 				if (var11 != null && var11.anObjectArray11 != null) {
-					DataNode1 var14 = new DataNode1();
+					ScriptEvent var14 = new ScriptEvent();
 					var14.aWidget1 = var11;
 					var14.anObjectArray2 = var11.anObjectArray11;
 					staticMethod375(var14);
@@ -1775,7 +1775,7 @@ public class Static {
 				if (Client.staticBool32 && Client.staticBool32) {
 					var17 = staticMethod32(Class3.staticInt19, Client.staticInt260);
 					if (var17 != null && var17.anObjectArray12 != null) {
-						DataNode1 var223 = new DataNode1();
+						ScriptEvent var223 = new ScriptEvent();
 						var223.aWidget1 = var17;
 						var223.anObjectArray2 = var17.anObjectArray12;
 						staticMethod375(var223);
@@ -2005,9 +2005,9 @@ public class Static {
 		}
 
 		String var4 = "";
-		if (DataNode1.staticInt314 == 33) {
+		if (ScriptEvent.staticInt314 == 33) {
 			var4 = "_rc";
-		} else if (DataNode1.staticInt314 == 34) {
+		} else if (ScriptEvent.staticInt314 == 34) {
 			var4 = "_wip";
 		}
 
@@ -3612,8 +3612,8 @@ public class Static {
 											&& MouseHandler.staticInt88 >= var22 && MouseHandler.staticInt94 < var10
 											&& MouseHandler.staticInt88 < var17 && !Client.staticBool30
 											&& !Client.staticBool40) {
-										for (DataNode1 var30 = (DataNode1) Client.staticClass39_8
-												.method195(); var30 != null; var30 = (DataNode1) Client.staticClass39_8
+										for (ScriptEvent var30 = (ScriptEvent) Client.staticClass39_8
+												.method195(); var30 != null; var30 = (ScriptEvent) Client.staticClass39_8
 														.method193()) {
 											if (var30.aBool30) {
 												var30.method174();
@@ -3646,13 +3646,13 @@ public class Static {
 							}
 
 							if (var9.aBool42) {
-								DataNode1 var291;
+								ScriptEvent var291;
 								if (!var9.aBool43) {
 									if (var9.aBool38 && MouseHandler.staticInt94 >= var21
 											&& MouseHandler.staticInt88 >= var22 && MouseHandler.staticInt94 < var10
 											&& MouseHandler.staticInt88 < var17) {
-										for (var291 = (DataNode1) Client.staticClass39_8
-												.method195(); var291 != null; var291 = (DataNode1) Client.staticClass39_8
+										for (var291 = (ScriptEvent) Client.staticClass39_8
+												.method195(); var291 != null; var291 = (ScriptEvent) Client.staticClass39_8
 														.method193()) {
 											if (var291.aBool30
 													&& var291.aWidget1.anObjectArray30 == var291.anObjectArray2) {
@@ -3662,8 +3662,8 @@ public class Static {
 									}
 								} else if (MouseHandler.staticInt94 >= var21 && MouseHandler.staticInt88 >= var22
 										&& MouseHandler.staticInt94 < var10 && MouseHandler.staticInt88 < var17) {
-									for (var291 = (DataNode1) Client.staticClass39_8
-											.method195(); var291 != null; var291 = (DataNode1) Client.staticClass39_8
+									for (var291 = (ScriptEvent) Client.staticClass39_8
+											.method195(); var291 != null; var291 = (ScriptEvent) Client.staticClass39_8
 													.method193()) {
 										if (var291.aBool30) {
 											var291.method174();
@@ -3723,9 +3723,9 @@ public class Static {
 								}
 
 								if (var9.aBool31) {
-									DataNode1 var15;
+									ScriptEvent var15;
 									if (var311 && Client.staticInt284 != 0 && var9.anObjectArray30 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aBool30 = true;
 										var15.aWidget1 = var9;
 										var15.anInt285 = Client.staticInt284;
@@ -3743,7 +3743,7 @@ public class Static {
 									if (!var9.aBool45 && var19) {
 										var9.aBool45 = true;
 										if (var9.anObjectArray5 != null) {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aBool30 = true;
 											var15.aWidget1 = var9;
 											var15.anInt284 = MouseHandler.staticInt99 - var11;
@@ -3754,7 +3754,7 @@ public class Static {
 									}
 
 									if (var9.aBool45 && var36 && var9.anObjectArray3 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aBool30 = true;
 										var15.aWidget1 = var9;
 										var15.anInt284 = MouseHandler.staticInt94 - var11;
@@ -3766,7 +3766,7 @@ public class Static {
 									if (var9.aBool45 && !var36) {
 										var9.aBool45 = false;
 										if (var9.anObjectArray29 != null) {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aBool30 = true;
 											var15.aWidget1 = var9;
 											var15.anInt284 = MouseHandler.staticInt94 - var11;
@@ -3777,7 +3777,7 @@ public class Static {
 									}
 
 									if (var36 && var9.anObjectArray6 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aBool30 = true;
 										var15.aWidget1 = var9;
 										var15.anInt284 = MouseHandler.staticInt94 - var11;
@@ -3789,7 +3789,7 @@ public class Static {
 									if (!var9.aBool44 && var311) {
 										var9.aBool44 = true;
 										if (var9.anObjectArray7 != null) {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aBool30 = true;
 											var15.aWidget1 = var9;
 											var15.anInt284 = MouseHandler.staticInt94 - var11;
@@ -3800,7 +3800,7 @@ public class Static {
 									}
 
 									if (var9.aBool44 && var311 && var9.anObjectArray8 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aBool30 = true;
 										var15.aWidget1 = var9;
 										var15.anInt284 = MouseHandler.staticInt94 - var11;
@@ -3812,7 +3812,7 @@ public class Static {
 									if (var9.aBool44 && !var311) {
 										var9.aBool44 = false;
 										if (var9.anObjectArray9 != null) {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aBool30 = true;
 											var15.aWidget1 = var9;
 											var15.anInt284 = MouseHandler.staticInt94 - var11;
@@ -3823,13 +3823,13 @@ public class Static {
 									}
 
 									if (var9.anObjectArray16 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray16;
 										Client.staticClass39_9.method198(var15);
 									}
 
-									DataNode1 var26;
+									ScriptEvent var26;
 									if (var9.anObjectArray13 != null && Client.staticInt275 > var9.anInt356) {
 										if (var9.anIntArray74 != null && Client.staticInt275 - var9.anInt356 <= 32) {
 											label517: for (var33 = var9.anInt356; var33 < Client.staticInt275; var33++) {
@@ -3837,7 +3837,7 @@ public class Static {
 
 												for (var23 = 0; var23 < var9.anIntArray74.length; var23++) {
 													if (var16 == var9.anIntArray74[var23]) {
-														var26 = new DataNode1();
+														var26 = new ScriptEvent();
 														var26.aWidget1 = var9;
 														var26.anObjectArray2 = var9.anObjectArray13;
 														Client.staticClass39_8.method198(var26);
@@ -3846,7 +3846,7 @@ public class Static {
 												}
 											}
 										} else {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aWidget1 = var9;
 											var15.anObjectArray2 = var9.anObjectArray13;
 											Client.staticClass39_8.method198(var15);
@@ -3862,7 +3862,7 @@ public class Static {
 
 												for (var23 = 0; var23 < var9.anIntArray69.length; var23++) {
 													if (var9.anIntArray69[var23] == var16) {
-														var26 = new DataNode1();
+														var26 = new ScriptEvent();
 														var26.aWidget1 = var9;
 														var26.anObjectArray2 = var9.anObjectArray14;
 														Client.staticClass39_8.method198(var26);
@@ -3871,7 +3871,7 @@ public class Static {
 												}
 											}
 										} else {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aWidget1 = var9;
 											var15.anObjectArray2 = var9.anObjectArray14;
 											Client.staticClass39_8.method198(var15);
@@ -3887,7 +3887,7 @@ public class Static {
 
 												for (var23 = 0; var23 < var9.anIntArray71.length; var23++) {
 													if (var16 == var9.anIntArray71[var23]) {
-														var26 = new DataNode1();
+														var26 = new ScriptEvent();
 														var26.aWidget1 = var9;
 														var26.anObjectArray2 = var9.anObjectArray15;
 														Client.staticClass39_8.method198(var26);
@@ -3896,7 +3896,7 @@ public class Static {
 												}
 											}
 										} else {
-											var15 = new DataNode1();
+											var15 = new ScriptEvent();
 											var15.aWidget1 = var9;
 											var15.anObjectArray2 = var9.anObjectArray15;
 											Client.staticClass39_8.method198(var15);
@@ -3906,7 +3906,7 @@ public class Static {
 									}
 
 									if (Client.staticInt279 > var9.anInt355 && var9.anObjectArray18 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray18;
 										Client.staticClass39_8.method198(var15);
@@ -3914,7 +3914,7 @@ public class Static {
 
 									if (Client.staticInt280 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray20 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray20;
 										Client.staticClass39_8.method198(var15);
@@ -3922,7 +3922,7 @@ public class Static {
 
 									if (Client.staticInt281 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray21 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray21;
 										Client.staticClass39_8.method198(var15);
@@ -3930,7 +3930,7 @@ public class Static {
 
 									if (Client.staticInt295 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray26 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray26;
 										Client.staticClass39_8.method198(var15);
@@ -3938,7 +3938,7 @@ public class Static {
 
 									if (Client.staticInt282 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray27 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray27;
 										Client.staticClass39_8.method198(var15);
@@ -3946,7 +3946,7 @@ public class Static {
 
 									if (Client.staticInt283 * 1604201655 > var9.anInt355
 											&& var9.anObjectArray22 != null) {
-										var15 = new DataNode1();
+										var15 = new ScriptEvent();
 										var15.aWidget1 = var9;
 										var15.anObjectArray2 = var9.anObjectArray22;
 										Client.staticClass39_8.method198(var15);
@@ -3955,7 +3955,7 @@ public class Static {
 									var9.anInt355 = Client.staticInt274 * -2038739763;
 									if (var9.anObjectArray19 != null) {
 										for (var33 = 0; var33 < Client.staticInt264; var33++) {
-											DataNode1 var31 = new DataNode1();
+											ScriptEvent var31 = new ScriptEvent();
 											var31.aWidget1 = var9;
 											var31.anInt288 = Client.staticIntArray111[var33];
 											var31.anInt287 = Client.staticIntArray110[var33];
@@ -9984,19 +9984,19 @@ public class Static {
 						Client.staticInt274 += 502628357;
 
 						while (true) {
-							DataNode1 var33;
+							ScriptEvent var33;
 							Widget var35;
 							Widget var361;
 							do {
-								var33 = (DataNode1) Client.staticClass39_9.method194();
+								var33 = (ScriptEvent) Client.staticClass39_9.method194();
 								if (var33 == null) {
 									while (true) {
 										do {
-											var33 = (DataNode1) Client.staticClass39_10.method194();
+											var33 = (ScriptEvent) Client.staticClass39_10.method194();
 											if (var33 == null) {
 												while (true) {
 													do {
-														var33 = (DataNode1) Client.staticClass39_8.method194();
+														var33 = (ScriptEvent) Client.staticClass39_8.method194();
 														if (var33 == null) {
 															boolean var32 = false;
 
@@ -11358,7 +11358,7 @@ public class Static {
 			} else if (var3.anObjectArray25 == null) {
 				return 0;
 			} else {
-				DataNode1 var4 = new DataNode1();
+				ScriptEvent var4 = new ScriptEvent();
 				var4.aWidget1 = var3;
 				var4.anObjectArray2 = var3.anObjectArray25;
 				var4.anInt289 = staticInt29 * 972573517 + 223297939;
@@ -12287,9 +12287,9 @@ public class Static {
 
 			int var7 = Client.staticWidget8.anInt335 + var1 - Client.staticInt183;
 			int var9 = var3 - Client.staticInt313 + Client.staticWidget8.anInt312;
-			DataNode1 var0;
+			ScriptEvent var0;
 			if (Client.staticWidget7.anObjectArray10 != null && Client.staticBool25) {
-				var0 = new DataNode1();
+				var0 = new ScriptEvent();
 				var0.aWidget1 = Client.staticWidget7;
 				var0.anInt284 = var7;
 				var0.anInt285 = var9;
@@ -12300,7 +12300,7 @@ public class Static {
 			if (MouseHandler.staticInt93 == 0) {
 				if (Client.staticBool25) {
 					if (Client.staticWidget7.anObjectArray28 != null) {
-						var0 = new DataNode1();
+						var0 = new ScriptEvent();
 						var0.aWidget1 = Client.staticWidget7;
 						var0.anInt284 = var7;
 						var0.anInt285 = var9;
@@ -12893,7 +12893,7 @@ public class Static {
 		}
 
 		if (var3 && var0.anObjectArray25 != null && (var4 != var0.anInt307 || var5 != var0.anInt351)) {
-			DataNode1 var6 = new DataNode1();
+			ScriptEvent var6 = new ScriptEvent();
 			var6.aWidget1 = var0;
 			var6.anObjectArray2 = var0.anObjectArray25;
 			Client.staticClass39_8.method198(var6);
@@ -14752,7 +14752,7 @@ public class Static {
 		if (Client.staticBool32) {
 			Widget var1 = staticMethod32(Class3.staticInt19, Client.staticInt260);
 			if (var1 != null && var1.anObjectArray12 != null) {
-				DataNode1 var0 = new DataNode1();
+				ScriptEvent var0 = new ScriptEvent();
 				var0.aWidget1 = var1;
 				var0.anObjectArray2 = var1.anObjectArray12;
 				staticMethod375(var0);
@@ -18973,7 +18973,7 @@ public class Static {
 					}
 
 					var77[0] = new Integer(Client.inBuffer.readInt());
-					DataNode1 var89 = new DataNode1();
+					ScriptEvent var89 = new ScriptEvent();
 					var89.anObjectArray2 = var77;
 					staticMethod375(var89);
 					Client.staticInt191 = -1;
@@ -20524,9 +20524,9 @@ public class Static {
 					}
 				}
 
-				DataNode1 var61;
+				ScriptEvent var61;
 				if (var1 == 0 && var3.anObjectArray23 != null) {
-					var61 = new DataNode1();
+					var61 = new ScriptEvent();
 					var61.aWidget1 = var3;
 					var61.anObjectArray2 = var3.anObjectArray23;
 					staticMethod375(var61);
@@ -20541,7 +20541,7 @@ public class Static {
 						}
 					}
 
-					var61 = new DataNode1();
+					var61 = new ScriptEvent();
 					var61.aWidget1 = var3;
 					var61.anObjectArray2 = var3.anObjectArray24;
 					staticMethod375(var61);
@@ -20931,7 +20931,7 @@ public class Static {
 		Widget var5 = staticMethod32(var1, var2);
 		if (var5 != null) {
 			if (var5.anObjectArray17 != null) {
-				DataNode1 var7 = new DataNode1();
+				ScriptEvent var7 = new ScriptEvent();
 				var7.aWidget1 = var5;
 				var7.anInt286 = var0;
 				var7.aString17 = var4;
@@ -21668,7 +21668,7 @@ public class Static {
 										? var0.aStringArray4[var1] : null;
 	}
 
-	static void staticMethod375(DataNode1 var0) {
+	static void staticMethod375(ScriptEvent var0) {
 		staticMethod474(var0, 200000);
 	}
 
@@ -29599,7 +29599,7 @@ public class Static {
 						: Client.staticStringArray9[var0];
 	}
 
-	static void staticMethod474(DataNode1 var0, int var1) {
+	static void staticMethod474(ScriptEvent var0, int var1) {
 		Object[] var2 = var0.anObjectArray2;
 		int var3 = ((Integer) var2[0]).intValue();
 		CacheableSub1 var4 = staticMethod148(var3);

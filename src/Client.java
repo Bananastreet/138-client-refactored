@@ -1440,7 +1440,7 @@ public final class Client extends GameShell {
 
 			try {
 				MouseCapturer.staticInt145 = 16;
-				DataNode1.staticInt314 = var17;
+				ScriptEvent.staticInt314 = var17;
 
 				try {
 					AnimationSkin.staticString28 = System.getProperty("os.name");
@@ -1481,8 +1481,8 @@ public final class Client extends GameShell {
 
 				AnimationSkin.staticStringArray6 = new String[] { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/",
 						"c:/", Class6.staticString18, "/tmp/", "" };
-				Static.staticStringArray4 = new String[] { ".jagex_cache_" + DataNode1.staticInt314,
-						".file_store_" + DataNode1.staticInt314 };
+				Static.staticStringArray4 = new String[] { ".jagex_cache_" + ScriptEvent.staticInt314,
+						".file_store_" + ScriptEvent.staticInt314 };
 				var3 = 0;
 
 				int var12;
