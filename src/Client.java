@@ -1365,16 +1365,16 @@ public final class Client extends GameShell {
 
 	public final void init() {
 		if (method202()) {
-			Class52[] var1 = new Class52[] { Class52.staticClass52_7, Class52.staticClass52_8, Class52.staticClass52_3,
-					Class52.staticClass52_13, Class52.staticClass52_15, Class52.staticClass52_6,
-					Class52.staticClass52_10, Class52.staticClass52_5, Class52.staticClass52_12,
-					Class52.staticClass52_9, Class52.staticClass52_14, Class52.staticClass52_2, Class52.staticClass52_1,
-					Class52.staticClass52_11, Class52.staticClass52_4 };
-			Class52[] var2 = var1;
+			Parameters[] var1 = new Parameters[] { Parameters.staticClass52_7, Parameters.staticClass52_8, Parameters.staticClass52_3,
+					Parameters.staticClass52_13, Parameters.staticClass52_15, Parameters.staticClass52_6,
+					Parameters.staticClass52_10, Parameters.staticClass52_5, Parameters.staticClass52_12,
+					Parameters.staticClass52_9, Parameters.staticClass52_14, Parameters.staticClass52_2, Parameters.staticClass52_1,
+					Parameters.staticClass52_11, Parameters.staticClass52_4 };
+			Parameters[] var2 = var1;
 
 			int var3;
 			for (var3 = 0; var3 < var2.length; var3++) {
-				Class52 var13 = var2[var3];
+				Parameters var13 = var2[var3];
 				String var14 = getParameter(var13.aString11);
 				if (var14 != null) {
 					switch (Integer.parseInt(var13.aString11)) {

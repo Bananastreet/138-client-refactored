@@ -29908,8 +29908,8 @@ public class Static {
 		BuildType.staticString27 = var0;
 
 		try {
-			String var1 = Client.staticGame1.getParameter(Class52.staticClass52_11.aString11);
-			String var2 = Client.staticGame1.getParameter(Class52.staticClass52_12.aString11);
+			String var1 = Client.staticGame1.getParameter(Parameters.staticClass52_11.aString11);
+			String var2 = Client.staticGame1.getParameter(Parameters.staticClass52_12.aString11);
 			String var3 = var1 + "settings=" + var0 + "; version=1; path=/; domain=" + var2;
 			if (var0.length() == 0) {
 				var3 = var3 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
