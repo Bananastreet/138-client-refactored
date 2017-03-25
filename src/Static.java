@@ -11841,9 +11841,9 @@ public class Static {
 
 		if ((var3 & 0x4) != 0) {
 			var7 = var0.readUShort();
-			Class48[] var17 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6, Class48.staticClass48_2,
-					Class48.staticClass48_1, Class48.staticClass48_5, Class48.staticClass48_3 };
-			Class48 var191 = (Class48) staticMethod233(var17, var0.readUByte());
+			Permission[] var17 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6, Permission.staticClass48_2,
+					Permission.staticClass48_1, Permission.staticClass48_5, Permission.staticClass48_3 };
+			Permission var191 = (Permission) staticMethod233(var17, var0.readUByte());
 			boolean var211 = var0.readUByte() == 1;
 			var161 = var0.readUByte();
 			var12 = var0.position;
@@ -13152,13 +13152,13 @@ public class Static {
 						return 1;
 					} else if (var0 == 3609) {
 						var14 = staticStringArray1[--staticInt148];
-						Class48[] var4 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
-								Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
-								Class48.staticClass48_3 };
-						Class48[] var3 = var4;
+						Permission[] var4 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6,
+								Permission.staticClass48_2, Permission.staticClass48_1, Permission.staticClass48_5,
+								Permission.staticClass48_3 };
+						Permission[] var3 = var4;
 
 						for (int var6 = 0; var6 < var3.length; var6++) {
-							Class48 var7 = var3[var6];
+							Permission var7 = var3[var6];
 							if (var7.anInt192 != -1 && var14.startsWith(staticMethod123(var7.anInt192))) {
 								var14 = var14.substring(6 + Integer.toString(var7.anInt192).length());
 								break;
@@ -15923,7 +15923,7 @@ public class Static {
 					} else if (var0 == 3923) {
 						var3 = staticIntArray16[--staticInt27];
 						var4 = (Class23) staticClass56_1.aList1.get(var3);
-						long var5 = staticMethod297() - Class48.staticLong7 - var4.aLong14;
+						long var5 = staticMethod297() - Permission.staticLong7 - var4.aLong14;
 						int var7 = (int) (var5 / 3600000L);
 						int var8 = (int) ((var5 - var7 * 3600000) / 60000L);
 						int var9 = (int) ((var5 - var7 * 3600000 - var8 * '\uea60') / 1000L);
@@ -17833,7 +17833,7 @@ public class Static {
 				if (Client.staticInt191 == 80) {
 					var109 = Client.inBuffer.readUByte() == 1;
 					if (var109) {
-						Class48.staticLong7 = staticMethod297() - Client.inBuffer.readLong();
+						Permission.staticLong7 = staticMethod297() - Client.inBuffer.readLong();
 						staticClass56_1 = new Class56(Client.inBuffer, true);
 					} else {
 						staticClass56_1 = null;
@@ -18170,10 +18170,10 @@ public class Static {
 					var1 = Client.inBuffer.readString();
 					var12 = Client.inBuffer.readUShort();
 					var14 = Client.inBuffer.readTriByte();
-					Class48[] var611 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
-							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
-							Class48.staticClass48_3 };
-					Class48 var621 = (Class48) staticMethod233(var611, Client.inBuffer.readUByte());
+					Permission[] var611 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6,
+							Permission.staticClass48_2, Permission.staticClass48_1, Permission.staticClass48_5,
+							Permission.staticClass48_3 };
+					Permission var621 = (Permission) staticMethod233(var611, Client.inBuffer.readUByte());
 					var16 = var14 + (var12 << 32);
 					var66 = false;
 
@@ -19106,10 +19106,10 @@ public class Static {
 					var12 = Client.inBuffer.readLong();
 					var14 = Client.inBuffer.readUShort();
 					var23 = Client.inBuffer.readTriByte();
-					Class48[] var95 = new Class48[] { Class48.staticClass48_4, Class48.staticClass48_6,
-							Class48.staticClass48_2, Class48.staticClass48_1, Class48.staticClass48_5,
-							Class48.staticClass48_3 };
-					Class48 var91 = (Class48) staticMethod233(var95, Client.inBuffer.readUByte());
+					Permission[] var95 = new Permission[] { Permission.staticClass48_4, Permission.staticClass48_6,
+							Permission.staticClass48_2, Permission.staticClass48_1, Permission.staticClass48_5,
+							Permission.staticClass48_3 };
+					Permission var91 = (Permission) staticMethod233(var95, Client.inBuffer.readUByte());
 					var25 = (var14 << 32) + var23;
 					boolean var981 = false;
 
