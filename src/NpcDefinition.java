@@ -35,7 +35,7 @@ public class NpcDefinition extends Cacheable {
 	short[] recolorToReplace;
 	short[] retextureToFind;
 	short[] retextureToReplace;
-	int[] models_2;
+	int[] headModels;
 	public int[] anIntArray116;
 
 	void method540(ByteBuf var1) {
@@ -121,13 +121,13 @@ public class NpcDefinition extends Cacheable {
 		if (anIntArray116 != null) {
 			NpcDefinition var5 = method544();
 			return var5 == null ? null : var5.method542();
-		} else if (models_2 == null) {
+		} else if (headModels == null) {
 			return null;
 		} else {
 			boolean var2 = false;
 
-			for (int var6 = 0; var6 < models_2.length; var6++) {
-				if (!staticJs5Index29.method276(models_2[var6], 0)) {
+			for (int var6 = 0; var6 < headModels.length; var6++) {
+				if (!staticJs5Index29.method276(headModels[var6], 0)) {
 					var2 = true;
 				}
 			}
@@ -135,10 +135,10 @@ public class NpcDefinition extends Cacheable {
 			if (var2) {
 				return null;
 			} else {
-				EntitySub3[] var61 = new EntitySub3[models_2.length];
+				EntitySub3[] var61 = new EntitySub3[headModels.length];
 
-				for (int var7 = 0; var7 < models_2.length; var7++) {
-					var61[var7] = Static.staticMethod434(staticJs5Index29, models_2[var7], 0);
+				for (int var7 = 0; var7 < headModels.length; var7++) {
+					var61[var7] = Static.staticMethod434(staticJs5Index29, headModels[var7], 0);
 				}
 
 				EntitySub3 var71;
@@ -256,10 +256,10 @@ public class NpcDefinition extends Cacheable {
 			}
 		} else if (opcode == 60) {
 			length = buffer.readUByte();
-			models_2 = new int[length];			
-
+			headModels = new int[length];
+			
 			for (count = 0; count < length; count++) {
-				models_2[count] = buffer.readUShort();
+				headModels[count] = buffer.readUShort();
 			}
 		} else if (opcode == 93) {
 			renderOnMinimap = false;			
