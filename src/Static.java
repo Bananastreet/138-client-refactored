@@ -1494,7 +1494,7 @@ public class Static {
 			if (var2 == 1005) {
 				var17 = staticMethod8(var1);
 				if (var17 != null && var17.anIntArray77[var0] >= 100000) {
-					staticMethod36(27, "", var17.anIntArray77[var0] + " x " + staticMethod153(var3).aString31);
+					staticMethod36(27, "", var17.anIntArray77[var0] + " x " + staticMethod153(var3).name);
 				} else {
 					Client.outBuffer.method471(59);
 					Client.outBuffer.method351(var3);
@@ -1567,7 +1567,7 @@ public class Static {
 				GameObject.staticInt332 = var1;
 				staticInt126 = var3;
 				staticMethod73(var17);
-				Client.staticString32 = staticMethod118(16748608) + staticMethod153(var3).aString31
+				Client.staticString32 = staticMethod118(16748608) + staticMethod153(var3).name
 						+ staticMethod118(16777215);
 				if (Client.staticString32 == null) {
 					Client.staticString32 = "null";
@@ -3077,12 +3077,12 @@ public class Static {
 
 											if (var10.aBool42 && var10.anInt352 != -1) {
 												ItemDefinition var61 = staticMethod153(var10.anInt352);
-												var62 = var61.aString31;
+												var62 = var61.name;
 												if (var62 == null) {
 													var62 = "null";
 												}
 
-												if ((var61.anInt442 == 1 || var10.anInt353 != 1)
+												if ((var61.stackable == 1 || var10.anInt353 != 1)
 														&& var10.anInt353 != -1) {
 													var43 = staticMethod118(16748608) + var62 + staticString16
 															+ " " + 'x';
@@ -3284,12 +3284,12 @@ public class Static {
 													for (var25 = 0; var25 < var10.anInt304; var25++) {
 														if (var10.anIntArray76[var23] > 0) {
 															var17 = staticMethod153(var10.anIntArray76[var23] - 1);
-															if (var17.anInt442 != 1 && var10.anIntArray77[var23] == 1) {
-																var15 = staticMethod118(16748608) + var17.aString31
+															if (var17.stackable != 1 && var10.anIntArray77[var23] == 1) {
+																var15 = staticMethod118(16748608) + var17.name
 																		+ staticString16;
 															} else {
 																String var44 = staticMethod118(16748608)
-																		+ var17.aString31 + staticString16 + " "
+																		+ var17.name + staticString16 + " "
 																		+ 'x';
 																var11 = var10.anIntArray77[var23];
 																var63 = Integer.toString(var11);
@@ -6903,7 +6903,7 @@ public class Static {
 										if (var0.anInt294 != GameObject.staticInt332 || staticInt102 != var20) {
 											staticMethod341("Use",
 													Client.staticString32 + " " + staticString14 + " "
-															+ staticMethod118(16748608) + var4.aString31,
+															+ staticMethod118(16748608) + var4.name,
 													31, var4.anInt437, var20, var0.anInt294);
 										}
 										break label321;
@@ -6917,14 +6917,14 @@ public class Static {
 										if ((Class57.staticInt144 & 0x10) == 16) {
 											staticMethod341(Client.staticString31,
 													Client.staticString30 + " " + staticString14 + " "
-															+ staticMethod118(16748608) + var4.aString31,
+															+ staticMethod118(16748608) + var4.name,
 													32, var4.anInt437, var20, var0.anInt294);
 										}
 										break label321;
 									}
 								}
 
-								String[] var23 = var4.aStringArray6;
+								String[] var23 = var4.interfaceOptions;
 								if (Client.staticBool34) {
 									var23 = staticMethod425(var23);
 								}
@@ -6945,10 +6945,10 @@ public class Static {
 												var18 = 37;
 											}
 
-											staticMethod235(var23[var22], staticMethod118(16748608) + var4.aString31,
+											staticMethod235(var23[var22], staticMethod118(16748608) + var4.name,
 													var18, var4.anInt437, var20, var0.anInt294, var26);
 										} else if (var22 == 4) {
-											staticMethod235("Drop", staticMethod118(16748608) + var4.aString31, 37,
+											staticMethod235("Drop", staticMethod118(16748608) + var4.name, 37,
 													var4.anInt437, var20, var0.anInt294, var26);
 										}
 									}
@@ -6957,7 +6957,7 @@ public class Static {
 								var22 = staticMethod192(var0);
 								var26 = (var22 >> 31 & 0x1) != 0;
 								if (var26) {
-									staticMethod341("Use", staticMethod118(16748608) + var4.aString31, 38,
+									staticMethod341("Use", staticMethod118(16748608) + var4.name, 38,
 											var4.anInt437, var20, var0.anInt294);
 								}
 
@@ -6981,7 +6981,7 @@ public class Static {
 												var19 = 35;
 											}
 
-											staticMethod235(var23[var9], staticMethod118(16748608) + var4.aString31,
+											staticMethod235(var23[var9], staticMethod118(16748608) + var4.name,
 													var19, var4.anInt437, var20, var0.anInt294, var24);
 										}
 									}
@@ -7016,13 +7016,13 @@ public class Static {
 												var241 = 43;
 											}
 
-											staticMethod341(var23[var9], staticMethod118(16748608) + var4.aString31,
+											staticMethod341(var23[var9], staticMethod118(16748608) + var4.name,
 													var241, var4.anInt437, var20, var0.anInt294);
 										}
 									}
 								}
 
-								staticMethod341("Examine", staticMethod118(16748608) + var4.aString31, 1005,
+								staticMethod341("Examine", staticMethod118(16748608) + var4.name, 1005,
 										var4.anInt437, var20, var0.anInt294);
 							}
 						}
@@ -7151,8 +7151,8 @@ public class Static {
 			Item var7;
 			for (var7 = (Item) var2.method195(); var7 != null; var7 = (Item) var2.method193()) {
 				ItemDefinition var12 = staticMethod153(var7.anInt573);
-				long var11 = var12.anInt460;
-				if (var12.anInt442 == 1) {
+				long var11 = var12.cost;
+				if (var12.stackable == 1) {
 					var11 *= var7.anInt574 + 1;
 				}
 
@@ -8033,36 +8033,36 @@ public class Static {
 								&& var5 <= var14 + 20 || var151) {
 							if ((Client.staticInt201 & 0x2000000) != 0) {
 								staticString5 = "";
-								GPI.staticString4 = "This is a <col=00ffff>Beta<col=ffffff> world.";
-								GPI.staticString1 = "Your normal account will not be affected.";
-								GPI.staticString6 = "";
+								staticString4 = "This is a <col=00ffff>Beta<col=ffffff> world.";
+								staticString1 = "Your normal account will not be affected.";
+								staticString6 = "";
 								staticInt13 = 1;
 								staticInt15 = 0;
 							} else if ((Client.staticInt201 & 0x4) != 0) {
 								if ((Client.staticInt201 & 0x400) != 0) {
-									GPI.staticString4 = "This is a <col=ffff00>High Risk <col=ff0000>PvP<col=ffffff> world.";
-									GPI.staticString1 = "Players can attack each other almost everywhere";
-									GPI.staticString6 = "and the Protect Item prayer won\'t work.";
+									staticString4 = "This is a <col=ffff00>High Risk <col=ff0000>PvP<col=ffffff> world.";
+									staticString1 = "Players can attack each other almost everywhere";
+									staticString6 = "and the Protect Item prayer won\'t work.";
 								} else {
-									GPI.staticString4 = "This is a <col=ff0000>PvP<col=ffffff> world.";
-									GPI.staticString1 = "Players can attack each other";
-									GPI.staticString6 = "almost everywhere.";
+									staticString4 = "This is a <col=ff0000>PvP<col=ffffff> world.";
+									staticString1 = "Players can attack each other";
+									staticString6 = "almost everywhere.";
 								}
 
 								staticString5 = "Warning!";
 								staticInt13 = 1;
 								staticInt15 = 0;
 							} else if ((Client.staticInt201 & 0x400) != 0) {
-								GPI.staticString4 = "This is a <col=ffff00>High Risk<col=ffffff> world.";
-								GPI.staticString1 = "The Protect Item prayer will";
-								GPI.staticString6 = "not work on this world.";
+								staticString4 = "This is a <col=ffff00>High Risk<col=ffffff> world.";
+								staticString1 = "The Protect Item prayer will";
+								staticString6 = "not work on this world.";
 								staticString5 = "Warning!";
 								staticInt13 = 1;
 								staticInt15 = 0;
 							} else {
-								GPI.staticString4 = "";
-								GPI.staticString1 = "Enter your username/email & password.";
-								GPI.staticString6 = "";
+								staticString4 = "";
+								staticString1 = "Enter your username/email & password.";
+								staticString6 = "";
 								staticInt13 = 2;
 								staticInt15 = 0;
 							}
@@ -8086,7 +8086,7 @@ public class Static {
 								var11 += 15;
 								var13 = 361;
 								if (var12 == 1 && var5 >= var13 - 15 && var5 < var13) {
-									GPI.staticMethod231("Please enter your username.",
+									setResponse("Please enter your username.",
 											"If you created your account after November",
 											"2010, this will be the creation email address.");
 									staticInt13 = 5;
@@ -8099,16 +8099,16 @@ public class Static {
 										&& var5 <= 20 + var14) {
 									staticString2 = staticString2.trim();
 									if (staticString2.length() == 0) {
-										GPI.staticMethod231("", "Please enter your username/email address.", "");
+										setResponse("", "Please enter your username/email address.", "");
 										return;
 									}
 
 									if (staticString7.length() == 0) {
-										GPI.staticMethod231("", "Please enter your password.", "");
+										setResponse("", "Please enter your password.", "");
 										return;
 									}
 
-									GPI.staticMethod231("", "Connecting to server...", "");
+									setResponse("", "Connecting to server...", "");
 									blockType = staticClass6_1.aLinkedHashMap1
 											.containsKey(Integer.valueOf(staticMethod149(staticString2)))
 													? EnumerableSub3.staticClass28_2 : EnumerableSub3.staticClass28_4;
@@ -8171,17 +8171,17 @@ public class Static {
 											if (FileOnDisk.staticInt38 == 84) {
 												staticString2 = staticString2.trim();
 												if (staticString2.length() == 0) {
-													GPI.staticMethod231("", "Please enter your username/email address.",
+													setResponse("", "Please enter your username/email address.",
 															"");
 													return;
 												}
 
 												if (staticString7.length() == 0) {
-													GPI.staticMethod231("", "Please enter your password.", "");
+													setResponse("", "Please enter your password.", "");
 													return;
 												}
 
-												GPI.staticMethod231("", "Connecting to server...", "");
+												setResponse("", "Connecting to server...", "");
 												blockType = staticClass6_1.aLinkedHashMap1
 														.containsKey(
 																Integer.valueOf(staticMethod149(staticString2)))
@@ -8206,9 +8206,9 @@ public class Static {
 								var161 = 276;
 								if (var12 == 1 && var1 >= var11 - 75 && var1 <= var11 + 75 && var5 >= var161 - 20
 										&& var5 <= var161 + 20) {
-									GPI.staticString4 = "";
-									GPI.staticString1 = "Enter your username/email & password.";
-									GPI.staticString6 = "";
+									staticString4 = "";
+									staticString1 = "Enter your username/email & password.";
+									staticString6 = "";
 									staticInt13 = 2;
 									staticInt15 = 0;
 								}
@@ -8217,7 +8217,7 @@ public class Static {
 								var161 = 326;
 								if (var12 == 1 && var1 >= var11 - 75 && var1 <= var11 + 75 && var5 >= var161 - 20
 										&& var5 <= var161 + 20) {
-									GPI.staticMethod231("Please enter your username.",
+									setResponse("Please enter your username.",
 											"If you created your account after November",
 											"2010, this will be the creation email address.");
 									staticInt13 = 5;
@@ -8233,7 +8233,7 @@ public class Static {
 											&& var5 <= 20 + var161) {
 										GZipDecompressor.staticString26.trim();
 										if (GZipDecompressor.staticString26.length() != 6) {
-											GPI.staticMethod231("", "Please enter a 6-digit PIN.", "");
+											setResponse("", "Please enter a 6-digit PIN.", "");
 											return;
 										}
 
@@ -8241,7 +8241,7 @@ public class Static {
 										GZipDecompressor.staticString26 = "";
 										blockType = staticBool3 ? EnumerableSub3.staticClass28_3
 												: EnumerableSub3.staticClass28_5;
-										GPI.staticMethod231("", "Connecting to server...", "");
+										setResponse("", "Connecting to server...", "");
 										staticMethod396(20);
 										return;
 									}
@@ -8293,7 +8293,7 @@ public class Static {
 											if (FileOnDisk.staticInt38 == 84) {
 												GZipDecompressor.staticString26.trim();
 												if (GZipDecompressor.staticString26.length() != 6) {
-													GPI.staticMethod231("", "Please enter a 6-digit PIN.", "");
+													setResponse("", "Please enter a 6-digit PIN.", "");
 													return;
 												}
 
@@ -8302,7 +8302,7 @@ public class Static {
 												GZipDecompressor.staticString26 = "";
 												blockType = staticBool3 ? EnumerableSub3.staticClass28_3
 														: EnumerableSub3.staticClass28_5;
-												GPI.staticMethod231("", "Connecting to server...", "");
+												setResponse("", "Connecting to server...", "");
 												staticMethod396(20);
 												return;
 											}
@@ -8325,9 +8325,9 @@ public class Static {
 									var11 = 180 + staticInt8 + 80;
 									if (var12 == 1 && var1 >= var11 - 75 && var1 <= var11 + 75 && var5 >= var161 - 20
 											&& var5 <= 20 + var161) {
-										GPI.staticString4 = "";
-										GPI.staticString1 = "Enter your username/email & password.";
-										GPI.staticString6 = "";
+										staticString4 = "";
+										staticString1 = "Enter your username/email & password.";
+										staticString6 = "";
 										staticInt13 = 2;
 										staticInt15 = 0;
 										staticString7 = "";
@@ -8344,9 +8344,9 @@ public class Static {
 										}
 
 										if (FileOnDisk.staticInt38 == 13) {
-											GPI.staticString4 = "";
-											GPI.staticString1 = "Enter your username/email & password.";
-											GPI.staticString6 = "";
+											staticString4 = "";
+											staticString1 = "Enter your username/email & password.";
+											staticString6 = "";
 											staticInt13 = 2;
 											staticInt15 = 0;
 											staticString7 = "";
@@ -8372,9 +8372,9 @@ public class Static {
 											if (!staticMethod106()) {
 												var13 = 321;
 												if (var12 == 1 && var5 >= var13 - 20 && var5 <= var13 + 20) {
-													GPI.staticString4 = "";
-													GPI.staticString1 = "Enter your username/email & password.";
-													GPI.staticString6 = "";
+													staticString4 = "";
+													staticString1 = "Enter your username/email & password.";
+													staticString6 = "";
 													staticInt13 = 2;
 													staticInt15 = 0;
 													staticString7 = "";
@@ -8384,9 +8384,9 @@ public class Static {
 											}
 										} while (FileOnDisk.staticInt38 != 84 && FileOnDisk.staticInt38 != 13);
 
-										GPI.staticString4 = "";
-										GPI.staticString1 = "Enter your username/email & password.";
-										GPI.staticString6 = "";
+										staticString4 = "";
+										staticString1 = "Enter your username/email & password.";
+										staticString6 = "";
 										staticInt13 = 2;
 										staticInt15 = 0;
 										staticString7 = "";
@@ -8396,9 +8396,9 @@ public class Static {
 						} else {
 							while (staticMethod106()) {
 								if (FileOnDisk.staticInt38 == 84) {
-									GPI.staticString4 = "";
-									GPI.staticString1 = "Enter your username/email & password.";
-									GPI.staticString6 = "";
+									staticString4 = "";
+									staticString1 = "Enter your username/email & password.";
+									staticString6 = "";
 									staticInt13 = 2;
 									staticInt15 = 0;
 								} else if (FileOnDisk.staticInt38 == 13) {
@@ -8410,9 +8410,9 @@ public class Static {
 							var161 = 321;
 							if (var12 == 1 && var1 >= var11 - 75 && var1 <= 75 + var11 && var5 >= var161 - 20
 									&& var5 <= 20 + var161) {
-								GPI.staticString4 = "";
-								GPI.staticString1 = "Enter your username/email & password.";
-								GPI.staticString6 = "";
+								staticString4 = "";
+								staticString1 = "Enter your username/email & password.";
+								staticString6 = "";
 								staticInt13 = 2;
 								staticInt15 = 0;
 							}
@@ -8447,12 +8447,12 @@ public class Static {
 		}
 
 		ItemDefinition var10 = staticMethod153(var0);
-		if (var1 > 1 && var10.anIntArray105 != null) {
+		if (var1 > 1 && var10.countObj != null) {
 			int var19 = -1;
 
 			for (int var20 = 0; var20 < 10; var20++) {
-				if (var1 >= var10.anIntArray106[var20] && var10.anIntArray106[var20] != 0) {
-					var19 = var10.anIntArray105[var20];
+				if (var1 >= var10.countCo[var20] && var10.countCo[var20] != 0) {
+					var19 = var10.countObj[var20];
 				}
 			}
 
@@ -8466,13 +8466,13 @@ public class Static {
 			return null;
 		} else {
 			Picture var201 = null;
-			if (var10.anInt457 != -1) {
-				var201 = staticMethod140(var10.anInt435, 10, 1, 0, 0, true);
+			if (var10.notedTemplate != -1) {
+				var201 = staticMethod140(var10.notedID, 10, 1, 0, 0, true);
 				if (var201 == null) {
 					return null;
 				}
-			} else if (var10.anInt465 != -1) {
-				var201 = staticMethod140(var10.anInt464, var1, var2, var3, 0, false);
+			} else if (var10.boughtTemplate != -1) {
+				var201 = staticMethod140(var10.boughtLink, var1, var2, var3, 0, false);
 				if (var201 == null) {
 					return null;
 				}
@@ -8498,19 +8498,19 @@ public class Static {
 				var201.method637(0, 0);
 			}
 
-			int var15 = var10.anInt444;
+			int var15 = var10.zoom2d;
 			if (var5) {
 				var15 = (int) (1.5D * var15);
 			} else if (var2 == 2) {
 				var15 = (int) (1.04D * var15);
 			}
 
-			int var13 = Rasterizer2DSub1.staticIntArray154[var10.anInt456] * var15 >> 16;
-			int var14 = Rasterizer2DSub1.staticIntArray159[var10.anInt456] * var15 >> 16;
+			int var13 = Rasterizer2DSub1.staticIntArray154[var10.xan2d] * var15 >> 16;
+			int var14 = Rasterizer2DSub1.staticIntArray159[var10.xan2d] * var15 >> 16;
 			var191.method592();
-			var191.method600(0, var10.anInt466, var10.anInt468, var10.anInt456, var10.anInt436,
-					var10.anInt452 + var191.anInt421 / 2 + var13, var10.anInt452 + var14);
-			if (var10.anInt465 != -1) {
+			var191.method600(0, var10.yan2d, var10.zan2d, var10.xan2d, var10.xOffset2d,
+					var10.yOffset2d + var191.anInt421 / 2 + var13, var10.yOffset2d + var14);
+			if (var10.boughtTemplate != -1) {
 				var201.method637(0, 0);
 			}
 
@@ -8527,11 +8527,11 @@ public class Static {
 			}
 
 			staticMethod400(var6.anIntArray154, 36, 32);
-			if (var10.anInt457 != -1) {
+			if (var10.notedTemplate != -1) {
 				var201.method637(0, 0);
 			}
 
-			if (var4 == 1 || var4 == 2 && var10.anInt442 == 1) {
+			if (var4 == 1 || var4 == 2 && var10.stackable == 1) {
 				DataNode3.staticRasterizer2DSub2Sub1_4.method616(staticMethod97(var1), 0, 9, 16776960, 1);
 			}
 
@@ -10958,11 +10958,11 @@ public class Static {
 						staticInt8 + 180 - staticRasterizer2DSub3_4.anInt677 / 2,
 						271 - staticRasterizer2DSub3_4.anInt678 / 2);
 				var331 = 211;
-				var0.method630(GPI.staticString4, 180 + staticInt8, var331, 16776960, 0);
+				var0.method630(staticString4, 180 + staticInt8, var331, 16776960, 0);
 				var25 = var331 + 15;
-				var0.method630(GPI.staticString1, staticInt8 + 180, var25, 16776960, 0);
+				var0.method630(staticString1, staticInt8 + 180, var25, 16776960, 0);
 				var25 += 15;
-				var0.method630(GPI.staticString6, staticInt8 + 180, var25, 16776960, 0);
+				var0.method630(staticString6, staticInt8 + 180, var25, 16776960, 0);
 				var25 += 15;
 				var25 += 10;
 				if (staticInt13 != 4) {
@@ -11001,11 +11001,11 @@ public class Static {
 				} else if (staticInt13 == 1) {
 					var0.method630(staticString5, staticInt8 + 180, 211, 16776960, 0);
 					var331 = 236;
-					var0.method630(GPI.staticString4, staticInt8 + 180, var331, 16777215, 0);
+					var0.method630(staticString4, staticInt8 + 180, var331, 16777215, 0);
 					var25 = var331 + 15;
-					var0.method630(GPI.staticString1, staticInt8 + 180, var25, 16777215, 0);
+					var0.method630(staticString1, staticInt8 + 180, var25, 16777215, 0);
 					var25 += 15;
-					var0.method630(GPI.staticString6, staticInt8 + 180, var25, 16777215, 0);
+					var0.method630(staticString6, staticInt8 + 180, var25, 16777215, 0);
 					var25 += 15;
 					var5 = staticInt8 + 180 - 80;
 					var351 = 321;
@@ -11018,11 +11018,11 @@ public class Static {
 					short var36;
 					if (staticInt13 == 2) {
 						var331 = 211;
-						var0.method630(GPI.staticString4, staticInt8 + 180, var331, 16776960, 0);
+						var0.method630(staticString4, staticInt8 + 180, var331, 16776960, 0);
 						var25 = var331 + 15;
-						var0.method630(GPI.staticString1, 180 + staticInt8, var25, 16776960, 0);
+						var0.method630(staticString1, 180 + staticInt8, var25, 16776960, 0);
 						var25 += 15;
-						var0.method630(GPI.staticString6, staticInt8 + 180, var25, 16776960, 0);
+						var0.method630(staticString6, staticInt8 + 180, var25, 16776960, 0);
 						var25 += 15;
 						var25 += 10;
 						var0.method616("Login: ", 180 + staticInt8 - 110, var25, 16777215, 0);
@@ -11078,11 +11078,11 @@ public class Static {
 					} else if (staticInt13 == 4) {
 						var0.method630("Authenticator", staticInt8 + 180, 211, 16776960, 0);
 						var331 = 236;
-						var0.method630(GPI.staticString4, 180 + staticInt8, var331, 16777215, 0);
+						var0.method630(staticString4, 180 + staticInt8, var331, 16777215, 0);
 						var25 = var331 + 15;
-						var0.method630(GPI.staticString1, staticInt8 + 180, var25, 16777215, 0);
+						var0.method630(staticString1, staticInt8 + 180, var25, 16777215, 0);
 						var25 += 15;
-						var0.method630(GPI.staticString6, 180 + staticInt8, var25, 16777215, 0);
+						var0.method630(staticString6, 180 + staticInt8, var25, 16777215, 0);
 						var25 += 15;
 						var281 = "PIN: ";
 						var291 = GZipDecompressor.staticString26;
@@ -11118,11 +11118,11 @@ public class Static {
 					} else if (staticInt13 != 5) {
 						if (staticInt13 == 6) {
 							var331 = 211;
-							var0.method630(GPI.staticString4, staticInt8 + 180, var331, 16776960, 0);
+							var0.method630(staticString4, staticInt8 + 180, var331, 16776960, 0);
 							var25 = var331 + 15;
-							var0.method630(GPI.staticString1, 180 + staticInt8, var25, 16776960, 0);
+							var0.method630(staticString1, 180 + staticInt8, var25, 16776960, 0);
 							var25 += 15;
-							var0.method630(GPI.staticString6, 180 + staticInt8, var25, 16776960, 0);
+							var0.method630(staticString6, 180 + staticInt8, var25, 16776960, 0);
 							var25 += 15;
 							var5 = staticInt8 + 180;
 							var351 = 321;
@@ -11132,11 +11132,11 @@ public class Static {
 					} else {
 						var0.method630("Forgotten your password?", 180 + staticInt8, 201, 16776960, 0);
 						var331 = 221;
-						var2.method630(GPI.staticString4, 180 + staticInt8, var331, 16776960, 0);
+						var2.method630(staticString4, 180 + staticInt8, var331, 16776960, 0);
 						var25 = var331 + 15;
-						var2.method630(GPI.staticString1, staticInt8 + 180, var25, 16776960, 0);
+						var2.method630(staticString1, staticInt8 + 180, var25, 16776960, 0);
 						var25 += 15;
-						var2.method630(GPI.staticString6, 180 + staticInt8, var25, 16776960, 0);
+						var2.method630(staticString6, 180 + staticInt8, var25, 16776960, 0);
 						var25 += 15;
 						var25 += 14;
 						var0.method616("Username/email: ", 180 + staticInt8 - 145, var25, 16777215, 0);
@@ -11660,25 +11660,25 @@ public class Static {
 			}
 
 			var1.method486();
-			if (var1.anInt457 != -1) {
-				var1.method489(staticMethod153(var1.anInt457), staticMethod153(var1.anInt435));
+			if (var1.notedTemplate != -1) {
+				var1.method489(staticMethod153(var1.notedTemplate), staticMethod153(var1.notedID));
 			}
 
-			if (var1.anInt465 != -1) {
-				var1.method490(staticMethod153(var1.anInt465), staticMethod153(var1.anInt464));
+			if (var1.boughtTemplate != -1) {
+				var1.method490(staticMethod153(var1.boughtTemplate), staticMethod153(var1.boughtLink));
 			}
 
 			if (var1.anInt467 != -1) {
 				var1.method497(staticMethod153(var1.anInt467), staticMethod153(var1.anInt445));
 			}
 
-			if (!staticBool4 && var1.aBool55) {
-				var1.aString31 = "Members object";
-				var1.aBool56 = false;
-				var1.aStringArray7 = null;
-				var1.aStringArray6 = null;
+			if (!staticBool4 && var1.members) {
+				var1.name = "Members object";
+				var1.stockMarket = false;
+				var1.options = null;
+				var1.interfaceOptions = null;
 				var1.anInt443 = -1;
-				var1.anInt463 = 0;
+				var1.team = 0;
 			}
 
 			ItemDefinition.staticCache10.method170(var1, var0);
@@ -12391,6 +12391,9 @@ public class Static {
 	//TODO process login
 	static final void processLogin() {		
 		try {
+			
+			System.out.println(Client.loginStage);			
+			
 			if (Client.loginStage == 0) {
 				if (Class56.gameConnection != null) {
 					Class56.gameConnection.shutdown();
@@ -12429,7 +12432,7 @@ public class Static {
 				Client.loginStage = 3;
 			}
 
-			int var10;
+			int responseCode;
 			if (Client.loginStage == 3) {
 				if (ByteBuf.staticClass19_2 != null) {
 					ByteBuf.staticClass19_2.method67();
@@ -12439,7 +12442,7 @@ public class Static {
 					NodeSub12.staticClass19_1.method67();
 				}
 
-				var10 = Class56.gameConnection.read();
+				responseCode = Class56.gameConnection.read();
 				if (ByteBuf.staticClass19_2 != null) {
 					ByteBuf.staticClass19_2.method67();
 				}
@@ -12448,8 +12451,8 @@ public class Static {
 					NodeSub12.staticClass19_1.method67();
 				}
 
-				if (var10 != 0) {
-					staticMethod220(var10);
+				if (responseCode != 0) {					
+					showResponse(responseCode);
 					return;
 				}
 
@@ -12459,15 +12462,15 @@ public class Static {
 
 			if (Client.loginStage == 4) {
 				if (Client.inBuffer.position < 8) {
-					var10 = Class56.gameConnection.available();
-					if (var10 > 8 - Client.inBuffer.position) {
-						var10 = 8 - Client.inBuffer.position;
+					responseCode = Class56.gameConnection.available();
+					if (responseCode > 8 - Client.inBuffer.position) {
+						responseCode = 8 - Client.inBuffer.position;
 					}
 
-					if (var10 > 0) {
+					if (responseCode > 0) {
 						Class56.gameConnection.read(Client.inBuffer.buf,
-								Client.inBuffer.position, var10);
-						Client.inBuffer.position += var10;
+								Client.inBuffer.position, responseCode);
+						Client.inBuffer.position += responseCode;
 					}
 				}
 
@@ -12594,20 +12597,20 @@ public class Static {
 			}
 
 			if (Client.loginStage == 6 && Class56.gameConnection.available() > 0) {
-				var10 = Class56.gameConnection.read();
-				if (var10 == 21 && Client.staticInt165 == 20) {
+				responseCode = Class56.gameConnection.read();
+				if (responseCode == 21 && Client.staticInt165 == 20) {
 					Client.loginStage = 7;
-				} else if (var10 == 2) {
+				} else if (responseCode == 2) {
 					Client.loginStage = 9;
-				} else if (var10 == 15 && Client.staticInt165 == 40) {
+				} else if (responseCode == 15 && Client.staticInt165 == 40) {
 					Client.staticInt190 = -1;
 					Client.loginStage = 13;
-				} else if (var10 == 23 && Client.staticInt302 < 1) {
+				} else if (responseCode == 23 && Client.staticInt302 < 1) {
 					++Client.staticInt302;
 					Client.loginStage = 0;
 				} else {
-					if (var10 != 29) {
-						staticMethod220(var10);
+					if (responseCode != 29) {
+						showResponse(responseCode);
 						return;
 					}
 
@@ -12622,7 +12625,7 @@ public class Static {
 
 			if (Client.loginStage == 8) {
 				Client.staticInt262 = 0;
-				GPI.staticMethod231("You have only just left another world.", "Your profile will be transferred in:",
+				setResponse("You have only just left another world.", "Your profile will be transferred in:",
 						Client.transferTime / 60 + " seconds.");
 				if (--Client.transferTime <= 0) {
 					Client.loginStage = 0;
@@ -12698,7 +12701,7 @@ public class Static {
 						String var12 = Client.inBuffer.readString();
 						String var15 = Client.inBuffer.readString();
 						String var191 = Client.inBuffer.readString();
-						GPI.staticMethod231(var12, var15, var191);
+						setResponse(var12, var15, var191);
 						staticMethod396(10);
 					}
 
@@ -12715,7 +12718,7 @@ public class Static {
 								++Client.staticInt302;
 								Client.loginStage = 0;
 							} else {
-								staticMethod220(-3);
+								showResponse(-3);
 							}
 						}
 					} else {
@@ -12732,7 +12735,7 @@ public class Static {
 						if (Class56.gameConnection.available() >= Client.staticInt190) {
 							Class56.gameConnection.read(Client.inBuffer.buf, 0, Client.staticInt190);
 							Client.inBuffer.position = 0;
-							var10 = Client.staticInt190;
+							responseCode = Client.staticInt190;
 							Client.outBuffer.position = 0;
 							Client.inBuffer.position = 0;
 							Client.staticInt191 = -1;
@@ -12771,7 +12774,7 @@ public class Static {
 
 							staticMethod34();
 							GPI.initializeGPI(Client.inBuffer);
-							if (var10 != Client.inBuffer.position) {
+							if (responseCode != Client.inBuffer.position) {
 								throw new RuntimeException();
 							}
 						}
@@ -12789,7 +12792,7 @@ public class Static {
 				++Client.staticInt302;
 				Client.loginStage = 0;
 			} else {
-				staticMethod220(-2);
+				showResponse(-2);
 			}
 		}
 
@@ -14910,92 +14913,92 @@ public class Static {
 		}
 	}
 
-	static void staticMethod220(int var0) {
-		if (var0 == -3) {
-			GPI.staticMethod231("Connection timed out.", "Please try using a different world.", "");
-		} else if (var0 == -2) {
-			GPI.staticMethod231("", "Error connecting to server.", "");
-		} else if (var0 == -1) {
-			GPI.staticMethod231("No response from server.", "Please try using a different world.", "");
-		} else if (var0 == 3) {
+	static void showResponse(int responseCode) {		
+		if (responseCode == -3) {
+			setResponse("Connection timed out.", "Please try using a different world.", "");
+		} else if (responseCode == -2) {
+			setResponse("", "Error connecting to server.", "");
+		} else if (responseCode == -1) {
+			setResponse("No response from server.", "Please try using a different world.", "");
+		} else if (responseCode == 3) {
 			staticInt13 = 3;
-		} else if (var0 == 4) {
-			GPI.staticMethod231("Your account has been disabled.", "Please check your message-centre for details.", "");
-		} else if (var0 == 5) {
-			GPI.staticMethod231("Your account has not logged out from its last",
+		} else if (responseCode == 4) {
+			setResponse("Your account has been disabled.", "Please check your message-centre for details.", "");
+		} else if (responseCode == 5) {
+			setResponse("Your account has not logged out from its last",
 					"session or the server is too busy right now.", "Please try again in a few minutes.");
-		} else if (var0 == 6) {
-			GPI.staticMethod231("RuneScape has been updated!", "Please reload this page.", "");
-		} else if (var0 == 7) {
-			GPI.staticMethod231("This world is full.", "Please use a different world.", "");
-		} else if (var0 == 8) {
-			GPI.staticMethod231("Unable to connect.", "Login server offline.", "");
-		} else if (var0 == 9) {
-			GPI.staticMethod231("Login limit exceeded.", "Too many connections from your address.", "");
-		} else if (var0 == 10) {
-			GPI.staticMethod231("Unable to connect.", "Bad session id.", "");
-		} else if (var0 == 11) {
-			GPI.staticMethod231("We suspect someone knows your password.", "Press \'change your password\' on front page.",
+		} else if (responseCode == 6) {
+			setResponse("RuneScape has been updated!", "Please reload this page.", "");
+		} else if (responseCode == 7) {
+			setResponse("This world is full.", "Please use a different world.", "");
+		} else if (responseCode == 8) {
+			setResponse("Unable to connect.", "Login server offline.", "");
+		} else if (responseCode == 9) {
+			setResponse("Login limit exceeded.", "Too many connections from your address.", "");
+		} else if (responseCode == 10) {
+			setResponse("Unable to connect.", "Bad session id.", "");
+		} else if (responseCode == 11) {
+			setResponse("We suspect someone knows your password.", "Press \'change your password\' on front page.",
 					"");
-		} else if (var0 == 12) {
-			GPI.staticMethod231("You need a members account to login to this world.",
+		} else if (responseCode == 12) {
+			setResponse("You need a members account to login to this world.",
 					"Please subscribe, or use a different world.", "");
-		} else if (var0 == 13) {
-			GPI.staticMethod231("Could not complete login.", "Please try using a different world.", "");
-		} else if (var0 == 14) {
-			GPI.staticMethod231("The server is being updated.", "Please wait 1 minute and try again.", "");
-		} else if (var0 == 16) {
-			GPI.staticMethod231("Too many login attempts.", "Please wait a few minutes before trying again.", "");
-		} else if (var0 == 17) {
-			GPI.staticMethod231("You are standing in a members-only area.",
+		} else if (responseCode == 13) {
+			setResponse("Could not complete login.", "Please try using a different world.", "");
+		} else if (responseCode == 14) {
+			setResponse("The server is being updated.", "Please wait 1 minute and try again.", "");
+		} else if (responseCode == 16) {
+			setResponse("Too many login attempts.", "Please wait a few minutes before trying again.", "");
+		} else if (responseCode == 17) {
+			setResponse("You are standing in a members-only area.",
 					"To play on this world move to a free area first", "");
-		} else if (var0 == 18) {
-			GPI.staticMethod231("Account locked as we suspect it has been stolen.",
+		} else if (responseCode == 18) {
+			setResponse("Account locked as we suspect it has been stolen.",
 					"Press \'recover a locked account\' on front page.", "");
-		} else if (var0 == 19) {
-			GPI.staticMethod231("This world is running a closed Beta.", "Sorry invited players only.",
+		} else if (responseCode == 19) {
+			setResponse("This world is running a closed Beta.", "Sorry invited players only.",
 					"Please use a different world.");
-		} else if (var0 == 20) {
-			GPI.staticMethod231("Invalid loginserver requested.", "Please try using a different world.", "");
-		} else if (var0 == 22) {
-			GPI.staticMethod231("Malformed login packet.", "Please try again.", "");
-		} else if (var0 == 23) {
-			GPI.staticMethod231("No reply from loginserver.", "Please wait 1 minute and try again.", "");
-		} else if (var0 == 24) {
-			GPI.staticMethod231("Error loading your profile.", "Please contact customer support.", "");
-		} else if (var0 == 25) {
-			GPI.staticMethod231("Unexpected loginserver response.", "Please try using a different world.", "");
-		} else if (var0 == 26) {
-			GPI.staticMethod231("This computers address has been blocked", "as it was used to break our rules.", "");
-		} else if (var0 == 27) {
-			GPI.staticMethod231("", "Service unavailable.", "");
-		} else if (var0 == 31) {
-			GPI.staticMethod231("Your account must have a displayname set", "in order to play the game.  Please set it",
+		} else if (responseCode == 20) {
+			setResponse("Invalid loginserver requested.", "Please try using a different world.", "");
+		} else if (responseCode == 22) {
+			setResponse("Malformed login packet.", "Please try again.", "");
+		} else if (responseCode == 23) {
+			setResponse("No reply from loginserver.", "Please wait 1 minute and try again.", "");
+		} else if (responseCode == 24) {
+			setResponse("Error loading your profile.", "Please contact customer support.", "");
+		} else if (responseCode == 25) {
+			setResponse("Unexpected loginserver response.", "Please try using a different world.", "");
+		} else if (responseCode == 26) {
+			setResponse("This computers address has been blocked", "as it was used to break our rules.", "");
+		} else if (responseCode == 27) {
+			setResponse("", "Service unavailable.", "");
+		} else if (responseCode == 31) {
+			setResponse("Your account must have a displayname set", "in order to play the game.  Please set it",
 					"via the website, or the main game.");
-		} else if (var0 == 32) {
-			GPI.staticMethod231("Your attempt to log into your account was", "unsuccessful.  Don\'t worry, you can sort",
+		} else if (responseCode == 32) {
+			setResponse("Your attempt to log into your account was", "unsuccessful.  Don\'t worry, you can sort",
 					"this out by visiting the billing system.");
-		} else if (var0 == 37) {
-			GPI.staticMethod231("Your account is currently inaccessible.", "Please try again in a few minutes.", "");
-		} else if (var0 == 38) {
-			GPI.staticMethod231("You need to vote to play!", "Visit runescape.com and vote,", "and then come back here!");
-		} else if (var0 == 55) {
-			GPI.staticMethod231("Sorry, but your account is not eligible to", "play this version of the game.  Please try",
+		} else if (responseCode == 37) {
+			setResponse("Your account is currently inaccessible.", "Please try again in a few minutes.", "");
+		} else if (responseCode == 38) {
+			setResponse("You need to vote to play!", "Visit runescape.com and vote,", "and then come back here!");
+		} else if (responseCode == 55) {
+			setResponse("Sorry, but your account is not eligible to", "play this version of the game.  Please try",
 					"playing the main game instead!");
 		} else {
-			if (var0 == 56) {
-				GPI.staticMethod231("Enter the 6-digit code generated by your", "authenticator app.", "");
+			if (responseCode == 56) {
+				setResponse("Enter the 6-digit code generated by your", "authenticator app.", "");
 				staticMethod396(11);
 				return;
 			}
 
-			if (var0 == 57) {
-				GPI.staticMethod231("The code you entered was incorrect.", "Please try again.", "");
+			if (responseCode == 57) {
+				setResponse("The code you entered was incorrect.", "Please try again.", "");
 				staticMethod396(11);
 				return;
 			}
 
-			GPI.staticMethod231("Unexpected server response", "Please try using a different world.", "");
+			setResponse("Unexpected server response", "Please try using a different world.", "");
 		}
 
 		staticMethod396(10);
@@ -15030,15 +15033,15 @@ public class Static {
 			var3.anInt352 = var5;
 			var3.anInt353 = var6;
 			ItemDefinition var4 = staticMethod153(var5);
-			var3.anInt325 = var4.anInt456;
-			var3.anInt332 = var4.anInt466;
-			var3.anInt324 = var4.anInt468;
-			var3.anInt329 = var4.anInt436;
-			var3.anInt330 = var4.anInt452;
-			var3.anInt334 = var4.anInt444;
+			var3.anInt325 = var4.xan2d;
+			var3.anInt332 = var4.yan2d;
+			var3.anInt324 = var4.zan2d;
+			var3.anInt329 = var4.xOffset2d;
+			var3.anInt330 = var4.yOffset2d;
+			var3.anInt334 = var4.zoom2d;
 			if (var0 == 1205) {
 				var3.anInt337 = 0;
-			} else if (var0 == 1212 | var4.anInt442 == 1) {
+			} else if (var0 == 1212 | var4.stackable == 1) {
 				var3.anInt337 = 1;
 			} else {
 				var3.anInt337 = 2;
@@ -15666,17 +15669,17 @@ public class Static {
 							if (Client.staticInt258 == 1) {
 								staticMethod341("Use",
 										Client.staticString32 + " " + staticString14 + " "
-												+ staticMethod118(16748608) + var23.aString31,
+												+ staticMethod118(16748608) + var23.name,
 										16, var22.anInt573, var26, var10);
 							} else if (Client.staticBool32) {
 								if ((Class57.staticInt144 & 0x1) == 1) {
 									staticMethod341(Client.staticString31,
 											Client.staticString30 + " " + staticString14 + " "
-													+ staticMethod118(16748608) + var23.aString31,
+													+ staticMethod118(16748608) + var23.name,
 											17, var22.anInt573, var26, var10);
 								}
 							} else {
-								String[] var28 = var23.aStringArray7;
+								String[] var28 = var23.options;
 								if (Client.staticBool34) {
 									var28 = staticMethod425(var28);
 								}
@@ -15704,15 +15707,15 @@ public class Static {
 											var17 = 22;
 										}
 
-										staticMethod341(var28[var29], staticMethod118(16748608) + var23.aString31,
+										staticMethod341(var28[var29], staticMethod118(16748608) + var23.name,
 												var17, var22.anInt573, var26, var10);
 									} else if (var29 == 2) {
-										staticMethod341("Take", staticMethod118(16748608) + var23.aString31, 20,
+										staticMethod341("Take", staticMethod118(16748608) + var23.name, 20,
 												var22.anInt573, var26, var10);
 									}
 								}
 
-								staticMethod341("Examine", staticMethod118(16748608) + var23.aString31, 1004,
+								staticMethod341("Examine", staticMethod118(16748608) + var23.name, 1004,
 										var22.anInt573, var26, var10);
 							}
 						}
@@ -19444,21 +19447,21 @@ public class Static {
 						var891 = staticMethod153(var2);
 						var4.anInt348 = 4;
 						var4.anInt295 = var2;
-						var4.anInt325 = var891.anInt456;
-						var4.anInt332 = var891.anInt466;
-						var4.anInt334 = var891.anInt444 * 100 / var3;
+						var4.anInt325 = var891.xan2d;
+						var4.anInt332 = var891.yan2d;
+						var4.anInt334 = var891.zoom2d * 100 / var3;
 						staticMethod73(var4);
 					} else {
 						var4.anInt352 = var2;
 						var4.anInt353 = var3;
 						var891 = staticMethod153(var2);
-						var4.anInt325 = var891.anInt456;
-						var4.anInt332 = var891.anInt466;
-						var4.anInt324 = var891.anInt468;
-						var4.anInt329 = var891.anInt436;
-						var4.anInt330 = var891.anInt452;
-						var4.anInt334 = var891.anInt444;
-						if (var891.anInt442 == 1) {
+						var4.anInt325 = var891.xan2d;
+						var4.anInt332 = var891.yan2d;
+						var4.anInt324 = var891.zan2d;
+						var4.anInt329 = var891.xOffset2d;
+						var4.anInt330 = var891.yOffset2d;
+						var4.anInt334 = var891.zoom2d;
+						if (var891.stackable == 1) {
 							var4.anInt337 = 1;
 						} else {
 							var4.anInt337 = 2;
@@ -19810,11 +19813,21 @@ public class Static {
 			throw new RuntimeException(var0.position - var2 + " " + var1);
 		}
 	}
+	
+	static String staticString4;
+	static String staticString1;
+	static String staticString6;
+	
+	static void setResponse(String var0, String var1, String var2) {		
+		staticString4 = var0;
+		staticString1 = var1;
+		staticString6 = var2;
+	}
 
 	static void staticMethod314() {
 		staticString2 = staticString2.trim();
 		if (staticString2.length() == 0) {
-			GPI.staticMethod231("Please enter your username.", "If you created your account after November",
+			setResponse("Please enter your username.", "If you created your account after November",
 					"2010, this will be the creation email address.");
 		} else {
 			long var1 = staticMethod222();
@@ -19827,25 +19840,25 @@ public class Static {
 
 			switch (var0) {
 			case 2:
-				GPI.staticMethod231("", "Page has opened in a new window.", "(Please check your popup blocker.)");
+				setResponse("", "Page has opened in a new window.", "(Please check your popup blocker.)");
 				staticInt13 = 6;
 				break;
 			case 3:
-				GPI.staticMethod231("", "Error connecting to server.", "");
+				setResponse("", "Error connecting to server.", "");
 				break;
 			case 4:
-				GPI.staticMethod231("The part of the website you are trying", "to connect to is offline at the moment.",
+				setResponse("The part of the website you are trying", "to connect to is offline at the moment.",
 						"Please try again later.");
 				break;
 			case 5:
-				GPI.staticMethod231("Sorry, there was an error trying to", "log you in to this part of the website.",
+				setResponse("Sorry, there was an error trying to", "log you in to this part of the website.",
 						"Please try again later.");
 				break;
 			case 6:
-				GPI.staticMethod231("", "Error connecting to server.", "");
+				setResponse("", "Error connecting to server.", "");
 				break;
 			case 7:
-				GPI.staticMethod231("You must enter a valid login to proceed. For accounts",
+				setResponse("You must enter a valid login to proceed. For accounts",
 						"created after 24th November 2010, please use your",
 						"email address. Otherwise please use your username.");
 			}
@@ -22209,7 +22222,7 @@ public class Static {
 								if (var0 == 4200) {
 									var14 = staticIntArray16[--staticInt27];
 									staticStringArray1[++staticInt148
-											- 1] = staticMethod153(var14).aString31;
+											- 1] = staticMethod153(var14).name;
 									var8 = 1;
 								} else {
 									ItemDefinition var391;
@@ -22218,9 +22231,9 @@ public class Static {
 										var14 = staticIntArray16[staticInt27];
 										var19 = staticIntArray16[1 + staticInt27];
 										var391 = staticMethod153(var14);
-										if (var19 >= 1 && var19 <= 5 && var391.aStringArray7[var19 - 1] != null) {
+										if (var19 >= 1 && var19 <= 5 && var391.options[var19 - 1] != null) {
 											staticStringArray1[++staticInt148
-													- 1] = var391.aStringArray7[var19 - 1];
+													- 1] = var391.options[var19 - 1];
 										} else {
 											staticStringArray1[++staticInt148 - 1] = "";
 										}
@@ -22231,9 +22244,9 @@ public class Static {
 										var14 = staticIntArray16[staticInt27];
 										var19 = staticIntArray16[1 + staticInt27];
 										var391 = staticMethod153(var14);
-										if (var19 >= 1 && var19 <= 5 && var391.aStringArray6[var19 - 1] != null) {
+										if (var19 >= 1 && var19 <= 5 && var391.interfaceOptions[var19 - 1] != null) {
 											staticStringArray1[++staticInt148
-													- 1] = var391.aStringArray6[var19 - 1];
+													- 1] = var391.interfaceOptions[var19 - 1];
 										} else {
 											staticStringArray1[++staticInt148 - 1] = "";
 										}
@@ -22242,20 +22255,20 @@ public class Static {
 									} else if (var0 == 4203) {
 										var14 = staticIntArray16[--staticInt27];
 										staticIntArray16[++staticInt27
-												- 1] = staticMethod153(var14).anInt460;
+												- 1] = staticMethod153(var14).cost;
 										var8 = 1;
 									} else if (var0 == 4204) {
 										var14 = staticIntArray16[--staticInt27];
 										staticIntArray16[++staticInt27
-												- 1] = staticMethod153(var14).anInt442 == 1 ? 1 : 0;
+												- 1] = staticMethod153(var14).stackable == 1 ? 1 : 0;
 										var8 = 1;
 									} else {
 										ItemDefinition var36;
 										if (var0 == 4205) {
 											var14 = staticIntArray16[--staticInt27];
 											var36 = staticMethod153(var14);
-											if (var36.anInt457 == -1 && var36.anInt435 >= 0) {
-												staticIntArray16[++staticInt27 - 1] = var36.anInt435;
+											if (var36.notedTemplate == -1 && var36.notedID >= 0) {
+												staticIntArray16[++staticInt27 - 1] = var36.notedID;
 											} else {
 												staticIntArray16[++staticInt27 - 1] = var14;
 											}
@@ -22264,8 +22277,8 @@ public class Static {
 										} else if (var0 == 4206) {
 											var14 = staticIntArray16[--staticInt27];
 											var36 = staticMethod153(var14);
-											if (var36.anInt457 >= 0 && var36.anInt435 >= 0) {
-												staticIntArray16[++staticInt27 - 1] = var36.anInt435;
+											if (var36.notedTemplate >= 0 && var36.notedID >= 0) {
+												staticIntArray16[++staticInt27 - 1] = var36.notedID;
 											} else {
 												staticIntArray16[++staticInt27 - 1] = var14;
 											}
@@ -22274,7 +22287,7 @@ public class Static {
 										} else if (var0 == 4207) {
 											var14 = staticIntArray16[--staticInt27];
 											staticIntArray16[++staticInt27
-													- 1] = staticMethod153(var14).aBool55 ? 1 : 0;
+													- 1] = staticMethod153(var14).members ? 1 : 0;
 											var8 = 1;
 										} else if (var0 == 4208) {
 											var14 = staticIntArray16[--staticInt27];
@@ -22314,7 +22327,7 @@ public class Static {
 													String[] var34 = new String[staticInt114];
 
 													for (var11 = 0; var11 < staticInt114; var11++) {
-														var34[var11] = staticMethod153(var32[var11]).aString31;
+														var34[var11] = staticMethod153(var32[var11]).name;
 													}
 
 													var39 = EnumerableSub1.staticShortArray1;
@@ -22323,8 +22336,8 @@ public class Static {
 												}
 
 												ItemDefinition var33 = staticMethod153(var31);
-												if ((!var9 || var33.aBool56) && var33.anInt457 == -1
-														&& var33.aString31.toLowerCase().indexOf(var17) != -1) {
+												if ((!var9 || var33.stockMarket) && var33.notedTemplate == -1
+														&& var33.name.toLowerCase().indexOf(var17) != -1) {
 													if (var7 >= 250) {
 														staticInt114 = -1;
 														EnumerableSub1.staticShortArray1 = null;
@@ -30293,9 +30306,9 @@ public class Static {
 		staticString3 = "";
 		staticInt13 = 0;
 		staticString5 = "";
-		GPI.staticString4 = "";
-		GPI.staticString1 = "";
-		GPI.staticString6 = "";
+		staticString4 = "";
+		staticString1 = "";
+		staticString6 = "";
 		staticString2 = "";
 		staticString7 = "";
 		blockType = EnumerableSub3.staticClass28_4;

@@ -42,7 +42,7 @@ public class InterfaceScripts {
 						var9 += var13[var4++];
 						var10 = Static.staticMethod8(var9);
 						var11 = var13[var4++];
-						if (var11 != -1 && (!Static.staticMethod153(var11).aBool55 || Client.staticBool20)) {
+						if (var11 != -1 && (!Static.staticMethod153(var11).members || Client.staticBool20)) {
 							for (var12 = 0; var12 < var10.anIntArray76.length; var12++) {
 								if (var11 + 1 == var10.anIntArray76[var12]) {
 									var7 += var10.anIntArray77[var12];
@@ -80,7 +80,7 @@ public class InterfaceScripts {
 						var9 += var13[var4++];
 						var10 = Static.staticMethod8(var9);
 						var11 = var13[var4++];
-						if (var11 != -1 && (!Static.staticMethod153(var11).aBool55 || Client.staticBool20)) {
+						if (var11 != -1 && (!Static.staticMethod153(var11).members || Client.staticBool20)) {
 							for (var12 = 0; var12 < var10.anIntArray76.length; var12++) {
 								if (var10.anIntArray76[var12] == 1 + var11) {
 									var7 = 999999999;

@@ -1,16 +1,6 @@
 
 public class GPI {
 	
-	static String staticString4;
-	static String staticString1;
-	static String staticString6;
-	
-	static void staticMethod231(String var0, String var1, String var2) {
-		staticString4 = var0;
-		staticString1 = var1;
-		staticString6 = var2;
-	}
-	
 	static final void initializeGPI(BitBuf var0) {		
 		var0.method475();
 		int var5 = Client.myPlayerIndex;

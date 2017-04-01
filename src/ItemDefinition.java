@@ -6,61 +6,61 @@ public class ItemDefinition extends Cacheable {
 	static Cache staticCache10 = new Cache(64);
 	static Cache staticCache11 = new Cache(50);
 	public static Cache staticCache9 = new Cache(200);
-	public String aString31 = "null";
-	public int anInt444 = 2000;
-	public int anInt456 = 0;
-	public int anInt466 = 0;
-	public int anInt436 = 0;
-	public int anInt452 = 0;
-	public int anInt442 = 0;
-	public int anInt460 = 1;
-	public boolean aBool55 = false;
-	int anInt446 = -1;
-	int anInt447 = 0;
-	int anInt438 = -1;
-	int anInt448 = -1;
-	int anInt450 = 0;
-	int anInt449 = -1;
+	public String name = "null";
+	public int zoom2d = 2000;
+	public int xan2d = 0;
+	public int yan2d = 0;
+	public int xOffset2d = 0;
+	public int yOffset2d = 0;
+	public int stackable = 0;
+	public int cost = 1;
+	public boolean members = false;
+	int maleModel0 = -1;
+	int maleOffset = 0;
+	int maleModel1 = -1;
+	int femaleModel0 = -1;
+	int femaleOffset = 0;
+	int femaleModel1 = -1;
 	int anInt443 = -2;
-	public boolean aBool56 = false;
-	int anInt451 = -1;
-	int anInt434 = -1;
-	int anInt440 = -1;
-	int anInt454 = -1;
-	int anInt453 = -1;
-	int anInt455 = -1;
-	public int anInt468 = 0;
-	public int anInt435 = -1;
-	public int anInt457 = -1;
-	int anInt458 = 128;
-	int anInt459 = 128;
-	int anInt439 = 128;
-	public int anInt461 = 0;
-	public int anInt462 = 0;
-	public int anInt463 = 0;
-	int anInt464 = -1;
-	int anInt465 = -1;
+	public boolean stockMarket = false;
+	int maleModel2 = -1;
+	int femaleModel2 = -1;
+	int maleHeadModel = -1;
+	int femaleHeadModel = -1;
+	int maleHeadModel2 = -1;
+	int femaleHeadModel2 = -1;
+	public int zan2d = 0;
+	public int notedID = -1;
+	public int notedTemplate = -1;
+	int resizeX = 128;
+	int resizeY = 128;
+	int resizeZ = 128;
+	public int ambient = 0;
+	public int contrast = 0;
+	public int team = 0;
+	int boughtLink = -1;
+	int boughtTemplate = -1;
 	public int anInt445 = -1;
 	public int anInt467 = -1;
-	public String[] aStringArray7 = new String[] { null, null, "Take", null, null };
-	public String[] aStringArray6 = new String[] { null, null, null, null, "Drop" };
-	int anInt441;
-	short[] aShortArray9;
-	short[] aShortArray6;
-	short[] aShortArray7;
-	short[] aShortArray8;
-	int[] anIntArray105;
-	int[] anIntArray106;
+	public String[] options = new String[] { null, null, "Take", null, null };
+	public String[] interfaceOptions = new String[] { null, null, null, null, "Drop" };
+	int inventoryModel;
+	short[] colorFind;
+	short[] colorReplace;
+	short[] textureFind;
+	short[] textureReplace;
+	int[] countObj;
+	int[] countCo;
 
 	void method486() {
 	}
 
 	public final EntitySub3 method487(boolean var1) {
-		int var2 = anInt440;
-		int var4 = anInt453;
+		int var2 = maleHeadModel;
+		int var4 = maleHeadModel2;
 		if (var1) {
-			var2 = anInt454;
-			var4 = anInt455;
+			var2 = femaleHeadModel;
+			var4 = femaleHeadModel2;
 		}
 
 		if (var2 == -1) {
@@ -74,15 +74,15 @@ public class ItemDefinition extends Cacheable {
 			}
 
 			int var71;
-			if (aShortArray9 != null) {
-				for (var71 = 0; var71 < aShortArray9.length; var71++) {
-					var3.method585(aShortArray9[var71], aShortArray6[var71]);
+			if (colorFind != null) {
+				for (var71 = 0; var71 < colorFind.length; var71++) {
+					var3.method585(colorFind[var71], colorReplace[var71]);
 				}
 			}
 
-			if (aShortArray7 != null) {
-				for (var71 = 0; var71 < aShortArray7.length; var71++) {
-					var3.method579(aShortArray7[var71], aShortArray8[var71]);
+			if (textureFind != null) {
+				for (var71 = 0; var71 < textureFind.length; var71++) {
+					var3.method579(textureFind[var71], textureReplace[var71]);
 				}
 			}
 
@@ -93,115 +93,115 @@ public class ItemDefinition extends Cacheable {
 	// TODO item def decode
 	void decode(ByteBuf buffer, int opcode) {		
 		if (opcode == 1) {
-			anInt441 = buffer.readUShort();
+			inventoryModel = buffer.readUShort();			
 		} else if (opcode == 2) {
-			aString31 = buffer.readString();
+			name = buffer.readString();			
 		} else if (opcode == 4) {
-			anInt444 = buffer.readUShort();
+			zoom2d = buffer.readUShort();			
 		} else if (opcode == 5) {
-			anInt456 = buffer.readUShort();
+			xan2d = buffer.readUShort();			
 		} else if (opcode == 6) {
-			anInt466 = buffer.readUShort();
+			yan2d = buffer.readUShort();			
 		} else if (opcode == 7) {
-			anInt436 = buffer.readUShort();
-			if (anInt436 > 32767) {
-				anInt436 -= 65536;
+			xOffset2d = buffer.readUShort();			
+			if (xOffset2d > 32767) {
+				xOffset2d -= 65536;
 			}
 		} else if (opcode == 8) {
-			anInt452 = buffer.readUShort();
-			if (anInt452 > 32767) {
-				anInt452 -= 65536;
+			yOffset2d = buffer.readUShort();			
+			if (yOffset2d > 32767) {
+				yOffset2d -= 65536;
 			}
 		} else if (opcode == 11) {
-			anInt442 = 1;
+			stackable = 1;			
 		} else if (opcode == 12) {
-			anInt460 = buffer.readInt();
+			cost = buffer.readInt();			
 		} else if (opcode == 16) {
-			aBool55 = true;
+			members = true;			
 		} else if (opcode == 23) {
-			anInt446 = buffer.readUShort();
-			anInt447 = buffer.readUByte();
+			maleModel0 = buffer.readUShort();			
+			maleOffset = buffer.readUByte();			
 		} else if (opcode == 24) {
-			anInt438 = buffer.readUShort();
+			maleModel1 = buffer.readUShort();			
 		} else if (opcode == 25) {
-			anInt448 = buffer.readUShort();
-			anInt450 = buffer.readUByte();
+			femaleModel0 = buffer.readUShort();			
+			femaleOffset = buffer.readUByte();			
 		} else if (opcode == 26) {
-			anInt449 = buffer.readUShort();
-		} else if (opcode >= 30 && opcode < 35) {
-			aStringArray7[opcode - 30] = buffer.readString();
-			if (aStringArray7[opcode - 30].equalsIgnoreCase("Hidden")) {
-				aStringArray7[opcode - 30] = null;
+			femaleModel1 = buffer.readUShort();			
+		} else if (opcode >= 30 && opcode < 35) {			
+			options[opcode - 30] = buffer.readString();
+			if (options[opcode - 30].equalsIgnoreCase("Hidden")) {
+				options[opcode - 30] = null;
 			}
 		} else if (opcode >= 35 && opcode < 40) {
-			aStringArray6[opcode - 35] = buffer.readString();
+			interfaceOptions[opcode - 35] = buffer.readString();			
 		} else {
 			int var3;
 			int var4;
 			if (opcode == 40) {
 				var3 = buffer.readUByte();
-				aShortArray9 = new short[var3];
-				aShortArray6 = new short[var3];
+				colorFind = new short[var3];				
+				colorReplace = new short[var3];				
 
 				for (var4 = 0; var4 < var3; var4++) {
-					aShortArray9[var4] = (short) buffer.readUShort();
-					aShortArray6[var4] = (short) buffer.readUShort();
+					colorFind[var4] = (short) buffer.readUShort();
+					colorReplace[var4] = (short) buffer.readUShort();
 				}
 			} else if (opcode == 41) {
 				var3 = buffer.readUByte();
-				aShortArray7 = new short[var3];
-				aShortArray8 = new short[var3];
+				textureFind = new short[var3];				
+				textureReplace = new short[var3];				
 
 				for (var4 = 0; var4 < var3; var4++) {
-					aShortArray7[var4] = (short) buffer.readUShort();
-					aShortArray8[var4] = (short) buffer.readUShort();
+					textureFind[var4] = (short) buffer.readUShort();
+					textureReplace[var4] = (short) buffer.readUShort();
 				}
-			} else if (opcode == 42) {
+			} else if (opcode == 42) { // #138
 				anInt443 = buffer.readByte();
 			} else if (opcode == 65) {
-				aBool56 = true;
+				stockMarket = true;				
 			} else if (opcode == 78) {
-				anInt451 = buffer.readUShort();
+				maleModel2 = buffer.readUShort();				
 			} else if (opcode == 79) {
-				anInt434 = buffer.readUShort();
+				femaleModel2 = buffer.readUShort();				
 			} else if (opcode == 90) {
-				anInt440 = buffer.readUShort();
+				maleHeadModel = buffer.readUShort();				
 			} else if (opcode == 91) {
-				anInt454 = buffer.readUShort();
+				femaleHeadModel = buffer.readUShort();				
 			} else if (opcode == 92) {
-				anInt453 = buffer.readUShort();
+				maleHeadModel2 = buffer.readUShort();				
 			} else if (opcode == 93) {
-				anInt455 = buffer.readUShort();
+				femaleHeadModel2 = buffer.readUShort();				
 			} else if (opcode == 95) {
-				anInt468 = buffer.readUShort();
+				zan2d = buffer.readUShort();				
 			} else if (opcode == 97) {
-				anInt435 = buffer.readUShort();
+				notedID = buffer.readUShort();				
 			} else if (opcode == 98) {
-				anInt457 = buffer.readUShort();
+				notedTemplate = buffer.readUShort();				
 			} else if (opcode >= 100 && opcode < 110) {
-				if (anIntArray105 == null) {
-					anIntArray105 = new int[10];
-					anIntArray106 = new int[10];
+				if (countObj == null) {					
+					countObj = new int[10];
+					countCo = new int[10];					
 				}
 
-				anIntArray105[opcode - 100] = buffer.readUShort();
-				anIntArray106[opcode - 100] = buffer.readUShort();
+				countObj[opcode - 100] = buffer.readUShort();
+				countCo[opcode - 100] = buffer.readUShort();
 			} else if (opcode == 110) {
-				anInt458 = buffer.readUShort();
+				resizeX = buffer.readUShort();				
 			} else if (opcode == 111) {
-				anInt459 = buffer.readUShort();
+				resizeY = buffer.readUShort();				
 			} else if (opcode == 112) {
-				anInt439 = buffer.readUShort();
+				resizeZ = buffer.readUShort();				
 			} else if (opcode == 113) {
-				anInt461 = buffer.readByte();
+				ambient = buffer.readByte();				
 			} else if (opcode == 114) {
-				anInt462 = buffer.readByte() * 5;
+				contrast = buffer.readByte() * 5;				
 			} else if (opcode == 115) {
-				anInt463 = buffer.readUByte();
+				team = buffer.readUByte();				
 			} else if (opcode == 139) {
-				anInt464 = buffer.readUShort();
+				boughtLink = buffer.readUShort();				
 			} else if (opcode == 140) {
-				anInt465 = buffer.readUShort();
+				boughtTemplate = buffer.readUShort();				
 			} else if (opcode == 148) {
 				anInt445 = buffer.readUShort();
 			} else if (opcode == 149) {
@@ -212,68 +212,68 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	void method489(ItemDefinition var1, ItemDefinition var2) {
-		anInt441 = var1.anInt441 * 1;
-		anInt444 = var1.anInt444 * 1;
-		anInt456 = var1.anInt456 * 1;
-		anInt466 = var1.anInt466 * 1;
-		anInt468 = var1.anInt468 * 1;
-		anInt436 = var1.anInt436 * 1;
-		anInt452 = var1.anInt452 * 1;
-		aShortArray9 = var1.aShortArray9;
-		aShortArray6 = var1.aShortArray6;
-		aShortArray7 = var1.aShortArray7;
-		aShortArray8 = var1.aShortArray8;
-		aString31 = var2.aString31;
-		aBool55 = var2.aBool55;
-		anInt460 = var2.anInt460 * 1;
-		anInt442 = 1;
+		inventoryModel = var1.inventoryModel * 1;
+		zoom2d = var1.zoom2d * 1;
+		xan2d = var1.xan2d * 1;
+		yan2d = var1.yan2d * 1;
+		zan2d = var1.zan2d * 1;
+		xOffset2d = var1.xOffset2d * 1;
+		yOffset2d = var1.yOffset2d * 1;
+		colorFind = var1.colorFind;
+		colorReplace = var1.colorReplace;
+		textureFind = var1.textureFind;
+		textureReplace = var1.textureReplace;
+		name = var2.name;
+		members = var2.members;
+		cost = var2.cost * 1;
+		stackable = 1;
 	}
 
 	void method490(ItemDefinition var1, ItemDefinition var2) {
-		anInt441 = var1.anInt441 * 1;
-		anInt444 = var1.anInt444 * 1;
-		anInt456 = var1.anInt456 * 1;
-		anInt466 = var1.anInt466 * 1;
-		anInt468 = var1.anInt468 * 1;
-		anInt436 = var1.anInt436 * 1;
-		anInt452 = var1.anInt452 * 1;
-		aShortArray9 = var2.aShortArray9;
-		aShortArray6 = var2.aShortArray6;
-		aShortArray7 = var2.aShortArray7;
-		aShortArray8 = var2.aShortArray8;
-		aString31 = var2.aString31;
-		aBool55 = var2.aBool55;
-		anInt442 = var2.anInt442 * 1;
-		anInt446 = var2.anInt446 * 1;
-		anInt438 = var2.anInt438 * 1;
-		anInt451 = var2.anInt451 * 1;
-		anInt448 = var2.anInt448 * 1;
-		anInt449 = var2.anInt449 * 1;
-		anInt434 = var2.anInt434 * 1;
-		anInt440 = var2.anInt440 * 1;
-		anInt453 = var2.anInt453 * 1;
-		anInt454 = var2.anInt454 * 1;
-		anInt455 = var2.anInt455 * 1;
-		anInt463 = var2.anInt463 * 1;
-		aStringArray7 = var2.aStringArray7;
-		aStringArray6 = new String[5];
-		if (var2.aStringArray6 != null) {
+		inventoryModel = var1.inventoryModel * 1;
+		zoom2d = var1.zoom2d * 1;
+		xan2d = var1.xan2d * 1;
+		yan2d = var1.yan2d * 1;
+		zan2d = var1.zan2d * 1;
+		xOffset2d = var1.xOffset2d * 1;
+		yOffset2d = var1.yOffset2d * 1;
+		colorFind = var2.colorFind;
+		colorReplace = var2.colorReplace;
+		textureFind = var2.textureFind;
+		textureReplace = var2.textureReplace;
+		name = var2.name;
+		members = var2.members;
+		stackable = var2.stackable * 1;
+		maleModel0 = var2.maleModel0 * 1;
+		maleModel1 = var2.maleModel1 * 1;
+		maleModel2 = var2.maleModel2 * 1;
+		femaleModel0 = var2.femaleModel0 * 1;
+		femaleModel1 = var2.femaleModel1 * 1;
+		femaleModel2 = var2.femaleModel2 * 1;
+		maleHeadModel = var2.maleHeadModel * 1;
+		maleHeadModel2 = var2.maleHeadModel2 * 1;
+		femaleHeadModel = var2.femaleHeadModel * 1;
+		femaleHeadModel2 = var2.femaleHeadModel2 * 1;
+		team = var2.team * 1;
+		options = var2.options;
+		interfaceOptions = new String[5];
+		if (var2.interfaceOptions != null) {
 			for (int var3 = 0; var3 < 4; var3++) {
-				aStringArray6[var3] = var2.aStringArray6[var3];
+				interfaceOptions[var3] = var2.interfaceOptions[var3];
 			}
 		}
 
-		aStringArray6[4] = "Discard";
-		anInt460 = 0;
+		interfaceOptions[4] = "Discard";
+		cost = 0;
 	}
 
 	public ItemDefinition method491(int var1) {
-		if (anIntArray105 != null && var1 > 1) {
+		if (countObj != null && var1 > 1) {
 			int var3 = -1;
 
 			for (int var2 = 0; var2 < 10; var2++) {
-				if (var1 >= anIntArray106[var2] && anIntArray106[var2] != 0) {
-					var3 = anIntArray105[var2];
+				if (var1 >= countCo[var2] && countCo[var2] != 0) {
+					var3 = countObj[var2];
 				}
 			}
 
@@ -286,13 +286,13 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	public final EntitySub3 method492(boolean var1) {
-		int var2 = anInt446;
-		int var5 = anInt438;
-		int var6 = anInt451;
+		int var2 = maleModel0;
+		int var5 = maleModel1;
+		int var6 = maleModel2;
 		if (var1) {
-			var2 = anInt448;
-			var5 = anInt449;
-			var6 = anInt434;
+			var2 = femaleModel0;
+			var5 = femaleModel1;
+			var6 = femaleModel2;
 		}
 
 		if (var2 == -1) {
@@ -311,24 +311,24 @@ public class ItemDefinition extends Cacheable {
 				}
 			}
 
-			if (!var1 && anInt447 != 0) {
-				var3.method578(0, anInt447, 0);
+			if (!var1 && maleOffset != 0) {
+				var3.method578(0, maleOffset, 0);
 			}
 
-			if (var1 && anInt450 != 0) {
-				var3.method578(0, anInt450, 0);
+			if (var1 && femaleOffset != 0) {
+				var3.method578(0, femaleOffset, 0);
 			}
 
 			int var91;
-			if (aShortArray9 != null) {
-				for (var91 = 0; var91 < aShortArray9.length; var91++) {
-					var3.method585(aShortArray9[var91], aShortArray6[var91]);
+			if (colorFind != null) {
+				for (var91 = 0; var91 < colorFind.length; var91++) {
+					var3.method585(colorFind[var91], colorReplace[var91]);
 				}
 			}
 
-			if (aShortArray7 != null) {
-				for (var91 = 0; var91 < aShortArray7.length; var91++) {
-					var3.method579(aShortArray7[var91], aShortArray8[var91]);
+			if (textureFind != null) {
+				for (var91 = 0; var91 < textureFind.length; var91++) {
+					var3.method579(textureFind[var91], textureReplace[var91]);
 				}
 			}
 
@@ -337,11 +337,11 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	public final boolean method493(boolean var1) {
-		int var2 = anInt440;
-		int var4 = anInt453;
+		int var2 = maleHeadModel;
+		int var4 = maleHeadModel2;
 		if (var1) {
-			var2 = anInt454;
-			var4 = anInt455;
+			var2 = femaleHeadModel;
+			var4 = femaleHeadModel2;
 		}
 
 		if (var2 == -1) {
@@ -361,12 +361,12 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	public final Model method494(int var1) {
-		if (anIntArray105 != null && var1 > 1) {
+		if (countObj != null && var1 > 1) {
 			int var5 = -1;
 
 			for (int var6 = 0; var6 < 10; var6++) {
-				if (var1 >= anIntArray106[var6] && anIntArray106[var6] != 0) {
-					var5 = anIntArray105[var6];
+				if (var1 >= countCo[var6] && countCo[var6] != 0) {
+					var5 = countObj[var6];
 				}
 			}
 
@@ -379,28 +379,28 @@ public class ItemDefinition extends Cacheable {
 		if (var51 != null) {
 			return var51;
 		} else {
-			EntitySub3 var61 = Static.staticMethod434(staticJs5Index14, anInt441, 0);
+			EntitySub3 var61 = Static.staticMethod434(staticJs5Index14, inventoryModel, 0);
 			if (var61 == null) {
 				return null;
 			} else {
-				if (anInt458 != 128 || anInt459 != 128 || anInt439 != 128) {
-					var61.method587(anInt458, anInt459, anInt439);
+				if (resizeX != 128 || resizeY != 128 || resizeZ != 128) {
+					var61.method587(resizeX, resizeY, resizeZ);
 				}
 
 				int var2;
-				if (aShortArray9 != null) {
-					for (var2 = 0; var2 < aShortArray9.length; var2++) {
-						var61.method585(aShortArray9[var2], aShortArray6[var2]);
+				if (colorFind != null) {
+					for (var2 = 0; var2 < colorFind.length; var2++) {
+						var61.method585(colorFind[var2], colorReplace[var2]);
 					}
 				}
 
-				if (aShortArray7 != null) {
-					for (var2 = 0; var2 < aShortArray7.length; var2++) {
-						var61.method579(aShortArray7[var2], aShortArray8[var2]);
+				if (textureFind != null) {
+					for (var2 = 0; var2 < textureFind.length; var2++) {
+						var61.method579(textureFind[var2], textureReplace[var2]);
 					}
 				}
 
-				var51 = var61.method583(anInt461 + 64, anInt462 + 768, -50, -10, -50);
+				var51 = var61.method583(ambient + 64, contrast + 768, -50, -10, -50);
 				var51.aBool80 = true;
 				staticCache11.method170(var51, anInt437);
 				return var51;
@@ -409,13 +409,13 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	public final boolean method495(boolean var1) {
-		int var2 = anInt446;
-		int var3 = anInt438;
-		int var4 = anInt451;
+		int var2 = maleModel0;
+		int var3 = maleModel1;
+		int var4 = maleModel2;
 		if (var1) {
-			var2 = anInt448;
-			var3 = anInt449;
-			var4 = anInt434;
+			var2 = femaleModel0;
+			var3 = femaleModel1;
+			var4 = femaleModel2;
 		}
 
 		if (var2 == -1) {
@@ -440,12 +440,12 @@ public class ItemDefinition extends Cacheable {
 
 	public final EntitySub3 method496(int var1) {
 		int var2;
-		if (anIntArray105 != null && var1 > 1) {
+		if (countObj != null && var1 > 1) {
 			int var4 = -1;
 
 			for (var2 = 0; var2 < 10; var2++) {
-				if (var1 >= anIntArray106[var2] && anIntArray106[var2] != 0) {
-					var4 = anIntArray105[var2];
+				if (var1 >= countCo[var2] && countCo[var2] != 0) {
+					var4 = countObj[var2];
 				}
 			}
 
@@ -454,23 +454,23 @@ public class ItemDefinition extends Cacheable {
 			}
 		}
 
-		EntitySub3 var41 = Static.staticMethod434(staticJs5Index14, anInt441, 0);
+		EntitySub3 var41 = Static.staticMethod434(staticJs5Index14, inventoryModel, 0);
 		if (var41 == null) {
 			return null;
 		} else {
-			if (anInt458 != 128 || anInt459 != 128 || anInt439 != 128) {
-				var41.method587(anInt458, anInt459, anInt439);
+			if (resizeX != 128 || resizeY != 128 || resizeZ != 128) {
+				var41.method587(resizeX, resizeY, resizeZ);
 			}
 
-			if (aShortArray9 != null) {
-				for (var2 = 0; var2 < aShortArray9.length; var2++) {
-					var41.method585(aShortArray9[var2], aShortArray6[var2]);
+			if (colorFind != null) {
+				for (var2 = 0; var2 < colorFind.length; var2++) {
+					var41.method585(colorFind[var2], colorReplace[var2]);
 				}
 			}
 
-			if (aShortArray7 != null) {
-				for (var2 = 0; var2 < aShortArray7.length; var2++) {
-					var41.method579(aShortArray7[var2], aShortArray8[var2]);
+			if (textureFind != null) {
+				for (var2 = 0; var2 < textureFind.length; var2++) {
+					var41.method579(textureFind[var2], textureReplace[var2]);
 				}
 			}
 
@@ -479,22 +479,22 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	void method497(ItemDefinition var1, ItemDefinition var2) {
-		anInt441 = var1.anInt441 * 1;
-		anInt444 = var1.anInt444 * 1;
-		anInt456 = var1.anInt456 * 1;
-		anInt466 = var1.anInt466 * 1;
-		anInt468 = var1.anInt468 * 1;
-		anInt436 = var1.anInt436 * 1;
-		anInt452 = var1.anInt452 * 1;
-		aShortArray9 = var1.aShortArray9;
-		aShortArray6 = var1.aShortArray6;
-		aShortArray7 = var1.aShortArray7;
-		aShortArray8 = var1.aShortArray8;
-		anInt442 = var1.anInt442 * 1;
-		aString31 = var2.aString31;
-		anInt460 = 0;
-		aBool55 = false;
-		aBool56 = false;
+		inventoryModel = var1.inventoryModel * 1;
+		zoom2d = var1.zoom2d * 1;
+		xan2d = var1.xan2d * 1;
+		yan2d = var1.yan2d * 1;
+		zan2d = var1.zan2d * 1;
+		xOffset2d = var1.xOffset2d * 1;
+		yOffset2d = var1.yOffset2d * 1;
+		colorFind = var1.colorFind;
+		colorReplace = var1.colorReplace;
+		textureFind = var1.textureFind;
+		textureReplace = var1.textureReplace;
+		stackable = var1.stackable * 1;
+		name = var2.name;
+		cost = 0;
+		members = false;
+		stockMarket = false;
 	}
 
 	void method498(ByteBuf var1) {
@@ -509,8 +509,8 @@ public class ItemDefinition extends Cacheable {
 	}
 
 	public int method499() {
-		return anInt443 != -1 && aStringArray6 != null ? anInt443 >= 0 ? aStringArray6[anInt443] != null ? anInt443 : -1
-				: "Drop".equalsIgnoreCase(aStringArray6[4]) ? 4 : -1 : -1;
+		return anInt443 != -1 && interfaceOptions != null ? anInt443 >= 0 ? interfaceOptions[anInt443] != null ? anInt443 : -1
+				: "Drop".equalsIgnoreCase(interfaceOptions[4]) ? 4 : -1 : -1;
 	}
 
 }

@@ -402,7 +402,7 @@ public class Widget extends Node {
 						return null;
 					}
 
-					var9 = var6.method583(var5.anInt461 + 64, var5.anInt462 + 768, -50, -10, -50);
+					var9 = var6.method583(var5.ambient + 64, var5.contrast + 768, -50, -10, -50);
 				}
 
 				staticCache5.method170(var9, (var7 << 16) + var8);

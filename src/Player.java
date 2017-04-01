@@ -51,7 +51,7 @@ public final class Player extends Mob {
 				}
 
 				if (var3[var9] >= 512) {
-					int var7 = Static.staticMethod153(var3[var9] - 512).anInt463;
+					int var7 = Static.staticMethod153(var3[var9] - 512).team;
 					if (var7 != 0) {
 						anInt697 = var7;
 					}
