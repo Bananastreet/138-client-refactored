@@ -6,36 +6,36 @@ public class NpcDefinition extends Cacheable {
 	static int staticInt324;
 	static Cache staticCache28 = new Cache(64);
 	static Cache staticCache27 = new Cache(50);
-	public String aString35 = "null";
-	public int anInt538 = 1;
-	public int anInt539 = 1;
-	public int anInt550 = -1;
+	public String name = "null";
+	public int tileSpacesOccupied = 1;
+	public int stanceAnimation = 1;
+	public int walkAnimation = -1;
 	public int anInt552 = -1;
 	public int anInt543 = 1;
-	public int anInt540 = -1;
-	public int anInt536 = -1;
-	public int anInt542 = 1;
-	public boolean aBool67 = true;
-	public int anInt544 = -1;
-	int anInt535 = 128;
-	int anInt541 = 128;
-	public boolean aBool68 = false;
-	int anInt546 = 0;
-	int anInt547 = 0;
-	public int anInt548 = -1;
+	public int rotate180Animation = -1;
+	public int rotate90RightAnimation = -1;
+	public int rotate90LeftAnimation = 1;
+	public boolean renderOnMinimap = true;
+	public int combatLevel = -1;
+	int resizeX = 128;
+	int resizeY = 128;
+	public boolean hasRenderPriority = false;
+	int ambient = 0;
+	int contrast = 0;
+	public int headIcon = -1;
 	public int anInt549 = 1873014688;
 	int anInt545 = -1;
 	int anInt551 = -1;
-	public boolean aBool69 = true;
+	public boolean isClickable = true;
 	public boolean aBool70 = true;
 	public boolean aBool71 = false;
-	public String[] aStringArray10 = new String[5];
-	int[] anIntArray114;
-	short[] aShortArray15;
-	short[] aShortArray14;
-	short[] aShortArray16;
-	short[] aShortArray17;
-	int[] anIntArray115;
+	public String[] options = new String[5];
+	int[] models;
+	short[] recolorToFind;
+	short[] recolorToReplace;
+	short[] retextureToFind;
+	short[] retextureToReplace;
+	int[] models_2;
 	public int[] anIntArray116;
 
 	void method540(ByteBuf var1) {
@@ -58,8 +58,8 @@ public class NpcDefinition extends Cacheable {
 			if (var5 == null) {
 				boolean var10 = false;
 
-				for (int var9 = 0; var9 < anIntArray114.length; var9++) {
-					if (!staticJs5Index29.method276(anIntArray114[var9], 0)) {
+				for (int var9 = 0; var9 < models.length; var9++) {
+					if (!staticJs5Index29.method276(models[var9], 0)) {
 						var10 = true;
 					}
 				}
@@ -68,11 +68,11 @@ public class NpcDefinition extends Cacheable {
 					return null;
 				}
 
-				EntitySub3[] var121 = new EntitySub3[anIntArray114.length];
+				EntitySub3[] var121 = new EntitySub3[models.length];
 
 				int var8;
-				for (var8 = 0; var8 < anIntArray114.length; var8++) {
-					var121[var8] = Static.staticMethod434(staticJs5Index29, anIntArray114[var8], 0);
+				for (var8 = 0; var8 < models.length; var8++) {
+					var121[var8] = Static.staticMethod434(staticJs5Index29, models[var8], 0);
 				}
 
 				EntitySub3 var12;
@@ -82,19 +82,19 @@ public class NpcDefinition extends Cacheable {
 					var12 = new EntitySub3(var121, var121.length);
 				}
 
-				if (aShortArray15 != null) {
-					for (var8 = 0; var8 < aShortArray15.length; var8++) {
-						var12.method585(aShortArray15[var8], aShortArray14[var8]);
+				if (recolorToFind != null) {
+					for (var8 = 0; var8 < recolorToFind.length; var8++) {
+						var12.method585(recolorToFind[var8], recolorToReplace[var8]);
 					}
 				}
 
-				if (aShortArray16 != null) {
-					for (var8 = 0; var8 < aShortArray16.length; var8++) {
-						var12.method579(aShortArray16[var8], aShortArray17[var8]);
+				if (retextureToFind != null) {
+					for (var8 = 0; var8 < retextureToFind.length; var8++) {
+						var12.method579(retextureToFind[var8], retextureToReplace[var8]);
 					}
 				}
 
-				var5 = var12.method583(anInt546 + 64, anInt547 * 5 + 850, -30, -50, -30);
+				var5 = var12.method583(ambient + 64, contrast * 5 + 850, -30, -50, -30);
 				staticCache27.method170(var5, anInt537);
 			}
 
@@ -109,8 +109,8 @@ public class NpcDefinition extends Cacheable {
 				var101 = var5.method589(true);
 			}
 
-			if (anInt535 != 128 || anInt541 != 128) {
-				var101.method599(anInt535, anInt541, anInt535);
+			if (resizeX != 128 || resizeY != 128) {
+				var101.method599(resizeX, resizeY, resizeX);
 			}
 
 			return var101;
@@ -121,13 +121,13 @@ public class NpcDefinition extends Cacheable {
 		if (anIntArray116 != null) {
 			NpcDefinition var5 = method544();
 			return var5 == null ? null : var5.method542();
-		} else if (anIntArray115 == null) {
+		} else if (models_2 == null) {
 			return null;
 		} else {
 			boolean var2 = false;
 
-			for (int var6 = 0; var6 < anIntArray115.length; var6++) {
-				if (!staticJs5Index29.method276(anIntArray115[var6], 0)) {
+			for (int var6 = 0; var6 < models_2.length; var6++) {
+				if (!staticJs5Index29.method276(models_2[var6], 0)) {
 					var2 = true;
 				}
 			}
@@ -135,10 +135,10 @@ public class NpcDefinition extends Cacheable {
 			if (var2) {
 				return null;
 			} else {
-				EntitySub3[] var61 = new EntitySub3[anIntArray115.length];
+				EntitySub3[] var61 = new EntitySub3[models_2.length];
 
-				for (int var7 = 0; var7 < anIntArray115.length; var7++) {
-					var61[var7] = Static.staticMethod434(staticJs5Index29, anIntArray115[var7], 0);
+				for (int var7 = 0; var7 < models_2.length; var7++) {
+					var61[var7] = Static.staticMethod434(staticJs5Index29, models_2[var7], 0);
 				}
 
 				EntitySub3 var71;
@@ -149,15 +149,15 @@ public class NpcDefinition extends Cacheable {
 				}
 
 				int var1;
-				if (aShortArray15 != null) {
-					for (var1 = 0; var1 < aShortArray15.length; var1++) {
-						var71.method585(aShortArray15[var1], aShortArray14[var1]);
+				if (recolorToFind != null) {
+					for (var1 = 0; var1 < recolorToFind.length; var1++) {
+						var71.method585(recolorToFind[var1], recolorToReplace[var1]);
 					}
 				}
 
-				if (aShortArray16 != null) {
-					for (var1 = 0; var1 < aShortArray16.length; var1++) {
-						var71.method579(aShortArray16[var1], aShortArray17[var1]);
+				if (retextureToFind != null) {
+					for (var1 = 0; var1 < retextureToFind.length; var1++) {
+						var71.method579(retextureToFind[var1], retextureToReplace[var1]);
 					}
 				}
 
@@ -205,83 +205,83 @@ public class NpcDefinition extends Cacheable {
 
 	//TODO npc def decode
 	void decode(ByteBuf buffer, int opcode) {		
-		int var3;
-		int var4;
+		int length;
+		int count;
 		if (opcode == 1) {
-			var3 = buffer.readUByte();
-			anIntArray114 = new int[var3];
+			length = buffer.readUByte();
+			models = new int[length];			
 
-			for (var4 = 0; var4 < var3; var4++) {
-				anIntArray114[var4] = buffer.readUShort();
+			for (count = 0; count < length; count++) {					
+				models[count] = buffer.readUShort();
 			}
 		} else if (opcode == 2) {
-			aString35 = buffer.readString();
+			name = buffer.readString();			
 		} else if (opcode == 12) {
-			anInt538 = buffer.readUByte();
+			tileSpacesOccupied = buffer.readUByte();			
 		} else if (opcode == 13) {
-			anInt539 = -buffer.readUShort();
+			stanceAnimation = -buffer.readUShort();			
 		} else if (opcode == 14) {
-			anInt550 = buffer.readUShort();
+			walkAnimation = buffer.readUShort();			
 		} else if (opcode == 15) {
 			anInt552 = buffer.readUShort();
 		} else if (opcode == 16) {
 			anInt543 = -buffer.readUShort();
 		} else if (opcode == 17) {
-			anInt550 = buffer.readUShort();
-			anInt540 = buffer.readUShort();
-			anInt536 = buffer.readUShort();
-			anInt542 = -buffer.readUShort();
+			walkAnimation = buffer.readUShort();
+			rotate180Animation = buffer.readUShort();			
+			rotate90RightAnimation = buffer.readUShort();			
+			rotate90LeftAnimation = -buffer.readUShort();			
 		} else if (opcode >= 30 && opcode < 35) {
-			aStringArray10[opcode - 30] = buffer.readString();
-			if (aStringArray10[opcode - 30].equalsIgnoreCase("Hidden")) {
-				aStringArray10[opcode - 30] = null;
+			options[opcode - 30] = buffer.readString();
+			if (options[opcode - 30].equalsIgnoreCase("Hidden")) {				
+				options[opcode - 30] = null;
 			}
 		} else if (opcode == 40) {
-			var3 = buffer.readUByte();
-			aShortArray15 = new short[var3];
-			aShortArray14 = new short[var3];
+			length = buffer.readUByte();
+			recolorToFind = new short[length];			
+			recolorToReplace = new short[length];			
 
-			for (var4 = 0; var4 < var3; var4++) {
-				aShortArray15[var4] = (short) buffer.readUShort();
-				aShortArray14[var4] = (short) buffer.readUShort();
+			for (count = 0; count < length; count++) {
+				recolorToFind[count] = (short) buffer.readUShort();
+				recolorToReplace[count] = (short) buffer.readUShort();
 			}
 		} else if (opcode == 41) {
-			var3 = buffer.readUByte();
-			aShortArray16 = new short[var3];
-			aShortArray17 = new short[var3];
+			length = buffer.readUByte();
+			retextureToFind = new short[length];			
+			retextureToReplace = new short[length];			
 
-			for (var4 = 0; var4 < var3; var4++) {
-				aShortArray16[var4] = (short) buffer.readUShort();
-				aShortArray17[var4] = (short) buffer.readUShort();
+			for (count = 0; count < length; count++) {
+				retextureToFind[count] = (short) buffer.readUShort();
+				retextureToReplace[count] = (short) buffer.readUShort();
 			}
 		} else if (opcode == 60) {
-			var3 = buffer.readUByte();
-			anIntArray115 = new int[var3];
+			length = buffer.readUByte();
+			models_2 = new int[length];			
 
-			for (var4 = 0; var4 < var3; var4++) {
-				anIntArray115[var4] = buffer.readUShort();
+			for (count = 0; count < length; count++) {
+				models_2[count] = buffer.readUShort();
 			}
 		} else if (opcode == 93) {
-			aBool67 = false;
+			renderOnMinimap = false;			
 		} else if (opcode == 95) {
-			anInt544 = buffer.readUShort();
+			combatLevel = buffer.readUShort();			
 		} else if (opcode == 97) {
-			anInt535 = buffer.readUShort();
+			resizeX = buffer.readUShort();			
 		} else if (opcode == 98) {
-			anInt541 = buffer.readUShort();
+			resizeY = buffer.readUShort();			
 		} else if (opcode == 99) {
-			aBool68 = true;
+			hasRenderPriority = true;			
 		} else if (opcode == 100) {
-			anInt546 = buffer.readByte();
+			ambient = buffer.readByte();			
 		} else if (opcode == 101) {
-			anInt547 = buffer.readByte();
+			contrast = buffer.readByte();			
 		} else if (opcode == 102) {
-			anInt548 = buffer.readUShort();
+			headIcon = buffer.readUShort();			
 		} else if (opcode == 103) {
 			anInt549 = buffer.readUShort() * 863838077;
 		} else if (opcode != 106 && opcode != 118) {
 			if (opcode == 107) {
-				aBool69 = false;
+				isClickable = false;				
 			} else if (opcode == 109) {
 				aBool70 = false;
 			} else if (opcode == 111) {
@@ -298,25 +298,25 @@ public class NpcDefinition extends Cacheable {
 				anInt551 = -1;
 			}
 
-			var3 = -1;
+			length = -1;
 			if (opcode == 118) {
-				var3 = buffer.readUShort();
-				if (var3 == '\uffff') {
-					var3 = -1;
+				length = buffer.readUShort();
+				if (length == '\uffff') {
+					length = -1;
 				}
 			}
 
-			var4 = buffer.readUByte();
-			anIntArray116 = new int[2 + var4];
+			count = buffer.readUByte();
+			anIntArray116 = new int[2 + count];
 
-			for (int var5 = 0; var5 <= var4; var5++) {
+			for (int var5 = 0; var5 <= count; var5++) {
 				anIntArray116[var5] = buffer.readUShort();
 				if (anIntArray116[var5] == '\uffff') {
 					anIntArray116[var5] = -1;
 				}
 			}
 
-			anIntArray116[var4 + 1] = var3;
+			anIntArray116[count + 1] = length;
 		}
 
 	}

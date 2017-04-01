@@ -2699,7 +2699,7 @@ public class Static {
 															var57 = var57.method544();
 														}
 
-														if (var57 != null && var57.aBool67 && var57.aBool69) {
+														if (var57 != null && var57.renderOnMinimap && var57.isClickable) {
 															var41 = var54.anInt628 / 32
 																	- AbstractClass2Sub1.staticPlayer1.anInt628 / 32;
 															var11 = var54.anInt591 / 32
@@ -5430,10 +5430,10 @@ public class Static {
 					var76 = var76.method544();
 				}
 
-				if (var76.anInt548 >= 0 && var76.anInt548 < staticSpriteArray3.length) {
+				if (var76.headIcon >= 0 && var76.headIcon < staticSpriteArray3.length) {
 					staticMethod186(var0, 15 + var0.anInt609);
 					if (Client.staticInt189 > -1) {
-						staticSpriteArray3[var76.anInt548].method637(Client.staticInt189 + var2 - 12,
+						staticSpriteArray3[var76.headIcon].method637(Client.staticInt189 + var2 - 12,
 								Client.staticInt180 + var3 - 30);
 					}
 				}
@@ -15243,11 +15243,11 @@ public class Static {
 				var0 = var0.method544();
 			}
 
-			if (var0 != null && var0.aBool69 && (!var0.aBool71 || var1 == -Client.staticInt269)) {
-				String var8 = var0.aString35;
-				if (var0.anInt544 != 0) {
-					var8 = var8 + staticMethod211(var0.anInt544, AbstractClass2Sub1.staticPlayer1.anInt685) + " "
-							+ staticString10 + "level-" + var0.anInt544 + staticString13;
+			if (var0 != null && var0.isClickable && (!var0.aBool71 || var1 == -Client.staticInt269)) {
+				String var8 = var0.name;
+				if (var0.combatLevel != 0) {
+					var8 = var8 + staticMethod211(var0.combatLevel, AbstractClass2Sub1.staticPlayer1.anInt685) + " "
+							+ staticString10 + "level-" + var0.combatLevel + staticString13;
 				}
 
 				if (var0.aBool71 && Client.staticBool22) {
@@ -15265,7 +15265,7 @@ public class Static {
 					}
 				} else {
 					int var6 = var0.aBool71 && Client.staticBool22 ? 2000 : 0;
-					String[] var4 = var0.aStringArray10;
+					String[] var4 = var0.options;
 					if (Client.staticBool34) {
 						var4 = staticMethod425(var4);
 					}
@@ -15308,7 +15308,7 @@ public class Static {
 								if (Client.staticClass4_6 != EnumerableSub1.staticClass4_2) {
 									if (EnumerableSub1.staticClass4_1 == Client.staticClass4_6
 											|| EnumerableSub1.staticClass4_4 == Client.staticClass4_6
-													&& var0.anInt544 > AbstractClass2Sub1.staticPlayer1.anInt685) {
+													&& var0.combatLevel > AbstractClass2Sub1.staticPlayer1.anInt685) {
 										var9 = 2000;
 									}
 
@@ -15384,7 +15384,7 @@ public class Static {
 		for (int var1 = 0; var1 < Client.staticInt186; var1++) {
 			Npc var2 = Client.staticNpcArray1[Client.staticIntArray121[var1]];
 			int var5 = 536870912 + (Client.staticIntArray121[var1] << 14);
-			if (var2 != null && var2.method565() && var0 == var2.aNpcDef1.aBool68 && var2.aNpcDef1.method543()) {
+			if (var2 != null && var2.method565() && var0 == var2.aNpcDef1.hasRenderPriority && var2.aNpcDef1.method543()) {
 				int var3 = var2.anInt628 >> 7;
 				int var4 = var2.anInt591 >> 7;
 				if (var3 >= 0 && var3 < 104 && var4 >= 0 && var4 < 104) {
@@ -15396,7 +15396,7 @@ public class Static {
 						Client.staticIntArrayArray9[var3][var4] = Client.staticInt292;
 					}
 
-					if (!var2.aNpcDef1.aBool69) {
+					if (!var2.aNpcDef1.isClickable) {
 						var5 += Integer.MIN_VALUE;
 					}
 
@@ -15603,11 +15603,11 @@ public class Static {
 						continue;
 					}
 
-					if (var25.aNpcDef1.anInt538 == 1 && (var25.anInt628 & 0x7f) == 64
+					if (var25.aNpcDef1.tileSpacesOccupied == 1 && (var25.anInt628 & 0x7f) == 64
 							&& (var25.anInt591 & 0x7f) == 64) {
 						for (var251 = 0; var251 < Client.staticInt186; var251++) {
 							var261 = Client.staticNpcArray1[Client.staticIntArray121[var251]];
-							if (var261 != null && var261 != var25 && var261.aNpcDef1.anInt538 == 1
+							if (var261 != null && var261 != var25 && var261.aNpcDef1.tileSpacesOccupied == 1
 									&& var25.anInt628 == var261.anInt628 && var25.anInt591 == var261.anInt591) {
 								staticMethod229(var261.aNpcDef1, Client.staticIntArray121[var251], var26, var10);
 							}
@@ -15636,7 +15636,7 @@ public class Static {
 					if ((var271.anInt628 & 0x7f) == 64 && (var271.anInt591 & 0x7f) == 64) {
 						for (var251 = 0; var251 < Client.staticInt186; var251++) {
 							var261 = Client.staticNpcArray1[Client.staticIntArray121[var251]];
-							if (var261 != null && var261.aNpcDef1.anInt538 == 1 && var261.anInt628 == var271.anInt628
+							if (var261 != null && var261.aNpcDef1.tileSpacesOccupied == 1 && var261.anInt628 == var271.anInt628
 									&& var271.anInt591 == var261.anInt591) {
 								staticMethod229(var261.aNpcDef1, Client.staticIntArray121[var251], var26, var10);
 							}
@@ -18029,17 +18029,17 @@ public class Static {
 						}
 
 						var8 = Client.inBuffer.method477(1);
-						var93.anInt626 = var93.aNpcDef1.anInt538;
+						var93.anInt626 = var93.aNpcDef1.tileSpacesOccupied;
 						var93.anInt631 = var93.aNpcDef1.anInt549 * 494637525;
 						if (var93.anInt631 == 0) {
 							var93.anInt592 = 0;
 						}
 
-						var93.anInt621 = var93.aNpcDef1.anInt550;
-						var93.anInt597 = var93.aNpcDef1.anInt540;
-						var93.anInt598 = var93.aNpcDef1.anInt536;
-						var93.anInt622 = -var93.aNpcDef1.anInt542;
-						var93.anInt594 = -var93.aNpcDef1.anInt539;
+						var93.anInt621 = var93.aNpcDef1.walkAnimation;
+						var93.anInt597 = var93.aNpcDef1.rotate180Animation;
+						var93.anInt598 = var93.aNpcDef1.rotate90RightAnimation;
+						var93.anInt622 = -var93.aNpcDef1.rotate90LeftAnimation;
+						var93.anInt594 = -var93.aNpcDef1.stanceAnimation;
 						var93.anInt634 = var93.aNpcDef1.anInt552;
 						var93.anInt595 = var93.aNpcDef1.anInt543;
 						var93.method657(var48 + AbstractClass2Sub1.staticPlayer1.anIntArray127[0],
@@ -18634,17 +18634,17 @@ public class Static {
 						}
 
 						var8 = Client.inBuffer.method477(1);
-						var93.anInt626 = var93.aNpcDef1.anInt538;
+						var93.anInt626 = var93.aNpcDef1.tileSpacesOccupied;
 						var93.anInt631 = var93.aNpcDef1.anInt549 * 494637525;
 						if (var93.anInt631 == 0) {
 							var93.anInt592 = 0;
 						}
 
-						var93.anInt621 = var93.aNpcDef1.anInt550;
-						var93.anInt597 = var93.aNpcDef1.anInt540;
-						var93.anInt598 = var93.aNpcDef1.anInt536;
-						var93.anInt622 = -var93.aNpcDef1.anInt542;
-						var93.anInt594 = -var93.aNpcDef1.anInt539;
+						var93.anInt621 = var93.aNpcDef1.walkAnimation;
+						var93.anInt597 = var93.aNpcDef1.rotate180Animation;
+						var93.anInt598 = var93.aNpcDef1.rotate90RightAnimation;
+						var93.anInt622 = -var93.aNpcDef1.rotate90LeftAnimation;
+						var93.anInt594 = -var93.aNpcDef1.stanceAnimation;
 						var93.anInt634 = var93.aNpcDef1.anInt552;
 						var93.anInt595 = var93.aNpcDef1.anInt543;
 						var93.method657(AbstractClass2Sub1.staticPlayer1.anIntArray127[0] + var48,
@@ -21635,7 +21635,7 @@ public class Static {
 			int var2 = Client.staticIntArray121[var0];
 			Npc var1 = Client.staticNpcArray1[var2];
 			if (var1 != null) {
-				staticMethod324(var1, var1.aNpcDef1.anInt538);
+				staticMethod324(var1, var1.aNpcDef1.tileSpacesOccupied);
 			}
 		}
 
@@ -21731,13 +21731,13 @@ public class Static {
 
 			if ((var5 & 0x1) != 0) {
 				var1.aNpcDef1 = staticMethod85(Client.inBuffer.method372());
-				var1.anInt626 = var1.aNpcDef1.anInt538;
+				var1.anInt626 = var1.aNpcDef1.tileSpacesOccupied;
 				var1.anInt631 = var1.aNpcDef1.anInt549 * 494637525;
-				var1.anInt621 = var1.aNpcDef1.anInt550;
-				var1.anInt597 = var1.aNpcDef1.anInt540;
-				var1.anInt598 = var1.aNpcDef1.anInt536;
-				var1.anInt622 = -var1.aNpcDef1.anInt542;
-				var1.anInt594 = -var1.aNpcDef1.anInt539;
+				var1.anInt621 = var1.aNpcDef1.walkAnimation;
+				var1.anInt597 = var1.aNpcDef1.rotate180Animation;
+				var1.anInt598 = var1.aNpcDef1.rotate90RightAnimation;
+				var1.anInt622 = -var1.aNpcDef1.rotate90LeftAnimation;
+				var1.anInt594 = -var1.aNpcDef1.stanceAnimation;
 				var1.anInt634 = var1.aNpcDef1.anInt552;
 				var1.anInt595 = var1.aNpcDef1.anInt543;
 			}

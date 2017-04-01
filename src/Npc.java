@@ -25,7 +25,7 @@ public final class Npc extends Mob {
 					}
 				}
 
-				if (aNpcDef1.anInt538 == 1) {
+				if (aNpcDef1.tileSpacesOccupied == 1) {
 					var1.aBool80 = true;
 				}
 

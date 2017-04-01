@@ -126,7 +126,7 @@ public final class Player extends Mob {
 	}
 
 	int method659() {
-		return aClass49_1 != null && aClass49_1.anInt198 != -1 ? Static.staticMethod85(aClass49_1.anInt198).anInt538
+		return aClass49_1 != null && aClass49_1.anInt198 != -1 ? Static.staticMethod85(aClass49_1.anInt198).tileSpacesOccupied
 				: 1;
 	}
 
