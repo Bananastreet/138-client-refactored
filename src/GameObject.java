@@ -49,11 +49,11 @@ public class GameObject extends Entity {
 			int var2;
 			int var4;
 			if (anInt650 != 1 && anInt650 != 3) {
-				var4 = var121.anInt485;
-				var2 = var121.anInt486;
+				var4 = var121.sizeX;
+				var2 = var121.sizeY;
 			} else {
-				var4 = var121.anInt486;
-				var2 = var121.anInt485;
+				var4 = var121.sizeY;
+				var2 = var121.sizeX;
 			}
 
 			int var9 = (var4 >> 1) + anInt646;

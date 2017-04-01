@@ -7504,12 +7504,12 @@ public class Static {
 			var12 = var1 * 4 + 24624 + (103 - var2) * 2048;
 			var10 = var5 >> 14 & 0x7fff;
 			ObjectDefinition var23 = staticMethod394(var10);
-			if (var23.anInt507 != -1) {
-				var19 = Class20.staticRasterizer2DSub3Array1[var23.anInt507];
+			if (var23.mapSceneID != -1) {
+				var19 = Class20.staticRasterizer2DSub3Array1[var23.mapSceneID];
 				if (var19 != null) {
-					int var14 = (var23.anInt485 * 4 - var19.anInt677) / 2;
-					int var16 = (var23.anInt486 * 4 - var19.anInt678) / 2;
-					var19.method655(var14 + var1 * 4 + 48, 48 + (104 - var2 - var23.anInt486) * 4 + var16);
+					int var14 = (var23.sizeX * 4 - var19.anInt677) / 2;
+					int var16 = (var23.sizeY * 4 - var19.anInt678) / 2;
+					var19.method655(var14 + var1 * 4 + 48, 48 + (104 - var2 - var23.sizeY) * 4 + var16);
 				}
 			} else {
 				if (var15 == 0 || var15 == 2) {
@@ -7583,12 +7583,12 @@ public class Static {
 			var6 = var5 >> 14 & 0x7fff;
 			var171 = staticMethod394(var6);
 			int var231;
-			if (var171.anInt507 != -1) {
-				var19 = Class20.staticRasterizer2DSub3Array1[var171.anInt507];
+			if (var171.mapSceneID != -1) {
+				var19 = Class20.staticRasterizer2DSub3Array1[var171.mapSceneID];
 				if (var19 != null) {
-					var10 = (var171.anInt485 * 4 - var19.anInt677) / 2;
-					var231 = (var171.anInt486 * 4 - var19.anInt678) / 2;
-					var19.method655(48 + var1 * 4 + var10, (104 - var2 - var171.anInt486) * 4 + 48 + var231);
+					var10 = (var171.sizeX * 4 - var19.anInt677) / 2;
+					var231 = (var171.sizeY * 4 - var19.anInt678) / 2;
+					var19.method655(48 + var1 * 4 + var10, (104 - var2 - var171.sizeY) * 4 + 48 + var231);
 				}
 			} else if (var15 == 9) {
 				var12 = 15658734;
@@ -7616,12 +7616,12 @@ public class Static {
 		if (var5 != 0) {
 			var7 = var5 >> 14 & 0x7fff;
 			var171 = staticMethod394(var7);
-			if (var171.anInt507 != -1) {
-				Sprite var232 = Class20.staticRasterizer2DSub3Array1[var171.anInt507];
+			if (var171.mapSceneID != -1) {
+				Sprite var232 = Class20.staticRasterizer2DSub3Array1[var171.mapSceneID];
 				if (var232 != null) {
-					var6 = (var171.anInt485 * 4 - var232.anInt677) / 2;
-					int var192 = (var171.anInt486 * 4 - var232.anInt678) / 2;
-					var232.method655(var1 * 4 + 48 + var6, var192 + (104 - var2 - var171.anInt486) * 4 + 48);
+					var6 = (var171.sizeX * 4 - var232.anInt677) / 2;
+					int var192 = (var171.sizeY * 4 - var232.anInt678) / 2;
+					var232.method655(var1 * 4 + 48 + var6, var192 + (104 - var2 - var171.sizeY) * 4 + 48);
 				}
 			}
 		}
@@ -9838,7 +9838,7 @@ public class Static {
 									var7 = Friend.staticScene1.method116(NodeSub4.staticInt155, var5, var6);
 									if (var7 != 0) {
 										var7 = var7 >> 14 & 0x7fff;
-										var8 = staticMethod394(var7).anInt494;
+										var8 = staticMethod394(var7).mapFunctionID;
 										if (var8 >= 0) {
 											var27 = var5;
 											var16 = var6;
@@ -11583,8 +11583,8 @@ public class Static {
 					ObjectDefinition var28 = staticMethod394(var14);
 					int var29 = var13 & 0x7;
 					int var16 = var30 & 0x7;
-					int var23 = var28.anInt485;
-					int var17 = var28.anInt486;
+					int var23 = var28.sizeX;
+					int var17 = var28.sizeY;
 					int var22;
 					if ((var26 & 0x1) == 1) {
 						var22 = var23;
@@ -11607,8 +11607,8 @@ public class Static {
 					var22 = var2 + var18;
 					int var37 = var13 & 0x7;
 					int var33 = var30 & 0x7;
-					int var20 = var28.anInt485;
-					int var34 = var28.anInt486;
+					int var20 = var28.sizeX;
+					int var34 = var28.sizeY;
 					int var21;
 					if ((var26 & 0x1) == 1) {
 						var21 = var20;
@@ -15471,11 +15471,11 @@ public class Static {
 		var5.anInt222 = var0;
 		var5.anInt224 = var1 * 128;
 		var5.anInt223 = var2 * 128;
-		int var7 = var3.anInt485;
-		int var6 = var3.anInt486;
+		int var7 = var3.sizeX;
+		int var6 = var3.sizeY;
 		if (var4 == 1 || var4 == 3) {
-			var7 = var3.anInt486;
-			var6 = var3.anInt485;
+			var7 = var3.sizeY;
+			var6 = var3.sizeX;
 		}
 
 		var5.anInt231 = (var7 + var1) * 128;
@@ -15545,14 +15545,14 @@ public class Static {
 
 					if (Client.staticInt258 == 1) {
 						staticMethod341("Use", Client.staticString32 + " " + staticString14 + " "
-								+ staticMethod118('\uffff') + var11.aString33, 1, var8, var26, var10);
+								+ staticMethod118('\uffff') + var11.name, 1, var8, var26, var10);
 					} else if (Client.staticBool32) {
 						if ((Class57.staticInt144 & 0x4) == 4) {
 							staticMethod341(Client.staticString31, Client.staticString30 + " " + staticString14 + " "
-									+ staticMethod118('\uffff') + var11.aString33, 2, var8, var26, var10);
+									+ staticMethod118('\uffff') + var11.name, 2, var8, var26, var10);
 						}
 					} else {
-						String[] var18 = var11.aStringArray8;
+						String[] var18 = var11.actions;
 						if (Client.staticBool34) {
 							var18 = staticMethod425(var18);
 						}
@@ -15581,13 +15581,13 @@ public class Static {
 										var20 = 1001;
 									}
 
-									staticMethod341(var18[var19], staticMethod118('\uffff') + var11.aString33, var20,
+									staticMethod341(var18[var19], staticMethod118('\uffff') + var11.name, var20,
 											var8, var26, var10);
 								}
 							}
 						}
 
-						staticMethod341("Examine", staticMethod118('\uffff') + var11.aString33, 1002,
+						staticMethod341("Examine", staticMethod118('\uffff') + var11.name, 1002,
 								var11.anInt483 << 14, var26, var10);
 					}
 				}
@@ -16095,11 +16095,11 @@ public class Static {
 			int var15;
 			int var16;
 			if (var4 != 1 && var4 != 3) {
-				var15 = var8.anInt485;
-				var16 = var8.anInt486;
+				var15 = var8.sizeX;
+				var16 = var8.sizeY;
 			} else {
-				var15 = var8.anInt486;
-				var16 = var8.anInt485;
+				var15 = var8.sizeY;
+				var16 = var8.sizeX;
 			}
 
 			int var19;
@@ -16143,10 +16143,10 @@ public class Static {
 			Object var13;
 			if (var5 == 22) {
 				if (!Client.lowMemory || var8.anInt489 != 0 || var8.anInt487 == 1 || var8.aBool63) {
-					if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+					if (var8.animationID == -1 && var8.anIntArray111 == null) {
 						var13 = var8.method514(22, var4, var9, var10, var11, var12);
 					} else {
-						var13 = new GameObject(var3, 22, var4, var0, var1, var2, var8.anInt491, true,
+						var13 = new GameObject(var3, 22, var4, var0, var1, var2, var8.animationID, true,
 								(Entity) null);
 					}
 
@@ -16160,10 +16160,10 @@ public class Static {
 				int var14;
 				if (var5 != 10 && var5 != 11) {
 					if (var5 >= 12) {
-						if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+						if (var8.animationID == -1 && var8.anIntArray111 == null) {
 							var13 = var8.method514(var5, var4, var9, var10, var11, var12);
 						} else {
-							var13 = new GameObject(var3, var5, var4, var0, var1, var2, var8.anInt491, true,
+							var13 = new GameObject(var3, var5, var4, var0, var1, var2, var8.animationID, true,
 									(Entity) null);
 						}
 
@@ -16176,10 +16176,10 @@ public class Static {
 							var7.method177(var1, var2, var15, var16, var8.aBool60);
 						}
 					} else if (var5 == 0) {
-						if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+						if (var8.animationID == -1 && var8.anIntArray111 == null) {
 							var13 = var8.method514(0, var4, var9, var10, var11, var12);
 						} else {
-							var13 = new GameObject(var3, 0, var4, var0, var1, var2, var8.anInt491, true,
+							var13 = new GameObject(var3, 0, var4, var0, var1, var2, var8.animationID, true,
 									(Entity) null);
 						}
 
@@ -16231,10 +16231,10 @@ public class Static {
 							var6.method135(var0, var1, var2, var8.anInt492);
 						}
 					} else if (var5 == 1) {
-						if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+						if (var8.animationID == -1 && var8.anIntArray111 == null) {
 							var13 = var8.method514(1, var4, var9, var10, var11, var12);
 						} else {
-							var13 = new GameObject(var3, 1, var4, var0, var1, var2, var8.anInt491, true,
+							var13 = new GameObject(var3, 1, var4, var0, var1, var2, var8.animationID, true,
 									(Entity) null);
 						}
 
@@ -16260,13 +16260,13 @@ public class Static {
 						if (var5 == 2) {
 							var14 = 1 + var4 & 0x3;
 							Object var25;
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var25 = var8.method514(2, var4 + 4, var9, var10, var11, var12);
 								var27 = var8.method514(2, var14, var9, var10, var11, var12);
 							} else {
-								var25 = new GameObject(var3, 2, 4 + var4, var0, var1, var2, var8.anInt491, true,
+								var25 = new GameObject(var3, 2, 4 + var4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
-								var27 = new GameObject(var3, 2, var14, var0, var1, var2, var8.anInt491, true,
+								var27 = new GameObject(var3, 2, var14, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16296,10 +16296,10 @@ public class Static {
 								var6.method135(var0, var1, var2, var8.anInt492);
 							}
 						} else if (var5 == 3) {
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var13 = var8.method514(3, var4, var9, var10, var11, var12);
 							} else {
-								var13 = new GameObject(var3, 3, var4, var0, var1, var2, var8.anInt491, true,
+								var13 = new GameObject(var3, 3, var4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16321,10 +16321,10 @@ public class Static {
 								var7.method176(var1, var2, var5, var4, var8.aBool60);
 							}
 						} else if (var5 == 9) {
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var13 = var8.method514(var5, var4, var9, var10, var11, var12);
 							} else {
-								var13 = new GameObject(var3, var5, var4, var0, var1, var2, var8.anInt491, true,
+								var13 = new GameObject(var3, var5, var4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16337,10 +16337,10 @@ public class Static {
 								var6.method135(var0, var1, var2, var8.anInt492);
 							}
 						} else if (var5 == 4) {
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var13 = var8.method514(4, var4, var9, var10, var11, var12);
 							} else {
-								var13 = new GameObject(var3, 4, var4, var0, var1, var2, var8.anInt491, true,
+								var13 = new GameObject(var3, 4, var4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16353,10 +16353,10 @@ public class Static {
 								var14 = staticMethod394(var23 >> 14 & 0x7fff).anInt492;
 							}
 
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var27 = var8.method514(4, var4, var9, var10, var11, var12);
 							} else {
-								var27 = new GameObject(var3, 4, var4, var0, var1, var2, var8.anInt491, true,
+								var27 = new GameObject(var3, 4, var4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16370,10 +16370,10 @@ public class Static {
 								var14 = staticMethod394(var23 >> 14 & 0x7fff).anInt492 / 2;
 							}
 
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var27 = var8.method514(4, 4 + var4, var9, var10, var11, var12);
 							} else {
-								var27 = new GameObject(var3, 4, var4 + 4, var0, var1, var2, var8.anInt491, true,
+								var27 = new GameObject(var3, 4, var4 + 4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16382,10 +16382,10 @@ public class Static {
 									var18);
 						} else if (var5 == 7) {
 							var23 = var4 + 2 & 0x3;
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var13 = var8.method514(4, var23 + 4, var9, var10, var11, var12);
 							} else {
-								var13 = new GameObject(var3, 4, var23 + 4, var0, var1, var2, var8.anInt491, true,
+								var13 = new GameObject(var3, 4, var23 + 4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16400,13 +16400,13 @@ public class Static {
 
 							int var281 = var4 + 2 & 0x3;
 							Object var28;
-							if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+							if (var8.animationID == -1 && var8.anIntArray111 == null) {
 								var27 = var8.method514(4, var4 + 4, var9, var10, var11, var12);
 								var28 = var8.method514(4, var281 + 4, var9, var10, var11, var12);
 							} else {
-								var27 = new GameObject(var3, 4, var4 + 4, var0, var1, var2, var8.anInt491, true,
+								var27 = new GameObject(var3, 4, var4 + 4, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
-								var28 = new GameObject(var3, 4, 4 + var281, var0, var1, var2, var8.anInt491, true,
+								var28 = new GameObject(var3, 4, 4 + var281, var0, var1, var2, var8.animationID, true,
 										(Entity) null);
 							}
 
@@ -16416,10 +16416,10 @@ public class Static {
 						}
 					}
 				} else {
-					if (var8.anInt491 == -1 && var8.anIntArray111 == null) {
+					if (var8.animationID == -1 && var8.anIntArray111 == null) {
 						var13 = var8.method514(10, var4, var9, var10, var11, var12);
 					} else {
-						var13 = new GameObject(var3, 10, var4, var0, var1, var2, var8.anInt491, true,
+						var13 = new GameObject(var3, 10, var4, var0, var1, var2, var8.animationID, true,
 								(Entity) null);
 					}
 
@@ -17159,13 +17159,13 @@ public class Static {
 				if (var1 == 2) {
 					Friend.staticScene1.method108(var0, var2, var3);
 					var8 = staticMethod394(var37);
-					if (var8.anInt485 + var2 > 103 || var8.anInt485 + var3 > 103 || var8.anInt486 + var2 > 103
-							|| var8.anInt486 + var3 > 103) {
+					if (var8.sizeX + var2 > 103 || var8.sizeX + var3 > 103 || var8.sizeY + var2 > 103
+							|| var8.sizeY + var3 > 103) {
 						return;
 					}
 
 					if (var8.anInt487 != 0) {
-						Client.staticClass38Array1[var0].method178(var2, var3, var8.anInt485, var8.anInt486, var10,
+						Client.staticClass38Array1[var0].method178(var2, var3, var8.sizeX, var8.sizeY, var10,
 								var8.aBool60);
 					}
 				}
@@ -17191,11 +17191,11 @@ public class Static {
 				int var9;
 				int var81;
 				if (var5 != 1 && var5 != 3) {
-					var81 = var101.anInt485;
-					var9 = var101.anInt486;
+					var81 = var101.sizeX;
+					var9 = var101.sizeY;
 				} else {
-					var81 = var101.anInt486;
-					var9 = var101.anInt485;
+					var81 = var101.sizeY;
+					var9 = var101.sizeX;
 				}
 
 				int var25;
@@ -17234,10 +17234,10 @@ public class Static {
 
 				Object var17;
 				if (var6 == 22) {
-					if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+					if (var101.animationID == -1 && var101.anIntArray111 == null) {
 						var17 = var101.method519(22, var5, var18, var19, var20, var21);
 					} else {
-						var17 = new GameObject(var4, 22, var5, var15, var2, var3, var101.anInt491, true,
+						var17 = new GameObject(var4, 22, var5, var15, var2, var3, var101.animationID, true,
 								(Entity) null);
 					}
 
@@ -17247,10 +17247,10 @@ public class Static {
 					}
 				} else if (var6 != 10 && var6 != 11) {
 					if (var6 >= 12) {
-						if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+						if (var101.animationID == -1 && var101.anIntArray111 == null) {
 							var17 = var101.method519(var6, var5, var18, var19, var20, var21);
 						} else {
-							var17 = new GameObject(var4, var6, var5, var15, var2, var3, var101.anInt491, true,
+							var17 = new GameObject(var4, var6, var5, var15, var2, var3, var101.animationID, true,
 									(Entity) null);
 						}
 
@@ -17259,10 +17259,10 @@ public class Static {
 							var71.method177(var2, var3, var81, var9, var101.aBool60);
 						}
 					} else if (var6 == 0) {
-						if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+						if (var101.animationID == -1 && var101.anIntArray111 == null) {
 							var17 = var101.method519(0, var5, var18, var19, var20, var21);
 						} else {
-							var17 = new GameObject(var4, 0, var5, var15, var2, var3, var101.anInt491, true,
+							var17 = new GameObject(var4, 0, var5, var15, var2, var3, var101.animationID, true,
 									(Entity) null);
 						}
 
@@ -17272,10 +17272,10 @@ public class Static {
 							var71.method176(var2, var3, var6, var5, var101.aBool60);
 						}
 					} else if (var6 == 1) {
-						if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+						if (var101.animationID == -1 && var101.anIntArray111 == null) {
 							var17 = var101.method519(1, var5, var18, var19, var20, var21);
 						} else {
-							var17 = new GameObject(var4, 1, var5, var15, var2, var3, var101.anInt491, true,
+							var17 = new GameObject(var4, 1, var5, var15, var2, var3, var101.animationID, true,
 									(Entity) null);
 						}
 
@@ -17290,13 +17290,13 @@ public class Static {
 						if (var6 == 2) {
 							var36 = 1 + var5 & 0x3;
 							Object var35;
-							if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+							if (var101.animationID == -1 && var101.anIntArray111 == null) {
 								var35 = var101.method519(2, var5 + 4, var18, var19, var20, var21);
 								var22 = var101.method519(2, var36, var18, var19, var20, var21);
 							} else {
-								var35 = new GameObject(var4, 2, var5 + 4, var15, var2, var3, var101.anInt491, true,
+								var35 = new GameObject(var4, 2, var5 + 4, var15, var2, var3, var101.animationID, true,
 										(Entity) null);
-								var22 = new GameObject(var4, 2, var36, var15, var2, var3, var101.anInt491, true,
+								var22 = new GameObject(var4, 2, var36, var15, var2, var3, var101.animationID, true,
 										(Entity) null);
 							}
 
@@ -17306,10 +17306,10 @@ public class Static {
 								var71.method176(var2, var3, var6, var5, var101.aBool60);
 							}
 						} else if (var6 == 3) {
-							if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+							if (var101.animationID == -1 && var101.anIntArray111 == null) {
 								var17 = var101.method519(3, var5, var18, var19, var20, var21);
 							} else {
-								var17 = new GameObject(var4, 3, var5, var15, var2, var3, var101.anInt491, true,
+								var17 = new GameObject(var4, 3, var5, var15, var2, var3, var101.animationID, true,
 										(Entity) null);
 							}
 
@@ -17319,10 +17319,10 @@ public class Static {
 								var71.method176(var2, var3, var6, var5, var101.aBool60);
 							}
 						} else if (var6 == 9) {
-							if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+							if (var101.animationID == -1 && var101.anIntArray111 == null) {
 								var17 = var101.method519(var6, var5, var18, var19, var20, var21);
 							} else {
-								var17 = new GameObject(var4, var6, var5, var15, var2, var3, var101.anInt491, true,
+								var17 = new GameObject(var4, var6, var5, var15, var2, var3, var101.animationID, true,
 										(Entity) null);
 							}
 
@@ -17331,10 +17331,10 @@ public class Static {
 								var71.method177(var2, var3, var81, var9, var101.aBool60);
 							}
 						} else if (var6 == 4) {
-							if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+							if (var101.animationID == -1 && var101.anIntArray111 == null) {
 								var17 = var101.method519(4, var5, var18, var19, var20, var21);
 							} else {
-								var17 = new GameObject(var4, 4, var5, var15, var2, var3, var101.anInt491, true,
+								var17 = new GameObject(var4, 4, var5, var15, var2, var3, var101.animationID, true,
 										(Entity) null);
 							}
 
@@ -17349,10 +17349,10 @@ public class Static {
 									var36 = staticMethod394(var351 >> 14 & 0x7fff).anInt492;
 								}
 
-								if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+								if (var101.animationID == -1 && var101.anIntArray111 == null) {
 									var22 = var101.method519(4, var5, var18, var19, var20, var21);
 								} else {
-									var22 = new GameObject(var4, 4, var5, var15, var2, var3, var101.anInt491, true,
+									var22 = new GameObject(var4, 4, var5, var15, var2, var3, var101.animationID, true,
 											(Entity) null);
 								}
 
@@ -17366,10 +17366,10 @@ public class Static {
 									var36 = staticMethod394(var351 >> 14 & 0x7fff).anInt492 / 2;
 								}
 
-								if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+								if (var101.animationID == -1 && var101.anIntArray111 == null) {
 									var22 = var101.method519(4, var5 + 4, var18, var19, var20, var21);
 								} else {
-									var22 = new GameObject(var4, 4, 4 + var5, var15, var2, var3, var101.anInt491, true,
+									var22 = new GameObject(var4, 4, 4 + var5, var15, var2, var3, var101.animationID, true,
 											(Entity) null);
 								}
 
@@ -17378,10 +17378,10 @@ public class Static {
 										var36 * staticIntArray52[var5], var28, var29);
 							} else if (var6 == 7) {
 								var351 = var5 + 2 & 0x3;
-								if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+								if (var101.animationID == -1 && var101.anIntArray111 == null) {
 									var17 = var101.method519(4, var351 + 4, var18, var19, var20, var21);
 								} else {
-									var17 = new GameObject(var4, 4, var351 + 4, var15, var2, var3, var101.anInt491,
+									var17 = new GameObject(var4, 4, var351 + 4, var15, var2, var3, var101.animationID,
 											true, (Entity) null);
 								}
 
@@ -17396,13 +17396,13 @@ public class Static {
 
 								int var30 = var5 + 2 & 0x3;
 								Object var31;
-								if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+								if (var101.animationID == -1 && var101.anIntArray111 == null) {
 									var22 = var101.method519(4, 4 + var5, var18, var19, var20, var21);
 									var31 = var101.method519(4, 4 + var30, var18, var19, var20, var21);
 								} else {
-									var22 = new GameObject(var4, 4, 4 + var5, var15, var2, var3, var101.anInt491, true,
+									var22 = new GameObject(var4, 4, 4 + var5, var15, var2, var3, var101.animationID, true,
 											(Entity) null);
-									var31 = new GameObject(var4, 4, var30 + 4, var15, var2, var3, var101.anInt491, true,
+									var31 = new GameObject(var4, 4, var30 + 4, var15, var2, var3, var101.animationID, true,
 											(Entity) null);
 								}
 
@@ -17413,10 +17413,10 @@ public class Static {
 						}
 					}
 				} else {
-					if (var101.anInt491 == -1 && var101.anIntArray111 == null) {
+					if (var101.animationID == -1 && var101.anIntArray111 == null) {
 						var17 = var101.method519(10, var5, var18, var19, var20, var21);
 					} else {
-						var17 = new GameObject(var4, 10, var5, var15, var2, var3, var101.anInt491, true,
+						var17 = new GameObject(var4, 10, var5, var15, var2, var3, var101.animationID, true,
 								(Entity) null);
 					}
 
@@ -20506,11 +20506,11 @@ public class Static {
 				int var13;
 				int var19;
 				if (var36 != 1 && var36 != 3) {
-					var13 = var12.anInt485;
-					var19 = var12.anInt486;
+					var13 = var12.sizeX;
+					var19 = var12.sizeY;
 				} else {
-					var13 = var12.anInt486;
-					var19 = var12.anInt485;
+					var13 = var12.sizeY;
+					var19 = var12.sizeX;
 				}
 
 				int var16 = (var13 >> 1) + var15;
@@ -22914,7 +22914,7 @@ public class Static {
 			}
 
 			var1.method510();
-			if (var1.aBool57) {
+			if (var1.isSolid) {
 				var1.anInt487 = 0;
 				var1.aBool60 = false;
 			}

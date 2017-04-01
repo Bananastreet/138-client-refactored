@@ -10,31 +10,31 @@ public class ObjectDefinition extends Cacheable {
 	static Cache staticCache16 = new Cache(30);
 	static Cache staticCache17 = new Cache(30);
 	static EntitySub3[] staticRenderableSub3Array1 = new EntitySub3[4];
-	public String aString33 = "null";
-	public int anInt485 = 1;
-	public int anInt486 = 1;
+	public String name = "null";
+	public int sizeX = 1;
+	public int sizeY = 1;
 	public int anInt487 = 2;
 	public boolean aBool60 = true;
 	public int anInt489 = -1;
 	int anInt490 = -1;
-	boolean aBool58 = false;
+	boolean nonFlatShading = false;
 	public boolean aBool59 = false;
-	public int anInt491 = -1;
+	public int animationID = -1;
 	public int anInt492 = 16;
-	int anInt497 = 0;
-	int anInt484 = 0;
-	public int anInt494 = -1;
+	int ambient = 0;
+	int contrast = 0;
+	public int mapFunctionID = -1;
 	boolean aBool61 = false;
 	public boolean aBool62 = true;
-	int anInt496 = 128;
-	int anInt488 = 128;
-	int anInt498 = 128;
-	public int anInt507 = -1;
-	int anInt499 = 0;
-	int anInt500 = 0;
-	int anInt502 = 0;
+	int modelSizeX = 128;
+	int modelSizeHeight = 128;
+	int modelSizeY = 128;
+	public int mapSceneID = -1;
+	int offsetX = 0;
+	int offsetHeight = 0;
+	int offsetY = 0;
 	public boolean aBool63 = false;
-	boolean aBool57 = false;
+	boolean isSolid = false;
 	public int anInt493 = 238048809;
 	int anInt503 = -1;
 	int anInt501 = -1;
@@ -42,55 +42,55 @@ public class ObjectDefinition extends Cacheable {
 	public int anInt505 = 0;
 	public int anInt495 = 0;
 	public int anInt506 = 0;
-	public String[] aStringArray8 = new String[5];
-	int[] anIntArray108;
-	int[] anIntArray110;
-	short[] aShortArray10;
-	short[] aShortArray11;
-	short[] aShortArray12;
-	short[] aShortArray13;
+	public String[] actions = new String[5];
+	int[] objectModels;
+	int[] objectTypes;
+	short[] recolorToFind;
+	short[] recolorToReplace;
+	short[] retextureToFind;
+	short[] textureToReplace;
 	public int[] anIntArray109;
 	public int[] anIntArray111;
 
 	// TODO obj def decode
 	void decode(ByteBuf buffer, int opcode) {		
-		int var3;
-		int var4;
+		int count;
+		int length;
 		if (opcode == 1) {
-			var4 = buffer.readUByte();
-			if (var4 > 0) {
-				if (anIntArray110 != null && !staticBool46) {
-					buffer.position += var4 * 3;
+			length = buffer.readUByte();
+			if (length > 0) {
+				if (objectTypes != null && !staticBool46) {					
+					buffer.position += length * 3;
 				} else {
-					anIntArray108 = new int[var4];
-					anIntArray110 = new int[var4];
+					objectModels = new int[length];						
+					objectTypes = new int[length];
 
-					for (var3 = 0; var3 < var4; var3++) {
-						anIntArray110[var3] = buffer.readUShort();
-						anIntArray108[var3] = buffer.readUByte();
+					for (count = 0; count < length; count++) {						
+						objectTypes[count] = buffer.readUShort();
+						objectModels[count] = buffer.readUByte();
 					}
 				}
 			}
 		} else if (opcode == 2) {
-			aString33 = buffer.readString();
+			name = buffer.readString();			
 		} else if (opcode == 5) {
-			var4 = buffer.readUByte();
-			if (var4 > 0) {
-				if (anIntArray110 != null && !staticBool46) {
-					buffer.position += var4 * 2;
+			length = buffer.readUByte();
+			if (length > 0) {
+				if (objectTypes != null && !staticBool46) {
+					buffer.position += length * 2;
 				} else {
-					anIntArray108 = null;
-					anIntArray110 = new int[var4];
+					objectModels = null;
+					objectTypes = new int[length];
 
-					for (var3 = 0; var3 < var4; var3++) {
-						anIntArray110[var3] = buffer.readUShort();
+					for (count = 0; count < length; count++) {
+						objectTypes[count] = buffer.readUShort();
 					}
 				}
 			}
 		} else if (opcode == 14) {
-			anInt485 = buffer.readUByte();
+			sizeX = buffer.readUByte();			
 		} else if (opcode == 15) {
-			anInt486 = buffer.readUByte();
+			sizeY = buffer.readUByte();			
 		} else if (opcode == 17) {
 			anInt487 = 0;
 			aBool60 = false;
@@ -101,71 +101,71 @@ public class ObjectDefinition extends Cacheable {
 		} else if (opcode == 21) {
 			anInt490 = 0;
 		} else if (opcode == 22) {
-			aBool58 = true;
+			nonFlatShading = true;			
 		} else if (opcode == 23) {
 			aBool59 = true;
 		} else if (opcode == 24) {
-			anInt491 = buffer.readUShort();
-			if (anInt491 == '\uffff') {
-				anInt491 = -1;
+			animationID = buffer.readUShort();			
+			if (animationID == '\uffff') {
+				animationID = -1;
 			}
 		} else if (opcode == 27) {
 			anInt487 = 1;
 		} else if (opcode == 28) {
 			anInt492 = buffer.readUByte();
 		} else if (opcode == 29) {
-			anInt497 = buffer.readByte();
+			ambient = buffer.readByte();			
 		} else if (opcode == 39) {
-			anInt484 = buffer.readByte() * 25;
+			contrast = buffer.readByte() * 25;			
 		} else if (opcode >= 30 && opcode < 35) {
-			aStringArray8[opcode - 30] = buffer.readString();
-			if (aStringArray8[opcode - 30].equalsIgnoreCase("Hidden")) {
-				aStringArray8[opcode - 30] = null;
+			actions[opcode - 30] = buffer.readString();
+			if (actions[opcode - 30].equalsIgnoreCase("Hidden")) {				
+				actions[opcode - 30] = null;
 			}
 		} else if (opcode == 40) {
-			var4 = buffer.readUByte();
-			aShortArray10 = new short[var4];
-			aShortArray11 = new short[var4];
+			length = buffer.readUByte();
+			recolorToFind = new short[length];			
+			recolorToReplace = new short[length];			
 
-			for (var3 = 0; var3 < var4; var3++) {
-				aShortArray10[var3] = (short) buffer.readUShort();
-				aShortArray11[var3] = (short) buffer.readUShort();
+			for (count = 0; count < length; count++) {
+				recolorToFind[count] = (short) buffer.readUShort();
+				recolorToReplace[count] = (short) buffer.readUShort();
 			}
 		} else if (opcode == 41) {
-			var4 = buffer.readUByte();
-			aShortArray12 = new short[var4];
-			aShortArray13 = new short[var4];
+			length = buffer.readUByte();
+			retextureToFind = new short[length];			
+			textureToReplace = new short[length];
 
-			for (var3 = 0; var3 < var4; var3++) {
-				aShortArray12[var3] = (short) buffer.readUShort();
-				aShortArray13[var3] = (short) buffer.readUShort();
+			for (count = 0; count < length; count++) {
+				retextureToFind[count] = (short) buffer.readUShort();
+				textureToReplace[count] = (short) buffer.readUShort();				
 			}
 		} else if (opcode == 60) {
-			anInt494 = buffer.readUShort();
+			mapFunctionID = buffer.readUShort();			
 		} else if (opcode == 62) {
 			aBool61 = true;
 		} else if (opcode == 64) {
 			aBool62 = false;
 		} else if (opcode == 65) {
-			anInt496 = buffer.readUShort();
+			modelSizeX = buffer.readUShort();			
 		} else if (opcode == 66) {
-			anInt488 = buffer.readUShort();
+			modelSizeHeight = buffer.readUShort();			
 		} else if (opcode == 67) {
-			anInt498 = buffer.readUShort();
+			modelSizeY = buffer.readUShort();			
 		} else if (opcode == 68) {
-			anInt507 = buffer.readUShort();
+			mapSceneID = buffer.readUShort();			
 		} else if (opcode == 69) {
 			buffer.readUByte();
 		} else if (opcode == 70) {
-			anInt499 = buffer.method364();
+			offsetX = buffer.method364();			
 		} else if (opcode == 71) {
-			anInt500 = buffer.method364();
+			offsetHeight = buffer.method364();			
 		} else if (opcode == 72) {
-			anInt502 = buffer.method364();
+			offsetY = buffer.method364();			
 		} else if (opcode == 73) {
 			aBool63 = true;
 		} else if (opcode == 74) {
-			aBool57 = true;
+			isSolid = true;			
 		} else if (opcode == 75) {
 			anInt493 = buffer.readUByte() * -238048809;
 		} else if (opcode != 77 && opcode != 92) {
@@ -176,11 +176,11 @@ public class ObjectDefinition extends Cacheable {
 				anInt495 = buffer.readUShort() * -2128966019;
 				anInt506 = buffer.readUShort() * 1408592117;
 				anInt505 = buffer.readUByte();
-				var4 = buffer.readUByte();
-				anIntArray109 = new int[var4];
+				length = buffer.readUByte();
+				anIntArray109 = new int[length];
 
-				for (var3 = 0; var3 < var4; var3++) {
-					anIntArray109[var3] = buffer.readUShort();
+				for (count = 0; count < length; count++) {
+					anIntArray109[count] = buffer.readUShort();
 				}
 			} else if (opcode == 81) {
 				anInt490 = buffer.readUByte() * 256;
@@ -196,25 +196,25 @@ public class ObjectDefinition extends Cacheable {
 				anInt501 = -1;
 			}
 
-			var4 = -1;
+			length = -1;
 			if (opcode == 92) {
-				var4 = buffer.readUShort();
-				if (var4 == '\uffff') {
-					var4 = -1;
+				length = buffer.readUShort();
+				if (length == '\uffff') {
+					length = -1;
 				}
 			}
 
-			var3 = buffer.readUByte();
-			anIntArray111 = new int[var3 + 2];
+			count = buffer.readUByte();
+			anIntArray111 = new int[count + 2];
 
-			for (int var5 = 0; var5 <= var3; var5++) {
+			for (int var5 = 0; var5 <= count; var5++) {
 				anIntArray111[var5] = buffer.readUShort();
 				if (anIntArray111[var5] == '\uffff') {
 					anIntArray111[var5] = -1;
 				}
 			}
 
-			anIntArray111[var3 + 1] = var4;
+			anIntArray111[count + 1] = length;
 		}
 
 	}
@@ -222,12 +222,12 @@ public class ObjectDefinition extends Cacheable {
 	void method510() {
 		if (anInt489 == -1) {
 			anInt489 = 0;
-			if (anIntArray110 != null && (anIntArray108 == null || anIntArray108[0] == 10)) {
+			if (objectTypes != null && (objectModels == null || objectModels[0] == 10)) {
 				anInt489 = 1;
 			}
 
 			for (int var1 = 0; var1 < 5; var1++) {
-				if (aStringArray8[var1] != null) {
+				if (actions[var1] != null) {
 					anInt489 = 1;
 				}
 			}
@@ -240,23 +240,23 @@ public class ObjectDefinition extends Cacheable {
 	}
 
 	public final boolean method511(int var1) {
-		if (anIntArray108 != null) {
-			for (int var4 = 0; var4 < anIntArray108.length; var4++) {
-				if (var1 == anIntArray108[var4]) {
-					return staticJs5Index19.method276(anIntArray110[var4] & 0xffff, 0);
+		if (objectModels != null) {
+			for (int var4 = 0; var4 < objectModels.length; var4++) {
+				if (var1 == objectModels[var4]) {
+					return staticJs5Index19.method276(objectTypes[var4] & 0xffff, 0);
 				}
 			}
 
 			return true;
-		} else if (anIntArray110 == null) {
+		} else if (objectTypes == null) {
 			return true;
 		} else if (var1 != 10) {
 			return true;
 		} else {
 			boolean var3 = true;
 
-			for (int var2 = 0; var2 < anIntArray110.length; var2++) {
-				var3 &= staticJs5Index19.method276(anIntArray110[var2] & 0xffff, 0);
+			for (int var2 = 0; var2 < objectTypes.length; var2++) {
+				var3 &= staticJs5Index19.method276(objectTypes[var2] & 0xffff, 0);
 			}
 
 			return var3;
@@ -266,7 +266,7 @@ public class ObjectDefinition extends Cacheable {
 	public final Model method512(int var1, int var2, int[][] var3, int var4, int var5, int var6, AnimationDefintion var7,
 			int var8) {
 		long var9;
-		if (anIntArray108 == null) {
+		if (objectModels == null) {
 			var9 = var2 + (anInt483 << 10);
 		} else {
 			var9 = var2 + (anInt483 << 10) + (var1 << 3);
@@ -279,7 +279,7 @@ public class ObjectDefinition extends Cacheable {
 				return null;
 			}
 
-			var11 = var12.method583(64 + anInt497, 768 + anInt484, -50, -10, -50);
+			var11 = var12.method583(64 + ambient, 768 + contrast, -50, -10, -50);
 			staticCache17.method170(var11, var9);
 		}
 
@@ -301,13 +301,13 @@ public class ObjectDefinition extends Cacheable {
 	}
 
 	public final boolean method513() {
-		if (anIntArray110 == null) {
+		if (objectTypes == null) {
 			return true;
 		} else {
 			boolean var1 = true;
 
-			for (int var2 = 0; var2 < anIntArray110.length; var2++) {
-				var1 &= staticJs5Index19.method276(anIntArray110[var2] & 0xffff, 0);
+			for (int var2 = 0; var2 < objectTypes.length; var2++) {
+				var1 &= staticJs5Index19.method276(objectTypes[var2] & 0xffff, 0);
 			}
 
 			return var1;
@@ -316,7 +316,7 @@ public class ObjectDefinition extends Cacheable {
 
 	public final Entity method514(int var1, int var2, int[][] var3, int var4, int var5, int var6) {
 		long var8;
-		if (anIntArray108 == null) {
+		if (objectModels == null) {
 			var8 = (anInt483 << 10) + var2;
 		} else {
 			var8 = (anInt483 << 10) + (var1 << 3) + var2;
@@ -329,11 +329,11 @@ public class ObjectDefinition extends Cacheable {
 				return null;
 			}
 
-			if (!aBool58) {
-				var7 = var10.method583(64 + anInt497, anInt484 + 768, -50, -10, -50);
+			if (!nonFlatShading) {
+				var7 = var10.method583(64 + ambient, contrast + 768, -50, -10, -50);
 			} else {
-				var10.aShort2 = (short) (anInt497 + 64);
-				var10.aShort3 = (short) (768 + anInt484);
+				var10.aShort2 = (short) (ambient + 64);
+				var10.aShort3 = (short) (768 + contrast);
 				var10.method586();
 				var7 = var10;
 			}
@@ -341,7 +341,7 @@ public class ObjectDefinition extends Cacheable {
 			staticCache16.method170((Cacheable) var7, var8);
 		}
 
-		if (aBool58) {
+		if (nonFlatShading) {
 			var7 = ((EntitySub3) var7).method581();
 		}
 
@@ -362,12 +362,12 @@ public class ObjectDefinition extends Cacheable {
 		boolean var6;
 		int var7;
 		int var9;
-		if (anIntArray108 == null) {
+		if (objectModels == null) {
 			if (var1 != 10) {
 				return null;
 			}
 
-			if (anIntArray110 == null) {
+			if (objectTypes == null) {
 				return null;
 			}
 
@@ -376,10 +376,10 @@ public class ObjectDefinition extends Cacheable {
 				var6 = !var6;
 			}
 
-			var4 = anIntArray110.length;
+			var4 = objectTypes.length;
 
 			for (var9 = 0; var9 < var4; var9++) {
-				var7 = anIntArray110[var9];
+				var7 = objectTypes[var9];
 				if (var6) {
 					var7 += 65536;
 				}
@@ -409,8 +409,8 @@ public class ObjectDefinition extends Cacheable {
 		} else {
 			var9 = -1;
 
-			for (var4 = 0; var4 < anIntArray108.length; var4++) {
-				if (var1 == anIntArray108[var4]) {
+			for (var4 = 0; var4 < objectModels.length; var4++) {
+				if (var1 == objectModels[var4]) {
 					var9 = var4;
 					break;
 				}
@@ -420,7 +420,7 @@ public class ObjectDefinition extends Cacheable {
 				return null;
 			}
 
-			var4 = anIntArray110[var9];
+			var4 = objectTypes[var9];
 			boolean var10 = aBool61 ^ var2 > 3;
 			if (var10) {
 				var4 += 65536;
@@ -441,21 +441,21 @@ public class ObjectDefinition extends Cacheable {
 			}
 		}
 
-		if (anInt496 == 128 && anInt488 == 128 && anInt498 == 128) {
+		if (modelSizeX == 128 && modelSizeHeight == 128 && modelSizeY == 128) {
 			var6 = false;
 		} else {
 			var6 = true;
 		}
 
 		boolean var101;
-		if (anInt499 == 0 && anInt500 == 0 && anInt502 == 0) {
+		if (offsetX == 0 && offsetHeight == 0 && offsetY == 0) {
 			var101 = false;
 		} else {
 			var101 = true;
 		}
 
-		EntitySub3 var91 = new EntitySub3(var3, var2 == 0 && !var6 && !var101, aShortArray10 == null,
-				aShortArray12 == null, true);
+		EntitySub3 var91 = new EntitySub3(var3, var2 == 0 && !var6 && !var101, recolorToFind == null,
+				retextureToFind == null, true);
 		if (var1 == 4 && var2 > 3) {
 			var91.method577(256);
 			var91.method578(45, 0, -45);
@@ -470,24 +470,24 @@ public class ObjectDefinition extends Cacheable {
 			var91.method576();
 		}
 
-		if (aShortArray10 != null) {
-			for (var7 = 0; var7 < aShortArray10.length; var7++) {
-				var91.method585(aShortArray10[var7], aShortArray11[var7]);
+		if (recolorToFind != null) {
+			for (var7 = 0; var7 < recolorToFind.length; var7++) {
+				var91.method585(recolorToFind[var7], recolorToReplace[var7]);
 			}
 		}
 
-		if (aShortArray12 != null) {
-			for (var7 = 0; var7 < aShortArray12.length; var7++) {
-				var91.method579(aShortArray12[var7], aShortArray13[var7]);
+		if (retextureToFind != null) {
+			for (var7 = 0; var7 < retextureToFind.length; var7++) {
+				var91.method579(retextureToFind[var7], textureToReplace[var7]);
 			}
 		}
 
 		if (var6) {
-			var91.method587(anInt496, anInt488, anInt498);
+			var91.method587(modelSizeX, modelSizeHeight, modelSizeY);
 		}
 
 		if (var101) {
-			var91.method578(anInt499, anInt500, anInt502);
+			var91.method578(offsetX, offsetHeight, offsetY);
 		}
 
 		return var91;
@@ -541,7 +541,7 @@ public class ObjectDefinition extends Cacheable {
 
 	public final Model method519(int var1, int var2, int[][] var3, int var4, int var5, int var6) {
 		long var8;
-		if (anIntArray108 == null) {
+		if (objectModels == null) {
 			var8 = var2 + (anInt483 << 10);
 		} else {
 			var8 = var2 + (var1 << 3) + (anInt483 << 10);
@@ -554,7 +554,7 @@ public class ObjectDefinition extends Cacheable {
 				return null;
 			}
 
-			var7 = var10.method583(64 + anInt497, anInt484 + 768, -50, -10, -50);
+			var7 = var10.method583(64 + ambient, contrast + 768, -50, -10, -50);
 			staticCache17.method170(var7, var8);
 		}
 
